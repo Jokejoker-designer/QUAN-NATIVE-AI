@@ -1,0 +1,8 @@
+{
+  "gate": "ASTRA-C3-HELD-OUT-RELOAD-01",
+  "program": false,
+  "board_pass": false,
+  "mig": false,
+  "master_c3_claimed": false,
+  "one_unknown": "held-out retention drop after C2 persist_clr + reload of journaled w0, C3 rst flush, then restore"
+}

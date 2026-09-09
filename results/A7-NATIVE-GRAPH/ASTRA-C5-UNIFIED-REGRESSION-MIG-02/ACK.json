@@ -1,0 +1,8 @@
+{
+  "gate": "ASTRA-C5-UNIFIED-REGRESSION-MIG-02",
+  "program": false,
+  "board_pass": false,
+  "mig": true,
+  "master_c5_claimed": false,
+  "one_unknown": "Same C5 prod_top MIG UART unified session emits polarity CONFLICT st=5 then remaining UART classes after distractor restore"
+}

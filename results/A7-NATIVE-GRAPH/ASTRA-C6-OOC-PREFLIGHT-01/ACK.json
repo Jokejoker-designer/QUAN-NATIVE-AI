@@ -1,0 +1,9 @@
+{
+  "gate": "ASTRA-C6-OOC-PREFLIGHT-01",
+  "program": false,
+  "board_pass": false,
+  "mig": false,
+  "master_c6_claimed": false,
+  "ddr_query_bound_final": "NOT_FROZEN",
+  "one_unknown": "OOC synth resource estimates for changed C3-C5 blocks on xc7a100tcsg324-1; not whole-chip WNS"
+}

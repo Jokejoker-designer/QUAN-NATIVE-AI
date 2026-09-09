@@ -1,0 +1,37 @@
+{
+  "gate": "ASTRA-C6-OOC-PREFLIGHT-01",
+  "program": false,
+  "master_c6_claimed": false,
+  "board_pass": false,
+  "ddr_query_bound_final": "NOT_FROZEN",
+  "part": "xc7a100tcsg324-1",
+  "mode": "synth_design -mode out_of_context",
+  "preferred_envelope": {
+    "LUT": 40000,
+    "FF": 50000,
+    "BRAM36eq": 115,
+    "DSP": 32
+  },
+  "ooc_tops": [
+    "a7ng_query_role_extract",
+    "a7ng_query_axi_sparse_intersect_synonym",
+    "a7ng_astra_c3_held_out",
+    "a7ng_astra_c2_persist_commit",
+    "a7ng_astra_c4_lm06_grounded_gen",
+    "a7ng_astra_c5_prod_top"
+  ],
+  "required_class_substrings": [
+    "CLASS_ooc_parser",
+    "CLASS_ooc_index",
+    "CLASS_ooc_proof_learner",
+    "CLASS_ooc_persist",
+    "CLASS_ooc_lm_autoreg",
+    "CLASS_ooc_prod_top",
+    "CLASS_no_a09_top",
+    "CLASS_no_mig_synth",
+    "CLASS_no_wholechip_wns",
+    "CLASS_envelope_reported"
+  ],
+  "marker": "ASTRA_C6_OOC_PREFLIGHT_PASS",
+  "note": "GOLDEN lists OOC tops, preferred envelope, and CLASS strings. Do not paste post-synth LUT counts back into GOLDEN. Do not regenerate after Vivado."
+}

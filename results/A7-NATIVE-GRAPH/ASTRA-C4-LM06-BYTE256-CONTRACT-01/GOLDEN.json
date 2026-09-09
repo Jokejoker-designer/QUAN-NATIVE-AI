@@ -1,0 +1,20 @@
+{
+  "gate": "ASTRA-C4-LM06-BYTE256-CONTRACT-01",
+  "program": false,
+  "master_c4_claimed": false,
+  "board_pass": false,
+  "lm06_byte256_frozen": false,
+  "required_class_substrings": [
+    "CLASS_in_tok_width_8",
+    "CLASS_out_domain_0_255",
+    "CLASS_phys_head10_present",
+    "CLASS_mask_ge256",
+    "CLASS_hist_653_masked",
+    "CLASS_hist_689_masked",
+    "CLASS_shared_byte_vocab",
+    "CLASS_host_next_token_zero",
+    "CLASS_hist_oracle_not_this_gold"
+  ],
+  "marker": "ASTRA_C4_LM06_BYTE256_CONTRACT_XSIM_PASS",
+  "note": "GOLDEN lists required log substrings for the BYTE256 wire/mask contract, not grounded-gen scores. Do not regenerate after xvlog. Historical 653/689/237/60 is not this gold."
+}

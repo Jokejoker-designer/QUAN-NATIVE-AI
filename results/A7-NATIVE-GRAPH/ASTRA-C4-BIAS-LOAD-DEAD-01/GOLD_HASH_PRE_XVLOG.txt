@@ -1,0 +1,3 @@
+# GOLD hashed BEFORE first xvlog 2026-09-09T07:38:07.9516813+07:00
+# PROGRAM=NO do_not_regenerate_after_fail
+4d289f8095f027d54c0157508c062590d02bfab2a046b62e2e51f1c4ff19e679  GOLDEN.json

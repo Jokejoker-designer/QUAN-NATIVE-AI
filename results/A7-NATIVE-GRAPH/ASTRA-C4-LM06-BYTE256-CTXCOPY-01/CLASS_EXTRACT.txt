@@ -1,0 +1,21 @@
+# CLASS extract from raw xsim.log -- ASTRA-C4-LM06-BYTE256-CTXCOPY-01 r0
+# PROGRAM=NO. Do not edit GOLDEN. Marker start-of-line only.
+
+CLASS_not_compose_renderer HIT dut=a7ng_astra_c4_lm06_byte256_ctxcopy
+CLASS_no_obj_lut HIT dut_ports=proof0_1_2_not_evid_obj
+CLASS_dict_fpga_visible HIT vocab_ver=2 law=c4x-proof-ctx-v2
+CLASS_entities_disjoint HIT train={10..19} hold={20..39}
+CLASS_query_proof_bytes HIT q0=81 p0=85
+CLASS_grounded_acc_ge90 HIT acc=20/20 acc_pp=100
+CLASS_unsupported_safe_ge95 HIT safe=20/20 pp=100
+CLASS_halluc_le5 HIT hall=0/20
+CLASS_w_zero_differs HIT tok0=0
+CLASS_evid_replaced_changes HIT t0=89 not obj20
+CLASS_host_next_token_zero HIT
+CLASS_eos_or_max HIT saw_eos=40
+CLASS_path_evid_lm_feedback_eos HIT n_hold=20 acc=20
+ASTRA_C4_LM06_BYTE256_CTXCOPY_XSIM_PASS
+C4_MASTER_CLAIM=NO BOARD_PASS=REJECT PROGRAM=NO LM06_BYTE256=NOT_FROZEN quality=PROOF_CTX_COPY_NOT_OBJ_LUT_NOT_802K
+$finish called at time : 10095 ns : File "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-BYTE256-CTXCOPY-01/tb_astra_c4_lm06_byte256_ctxcopy.sv" Line 182
+GOLDEN d1000b0f51ae0402a6c501f546e2365709b4d0efb2a731e4cfdc06ad8f9bb08a
+C4_MASTER_CLAIM=NO BOARD_PASS=REJECT PROGRAM=NO quality=PROOF_CTX_COPY_NOT_OBJ_LUT_NOT_802K

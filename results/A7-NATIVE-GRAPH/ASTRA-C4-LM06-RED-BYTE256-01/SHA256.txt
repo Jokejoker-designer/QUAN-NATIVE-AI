@@ -1,0 +1,17 @@
+# SHA freeze BEFORE xvlog 2026-09-09T10:14:08.4818623+07:00
+# PROGRAM=NO BOARD_PASS=NOT_CLAIMED C4_MASTER=OPEN RIVAL2=LM06_RED TINYGPT=NOT_USED
+c4fcca30c945a550f81f0870025c8d52875cd6097dfbfc459aeb1fe47a367922  rtl/native_graph/integrate/a7ng_astra_c5_prod_top.sv
+1fbdc00a4e040b2ffd925dfc8477129f4c14247768ceb0c73cbf3a31d5f2503b  rtl/native_graph/integrate/a7ng_astra_c4_lm06_grounded_gen.sv
+86a7a0695712d9aa818bf95aac30b83289fb9af80ddd0bdc2455e935a14d8764  rtl/native_graph/integrate/a7ng_astra_c2_persist_commit.sv
+74b5f885da98382db924c0b2a7e002b126d6517330c23ce164e62695ccdade1d  rtl/native_graph/integrate/a7ng_astra_c4_lm06_red.hex
+# COMPILED
+b45773d309200675e375decc2570c4a55cbc6e90569632420a232c08686bee4b  rtl/native_graph/integrate/a7ng_astra_c4_lm06_red.sv
+804e2fe33e65caa2ede91ed29c6051230c9f2932965e930b214ef7d2ff745d3c  results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-BYTE256-01/tb_astra_c4_lm06_red_byte256.sv
+ec2976b4c37460f78605aaf0a756cb119b83c02ccc69c9a2b3386bf67562c101  rtl/native_graph/integrate/a7ng_astra_c4_lm06_red.svh
+74b5f885da98382db924c0b2a7e002b126d6517330c23ce164e62695ccdade1d  rtl/native_graph/integrate/a7ng_astra_c4_lm06_red.hex
+2997cfd154df53f18b41bb0399edf0dde1c9c433fe25e082a36ca5eaa4109afe  results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-BYTE256-01/GOLDEN.json
+6a0661afa666088bd289c4d1b89088be01b83397c532ad3edc901faa5eed7cd7  results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-BYTE256-01/PREREG.md
+2debdee8e63961ec56907aab05bb12ff2f144d70356bac954283efe359d0e68e  results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-BYTE256-01/ACK.json
+7ec677d847ccf673cd9baa53e342050b93533e160bd6571ce31a060506c8c1c6  results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-BYTE256-01/CKPT_PROVENANCE.json
+5ef913aaaed76fb1f275a92b50c559068f68d9f674839e333f11faed89fd7d86  results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-BYTE256-01/gen_ckpt.py
+a6f9040b8641aab842b1763a5649ba0a7d0c7bc32c8901fd89352e42dc6aeb57  results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-BYTE256-01/run_xsim.ps1

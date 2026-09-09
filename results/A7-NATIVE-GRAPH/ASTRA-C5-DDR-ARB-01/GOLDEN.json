@@ -1,0 +1,18 @@
+{
+  "gate": "ASTRA-C5-DDR-ARB-01",
+  "program": false,
+  "master_c5_claimed": false,
+  "board_pass": false,
+  "ddr_query_bound_final": "NOT_FROZEN",
+  "clients": ["idx_load", "query_dir", "desc_fetch", "learn_rw", "lm_dma", "ckpt"],
+  "required_class_substrings": [
+    "CLASS_six_clients",
+    "CLASS_one_owner",
+    "CLASS_no_midflight_switch",
+    "CLASS_dual_owner_zero",
+    "CLASS_axi_only_grant",
+    "CLASS_ckpt_addr_06000000"
+  ],
+  "marker": "ASTRA_C5_DDR_ARB_XSIM_PASS",
+  "note": "GOLDEN lists required CLASS strings and six client names, not MIG PHY scores. Do not regenerate after xvlog."
+}

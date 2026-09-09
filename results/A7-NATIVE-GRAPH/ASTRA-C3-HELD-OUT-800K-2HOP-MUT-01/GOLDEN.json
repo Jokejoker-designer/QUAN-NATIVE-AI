@@ -1,0 +1,16 @@
+{
+  "gate": "ASTRA-C3-HELD-OUT-800K-2HOP-MUT-01",
+  "program": false,
+  "master_c3_claimed": false,
+  "board_pass": false,
+  "required_class_substrings": [
+    "CLASS_entities_disjoint",
+    "CLASS_base_two_hop",
+    "CLASS_edge_delete",
+    "CLASS_edge_replace",
+    "CLASS_edge_reverse",
+    "CLASS_host_winner_zero"
+  ],
+  "marker": "ASTRA_C3_HELD_OUT_800K_2HOP_MUT_XSIM_PASS",
+  "note": "GOLDEN lists required CLASS strings, not post-hoc scores. Do not regenerate after xvlog."
+}

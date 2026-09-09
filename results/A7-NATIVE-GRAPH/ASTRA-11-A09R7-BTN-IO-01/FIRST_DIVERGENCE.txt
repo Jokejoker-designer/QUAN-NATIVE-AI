@@ -1,0 +1,2 @@
+FIRST_DIVERGENCE WHS_NEG
+routed WHS=-2.068 < 0; bag FAIL; keep report; one bounded experiment

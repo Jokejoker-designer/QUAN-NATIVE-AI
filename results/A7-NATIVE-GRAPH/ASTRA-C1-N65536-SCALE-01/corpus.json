@@ -1,0 +1,33 @@
+{
+  "gate": "ASTRA-C1-N65536-SCALE-01",
+  "n": 65536,
+  "generator": "cartesian_n65536_v1",
+  "procedural": true,
+  "not_16k_clone": true,
+  "n_subjects": 101,
+  "n_rels": 8,
+  "ent0": 13,
+  "ent_hi": 113,
+  "n_stream": 65532,
+  "fill_cidx": 300,
+  "sent_cidx": 80700,
+  "fill_grid_nids": [
+    120,
+    121,
+    122
+  ],
+  "fill_sro": [
+    13,
+    4,
+    14
+  ],
+  "sentinel_nid": 65535,
+  "sentinel_sro": [
+    113,
+    8,
+    13
+  ],
+  "sentinel_text": "blowdown discharges boiler",
+  "historical_u5_cannot_close": true,
+  "records_materialized": false
+}

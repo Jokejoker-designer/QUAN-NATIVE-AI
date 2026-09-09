@@ -1,0 +1,53 @@
+# OPEN GATES — Master V1.1 C1–C7
+
+C0 hashes/versions are recorded in `FINAL_CONTRACT.json` (bag
+`ASTRA-C0-LAW-FREEZE-01`). C1 XSim law is **CLOSED_XSIM** (auditor
+`20260907T2148Z`). C2–C7 remain **OPEN**. BOARD_PASS remains **NOT_CLAIMED**.
+
+```text
+LM06_BYTE256           = NOT_FROZEN
+DDR_INDEX              = NOT_FROZEN
+CAND_CAP_FINAL         = 16
+DDR_QUERY_BOUND_FINAL  = NOT_FROZEN
+PRODUCTION_TOP         = UNKNOWN
+BOARD_PASS             = NOT_CLAIMED
+```
+
+Historical `ASTRA-02-U5-SCALE-SELECTIVITY-800K` is pre-role-law evidence and
+cannot close C1. A09R8 silicon `w0 0→-5` cannot close C3. The A09R8 wrap is
+not C5. The A09R8 bit is not C6/C7.
+
+---
+
+## C1 STABLE-LAW-SPARSE-RETRIEVAL-800K — CLOSED_XSIM
+
+Closed as **XSim law** only (ladder 256→800k, 11 Master classes, cap sweep,
+`CAND_CAP_FINAL=16`). Not BOARD_PASS. `DDR_QUERY_BOUND_FINAL` stays NOT_FROZEN
+(AXI procedural ≠ MIG). Cartesian / 1-pair synonym / generator ctx plant remain
+quality bounds. Auditor: `results/A7-NATIVE-GRAPH/AUDITOR/20260907T2148Z/REPORT.md`.
+
+Primary unknown (answered at XSim): Can the final role-aware query law retrieve relevant evidence selectively and with bounded traffic through the real index law up to 800,000 records?
+
+## C2 PRODUCTION-TRANSACTION-PERSISTENCE — OPEN
+
+Primary unknown: Does a successful reward update mean the intended architectural state was actually committed and recoverable through the declared production persistence path?
+
+## C3 INTEGRATED-HELD-OUT-REWARD-TRANSFER — OPEN
+
+Primary unknown: Does learning through the real parser→retrieval→reasoning→ranking path improve unseen cases rather than merely alter one weight?
+
+## C4 LM06-GROUNDED-GENERATION — OPEN
+
+Primary unknown: Can LM06 consume materialized evidence from the final reasoner and generate grounded output tokens on FPGA rather than merely run arithmetic or emit a class ID?
+
+## C5 ONE-PRODUCTION-TOP — OPEN
+
+Primary unknown: Can all accepted capability blocks coexist in one production hierarchy with no synthetic shortcuts?
+
+## C6 FINAL-WHOLECHIP-COFIT-AND-FREEZE — OPEN
+
+Primary unknown: Does the exact production top fit and close timing on Arty A7-100T?
+
+## C7 FINAL-BLIND-BOARD-EXAM — OPEN
+
+Primary unknown (Master V1.1 §13 rule): The board is now used to validate the COMPLETE final artifact, not the narrow A09R8 checkpoint.

@@ -1,0 +1,34 @@
+{
+  "gate": "ASTRA-SOC-RTP-WRAP-UART-XSIM",
+  "dut": "arty_a7_astra_rtp_soc_top",
+  "pipe": "a7ng_astra_rtp_pipe_r2",
+  "mem": "a7ng_axi_bram128",
+  "plant_r2_base": 1,
+  "load_from_tb": 0,
+  "empty": false,
+  "program": false,
+  "com12": "UNTOUCHED",
+  "mmcm": "UNISIM_MMCME2_BASE",
+  "mmcm_silicon": false,
+  "uart": {"baud": 115200, "bits": "8N1", "clk_hz_pipe": 50000000, "clk_pin_hz": 100000000, "cpb_pin": 868},
+  "query": "pump requires indirect\n",
+  "magic": "A2",
+  "cases": {
+    "BASE_UART": {
+      "text": "pump requires indirect\n",
+      "frame_hex": "a200040000110000220000020202020a",
+      "magic": "a2",
+      "tbl": 0,
+      "st": 0,
+      "ans": 4,
+      "p0": 17,
+      "p1": 34,
+      "nload": 2,
+      "nfok": 2,
+      "ndir": 2,
+      "ncand": 2,
+      "eol": "0a"
+    }
+  },
+  "not_claimed": ["BOARD_PASS", "ASTRA-13", "silicon_MMCM", "EMPTY", "COM12", "09_wrap_fetch"]
+}

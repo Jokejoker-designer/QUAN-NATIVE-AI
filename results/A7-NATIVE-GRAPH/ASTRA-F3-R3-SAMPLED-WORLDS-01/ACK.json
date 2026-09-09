@@ -1,0 +1,16 @@
+{
+  "task_id": "ASTRA-F3-R3-SAMPLED-WORLDS-01",
+  "observed_session_id": "UNKNOWN",
+  "cwd": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "branch": "grok-orch/astra-native-v1-00",
+  "base": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+  "role": "implementer_not_v31_manager",
+  "write_scope": "new bag + distinctly named candidate RTL/TB/helpers only",
+  "PROGRAM": false,
+  "jtag": "NO_CALLS",
+  "conflict_writer": false,
+  "preserves": "results/A7-NATIVE-GRAPH/ASTRA-F2R-SHARED-RANK-PENDING-01, ASTRA-F2R-R2-PENDING-HANDSHAKE-LAW, ASTRA-F2R-R3-SEMANTIC-GUARD-01, ASTRA-F2R-R4-AXI-TIMEOUT-DRAIN-01, ASTRA-F2R-R5-TXN-WRAP-RESET-01, ASTRA-F3-SHARED-TRANSFER-01, ASTRA-F3-R2-INDEPENDENT-WORLDS-01 (not edited); a7ng_astra_f2r2_hs_law.sv, a7ng_shared_rank_sgd_q8_sym_f2r2.sv, a7ng_astra_f2r3_sem_guard.sv, a7ng_astra_f2r4_axi_drain.sv, a7ng_astra_f2r5_txn_wrap.sv, a7ng_astra_f3_shared_xfer.sv, a7ng_astra_f3r2_ind_worlds.sv not patched; those bags' run scripts not rerun",
+  "prior_acceptance": "AUDITOR_20260906T0815Z PASS_NARROW ACCEPT_PARTIAL on ASTRA-F3-R2-INDEPENDENT-WORLDS-01 plumbing; Master F3 OPEN (unit of analysis 5 designed 2-path plants; shuffle often lacked overlapping features; per-ID disjoint-dest vacuity; retention two updates on n=5; 32-phi not dumped on log)",
+  "gate_claim": "sampled-world transfer plumbing: N_worlds=5 distinct subject-relation worlds, N_shared_facts=3, N_private_facts=2, N_train_q=8, N_hold_q=8, N_epoch=2; shared+private facts; overlapping dest IDs where per-ID could win; shuffle mislabels overlapping mixed_ctx; 32-phi plus hash dumped on log; held-out after epoch-2 and reload; accuracy/coverage/UNKNOWN separate; Master 10pp/CI/retention NOT claimed (protocol too small vs ASTRA-07 24x8)",
+  "does_not_close": ["Master_F3_10pp_CI", "LM06", "BOARD_PASS", "ASTRA-13", "persistence_DDR", "power_loss_journal"]
+}

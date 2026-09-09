@@ -1,0 +1,10 @@
+{
+  "gate": "ASTRA-C5-PROD-TOP-MIG-01",
+  "program": false,
+  "board_pass": false,
+  "mig": true,
+  "mig_class": "XSIM_DIGILENT_AXI_MIG_SIM_PLUS_DDR3_MODEL",
+  "master_c5_claimed": false,
+  "ddr_query_bound_final": "NOT_FROZEN",
+  "one_unknown": "one production hierarchy retrieve/persist/gen through official MIG sim after calib, not modeled 1-beat TB slave; UART sim baud remains a quality bound"
+}

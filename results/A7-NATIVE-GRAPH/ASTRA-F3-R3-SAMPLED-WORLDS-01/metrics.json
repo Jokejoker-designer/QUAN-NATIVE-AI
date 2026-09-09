@@ -1,0 +1,51 @@
+{
+  "task_id": "ASTRA-F3-R3-SAMPLED-WORLDS-01",
+  "frozen_before_xvlog": true,
+  "master_f3_claimed": false,
+  "master_thresholds_not_retargeted": {
+    "gain_pp_vs_no_update": 10,
+    "paired_ci_lo": 0,
+    "retention_drop_pp_max": 5
+  },
+  "do_not_print_wilson_ci_as_master": true,
+  "protocol_frozen": {
+    "gen_seed": "0xA5F33001",
+    "n_worlds": 5,
+    "n_shared_facts": 3,
+    "n_private_facts": 2,
+    "n_train_q": 8,
+    "n_hold_q": 8,
+    "n_epoch": 2,
+    "astra07_24x8_run": false,
+    "transfer_feature": "mixed_ctx",
+    "overlap_hold_q": [6, 7]
+  },
+  "observed": {
+    "iso_p3_x50_dw0": 5,
+    "en_e1_c": 8,
+    "fr_c": 0,
+    "sh_c": 0,
+    "phi_neq_c": 8,
+    "en_e2_c": 8,
+    "en_rl_c": 8,
+    "pid_ov_c": 2,
+    "pid_dj_c": 0,
+    "unrel_unknown": 1,
+    "wdut0_cleared": 1,
+    "load_from_tb": 0,
+    "n_rank": 64,
+    "n_ans": 64,
+    "coverage_rank": "64/64",
+    "sel_acc_en": "8/8",
+    "sel_acc_fr": "0/8",
+    "sel_acc_sh": "0/8",
+    "ret_drop_count": 0,
+    "sim_time_ns": 278245,
+    "pid": 27400,
+    "marker": "ASTRA_F3R3_SAMPLED_WORLDS_XSIM_PASS",
+    "xsim_log_sha256": "7db52dbe79cdde396174f322200d3176b700350699fa8a5c390a072d92ee83d4",
+    "first_run_pass": true,
+    "fail_count": 0
+  },
+  "note": "observed filled after XSim from raw xsim.log; plumbing targets not edited after scores; Master F3 left OPEN; no Wilson/paired CI as Master"
+}

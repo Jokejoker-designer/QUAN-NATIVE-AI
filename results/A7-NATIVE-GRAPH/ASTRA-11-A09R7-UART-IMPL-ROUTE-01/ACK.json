@@ -1,0 +1,60 @@
+{
+  "task_id": "ASTRA-11-A09R7-UART-IMPL-ROUTE-01",
+  "observed_session_id": "UNKNOWN",
+  "cwd": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "branch": "grok-orch/astra-native-v1-00",
+  "base": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+  "role": "implementer_not_v31_manager",
+  "write_scope": "new bag + distinctly named UART impl-route wrap that instantiates frozen a7ng_astra_09_r2_cand_ovf as u_a09r2 with R7 query-rew UART FSM, wrap pad FFs IOB=TRUE on uart_txd_in A9 and uart_rxd_out D10, and STA envelope frozen in PREREG before impl (I/O delays IN/OUT max 2.000 min 0.500 plus FALSE_PATH_HOLD_ASYNC_UART); R7 wrap a7ng_astra_09_r7_uart_query_rew_wrap is synthesizable UART+A09-R2 but is KEEP_NOT_COMPILED (new named wrap required for this bag STA/IOB; do not copy-paste the graph; do not edit R7 bag); frozen a7ng_astra_09_integ_path.sv not compiled as DUT; A09-R2 DUT source not patched; uart_rx/uart_tx not patched; prior bags not edited including ASTRA-09-R7-UART-QUERY-REW-01 XSim, ASTRA-11-A09R3-UART-IOBFF-HOLD-01 WNS=+0.115 WHS=+0.131, ASTRA-11-A09R3-UART-IOBFF-01 WNS=+0.115 WHS=-4.915, ASTRA-11-A09R3-UART-IODELAY-01, ASTRA-11-A09R3-UART-IMPL-ROUTE-01 WNS=+0.305",
+  "PROGRAM": false,
+  "jtag": "NO_CALLS",
+  "bitstream": "NOT_BUILT",
+  "write_bitstream": false,
+  "xsdb": false,
+  "com12": "UNTOUCHED",
+  "hw_server": false,
+  "conflict_writer": false,
+  "PRODUCTION_TOP": "UNKNOWN",
+  "winner_frozen": false,
+  "wrap": "a7ng_astra_11_a09r7_uart_impl_wrap",
+  "dut": "a7ng_astra_09_r2_cand_ovf",
+  "dut_instance": "u_a09r2",
+  "r7_wrap_synthesizable": true,
+  "r7_wrap_compiled_as_top": false,
+  "r7_wrap_keep_not_compiled": "results/A7-NATIVE-GRAPH/ASTRA-09-R7-UART-QUERY-REW-01/a7ng_astra_09_r7_uart_query_rew_wrap.sv",
+  "frozen_a09r2": "INSTANTIATED_NOT_PATCHED",
+  "preserves": "results/A7-NATIVE-GRAPH/ASTRA-09-R7-UART-QUERY-REW-01 (not edited; XSim PASS_NARROW ans=4 then w0=-5 not overwritten), ASTRA-11-A09R3-UART-IOBFF-HOLD-01 (not edited; routed WNS=+0.115 WHS=+0.131 IOB FF YES HOLD_POLICY=FALSE_PATH_HOLD_ASYNC_UART not overwritten), ASTRA-11-A09R3-UART-IOBFF-01 (WNS=+0.115 WHS=-4.915 not overwritten), ASTRA-11-A09R3-UART-IODELAY-01 (WNS=+0.681 delays 2.000/0.500 not overwritten), ASTRA-11-A09R3-UART-IMPL-ROUTE-01 (WNS=+0.305 not overwritten), ASTRA-11-A09R2-IMPL-ROUTE-01 (WNS=+0.648 not overwritten), ASTRA-11-A09-IMPL-ROUTE-01 (WNS=+1.041 not overwritten), ASTRA-SOC-RTP-WRAP-ROUTE (WNS=+5.733 not overwritten), ASTRA-09-R6-UART-ISO-PUBLIC-01, ASTRA-09-R5-UART-ISO-INNER-01, ASTRA-09-R4-UART-ISO-01, ASTRA-09-R3-UART-XSIM-01, ASTRA-SOC-RTP-WRAP-UART-XSIM, ASTRA-09-R2-CAND-OVF-01, ASTRA-09-INTEGRATED-PATH-01, ASTRA-10-*, ASTRA-12-*, ASTRA-06-*, ASTRA-F2R-*, ASTRA-F3-* (not edited; those bags' run scripts not rerun); frozen A09 RTL not patched (hash 9fdbe0d6…); R2 DUT not patched (hash 15a919f1…); frozen SGD not patched (hash b66ef328…); uart_rx/uart_tx not patched (8e802d0b… / b4b7d097…); no .bit generated; PRODUCTION_TOP not written as a module name",
+  "prior_acceptance": "AUDITOR_20260907T0130Z ACCEPT_PARTIAL on ASTRA-09-R7-UART-QUERY-REW-01; PASS_NARROW UART query-learn XSim ans=4 p0=17 then rew=-3 inner w0=-5 FORCE_PRESENT=NO; residual 5: not a silent production UART freeze; parent does not freeze PRODUCTION_TOP; this bag is impl+route of a new named UART wrap instantiating frozen A09-R2 with UART pins D10/A9 and frozen delay/hold envelope, no bitstream; PRODUCTION_TOP UNKNOWN; ASTRA-13 BLOCKED; board plugged; PROGRAM=NO",
+  "gate_claim": "after implement+route of a new named R7 UART wrap instantiating a7ng_astra_09_r2_cand_ovf on xc7a100tcsg324-1 at declared 50 MHz with D10/A9 and STA envelope frozen in PREREG before impl (IN/OUT max 2.000 min 0.500 plus FALSE_PATH_HOLD_ASYNC_UART; IOB FF if it still packs), is Design Timing Summary WNS >= 0 and WHS >= 0 — without a bitstream and without claiming BOARD_PASS; quote raw WNS and WHS and UART IOB in io.rpt; FAIL this bag if WNS<0 or WHS<0; one bounded experiment if FAIL still no bit; not prior HOLD wrap WNS=+0.115 WHS=+0.131; not IOBFF wrap WNS=+0.115 WHS=-4.915; not I/O-delay wrap WNS=+0.681; not UART wrap WNS=+0.305; not A09R2 wrap WNS=+0.648; not A09 wrap WNS=+1.041; not wrap-route WNS=+5.733; not Master ASTRA-09/F3/LM06/ASTRA-13 close; PRODUCTION_TOP stays UNKNOWN",
+  "does_not_close": ["Master_ASTRA-09", "Master_F3_10pp_CI", "Master_ASTRA-06", "LM06", "BOARD_PASS", "ASTRA-13", "ASTRA-11_SoC_UART_wrap", "ASTRA-09-R7-UART-QUERY-REW-01", "ASTRA-11-A09R3-UART-IOBFF-HOLD-01", "ASTRA-11-A09R3-UART-IOBFF-01", "ASTRA-11-A09R3-UART-IODELAY-01", "ASTRA-11-A09R3-UART-IMPL-ROUTE-01", "ASTRA-SOC-RTP-WRAP-UART-XSIM", "ASTRA-09-R3-UART-XSIM-01", "Master_ASTRA-10_whole_chip", "production_top_identity", "write_bitstream", "LED_IO_delay", "silicon_UART"],
+  "sta_envelope_frozen_before_impl": {
+    "source": "copy 2.000/0.500 from ASTRA-11-A09R3-UART-IODELAY-01 / IOBFF plus FALSE_PATH_HOLD_ASYNC_UART from ASTRA-11-A09R3-UART-IOBFF-HOLD-01; not invented after WNS",
+    "uart_txd_in_A9_input_delay_max_ns": 2.000,
+    "uart_txd_in_A9_input_delay_min_ns": 0.500,
+    "uart_rxd_out_D10_output_delay_max_ns": 2.000,
+    "uart_rxd_out_D10_output_delay_min_ns": 0.500,
+    "clock_ref": "uart_io_vclk period 20.000 ns (I/O timing reference, same period as clk50u). Pipe clock remains MMCM+BUFG clk50u (real, not virtual).",
+    "hold_policy": "FALSE_PATH_HOLD_ASYNC_UART",
+    "hold_rationale": "UART 115200 is asynchronous to clk50u (bit ~8.68 us). Packed ILOGIC IFF has 0.000 ns IBUF-to-IFF route; virtual uart_io_vclk SCD=0 vs real MMCM+BUFG DCD created prior-bag WHS=-4.915 when min 0.500 was checked without a hold exception. IOB FF + uart_rx 2-FF is the CDC. Delays 2.000/0.500 are frozen as the I/O envelope (copied, not fitted). Hold vs uart_io_vclk is excepted by false-path-hold, not by retuning 0.500.",
+    "xdc": [
+      "set_input_delay  -clock [get_clocks uart_io_vclk] -max 2.000 [get_ports uart_txd_in]",
+      "set_input_delay  -clock [get_clocks uart_io_vclk] -min 0.500 [get_ports uart_txd_in]",
+      "set_output_delay -clock [get_clocks uart_io_vclk] -max 2.000 [get_ports uart_rxd_out]",
+      "set_output_delay -clock [get_clocks uart_io_vclk] -min 0.500 [get_ports uart_rxd_out]",
+      "set_false_path -hold -from [get_ports uart_txd_in]",
+      "set_false_path -hold -to [get_ports uart_rxd_out]"
+    ],
+    "post_synth_when_clk50u_exists": [
+      "set_false_path -hold -from [get_clocks uart_io_vclk] -to [get_clocks clk50u]",
+      "set_false_path -hold -from [get_clocks clk50u] -to [get_clocks uart_io_vclk]"
+    ]
+  },
+  "iob_ff_policy_frozen_before_impl": {
+    "ports": ["uart_txd_in", "uart_rxd_out"],
+    "method": "wrap-level (* IOB = TRUE *) registers plus XDC set_property IOB TRUE on those ports; do not patch frozen uart_rx.sv / uart_tx.sv",
+    "rx_reg": "uart_rx_iob (samples uart_txd_in into IOB FF, then uart_rx)",
+    "tx_reg": "uart_tx_iob (registered uart_tx.tx into IOB FF, drives uart_rxd_out)",
+    "if_it_still_packs": "quote routed BEL/LOC of uart_rx_iob_reg / uart_tx_iob_reg in IOB/ILOGIC/OLOGIC, plus util IOB Flip Flops / ILOGIC / OLOGIC; bag does not FAIL solely on unpack if WNS>=0 and WHS>=0 (handoff: IOB FF if it still packs)",
+    "proof": "routed BEL/LOC plus util IOB Flip Flops / ILOGIC / OLOGIC if packed"
+  }
+}

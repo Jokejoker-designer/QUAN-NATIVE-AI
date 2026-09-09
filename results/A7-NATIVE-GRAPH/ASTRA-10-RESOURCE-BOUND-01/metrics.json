@@ -1,0 +1,27 @@
+{
+  "task_id": "ASTRA-10-RESOURCE-BOUND-01",
+  "top": "a7ng_astra_10_resource_wrap",
+  "dut": "a7ng_astra_09_integ_path",
+  "instance": "u_a09",
+  "part": "xc7a100tcsg324-1",
+  "clock_name": "clk50",
+  "clock_period_ns": 20.0,
+  "clock_mhz": 50.0,
+  "design_state": "Synthesized",
+  "lut": 5178,
+  "ff": 4155,
+  "bram_tile": 0,
+  "dsp": 2,
+  "wns_ns": 2.283,
+  "tns_ns": 0.0,
+  "whs_ns": 0.256,
+  "ths_ns": 0.0,
+  "opt_lut": 5174,
+  "bitstream": false,
+  "program": false,
+  "source_reports": {
+    "util": "util_synth.rpt",
+    "timing": "timing_synth.rpt",
+    "hier": "util_hier_synth.rpt"
+  }
+}

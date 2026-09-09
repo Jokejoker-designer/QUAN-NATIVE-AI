@@ -1,0 +1,13 @@
+{
+  "task_id": "ASTRA-F2R-SHARED-RANK-PENDING-01",
+  "observed_session_id": "99be8510-6587-4eb0-a06e-0f9796e19b1d",
+  "cwd": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "branch": "grok-orch/astra-native-v1-00",
+  "base": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+  "role": "implementer_not_v31_manager",
+  "write_scope": "new bag + distinctly named candidate RTL/TB/helpers only",
+  "PROGRAM": false,
+  "jtag": "NO_CALLS",
+  "conflict_writer": false,
+  "grok_astra_id": "99be8510-6587-4eb0-a06e-0f9796e19b1d"
+}

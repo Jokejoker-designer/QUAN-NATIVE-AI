@@ -1,0 +1,23 @@
+{
+  "task_id": "ASTRA-09-R5-UART-ISO-INNER-01",
+  "observed_session_id": "UNKNOWN",
+  "cwd": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "branch": "grok-orch/astra-native-v1-00",
+  "base": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+  "role": "implementer_not_v31_manager",
+  "write_scope": "new bag + distinctly named UART ISO-INNER wrap/TB that instantiate frozen a7ng_astra_09_r2_cand_ovf only (inner u_sgd is the one SGD; no parallel u_iso; no copy-paste graph; frozen a7ng_astra_09_integ_path.sv not compiled as DUT; A09-R2 DUT source not patched; ASTRA-09-R4 wrap/TB not edited; ASTRA-09-R3 wrap/TB not edited)",
+  "PROGRAM": false,
+  "jtag": "NO_CALLS",
+  "bitstream": "NOT_BUILT",
+  "write_bitstream": false,
+  "xsdb": false,
+  "com12": "UNTOUCHED",
+  "hw_server": false,
+  "conflict_writer": false,
+  "PRODUCTION_TOP": "UNKNOWN",
+  "winner_frozen": false,
+  "preserves": "results/A7-NATIVE-GRAPH/ASTRA-09-R4-UART-ISO-01 (not edited; sibling u_iso xsim.log not overwritten), ASTRA-09-R3-UART-XSIM-01 (not edited), ASTRA-12-R3-UART-WRAP-CANDIDATES-01 (9-row table not rewritten), ASTRA-11-A09R3-UART-* (not edited; those bags' run scripts not rerun), ASTRA-09-R2-CAND-OVF-01, ASTRA-11-A09R2-IMPL-ROUTE-01, ASTRA-SOC-RTP-WRAP-UART-XSIM, ASTRA-09-INTEGRATED-PATH-01, ASTRA-12-*, ASTRA-10-*, ASTRA-06-*, ASTRA-F2R-*, ASTRA-F3-* (not edited); frozen A09 RTL not patched (hash 9fdbe0d6…); R2 DUT not patched (hash 15a919f1…); frozen SGD not patched (hash b66ef328…); uart_rx/uart_tx not patched; no .bit generated; PRODUCTION_TOP not written as a module name",
+  "prior_acceptance": "AUDITOR_20260907T0005Z ACCEPT_PARTIAL on ASTRA-09-R4-UART-ISO-01; UART-driven ISO PASS_NARROW on sibling u_iso; residual 5: UART tokens/reward must hit the same learner A09-R2 query uses (u_sgd inner); parent chooses the inner learner path; not a bit, not a freeze; board plugged; PROGRAM=NO",
+  "gate_claim": "one named UART-facing INNER ISO XSim only: UART 8N1 delivers isolated SGD update into A09-R2 inner u_sgd (hierarchical u_a09r2.u_sgd.w_o[0]); x[0]=50 rew=+3 showing inner w0=+5 and x[0]=64 rew=-3 showing inner w0=-6; load_from_tb=0; no parallel u_iso for pass numbers. Instantiates frozen A09-R2 only (SGD exists as inner child). Not BOARD_PASS. Not ASTRA-09-R4 sibling result. Not wrap-route bit. Not ASTRA-13. PRODUCTION_TOP stays UNKNOWN.",
+  "does_not_close": ["Master_ASTRA-09", "Master_F3_10pp_CI", "Master_ASTRA-06", "LM06", "BOARD_PASS", "ASTRA-13", "ASTRA-11_SoC_UART_wrap", "ASTRA-09-R3-UART-XSIM-01", "ASTRA-09-R4-UART-ISO-01", "ASTRA-SOC-RTP-WRAP-UART-XSIM", "production_top_identity", "write_bitstream", "wrap_route_bit", "silicon_UART", "sibling_u_iso_as_production_law"]
+}

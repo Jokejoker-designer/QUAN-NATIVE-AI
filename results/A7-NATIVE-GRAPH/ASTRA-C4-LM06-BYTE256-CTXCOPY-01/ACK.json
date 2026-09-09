@@ -1,0 +1,9 @@
+{
+  "gate": "ASTRA-C4-LM06-BYTE256-CTXCOPY-01",
+  "program": false,
+  "board_pass": false,
+  "mig": false,
+  "master_c4_claimed": false,
+  "lm06_byte256_frozen": false,
+  "one_unknown": "held-out BYTE256 name tokens from PROOF context bytes not obj LUT; 90/95/5 plus weight and evidence ablations; host next-token=0"
+}

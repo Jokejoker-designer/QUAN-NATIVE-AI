@@ -1,0 +1,577 @@
+{
+  "gate": "ASTRA-07-HELD-OUT-TRANSFER",
+  "result": "PASS",
+  "result_host": "PASS",
+  "result_xsim": "PASS",
+  "law": "native-rank-sgd-q8-v1",
+  "shift": 6,
+  "n_seeds": 5,
+  "n_train": 24,
+  "n_hold": 24,
+  "n_miss": 8,
+  "k": 8,
+  "epochs": 8,
+  "seeds": [
+    "0xA701",
+    "0xA702",
+    "0xA703",
+    "0xA704",
+    "0xA705"
+  ],
+  "enabled_hold_correct": [
+    24,
+    24,
+    24,
+    24,
+    24
+  ],
+  "frozen_hold_correct": [
+    0,
+    2,
+    5,
+    6,
+    6
+  ],
+  "shuffle_hold_correct": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "perid_hold_correct": [
+    0,
+    2,
+    5,
+    6,
+    6
+  ],
+  "paired_vs_frozen": [
+    24,
+    22,
+    19,
+    18,
+    18
+  ],
+  "paired_vs_shuffle": [
+    24,
+    24,
+    24,
+    24,
+    24
+  ],
+  "mean_gain_pp_vs_frozen": 84.16666666666667,
+  "mean_gain_pp_vs_shuffle": 100.0,
+  "ci95_paired_vs_frozen": {
+    "lo": 17.848,
+    "mean": 20.2,
+    "hi": 22.552
+  },
+  "ci95_paired_vs_shuffle": {
+    "lo": 24.0,
+    "mean": 24.0,
+    "hi": 24.0
+  },
+  "retention_drop_pp": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "miss_answer_emitted": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "perid_fails_transfer": true,
+  "perid_memorizes_train": true,
+  "id_overlap": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "astra06_twin": {
+    "v_frozen": 0,
+    "v_enabled": 688,
+    "v_shuffle": 48,
+    "match": true
+  },
+  "xsim": {
+    "picks": {
+      "EN": [
+        {
+          "q": 0,
+          "pred": 7,
+          "gold": 7,
+          "ok": 1
+        },
+        {
+          "q": 1,
+          "pred": 5,
+          "gold": 5,
+          "ok": 1
+        },
+        {
+          "q": 2,
+          "pred": 4,
+          "gold": 4,
+          "ok": 1
+        },
+        {
+          "q": 3,
+          "pred": 5,
+          "gold": 5,
+          "ok": 1
+        },
+        {
+          "q": 4,
+          "pred": 7,
+          "gold": 7,
+          "ok": 1
+        },
+        {
+          "q": 5,
+          "pred": 1,
+          "gold": 1,
+          "ok": 1
+        },
+        {
+          "q": 6,
+          "pred": 3,
+          "gold": 3,
+          "ok": 1
+        },
+        {
+          "q": 7,
+          "pred": 6,
+          "gold": 6,
+          "ok": 1
+        },
+        {
+          "q": 8,
+          "pred": 7,
+          "gold": 7,
+          "ok": 1
+        },
+        {
+          "q": 9,
+          "pred": 4,
+          "gold": 4,
+          "ok": 1
+        },
+        {
+          "q": 10,
+          "pred": 3,
+          "gold": 3,
+          "ok": 1
+        },
+        {
+          "q": 11,
+          "pred": 5,
+          "gold": 5,
+          "ok": 1
+        },
+        {
+          "q": 12,
+          "pred": 7,
+          "gold": 7,
+          "ok": 1
+        },
+        {
+          "q": 13,
+          "pred": 6,
+          "gold": 6,
+          "ok": 1
+        },
+        {
+          "q": 14,
+          "pred": 2,
+          "gold": 2,
+          "ok": 1
+        },
+        {
+          "q": 15,
+          "pred": 7,
+          "gold": 7,
+          "ok": 1
+        },
+        {
+          "q": 16,
+          "pred": 1,
+          "gold": 1,
+          "ok": 1
+        },
+        {
+          "q": 17,
+          "pred": 5,
+          "gold": 5,
+          "ok": 1
+        },
+        {
+          "q": 18,
+          "pred": 1,
+          "gold": 1,
+          "ok": 1
+        },
+        {
+          "q": 19,
+          "pred": 4,
+          "gold": 4,
+          "ok": 1
+        },
+        {
+          "q": 20,
+          "pred": 5,
+          "gold": 5,
+          "ok": 1
+        },
+        {
+          "q": 21,
+          "pred": 2,
+          "gold": 2,
+          "ok": 1
+        },
+        {
+          "q": 22,
+          "pred": 4,
+          "gold": 4,
+          "ok": 1
+        },
+        {
+          "q": 23,
+          "pred": 6,
+          "gold": 6,
+          "ok": 1
+        }
+      ],
+      "FR": [
+        {
+          "q": 0,
+          "pred": 0,
+          "gold": 7,
+          "ok": 0
+        },
+        {
+          "q": 1,
+          "pred": 0,
+          "gold": 5,
+          "ok": 0
+        },
+        {
+          "q": 2,
+          "pred": 0,
+          "gold": 4,
+          "ok": 0
+        },
+        {
+          "q": 3,
+          "pred": 0,
+          "gold": 5,
+          "ok": 0
+        },
+        {
+          "q": 4,
+          "pred": 0,
+          "gold": 7,
+          "ok": 0
+        },
+        {
+          "q": 5,
+          "pred": 0,
+          "gold": 1,
+          "ok": 0
+        },
+        {
+          "q": 6,
+          "pred": 0,
+          "gold": 3,
+          "ok": 0
+        },
+        {
+          "q": 7,
+          "pred": 0,
+          "gold": 6,
+          "ok": 0
+        },
+        {
+          "q": 8,
+          "pred": 0,
+          "gold": 7,
+          "ok": 0
+        },
+        {
+          "q": 9,
+          "pred": 0,
+          "gold": 4,
+          "ok": 0
+        },
+        {
+          "q": 10,
+          "pred": 0,
+          "gold": 3,
+          "ok": 0
+        },
+        {
+          "q": 11,
+          "pred": 0,
+          "gold": 5,
+          "ok": 0
+        },
+        {
+          "q": 12,
+          "pred": 0,
+          "gold": 7,
+          "ok": 0
+        },
+        {
+          "q": 13,
+          "pred": 0,
+          "gold": 6,
+          "ok": 0
+        },
+        {
+          "q": 14,
+          "pred": 0,
+          "gold": 2,
+          "ok": 0
+        },
+        {
+          "q": 15,
+          "pred": 0,
+          "gold": 7,
+          "ok": 0
+        },
+        {
+          "q": 16,
+          "pred": 0,
+          "gold": 1,
+          "ok": 0
+        },
+        {
+          "q": 17,
+          "pred": 0,
+          "gold": 5,
+          "ok": 0
+        },
+        {
+          "q": 18,
+          "pred": 0,
+          "gold": 1,
+          "ok": 0
+        },
+        {
+          "q": 19,
+          "pred": 0,
+          "gold": 4,
+          "ok": 0
+        },
+        {
+          "q": 20,
+          "pred": 0,
+          "gold": 5,
+          "ok": 0
+        },
+        {
+          "q": 21,
+          "pred": 0,
+          "gold": 2,
+          "ok": 0
+        },
+        {
+          "q": 22,
+          "pred": 0,
+          "gold": 4,
+          "ok": 0
+        },
+        {
+          "q": 23,
+          "pred": 0,
+          "gold": 6,
+          "ok": 0
+        }
+      ],
+      "SH": [
+        {
+          "q": 0,
+          "pred": 2,
+          "gold": 7,
+          "ok": 0
+        },
+        {
+          "q": 1,
+          "pred": 4,
+          "gold": 5,
+          "ok": 0
+        },
+        {
+          "q": 2,
+          "pred": 3,
+          "gold": 4,
+          "ok": 0
+        },
+        {
+          "q": 3,
+          "pred": 7,
+          "gold": 5,
+          "ok": 0
+        },
+        {
+          "q": 4,
+          "pred": 3,
+          "gold": 7,
+          "ok": 0
+        },
+        {
+          "q": 5,
+          "pred": 6,
+          "gold": 1,
+          "ok": 0
+        },
+        {
+          "q": 6,
+          "pred": 7,
+          "gold": 3,
+          "ok": 0
+        },
+        {
+          "q": 7,
+          "pred": 4,
+          "gold": 6,
+          "ok": 0
+        },
+        {
+          "q": 8,
+          "pred": 6,
+          "gold": 7,
+          "ok": 0
+        },
+        {
+          "q": 9,
+          "pred": 0,
+          "gold": 4,
+          "ok": 0
+        },
+        {
+          "q": 10,
+          "pred": 1,
+          "gold": 3,
+          "ok": 0
+        },
+        {
+          "q": 11,
+          "pred": 1,
+          "gold": 5,
+          "ok": 0
+        },
+        {
+          "q": 12,
+          "pred": 6,
+          "gold": 7,
+          "ok": 0
+        },
+        {
+          "q": 13,
+          "pred": 5,
+          "gold": 6,
+          "ok": 0
+        },
+        {
+          "q": 14,
+          "pred": 5,
+          "gold": 2,
+          "ok": 0
+        },
+        {
+          "q": 15,
+          "pred": 6,
+          "gold": 7,
+          "ok": 0
+        },
+        {
+          "q": 16,
+          "pred": 0,
+          "gold": 1,
+          "ok": 0
+        },
+        {
+          "q": 17,
+          "pred": 7,
+          "gold": 5,
+          "ok": 0
+        },
+        {
+          "q": 18,
+          "pred": 7,
+          "gold": 1,
+          "ok": 0
+        },
+        {
+          "q": 19,
+          "pred": 3,
+          "gold": 4,
+          "ok": 0
+        },
+        {
+          "q": 20,
+          "pred": 7,
+          "gold": 5,
+          "ok": 0
+        },
+        {
+          "q": 21,
+          "pred": 4,
+          "gold": 2,
+          "ok": 0
+        },
+        {
+          "q": 22,
+          "pred": 6,
+          "gold": 4,
+          "ok": 0
+        },
+        {
+          "q": 23,
+          "pred": 2,
+          "gold": 6,
+          "ok": 0
+        }
+      ]
+    },
+    "correct": {
+      "FR": {
+        "n": 24,
+        "c": 0
+      },
+      "EN": {
+        "n": 24,
+        "c": 24
+      },
+      "SH": {
+        "n": 24,
+        "c": 0
+      }
+    },
+    "miss": {
+      "ngold": 0,
+      "n_ans": 0,
+      "n_c": 7
+    },
+    "bitexact": "PASS",
+    "xsim_pass": true,
+    "has_pass_token": true,
+    "has_div": false
+  },
+  "bit": false,
+  "program": false,
+  "com12": "UNTOUCHED",
+  "open_world_claimed": false,
+  "generalized_learning_claimed": false,
+  "ddr_graph": false,
+  "lm": false,
+  "gate14": false
+}

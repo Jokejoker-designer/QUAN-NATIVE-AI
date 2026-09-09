@@ -1,0 +1,48 @@
+{
+  "evidence_class": "HOST_MODEL",
+  "command": "python -B -; import host_astra07; make_worlds/train_enabled/train_shuffled/eval_class for SEEDS; argmax feature31 without training",
+  "exit": 0,
+  "rows": [
+    {
+      "seed": "0xa701",
+      "enabled": 24,
+      "frozen": 0,
+      "shuffled": 0,
+      "fixed_feature31": 24,
+      "n": 24
+    },
+    {
+      "seed": "0xa702",
+      "enabled": 24,
+      "frozen": 2,
+      "shuffled": 0,
+      "fixed_feature31": 24,
+      "n": 24
+    },
+    {
+      "seed": "0xa703",
+      "enabled": 24,
+      "frozen": 5,
+      "shuffled": 0,
+      "fixed_feature31": 24,
+      "n": 24
+    },
+    {
+      "seed": "0xa704",
+      "enabled": 24,
+      "frozen": 6,
+      "shuffled": 0,
+      "fixed_feature31": 24,
+      "n": 24
+    },
+    {
+      "seed": "0xa705",
+      "enabled": 24,
+      "frozen": 6,
+      "shuffled": 0,
+      "fixed_feature31": 24,
+      "n": 24
+    }
+  ],
+  "limitation": "No new RTL simulation; existing frozen generator reused; fixed-feature control is an audit falsifier, not production implementation."
+}

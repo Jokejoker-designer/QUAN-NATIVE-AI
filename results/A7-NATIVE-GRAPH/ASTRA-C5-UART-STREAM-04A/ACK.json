@@ -1,0 +1,8 @@
+{
+  "gate": "ASTRA-C5-UART-STREAM-04A",
+  "program": false,
+  "board_pass": false,
+  "dut": "a7ng_astra_c5_prod_top_stream",
+  "live_prod_top_untouched": "c4fcca30c945a550f81f0870025c8d52875cd6097dfbfc459aeb1fe47a367922",
+  "grounded_gen_untouched": "1fbdc00a4e040b2ffd925dfc8477129f4c14247768ceb0c73cbf3a31d5f2503b"
+}

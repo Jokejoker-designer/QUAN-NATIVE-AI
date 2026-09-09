@@ -1,0 +1,33 @@
+# KEEP_NETLIST — raw excerpt from util_hier_route.rpt
+# Design a7ng_astra_c6_wholechip  Device xc7a100tcsg324-1  State Routed
+# PROGRAM=NO  Do not paste LUT counts into GOLDEN.json
+
+FACT hier (Instance / Module):
+  u_c5        a7ng_astra_c5_prod_top
+    u_c2      a7ng_astra_c2_persist_commit
+    u_c3      a7ng_astra_c3_held_out
+      u_sp    a7ng_query_axi_sparse_intersect_synonym
+        u_qse a7ng_query_role_extract
+    u_gen     a7ng_astra_c4_lm06_grounded_gen
+  u_mig       mig_native_wrap
+    u_mig     mig_7series_0
+
+FACT live SHA256 after r1 PASS (prefixes):
+  a7ng_query_role_extract.sv                         cd7baf49
+  a7ng_query_role_relctx_synonym.sv                  e862208c
+  a7ng_query_axi_sparse_intersect_synonym.sv         a84bbf7e
+  a7ng_astra_c2_persist_commit.sv                    86a7a069
+  a7ng_shared_rank_sgd_q8_sym_f2r2.sv                b66ef328
+  mig_native_wrap.sv                                 97c078b1
+  a7ng_lm_graph_arb.sv                               04b5346e  (not DUT)
+  a7ng_astra_c6_wholechip.sv                         64275ba0
+  a7ng_astra_c5_prod_top.sv                          c4fcca30
+  a7ng_astra_c3_held_out.sv                          cfb89632
+  GOLDEN.json                                        e0d2d17a
+
+FACT drc.rpt: REQP-1709 Warning (MIG PLL CLKOUT3 buffer); RTSTAT-10 Warning.
+ERROR=0 FATAL=0.
+
+A09 / tiny_gpt803k_core / a7ng_lm_graph_arb are absent as DUT.
+A09_IS_THIS_TOP=NO
+PROGRAM=NO

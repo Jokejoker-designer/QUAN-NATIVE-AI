@@ -1,0 +1,4 @@
+# SHA verify AFTER xsim 2026-09-09T07:38:47.3466979+07:00
+f63f35ad5d33210f9387eaba3456105adf222b6e0e9c5c62d78d9e2e2eb8c926  rtl/native_graph/integrate/a7ng_astra_c4_lm06_byte256.sv
+1fbdc00a4e040b2ffd925dfc8477129f4c14247768ceb0c73cbf3a31d5f2503b  rtl/native_graph/integrate/a7ng_astra_c4_lm06_grounded_gen.sv
+e9f305aee09e173e86d64095de370eae50f2d18fd098530443c6b9ac82d1cc21  results/A7-NATIVE-GRAPH/ASTRA-C4-BIAS-LOAD-DEAD-01/tb_astra_c4_bias_load_dead.sv

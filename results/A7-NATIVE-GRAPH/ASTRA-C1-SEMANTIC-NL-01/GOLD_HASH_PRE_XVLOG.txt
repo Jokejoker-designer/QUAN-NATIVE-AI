@@ -1,0 +1,5 @@
+# independent gold hashed BEFORE first xvlog — do not regenerate after FAIL
+6fa2a93f15a32b2135357c8876700b89c59dcb4972936ef79f130922c593b53b  GOLDEN.json
+b0dce42f501b875a4f21418a90dc5890108eb2ba8addd3c8e910fd11a3dd6a45  query_gold.svh
+6991adc75ffc4d0c50bdf780f455bac5a8eb97ecf4e575d49f42f1716e0aa597  corpus.json
+df0e8833ff9664cd4e21a6aa6d3d223112c8d6733871d6398b133e37296e1aa4  qse_role_lexicon_semantic_16k.svh

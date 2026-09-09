@@ -1,0 +1,66 @@
+{
+  "review_id": "ADV-20260907-C1-XSIM-CLOSE",
+  "reviewer_role": "devil-advocate",
+  "intent_anchor": {
+    "user_goal": "Root-cause audit of the reasons that license closing C1, so the XSim close is honest and C2 may start without BOARD_PASS.",
+    "current_priority": "Test claim c1_close=YES_XSIM against Master §7 and raw xsim.log; do not stamp BOARD_PASS.",
+    "allowed_scope": [
+      "Independent audit tree writes under D:/FPGA/ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT",
+      "Read-only hunt of Grok clone bags, auditor reports, Master §7, LOOP_STATE, OPEN_GATES"
+    ],
+    "forbidden_scope": [
+      "BOARD_PASS / ACCEPT_BOARD",
+      "Silent C0 RTL patch or KEEP bag edits",
+      "Programming silicon / MIG DDR freeze from AXI bytes",
+      "Starting C2 RTL in this RCA turn"
+    ]
+  },
+  "claim_under_review": "c1_close=YES_XSIM and c1_800k_closed=true are licensed as Master §7 XSim law close (not BOARD).",
+  "what_i_accept": [
+    "SEMANTIC-800K-01 was already a real N=800000 XSim retrieve HIT (2045Z ACCEPT_PARTIAL).",
+    "The 20:45 Master-close REJECT was missing 65k/262k bags, 11 classes, REDUCTION_VS_N, and cap sweep — not a fill/sentinel emit bug.",
+    "N800000-SCALE-01 xsim.log this run prints 11 CLASS_* rows with rec_x1000=1000 incomp=0 and REDUCTION_VS_N_X1000=999.",
+    "Cap sweep 16/64/128/256 PASS with identical fill emit_n=3 and max TOTAL_AXI_BYTES=1632.",
+    "Scale and sweep GOLDEN.json SHA256 3b900979… MATCH each other and GOLD_HASH_PRE_XVLOG.",
+    "scale xsim SHA 92aad0c7… and sweep xsim SHA 9d95f83e… MATCH 2148Z.",
+    "Independent close-gate re-run exit 0, blocking_fail_ids=[], c1_close=YES_XSIM.",
+    "Cartesian is the existing 16k C1 index law (fill_frac=1.0); scale n=800000 is not a 16k clone banner."
+  ],
+  "what_i_challenge": [
+    "2148Z auditor ACCEPT is the same Cursor session that implemented the bags (disclosed, still a process defect vs 2045Z 'auditor does not implement').",
+    "CAND_CAP_FINAL=16 is frozen on an 800k image where high_occupancy AND emit_n=1, so the cap never binds; 16k KEEP already bound cap=16 with emit_n=16 tp=1 fp_fill0=15 prec_all_x1000=62.",
+    "65k and 262k bags are 4-class scale rungs, not the full required class set.",
+    "Master frozen 'valid-record representation coverage = 100%' is not HIT if valid-record means the 804000 cartesian cube (N_STREAM=799996, N=800000).",
+    "Wrong-context is generator keys 3380/3636 occ=1, not dual-index of the cube.",
+    "Fill host n_post=102 vs DUT postB=832; DDR_QUERY_BOUND_FINAL correctly stays NOT_FROZEN.",
+    "Master measurement list still thin: no bucket-skew histogram, no per-query latency law, descB=0."
+  ],
+  "strongest_counter_argument": "YES_XSIM can be read as a self-audit that destressed the one class (high occupancy) which previously proved CAND_CAP binds. If auditor ACCEPT requires a different model, keep the XSim facts and treat 2148Z as nominated, not countersigned. That does not license BOARD_PASS and does not require deleting the scale bags.",
+  "missing_evidence": [
+    "Second-model auditor hunt of 2148Z against the same raw xsim.log",
+    "Independent re-census of dropped cartesian SROs (2045Z 4002 vs 804000-799996=4004)",
+    "MIG R-beats×16 on the same queries",
+    "Per-query latency and bucket-skew histograms required by Master §7 measurements",
+    "Proof that key==0 is never used as implicit invalid (not hunted this RCA)"
+  ],
+  "scope_drift_risk": "Reading YES_XSIM as silicon / BOARD_PASS, freezing DDR_QUERY_BOUND_FINAL from AXI 1632, or starting C2 persist as if C1 production retrieval were board-closed.",
+  "final_verdict": "ACCEPT_WITH_BOUNDS",
+  "self_audit": {
+    "preserved_user_intent": true,
+    "did_not_invent_objection": true,
+    "evidence_based": true,
+    "no_scope_hijack": true
+  },
+  "blind_spots": [
+    "Did not re-simulate in Vivado; trusted existing xsim.log bytes after SHA match.",
+    "Did not re-count unique nids in the procedural generator this turn.",
+    "Close-gate PASS detail strings sometimes still contain the FAIL template text (script quality); verdict fields ok=true were used, not those stale sentences."
+  ],
+  "alternative_explanations": [
+    "Owner override asked to close C1; 2148Z could be compliance-to-request rather than an independent hunt. Mitigated by raw CLASS_* lines and close-gate re-run, not eliminated."
+  ],
+  "confidence_before_challenge": 0.86,
+  "confidence_penalty": 0.12,
+  "confidence_after_challenge": 0.74,
+  "next_action": "Keep YES_XSIM and BOARD REJECT. Do not reopen XSim for cartesian. C2 persist identity only if Anh asks after this RCA; PROGRAM=NO. Optional: second-model read of 2148Z."
+}

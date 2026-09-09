@@ -1,0 +1,6 @@
+{
+  "gate": "ASTRA-C1-C3-CANONICAL-IMAGE-TRANSFER-01",
+  "program": false,
+  "board_pass": false,
+  "one_unknown": "after arm-A train on the pinned 800k cartesian image, named sgd32_ckpt AXI reload restores exact 32 weights without TB w[1:31] and held-out drop stays <=5pp across 5 seeds"
+}

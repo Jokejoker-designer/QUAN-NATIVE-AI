@@ -1,0 +1,23 @@
+{
+  "gate": "ASTRA-C4-LM06-802K-GROUNDED-01",
+  "program": false,
+  "master_c4_claimed": false,
+  "board_pass": false,
+  "lm06_byte256_frozen": false,
+  "tinygpt_dut": true,
+  "compose_dut": false,
+  "n_supported": 2,
+  "supported_obj": [10, 11],
+  "checkpoint": "tests/xsim/a7lm06_wmem.hex",
+  "checkpoint_sha256": "c204e55909d99370387c479c74e28c15f285fddee20239459d7c0ec3373001e0",
+  "required_class_substrings": [
+    "CLASS_tinygpt803k_dut",
+    "CLASS_not_compose_renderer",
+    "CLASS_path_evid_lm_feedback_eos",
+    "CLASS_host_next_token_zero",
+    "CLASS_eos_or_max",
+    "CLASS_acc_reported"
+  ],
+  "marker": "ASTRA_C4_LM06_802K_GROUNDED_XSIM_PASS",
+  "note": "GOLDEN lists path identities, not post-hoc 90% Master close. Frozen LM-06 checkpoint is not an Astra grounded-language train. Do not regenerate after xvlog."
+}

@@ -1,0 +1,15 @@
+{
+  "review_mode": "STATIC_RTL_AND_ARTIFACT_REVIEW_NO_NEW_XSIM",
+  "keep_count": 18,
+  "keep_mismatch": 0,
+  "source_drift": [
+    "docs/ASTRA/LOOP_STATE.json"
+  ],
+  "c4_vocab": 64,
+  "c4_bias_guard_limit": 0,
+  "c4_bias_indices_accepted": 0,
+  "sim_uart_clocks_per_bit": 10,
+  "bit_sha": "EDDA8575F3130B6F645AF223C5D9000539A1A80DB23731BB18F7A280AD06C0BA",
+  "program_performed": false,
+  "rtl_modified": false
+}

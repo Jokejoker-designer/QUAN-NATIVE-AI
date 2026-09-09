@@ -1,0 +1,20 @@
+# SHA freeze BEFORE vivado 2026-09-08T02:55:49.9317520+07:00
+# PROGRAM=NO BOARD_PASS=NOT_CLAIMED C6_MASTER=OPEN DDR_QUERY_BOUND_FINAL=NOT_FROZEN
+# LAW=in-context route of C5 prod_top + official MIG; A09 is not this top
+09334e42c3913d4de3a1b59147f48c810481cd634e63b37e64bc669a6c36bb24  rtl/native_graph/memory/a7ng_sparse_dir_axi.sv
+381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c  rtl/native_graph/query/qse_role_lexicon.svh
+86a7a0695712d9aa818bf95aac30b83289fb9af80ddd0bdc2455e935a14d8764  rtl/native_graph/integrate/a7ng_astra_c2_persist_commit.sv
+a84bbf7e9a2c0b9e3753b3cb2e1ae734c2afde59267d733aa0e52108e47d8ec8  rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect_synonym.sv
+cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27  rtl/native_graph/query/a7ng_query_role_extract.sv
+5a4ad04d498c588b4447431c290a862252abfbecdef8e934ed4215b9b9c5c0fa  rtl/native_graph/integrate/a7ng_query_axi_sparse.sv
+49a66da21dc075d1487c320d399643ff94e87b02af13f3d6f36d346a1be3a385  rtl/native_graph/query/a7ng_route_valid_gate.sv
+e862208ce34d8835c34fef1b2f2e4d32a91938a26cf22bc3854593ff852ea922  rtl/native_graph/query/a7ng_query_role_relctx_synonym.sv
+# SCRIPTS
+964f9b821b89a858978c3507bbdc51414514868613814f61f15bb6ffc2f05ad6  results/A7-NATIVE-GRAPH/ASTRA-C6-WHOLECHIP-COFIT-01/run_impl.tcl
+5f20c4d0f3572ae6df695e6c89d62d00f5461f17bb13a1551d48cd59bc7e9e9a  results/A7-NATIVE-GRAPH/ASTRA-C6-WHOLECHIP-COFIT-01/GOLDEN.json
+ae02fb1c78e2b19498ba2cdad0fbfe54ee12afa096ab9813fbd784a40b6f8efe  results/A7-NATIVE-GRAPH/ASTRA-C6-WHOLECHIP-COFIT-01/PREREG.md
+af1147fa604001d6d0e9ec32de075512843167266b1d2e08d9890f2c4e2b767a  results/A7-NATIVE-GRAPH/ASTRA-C6-WHOLECHIP-COFIT-01/ACK.json
+9472932022c5d296684d494796f4c5555c5dbe505a1c3387c0e7852ed9c3df71  results/A7-NATIVE-GRAPH/ASTRA-C6-WHOLECHIP-COFIT-01/run_impl.ps1
+0b597f9d87591636177078b88720558947e70f755a32df4095a1a30e86015d90  rtl/native_graph/integrate/a7ng_astra_c6_wholechip.sv
+d50a2f4d05d9ec3a6d2ca04cb04ec4d93a06b5c39b2bffbcc5e94510adba5fb5  results/A7-NATIVE-GRAPH/ASTRA-C6-WHOLECHIP-COFIT-01/c6_wholechip.xdc
+97c078b18015e0c6a47ca4d41b659e483f2e983d37f8bb6e579efa4d19e523b5  rtl/ddr/mig_native_wrap.sv

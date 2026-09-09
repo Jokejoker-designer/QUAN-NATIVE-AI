@@ -1,0 +1,20 @@
+{
+  "gate": "ASTRA-11-A09R8-UART-FREEZE-BIT-01",
+  "top": "a7ng_astra_11_a09r8_uart_freeze_wrap",
+  "wns_ns": 0.587,
+  "tns_ns": 0.0,
+  "whs_ns": 0.058,
+  "ths_ns": 0.0,
+  "uart_in_hold_ns": 1.150,
+  "uart_out_hold_ns": 4.064,
+  "hold_policy": "RELATED_CHECK_NO_FALSE_PATH_HOLD",
+  "uart_iobff": false,
+  "lut": 4946,
+  "ff": 3615,
+  "bram_tile": 0,
+  "dsp": 2,
+  "bit": "UNPROGRAMMED",
+  "bit_sha256": "e51bdca253a7179aa1037695918d0069c43770581a3152665fb8a2739ed461bb",
+  "program": false,
+  "production_top": "UNKNOWN"
+}

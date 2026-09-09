@@ -1,0 +1,6 @@
+5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1
+grok-orch/astra-native-v1-00
+U5-MEM02: bounded AXI traffic vs N; sentinel 799999. No 800k fill.
+HANDOFF_BASE_MATCH=YES
+PRODUCTION_TOP=UNKNOWN
+PROGRAM=NO

@@ -1,0 +1,32 @@
+{
+  "task_id": "ASTRA-12-PREPROGRAM-PACK-01",
+  "verdict_proposed": "PASS_NARROW",
+  "production_top": "UNKNOWN",
+  "a09_wrap_wns_routed_ns": 1.041,
+  "a09_wrap_tns_ns": 0.0,
+  "a09_wrap_whs_ns": 0.16,
+  "a09_xsim_marker": "ASTRA_09_INTEGRATED_PATH_XSIM_PASS",
+  "a06_r4_xsim_marker": "ASTRA_06_R4_SESS_REUSE_XSIM_PASS",
+  "a10_util_synth": {"lut": 5178, "ff": 4155, "bram": 0, "dsp": 2, "design_state": "Synthesized"},
+  "bit": "NOT_BUILT",
+  "program": false,
+  "write_bitstream": false,
+  "board_pass": false,
+  "astra13": "BLOCKED",
+  "accept_board": false,
+  "com12": "UNTOUCHED",
+  "jtag": "UNTOUCHED",
+  "open": [
+    "production_top_identity",
+    "Master_ASTRA-09",
+    "Master_ASTRA-11_FULLCHIP_COFIT",
+    "Master_ASTRA-06",
+    "Master_F3_10pp_CI",
+    "LM06_NOT_INTEGRATED",
+    "BOARD_PASS",
+    "ASTRA-13",
+    "UART_on_frozen_production_top",
+    "bitstream_SHA_of_frozen_production_top",
+    "auditor_ACCEPT_BOARD"
+  ]
+}

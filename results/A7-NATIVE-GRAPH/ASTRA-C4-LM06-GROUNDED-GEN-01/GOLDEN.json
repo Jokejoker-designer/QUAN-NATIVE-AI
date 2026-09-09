@@ -1,0 +1,23 @@
+{
+  "gate": "ASTRA-C4-LM06-GROUNDED-GEN-01",
+  "program": false,
+  "master_c4_claimed": false,
+  "board_pass": false,
+  "lm06_byte256_frozen": false,
+  "n_supported": 8,
+  "n_unsupported": 2,
+  "supported_obj": [10, 11, 12, 13, 14, 15, 16, 17],
+  "required_class_substrings": [
+    "CLASS_path_evid_lm_feedback_eos",
+    "CLASS_host_next_token_zero",
+    "CLASS_w_normal_grounded",
+    "CLASS_w_zero_safe",
+    "CLASS_w_corrupt_not_gold",
+    "CLASS_evid_removed_safe",
+    "CLASS_evid_replaced_changes",
+    "CLASS_eos_or_max",
+    "CLASS_not_compose_renderer"
+  ],
+  "marker": "ASTRA_C4_LM06_GROUNDED_GEN_XSIM_PASS",
+  "note": "GOLDEN lists identities and required CLASS strings, not post-hoc 90% Master close. Compact linear head, not 802k. Do not regenerate after xvlog."
+}

@@ -1,0 +1,43 @@
+{
+  "c4_master": "OPEN",
+  "LM06_BYTE256": "NOT_FROZEN",
+  "tinygpt_802k": "RETIRED_AS_CANDIDATE",
+  "wo0550": "PROPOSAL_NOT_EXECUTABLE",
+  "falsifiers": ["ASTRA-C4-BIAS-LOAD-DEAD-01"],
+  "rivals": ["compact_recurrent_byte256", "reduced_lm06_compatible"],
+  "selected": "NONE_LANGUAGE_MISS",
+  "measured_bags": [
+    "ASTRA-C4-COND-RNN-BYTE256-01",
+    "ASTRA-C4-LM06-RED-BYTE256-01",
+    "ASTRA-C4-COND-RNN-LANG-01",
+    "ASTRA-C4-COND-RNN-H16-01",
+    "ASTRA-C4-LM06-RED-LANG-01",
+    "ASTRA-C4-LM06-RED-BPTT-01",
+    "ASTRA-C4-SLOT-COPY-CAPACITY-01",
+    "ASTRA-C4-LM06-RED-COPYCORPUS-01",
+    "ASTRA-C4-COND-RNN-ONLINE-01",
+    "ASTRA-C4-LM06-RED-FLOATTFM-01"
+  ],
+  "language_90_95_5": "MISS",
+  "held_grounded": "0/20",
+  "held_safe_evid0": "20/20",
+  "held_hall_unrel": "MISS",
+  "probes": {
+    "elman_h8_lang": {"held_g": 0.0, "xsim": true, "note": "aaaaaa/oooooo"},
+    "elman_h16_ste": {"params": 5712, "held_g": 0.0, "xsim": false},
+    "elman_h32_ste": {"params": 10656, "train_g_peak": 0.25, "held_g": 0.0, "xsim": false},
+    "elman_h32_online": {"params": 10656, "tf_peak": 0.33, "held_g": 0.0, "xsim": false},
+    "elman_h32_online_long": {"epochs": "80x256", "tf_max": 0.25, "held_g": 0.0, "xsim": false},
+    "red_d4_lang": {"params": 1392, "held_g": 0.0, "xsim": false},
+    "red_bptt_d4": {"held_g": 0.0, "xsim": false},
+    "red_bptt_d16_pe": {"params": 6528, "tf_train": 0.83, "held_g": 0.0, "xsim": false},
+    "red_copycorpus": {"held_g": 0.0, "xsim": false},
+    "red_float_d32_softmax": {"held_float_peak": 0.60, "held_float_ok": 12, "held_f": 12, "held_r": 0, "held_int": 0.0, "xsim": false, "snap": "snap_pcg_fprotect.npz", "note": "shared-attn one ckpt cannot hold F+R; F-slot 12/12; R-only specialist 8/8 separate ckpt"},
+    "red_float_gated_dual_attn": {"held_float_copy": 1.0, "held_f": 12, "held_r": 8, "unrel_float": 0.0, "hall_float": 1.0, "held_int": 0.0, "xsim": false, "snap": "snap_gated_b.npz", "note": "opcode-gated Wq/Wk/Wv shared We/FFN jointly trained; not two-ckpt mux; copy 20/20 float; refuse vs copy still MISS 90/95/5"},
+    "red_float_refuse_glue_ceiling": {"numeric_90_95_5": true, "glue": true, "letter_hit": false, "c4_master": false, "note": "byte-compare F dst slots then emit no; not an LM"}
+  },
+  "byte256_core": "argmax_over_4_cand_scores_not_an_lm",
+  "third_architecture": false,
+  "program": false,
+  "note": "Both declared rivals miss entity-disjoint 90/95/5. Float D=32 opcode-gated dual attn copies 20/20 but unrelated hall 12/12 and int8 0/20. C4_MASTER stays OPEN. LM06 remains on the master claim. No WO0550. No BOARD_PASS."
+}

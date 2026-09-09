@@ -1,0 +1,74 @@
+{
+  "rtl/native_graph/query/a7ng_query_role_extract.sv": {
+    "present": true,
+    "sha256": "cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27",
+    "mtime": 1788612498.679366,
+    "size": 9541
+  },
+  "rtl/native_graph/query/qse_role_lexicon.svh": {
+    "present": true,
+    "sha256": "381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c",
+    "mtime": 1788616263.617126,
+    "size": 3003
+  },
+  "rtl/native_graph/query/qse_relctx_synonym_01.svh": {
+    "present": true,
+    "sha256": "551655a1cda97463841a681e34f8073e22b1b2c1beb2ae03847bdc9a5bb41dfd",
+    "mtime": 1788784922.3558,
+    "size": 724
+  },
+  "rtl/native_graph/query/a7ng_query_role_relctx_synonym.sv": {
+    "present": true,
+    "sha256": "e862208ce34d8835c34fef1b2f2e4d32a91938a26cf22bc3854593ff852ea922",
+    "mtime": 1788784922.3558,
+    "size": 1268
+  },
+  "rtl/native_graph/query/a7ng_query_role_keys_ctx.sv": {
+    "present": true,
+    "sha256": "124be80804b38a1e1a924924091b751a4d13d85e28241695eda00ca5ded500d1",
+    "mtime": 1788764587.4102726,
+    "size": 2197
+  },
+  "rtl/native_graph/query/a7ng_route_valid_gate.sv": {
+    "present": true,
+    "sha256": "49a66da21dc075d1487c320d399643ff94e87b02af13f3d6f36d346a1be3a385",
+    "mtime": 1788609502.4564173,
+    "size": 1393
+  },
+  "rtl/native_graph/memory/a7ng_sparse_dir_axi.sv": {
+    "present": true,
+    "sha256": "09334e42c3913d4de3a1b59147f48c810481cd634e63b37e64bc669a6c36bb24",
+    "mtime": 1788611463.6344848,
+    "size": 11052
+  },
+  "rtl/native_graph/integrate/a7ng_query_axi_sparse.sv": {
+    "present": true,
+    "sha256": "5a4ad04d498c588b4447431c290a862252abfbecdef8e934ed4215b9b9c5c0fa",
+    "mtime": 1788617658.8887732,
+    "size": 10428
+  },
+  "rtl/native_graph/integrate/a7ng_query_axi_sparse_stream_intersect.sv": {
+    "present": true,
+    "sha256": "14f75db787dee2405dc917604e54b4ab0dbea5cb327d4c4485f5be5cd874f0ac",
+    "mtime": 1788756219.0872562,
+    "size": 21821
+  },
+  "rtl/native_graph/integrate/a7ng_query_axi_sparse_page_skip.sv": {
+    "present": true,
+    "sha256": "dab15d76da42b33a934d8c68c1108665a79b8544d44b4986b840972841135817",
+    "mtime": 1788762689.466215,
+    "size": 28043
+  },
+  "rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect_context.sv": {
+    "present": true,
+    "sha256": "8255a7988b902c4fd6d76679cc42ef0726d50099961f7c211010ace54a24d989",
+    "mtime": 1788764604.5442715,
+    "size": 21866
+  },
+  "rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect_synonym.sv": {
+    "present": true,
+    "sha256": "a84bbf7e9a2c0b9e3753b3cb2e1ae734c2afde59267d733aa0e52108e47d8ec8",
+    "mtime": 1788784922.3640096,
+    "size": 22268
+  }
+}

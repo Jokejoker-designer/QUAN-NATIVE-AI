@@ -1,0 +1,18 @@
+# CLASS extract from raw vivado.log / ROUTE_LETTERS.txt — ASTRA-C6-WHOLECHIP-COFIT-02 r2
+# Not GOLDEN. Do not regenerate GOLDEN. PROGRAM=NO.
+CLASS_cdc_reviewed HIT
+CLASS_c5_prod_inst HIT
+CLASS_mig_user_design HIT
+CLASS_no_a09_top HIT
+CLASS_no_program_hw HIT
+C6WC_WNS=0.150 TNS=0.000 WHS=0.012 THS=0.000
+CLASS_device_fit HIT
+CLASS_wns_ge0 HIT
+CLASS_tns_0 HIT
+CLASS_whs_ge0 HIT
+CLASS_ths_0 HIT
+CLASS_unrouted_0 HIT
+CLASS_drc_clean HIT
+C6WC_BIT_WRITTEN a7ng_astra_c6_wholechip.bit
+ASTRA_C6_WHOLECHIP_COFIT_02_PASS
+C6_MASTER=OPEN BOARD_PASS=REJECT PROGRAM=NO

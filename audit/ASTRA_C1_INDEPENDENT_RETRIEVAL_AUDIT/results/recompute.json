@@ -1,0 +1,1154 @@
+{
+  "cand_cap": 16,
+  "index_head": 4,
+  "note": "model_bytes assumes full posting R-beats are drained (RTL S_DRAIN). Host/TB bytes = (n_dir+n_post)*16 AR-count.",
+  "n256": {
+    "label": "ASTRA-C1-KEY-INTERSECT-01",
+    "present": true,
+    "n": 256,
+    "n_records": 256,
+    "n_subj_ids": 12,
+    "max_subj_id": 12,
+    "n_rel_ids": 3,
+    "overflow_buckets": 90,
+    "queries": [
+      {
+        "name": "direct",
+        "occupancies": [
+          6,
+          9
+        ],
+        "gold": [
+          110,
+          144,
+          145
+        ],
+        "gold_index_in_p0": [
+          2,
+          4,
+          5
+        ],
+        "gold_index_in_p1": [
+          1,
+          4,
+          5
+        ],
+        "gold_in_full_and": [
+          true,
+          true,
+          true
+        ],
+        "gold_in_cap_then_and": [
+          true,
+          true,
+          true
+        ],
+        "gold_in_and_then_cap": [
+          true,
+          true,
+          true
+        ],
+        "n_full_and": 3,
+        "n_cap_then_and": 3,
+        "n_and_then_cap": 3,
+        "cap_then_and_equals_and_then_cap": true,
+        "emit_golden": [
+          110,
+          144,
+          145
+        ],
+        "n_trunc_golden": 0,
+        "reported_n_dir": 2,
+        "reported_n_post": 4,
+        "reported_bytes": 96,
+        "model_r_beats": 7,
+        "model_bytes": 112,
+        "undercount_x": 1.167,
+        "bucket12_k0": 2561,
+        "bucket12_k1": 257,
+        "full16_k0": 2561,
+        "full16_k1": 257,
+        "bucket_drops_high_nibble": false
+      },
+      {
+        "name": "paraphrase",
+        "occupancies": [
+          6,
+          9
+        ],
+        "gold": [
+          110,
+          144,
+          145
+        ],
+        "gold_index_in_p0": [
+          2,
+          4,
+          5
+        ],
+        "gold_index_in_p1": [
+          1,
+          4,
+          5
+        ],
+        "gold_in_full_and": [
+          true,
+          true,
+          true
+        ],
+        "gold_in_cap_then_and": [
+          true,
+          true,
+          true
+        ],
+        "gold_in_and_then_cap": [
+          true,
+          true,
+          true
+        ],
+        "n_full_and": 3,
+        "n_cap_then_and": 3,
+        "n_and_then_cap": 3,
+        "cap_then_and_equals_and_then_cap": true,
+        "emit_golden": [
+          110,
+          144,
+          145
+        ],
+        "n_trunc_golden": 0,
+        "reported_n_dir": 2,
+        "reported_n_post": 4,
+        "reported_bytes": 96,
+        "model_r_beats": 7,
+        "model_bytes": 112,
+        "undercount_x": 1.167,
+        "bucket12_k0": 2561,
+        "bucket12_k1": 257,
+        "full16_k0": 2561,
+        "full16_k1": 257,
+        "bucket_drops_high_nibble": false
+      },
+      {
+        "name": "role_reversal",
+        "occupancies": [
+          11,
+          8
+        ],
+        "gold": [
+          146
+        ],
+        "gold_index_in_p0": [
+          4
+        ],
+        "gold_index_in_p1": [
+          4
+        ],
+        "gold_in_full_and": [
+          true
+        ],
+        "gold_in_cap_then_and": [
+          true
+        ],
+        "gold_in_and_then_cap": [
+          true
+        ],
+        "n_full_and": 1,
+        "n_cap_then_and": 1,
+        "n_and_then_cap": 1,
+        "cap_then_and_equals_and_then_cap": true,
+        "emit_golden": [
+          146
+        ],
+        "n_trunc_golden": 0,
+        "reported_n_dir": 2,
+        "reported_n_post": 4,
+        "reported_bytes": 96,
+        "model_r_beats": 7,
+        "model_bytes": 112,
+        "undercount_x": 1.167,
+        "bucket12_k0": 257,
+        "bucket12_k1": 2561,
+        "full16_k0": 257,
+        "full16_k1": 2561,
+        "bucket_drops_high_nibble": false
+      },
+      {
+        "name": "wrong_relation",
+        "occupancies": [
+          4,
+          28
+        ],
+        "gold": [
+          114
+        ],
+        "gold_index_in_p0": [
+          2
+        ],
+        "gold_index_in_p1": [
+          1
+        ],
+        "gold_in_full_and": [
+          true
+        ],
+        "gold_in_cap_then_and": [
+          true
+        ],
+        "gold_in_and_then_cap": [
+          true
+        ],
+        "n_full_and": 1,
+        "n_cap_then_and": 1,
+        "n_and_then_cap": 1,
+        "cap_then_and_equals_and_then_cap": true,
+        "emit_golden": [
+          114
+        ],
+        "n_trunc_golden": 12,
+        "reported_n_dir": 2,
+        "reported_n_post": 3,
+        "reported_bytes": 80,
+        "model_r_beats": 10,
+        "model_bytes": 160,
+        "undercount_x": 2.0,
+        "bucket12_k0": 2562,
+        "bucket12_k1": 258,
+        "full16_k0": 2562,
+        "full16_k1": 258,
+        "bucket_drops_high_nibble": false
+      },
+      {
+        "name": "wrong_context",
+        "occupancies": [
+          6,
+          9
+        ],
+        "gold": [
+          144
+        ],
+        "gold_index_in_p0": [
+          4
+        ],
+        "gold_index_in_p1": [
+          4
+        ],
+        "gold_in_full_and": [
+          true
+        ],
+        "gold_in_cap_then_and": [
+          true
+        ],
+        "gold_in_and_then_cap": [
+          true
+        ],
+        "n_full_and": 3,
+        "n_cap_then_and": 3,
+        "n_and_then_cap": 3,
+        "cap_then_and_equals_and_then_cap": true,
+        "emit_golden": [
+          110,
+          144,
+          145
+        ],
+        "n_trunc_golden": 0,
+        "reported_n_dir": 2,
+        "reported_n_post": 4,
+        "reported_bytes": 96,
+        "model_r_beats": 7,
+        "model_bytes": 112,
+        "undercount_x": 1.167,
+        "bucket12_k0": 2561,
+        "bucket12_k1": 257,
+        "full16_k0": 2561,
+        "full16_k1": 257,
+        "bucket_drops_high_nibble": false
+      },
+      {
+        "name": "distractor",
+        "occupancies": [
+          6,
+          9
+        ],
+        "gold": [
+          99,
+          108,
+          109,
+          111,
+          114,
+          118,
+          121,
+          132,
+          193,
+          214,
+          235
+        ],
+        "gold_index_in_p0": [
+          null,
+          0,
+          1,
+          3,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ],
+        "gold_index_in_p1": [
+          0,
+          null,
+          null,
+          null,
+          null,
+          null,
+          2,
+          3,
+          6,
+          7,
+          8
+        ],
+        "gold_in_full_and": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "gold_in_cap_then_and": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "gold_in_and_then_cap": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "n_full_and": 3,
+        "n_cap_then_and": 3,
+        "n_and_then_cap": 3,
+        "cap_then_and_equals_and_then_cap": true,
+        "emit_golden": [
+          110,
+          144,
+          145
+        ],
+        "n_trunc_golden": 0,
+        "reported_n_dir": 2,
+        "reported_n_post": 4,
+        "reported_bytes": 96,
+        "model_r_beats": 7,
+        "model_bytes": 112,
+        "undercount_x": 1.167,
+        "bucket12_k0": 2561,
+        "bucket12_k1": 257,
+        "full16_k0": 2561,
+        "full16_k1": 257,
+        "bucket_drops_high_nibble": false
+      },
+      {
+        "name": "unrelated",
+        "occupancies": [
+          0,
+          0
+        ],
+        "gold": [],
+        "gold_index_in_p0": [],
+        "gold_index_in_p1": [],
+        "gold_in_full_and": [],
+        "gold_in_cap_then_and": [],
+        "gold_in_and_then_cap": [],
+        "n_full_and": 0,
+        "n_cap_then_and": 0,
+        "n_and_then_cap": 0,
+        "cap_then_and_equals_and_then_cap": true,
+        "emit_golden": [],
+        "n_trunc_golden": 0,
+        "reported_n_dir": 0,
+        "reported_n_post": 0,
+        "reported_bytes": 0,
+        "model_r_beats": 0,
+        "model_bytes": 0,
+        "undercount_x": null,
+        "bucket12_k0": 0,
+        "bucket12_k1": 0,
+        "full16_k0": 0,
+        "full16_k1": 0,
+        "bucket_drops_high_nibble": false
+      },
+      {
+        "name": "high_occupancy",
+        "occupancies": [
+          25,
+          28
+        ],
+        "gold": [
+          147
+        ],
+        "gold_index_in_p0": [
+          4
+        ],
+        "gold_index_in_p1": [
+          4
+        ],
+        "gold_in_full_and": [
+          true
+        ],
+        "gold_in_cap_then_and": [
+          true
+        ],
+        "gold_in_and_then_cap": [
+          true
+        ],
+        "n_full_and": 21,
+        "n_cap_then_and": 12,
+        "n_and_then_cap": 16,
+        "cap_then_and_equals_and_then_cap": false,
+        "emit_golden": [
+          147,
+          148,
+          149,
+          150,
+          151,
+          152,
+          153,
+          154,
+          155,
+          156,
+          157,
+          158
+        ],
+        "n_trunc_golden": 21,
+        "reported_n_dir": 2,
+        "reported_n_post": 4,
+        "reported_bytes": 96,
+        "model_r_beats": 16,
+        "model_bytes": 256,
+        "undercount_x": 2.667,
+        "bucket12_k0": 1538,
+        "bucket12_k1": 258,
+        "full16_k0": 1538,
+        "full16_k1": 258,
+        "bucket_drops_high_nibble": false
+      },
+      {
+        "name": "overflow_page",
+        "occupancies": [
+          10,
+          12
+        ],
+        "gold": [
+          172
+        ],
+        "gold_index_in_p0": [
+          8
+        ],
+        "gold_index_in_p1": [
+          8
+        ],
+        "gold_in_full_and": [
+          true
+        ],
+        "gold_in_cap_then_and": [
+          true
+        ],
+        "gold_in_and_then_cap": [
+          true
+        ],
+        "n_full_and": 5,
+        "n_cap_then_and": 5,
+        "n_and_then_cap": 5,
+        "cap_then_and_equals_and_then_cap": true,
+        "emit_golden": [
+          168,
+          169,
+          170,
+          171,
+          172
+        ],
+        "n_trunc_golden": 0,
+        "reported_n_dir": 2,
+        "reported_n_post": 4,
+        "reported_bytes": 96,
+        "model_r_beats": 8,
+        "model_bytes": 128,
+        "undercount_x": 1.333,
+        "bucket12_k0": 3075,
+        "bucket12_k1": 2051,
+        "full16_k0": 3075,
+        "full16_k1": 2051,
+        "bucket_drops_high_nibble": false
+      },
+      {
+        "name": "high_id_sentinel",
+        "occupancies": [
+          10,
+          9
+        ],
+        "gold": [
+          255
+        ],
+        "gold_index_in_p0": [
+          9
+        ],
+        "gold_index_in_p1": [
+          8
+        ],
+        "gold_in_full_and": [
+          true
+        ],
+        "gold_in_cap_then_and": [
+          true
+        ],
+        "gold_in_and_then_cap": [
+          true
+        ],
+        "n_full_and": 1,
+        "n_cap_then_and": 1,
+        "n_and_then_cap": 1,
+        "cap_then_and_equals_and_then_cap": true,
+        "emit_golden": [
+          255
+        ],
+        "n_trunc_golden": 0,
+        "reported_n_dir": 2,
+        "reported_n_post": 4,
+        "reported_bytes": 96,
+        "model_r_beats": 8,
+        "model_bytes": 128,
+        "undercount_x": 1.333,
+        "bucket12_k0": 3075,
+        "bucket12_k1": 2307,
+        "full16_k0": 3075,
+        "full16_k1": 2307,
+        "bucket_drops_high_nibble": false
+      }
+    ]
+  },
+  "n4096": {
+    "label": "ASTRA-C1-N4096-INTERSECT-01",
+    "present": true,
+    "n": 4096,
+    "n_records": 4096,
+    "n_subj_ids": 12,
+    "max_subj_id": 12,
+    "n_rel_ids": 3,
+    "overflow_buckets": 144,
+    "queries": [
+      {
+        "name": "direct",
+        "occupancies": [
+          13,
+          13
+        ],
+        "gold": [
+          296,
+          393,
+          394
+        ],
+        "gold_index_in_p0": [
+          0,
+          11,
+          12
+        ],
+        "gold_index_in_p1": [
+          8,
+          11,
+          12
+        ],
+        "gold_in_full_and": [
+          true,
+          true,
+          true
+        ],
+        "gold_in_cap_then_and": [
+          true,
+          true,
+          true
+        ],
+        "gold_in_and_then_cap": [
+          true,
+          true,
+          true
+        ],
+        "n_full_and": 3,
+        "n_cap_then_and": 3,
+        "n_and_then_cap": 3,
+        "cap_then_and_equals_and_then_cap": true,
+        "emit_golden": [
+          296,
+          393,
+          394
+        ],
+        "n_trunc_golden": 0,
+        "reported_n_dir": 2,
+        "reported_n_post": 4,
+        "reported_bytes": 96,
+        "model_r_beats": 10,
+        "model_bytes": 160,
+        "undercount_x": 1.667,
+        "bucket12_k0": 2561,
+        "bucket12_k1": 257,
+        "full16_k0": 2561,
+        "full16_k1": 257,
+        "bucket_drops_high_nibble": false
+      },
+      {
+        "name": "paraphrase",
+        "occupancies": [
+          13,
+          13
+        ],
+        "gold": [
+          296,
+          393,
+          394
+        ],
+        "gold_index_in_p0": [
+          0,
+          11,
+          12
+        ],
+        "gold_index_in_p1": [
+          8,
+          11,
+          12
+        ],
+        "gold_in_full_and": [
+          true,
+          true,
+          true
+        ],
+        "gold_in_cap_then_and": [
+          true,
+          true,
+          true
+        ],
+        "gold_in_and_then_cap": [
+          true,
+          true,
+          true
+        ],
+        "n_full_and": 3,
+        "n_cap_then_and": 3,
+        "n_and_then_cap": 3,
+        "cap_then_and_equals_and_then_cap": true,
+        "emit_golden": [
+          296,
+          393,
+          394
+        ],
+        "n_trunc_golden": 0,
+        "reported_n_dir": 2,
+        "reported_n_post": 4,
+        "reported_bytes": 96,
+        "model_r_beats": 10,
+        "model_bytes": 160,
+        "undercount_x": 1.667,
+        "bucket12_k0": 2561,
+        "bucket12_k1": 257,
+        "full16_k0": 2561,
+        "full16_k1": 257,
+        "bucket_drops_high_nibble": false
+      },
+      {
+        "name": "role_reversal",
+        "occupancies": [
+          121,
+          119
+        ],
+        "gold": [
+          8
+        ],
+        "gold_index_in_p0": [
+          8
+        ],
+        "gold_index_in_p1": [
+          0
+        ],
+        "gold_in_full_and": [
+          true
+        ],
+        "gold_in_cap_then_and": [
+          true
+        ],
+        "gold_in_and_then_cap": [
+          true
+        ],
+        "n_full_and": 11,
+        "n_cap_then_and": 1,
+        "n_and_then_cap": 11,
+        "cap_then_and_equals_and_then_cap": false,
+        "emit_golden": [
+          8
+        ],
+        "n_trunc_golden": 208,
+        "reported_n_dir": 2,
+        "reported_n_post": 4,
+        "reported_bytes": 96,
+        "model_r_beats": 63,
+        "model_bytes": 1008,
+        "undercount_x": 10.5,
+        "bucket12_k0": 257,
+        "bucket12_k1": 2561,
+        "full16_k0": 257,
+        "full16_k1": 2561,
+        "bucket_drops_high_nibble": false
+      },
+      {
+        "name": "wrong_relation",
+        "occupancies": [
+          111,
+          147
+        ],
+        "gold": [
+          307
+        ],
+        "gold_index_in_p0": [
+          0
+        ],
+        "gold_index_in_p1": [
+          7
+        ],
+        "gold_in_full_and": [
+          true
+        ],
+        "gold_in_cap_then_and": [
+          true
+        ],
+        "gold_in_and_then_cap": [
+          true
+        ],
+        "n_full_and": 1,
+        "n_cap_then_and": 1,
+        "n_and_then_cap": 1,
+        "cap_then_and_equals_and_then_cap": true,
+        "emit_golden": [
+          307
+        ],
+        "n_trunc_golden": 226,
+        "reported_n_dir": 2,
+        "reported_n_post": 4,
+        "reported_bytes": 96,
+        "model_r_beats": 67,
+        "model_bytes": 1072,
+        "undercount_x": 11.167,
+        "bucket12_k0": 2562,
+        "bucket12_k1": 258,
+        "full16_k0": 2562,
+        "full16_k1": 258,
+        "bucket_drops_high_nibble": false
+      },
+      {
+        "name": "wrong_context",
+        "occupancies": [
+          13,
+          13
+        ],
+        "gold": [
+          393
+        ],
+        "gold_index_in_p0": [
+          11
+        ],
+        "gold_index_in_p1": [
+          11
+        ],
+        "gold_in_full_and": [
+          true
+        ],
+        "gold_in_cap_then_and": [
+          true
+        ],
+        "gold_in_and_then_cap": [
+          true
+        ],
+        "n_full_and": 3,
+        "n_cap_then_and": 3,
+        "n_and_then_cap": 3,
+        "cap_then_and_equals_and_then_cap": true,
+        "emit_golden": [
+          296,
+          393,
+          394
+        ],
+        "n_trunc_golden": 0,
+        "reported_n_dir": 2,
+        "reported_n_post": 4,
+        "reported_bytes": 96,
+        "model_r_beats": 10,
+        "model_bytes": 160,
+        "undercount_x": 1.667,
+        "bucket12_k0": 2561,
+        "bucket12_k1": 257,
+        "full16_k0": 2561,
+        "full16_k1": 257,
+        "bucket_drops_high_nibble": false
+      },
+      {
+        "name": "distractor",
+        "occupancies": [
+          13,
+          13
+        ],
+        "gold": [
+          33,
+          66,
+          99,
+          132,
+          165,
+          197,
+          230,
+          263,
+          297,
+          298,
+          299,
+          300,
+          301,
+          302,
+          303,
+          304,
+          305,
+          306,
+          307,
+          318,
+          329,
+          362
+        ],
+        "gold_index_in_p0": [
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          null,
+          null,
+          null,
+          null
+        ],
+        "gold_index_in_p1": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          9,
+          10
+        ],
+        "gold_in_full_and": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "gold_in_cap_then_and": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "gold_in_and_then_cap": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ],
+        "n_full_and": 3,
+        "n_cap_then_and": 3,
+        "n_and_then_cap": 3,
+        "cap_then_and_equals_and_then_cap": true,
+        "emit_golden": [
+          296,
+          393,
+          394
+        ],
+        "n_trunc_golden": 0,
+        "reported_n_dir": 2,
+        "reported_n_post": 4,
+        "reported_bytes": 96,
+        "model_r_beats": 10,
+        "model_bytes": 160,
+        "undercount_x": 1.667,
+        "bucket12_k0": 2561,
+        "bucket12_k1": 257,
+        "full16_k0": 2561,
+        "full16_k1": 257,
+        "bucket_drops_high_nibble": false
+      },
+      {
+        "name": "unrelated",
+        "occupancies": [
+          0,
+          0
+        ],
+        "gold": [],
+        "gold_index_in_p0": [],
+        "gold_index_in_p1": [],
+        "gold_in_full_and": [],
+        "gold_in_cap_then_and": [],
+        "gold_in_and_then_cap": [],
+        "n_full_and": 0,
+        "n_cap_then_and": 0,
+        "n_and_then_cap": 0,
+        "cap_then_and_equals_and_then_cap": true,
+        "emit_golden": [],
+        "n_trunc_golden": 0,
+        "reported_n_dir": 0,
+        "reported_n_post": 0,
+        "reported_bytes": 0,
+        "model_r_beats": 0,
+        "model_bytes": 0,
+        "undercount_x": null,
+        "bucket12_k0": 0,
+        "bucket12_k1": 0,
+        "full16_k0": 0,
+        "full16_k1": 0,
+        "bucket_drops_high_nibble": false
+      },
+      {
+        "name": "high_occupancy",
+        "occupancies": [
+          159,
+          147
+        ],
+        "gold": [
+          395
+        ],
+        "gold_index_in_p0": [
+          10
+        ],
+        "gold_index_in_p1": [
+          10
+        ],
+        "gold_in_full_and": [
+          true
+        ],
+        "gold_in_cap_then_and": [
+          true
+        ],
+        "gold_in_and_then_cap": [
+          true
+        ],
+        "n_full_and": 49,
+        "n_cap_then_and": 6,
+        "n_and_then_cap": 16,
+        "cap_then_and_equals_and_then_cap": false,
+        "emit_golden": [
+          395,
+          396,
+          397,
+          398,
+          399,
+          400
+        ],
+        "n_trunc_golden": 274,
+        "reported_n_dir": 2,
+        "reported_n_post": 4,
+        "reported_bytes": 96,
+        "model_r_beats": 79,
+        "model_bytes": 1264,
+        "undercount_x": 13.167,
+        "bucket12_k0": 1538,
+        "bucket12_k1": 258,
+        "full16_k0": 1538,
+        "full16_k1": 258,
+        "bucket_drops_high_nibble": false
+      },
+      {
+        "name": "overflow_page",
+        "occupancies": [
+          104,
+          122
+        ],
+        "gold": [
+          448
+        ],
+        "gold_index_in_p0": [
+          13
+        ],
+        "gold_index_in_p1": [
+          14
+        ],
+        "gold_in_full_and": [
+          true
+        ],
+        "gold_in_cap_then_and": [
+          true
+        ],
+        "gold_in_and_then_cap": [
+          true
+        ],
+        "n_full_and": 13,
+        "n_cap_then_and": 6,
+        "n_and_then_cap": 13,
+        "cap_then_and_equals_and_then_cap": false,
+        "emit_golden": [
+          444,
+          445,
+          446,
+          447,
+          448,
+          449
+        ],
+        "n_trunc_golden": 194,
+        "reported_n_dir": 2,
+        "reported_n_post": 4,
+        "reported_bytes": 96,
+        "model_r_beats": 59,
+        "model_bytes": 944,
+        "undercount_x": 9.833,
+        "bucket12_k0": 3075,
+        "bucket12_k1": 2051,
+        "full16_k0": 3075,
+        "full16_k1": 2051,
+        "bucket_drops_high_nibble": false
+      },
+      {
+        "name": "high_id_sentinel",
+        "occupancies": [
+          104,
+          110
+        ],
+        "gold": [
+          4095
+        ],
+        "gold_index_in_p0": [
+          103
+        ],
+        "gold_index_in_p1": [
+          109
+        ],
+        "gold_in_full_and": [
+          true
+        ],
+        "gold_in_cap_then_and": [
+          false
+        ],
+        "gold_in_and_then_cap": [
+          true
+        ],
+        "n_full_and": 1,
+        "n_cap_then_and": 0,
+        "n_and_then_cap": 1,
+        "cap_then_and_equals_and_then_cap": false,
+        "emit_golden": [],
+        "n_trunc_golden": 182,
+        "reported_n_dir": 2,
+        "reported_n_post": 4,
+        "reported_bytes": 96,
+        "model_r_beats": 56,
+        "model_bytes": 896,
+        "undercount_x": 9.333,
+        "bucket12_k0": 3075,
+        "bucket12_k1": 2307,
+        "full16_k0": 3075,
+        "full16_k1": 2307,
+        "bucket_drops_high_nibble": false
+      }
+    ]
+  }
+}

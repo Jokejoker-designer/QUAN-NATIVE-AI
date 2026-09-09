@@ -1,0 +1,10 @@
+{
+  "gate": "ASTRA-C4-LM06-GROUNDED-GEN-HELDOUT-20-01",
+  "program": false,
+  "board_pass": false,
+  "mig": false,
+  "master_c4_claimed": false,
+  "lm06_byte256_frozen": false,
+  "tinygpt_802k": "RETIRED_PER_GROK_550",
+  "one_unknown": "20 held-out object IDs on compact grounded_gen; tokens depend on weights AND evid_has; not letter language close"
+}

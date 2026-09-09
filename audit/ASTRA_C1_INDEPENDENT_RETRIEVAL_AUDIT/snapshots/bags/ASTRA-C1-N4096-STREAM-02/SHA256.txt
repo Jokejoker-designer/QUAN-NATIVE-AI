@@ -1,0 +1,44 @@
+# SHA freeze BEFORE xvlog 2026-09-07T12:10:40.5697816+07:00
+# PROGRAM=NO C1_800K=OPEN CAND_CAP=16 N=4096 LAW=qse-v2-stream-intersect-02 POKE_V=0
+# CAND_CAP_FINAL=NOT_FROZEN DDR_QUERY_BOUND_FINAL=NOT_FROZEN
+# HASH_GATE MATCH vs C0 FINAL_CONTRACT + STREAM-02 DUT 14f75db7 (frozen files not patched)
+# FROZEN_RTL
+cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27  rtl/native_graph/query/a7ng_query_role_extract.sv
+381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c  rtl/native_graph/query/qse_role_lexicon.svh
+09334e42c3913d4de3a1b59147f48c810481cd634e63b37e64bc669a6c36bb24  rtl/native_graph/memory/a7ng_sparse_dir_axi.sv
+5a4ad04d498c588b4447431c290a862252abfbecdef8e934ed4215b9b9c5c0fa  rtl/native_graph/integrate/a7ng_query_axi_sparse.sv
+49a66da21dc075d1487c320d399643ff94e87b02af13f3d6f36d346a1be3a385  rtl/native_graph/query/a7ng_route_valid_gate.sv
+# KEEP_NOT_DUT
+93811ed17adbd9c2adc1a93514faf35b23ba8184d325a7204aee90e09c77057d  rtl/native_graph/query/a7ng_query_role_keys_relbind.sv
+a912786f6cc0be62a28c4ee1efc7aeca26fc07ae26865249191aa41d1ed6408c  rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect.sv
+# STREAM_02_DUT_INSTANTIATE_NOT_EDIT
+14f75db787dee2405dc917604e54b4ab0dbea5cb327d4c4485f5be5cd874f0ac  rtl/native_graph/integrate/a7ng_query_axi_sparse_stream_intersect.sv
+# COMPILED
+7cf9885217562c8e26b3c8818b10b4488fd637621b62f6a3652fe7ff5aee57a6  rtl/native_graph/pkg/a7ng_pkg.sv
+cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27  rtl/native_graph/query/a7ng_query_role_extract.sv
+93811ed17adbd9c2adc1a93514faf35b23ba8184d325a7204aee90e09c77057d  rtl/native_graph/query/a7ng_query_role_keys_relbind.sv
+49a66da21dc075d1487c320d399643ff94e87b02af13f3d6f36d346a1be3a385  rtl/native_graph/query/a7ng_route_valid_gate.sv
+09334e42c3913d4de3a1b59147f48c810481cd634e63b37e64bc669a6c36bb24  rtl/native_graph/memory/a7ng_sparse_dir_axi.sv
+40df08bb58e7eb6e1cc0f0a87b4d67564e8ea602cace166c67eed7d088d8007c  rtl/native_graph/memory/a7ng_axi_mem_model.sv
+14f75db787dee2405dc917604e54b4ab0dbea5cb327d4c4485f5be5cd874f0ac  rtl/native_graph/integrate/a7ng_query_axi_sparse_stream_intersect.sv
+e61b2f063624e94999daa9c0d79ae2a710d88ccaef757f90c79f116784458ac2  results/A7-NATIVE-GRAPH/ASTRA-C1-N4096-STREAM-02/tb_astra_c1_n4096_stream.sv
+# TRANSITIVE_INCLUDES
+9a06e6d390dff66db34daa395a29ea563bed2365e9f2db5bdedcfcb9e9added7  rtl/native_graph/control/a7ng_gate14_crc.svh
+381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c  rtl/native_graph/query/qse_role_lexicon.svh
+7a37e1761406136e723fade5caf8eb006004364cc6127e9d649fd8d8664b3237  results/A7-NATIVE-GRAPH/ASTRA-C1-N4096-STREAM-02/query_gold.svh
+# INDEPENDENT_GOLD_BEFORE_XVLOG
+2a2db8c8dcb7ac1c9fb322a7d59d407a8892ef087499f96784f71c9f1dd5df06  results/A7-NATIVE-GRAPH/ASTRA-C1-N4096-STREAM-02/GOLDEN.json
+7a37e1761406136e723fade5caf8eb006004364cc6127e9d649fd8d8664b3237  results/A7-NATIVE-GRAPH/ASTRA-C1-N4096-STREAM-02/query_gold.svh
+d342084b3de7ff579c116609f3f4f473bbf1e24c06193b2de61ac6657434062f  results/A7-NATIVE-GRAPH/ASTRA-C1-N4096-STREAM-02/corpus.json
+# BAG
+d7fe399d8d0d06d711a8a88e80061449199e13810e9a56a5a38b8c59483b5c3b  results/A7-NATIVE-GRAPH/ASTRA-C1-N4096-STREAM-02/PREREG.md
+fd830997c12cc3fee6eca52228f1e703a987d4cf916a3e824859b5bcbf2197cb  results/A7-NATIVE-GRAPH/ASTRA-C1-N4096-STREAM-02/ACK.json
+38d208c4e0526d51adcd708ffd413276347b807c269e2212fa65311873d7cf66  results/A7-NATIVE-GRAPH/ASTRA-C1-N4096-STREAM-02/run_xsim.ps1
+53c5b3371903210b03cbea62f81d177d1d66b100612722242294212f8a792ded  results/A7-NATIVE-GRAPH/ASTRA-C1-N4096-STREAM-02/host_astra_c1_n4096_stream.py
+e61b2f063624e94999daa9c0d79ae2a710d88ccaef757f90c79f116784458ac2  results/A7-NATIVE-GRAPH/ASTRA-C1-N4096-STREAM-02/tb_astra_c1_n4096_stream.sv
+# FORBIDDEN leftover a7ng_astra_09_integ_path NOT on xvlog DUT list
+# FORBIDDEN frozen a7ng_query_axi_sparse.sv NOT compiled as DUT
+# FORBIDDEN a7ng_query_axi_sparse_intersect.sv NOT compiled as DUT (KEEP KEY-INTERSECT)
+# FORBIDDEN a7ng_query_axi_sparse_relbind.sv NOT compiled as DUT
+# REDUCTION_X1000 NOT_EMITTED (not 1-CAND_CAP/N)
+# CAND_CAP_FINAL NOT_FROZEN DDR_QUERY_BOUND_FINAL NOT_FROZEN

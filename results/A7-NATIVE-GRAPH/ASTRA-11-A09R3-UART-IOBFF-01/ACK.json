@@ -1,0 +1,38 @@
+{
+  "task_id": "ASTRA-11-A09R3-UART-IOBFF-01",
+  "observed_session_id": "UNKNOWN",
+  "cwd": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "branch": "grok-orch/astra-native-v1-00",
+  "base": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+  "role": "implementer_not_v31_manager",
+  "write_scope": "new bag + distinctly named UART IOB-FF wrap that instantiates frozen a7ng_astra_09_r2_cand_ovf with IOB=TRUE (or equivalent wrap IOB registers) on uart_txd_in A9 and uart_rxd_out D10 plus the same frozen set_input_delay/set_output_delay max 2.000 / min 0.500; delay numbers frozen in PREREG before impl; no copy-paste graph; frozen a7ng_astra_09_integ_path.sv not compiled as DUT; A09-R2 DUT source not patched; prior bags not edited including ASTRA-11-A09R3-UART-IODELAY-01 WNS=+0.681 delays 2.000/0.500 and ASTRA-11-A09R3-UART-IMPL-ROUTE-01 WNS=+0.305",
+  "PROGRAM": false,
+  "jtag": "NO_CALLS",
+  "bitstream": "NOT_BUILT",
+  "write_bitstream": false,
+  "xsdb": false,
+  "com12": "UNTOUCHED",
+  "hw_server": false,
+  "conflict_writer": false,
+  "PRODUCTION_TOP": "UNKNOWN",
+  "winner_frozen": false,
+  "preserves": "results/A7-NATIVE-GRAPH/ASTRA-11-A09R3-UART-IODELAY-01 (not edited; routed WNS=+0.681 delays 2.000/0.500 not overwritten), ASTRA-11-A09R3-UART-IMPL-ROUTE-01 (WNS=+0.305 not overwritten), ASTRA-11-A09R2-IMPL-ROUTE-01 (WNS=+0.648 not overwritten), ASTRA-11-A09-IMPL-ROUTE-01 (WNS=+1.041 not overwritten), ASTRA-SOC-RTP-WRAP-ROUTE (WNS=+5.733 not overwritten), ASTRA-09-R3-UART-XSIM-01, ASTRA-SOC-RTP-WRAP-UART-XSIM, ASTRA-09-R2-CAND-OVF-01, ASTRA-09-INTEGRATED-PATH-01, ASTRA-10-*, ASTRA-12-*, ASTRA-06-*, ASTRA-F2R-*, ASTRA-F3-* (not edited; those bags' run scripts not rerun); frozen A09 RTL not patched (hash 9fdbe0d6…); R2 DUT not patched (hash 15a919f1…); frozen SGD not patched (hash b66ef328…); uart_rx/uart_tx not patched (8e802d0b… / b4b7d097…); no .bit generated; PRODUCTION_TOP not written as a module name",
+  "prior_acceptance": "AUDITOR_20260906T1800Z ACCEPT_PARTIAL on ASTRA-11-A09R3-UART-IODELAY-01; PASS_NARROW routed WNS=+0.681 UART I/O delays 2.000/0.500; residual 5: IOB FF pack (and optional LED I/O delay) — this bag is impl+route of a new named UART wrap with IOB=TRUE / wrap IOB registers plus the same frozen delays, no bitstream, not a freeze; PRODUCTION_TOP UNKNOWN; ASTRA-13 BLOCKED; board plugged; PROGRAM=NO",
+  "gate_claim": "with UART IOB FFs packed (IOB=TRUE or equivalent on uart_txd_in A9 / uart_rxd_out D10) plus the same frozen delays 2.000/0.500, after implement+route of a new named UART wrap instantiating a7ng_astra_09_r2_cand_ovf on xc7a100tcsg324-1 at declared 50 MHz, is routed WNS >= 0 — without a bitstream; quote whether IOB FFs packed; not BOARD_PASS; not prior I/O-delay wrap WNS=+0.681; not prior UART wrap WNS=+0.305; not A09R2 wrap WNS=+0.648; not A09 wrap WNS=+1.041; not wrap-route WNS=+5.733; not Master ASTRA-09/F3/LM06/ASTRA-13 close; PRODUCTION_TOP stays UNKNOWN",
+  "does_not_close": ["Master_ASTRA-09", "Master_F3_10pp_CI", "Master_ASTRA-06", "LM06", "BOARD_PASS", "ASTRA-13", "ASTRA-11_SoC_UART_wrap", "ASTRA-11-A09R3-UART-IODELAY-01", "ASTRA-11-A09R3-UART-IMPL-ROUTE-01", "ASTRA-SOC-RTP-WRAP-UART-XSIM", "ASTRA-09-R3-UART-XSIM-01", "Master_ASTRA-10_whole_chip", "production_top_identity", "write_bitstream", "LED_IO_delay"],
+  "uart_iodelay_frozen_before_impl": {
+    "source": "same frozen board-UART-class envelope as ASTRA-11-A09R3-UART-IODELAY-01 / vivado/tcl/build_a7eam01r.tcl (max 2.000 / min 0.500); not invented after WNS; not edited from the +0.681 bag",
+    "clock_ref": "uart_io_vclk period 20.000 ns (I/O timing reference, same period as clk50u). Pipe clock remains MMCM+BUFG clk50u (real, not virtual).",
+    "uart_txd_in_A9_input_delay_max_ns": 2.000,
+    "uart_txd_in_A9_input_delay_min_ns": 0.500,
+    "uart_rxd_out_D10_output_delay_max_ns": 2.000,
+    "uart_rxd_out_D10_output_delay_min_ns": 0.500
+  },
+  "iob_ff_policy_frozen_before_impl": {
+    "ports": ["uart_txd_in", "uart_rxd_out"],
+    "method": "wrap-level (* IOB = TRUE *) registers plus XDC set_property IOB TRUE on those ports; do not patch frozen uart_rx.sv / uart_tx.sv",
+    "rx_reg": "uart_rx_iob (samples uart_txd_in into IOB FF, then uart_rx)",
+    "tx_reg": "uart_tx_iob (registered uart_tx.tx into IOB FF, drives uart_rxd_out)",
+    "proof": "routed BEL/LOC of uart_rx_iob_reg / uart_tx_iob_reg in IOB/ILOGIC/OLOGIC, plus util IOB Flip Flops / ILOGIC / OLOGIC if packed"
+  }
+}

@@ -1,0 +1,42 @@
+# ASTRA-07 held-out transfer XSim. PROGRAM=NO.
+set bag  [file normalize [file dirname [info script]]]
+set root [file normalize [file join $bag ../../..]]
+set xvlog_bin [file normalize {C:/2026.1/Vivado/bin/xvlog.bat}]
+set xelab_bin [file normalize {C:/2026.1/Vivado/bin/xelab.bat}]
+set xsim_bin  [file normalize {C:/2026.1/Vivado/bin/xsim.bat}]
+set env(XILINXD_LICENSE_FILE) {D:\Xilinx\licenses\vivado_basic.lic}
+set work [file join $bag xsim_work]
+file mkdir $work
+foreach f {
+  train_x.mem train_r.mem shuf_x.mem shuf_r.mem
+  hold_x.mem hold_gold.mem
+  exp_hold_v_en.mem exp_hold_v_sh.mem exp_hold_v_fr.mem
+  miss_x.mem
+} {
+  file copy -force [file join $bag mem $f] [file join $work $f]
+}
+cd $work
+set rtl [file join $root rtl/native_graph/learn/a7ng_shared_rank_sgd_q8.sv]
+set tb  [file join $bag tb_astra07_hold.sv]
+set xvlog_log [file join $bag xvlog.log]
+if {[catch {exec $xvlog_bin --sv -i $bag $rtl $tb > $xvlog_log 2>@1}]} {
+  puts [read [open $xvlog_log r]]
+  puts FIRST_DIVERGENCE
+  puts ASTRA07_XVLOG_FAIL
+  exit 2
+}
+set xelab_log [file join $bag xelab.log]
+if {[catch {exec $xelab_bin tb_astra07_hold -s astra07 -timescale 1ns/1ps > $xelab_log 2>@1}]} {
+  puts [read [open $xelab_log r]]
+  puts FIRST_DIVERGENCE
+  puts ASTRA07_XELAB_FAIL
+  exit 3
+}
+set xsim_log [file join $bag xsim.log]
+catch {exec $xsim_bin astra07 -R -log $xsim_log}
+set body [read [open $xsim_log r]]
+puts $body
+if {[string match *FIRST_DIVERGENCE* $body]} { puts ASTRA07_FIRST_DIVERGENCE; exit 6 }
+if {![string match *ASTRA07_XSIM_PASS* $body]} { puts ASTRA07_NOT_PASS; exit 5 }
+puts ASTRA07_XSIM_OK
+exit 0

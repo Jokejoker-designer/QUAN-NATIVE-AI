@@ -1,0 +1,20 @@
++====================+===================+============================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                        |
++====================+===================+============================================+
+| sys_clk_pin        | sys_clk_pin       | u_pipe/u_sp/g_law.u_qse/sid_reg[0]/D       |
+| sys_clk_pin        | sys_clk_pin       | u_pipe/u_sp/g_law.u_qse/xh_reg/D           |
+| sys_clk_pin        | sys_clk_pin       | u_pipe/u_sp/g_law.u_qse/subj_id_o_reg[0]/D |
+| sys_clk_pin        | sys_clk_pin       | u_pipe/u_sp/g_law.u_qse/xid_reg[0]/D       |
+| sys_clk_pin        | sys_clk_pin       | u_pipe/u_sp/g_law.u_qse/obj_id_o_reg[0]/D  |
+| sys_clk_pin        | sys_clk_pin       | u_pipe/u_sp/g_law.u_qse/ctx_id_o_reg[0]/D  |
+| sys_clk_pin        | sys_clk_pin       | u_pipe/u_sp/g_law.u_qse/rel_id_o_reg[0]/D  |
+| sys_clk_pin        | sys_clk_pin       | u_pipe/u_sp/g_law.u_qse/oid_reg[0]/D       |
+| sys_clk_pin        | sys_clk_pin       | u_pipe/u_sp/g_law.u_qse/ctx_id_o_reg[1]/D  |
+| sys_clk_pin        | sys_clk_pin       | u_pipe/u_sp/g_law.u_qse/xid_reg[1]/D       |
+| sys_clk_pin        | sys_clk_pin       | u_pipe/u_sp/g_law.u_qse/pst_reg[0]/D       |
+| sys_clk_pin        | sys_clk_pin       | u_pipe/u_sp/g_law.u_qse/rid_reg[1]/D       |
+| sys_clk_pin        | sys_clk_pin       | u_pipe/u_sp/g_law.u_qse/pst_reg[1]/D       |
+| sys_clk_pin        | sys_clk_pin       | u_pipe/u_sp/g_law.u_qse/sid_reg[2]/D       |
+| sys_clk_pin        | sys_clk_pin       | u_pipe/u_sp/g_law.u_qse/sid_reg[1]/D       |
+| sys_clk_pin        | sys_clk_pin       | u_pipe/u_sp/g_law.u_qse/obj_id_o_reg[1]/D  |
++--------------------+-------------------+--------------------------------------------+

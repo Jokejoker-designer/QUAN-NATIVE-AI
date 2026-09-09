@@ -1,0 +1,17 @@
+{
+  "gate": "ASTRA-C5-EXPLICIT-REWARD-AND-FULLSTATE-01B",
+  "program": false,
+  "master_c5_claimed": false,
+  "closes_c5_master": false,
+  "pending_restore": "OPEN",
+  "required_class_substrings": [
+    "CLASS_query_no_sgd",
+    "CLASS_rew_plus3",
+    "CLASS_snap_nonzero",
+    "CLASS_persist_after_sgd",
+    "CLASS_clear_zero",
+    "CLASS_exact32_reload"
+  ],
+  "marker": "ASTRA_C5_SGD32_CKPT_TOP_XSIM_PASS",
+  "note": "Named C5 top. SGD32 AXI snapshot then clear then reload into same C3 bank. No TB weight force. Do not regenerate GOLDEN after xvlog."
+}

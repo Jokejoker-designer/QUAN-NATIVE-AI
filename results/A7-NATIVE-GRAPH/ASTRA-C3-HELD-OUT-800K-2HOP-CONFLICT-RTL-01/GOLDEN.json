@@ -1,0 +1,28 @@
+{
+  "gate": "ASTRA-C3-HELD-OUT-800K-2HOP-CONFLICT-RTL-01",
+  "program": false,
+  "master_c3_claimed": false,
+  "board_pass": false,
+  "n": 800000,
+  "n_seed": 5,
+  "n_hold": 8,
+  "train_subjects": [13, 15, 16],
+  "hold_subjects": [19, 20],
+  "fact_base": "0x0E000000",
+  "query": "<entity> feeds indirect",
+  "gold_dest": 28,
+  "gold_p1": 64617,
+  "required_class_substrings": [
+    "CLASS_arm_A_learner",
+    "CLASS_arm_B_frozen",
+    "CLASS_arm_C_shuffled",
+    "CLASS_arm_D_perid",
+    "CLASS_entities_disjoint",
+    "CLASS_host_winner_zero",
+    "CLASS_gain_A_over_B",
+    "CLASS_two_hop_indirect",
+    "CLASS_no_false_conflict"
+  ],
+  "marker": "ASTRA_C3_HELD_OUT_800K_2HOP_CONFLICT_RTL_XSIM_PASS",
+  "note": "GOLDEN lists required CLASS strings. 800k cartesian 2-hop on bag-local live CONFLICT C3 (N_BUCKETS=65536). Two positive dests must still rank; n_conf=0. Do not regenerate after xvlog."
+}

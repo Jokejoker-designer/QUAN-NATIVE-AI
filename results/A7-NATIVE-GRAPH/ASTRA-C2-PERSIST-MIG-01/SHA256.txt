@@ -1,0 +1,27 @@
+# SHA freeze BEFORE xvlog 2026-09-07T23:22:28.1036099+07:00
+# PROGRAM=NO BOARD_PASS=NOT_CLAIMED DDR_QUERY_BOUND_FINAL=NOT_FROZEN
+# LAW=astra-c2-persist-mig-01 MIG_XSIM Digilent AXI mig_sim + ddr3_model
+# HASH_GATE MATCH vs C0 + persist KEEP + official mig.prj (not edited)
+97c078b18015e0c6a47ca4d41b659e483f2e983d37f8bb6e579efa4d19e523b5  rtl/ddr/mig_native_wrap.sv
+09334e42c3913d4de3a1b59147f48c810481cd634e63b37e64bc669a6c36bb24  rtl/native_graph/memory/a7ng_sparse_dir_axi.sv
+124be80804b38a1e1a924924091b751a4d13d85e28241695eda00ca5ded500d1  rtl/native_graph/query/a7ng_query_role_keys_ctx.sv
+381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c  rtl/native_graph/query/qse_role_lexicon.svh
+86a7a0695712d9aa818bf95aac30b83289fb9af80ddd0bdc2455e935a14d8764  rtl/native_graph/integrate/a7ng_astra_c2_persist_commit.sv
+14f75db787dee2405dc917604e54b4ab0dbea5cb327d4c4485f5be5cd874f0ac  rtl/native_graph/integrate/a7ng_query_axi_sparse_stream_intersect.sv
+55f5ac0d4e9a5280d83951fb147fc85734417f7fff0ae22ed5d4422b65710862  rtl/native_graph/integrate/a7ng_astra_c2_persist_ddr_stall.sv
+cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27  rtl/native_graph/query/a7ng_query_role_extract.sv
+914a9e4bb1b3002837592944cdf49f8dfbaf4d112552dd8b5be48602ff1ac329  third_party/digilent/arty-a7-100/E.0/1.0/mig.prj
+5a4ad04d498c588b4447431c290a862252abfbecdef8e934ed4215b9b9c5c0fa  rtl/native_graph/integrate/a7ng_query_axi_sparse.sv
+49a66da21dc075d1487c320d399643ff94e87b02af13f3d6f36d346a1be3a385  rtl/native_graph/query/a7ng_route_valid_gate.sv
+8255a7988b902c4fd6d76679cc42ef0726d50099961f7c211010ace54a24d989  rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect_context.sv
+bc8b8993edbba8bc048bc03ebc6398744cf80da01d346801c3683a15881682fd  rtl/native_graph/integrate/a7ng_astra_c2_persist_multi_slot.sv
+# COMPILED
+17741214c066de125c7306cce47d1834531b2a7c8607febe3c9d91cc06a555b2  rtl/native_graph/integrate/a7ng_astra_c2_persist_mig.sv
+86a7a0695712d9aa818bf95aac30b83289fb9af80ddd0bdc2455e935a14d8764  rtl/native_graph/integrate/a7ng_astra_c2_persist_commit.sv
+97c078b18015e0c6a47ca4d41b659e483f2e983d37f8bb6e579efa4d19e523b5  rtl/ddr/mig_native_wrap.sv
+f4b84524bcd63cf57b838ccc4d097de2e3fae796b960d07cc8824e85475a3744  results/A7-NATIVE-GRAPH/ASTRA-C2-PERSIST-MIG-01/tb_astra_c2_persist_mig.sv
+2fbc6a41c392740cb111c159dde2c61a0204901e5273400173d37fd5130b7bd2  rtl/native_graph/integrate/a7ng_astra_c2_persist_mig.svh
+9618d7acac2af5c4369cd67cfcc56fb19e92d474c6025184c2da83684ffc9c88  results/A7-NATIVE-GRAPH/ASTRA-C2-PERSIST-MIG-01/GOLDEN.json
+# XSIM PASS 2026-09-07T23:28:20+07:00 FAIL_R0=none
+7db9647b91fd27a7708ceec6c18289b7c97aa2d6dde30b99bf4286fc42c3bc8e  results/A7-NATIVE-GRAPH/ASTRA-C2-PERSIST-MIG-01/xsim.log
+# FORBIDDEN leftover A09 / STREAM-02 / prior_store as DUT; synth mig_7series_0_mig.v not compiled

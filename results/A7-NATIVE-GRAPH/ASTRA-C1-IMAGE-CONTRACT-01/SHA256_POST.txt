@@ -1,0 +1,5 @@
+# SHA verify AFTER xsim 2026-09-09T09:56:13.5457540+07:00
+b7cf5e1abe11da80c5440e8ee115cab16df03e8dfa2b053cd8cc1362ce0a0a93  results/A7-NATIVE-GRAPH/ASTRA-C1-IMAGE-CONTRACT-01/tb_astra_c1_image_contract.sv
+eca55e7793ecbb0968b3215cc98ea987cb170742f0e13268593bb077b1228671  results/A7-NATIVE-GRAPH/ASTRA-C1-IMAGE-CONTRACT-01/tb_samples.svh
+cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27  rtl/native_graph/query/a7ng_query_role_extract.sv
+cd3273105a643e073e2b87b531419482598abbbf8a51fada916fb7a1d6972932  results/A7-NATIVE-GRAPH/ASTRA-C3-HELD-OUT-800K-01/gen_800k.svh

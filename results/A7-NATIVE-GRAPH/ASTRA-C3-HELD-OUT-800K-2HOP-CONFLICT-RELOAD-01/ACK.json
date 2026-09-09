@@ -1,0 +1,8 @@
+{
+  "gate": "ASTRA-C3-HELD-OUT-800K-2HOP-CONFLICT-RELOAD-01",
+  "program": false,
+  "board_pass": false,
+  "mig": false,
+  "master_c3_claimed": false,
+  "one_unknown": "retention drop after C2 persist_clr+reload on bag-local live CONFLICT C3 800k cartesian 2-hop; C2 journals w0 only; w[1:31] TB-restored; n_conf=0; not MIG; not silicon"
+}

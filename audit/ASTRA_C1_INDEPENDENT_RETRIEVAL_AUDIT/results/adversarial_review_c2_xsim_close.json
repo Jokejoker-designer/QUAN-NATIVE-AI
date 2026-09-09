@@ -1,0 +1,76 @@
+{
+  "review_id": "ADV-20260908-C2-XSIM-CLOSE",
+  "reviewer_role": "second-model-adversarial-auditor",
+  "reviewer_model": "Antigravity (Claude Opus 4.6 Thinking)",
+  "timestamp_utc": "2026-09-07T17:15:00Z",
+  "intent_anchor": {
+    "user_goal": "Independent second-model hunt of C2 XSim close against raw xsim.log, since 1652Z auditor report was same Cursor session that implemented the bags.",
+    "current_priority": "Verify claim c2_close=YES_XSIM against Master §8 and raw xsim.log; hunt overclaim / cheat / dead code; do not stamp BOARD_PASS.",
+    "allowed_scope": [
+      "Independent audit tree writes under D:/FPGA/ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT",
+      "Read-only hunt of live clone C2 bags, auditor reports, Master §8, LOOP_STATE"
+    ],
+    "forbidden_scope": [
+      "BOARD_PASS / ACCEPT_BOARD",
+      "Editing C2 KEEP persist DUT or mig.prj",
+      "Freezing PERSIST_SCHEMA_VERSION or DDR_QUERY_BOUND_FINAL",
+      "Starting C3 RTL"
+    ]
+  },
+  "bags_reviewed": [
+    "ASTRA-C2-PERSIST-COMMIT-01",
+    "ASTRA-C2-PERSIST-MULTI-SLOT-01",
+    "ASTRA-C2-PERSIST-DDR-STALL-01",
+    "ASTRA-C2-PERSIST-MIG-01"
+  ],
+  "claim_under_review": "c2_close=YES_XSIM and c2_persist_closed=true are licensed as Master §8 XSim law close (not BOARD).",
+  "what_i_accept": [
+    "All four bags print RESULT=PASS_THIS_GATE_ONLY; none self-stamp Master C2 close or BOARD_PASS.",
+    "GOLDEN.json hashes in all four bags match GOLD_HASH_PRE_XVLOG.txt (frozen before xvlog).",
+    "Canonical identity is 20-bit {subj,rel,obj,ctx}+gen, not low16 of subject. CLASS_journal_addr_not_low16 HIT in all four bags.",
+    "AWADDR values are 0x06000000+slot*16 in all bags (slot 0=0x06000000, slot 1=0x06000010, slot 2=0x06000020). Not deprecated prior_store/ASTRA-06 address scheme.",
+    "n_false=0 confirmed in all four HEADLINE lines; CLASS_false_success_zero HIT in all four.",
+    "CLASS_duplicate_reward HIT in COMMIT-01 with n_dup=1 w0_unchanged=1. Stale txn mapped to DUP (identity+gen match, DUP takes precedence in S_DECIDE). Honest: no distinct CLASS_stale_txn line exists.",
+    "MIG bag: CLASS_mig_calib_complete HIT at 122810625 ps, then persist_through_mig at line 1043, then ddr3_model WRITE burst (lines 1050-1057), then ddr3_model READ burst (lines 1062-1069) returns byte-identical payload, then CLASS_reload_from_mig HIT identity_exact w0=2.",
+    "All four bags state NOT_CLAIMED=BOARD_PASS,ACCEPT_BOARD,DDR_QUERY_BOUND_FINAL,C2_MASTER_CLOSED.",
+    "FIRST_DIVERGENCE and SEARCH_INCOMPLETE are ABSENT from all four logs.",
+    "Close-gate re-run: c2_close=YES_XSIM, board_pass=REJECT, blocking=[]."
+  ],
+  "what_i_challenge": [
+    "F_BAD_TXN is dead code in a7ng_astra_c2_persist_commit.sv: DUP branch (identity+gen match) intercepts all cases before BAD_TXN (identity+gen match + txn mismatch) can fire. BAD_TXN is mathematically unreachable. Multi-slot RTL eliminates it entirely. This is not a functional test failure but is an RTL hygiene issue: a declared fail code that never fires.",
+    "MIG posted-write ordering: CLASS_persist_through_mig HIT (line 1043) fires on AXI BVALID BEFORE ddr3_model physical WRITE (line 1048-1057). PERSISTED is declared at AXI B handshake, not at DRAM row stabilization. Mitigated by reload proof (read-after-write returns same data), but this is a posted-write semantics gap, not synchronous DRAM persistence.",
+    "Semantic shift between COMMIT-01 (DUP = w0 unchanged) and MULTI-SLOT-01 (same-identity = cache hit = w0 mutated in-place). The two DUTs handle same-identity differently. Not a test failure but a design law divergence that C5 production-top must reconcile.",
+    "Generation check is rigid equality (u_gen != p_gen → F_STALE_GEN). No distinction between stale (u_gen < p_gen) and advance (u_gen > p_gen). Not a bug on the C2 evidence, but limits the persist law for C3/C5.",
+    "Multi-slot CAP_N=2 is minimum stress. MIG bag uses single-slot persist-commit KEEP only (not multi-slot through MIG). C2 'full capacity + MIG' is not tested as a combined scenario. Correct per quality-bound declaration.",
+    "Stall counts (AW=8, W=5, B=6 configured; AW=28, W=15, B=18 total) are TB *ready backpressure, not MIG calibration stall or real DDR arbitration stall.",
+    "1652Z auditor was same Cursor session that built the bags (disclosed). This review provides the missing second-model confirmation."
+  ],
+  "strongest_counter_argument": "F_BAD_TXN dead code means the C2 persist-commit DUT has a declared-but-unreachable fail path. In a production audit this would be a coverage gap (100% of declared fault codes should be either exercisable or removed). However, the dead code does not invalidate the positive evidence: every exercised class HIT is real, GOLDEN integrity is intact, and the canonical 20-bit identity / AXI journal scheme is demonstrably not prior_store. The MIG posted-write gap is architecturally fundamental to the Xilinx AXI-MIG interface and not a Cursor-specific bug. Both issues remain quality bounds, not XSim law failures.",
+  "missing_evidence": [
+    "F_BAD_TXN should be either exercised or formally removed from RTL to avoid coverage gap in production-top C5.",
+    "MIG multi-slot persist (CAP_N=2 through mig_sim+ddr3_model) is not tested — only single-slot through MIG.",
+    "Combined stall + multi-slot + MIG is untested.",
+    "PERSIST_SCHEMA_VERSION remains NOT_FROZEN. Production freeze requires a named bag.",
+    "Held-out query scores after persist reload are NOT_THIS_GATE (C3 / C7 phase 6-7)."
+  ],
+  "scope_drift_risk": "Reading YES_XSIM as BOARD_PASS; freezing DDR_QUERY_BOUND_FINAL from persist AWADDR; calling modeled-AXI stall HITs 'MIG PHY'; treating single-slot MIG as multi-slot persist.",
+  "final_verdict": "ACCEPT_WITH_BOUNDS",
+  "confidence_before_challenge": 0.88,
+  "confidence_penalty": 0.10,
+  "confidence_after_challenge": 0.78,
+  "self_audit": {
+    "preserved_user_intent": true,
+    "did_not_invent_objection": true,
+    "evidence_based": true,
+    "no_scope_hijack": true
+  },
+  "blind_spots": [
+    "Did not re-simulate in Vivado; trusted existing xsim.log bytes after SHA match.",
+    "Did not attempt to stimulate F_BAD_TXN independently — classified as dead code from RTL priority-order analysis, not from exhaustive test.",
+    "MIG xsim.log is 142KB / 1082 lines; focused on CLASS markers and ddr3_model transactions, may have missed non-CLASS anomalies in MIG calibration noise."
+  ],
+  "alternative_explanations": [
+    "1652Z auditor ACCEPT was compliance-to-owner-request. Mitigated: raw CLASS lines match claims, no overclaim detected, all hashes intact. Not eliminated: process improvement would separate implementer and auditor sessions."
+  ],
+  "next_action": "Keep YES_XSIM and BOARD REJECT. Do not freeze schema/DDR bounds. Proceed to tighten C3 WORK_ORDER. F_BAD_TXN dead code should be tracked as a C5 production-top hygiene item."
+}

@@ -1,0 +1,30 @@
+$ErrorActionPreference = "Stop"
+$env:XILINXD_LICENSE_FILE = "D:\Xilinx\licenses\vivado_basic.lic"
+$bag = Split-Path -Parent $MyInvocation.MyCommand.Path
+$root = (Resolve-Path (Join-Path $bag "..\..\..")).Path
+$bin = "C:\2026.1\Vivado\bin"
+$work = Join-Path $bag "xsim_work"
+New-Item -ItemType Directory -Force -Path $work | Out-Null
+Set-Location $work
+$incq = Join-Path $root "rtl\native_graph\query"
+$incc = Join-Path $root "rtl\native_graph\control"
+$files = @(
+  (Join-Path $root "rtl\native_graph\pkg\a7ng_pkg.sv"),
+  (Join-Path $root "rtl\native_graph\query\a7ng_query_struct_extract.sv"),
+  (Join-Path $root "rtl\native_graph\query\a7ng_query_role_extract.sv"),
+  (Join-Path $root "rtl\native_graph\query\a7ng_route_valid_gate.sv"),
+  (Join-Path $root "rtl\native_graph\memory\a7ng_sparse_dir_axi.sv"),
+  (Join-Path $root "rtl\native_graph\integrate\a7ng_query_axi_sparse.sv"),
+  (Join-Path $root "rtl\native_graph\integrate\a7ng_rel_engine_2hop.sv"),
+  (Join-Path $root "rtl\native_graph\integrate\a7ng_astra_rtp_pipe_r2.sv"),
+  (Join-Path $bag "tb_astra_rtp_r2.sv")
+)
+& "$bin\xvlog.bat" --sv -i $incq -i $incc $files
+if ($LASTEXITCODE -ne 0) { throw "R2_XVLOG_FAIL" }
+& "$bin\xelab.bat" tb_astra_rtp_r2 -s r2 -timescale 1ns/1ps
+if ($LASTEXITCODE -ne 0) { throw "R2_XELAB_FAIL" }
+$log = Join-Path $bag "xsim.log"
+& "$bin\xsim.bat" r2 -R -log $log
+if ($LASTEXITCODE -ne 0) { throw "R2_XSIM_FAIL" }
+if (-not (Select-String -Path $log -Pattern "ASTRA_RTP_R2_XSIM_PASS" -Quiet)) { throw "R2_PASS_MARKER_MISSING" }
+Write-Host "ASTRA_RTP_R2_RUN_OK"

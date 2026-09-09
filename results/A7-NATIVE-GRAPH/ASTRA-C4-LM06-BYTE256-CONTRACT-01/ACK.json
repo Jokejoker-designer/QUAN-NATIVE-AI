@@ -1,0 +1,9 @@
+{
+  "gate": "ASTRA-C4-LM06-BYTE256-CONTRACT-01",
+  "program": false,
+  "board_pass": false,
+  "mig": false,
+  "master_c4_claimed": false,
+  "lm06_byte256_frozen": false,
+  "one_unknown": "LM06-BYTE256 compatibility contract: 8-bit I/O, physical 10-bit head present, mask tokens 256..1023, shared byte vocab; not 90% grounded gen"
+}

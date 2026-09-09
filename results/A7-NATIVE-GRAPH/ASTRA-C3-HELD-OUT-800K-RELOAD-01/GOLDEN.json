@@ -1,0 +1,27 @@
+{
+  "gate": "ASTRA-C3-HELD-OUT-800K-RELOAD-01",
+  "program": false,
+  "master_c3_claimed": false,
+  "board_pass": false,
+  "n": 800000,
+  "n_seed": 5,
+  "n_hold": 8,
+  "train_subjects": [13, 15, 16],
+  "hold_subjects": [19, 20],
+  "fact_base": "0x0E000000",
+  "query": "<entity> feeds indirect",
+  "gold_dest": 28,
+  "gold_p1": 64617,
+  "required_class_substrings": [
+    "CLASS_entities_disjoint",
+    "CLASS_host_winner_zero",
+    "CLASS_awaddr_06000000",
+    "CLASS_flush_w0_zero",
+    "CLASS_c2_persist_reload",
+    "CLASS_c2_w0_match",
+    "CLASS_retention_le5pp"
+  ],
+  "marker": "ASTRA_C3_HELD_OUT_800K_RELOAD_XSIM_PASS",
+  "quality_bound": "C2 KEEP journals w0 only. w[1:31] TB-restored after C2 reload of w0. 800k cartesian 2-hop ctx overlay, not MIG.",
+  "note": "GOLDEN lists required log substrings and disjoint IDs, not post-hoc scores. Do not regenerate after xvlog."
+}

@@ -1,0 +1,19 @@
+# CLASS_EXTRACT — ASTRA-C4-LM06-GROUNDED-GEN-HELDOUT-20-01
+
+Source: raw `xsim.log` after `.\run_xsim.ps1` (2026-09-09T05:55:45+07:00).
+
+```text
+CLASS_not_compose_renderer HIT dut=a7ng_astra_c4_lm06_grounded_gen
+CLASS_not_tinygpt_802k HIT tinygpt=RETIRED_PER_GROK_550
+CLASS_w_normal_grounded HIT acc=20/20
+CLASS_grounded_acc_ge90 HIT acc=20/20
+CLASS_w_zero_safe HIT n=20/20
+CLASS_w_corrupt_not_gold HIT n=20/20
+CLASS_evid_removed_safe HIT n=20/20
+CLASS_evid_removed_halluc_le5 HIT hall=0/20
+CLASS_host_next_token_zero HIT
+CLASS_eos_or_max HIT saw_eos=20
+ASTRA_C4_LM06_GROUNDED_GEN_HELDOUT20_XSIM_PASS
+```
+
+C4_MASTER not claimed. LM06_BYTE256 not frozen.

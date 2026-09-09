@@ -1,0 +1,7 @@
+{
+  "gate": "ASTRA-C4-COND-RNN-LANG-01",
+  "program": false,
+  "board_pass": false,
+  "self_accept": false,
+  "one_unknown": "Locally trained rival-1 Elman BYTE256 reaches preregistered held-out grounded>=90 percent, unsupported-safe>=95 percent, hallucinated-fact<=5 percent"
+}

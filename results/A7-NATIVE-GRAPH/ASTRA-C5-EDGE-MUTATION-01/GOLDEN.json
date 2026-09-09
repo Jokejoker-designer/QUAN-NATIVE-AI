@@ -1,0 +1,20 @@
+{
+  "gate": "ASTRA-C5-EDGE-MUTATION-01",
+  "program": false,
+  "master_c5_claimed": false,
+  "board_pass": false,
+  "ddr_query_bound_final": "NOT_FROZEN",
+  "required_class_substrings": [
+    "CLASS_base_two_hop",
+    "CLASS_edge_delete",
+    "CLASS_edge_replace",
+    "CLASS_edge_reverse",
+    "CLASS_one_ddr_owner",
+    "CLASS_no_qid_map",
+    "CLASS_no_host_winner",
+    "CLASS_no_a09_top",
+    "CLASS_no_plant_in_dut"
+  ],
+  "marker": "ASTRA_C5_EDGE_MUTATION_XSIM_PASS",
+  "note": "GOLDEN lists required CLASS strings. Causal edge mutation on one C5 hierarchy, modeled AXI not MIG. Do not regenerate after xvlog. Do not claim C5 Master close."
+}

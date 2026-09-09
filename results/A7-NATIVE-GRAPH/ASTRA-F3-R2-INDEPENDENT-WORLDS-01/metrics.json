@@ -1,0 +1,37 @@
+{
+  "task_id": "ASTRA-F3-R2-INDEPENDENT-WORLDS-01",
+  "master_f3_claimed": false,
+  "result": "PASS_NARROW",
+  "marker": "ASTRA_F3R2_INDEPENDENT_WORLDS_XSIM_PASS",
+  "sim_time_ns": 148845,
+  "pid": 47144,
+  "session": "Sun Sep 6 14:51:59-14:52:01 2026",
+  "xsim_log_sha256": "5ba49f7d0838a4bf8abb1135cb7229e1e0b1c49fedbe268ba7c1c29b2db2dd56",
+  "fail_count": 0,
+  "first_div": null,
+  "fail_r0": false,
+  "observed": {
+    "iso_p3_x50_dw0": 5,
+    "en_e1_c": 5,
+    "en_e2_c": 5,
+    "en_rl_c": 5,
+    "fr_c": 0,
+    "sh_c": 0,
+    "pid_c": 0,
+    "phi_neq_c": 5,
+    "n_rank": 40,
+    "n_ans": 40,
+    "unrel_unknown": 1,
+    "wdut0_cleared": 1,
+    "load_from_tb": 0,
+    "retention_drop_count": 0
+  },
+  "per_seed_hold_p0": {
+    "S0": {"fr": 273, "en": 529, "sh": 273, "en_vbest": 26},
+    "S1": {"fr": 785, "en": 1041, "sh": 785, "en_vbest": 26},
+    "S2": {"fr": 1297, "en": 1553, "sh": 1297, "en_vbest": 30},
+    "S3": {"fr": 1809, "en": 2065, "sh": 1809, "en_vbest": 27},
+    "S4": {"fr": 3072, "en": 3088, "sh": 3072, "en_vbest": 21}
+  },
+  "note": "Master F3 left OPEN. No Wilson/paired CI as Master confirmation."
+}

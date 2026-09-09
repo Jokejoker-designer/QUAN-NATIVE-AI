@@ -1,0 +1,21 @@
+{
+  "gate": "ASTRA-C3-HELD-OUT-01",
+  "program": false,
+  "master_c3_claimed": false,
+  "board_pass": false,
+  "n_seed": 5,
+  "n_hold": 8,
+  "train_subjects": [10, 11, 1],
+  "hold_subjects": [6, 9],
+  "required_class_substrings": [
+    "CLASS_arm_A_learner",
+    "CLASS_arm_B_frozen",
+    "CLASS_arm_C_shuffled",
+    "CLASS_arm_D_perid",
+    "CLASS_entities_disjoint",
+    "CLASS_host_winner_zero",
+    "CLASS_gain_A_over_B"
+  ],
+  "marker": "ASTRA_C3_HELD_OUT_XSIM_PASS",
+  "note": "GOLDEN lists required log substrings and disjoint IDs, not post-hoc scores. Do not regenerate after xvlog."
+}

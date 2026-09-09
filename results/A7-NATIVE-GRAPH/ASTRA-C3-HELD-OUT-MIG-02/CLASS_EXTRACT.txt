@@ -1,0 +1,19 @@
+# CLASS extract from raw xsim.log — ASTRA-C3-HELD-OUT-MIG-02 r0
+# PROGRAM=NO. Do not edit GOLDEN. Marker start-of-line only.
+
+CLASS_mig_calib_complete HIT t=122810625.0 ps
+CLASS_entities_disjoint HIT train={10,11,1} hold={6,9}
+CLASS_arm_B_frozen HIT seed=0..4 acc=0/8
+CLASS_arm_A_learner HIT seed=0..4 acc=8/8 nupd=8
+CLASS_arm_C_shuffled HIT seed=0..4 acc=0/8
+CLASS_arm_D_perid HIT seed=0..4 dut_gold=8/8 pid_pick_gold=0/8
+CLASS_gain_A_over_B HIT gain_pp=100
+CLASS_host_winner_zero HIT
+CLASS_no_false_conflict HIT n_conf=0
+ASTRA_C3_HELD_OUT_MIG_02_XSIM_PASS
+$finish 2442962625 ps
+ISO_P3 w0=5 viso=0 PASS ISO_P3_X50_DW5
+C3_SUM A=40/40 B=0 C=0 Dpid=0 gain_pp=100 pair_pos=5/5 host_bad=0 n_conf=0
+PAIRED_CI n=5 pair_pos=5/5 mean_gain_pp=100 sd=0 CI95_lower=100 gt0=YES
+GOLDEN 3442a5969e981ebf2f223e4705b4938221f3395171ed3d8f510a5c02a1612dae
+C3_MASTER_CLAIM=NO BOARD_PASS=REJECT PROGRAM=NO quality=MIG_PHY_PLANTED_2HOP_LIVE_CONFLICT_C3

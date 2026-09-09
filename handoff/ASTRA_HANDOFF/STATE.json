@@ -1,0 +1,41 @@
+{
+  "schema": "astra-manager-handoff/v1",
+  "created_date": "2026-09-05",
+  "status": "HANDOFF_READY_EXISTING_ASTRA_CLONE_DIRTY_UNAUDITED",
+  "goal": "ASTRA_NATIVE_AI_BOARD_PASS",
+  "workspace_container": "D:/FPGA",
+  "intended_repo": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "intended_branch": "grok-orch/astra-native-v1-00",
+  "remote": "https://github.com/Jokejoker-designer/FPGG_ART_Y.git",
+  "master": "D:/FPGA/ASTRA_HANDOFF/ASTRA_NATIVE_AI_MASTER_V1.md",
+  "manager_session_id": null,
+  "grok_session_id": null,
+  "clone_head": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+  "next_gate": "ASTRA-00A-TAKEOVER-INTEGRITY-AUDIT",
+  "board_token": null,
+  "program_allowed": false,
+  "com12_owner_verified": false,
+  "old_lane": {
+    "status": "INDEPENDENT_ACTIVE_DO_NOT_REDIRECT",
+    "root": "D:/Jetking_sem4/SEM_4/arty-a7-online-lm-g14-preboard-00",
+    "branch": "grok-orch/v31-canonical-00",
+    "master": "UNIFIED_NATIVE_AI_FINAL_BLUEPRINT_V3_1.md",
+    "last_previously_observed_head": "4677ad26762d3ccc81e3fe204a236c43d7c90b55",
+    "old_grok_session_forbidden_to_reuse": "019ffa1c-a65c-71e0-8521-7d285e7c2ffd",
+    "head_requires_refresh": true,
+    "write_permission_for_new_manager": false
+  },
+  "excluded_junction": {
+    "path": "D:/FPGA/basys3-four-agent-snn-ready",
+    "target_observed": "D:/Jetking_sem4/SEM_4/basys3-four-agent-snn-ready",
+    "traverse_or_mutate": false
+  },
+  "acceptance_evidence_inherited": false,
+  "historical_artifacts_reusable_with_provenance": true,
+  "technical_reference": "references/DESIGN_CANDIDATE.md",
+  "current_readiness": "EXISTING_CLONE_NEEDS_TAKEOVER_AUDIT",
+  "clone_discovery": "CURRENT_CLONE_DISCOVERY.md",
+  "clone_branch_observed": "grok-orch/astra-native-v1-00",
+  "clone_origin_observed": "D:/Jetking_sem4/SEM_4/arty-a7-online-lm-g14-preboard-00",
+  "clone_dirty_observed": true
+}

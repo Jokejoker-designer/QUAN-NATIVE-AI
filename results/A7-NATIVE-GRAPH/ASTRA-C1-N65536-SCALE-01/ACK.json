@@ -1,0 +1,8 @@
+{
+  "gate": "ASTRA-C1-N65536-SCALE-01",
+  "n": 65536,
+  "program": false,
+  "board_pass": false,
+  "law": "qse-v2-relctx-synonym-01",
+  "implementer": "CURSOR_OWNER_OVERRIDE"
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "ASTRA-06-R2-EVICT-HIGHID-01",
+  "observed_session_id": "UNKNOWN",
+  "cwd": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "branch": "grok-orch/astra-native-v1-00",
+  "base": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+  "role": "implementer_not_v31_manager",
+  "write_scope": "new bag + distinctly named candidate RTL/TB/helpers only",
+  "PROGRAM": false,
+  "jtag": "NO_CALLS",
+  "conflict_writer": false,
+  "preserves": "results/A7-NATIVE-GRAPH/ASTRA-06-WARM-PERSIST-01, ASTRA-F2R-SHARED-RANK-PENDING-01, ASTRA-F2R-R2-PENDING-HANDSHAKE-LAW, ASTRA-F2R-R3-SEMANTIC-GUARD-01, ASTRA-F2R-R4-AXI-TIMEOUT-DRAIN-01, ASTRA-F2R-R5-TXN-WRAP-RESET-01, ASTRA-F3-SHARED-TRANSFER-01, ASTRA-F3-R2-INDEPENDENT-WORLDS-01, ASTRA-F3-R3-SAMPLED-WORLDS-01, ASTRA-F3-R4-DISTINCT-HOLD-PHI-01 (not edited); a7ng_astra_06_warm_persist.sv/.svh, a7ng_astra_f2r2_hs_law.sv, a7ng_shared_rank_sgd_q8_sym_f2r2.sv, a7ng_astra_f2r3_sem_guard.sv, a7ng_astra_f2r4_axi_drain.sv, a7ng_astra_f2r5_txn_wrap.sv, a7ng_astra_f3_shared_xfer.sv, a7ng_astra_f3r2_ind_worlds.sv, a7ng_astra_f3r3_sampled_worlds.sv, a7ng_astra_f3r4_distinct_hold_phi.sv not patched; those bags' run scripts not rerun",
+  "prior_acceptance": "AUDITOR_20260906T0945Z ACCEPT_PARTIAL on ASTRA-06-WARM-PERSIST-01; persist bag CLOSED_NARROW (modeled rst_n persist); Master ASTRA-06 OPEN; residuals high-bit IDs untested, reload_i untested, capacity/eviction OPEN, schemaV2/migration OPEN, DDR OPEN",
+  "gate_claim": "auditor 0945Z residuals 2, 7, capacity only: persist 20-bit eids with bits[19:8] nonzero (e.g. 20'hA0011); explicit reload_i distinct from auto need_rl after rst with delayed matching reward commit; written persist capacity N=1 policy REFUSE_UNCOMMITTED_EVICT_COMMITTED (second pending while first uncommitted is refused; persist never holds two committed snapshots); optional schema byte foreign VER does not restore into live weights. ISO +5, UNREL no stale proof, persist-disable stale. Frozen SGD instantiated. Not Master ASTRA-06, not DDR/NVM, not F3/LM06/BOARD.",
+  "does_not_close": ["Master_ASTRA-06", "Master_F3_10pp_CI", "LM06", "BOARD_PASS", "ASTRA-13", "persistence_DDR", "ASTRA-07_index_image", "NVM_QSPI_journal", "schemaV2_DDR_store", "host_sess_id_reuse_after_rstn_without_restore", "multi_slot_index_eviction_N_gt_1"]
+}

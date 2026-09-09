@@ -1,0 +1,29 @@
+{
+  "gate": "ASTRA-C5-PROD-TOP-01",
+  "program": false,
+  "master_c5_claimed": false,
+  "board_pass": false,
+  "ddr_query_bound_final": "NOT_FROZEN",
+  "required_class_substrings": [
+    "CLASS_uart_ingress",
+    "CLASS_role_parser",
+    "CLASS_sparse_index",
+    "CLASS_desc_retrieval",
+    "CLASS_shared_scorer",
+    "CLASS_typed_proof",
+    "CLASS_pending_reward",
+    "CLASS_persist",
+    "CLASS_evid_materializer",
+    "CLASS_lm06_gen",
+    "CLASS_uart_egress",
+    "CLASS_one_ddr_owner",
+    "CLASS_six_clients",
+    "CLASS_no_qid_map",
+    "CLASS_no_host_winner",
+    "CLASS_no_a09_top",
+    "CLASS_no_plant_in_dut",
+    "CLASS_ckpt_addr_06000000"
+  ],
+  "marker": "ASTRA_C5_PROD_TOP_XSIM_PASS",
+  "note": "GOLDEN lists required CLASS strings. One production hierarchy, modeled AXI not MIG. Do not regenerate after xvlog. Do not claim C5 Master close."
+}

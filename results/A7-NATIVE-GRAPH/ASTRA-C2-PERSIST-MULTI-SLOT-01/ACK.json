@@ -1,0 +1,8 @@
+{
+  "gate": "ASTRA-C2-PERSIST-MULTI-SLOT-01",
+  "program": false,
+  "board_pass": false,
+  "mig": false,
+  "cap_n": 2,
+  "one_unknown": "CAP_N=2 miss/hit/full + dirty eviction AXI write-back, not low16, not MIG"
+}

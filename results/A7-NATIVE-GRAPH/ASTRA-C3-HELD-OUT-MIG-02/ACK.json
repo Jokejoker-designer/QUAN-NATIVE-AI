@@ -1,0 +1,9 @@
+{
+  "gate": "ASTRA-C3-HELD-OUT-MIG-02",
+  "program": false,
+  "board_pass": false,
+  "mig": true,
+  "mig_class": "XSIM_DIGILENT_AXI_MIG_SIM_PLUS_DDR3_MODEL",
+  "master_c3_claimed": false,
+  "one_unknown": "compact C3 5-seed 4-arm held-out through official MIG PHY on live CONFLICT C3; n_conf=0; two positive dests rank; not silicon"
+}

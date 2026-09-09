@@ -1,0 +1,13 @@
+{
+  "gate": "ASTRA-C5-SGD32-CKPT-01",
+  "program": false,
+  "closes_c5_master": false,
+  "persist_schema_version": "NOT_FROZEN",
+  "c2_keep_edited": false,
+  "required_class_substrings": [
+    "CLASS_exact32_reload",
+    "CLASS_crc_no_install",
+    "CLASS_bresp_no_persist"
+  ],
+  "marker": "ASTRA_C5_SGD32_CKPT_XSIM_PASS"
+}

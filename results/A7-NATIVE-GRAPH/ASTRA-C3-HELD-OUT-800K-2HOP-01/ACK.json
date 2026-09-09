@@ -1,0 +1,8 @@
+{
+  "gate": "ASTRA-C3-HELD-OUT-800K-2HOP-01",
+  "program": false,
+  "board_pass": false,
+  "mig": false,
+  "master_c3_claimed": false,
+  "one_unknown": "5-seed 4-arm disjoint held-out gain on 800k cartesian fact_pack 2-hop via ctx-folded k0 overlay; not planted 96-slot; not MIG"
+}

@@ -1,0 +1,3 @@
+# GOLD SHA256 hashed BEFORE first vivado 2026-09-08T02:46:00.0468723+07:00
+# PROGRAM=NO Do not regenerate GOLDEN.json after this file exists
+5f20c4d0f3572ae6df695e6c89d62d00f5461f17bb13a1551d48cd59bc7e9e9a

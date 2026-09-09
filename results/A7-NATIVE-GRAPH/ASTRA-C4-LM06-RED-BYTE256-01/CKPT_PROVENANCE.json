@@ -1,0 +1,50 @@
+{
+  "seed": 18,
+  "seq_seed0": [
+    53,
+    53,
+    53,
+    53,
+    53,
+    53
+  ],
+  "seq_seed_y": [
+    206,
+    206,
+    206,
+    206,
+    206,
+    206
+  ],
+  "seq_ctx_b": [
+    53,
+    125,
+    125,
+    125,
+    125,
+    125
+  ],
+  "seq_zero": [
+    0
+  ],
+  "seq_safe": [
+    110,
+    111,
+    0
+  ],
+  "program": false,
+  "c4_master": "OPEN",
+  "rival": "reduced_lm06_compatible",
+  "tinygpt_802k": "NOT_USED",
+  "V": 256,
+  "D": 4,
+  "F": 8,
+  "SHR": 4,
+  "N_W": 1392,
+  "hex_sha256": "74b5f885da98382db924c0b2a7e002b126d6517330c23ce164e62695ccdade1d",
+  "hex_rel": "rtl/native_graph/integrate/a7ng_astra_c4_lm06_red.hex",
+  "training": "none_synthetic_lcg_search",
+  "bram_assumed": 0,
+  "dsp_assumed_sequential": 0,
+  "note": "One-layer integer decoder-only. Not 90/95/5 language close."
+}

@@ -1,0 +1,21 @@
+{
+  "task_id": "ASTRA-11-A09-IMPL-ROUTE-01",
+  "observed_session_id": "UNKNOWN",
+  "cwd": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "branch": "grok-orch/astra-native-v1-00",
+  "base": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+  "role": "implementer_not_v31_manager",
+  "write_scope": "new bag + distinctly named impl/route wrapper that instantiates a7ng_astra_09_integ_path (no copy-paste graph)",
+  "PROGRAM": false,
+  "jtag": "NO_CALLS",
+  "bitstream": "NOT_BUILT",
+  "write_bitstream": false,
+  "xsdb": false,
+  "com12": "UNTOUCHED",
+  "hw_server": false,
+  "conflict_writer": false,
+  "preserves": "results/A7-NATIVE-GRAPH/ASTRA-10-RESOURCE-BOUND-01, ASTRA-09-INTEGRATED-PATH-01, ASTRA-06-*, ASTRA-F2R-*, ASTRA-F3-*, ASTRA-11-SOC-WRAP*, ASTRA-11-TIMING-FIX, ASTRA-SOC-RTP-WRAP-ROUTE (not edited; wrap-route WNS=+5.733 not overwritten); frozen RTL not patched; those bags' run scripts not rerun",
+  "prior_acceptance": "AUDITOR_20260906T1330Z ACCEPT_PARTIAL on ASTRA-10-RESOURCE-BOUND-01; OOC synth WNS=+2.283 is NOT implemented timing; residual 1 next physical evidence must be implement+route (clock-network), not OOC, not BOARD, not bitstream; board plugged; PROGRAM=NO",
+  "gate_claim": "after implement+route of instantiated a7ng_astra_09_integ_path on xc7a100tcsg324-1 at declared 50 MHz (clock-network delay included), is routed WNS >= 0 — without a bitstream; not BOARD_PASS; not wrap-route WNS=+5.733; not OOC WNS=+2.283; not Master ASTRA-09/F3/LM06/ASTRA-13 close",
+  "does_not_close": ["Master_ASTRA-09", "Master_F3_10pp_CI", "Master_ASTRA-06", "LM06", "BOARD_PASS", "ASTRA-13", "ASTRA-11_SoC_UART_wrap", "Master_ASTRA-10_whole_chip"]
+}

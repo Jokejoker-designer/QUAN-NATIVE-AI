@@ -1,0 +1,17 @@
+{
+  "gate": "ASTRA-C4-COND-RNN-BYTE256-01",
+  "program": false,
+  "master_c4_claimed": false,
+  "closes_c4_master": false,
+  "rival": "compact_recurrent_byte256",
+  "required_class_substrings": [
+    "CLASS_prefix_changes",
+    "CLASS_evidence_changes",
+    "CLASS_safe_no",
+    "CLASS_seq_ge3",
+    "CLASS_zero_changes",
+    "CLASS_host_tok0"
+  ],
+  "marker": "ASTRA_C4_COND_RNN_BYTE256_XSIM_PASS",
+  "note": "Named integer Elman BYTE256. Causality this-gate. Language 90/95/5 remain MISS. Do not regenerate GOLDEN after xvlog."
+}

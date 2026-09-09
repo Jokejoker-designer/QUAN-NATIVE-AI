@@ -1,0 +1,7 @@
+{
+  "gate": "ASTRA-C5-AUTO-REWARD-REGRESS-01",
+  "program": false,
+  "board_pass": false,
+  "dut": "unedited a7ng_astra_c5_prod_top",
+  "one_unknown": "ANSWER auto-commits SGD/persist +3 with no UART reward packet"
+}

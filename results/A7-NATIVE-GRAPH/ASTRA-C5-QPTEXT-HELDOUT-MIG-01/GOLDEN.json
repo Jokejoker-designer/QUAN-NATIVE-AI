@@ -1,0 +1,28 @@
+{
+  "gate": "ASTRA-C5-QPTEXT-HELDOUT-MIG-01",
+  "program": false,
+  "master_c5_claimed": false,
+  "board_pass": false,
+  "mig": "XSIM_DIGILENT_AXI_MIG_SIM_PLUS_DDR3_MODEL",
+  "lm06_byte256_frozen": false,
+  "ddr_query_bound_final": "NOT_FROZEN",
+  "train_subject": 10,
+  "hold_subject": 6,
+  "pre_dest": 144,
+  "post_dest": 112,
+  "required_class_substrings": [
+    "CLASS_mig_calib_complete",
+    "CLASS_entities_disjoint",
+    "CLASS_heldout_pre",
+    "CLASS_reward_update",
+    "CLASS_heldout_post",
+    "CLASS_heldout_changed",
+    "CLASS_one_ddr_owner",
+    "CLASS_no_qid_map",
+    "CLASS_no_host_winner",
+    "CLASS_no_a09_top",
+    "CLASS_no_plant_in_dut"
+  ],
+  "marker": "ASTRA_C5_QPTEXT_HELDOUT_MIG_XSIM_PASS",
+  "note": "GOLDEN lists required CLASS strings. Existing c4q held-out PRE/POST through official MIG PHY. Do not regenerate after xvlog. Do not claim C5 Master close."
+}

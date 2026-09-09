@@ -1,0 +1,29 @@
+{
+  "task_id": "ASTRA-12-R7-BTN-CANDIDATES-01",
+  "observed_session_id": "UNKNOWN",
+  "cwd": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "branch": "grok-orch/astra-native-v1-00",
+  "base": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+  "role": "implementer_not_v31_manager",
+  "authority": "REPORT_ONLY",
+  "write_scope": "new bag only: ACK first + CANDIDATES.md two new BTN rows from raw ASTRA-11-A09R7-BTN-IO-01 and ASTRA-11-A09R7-BTN-IDELAY-01 reports + SHA256 of cited raw reports/XDC/io/util + pointers to 12-R6 without rewriting those files + RESULTS/CLOSEOUT; no RTL; no bitstream; no freeze of a winner; no PRODUCTION_TOP=module; no prior-bag rewrite; no impl/xsim rerun",
+  "PROGRAM": false,
+  "jtag": "NO_CALLS",
+  "bitstream": "NOT_BUILT",
+  "write_bitstream": false,
+  "xsdb": false,
+  "com12": "UNTOUCHED",
+  "hw_server": false,
+  "conflict_writer": false,
+  "PRODUCTION_TOP": "UNKNOWN",
+  "winner_frozen": false,
+  "ack": true,
+  "new_rows": [
+    "F1:a7ng_astra_11_a09r7_btn_io_wrap",
+    "I1:a7ng_astra_11_a09r7_btn_idelay_wrap"
+  ],
+  "preserves": "results/A7-NATIVE-GRAPH/ASTRA-12-R6-LED-CANDIDATES-01 (pointer only; files not rewritten), ASTRA-12-R5-FREEZE-BRIEF-01 (not rewritten), ASTRA-12-R4-R7-UART-CANDIDATES-01 (not rewritten), ASTRA-12-R2-TOP-CANDIDATES-01 (not rewritten), ASTRA-12-R3-UART-WRAP-CANDIDATES-01 (not rewritten), ASTRA-12-PREPROGRAM-PACK-01 (not rewritten), ASTRA-11-A09R7-BTN-IO-01 (FAIL bag; live + fail_r0 WHS=-2.068 not overwritten; delays 2.000/0.500 not retuned; run_impl not rerun), ASTRA-11-A09R7-BTN-IDELAY-01 (routed TAP=31 WNS=+0.574 WHS=+0.131 not overwritten; run_impl not rerun), ASTRA-11-A09R7-LED-IO-01 (routed WNS=+0.411 WHS=+0.027 not overwritten), ASTRA-11-A09R7-UART-IMPL-ROUTE-01 (routed WNS=+0.336 WHS=+0.104 not overwritten), ASTRA-09-R7-UART-QUERY-REW-01 (XSim not overwritten), ASTRA-SOC-RTP-WRAP-ROUTE (wrap-route WNS=+5.733 not overwritten), ASTRA-11-A09R3-UART-IOBFF-HOLD-01, ASTRA-11-A09R3-UART-IOBFF-01, ASTRA-11-A09R3-UART-IODELAY-01, ASTRA-11-A09R3-UART-IMPL-ROUTE-01, ASTRA-11-A09-IMPL-ROUTE-01, ASTRA-11-SOC-WRAP, ASTRA-11-TIMING-FIX, ASTRA-07-SCALE-MID-01 (not rewritten; those bags' run scripts not rerun); frozen RTL not patched; no .bit generated; PRODUCTION_TOP not written as a module name",
+  "prior_acceptance": "AUDITOR_20260907T0530Z ACCEPT_PARTIAL | REJECT_PROMOTION on ASTRA-11-A09R7-BTN-IDELAY-01; bag PASS_NARROW CLOSED_NARROW; TAP=31 frozen before impl; raw routed WNS=+0.574 TNS=0.000 WHS=+0.131 Design State Routed clk50u 20.000 ns; BTN pad hold MET +0.638 vs related clk50u Input Delay min 0.500; false-path-btn NO; IDELAYE2=4 FIXED tap 31 + IDELAYCTRL=1 REFCLK 200 MHz; delays 2.000/0.500 kept; FAIL bag ASTRA-11-A09R7-BTN-IO-01 still WHS=-2.068 on disk (fail_r0 intact); PRODUCTION_TOP=UNKNOWN; ASTRA-13 BLOCKED; BOARD still blocked YES; board plugged; PROGRAM=NO; parent residual: do not freeze PRODUCTION_TOP; do not ASTRA-13; this bag only extends the candidate table with two BTN rows",
+  "gate_claim": "extend the candidate table with two new rows quoting raw reports: FAIL bag BTN-IO WNS=+0.452 WHS=-2.068; IDELAY bag TAP=31 WNS=+0.574 WHS=+0.131 BTN hold MET +0.638 false-path-btn NO; plus pointers to 12-R6 CANDIDATES.md without rewriting those files, while PRODUCTION_TOP remains UNKNOWN — without write_bitstream, without freezing a winner, without BOARD_PASS, without closing ASTRA-13, without rerunning impl",
+  "does_not_close": ["production_top_identity", "Master_ASTRA-12_unique_bit_UART_plan", "Master_ASTRA-13", "BOARD_PASS", "write_bitstream", "ASTRA-11_FULLCHIP_COFIT", "Master_ASTRA-09", "Master_F3_10pp_CI", "Master_ASTRA-06", "LM06", "ACCEPT_BOARD", "physical_IOB_hold_MET", "physical_BTN_hold_as_DTS_WHS", "UART_STA_ladder_as_one_envelope", "ASTRA-11-A09R7-BTN-IO-01", "ASTRA-11-A09R7-BTN-IDELAY-01", "ASTRA-11-A09R7-LED-IO-01", "ASTRA-11-A09R7-UART-IMPL-ROUTE-01", "ASTRA-09-R7-UART-QUERY-REW-01", "ASTRA-12-R6-LED-CANDIDATES-01", "winner_as_frozen"]
+}

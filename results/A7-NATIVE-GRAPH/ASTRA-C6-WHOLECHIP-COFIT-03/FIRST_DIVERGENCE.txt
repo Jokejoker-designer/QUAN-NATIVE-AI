@@ -1,0 +1,7 @@
+FIRST_DIVERGENCE OPT_CONSTPROP_AV
+r0: synth_design OK, synth.dcp written, CLASS_c5_prod_inst/mig/no_a09 HIT.
+opt_design -propconst -sweep crashed Vivado 2026.1 Phase 3 Constant propagation
+EXCEPTION_ACCESS_VIOLATION pid=44408
+r0: synth OK; opt_design -propconst -sweep ACCESS_VIOLATION Phase 3 Constant propagation.
+GOLDEN frozen e0d2d17a0c4ce73505c992079747e31ecb56e366050e70cfaba68b196e3db713
+r1: resume synth.dcp, skip opt, place/route/phys_opt → WNS=0.233 PASS. PROGRAM=NO.

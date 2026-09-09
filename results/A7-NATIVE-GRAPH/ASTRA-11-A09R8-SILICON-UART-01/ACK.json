@@ -1,0 +1,12 @@
+{
+  "task_id": "ASTRA-11-A09R8-SILICON-UART-01",
+  "owner_approval": "2026-09-07 test official A09R8 bit on plugged Arty A7",
+  "program": true,
+  "jtag_want": "210319BE776EA",
+  "com12": "115200 8N1",
+  "bit_sha256": "e51bdca253a7179aa1037695918d0069c43770581a3152665fb8a2739ed461bb",
+  "top": "a7ng_astra_11_a09r8_uart_freeze_wrap",
+  "one_unknown": "COM12 MAGIC-A2 smoke ans=4 p0=17 after program of SHA-pinned bit",
+  "not_this_bag": ["DDR", "MIG", "LM06", "ASTRA-13", "BOARD_PASS", "800k"],
+  "refuse": ["xc7z020", "1234-TUL", "any other serial", "any other bitstream"]
+}

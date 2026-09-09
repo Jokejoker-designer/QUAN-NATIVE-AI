@@ -1,0 +1,9 @@
+{
+  "gate": "ASTRA-C6-WHOLECHIP-COFIT-01",
+  "program": false,
+  "board_pass": false,
+  "mig": "official_user_design",
+  "master_c6_claimed": false,
+  "ddr_query_bound_final": "NOT_FROZEN",
+  "one_unknown": "does the exact C5 production top plus official Digilent AXI MIG fit and close timing on xc7a100tcsg324-1"
+}

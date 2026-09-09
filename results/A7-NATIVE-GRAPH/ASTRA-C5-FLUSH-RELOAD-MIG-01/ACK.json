@@ -1,0 +1,8 @@
+{
+  "gate": "ASTRA-C5-FLUSH-RELOAD-MIG-01",
+  "program": false,
+  "board_pass": false,
+  "mig": true,
+  "master_c5_claimed": false,
+  "one_unknown": "UART flush zeros persist w0 then C2 reload restores it on C5 prod_top through official MIG PHY"
+}

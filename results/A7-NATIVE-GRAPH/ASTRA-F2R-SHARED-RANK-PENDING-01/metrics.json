@@ -1,0 +1,59 @@
+{
+  "task_id": "ASTRA-F2R-SHARED-RANK-PENDING-01",
+  "grok_astra_id": "99be8510-6587-4eb0-a06e-0f9796e19b1d",
+  "verdict": "PASS_NARROW",
+  "informationStatus": "CONFIRMED_XSIM_ONLY",
+  "xsim_marker": "ASTRA_F2R_XSIM_PASS",
+  "fail_count": 0,
+  "first_divergence": null,
+  "sim_time_ns": 61245,
+  "program": false,
+  "bitstream": false,
+  "iso_onehot": { "w0": -6, "w1": 0, "v": 0, "pass": true },
+  "r0": {
+    "npath": 2,
+    "p0": 17,
+    "p1": 34,
+    "ans": 4,
+    "vbest": 0,
+    "vsecond": 0,
+    "phi0": 50,
+    "load_from_tb": 0,
+    "txn": 1,
+    "pass": true
+  },
+  "dw_after_neg3": { "nupd": 1, "pend_cmt": 1, "w0": -5, "pass": true },
+  "neg_switch": { "p0": 18, "vbest": -13, "vsecond": -14, "pass": true },
+  "prereg_one_feature_v_after_neg": { "v_hi": -2, "v_lo": -1, "matched_measured_v": false, "note": "phi[1:4]=64 also update; ranking order still 18>17" },
+  "controls": {
+    "freeze_no_switch": true,
+    "validity_only_no_switch": true,
+    "pos_stay_17": true
+  },
+  "txn_guards": { "nupd": 1, "ndup": 1, "nbad": 1, "w0": -5, "pass": true },
+  "transfer_5world": {
+    "n_pass": 5,
+    "n_total": 5,
+    "npath_observed": 3,
+    "selected_p0": ["0x1002", "0x1006", "0x100a", "0x100e", "0x1012"],
+    "claim": "PASS_NARROW_STRUCTURAL_PLANT",
+    "master_f3": "OPEN"
+  },
+  "rtp_negatives_pass": [
+    "POST_DROP",
+    "DESC_SWAP_ENUM",
+    "HIGH_ID",
+    "EID_MISMATCH",
+    "AXI_BAD_RID",
+    "AR_STALL",
+    "LATE_R",
+    "OVF",
+    "NEG",
+    "AMB",
+    "UNREL_NO_STALE"
+  ],
+  "open": ["LM06_NOT_INTEGRATED", "F4", "F5", "BOARD_PASS"],
+  "xsim_log_sha256": "a51bd80a9ceccae5d9a8d7fe6d316a6bc314f13ef7efc8b231ceadde9c2c8975",
+  "xvlog_log_sha256": "4f98d85c3c4750df24349b00b403a69d9e8f23ef749724228cfedcc3d154090f",
+  "compiled_sha_pre_post_match": true
+}

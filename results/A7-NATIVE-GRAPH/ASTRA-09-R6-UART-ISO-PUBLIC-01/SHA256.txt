@@ -1,0 +1,31 @@
+# SHA freeze BEFORE xvlog 2026-09-07T00:55:25.9945858+07:00
+# COMPILED
+b66ef32847bae8dceb902b36a2755eae8bcd48289bd00c133fb16f095fc67aac  rtl/native_graph/learn/a7ng_shared_rank_sgd_q8_sym_f2r2.sv
+3c0b3fa855a1e686efc9d4a99a882a634c7d48323c437780b483ccb8a19590c3  results/A7-NATIVE-GRAPH/ASTRA-09-R6-UART-ISO-PUBLIC-01/a7ng_astra_09_r6_iso_pub.sv
+8e802d0b4f7466d7683c9b0109d6666ba5b5d77cf67e45f5ab7c0564bcd5369a  rtl/board/uart_rx.sv
+b4b7d09758cc95bb52a382bf5c11b5861ddcf0f74055d478824386531b36367b  rtl/board/uart_tx.sv
+2fcb59c724d747e76a08f15e12f1c51e99444418f1e81bd42e8fbb2090202044  results/A7-NATIVE-GRAPH/ASTRA-09-R6-UART-ISO-PUBLIC-01/a7ng_astra_09_r6_uart_iso_public_wrap.sv
+f1418fbbb07b9b37af4da32069ac3252abacd39a52617db536ee72e77a1f5cd2  results/A7-NATIVE-GRAPH/ASTRA-09-R6-UART-ISO-PUBLIC-01/tb_astra_09_r6_uart_iso_public.sv
+# TRANSITIVE_INCLUDES
+241e8a9f779a68bb6bebf2c7962ebe21a48a790c2887b592861e7f9c0702748a  results/A7-NATIVE-GRAPH/ASTRA-09-R6-UART-ISO-PUBLIC-01/a7ng_astra_09_r6_iso_pub.svh
+# CONFIG
+b12738f9ec6653b7f2c1d3ad1a7fcfdd0b192ab66960db1e8ca55ed1fd73d4b6  results/A7-NATIVE-GRAPH/ASTRA-09-R6-UART-ISO-PUBLIC-01/PREREG.md
+9a4abf4ce63f1ecef7c26f89569600a3e1e602e62df168aef2fae8a1e1e72b19  results/A7-NATIVE-GRAPH/ASTRA-09-R6-UART-ISO-PUBLIC-01/ACK.json
+ac9dc5fbc1e2f2696721bf635255cb79e1c15e5e2f6ac7f2e9b2778915d03c09  results/A7-NATIVE-GRAPH/ASTRA-09-R6-UART-ISO-PUBLIC-01/run_xsim.ps1
+# STUB_ON_DISK (xvlog only if unisim xelab fails)
+52a43cd8931b732e14d780b0f53f78f34817f08cf21c2ee432bbc8cb31fe1864  results/A7-NATIVE-GRAPH/ASTRA-09-R6-UART-ISO-PUBLIC-01/mmcm_stub.sv
+# KEEP_NOT_COMPILED (frozen leftover A09 + frozen A09-R2 + R3/R4/R5 UART wraps; not this DUT)
+9fdbe0d642dd5f36d1c43626de71a125cfbf7725ffa9dd81e920ecfebb5c776c  rtl/native_graph/integrate/a7ng_astra_09_integ_path.sv
+15a919f19226bad2c8dc87f7862246a3869643db022303338cca5f8d8b70ee23  rtl/native_graph/integrate/a7ng_astra_09_r2_cand_ovf.sv
+a1f7a063f95d9239739f321f31800037785f399f2178016426230770853905fa  rtl/board/arty_a7_astra_rtp_soc_top.sv
+20cdeb8ef7a469d036ae4d780a96134cad5928539c349aa583060b6ca3e88b41  results/A7-NATIVE-GRAPH/ASTRA-09-R3-UART-XSIM-01/a7ng_astra_09_r3_uart_wrap.sv
+cc8ffdaa611e31305ad0b7c5e9902daba516bb707e17a184dd76675a836703ab  results/A7-NATIVE-GRAPH/ASTRA-09-R4-UART-ISO-01/a7ng_astra_09_r4_uart_iso_wrap.sv
+ee02935e5e3eca0f91fd1c1c689dfa82f3839f77f1b971e4e0412df22f95999e  results/A7-NATIVE-GRAPH/ASTRA-09-R5-UART-ISO-INNER-01/a7ng_astra_09_r5_uart_iso_inner_wrap.sv
+ad2d66d4783bba33cfbd324fc0a9661fb2a46eeaffb5b4fb6989246fb4e94302  rtl/native_graph/integrate/a7ng_astra_09_integ_path.svh
+feaed571ce02bec4218e2105986349a464d6c44bcf1a818260ee27a171afd329  rtl/native_graph/integrate/a7ng_astra_09_r2_cand_ovf.svh
+# PROVENANCE frozen A09/SGD/R2 (not edited; R2 unused this bag)
+9fdbe0d642dd5f36d1c43626de71a125cfbf7725ffa9dd81e920ecfebb5c776c  rtl/native_graph/integrate/a7ng_astra_09_integ_path.sv
+ad2d66d4783bba33cfbd324fc0a9661fb2a46eeaffb5b4fb6989246fb4e94302  rtl/native_graph/integrate/a7ng_astra_09_integ_path.svh
+b66ef32847bae8dceb902b36a2755eae8bcd48289bd00c133fb16f095fc67aac  rtl/native_graph/learn/a7ng_shared_rank_sgd_q8_sym_f2r2.sv
+15a919f19226bad2c8dc87f7862246a3869643db022303338cca5f8d8b70ee23  rtl/native_graph/integrate/a7ng_astra_09_r2_cand_ovf.sv
+feaed571ce02bec4218e2105986349a464d6c44bcf1a818260ee27a171afd329  rtl/native_graph/integrate/a7ng_astra_09_r2_cand_ovf.svh

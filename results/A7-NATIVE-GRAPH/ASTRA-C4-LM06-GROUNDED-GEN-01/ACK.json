@@ -1,0 +1,9 @@
+{
+  "gate": "ASTRA-C4-LM06-GROUNDED-GEN-01",
+  "program": false,
+  "board_pass": false,
+  "mig": false,
+  "master_c4_claimed": false,
+  "lm06_byte256_frozen": false,
+  "one_unknown": "compact LM head tokens depend on loadable weights AND materialized evidence; not a7ng_evidence_compose renderer; host next-token=0"
+}

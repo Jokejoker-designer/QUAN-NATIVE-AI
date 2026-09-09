@@ -1,0 +1,39 @@
+# SHA freeze BEFORE xvlog 2026-09-07T09:49:05.5830397+07:00
+# PROGRAM=NO C1_800K=OPEN CAND_CAP=16 N=256 LAW=qse-v2-relbind-01 POKE_V=0
+# HASH_GATE MATCH vs C0 FINAL_CONTRACT (frozen files not patched)
+# FROZEN_RTL
+cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27  rtl/native_graph/query/a7ng_query_role_extract.sv
+381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c  rtl/native_graph/query/qse_role_lexicon.svh
+09334e42c3913d4de3a1b59147f48c810481cd634e63b37e64bc669a6c36bb24  rtl/native_graph/memory/a7ng_sparse_dir_axi.sv
+5a4ad04d498c588b4447431c290a862252abfbecdef8e934ed4215b9b9c5c0fa  rtl/native_graph/integrate/a7ng_query_axi_sparse.sv
+49a66da21dc075d1487c320d399643ff94e87b02af13f3d6f36d346a1be3a385  rtl/native_graph/query/a7ng_route_valid_gate.sv
+# NEW_NAMED_RTL
+93811ed17adbd9c2adc1a93514faf35b23ba8184d325a7204aee90e09c77057d  rtl/native_graph/query/a7ng_query_role_keys_relbind.sv
+37b7858cafae9154828a48969cece1a862748a86f9f19fc26026e8cbbfc4dfd6  rtl/native_graph/integrate/a7ng_query_axi_sparse_relbind.sv
+# COMPILED
+7cf9885217562c8e26b3c8818b10b4488fd637621b62f6a3652fe7ff5aee57a6  rtl/native_graph/pkg/a7ng_pkg.sv
+cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27  rtl/native_graph/query/a7ng_query_role_extract.sv
+93811ed17adbd9c2adc1a93514faf35b23ba8184d325a7204aee90e09c77057d  rtl/native_graph/query/a7ng_query_role_keys_relbind.sv
+49a66da21dc075d1487c320d399643ff94e87b02af13f3d6f36d346a1be3a385  rtl/native_graph/query/a7ng_route_valid_gate.sv
+09334e42c3913d4de3a1b59147f48c810481cd634e63b37e64bc669a6c36bb24  rtl/native_graph/memory/a7ng_sparse_dir_axi.sv
+40df08bb58e7eb6e1cc0f0a87b4d67564e8ea602cace166c67eed7d088d8007c  rtl/native_graph/memory/a7ng_axi_mem_model.sv
+37b7858cafae9154828a48969cece1a862748a86f9f19fc26026e8cbbfc4dfd6  rtl/native_graph/integrate/a7ng_query_axi_sparse_relbind.sv
+7452b56c0a7a2cae1744da8571b536730c8816fa43a74c8447188e2a7b722e86  results/A7-NATIVE-GRAPH/ASTRA-C1-KEY-RELBIND-01/tb_astra_c1_key_relbind.sv
+# TRANSITIVE_INCLUDES
+9a06e6d390dff66db34daa395a29ea563bed2365e9f2db5bdedcfcb9e9added7  rtl/native_graph/control/a7ng_gate14_crc.svh
+381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c  rtl/native_graph/query/qse_role_lexicon.svh
+f8835b2e6b552228431a2d0875d60666e33e0e37329aa326415b96e7d26bd2de  results/A7-NATIVE-GRAPH/ASTRA-C1-KEY-RELBIND-01/query_gold.svh
+# INDEPENDENT_GOLD_BEFORE_XVLOG
+0f1ba57ac183404a80c35e8d9543f897029e8c9716d14fae6c77ca158e862d4e  results/A7-NATIVE-GRAPH/ASTRA-C1-KEY-RELBIND-01/GOLDEN.json
+f8835b2e6b552228431a2d0875d60666e33e0e37329aa326415b96e7d26bd2de  results/A7-NATIVE-GRAPH/ASTRA-C1-KEY-RELBIND-01/query_gold.svh
+4f981fd93940b258109d1bc21bd96d90db4dd3920ca6c039ef99c1bc9954605e  results/A7-NATIVE-GRAPH/ASTRA-C1-KEY-RELBIND-01/corpus.json
+# BAG
+fa812e4b04010b860296702e21459986249764a32670b129c169eee753863cc3  results/A7-NATIVE-GRAPH/ASTRA-C1-KEY-RELBIND-01/PREREG.md
+dfa98129b64d2f2da4a599f1c54e486431e3d34a9f922628ce819047fd07702e  results/A7-NATIVE-GRAPH/ASTRA-C1-KEY-RELBIND-01/ACK.json
+9b6b2e4e70769949ca0cbd5a614106d6ae290827e96de761e30e469ddfee155e  results/A7-NATIVE-GRAPH/ASTRA-C1-KEY-RELBIND-01/run_xsim.ps1
+d3a86504912da890e2c5d430fa477bcac428c86cde0783c1a02a25ed3ea7bbed  results/A7-NATIVE-GRAPH/ASTRA-C1-KEY-RELBIND-01/host_astra_c1_key_relbind.py
+7452b56c0a7a2cae1744da8571b536730c8816fa43a74c8447188e2a7b722e86  results/A7-NATIVE-GRAPH/ASTRA-C1-KEY-RELBIND-01/tb_astra_c1_key_relbind.sv
+# FORBIDDEN leftover a7ng_astra_09_integ_path NOT on xvlog DUT list
+# FORBIDDEN frozen a7ng_query_axi_sparse.sv NOT compiled as DUT
+# REDUCTION_X1000 NOT_EMITTED (not 1-CAND_CAP/N)
+# DISTRACTOR_GOLD_POLARITY excluded leak=FAIL

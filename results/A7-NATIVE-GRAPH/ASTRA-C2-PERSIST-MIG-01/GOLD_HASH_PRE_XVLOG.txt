@@ -1,0 +1,2 @@
+# independent gold hashed BEFORE first xvlog -- do not regenerate after FAIL
+9618d7acac2af5c4369cd67cfcc56fb19e92d474c6025184c2da83684ffc9c88  GOLDEN.json

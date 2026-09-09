@@ -1,0 +1,121 @@
+{
+  "gate": "ASTRA-05-CAUSAL-PROOF-PERTURBATION",
+  "law": "qse-v2-role-00 control; 2hop-v2 polarity+budget",
+  "exam_pair_stored": false,
+  "open_world_claimed": false,
+  "ids": {
+    "READ_A": 161,
+    "READY_B": 178,
+    "CALIB_C": 195,
+    "CALIB_D": 212,
+    "REL_REQ": 33,
+    "EID_AB": 17,
+    "EID_BC": 34,
+    "EID_BD": 51,
+    "RND_X": 62,
+    "RND_Y": 145,
+    "RND_Z": 7
+  },
+  "cases": [
+    {
+      "name": "BASE",
+      "st": 0,
+      "st_name": "ANSWER",
+      "ans": 195,
+      "p0": 17,
+      "p1": 34,
+      "scan": 4
+    },
+    {
+      "name": "BASE_NOT_STORED",
+      "st": 1,
+      "st_name": "UNKNOWN",
+      "ans": 0,
+      "p0": 0,
+      "p1": 0,
+      "scan": 2
+    },
+    {
+      "name": "DEL",
+      "st": 1,
+      "st_name": "UNKNOWN",
+      "ans": 0,
+      "p0": 0,
+      "p1": 0,
+      "scan": 2
+    },
+    {
+      "name": "REP",
+      "st": 0,
+      "st_name": "ANSWER",
+      "ans": 212,
+      "p0": 17,
+      "p1": 51,
+      "scan": 4
+    },
+    {
+      "name": "CONF_NEG",
+      "st": 5,
+      "st_name": "CONFLICT",
+      "ans": 0,
+      "p0": 0,
+      "p1": 0,
+      "scan": 6
+    },
+    {
+      "name": "CONF_TWO",
+      "st": 5,
+      "st_name": "CONFLICT",
+      "ans": 0,
+      "p0": 0,
+      "p1": 0,
+      "scan": 6
+    },
+    {
+      "name": "CAP",
+      "st": 6,
+      "st_name": "SEARCH_INCOMPLETE",
+      "ans": 0,
+      "p0": 0,
+      "p1": 0,
+      "scan": 1
+    },
+    {
+      "name": "CAP_HOP",
+      "st": 6,
+      "st_name": "SEARCH_INCOMPLETE",
+      "ans": 0,
+      "p0": 0,
+      "p1": 0,
+      "scan": 0
+    },
+    {
+      "name": "CAP_RESTORE",
+      "st": 0,
+      "st_name": "ANSWER",
+      "ans": 195,
+      "p0": 17,
+      "p1": 34,
+      "scan": 4
+    },
+    {
+      "name": "INV",
+      "st": 1,
+      "st_name": "UNKNOWN",
+      "ans": 0,
+      "p0": 0,
+      "p1": 0,
+      "scan": 4
+    },
+    {
+      "name": "RND",
+      "st": 0,
+      "st_name": "ANSWER",
+      "ans": 7,
+      "p0": 84,
+      "p1": 168,
+      "scan": 4
+    }
+  ],
+  "result_host": "PASS"
+}

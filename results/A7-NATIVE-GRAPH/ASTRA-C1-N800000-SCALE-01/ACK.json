@@ -1,0 +1,9 @@
+{
+  "gate": "ASTRA-C1-N800000-SCALE-01",
+  "n": 800000,
+  "program": false,
+  "board_pass": false,
+  "law": "qse-v2-relctx-synonym-01",
+  "implementer": "CURSOR_OWNER_OVERRIDE",
+  "does_not_edit": "ASTRA-C1-SEMANTIC-800K-01"
+}

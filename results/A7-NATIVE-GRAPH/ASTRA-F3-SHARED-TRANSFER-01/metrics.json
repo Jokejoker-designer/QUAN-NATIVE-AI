@@ -1,0 +1,60 @@
+{
+  "task_id": "ASTRA-F3-SHARED-TRANSFER-01",
+  "observed_session_id": "UNKNOWN",
+  "base": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+  "verdict_proposed": "PASS_NARROW",
+  "master_f3_claimed": false,
+  "xsim_marker": "ASTRA_F3_SHARED_TRANSFER_XSIM_PASS",
+  "fail_count_pass_run": 0,
+  "first_divergence_pass_run": null,
+  "corrective_passes": 0,
+  "sim_time_ns": 103615,
+  "program": false,
+  "bitstream": false,
+  "law": "native-rank-sgd-q8-v1-sym-f2r2",
+  "iso_p3_x50_dw0": 5,
+  "load_from_tb": 0,
+  "seeds": {
+    "n": 5,
+    "not_id_permutations": true,
+    "S0": "2hop_quality_dest4",
+    "S1": "2hop_ctx_match",
+    "S2": "2hop_object_bound_compressor",
+    "S3": "2hop_dest11_deadend",
+    "S4": "1hop_water_domain"
+  },
+  "hold": {
+    "en_c": 5,
+    "fr_c": 0,
+    "sh_c": 0,
+    "pid_c": 0,
+    "pid_n": 4,
+    "ret_c": 5
+  },
+  "selective_accuracy": {
+    "enabled_hold": 1.0,
+    "no_update_hold": 0.0,
+    "shuffled_hold": 0.0
+  },
+  "coverage_rank_queries": { "n_rank": 30, "n_answer": 30 },
+  "unrel_unknown": 1,
+  "descriptive_not_master": {
+    "gain_pp_vs_fr": 100.0,
+    "gain_pp_vs_sh": 100.0,
+    "paired_en_minus_fr": [1, 1, 1, 1, 1],
+    "paired_ci_lo": 1.0,
+    "retention_drop_pp": 0.0,
+    "note": "PREREG forbade claiming Master 10pp/CI on this compact designed-plant protocol"
+  },
+  "open": ["Master_F3_10pp_CI", "LM06_NOT_INTEGRATED", "BOARD_PASS", "ASTRA-13", "persistence_DDR", "power_loss_journal"],
+  "xsim_log_sha256": "b6da5fce37c6710f59dfad1ed8e691c7b3bf967f915180f4cf9ecde4955a46ce",
+  "xvlog_log_sha256": "13e632eb1bd4497b2bbcec43dc288c670d4764e3ae39e8f711c896034165833d",
+  "xelab_log_sha256": "e93b1064610e4c6713b7722c6785e6eca0c017e5b15ac04da4b0b5b9b26b6f03",
+  "compiled_sha_pre_post_match": true,
+  "svh_in_manifest": true,
+  "frozen_sgd_sha256": "b66ef32847bae8dceb902b36a2755eae8bcd48289bd00c133fb16f095fc67aac",
+  "frozen_f2r5_dut_sha256": "41c77e76fb5bc179b133bbdeba563f8484d3cc5e699438af3cfc521b2f75895b",
+  "frozen_f2r4_dut_sha256": "5cdb3da8c53d22333e2af847c839439f1a9e5ee05c4b307194c7236c70fe407b",
+  "frozen_f2r3_dut_sha256": "9a7a5941b5ee2522c0491808d7cb23b5f7d58520ace19ac46bd3b9edfd324489",
+  "frozen_f2r2_dut_sha256": "5e2f23c311bfa1cbdbb9b10b8ceb26726df78dcff62c8dbd9071e219d4cbb638"
+}

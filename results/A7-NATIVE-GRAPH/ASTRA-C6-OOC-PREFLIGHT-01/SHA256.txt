@@ -1,0 +1,17 @@
+# SHA freeze BEFORE vivado 2026-09-08T02:24:23.6362412+07:00
+# PROGRAM=NO BOARD_PASS=NOT_CLAIMED C6_MASTER=OPEN DDR_QUERY_BOUND_FINAL=NOT_FROZEN MIG=NO
+# LAW=OOC synth resource estimate; not whole-chip WNS
+09334e42c3913d4de3a1b59147f48c810481cd634e63b37e64bc669a6c36bb24  rtl/native_graph/memory/a7ng_sparse_dir_axi.sv
+381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c  rtl/native_graph/query/qse_role_lexicon.svh
+86a7a0695712d9aa818bf95aac30b83289fb9af80ddd0bdc2455e935a14d8764  rtl/native_graph/integrate/a7ng_astra_c2_persist_commit.sv
+a84bbf7e9a2c0b9e3753b3cb2e1ae734c2afde59267d733aa0e52108e47d8ec8  rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect_synonym.sv
+cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27  rtl/native_graph/query/a7ng_query_role_extract.sv
+5a4ad04d498c588b4447431c290a862252abfbecdef8e934ed4215b9b9c5c0fa  rtl/native_graph/integrate/a7ng_query_axi_sparse.sv
+49a66da21dc075d1487c320d399643ff94e87b02af13f3d6f36d346a1be3a385  rtl/native_graph/query/a7ng_route_valid_gate.sv
+e862208ce34d8835c34fef1b2f2e4d32a91938a26cf22bc3854593ff852ea922  rtl/native_graph/query/a7ng_query_role_relctx_synonym.sv
+# SCRIPTS
+074f2923ae25e819447e92ccdcc3cfa80e7e2d8a7ee8bd5785f2c4485952d907  results/A7-NATIVE-GRAPH/ASTRA-C6-OOC-PREFLIGHT-01/run_ooc.tcl
+91e563e3b95b4004409386b8804178f164e76b626286cad38476118600817faf  results/A7-NATIVE-GRAPH/ASTRA-C6-OOC-PREFLIGHT-01/GOLDEN.json
+c5b7d5e644ae1b9ef29781a38ea7b7bfd7ce380224ba0dd8f71b754d7e101a69  results/A7-NATIVE-GRAPH/ASTRA-C6-OOC-PREFLIGHT-01/PREREG.md
+a81ac94f02e57359408c1c60fc742c2cb65c1f94074f90c349a8626eb1b2bd93  results/A7-NATIVE-GRAPH/ASTRA-C6-OOC-PREFLIGHT-01/ACK.json
+118870fe98f19892d1c0d03d5321ec15c9bb7c9854e0be3c7829abbe14c34e21  results/A7-NATIVE-GRAPH/ASTRA-C6-OOC-PREFLIGHT-01/run_ooc.ps1

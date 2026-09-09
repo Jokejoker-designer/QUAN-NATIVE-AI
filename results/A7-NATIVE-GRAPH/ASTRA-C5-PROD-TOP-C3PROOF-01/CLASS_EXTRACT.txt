@@ -1,0 +1,30 @@
+# CLASS extract from raw xsim.log -- ASTRA-C5-PROD-TOP-C3PROOF-01 r0
+# PROGRAM=NO.
+
+CLASS_not_compose_renderer HIT dut=a7ng_astra_c5_prod_top_c4p
+CLASS_not_live_prod_top_dut HIT live_prod_top_unedited
+CLASS_uart_ingress HIT n=23
+CLASS_role_parser HIT
+CLASS_sparse_index HIT
+CLASS_desc_retrieval HIT
+CLASS_shared_scorer HIT st=0
+CLASS_typed_proof HIT
+CLASS_pending_reward HIT
+CLASS_persist HIT pvalid=1 pph=4
+CLASS_evid_materializer HIT
+CLASS_lm06_gen HIT glast=0 tok0=77
+CLASS_uart_egress HIT n=2
+CLASS_one_ddr_owner HIT nsw=15 dual=0
+CLASS_six_clients HIT seen=3f
+CLASS_no_qid_map HIT
+CLASS_no_host_winner HIT
+CLASS_no_a09_top HIT
+CLASS_no_plant_in_dut HIT
+CLASS_ckpt_addr_06000000 HIT awar=6000000
+CLASS_ans_matches_planted_dest HIT ans=64
+CLASS_gen_tok0_fpga_dict_of_c3_ans HIT tok0=77 dest=64
+CLASS_host_next_token_zero HIT nht=0
+ASTRA_C5_PROD_TOP_C3PROOF_XSIM_PASS
+C5_MASTER_CLAIM=NO BOARD_PASS=REJECT PROGRAM=NO DDR_QUERY_BOUND_FINAL=NOT_FROZEN quality=C5_HIER_C3_DEST_DICT_CTXCOPY_NOT_802K
+$finish called at time : 29415 ns : File "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/results/A7-NATIVE-GRAPH/ASTRA-C5-PROD-TOP-C3PROOF-01/tb_astra_c5_prod_top_c3proof.sv" Line 272
+GOLDEN 807f829af9f673f877007979acd7dd1930864fc0522e28244606858896eccc82

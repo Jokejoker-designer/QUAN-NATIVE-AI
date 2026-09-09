@@ -1,0 +1,59 @@
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-01-U4-REAL-AXI-SPARSE-00\run_xsim.tcl:5:set xvlog_bin [file normalize {C:/2026.1/Vivado/bin/xvlog.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-01-U4-REAL-AXI-SPARSE-00\run_xsim.tcl:6:set xelab_bin [file normalize {C:/2026.1/Vivado/bin/xelab.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-01-U4-REAL-AXI-SPARSE-00\run_xsim.tcl:7:set xsim_bin  [file normalize {C:/2026.1/Vivado/bin/xsim.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-01-U4-REAL-AXI-SPARSE-00\run_xsim.tcl:8:set env(XILINXD_LICENSE_FILE) {D:\Xilinx\licenses\vivado_basic.lic}
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-01-U4-REAL-AXI-SPARSE-INTEGRATION\run_xsim.tcl:1:# ASTRA-01 raw query → 4x4096 AXI directory. PROGRAM=NO. COM12=UNTOUCHED.
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-01-U4-REAL-AXI-SPARSE-INTEGRATION\run_xsim.tcl:5:set xvlog_bin [file normalize {C:/2026.1/Vivado/bin/xvlog.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-01-U4-REAL-AXI-SPARSE-INTEGRATION\run_xsim.tcl:6:set xelab_bin [file normalize {C:/2026.1/Vivado/bin/xelab.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-01-U4-REAL-AXI-SPARSE-INTEGRATION\run_xsim.tcl:7:set xsim_bin  [file normalize {C:/2026.1/Vivado/bin/xsim.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-01-U4-REAL-AXI-SPARSE-INTEGRATION\run_xsim.tcl:8:set env(XILINXD_LICENSE_FILE) {D:\Xilinx\licenses\vivado_basic.lic}
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-02-U5-SCALE-SELECTIVITY-800K\run_xsim.tcl:1:# ASTRA-02 overflow-page XSim. PROGRAM=NO. COM12=UNTOUCHED.
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-02-U5-SCALE-SELECTIVITY-800K\run_xsim.tcl:4:set xvlog_bin [file normalize {C:/2026.1/Vivado/bin/xvlog.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-02-U5-SCALE-SELECTIVITY-800K\run_xsim.tcl:5:set xelab_bin [file normalize {C:/2026.1/Vivado/bin/xelab.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-02-U5-SCALE-SELECTIVITY-800K\run_xsim.tcl:6:set xsim_bin  [file normalize {C:/2026.1/Vivado/bin/xsim.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-02-U5-SCALE-SELECTIVITY-800K\run_xsim.tcl:7:set env(XILINXD_LICENSE_FILE) {D:\Xilinx\licenses\vivado_basic.lic}
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-03-ROLE-AWARE-QUERY\run_xsim_parse.tcl:1:# ASTRA-03 qse-role-v1-00 parse XSim. PROGRAM=NO. COM12=UNTOUCHED.
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-03-ROLE-AWARE-QUERY\run_xsim_parse.tcl:4:set xvlog_bin [file normalize {C:/2026.1/Vivado/bin/xvlog.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-03-ROLE-AWARE-QUERY\run_xsim_parse.tcl:5:set xelab_bin [file normalize {C:/2026.1/Vivado/bin/xelab.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-03-ROLE-AWARE-QUERY\run_xsim_parse.tcl:6:set xsim_bin  [file normalize {C:/2026.1/Vivado/bin/xsim.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-03-ROLE-AWARE-QUERY\run_xsim_parse.tcl:7:set env(XILINXD_LICENSE_FILE) {D:\Xilinx\licenses\vivado_basic.lic}
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-03-ROLE-AWARE-QUERY\run_xsim.tcl:1:# ASTRA-03 qse-v2-role-00. PROGRAM=NO. BIT=NO. COM12=UNTOUCHED.
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-03-ROLE-AWARE-QUERY\run_xsim.tcl:4:set xvlog_bin [file normalize {C:/2026.1/Vivado/bin/xvlog.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-03-ROLE-AWARE-QUERY\run_xsim.tcl:5:set xelab_bin [file normalize {C:/2026.1/Vivado/bin/xelab.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-03-ROLE-AWARE-QUERY\run_xsim.tcl:6:set xsim_bin  [file normalize {C:/2026.1/Vivado/bin/xsim.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-03-ROLE-AWARE-QUERY\run_xsim.tcl:7:set env(XILINXD_LICENSE_FILE) {D:\Xilinx\licenses\vivado_basic.lic}
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-04-RELATION-ENGINE-2HOP\run_xsim.tcl:4:set xvlog_bin [file normalize {C:/2026.1/Vivado/bin/xvlog.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-04-RELATION-ENGINE-2HOP\run_xsim.tcl:5:set xelab_bin [file normalize {C:/2026.1/Vivado/bin/xelab.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-04-RELATION-ENGINE-2HOP\run_xsim.tcl:6:set xsim_bin  [file normalize {C:/2026.1/Vivado/bin/xsim.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-04-RELATION-ENGINE-2HOP\run_xsim.tcl:7:set env(XILINXD_LICENSE_FILE) {D:\Xilinx\licenses\vivado_basic.lic}
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-05-CAUSAL-PROOF-PERTURBATION\run_xsim.tcl:4:set xvlog_bin [file normalize {C:/2026.1/Vivado/bin/xvlog.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-05-CAUSAL-PROOF-PERTURBATION\run_xsim.tcl:5:set xelab_bin [file normalize {C:/2026.1/Vivado/bin/xelab.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-05-CAUSAL-PROOF-PERTURBATION\run_xsim.tcl:6:set xsim_bin  [file normalize {C:/2026.1/Vivado/bin/xsim.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-05-CAUSAL-PROOF-PERTURBATION\run_xsim.tcl:7:set env(XILINXD_LICENSE_FILE) {D:\Xilinx\licenses\vivado_basic.lic}
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-05-CAUSAL-PROOF-PERTURBATION\run_astra05.ps1:1:# ASTRA-05 host golden + XSim. BIT=NO PROGRAM=NO COM12=UNTOUCHED
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-05-CAUSAL-PROOF-PERTURBATION\run_astra05.ps1:3:$env:XILINXD_LICENSE_FILE = "D:\Xilinx\licenses\vivado_basic.lic"
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-05-CAUSAL-PROOF-PERTURBATION\run_astra05.ps1:8:$bin = "C:\2026.1\Vivado\bin"
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-06-SHARED-REWARD-LEARNER\run_xsim.tcl:4:set xvlog_bin [file normalize {C:/2026.1/Vivado/bin/xvlog.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-06-SHARED-REWARD-LEARNER\run_xsim.tcl:5:set xelab_bin [file normalize {C:/2026.1/Vivado/bin/xelab.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-06-SHARED-REWARD-LEARNER\run_xsim.tcl:6:set xsim_bin  [file normalize {C:/2026.1/Vivado/bin/xsim.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-06-SHARED-REWARD-LEARNER\run_xsim.tcl:7:set env(XILINXD_LICENSE_FILE) {D:\Xilinx\licenses\vivado_basic.lic}
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-07-HELD-OUT-TRANSFER\run_xsim.tcl:4:set xvlog_bin [file normalize {C:/2026.1/Vivado/bin/xvlog.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-07-HELD-OUT-TRANSFER\run_xsim.tcl:5:set xelab_bin [file normalize {C:/2026.1/Vivado/bin/xelab.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-07-HELD-OUT-TRANSFER\run_xsim.tcl:6:set xsim_bin  [file normalize {C:/2026.1/Vivado/bin/xsim.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-07-HELD-OUT-TRANSFER\run_xsim.tcl:7:set env(XILINXD_LICENSE_FILE) {D:\Xilinx\licenses\vivado_basic.lic}
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-07-HELD-OUT-TRANSFER\run_astra07.ps1:1:# ASTRA-07 host golden + XSim. BIT=NO PROGRAM=NO COM12=UNTOUCHED
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-07-HELD-OUT-TRANSFER\run_astra07.ps1:3:$env:XILINXD_LICENSE_FILE = "D:\Xilinx\licenses\vivado_basic.lic"
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-07-HELD-OUT-TRANSFER\run_astra07.ps1:8:$bin = "C:\2026.1\Vivado\bin"
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-09-SPARSE-GLUE\run_astra09_sparse.ps1:1:# ASTRA-09-SPARSE-GLUE. BIT=NO PROGRAM=NO COM12=UNTOUCHED
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-09-SPARSE-GLUE\run_astra09_sparse.ps1:3:$env:XILINXD_LICENSE_FILE = "D:\Xilinx\licenses\vivado_basic.lic"
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-09-SPARSE-GLUE\run_astra09_sparse.ps1:8:$bin = "C:\2026.1\Vivado\bin"
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-09-UNIFIED-PIPELINE\run_astra09.ps1:1:# ASTRA-09 unified pipeline. BIT=NO PROGRAM=NO COM12=UNTOUCHED
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-09-UNIFIED-PIPELINE\run_astra09.ps1:3:$env:XILINXD_LICENSE_FILE = "D:\Xilinx\licenses\vivado_basic.lic"
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-09-UNIFIED-PIPELINE\run_astra09.ps1:8:$bin = "C:\2026.1\Vivado\bin"
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-09-UNIFIED-PIPELINE\run_xsim.tcl:1:# ASTRA-09 unified pipeline. PROGRAM=NO. BIT=NO. COM12=UNTOUCHED.
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-09-UNIFIED-PIPELINE\run_xsim.tcl:4:set xvlog_bin [file normalize {C:/2026.1/Vivado/bin/xvlog.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-09-UNIFIED-PIPELINE\run_xsim.tcl:5:set xelab_bin [file normalize {C:/2026.1/Vivado/bin/xelab.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-09-UNIFIED-PIPELINE\run_xsim.tcl:6:set xsim_bin  [file normalize {C:/2026.1/Vivado/bin/xsim.bat}]
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-09-UNIFIED-PIPELINE\run_xsim.tcl:7:set env(XILINXD_LICENSE_FILE) {D:\Xilinx\licenses\vivado_basic.lic}
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-10-OOC-RESOURCE\run_ooc.tcl:4:set env(XILINXD_LICENSE_FILE) {D:\Xilinx\licenses\vivado_basic.lic}
+D:\FPGA\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\results\A7-NATIVE-GRAPH\ASTRA-10B-OOC-ASTRA09-PIPE\run_ooc.tcl:4:set env(XILINXD_LICENSE_FILE) {D:\Xilinx\licenses\vivado_basic.lic}

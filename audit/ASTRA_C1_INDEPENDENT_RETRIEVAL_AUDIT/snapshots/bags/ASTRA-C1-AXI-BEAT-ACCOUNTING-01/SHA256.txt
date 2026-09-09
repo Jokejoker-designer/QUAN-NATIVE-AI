@@ -1,0 +1,43 @@
+# SHA freeze BEFORE xvlog 2026-09-07T11:09:54.6958908+07:00
+# PROGRAM=NO C1_800K=OPEN CAND_CAP=16 N=256 LAW=qse-v2-intersect-01 POKE_V=0
+# DDR_QUERY_BOUND_FINAL=NOT_FROZEN CAND_CAP_FINAL=NOT_FROZEN STREAM_INTERSECT_02=NOT_THIS_BAG
+# HASH_GATE MATCH vs C0 FINAL_CONTRACT + KEY-INTERSECT DUT (frozen files not patched)
+# FROZEN_RTL
+cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27  rtl/native_graph/query/a7ng_query_role_extract.sv
+381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c  rtl/native_graph/query/qse_role_lexicon.svh
+09334e42c3913d4de3a1b59147f48c810481cd634e63b37e64bc669a6c36bb24  rtl/native_graph/memory/a7ng_sparse_dir_axi.sv
+5a4ad04d498c588b4447431c290a862252abfbecdef8e934ed4215b9b9c5c0fa  rtl/native_graph/integrate/a7ng_query_axi_sparse.sv
+49a66da21dc075d1487c320d399643ff94e87b02af13f3d6f36d346a1be3a385  rtl/native_graph/query/a7ng_route_valid_gate.sv
+93811ed17adbd9c2adc1a93514faf35b23ba8184d325a7204aee90e09c77057d  rtl/native_graph/query/a7ng_query_role_keys_relbind.sv
+a912786f6cc0be62a28c4ee1efc7aeca26fc07ae26865249191aa41d1ed6408c  rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect.sv
+# NEW_NAMED_RTL
+a5d0eb3c4df33c36128782295aea06480241e6e0cd85b19594b3ff15bd3b78b2  rtl/native_graph/integrate/a7ng_query_axi_rbeat_probe.sv
+# COMPILED
+7cf9885217562c8e26b3c8818b10b4488fd637621b62f6a3652fe7ff5aee57a6  rtl/native_graph/pkg/a7ng_pkg.sv
+cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27  rtl/native_graph/query/a7ng_query_role_extract.sv
+93811ed17adbd9c2adc1a93514faf35b23ba8184d325a7204aee90e09c77057d  rtl/native_graph/query/a7ng_query_role_keys_relbind.sv
+49a66da21dc075d1487c320d399643ff94e87b02af13f3d6f36d346a1be3a385  rtl/native_graph/query/a7ng_route_valid_gate.sv
+09334e42c3913d4de3a1b59147f48c810481cd634e63b37e64bc669a6c36bb24  rtl/native_graph/memory/a7ng_sparse_dir_axi.sv
+40df08bb58e7eb6e1cc0f0a87b4d67564e8ea602cace166c67eed7d088d8007c  rtl/native_graph/memory/a7ng_axi_mem_model.sv
+a912786f6cc0be62a28c4ee1efc7aeca26fc07ae26865249191aa41d1ed6408c  rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect.sv
+a5d0eb3c4df33c36128782295aea06480241e6e0cd85b19594b3ff15bd3b78b2  rtl/native_graph/integrate/a7ng_query_axi_rbeat_probe.sv
+d5c5a52b4901b5214bfbea64e78594ad5c5313af451c1334854b17b6f717f7fd  results/A7-NATIVE-GRAPH/ASTRA-C1-AXI-BEAT-ACCOUNTING-01/tb_astra_c1_axi_beat_accounting.sv
+# TRANSITIVE_INCLUDES
+9a06e6d390dff66db34daa395a29ea563bed2365e9f2db5bdedcfcb9e9added7  rtl/native_graph/control/a7ng_gate14_crc.svh
+381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c  rtl/native_graph/query/qse_role_lexicon.svh
+f16119179191036ba1eb2bd8e451e8fd6691095a08d0ec5f9ff81533a9000f55  results/A7-NATIVE-GRAPH/ASTRA-C1-AXI-BEAT-ACCOUNTING-01/query_gold.svh
+# INDEPENDENT_GOLD_BEFORE_XVLOG (copy of KEY-INTERSECT; original KEEP)
+d3b5b88356bd2fc691398a794b2e8b6470d7b3eef2fd56a5d7aeddab8ccb5625  results/A7-NATIVE-GRAPH/ASTRA-C1-AXI-BEAT-ACCOUNTING-01/GOLDEN.json
+f16119179191036ba1eb2bd8e451e8fd6691095a08d0ec5f9ff81533a9000f55  results/A7-NATIVE-GRAPH/ASTRA-C1-AXI-BEAT-ACCOUNTING-01/query_gold.svh
+e8b4f8ea3a66bee35c0f10c8f23b91bba851933d3764696a7cd573116e300825  results/A7-NATIVE-GRAPH/ASTRA-C1-AXI-BEAT-ACCOUNTING-01/corpus.json
+# BAG
+f65aecb8b874658b869faea691bc3114b0686a10b4d5f2beeed7b986ee8cb574  results/A7-NATIVE-GRAPH/ASTRA-C1-AXI-BEAT-ACCOUNTING-01/PREREG.md
+b283c6bff9d549fb0016a6dd94f16777c7932398c2fe94de4e5561873a79d3da  results/A7-NATIVE-GRAPH/ASTRA-C1-AXI-BEAT-ACCOUNTING-01/ACK.json
+89d1cd338c16005c71842448fa4ee35c23e7bed803693912e1d3e80f4f4a6e77  results/A7-NATIVE-GRAPH/ASTRA-C1-AXI-BEAT-ACCOUNTING-01/run_xsim.ps1
+d5c5a52b4901b5214bfbea64e78594ad5c5313af451c1334854b17b6f717f7fd  results/A7-NATIVE-GRAPH/ASTRA-C1-AXI-BEAT-ACCOUNTING-01/tb_astra_c1_axi_beat_accounting.sv
+# FORBIDDEN leftover a7ng_astra_09_integ_path NOT on xvlog DUT list
+# FORBIDDEN frozen a7ng_query_axi_sparse.sv NOT compiled as DUT
+# FORBIDDEN a7ng_query_axi_sparse_relbind.sv NOT compiled as DUT
+# FORBIDDEN qse-v2-stream-intersect-02 NOT this bag
+# REDUCTION_X1000 NOT_EMITTED (not 1-CAND_CAP/N); RATIO_x1000 is R_BYTES*1000/AR_BYTES
+# DDR_QUERY_BOUND_FINAL NOT_FROZEN

@@ -1,0 +1,4 @@
+fpgg	https://github.com/Jokejoker-designer/FPGG_ART_Y.git (fetch)
+fpgg	https://github.com/Jokejoker-designer/FPGG_ART_Y.git (push)
+origin	D:\Jetking_sem4\SEM_4\arty-a7-online-lm-g14-preboard-00 (fetch)
+origin	D:\Jetking_sem4\SEM_4\arty-a7-online-lm-g14-preboard-00 (push)

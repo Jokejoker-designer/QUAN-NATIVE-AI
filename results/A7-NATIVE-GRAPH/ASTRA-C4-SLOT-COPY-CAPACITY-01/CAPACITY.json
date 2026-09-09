@@ -1,0 +1,48 @@
+{
+  "bag": "ASTRA-C4-SLOT-COPY-CAPACITY-01",
+  "program": "NO",
+  "c4_master": false,
+  "tinygpt": false,
+  "third_architecture": false,
+  "held_n": 24,
+  "train_n": 24,
+  "held_names": [
+    "bolt",
+    "drum",
+    "hose",
+    "vent"
+  ],
+  "train_names": [
+    "pipe",
+    "pump",
+    "tank",
+    "valv"
+  ],
+  "held_first_letters": [
+    "b",
+    "d",
+    "h",
+    "v"
+  ],
+  "train_first_letters": [
+    "p",
+    "t",
+    "v"
+  ],
+  "held_first_letters_unique": true,
+  "held_names_in_train": [],
+  "held_prefix_collision_pairs": 0,
+  "train_prefix_collision_pairs": 18,
+  "train_shared_initial_example": "pump vs pipe both start with p",
+  "held_miss_mode": "closed_set_name_emission: held 4-grams are disjoint from train; STE D=16 greedy emitted train names (pipe) on held queries. Held first letters h,d,v,b are unique so F/R prefix-collision is 0 on this split and is NOT the held 0/20 cause.",
+  "rival1_law": "h'=sat8((Wxh@We[last]+Whh@h+bh)>>4); scan We[v]\u00b7h[0:E] only; no ctx reread; no ReLU on h",
+  "rival2_law": "q=Wq@xs[last]; keys from window; decode does not reread by index",
+  "affine_route": "Opcode-dependent gather is bilinear. Fixed Whh cannot switch src-slot vs dst-slot. That binds pump/pipe continuation and any split with shared initials; it is extra to the held closed-set miss.",
+  "lang_90": false,
+  "prior_probes_held_0": [
+    "ASTRA-C4-COND-RNN-LANG-01",
+    "ASTRA-C4-COND-RNN-H16-01",
+    "ASTRA-C4-LM06-RED-LANG-01",
+    "ASTRA-C4-LM06-RED-BPTT-01"
+  ]
+}

@@ -1,0 +1,4 @@
+# SHA verify AFTER xsim 2026-09-09T08:24:41.2976964+07:00
+b66ef32847bae8dceb902b36a2755eae8bcd48289bd00c133fb16f095fc67aac  rtl/native_graph/learn/a7ng_shared_rank_sgd_q8_sym_f2r2.sv
+e419caef0e64d75e399a08cb66f7458eebd1591d352cff2283c804c4d650eead  rtl/native_graph/integrate/a7ng_astra_c5_sgd32_ckpt.sv
+66c514a1cbd3a0ef324d283e6ae6bcb8784e3d1b673e39f03903d5f8326169e7  results/A7-NATIVE-GRAPH/ASTRA-C5-SGD32-CKPT-01/tb_astra_c5_sgd32_ckpt.sv

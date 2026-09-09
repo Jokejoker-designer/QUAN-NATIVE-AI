@@ -1,0 +1,3 @@
+# GOLDEN.json SHA256 hashed BEFORE first xvlog
+# PROGRAM=NO Do not regenerate GOLDEN after FAIL
+3442a5969e981ebf2f223e4705b4938221f3395171ed3d8f510a5c02a1612dae

@@ -1,0 +1,9 @@
+{
+  "gate": "ASTRA-C5-CONFLICT-01",
+  "program": false,
+  "board_pass": false,
+  "mig": false,
+  "master_c5_claimed": false,
+  "ddr_query_bound_final": "NOT_FROZEN",
+  "one_unknown": "same C5 hierarchy: positive 2-hop ANSWER then opposing negative-polarity 2-hop to same dest yields C3 ST_CONFLICT=5, not A09 DUT"
+}

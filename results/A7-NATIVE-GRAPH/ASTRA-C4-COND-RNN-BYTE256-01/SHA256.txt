@@ -1,0 +1,17 @@
+# SHA freeze BEFORE xvlog 2026-09-09T09:36:37.3796134+07:00
+# PROGRAM=NO BOARD_PASS=NOT_CLAIMED C4_MASTER=OPEN RIVAL1=ELMAN
+c4fcca30c945a550f81f0870025c8d52875cd6097dfbfc459aeb1fe47a367922  rtl/native_graph/integrate/a7ng_astra_c5_prod_top.sv
+1fbdc00a4e040b2ffd925dfc8477129f4c14247768ceb0c73cbf3a31d5f2503b  rtl/native_graph/integrate/a7ng_astra_c4_lm06_grounded_gen.sv
+86a7a0695712d9aa818bf95aac30b83289fb9af80ddd0bdc2455e935a14d8764  rtl/native_graph/integrate/a7ng_astra_c2_persist_commit.sv
+46b81cd7a56a3a7b95d3d031210eea1b737924f7e98b40a2dbf69b08c2712495  rtl/native_graph/integrate/a7ng_astra_c4_cond_rnn.hex
+# COMPILED
+467b0a4b55c913e335eb3718d2ddcb83501faa800245b5d31fa1d1ccf4f78f8b  rtl/native_graph/integrate/a7ng_astra_c4_cond_rnn.sv
+758694485ecda5459f20cbbb574ab397516e817e3a1fb1bf8fceb8138c633c71  results/A7-NATIVE-GRAPH/ASTRA-C4-COND-RNN-BYTE256-01/tb_astra_c4_cond_rnn_byte256.sv
+2c6a107188f9136444d0cac2a19251a436f7a5fc44ae7ce5c279258ecb5c0d80  rtl/native_graph/integrate/a7ng_astra_c4_cond_rnn.svh
+46b81cd7a56a3a7b95d3d031210eea1b737924f7e98b40a2dbf69b08c2712495  rtl/native_graph/integrate/a7ng_astra_c4_cond_rnn.hex
+023f8b3db59cf8ca3aa111d94c1533945b4208b5a3e2bb01fd52b5233b116fca  results/A7-NATIVE-GRAPH/ASTRA-C4-COND-RNN-BYTE256-01/GOLDEN.json
+65de487589a3960c89ad4762a26f6b6cc20f2036b7012edea6f028879d63a9b9  results/A7-NATIVE-GRAPH/ASTRA-C4-COND-RNN-BYTE256-01/PREREG.md
+7de55d4963d0ad2bd53c0b6ddcf9f65114079699c543b7466a019f1e057e2f8c  results/A7-NATIVE-GRAPH/ASTRA-C4-COND-RNN-BYTE256-01/ACK.json
+4429fcad6147ab797aeb3d23338047ebc94e633ac81e0f068c9d9214271dab07  results/A7-NATIVE-GRAPH/ASTRA-C4-COND-RNN-BYTE256-01/CKPT_PROVENANCE.json
+5ac95c843540c7b53e8a7ce96049b65d34d46dde17aa4f88b8a97a7252f58ae4  results/A7-NATIVE-GRAPH/ASTRA-C4-COND-RNN-BYTE256-01/gen_ckpt.py
+0cf7b805a1eeba668d98515b2a6841b7b29d92a05b3d6e015e4bf5a909992fbf  results/A7-NATIVE-GRAPH/ASTRA-C4-COND-RNN-BYTE256-01/run_xsim.ps1

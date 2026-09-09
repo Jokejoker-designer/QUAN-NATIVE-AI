@@ -1,0 +1,32 @@
+{
+  "gate": "ASTRA-C2-PERSIST-COMMIT-01",
+  "law": "astra-c2-persist-id-01",
+  "schema_ver": 1,
+  "id_w": 20,
+  "persist_base": "0x06000000",
+  "journal_addr_is_low16_of_subject": false,
+  "mig": false,
+  "program": false,
+  "BOARD_PASS": "NOT_CLAIMED",
+  "DDR_QUERY_BOUND_FINAL": "NOT_FROZEN",
+  "PERSIST_SCHEMA_VERSION": "NOT_FROZEN",
+  "C2_MASTER_CLOSED": false,
+  "canonical_identity": ["subject_id", "relation_id", "object_id", "context", "generation"],
+  "phases": ["UPDATE_RECEIVED", "UPDATE_ACCEPTED", "UPDATE_COMMITTED", "PERSISTED", "FAILED"],
+  "happy": {"subj": 13, "rel": 4, "obj": 14, "ctx": 0, "gen": 1, "rew": 1, "w0": 1},
+  "high_id": {"subj": 799999, "rel": 4, "obj": 799998, "ctx": 703710, "gen": 3, "rew": 2, "w0": 3},
+  "alias_low16_subj": 13567,
+  "classes": [
+    "reset_before_update",
+    "schema_mismatch",
+    "happy_commit",
+    "duplicate_reward",
+    "wrong_generation",
+    "high_id_identity",
+    "alias_attempt",
+    "reset_during_update",
+    "reset_after_commit_reload",
+    "journal_addr_not_low16",
+    "false_success_zero"
+  ]
+}

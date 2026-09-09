@@ -1,0 +1,12 @@
+{
+  "gate": "ASTRA-C4-COND-RNN-BYTE256-01",
+  "program": false,
+  "board_pass": false,
+  "dut": "a7ng_astra_c4_cond_rnn",
+  "rival": "compact_recurrent_byte256",
+  "selected_for_measure": true,
+  "c4_winner": false,
+  "live_prod_top_untouched": "c4fcca30c945a550f81f0870025c8d52875cd6097dfbfc459aeb1fe47a367922",
+  "grounded_gen_untouched": "1fbdc00a4e040b2ffd925dfc8477129f4c14247768ceb0c73cbf3a31d5f2503b",
+  "hex_sha256": "46b81cd7a56a3a7b95d3d031210eea1b737924f7e98b40a2dbf69b08c2712495"
+}

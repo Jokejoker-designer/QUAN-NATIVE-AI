@@ -1,0 +1,633 @@
+{
+  "train": [
+    {
+      "op": "R",
+      "src": "pump",
+      "dst": "pipe",
+      "ctx": "R pump pump>pipe",
+      "ans": "pipe",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "pump",
+      "dst": "pipe",
+      "ctx": "F pipe pump>pipe",
+      "ans": "pump",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "tank",
+      "dst": "pipe",
+      "ctx": "F pipe tank>pump",
+      "ans": "no",
+      "evid": true,
+      "unrel": true
+    },
+    {
+      "op": "F",
+      "src": "pipe",
+      "dst": "tank",
+      "ctx": "F tank pipe>pump",
+      "ans": "no",
+      "evid": true,
+      "unrel": true
+    },
+    {
+      "op": "R",
+      "src": "pump",
+      "dst": "valv",
+      "ctx": "R pump pump>valv",
+      "ans": "valv",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "valv",
+      "dst": "tank",
+      "ctx": "F tank valv>pump",
+      "ans": "no",
+      "evid": true,
+      "unrel": true
+    },
+    {
+      "op": "F",
+      "src": "pipe",
+      "dst": "tank",
+      "ctx": "F tank pipe>tank",
+      "ans": "pipe",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "pump",
+      "dst": "valv",
+      "ctx": "F valv pump>tank",
+      "ans": "no",
+      "evid": true,
+      "unrel": true
+    },
+    {
+      "op": "R",
+      "src": "valv",
+      "dst": "pipe",
+      "ctx": "R valv valv>pipe",
+      "ans": "pipe",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "R",
+      "src": "tank",
+      "dst": "pipe",
+      "ctx": "R tank tank>pipe",
+      "ans": "pipe",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "tank",
+      "dst": "pump",
+      "ctx": "F pump tank>valv",
+      "ans": "no",
+      "evid": true,
+      "unrel": true
+    },
+    {
+      "op": "F",
+      "src": "tank",
+      "dst": "pipe",
+      "ctx": "F pipe tank>pipe",
+      "ans": "tank",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "R",
+      "src": "tank",
+      "dst": "pump",
+      "ctx": "R tank tank>pump",
+      "ans": "pump",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "R",
+      "src": "tank",
+      "dst": "valv",
+      "ctx": "R tank tank>valv",
+      "ans": "valv",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "pipe",
+      "dst": "pump",
+      "ctx": "F pump pipe>pump",
+      "ans": "pipe",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "pump",
+      "dst": "tank",
+      "ctx": "F tank pump>tank",
+      "ans": "pump",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "R",
+      "src": "pipe",
+      "dst": "pump",
+      "ctx": "R pipe pipe>pump",
+      "ans": "pump",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "pump",
+      "dst": "pipe",
+      "ctx": "F pipe pump>valv",
+      "ans": "no",
+      "evid": true,
+      "unrel": true
+    },
+    {
+      "op": "R",
+      "src": "valv",
+      "dst": "tank",
+      "ctx": "R valv valv>tank",
+      "ans": "tank",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "pipe",
+      "dst": "valv",
+      "ctx": "F valv pipe>valv",
+      "ans": "pipe",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "valv",
+      "dst": "pipe",
+      "ctx": "F pipe valv>pipe",
+      "ans": "valv",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "pipe",
+      "dst": "valv",
+      "ctx": "F valv pipe>pump",
+      "ans": "no",
+      "evid": true,
+      "unrel": true
+    },
+    {
+      "op": "F",
+      "src": "valv",
+      "dst": "pipe",
+      "ctx": "F pipe valv>pump",
+      "ans": "no",
+      "evid": true,
+      "unrel": true
+    },
+    {
+      "op": "F",
+      "src": "tank",
+      "dst": "valv",
+      "ctx": "F valv tank>pump",
+      "ans": "no",
+      "evid": true,
+      "unrel": true
+    },
+    {
+      "op": "R",
+      "src": "pipe",
+      "dst": "valv",
+      "ctx": "R pipe pipe>valv",
+      "ans": "valv",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "R",
+      "src": "pipe",
+      "dst": "tank",
+      "ctx": "R pipe pipe>tank",
+      "ans": "tank",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "valv",
+      "dst": "pump",
+      "ctx": "F pump valv>pump",
+      "ans": "valv",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "pump",
+      "dst": "valv",
+      "ctx": "F valv pump>valv",
+      "ans": "pump",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "valv",
+      "dst": "pump",
+      "ctx": "F pump valv>tank",
+      "ans": "no",
+      "evid": true,
+      "unrel": true
+    },
+    {
+      "op": "F",
+      "src": "tank",
+      "dst": "valv",
+      "ctx": "F valv tank>valv",
+      "ans": "tank",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "R",
+      "src": "valv",
+      "dst": "pump",
+      "ctx": "R valv valv>pump",
+      "ans": "pump",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "pump",
+      "dst": "tank",
+      "ctx": "F tank pump>valv",
+      "ans": "no",
+      "evid": true,
+      "unrel": true
+    },
+    {
+      "op": "F",
+      "src": "pipe",
+      "dst": "pump",
+      "ctx": "F pump pipe>valv",
+      "ans": "no",
+      "evid": true,
+      "unrel": true
+    },
+    {
+      "op": "F",
+      "src": "valv",
+      "dst": "tank",
+      "ctx": "F tank valv>tank",
+      "ans": "valv",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "R",
+      "src": "pump",
+      "dst": "tank",
+      "ctx": "R pump pump>tank",
+      "ans": "tank",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "tank",
+      "dst": "pump",
+      "ctx": "F pump tank>pump",
+      "ans": "tank",
+      "evid": true,
+      "unrel": false
+    }
+  ],
+  "held_grounded": [
+    {
+      "op": "F",
+      "src": "hose",
+      "dst": "drum",
+      "ctx": "F drum hose>drum",
+      "ans": "hose",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "hose",
+      "dst": "vent",
+      "ctx": "F vent hose>vent",
+      "ans": "hose",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "hose",
+      "dst": "bolt",
+      "ctx": "F bolt hose>bolt",
+      "ans": "hose",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "drum",
+      "dst": "hose",
+      "ctx": "F hose drum>hose",
+      "ans": "drum",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "drum",
+      "dst": "vent",
+      "ctx": "F vent drum>vent",
+      "ans": "drum",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "drum",
+      "dst": "bolt",
+      "ctx": "F bolt drum>bolt",
+      "ans": "drum",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "vent",
+      "dst": "hose",
+      "ctx": "F hose vent>hose",
+      "ans": "vent",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "vent",
+      "dst": "drum",
+      "ctx": "F drum vent>drum",
+      "ans": "vent",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "vent",
+      "dst": "bolt",
+      "ctx": "F bolt vent>bolt",
+      "ans": "vent",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "bolt",
+      "dst": "hose",
+      "ctx": "F hose bolt>hose",
+      "ans": "bolt",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "bolt",
+      "dst": "drum",
+      "ctx": "F drum bolt>drum",
+      "ans": "bolt",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "F",
+      "src": "bolt",
+      "dst": "vent",
+      "ctx": "F vent bolt>vent",
+      "ans": "bolt",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "R",
+      "src": "hose",
+      "dst": "drum",
+      "ctx": "R hose hose>drum",
+      "ans": "drum",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "R",
+      "src": "hose",
+      "dst": "vent",
+      "ctx": "R hose hose>vent",
+      "ans": "vent",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "R",
+      "src": "hose",
+      "dst": "bolt",
+      "ctx": "R hose hose>bolt",
+      "ans": "bolt",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "R",
+      "src": "drum",
+      "dst": "hose",
+      "ctx": "R drum drum>hose",
+      "ans": "hose",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "R",
+      "src": "drum",
+      "dst": "vent",
+      "ctx": "R drum drum>vent",
+      "ans": "vent",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "R",
+      "src": "drum",
+      "dst": "bolt",
+      "ctx": "R drum drum>bolt",
+      "ans": "bolt",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "R",
+      "src": "vent",
+      "dst": "hose",
+      "ctx": "R vent vent>hose",
+      "ans": "hose",
+      "evid": true,
+      "unrel": false
+    },
+    {
+      "op": "R",
+      "src": "vent",
+      "dst": "drum",
+      "ctx": "R vent vent>drum",
+      "ans": "drum",
+      "evid": true,
+      "unrel": false
+    }
+  ],
+  "held_unrel": [
+    {
+      "op": "F",
+      "src": "hose",
+      "dst": "drum",
+      "ctx": "F drum hose>vent",
+      "ans": "no",
+      "evid": true,
+      "unrel": true
+    },
+    {
+      "op": "F",
+      "src": "hose",
+      "dst": "vent",
+      "ctx": "F vent hose>drum",
+      "ans": "no",
+      "evid": true,
+      "unrel": true
+    },
+    {
+      "op": "F",
+      "src": "hose",
+      "dst": "bolt",
+      "ctx": "F bolt hose>drum",
+      "ans": "no",
+      "evid": true,
+      "unrel": true
+    },
+    {
+      "op": "F",
+      "src": "drum",
+      "dst": "hose",
+      "ctx": "F hose drum>vent",
+      "ans": "no",
+      "evid": true,
+      "unrel": true
+    },
+    {
+      "op": "F",
+      "src": "drum",
+      "dst": "vent",
+      "ctx": "F vent drum>hose",
+      "ans": "no",
+      "evid": true,
+      "unrel": true
+    },
+    {
+      "op": "F",
+      "src": "drum",
+      "dst": "bolt",
+      "ctx": "F bolt drum>hose",
+      "ans": "no",
+      "evid": true,
+      "unrel": true
+    },
+    {
+      "op": "F",
+      "src": "vent",
+      "dst": "hose",
+      "ctx": "F hose vent>drum",
+      "ans": "no",
+      "evid": true,
+      "unrel": true
+    },
+    {
+      "op": "F",
+      "src": "vent",
+      "dst": "drum",
+      "ctx": "F drum vent>hose",
+      "ans": "no",
+      "evid": true,
+      "unrel": true
+    },
+    {
+      "op": "F",
+      "src": "vent",
+      "dst": "bolt",
+      "ctx": "F bolt vent>hose",
+      "ans": "no",
+      "evid": true,
+      "unrel": true
+    },
+    {
+      "op": "F",
+      "src": "bolt",
+      "dst": "hose",
+      "ctx": "F hose bolt>drum",
+      "ans": "no",
+      "evid": true,
+      "unrel": true
+    },
+    {
+      "op": "F",
+      "src": "bolt",
+      "dst": "drum",
+      "ctx": "F drum bolt>hose",
+      "ans": "no",
+      "evid": true,
+      "unrel": true
+    },
+    {
+      "op": "F",
+      "src": "bolt",
+      "dst": "vent",
+      "ctx": "F vent bolt>hose",
+      "ans": "no",
+      "evid": true,
+      "unrel": true
+    }
+  ],
+  "train_entities": [
+    "pump",
+    "valv",
+    "tank",
+    "pipe"
+  ],
+  "held_entities": [
+    "hose",
+    "drum",
+    "vent",
+    "bolt"
+  ],
+  "ctx_law": "16-byte packed F dst src>dst / R src src>dst"
+}

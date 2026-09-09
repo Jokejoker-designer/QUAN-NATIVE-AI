@@ -1,0 +1,9 @@
+{
+  "gate": "ASTRA-C5-DDR-ARB-01",
+  "program": false,
+  "board_pass": false,
+  "mig": false,
+  "master_c5_claimed": false,
+  "ddr_query_bound_final": "NOT_FROZEN",
+  "one_unknown": "six DDR client classes through one exclusive owner; no mid-flight owner change; ungranted AXI does not leak"
+}

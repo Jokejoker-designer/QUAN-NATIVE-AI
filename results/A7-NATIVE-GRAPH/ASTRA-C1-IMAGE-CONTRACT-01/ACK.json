@@ -1,0 +1,6 @@
+{
+  "gate": "ASTRA-C1-IMAGE-CONTRACT-01",
+  "program": false,
+  "board_pass": false,
+  "one_unknown": "does independent Python g_rdata_of match unedited gen_800k.svh on frozen sample addresses including fill/high/overflow pages"
+}

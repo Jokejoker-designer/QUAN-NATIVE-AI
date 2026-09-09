@@ -1,0 +1,8 @@
+{
+  "gate": "ASTRA-C3-HELD-OUT-800K-2HOP-CONFLICT-RTL-01",
+  "program": false,
+  "board_pass": false,
+  "mig": false,
+  "master_c3_claimed": false,
+  "one_unknown": "5-seed 4-arm 800k cartesian 2-hop still HIT on bag-local live CONFLICT C3; two positive dests rank; n_conf=0"
+}

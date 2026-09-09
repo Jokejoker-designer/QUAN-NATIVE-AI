@@ -1,0 +1,6 @@
+{
+  "gate": "ASTRA-C4-BIAS-LOAD-DEAD-01",
+  "program": false,
+  "board_pass": false,
+  "one_unknown": "bias load idx<V[5:0] rejects all writes on unedited grounded_gen"
+}

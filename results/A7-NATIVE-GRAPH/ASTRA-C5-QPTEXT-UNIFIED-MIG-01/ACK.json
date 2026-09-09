@@ -1,0 +1,11 @@
+{
+  "gate": "ASTRA-C5-QPTEXT-UNIFIED-MIG-01",
+  "program": false,
+  "board_pass": false,
+  "mig": true,
+  "mig_class": "XSIM_DIGILENT_AXI_MIG_SIM_PLUS_DDR3_MODEL",
+  "master_c5_claimed": false,
+  "lm06_byte256_frozen": false,
+  "ddr_query_bound_final": "NOT_FROZEN",
+  "one_unknown": "existing a7ng_astra_c5_prod_top_c4q through official MIG: polarity CONFLICT st=5 then remaining unified UART classes; Q1 tok0=glue 61 tok1=hop-2 object name"
+}

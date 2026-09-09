@@ -1,0 +1,9 @@
+{
+  "gate": "ASTRA-C5-PROD-TOP-QPTEXT-01",
+  "program": false,
+  "board_pass": false,
+  "mig": false,
+  "master_c5_claimed": false,
+  "lm06_byte256_frozen": false,
+  "one_unknown": "one C5 hierarchy UART+C3+arb+C2+qptext: tok0=weight glue 61, tok1=hop-2 object FPGA name of planted dest; live prod_top unedited; host next-token=0"
+}

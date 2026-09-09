@@ -1,0 +1,161 @@
+{
+  "result": "PASS",
+  "fail": [],
+  "corpus_size": 42,
+  "water_chiller_emit": 22,
+  "checks": [
+    {
+      "name": "known_domain",
+      "text": "chiller",
+      "k": [
+        256,
+        0,
+        4408,
+        0
+      ],
+      "v": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "n_emit": 4,
+      "emit": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "r6_n": 4,
+      "match": true
+    },
+    {
+      "name": "paraphrase",
+      "text": "water chiller",
+      "k": [
+        256,
+        1,
+        4408,
+        0
+      ],
+      "v": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "n_emit": 22,
+      "emit": [
+        0,
+        1,
+        2,
+        3,
+        6,
+        11,
+        13,
+        20,
+        22,
+        24,
+        25,
+        29,
+        30,
+        31,
+        32,
+        33,
+        35,
+        36,
+        38,
+        39,
+        40,
+        41
+      ],
+      "r6_n": 22,
+      "match": true
+    },
+    {
+      "name": "same_entity_diff_intent",
+      "text": "leak chiller",
+      "k": [
+        258,
+        0,
+        4408,
+        605
+      ],
+      "v": [
+        1,
+        0,
+        1,
+        1
+      ],
+      "n_emit": 4,
+      "emit": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "r6_n": 4,
+      "match": true
+    },
+    {
+      "name": "unrelated_payroll",
+      "text": "payroll tax form",
+      "k": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "v": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "n_emit": 0,
+      "emit": [],
+      "r6_n": 0,
+      "match": true
+    },
+    {
+      "name": "unrelated_soccer",
+      "text": "soccer match score",
+      "k": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "v": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "n_emit": 0,
+      "emit": [],
+      "r6_n": 0,
+      "match": true
+    },
+    {
+      "name": "adversarial",
+      "text": "ypypo tcpgx",
+      "k": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "v": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "n_emit": 0,
+      "emit": [],
+      "r6_n": 0,
+      "match": true
+    }
+  ]
+}

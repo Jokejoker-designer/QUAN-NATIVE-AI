@@ -1,0 +1,22 @@
+# Paired A-vs-B CI from raw xsim.log C3_SEED_GAIN — ASTRA-C3-HELD-OUT-MIG-02 r0
+# PROGRAM=NO. Do not edit GOLDEN. Not C3_MASTER. Not silicon.
+
+# Raw (start-of-line in xsim.log):
+# C3_SEED_GAIN s=0 A=8 B=0 C=0 Dpid=0 gain_pp=100
+# C3_SEED_GAIN s=1 A=8 B=0 C=0 Dpid=0 gain_pp=100
+# C3_SEED_GAIN s=2 A=8 B=0 C=0 Dpid=0 gain_pp=100
+# C3_SEED_GAIN s=3 A=8 B=0 C=0 Dpid=0 gain_pp=100
+# C3_SEED_GAIN s=4 A=8 B=0 C=0 Dpid=0 gain_pp=100
+
+n_seed=5
+pair_pos=5/5
+delta_acc_A_minus_B=8,8,8,8,8
+gain_pp=100,100,100,100,100
+mean_gain_pp=100
+sd_gain_pp=0
+paired_CI95_lower_bound=100
+paired_CI_lower_gt0=YES
+note=degenerate CI; all five seeds identical +8/8 so any paired interval is [100,100] pp.
+A_gt_shuffled=YES (C=0 all seeds)
+A_complements_perid=YES (dut_gold D=8/8; pid_pick_gold=0/8; A=8/8)
+C3_MASTER=OPEN BOARD_PASS=REJECT PROGRAM=NO

@@ -1,0 +1,65 @@
+# SHA freeze BEFORE xvlog 2026-09-07T19:50:25.5896068+07:00
+# PROGRAM=NO C1_800K=OPEN CAND_CAP=16 N=16384 N_BUCKETS=65536 LAW=qse-v2-relctx-synonym-01 LEX=qse-v2-lex-semantic-16k-01 POKE_V=0 SYNONYM_LAW
+# CAND_CAP_FINAL=NOT_FROZEN DDR_QUERY_BOUND_FINAL=NOT_FROZEN
+# HASH_GATE MATCH vs C0 FINAL_CONTRACT (frozen files not patched)
+# XVLOG_INCLUDE bag FIRST then C0 query dir (copied named lexicon law, not silent C0 59-word claim)
+# FROZEN_RTL
+cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27  rtl/native_graph/query/a7ng_query_role_extract.sv
+381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c  rtl/native_graph/query/qse_role_lexicon.svh
+09334e42c3913d4de3a1b59147f48c810481cd634e63b37e64bc669a6c36bb24  rtl/native_graph/memory/a7ng_sparse_dir_axi.sv
+5a4ad04d498c588b4447431c290a862252abfbecdef8e934ed4215b9b9c5c0fa  rtl/native_graph/integrate/a7ng_query_axi_sparse.sv
+49a66da21dc075d1487c320d399643ff94e87b02af13f3d6f36d346a1be3a385  rtl/native_graph/query/a7ng_route_valid_gate.sv
+# KEEP_NOT_DUT
+93811ed17adbd9c2adc1a93514faf35b23ba8184d325a7204aee90e09c77057d  rtl/native_graph/query/a7ng_query_role_keys_relbind.sv
+a912786f6cc0be62a28c4ee1efc7aeca26fc07ae26865249191aa41d1ed6408c  rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect.sv
+14f75db787dee2405dc917604e54b4ab0dbea5cb327d4c4485f5be5cd874f0ac  rtl/native_graph/integrate/a7ng_query_axi_sparse_stream_intersect.sv
+dab15d76da42b33a934d8c68c1108665a79b8544d44b4986b840972841135817  rtl/native_graph/integrate/a7ng_query_axi_sparse_page_skip.sv
+# INSTANTIATE_NOT_EDIT ctx keys 124be808; KEEP ctx DUT 8255a798 NOT compiled as DUT
+124be80804b38a1e1a924924091b751a4d13d85e28241695eda00ca5ded500d1  rtl/native_graph/query/a7ng_query_role_keys_ctx.sv
+8255a7988b902c4fd6d76679cc42ef0726d50099961f7c211010ace54a24d989  rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect_context.sv
+# NEW_SYNONYM_LAW qse-v2-relctx-synonym-01
+551655a1cda97463841a681e34f8073e22b1b2c1beb2ae03847bdc9a5bb41dfd  rtl/native_graph/query/qse_relctx_synonym_01.svh
+551655a1cda97463841a681e34f8073e22b1b2c1beb2ae03847bdc9a5bb41dfd  results/A7-NATIVE-GRAPH/ASTRA-C1-SYNONYM-LAW-01/qse_relctx_synonym_01.svh
+e862208ce34d8835c34fef1b2f2e4d32a91938a26cf22bc3854593ff852ea922  rtl/native_graph/query/a7ng_query_role_relctx_synonym.sv
+a84bbf7e9a2c0b9e3753b3cb2e1ae734c2afde59267d733aa0e52108e47d8ec8  rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect_synonym.sv
+# NEW_LEXICON_LAW qse-v2-lex-semantic-16k-01
+df0e8833ff9664cd4e21a6aa6d3d223112c8d6733871d6398b133e37296e1aa4  results/A7-NATIVE-GRAPH/ASTRA-C1-SYNONYM-LAW-01/qse_role_lexicon_semantic_16k.svh
+7966f321171cfe97b396ad90bb1ebd156c09a165782df40a3a98109ee59ac263  results/A7-NATIVE-GRAPH/ASTRA-C1-SYNONYM-LAW-01/qse_role_lexicon.svh
+# COMPILED
+7cf9885217562c8e26b3c8818b10b4488fd637621b62f6a3652fe7ff5aee57a6  rtl/native_graph/pkg/a7ng_pkg.sv
+cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27  rtl/native_graph/query/a7ng_query_role_extract.sv
+e862208ce34d8835c34fef1b2f2e4d32a91938a26cf22bc3854593ff852ea922  rtl/native_graph/query/a7ng_query_role_relctx_synonym.sv
+124be80804b38a1e1a924924091b751a4d13d85e28241695eda00ca5ded500d1  rtl/native_graph/query/a7ng_query_role_keys_ctx.sv
+49a66da21dc075d1487c320d399643ff94e87b02af13f3d6f36d346a1be3a385  rtl/native_graph/query/a7ng_route_valid_gate.sv
+09334e42c3913d4de3a1b59147f48c810481cd634e63b37e64bc669a6c36bb24  rtl/native_graph/memory/a7ng_sparse_dir_axi.sv
+40df08bb58e7eb6e1cc0f0a87b4d67564e8ea602cace166c67eed7d088d8007c  rtl/native_graph/memory/a7ng_axi_mem_model.sv
+a84bbf7e9a2c0b9e3753b3cb2e1ae734c2afde59267d733aa0e52108e47d8ec8  rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect_synonym.sv
+732193bffcf155d6582e23c832f417edc4d35e134812479c94f857ca87bc00af  results/A7-NATIVE-GRAPH/ASTRA-C1-SYNONYM-LAW-01/tb_astra_c1_synonym_law.sv
+# TRANSITIVE_INCLUDES
+381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c  rtl/native_graph/query/qse_role_lexicon.svh  # C0 FILE KEEP unedited; NOT runtime this bag
+9a06e6d390dff66db34daa395a29ea563bed2365e9f2db5bdedcfcb9e9added7  rtl/native_graph/control/a7ng_gate14_crc.svh
+d61a444805ebe9d1673c333496cdfcaf996b66d01afa8fb5d886ffcffb854608  results/A7-NATIVE-GRAPH/ASTRA-C1-SYNONYM-LAW-01/query_gold.svh
+# INDEPENDENT_GOLD_BEFORE_XVLOG
+587e6ac3841105f1a570b28094784dfdad3eff168549d9d8112280af02022936  results/A7-NATIVE-GRAPH/ASTRA-C1-SYNONYM-LAW-01/GOLDEN.json
+d61a444805ebe9d1673c333496cdfcaf996b66d01afa8fb5d886ffcffb854608  results/A7-NATIVE-GRAPH/ASTRA-C1-SYNONYM-LAW-01/query_gold.svh
+6991adc75ffc4d0c50bdf780f455bac5a8eb97ecf4e575d49f42f1716e0aa597  results/A7-NATIVE-GRAPH/ASTRA-C1-SYNONYM-LAW-01/corpus.json
+df0e8833ff9664cd4e21a6aa6d3d223112c8d6733871d6398b133e37296e1aa4  results/A7-NATIVE-GRAPH/ASTRA-C1-SYNONYM-LAW-01/qse_role_lexicon_semantic_16k.svh
+551655a1cda97463841a681e34f8073e22b1b2c1beb2ae03847bdc9a5bb41dfd  results/A7-NATIVE-GRAPH/ASTRA-C1-SYNONYM-LAW-01/qse_relctx_synonym_01.svh
+# BAG
+e0ba62e2915cb26a526fbd938d8d5e4225a9953742b1bf96d66238905620e91b  results/A7-NATIVE-GRAPH/ASTRA-C1-SYNONYM-LAW-01/PREREG.md
+3fff7d72e4dda41a08c847a67907b09c7d8331feee75c53f93da3e6c1f507c3f  results/A7-NATIVE-GRAPH/ASTRA-C1-SYNONYM-LAW-01/ACK.json
+0277941880e091fca4607ee5f668ea0558d69e263f20bcad43757f1e5587ce81  results/A7-NATIVE-GRAPH/ASTRA-C1-SYNONYM-LAW-01/run_xsim.ps1
+fbf7143e73f5b55b7ea6c37e343c060d2b1ff28cb9404f8226f8c29f127c0923  results/A7-NATIVE-GRAPH/ASTRA-C1-SYNONYM-LAW-01/host_astra_c1_synonym_law.py
+732193bffcf155d6582e23c832f417edc4d35e134812479c94f857ca87bc00af  results/A7-NATIVE-GRAPH/ASTRA-C1-SYNONYM-LAW-01/tb_astra_c1_synonym_law.sv
+# FORBIDDEN leftover a7ng_astra_09_integ_path NOT on xvlog DUT list
+# FORBIDDEN frozen a7ng_query_axi_sparse.sv NOT compiled as DUT
+# FORBIDDEN a7ng_query_axi_sparse_intersect.sv NOT compiled as DUT (KEEP KEY-INTERSECT)
+# FORBIDDEN a7ng_query_axi_sparse_stream_intersect.sv NOT compiled as DUT (KEEP STREAM-02 14f75db7)
+# FORBIDDEN a7ng_query_axi_sparse_page_skip.sv NOT compiled as DUT (KEEP PAGE-SKIP dab15d76)
+# FORBIDDEN a7ng_query_axi_sparse_relbind.sv NOT compiled as DUT
+# FORBIDDEN a7ng_query_role_keys_relbind.sv NOT compiled (ctx keys instantiated)
+# FORBIDDEN a7ng_query_axi_sparse_intersect_context.sv NOT compiled as DUT (KEEP 8255a798 instantiate-not-edit)
+# NEW_SYNONYM_LAW qse-v2-relctx-synonym-01 overlay; C0 extract unedited
+# NEW_LEXICON_LAW documented; bag qse_role_lexicon.svh is include-name for named semantic table; C0 FILE unedited
+# REDUCTION_X1000 NOT_EMITTED (not 1-CAND_CAP/N)
+# CAND_CAP_FINAL NOT_FROZEN DDR_QUERY_BOUND_FINAL NOT_FROZEN C1_800K OPEN

@@ -1,0 +1,29 @@
+{
+  "gate": "ASTRA-C1-IMAGE-CONTRACT-01",
+  "program": false,
+  "board_pass": false,
+  "master_c1_claimed": false,
+  "closes_c1_master": false,
+  "DDR_QUERY_BOUND_FINAL": "NOT_FROZEN",
+  "dictionary_image": "NOT_PINNED",
+  "full_byte_dump": false,
+  "sample_n": 23,
+  "law_gen_800k_sha256": "cd3273105a643e073e2b87b531419482598abbbf8a51fada916fb7a1d6972932",
+  "law_query_gold_sha256": "dafe6c39e1eff95b9a8b60290ae886800ec4e9a5d1ef373b5c5ca90b402ab394",
+  "required_class_substrings": [
+    "CLASS_sample_bytes",
+    "CLASS_below_dir_zero",
+    "CLASS_fill_occ202",
+    "CLASS_fill_nids_120_122",
+    "CLASS_special_3380",
+    "CLASS_high_nid",
+    "CLASS_high_k1_occ200",
+    "CLASS_tbl2_empty",
+    "CLASS_overflow_page",
+    "CLASS_bound_not_frozen",
+    "CLASS_dict_unpinned",
+    "CLASS_no_full_dump"
+  ],
+  "marker": "ASTRA_C1_IMAGE_CONTRACT_01_XSIM_PASS",
+  "note": "Sample-range procedural image contract. Do not regenerate GOLDEN after xvlog. Do not freeze DDR_QUERY_BOUND_FINAL."
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "ASTRA-F2R-R5-TXN-WRAP-RESET-01",
+  "observed_session_id": "UNKNOWN",
+  "cwd": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "branch": "grok-orch/astra-native-v1-00",
+  "base": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+  "role": "implementer_not_v31_manager",
+  "write_scope": "new bag + distinctly named candidate RTL/TB/helpers only",
+  "PROGRAM": false,
+  "jtag": "NO_CALLS",
+  "conflict_writer": false,
+  "preserves": "results/A7-NATIVE-GRAPH/ASTRA-F2R-SHARED-RANK-PENDING-01, ASTRA-F2R-R2-PENDING-HANDSHAKE-LAW, ASTRA-F2R-R3-SEMANTIC-GUARD-01, ASTRA-F2R-R4-AXI-TIMEOUT-DRAIN-01 (not edited); a7ng_astra_f2r2_hs_law.sv, a7ng_shared_rank_sgd_q8_sym_f2r2.sv, a7ng_astra_f2r3_sem_guard.sv, a7ng_astra_f2r4_axi_drain.sv not patched; run_f2r.ps1 / run_f2r2.ps1 / run_f2r3.ps1 / ASTRA-F2R-R4 run_xsim.ps1 not rerun",
+  "prior_acceptance": "AUDITOR_20260906T0635Z PASS_NARROW ACCEPT_PARTIAL; F2R_ACCEPTANCE item 5 CLOSED narrow on F2R4; item 6 PARTIAL wrap/reset replay OPEN",
+  "gate_claim": "item6 remainder only: epoch/lifetime so delayed {gen,txn} after wrap or rst_n cannot update a new pending that reused {1,1}; wrap unique-key refuse; post-reset replay; reset-during-update abort; in-episode dup/wrong/stale/oor; smoke retrieval-to-proof and UNREL_NO_STALE",
+  "does_not_close": ["F3", "LM06", "BOARD_PASS", "post_timeout_recovery", "interconnect_cancel", "power_loss_journal"]
+}

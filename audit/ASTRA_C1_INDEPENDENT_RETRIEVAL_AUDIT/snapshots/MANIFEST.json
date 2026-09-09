@@ -1,0 +1,1192 @@
+{
+  "generated_at": "2026-09-07T14:56:03.896740+00:00",
+  "source": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "dest": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots",
+  "copied_n": 155,
+  "missing_n": 20,
+  "files": [
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\docs\\ASTRA\\LOOP_STATE.json",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\LOOP_STATE.json",
+      "copied": true,
+      "size": 1474,
+      "sha256": "9ea7f3406cbf30f0c377d83ea7e03d0e1acb158cad09455039ad6ac9a4c70b99"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\.agents\\handoff\\ASTRA-C1-SEMANTIC-800K-01.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\handoff\\ASTRA-C1-SEMANTIC-800K-01.md",
+      "copied": true,
+      "size": 1204,
+      "sha256": "f6c56981bc0fb9b5ad8fd25fdb02ebc52a82d05bcc691eb7f655f4796fcc752c"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\.agents\\handoff\\ASTRA-C1-N65536-SCALE-01.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\handoff\\ASTRA-C1-N65536-SCALE-01.md",
+      "copied": true,
+      "size": 2410,
+      "sha256": "178e053fae61057571e2f08bed6e1c743e4c706cac84cce2dfd9f255de404e95"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\docs\\ASTRA\\authority\\OPEN_GATES.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\authority\\OPEN_GATES.md",
+      "copied": true,
+      "size": 2348,
+      "sha256": "f66c8f2e6f1d4fd8ad6a83332c8eee82225c18743146dc7a48d8a70a203a3e8b"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\docs\\ASTRA\\authority\\ASTRA_NATIVE_AI_MASTER_V1_1_POST_SILICON_FINAL.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\authority\\ASTRA_NATIVE_AI_MASTER_V1_1_POST_SILICON_FINAL.md",
+      "copied": true,
+      "size": 25222,
+      "sha256": "85f724184cff3372b063f5aae3719f55572723fb9602669c8519991cc676c789"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\AUDITOR\\20260907T1455Z\\REPORT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\AUDITOR\\20260907T1455Z\\REPORT.md",
+      "copied": true,
+      "size": 70755,
+      "sha256": "1ad14174ae35e5d19f50a7a4933d6585508d344675320fc50141144f6103e4d9"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\AUDITOR\\20260907T1550Z\\REPORT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\AUDITOR\\20260907T1550Z\\REPORT.md",
+      "copied": true,
+      "size": 75321,
+      "sha256": "ae055c83fa4e2278fe05d76d999d78306a0ed69f8d977f5cbac3be34abb050f6"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\AUDITOR\\20260907T1705Z\\REPORT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\AUDITOR\\20260907T1705Z\\REPORT.md",
+      "copied": true,
+      "size": 71110,
+      "sha256": "b09f495e1a38392ec591b2af78fb555626d8d3a01596ea9bc1e7bc1fe4e78093"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\AUDITOR\\20260907T1755Z\\REPORT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\AUDITOR\\20260907T1755Z\\REPORT.md",
+      "copied": true,
+      "size": 78752,
+      "sha256": "bd35c2425cede76e030d2816ce9678d1678a0eaa354c100e41d5c3b2b048f49f"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\AUDITOR\\20260907T1835Z\\REPORT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\AUDITOR\\20260907T1835Z\\REPORT.md",
+      "copied": true,
+      "size": 73882,
+      "sha256": "ab29c85477d769c9097d43cfe713461517166b7331555bbc031ac8669db24059"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\AUDITOR\\20260907T1910Z\\REPORT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\AUDITOR\\20260907T1910Z\\REPORT.md",
+      "copied": true,
+      "size": 71281,
+      "sha256": "ffc35291b3f23912f1079db49502c882442ffe766e67af2b2f3bd052cdf7d7b2"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\AUDITOR\\20260907T1955Z\\REPORT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\AUDITOR\\20260907T1955Z\\REPORT.md",
+      "copied": true,
+      "size": 78689,
+      "sha256": "6160713ac135de120a03e5090b4285a4ed3820f87ba61bd3920317497b919bed"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\AUDITOR\\20260907T2045Z\\REPORT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\AUDITOR\\20260907T2045Z\\REPORT.md",
+      "copied": true,
+      "size": 53568,
+      "sha256": "cedaef58f212f0254fe97371171bd298dfa5931491aa50f53cadbdcbfadbd56b"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\AUDITOR\\20260907T2148Z\\REPORT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\AUDITOR\\20260907T2148Z\\REPORT.md",
+      "copied": true,
+      "size": 7489,
+      "sha256": "f797d68fdc941891499a0512c85b410687175d0d75d0df8d54f52a67c3d3acc8"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-AXI-BEAT-ACCOUNTING-01\\GOLDEN.json",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-AXI-BEAT-ACCOUNTING-01\\GOLDEN.json",
+      "copied": true,
+      "size": 10687,
+      "sha256": "d3b5b88356bd2fc691398a794b2e8b6470d7b3eef2fd56a5d7aeddab8ccb5625"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-AXI-BEAT-ACCOUNTING-01\\CLOSEOUT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-AXI-BEAT-ACCOUNTING-01\\CLOSEOUT.md",
+      "copied": true,
+      "size": 2298,
+      "sha256": "2eb4e72865f756a3dc4498322ed40ba82bd003e977baa503c6062096c22fd025"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-AXI-BEAT-ACCOUNTING-01\\RESULTS.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-AXI-BEAT-ACCOUNTING-01\\RESULTS.md",
+      "copied": true,
+      "size": 5078,
+      "sha256": "8f5f79f1c0bb03e2b7f31f2de8b709417db838c365299f744cba7823adc890de"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-AXI-BEAT-ACCOUNTING-01\\PREREG.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-AXI-BEAT-ACCOUNTING-01\\PREREG.md",
+      "copied": true,
+      "size": 5182,
+      "sha256": "f65aecb8b874658b869faea691bc3114b0686a10b4d5f2beeed7b986ee8cb574"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-AXI-BEAT-ACCOUNTING-01\\xsim.log",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-AXI-BEAT-ACCOUNTING-01\\xsim.log",
+      "copied": true,
+      "size": 7738,
+      "sha256": "4ab47b52232770fc3afeb98c2f172a1f134db750c5ef6ef8eb86027ab0689905"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-AXI-BEAT-ACCOUNTING-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-AXI-BEAT-ACCOUNTING-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "copied": true,
+      "size": 476,
+      "sha256": "e553e9c138a6fd8e28fb051833106d968b6296bd51f5be651b8ba559995c558b"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-AXI-BEAT-ACCOUNTING-01\\SHA256.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-AXI-BEAT-ACCOUNTING-01\\SHA256.txt",
+      "copied": true,
+      "size": 4214,
+      "sha256": "192b0ceef1741420a2ebde1d704a5959fb06904dd87c31a7fc0f5941d5dffb48"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-AXI-BEAT-ACCOUNTING-01\\FAIL_R0.md",
+      "copied": false,
+      "reason": "missing"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-KEY-INTERSECT-01\\GOLDEN.json",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-KEY-INTERSECT-01\\GOLDEN.json",
+      "copied": true,
+      "size": 10687,
+      "sha256": "d3b5b88356bd2fc691398a794b2e8b6470d7b3eef2fd56a5d7aeddab8ccb5625"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-KEY-INTERSECT-01\\CLOSEOUT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-KEY-INTERSECT-01\\CLOSEOUT.md",
+      "copied": true,
+      "size": 2114,
+      "sha256": "e134af4da5f90d9d5ae95b255dda6b55a49508c8fe256394c66741136324def3"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-KEY-INTERSECT-01\\RESULTS.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-KEY-INTERSECT-01\\RESULTS.md",
+      "copied": true,
+      "size": 5065,
+      "sha256": "ed217a5291b29ce1bf83d2aedf7f9335984ebd2ce077910f11a99e64f2fec7e4"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-KEY-INTERSECT-01\\PREREG.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-KEY-INTERSECT-01\\PREREG.md",
+      "copied": true,
+      "size": 7275,
+      "sha256": "c7efdfcc49f99565c5ef52bb8e2c620f31bdff713c0157dd7320242b143a53a0"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-KEY-INTERSECT-01\\xsim.log",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-KEY-INTERSECT-01\\xsim.log",
+      "copied": true,
+      "size": 5340,
+      "sha256": "4b17320d3692777f22393d936bab2e5db1513ec296d020a5c5d7c1cb27747b4b"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-KEY-INTERSECT-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-KEY-INTERSECT-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "copied": true,
+      "size": 319,
+      "sha256": "70928ef350aea066d1022cf03b5da5b3f30ffd4db08c40a45daedaf383565585"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-KEY-INTERSECT-01\\SHA256.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-KEY-INTERSECT-01\\SHA256.txt",
+      "copied": true,
+      "size": 3814,
+      "sha256": "7a3fd727309b51843bf740317c6d477dbe9f7e49c5e9158edfd16080dc1ee8cf"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-KEY-INTERSECT-01\\FAIL_R0.md",
+      "copied": false,
+      "reason": "missing"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N4096-INTERSECT-01\\GOLDEN.json",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N4096-INTERSECT-01\\GOLDEN.json",
+      "copied": true,
+      "size": 13473,
+      "sha256": "095ca7156c1f8efe60d1a2d689f93192271eb79bfb2747f3f12d2b90ea0f9dd3"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N4096-INTERSECT-01\\CLOSEOUT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N4096-INTERSECT-01\\CLOSEOUT.md",
+      "copied": true,
+      "size": 2478,
+      "sha256": "d6366726ea55ffb5611c0746bf7fa6525098536b52c75f627914f56e3c3f3f35"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N4096-INTERSECT-01\\RESULTS.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N4096-INTERSECT-01\\RESULTS.md",
+      "copied": true,
+      "size": 6566,
+      "sha256": "3177f4c6c15ff0db632dafb7a7605150112f76b1b5ef5f9844106da547e1c6c5"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N4096-INTERSECT-01\\PREREG.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N4096-INTERSECT-01\\PREREG.md",
+      "copied": true,
+      "size": 8621,
+      "sha256": "0a4a875a6585df8a71426713bde205aaf6b68a2c82ccbbcd7eb4787094d19b97"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N4096-INTERSECT-01\\xsim.log",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N4096-INTERSECT-01\\xsim.log",
+      "copied": true,
+      "size": 6378,
+      "sha256": "a96552edb667dd81c0d51aee690922886e8429725bc3176d9571cfa15cb080c0"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N4096-INTERSECT-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N4096-INTERSECT-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "copied": true,
+      "size": 319,
+      "sha256": "a5bd241ac7a910476bfe93adaea80949cfc7c57b80e81aa00a887505fb9d2836"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N4096-INTERSECT-01\\SHA256.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N4096-INTERSECT-01\\SHA256.txt",
+      "copied": true,
+      "size": 3966,
+      "sha256": "554efebdf00ac1d3cb86f93ca03dd69761028028234634c2ff0046841ed5e9a9"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N4096-INTERSECT-01\\FAIL_R0.md",
+      "copied": false,
+      "reason": "missing"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-STREAM-INTERSECT-02\\GOLDEN.json",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-STREAM-INTERSECT-02\\GOLDEN.json",
+      "copied": true,
+      "size": 13379,
+      "sha256": "05c6e087e567146fc3f8da058370d8bfc5f7a9acfdebc1efaf6659b594f4b86b"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-STREAM-INTERSECT-02\\CLOSEOUT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-STREAM-INTERSECT-02\\CLOSEOUT.md",
+      "copied": true,
+      "size": 2464,
+      "sha256": "d9e923bbcb7d2fa475a6d8a6a020d9ee8feff9f5535eb49aa39d9fba4112966c"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-STREAM-INTERSECT-02\\RESULTS.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-STREAM-INTERSECT-02\\RESULTS.md",
+      "copied": true,
+      "size": 5058,
+      "sha256": "7f328b152b50b63ef734e4c9f80cb77a94ffe433106455f9b8425b1f9660476f"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-STREAM-INTERSECT-02\\PREREG.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-STREAM-INTERSECT-02\\PREREG.md",
+      "copied": true,
+      "size": 7158,
+      "sha256": "1f88fa3bfc608f711661602a819145b1b9f2dfba46050c459857233f6a7b6a1c"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-STREAM-INTERSECT-02\\xsim.log",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-STREAM-INTERSECT-02\\xsim.log",
+      "copied": true,
+      "size": 6046,
+      "sha256": "9091c5a78d1e67ffb1683bfee8fe029b17fc1b6e6b965a20d7d328a400084c14"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-STREAM-INTERSECT-02\\GOLD_HASH_PRE_XVLOG.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-STREAM-INTERSECT-02\\GOLD_HASH_PRE_XVLOG.txt",
+      "copied": true,
+      "size": 319,
+      "sha256": "4fad965d482959d6e69647ff98f1a4ea9ec7935c0ff2aa394bd9f245e230e82e"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-STREAM-INTERSECT-02\\SHA256.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-STREAM-INTERSECT-02\\SHA256.txt",
+      "copied": true,
+      "size": 4185,
+      "sha256": "3b75ef683186fd8ddda8d15907a0526dbe689924a03842a1fa480f1fbd2ffa35"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-STREAM-INTERSECT-02\\FAIL_R0.md",
+      "copied": false,
+      "reason": "missing"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N4096-STREAM-02\\GOLDEN.json",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N4096-STREAM-02\\GOLDEN.json",
+      "copied": true,
+      "size": 13723,
+      "sha256": "2a2db8c8dcb7ac1c9fb322a7d59d407a8892ef087499f96784f71c9f1dd5df06"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N4096-STREAM-02\\CLOSEOUT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N4096-STREAM-02\\CLOSEOUT.md",
+      "copied": true,
+      "size": 3237,
+      "sha256": "48e96e1214f8ebfefc3fce1eed6d52ac2d6c90d1fcfec431e5e6b840540f37bf"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N4096-STREAM-02\\RESULTS.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N4096-STREAM-02\\RESULTS.md",
+      "copied": true,
+      "size": 5925,
+      "sha256": "b3038c58770a449880e8276310755d119b91359b1f2d0fa1098f3f8bbb53098c"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N4096-STREAM-02\\PREREG.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N4096-STREAM-02\\PREREG.md",
+      "copied": true,
+      "size": 8546,
+      "sha256": "d7fe399d8d0d06d711a8a88e80061449199e13810e9a56a5a38b8c59483b5c3b"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N4096-STREAM-02\\xsim.log",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N4096-STREAM-02\\xsim.log",
+      "copied": true,
+      "size": 6129,
+      "sha256": "dd1a151a6f4be2713088901e1f24b1f8295d78813b8e6afd266571e5f83e9947"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N4096-STREAM-02\\GOLD_HASH_PRE_XVLOG.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N4096-STREAM-02\\GOLD_HASH_PRE_XVLOG.txt",
+      "copied": true,
+      "size": 319,
+      "sha256": "f133296b11978fd500d83438b757d16e6e8c0d90cb5da33a317a8359361bbe57"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N4096-STREAM-02\\SHA256.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N4096-STREAM-02\\SHA256.txt",
+      "copied": true,
+      "size": 4180,
+      "sha256": "c28f3028e1489bcd9dfee9056fde056fbf8fd586e528acdecc8dadaac69c29dd"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N4096-STREAM-02\\FAIL_R0.md",
+      "copied": false,
+      "reason": "missing"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-DIR-FULL16-01\\GOLDEN.json",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-DIR-FULL16-01\\GOLDEN.json",
+      "copied": true,
+      "size": 16370,
+      "sha256": "2f6ab31e41837fd3fd283dab8ef57fea40602bd27719c07e0cd99f619a5eb6f5"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-DIR-FULL16-01\\CLOSEOUT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-DIR-FULL16-01\\CLOSEOUT.md",
+      "copied": true,
+      "size": 4010,
+      "sha256": "dc8e56c704b31f550b2788bcbd20bb953bcaeccdd4ea3a85aa700202866f2dc8"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-DIR-FULL16-01\\RESULTS.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-DIR-FULL16-01\\RESULTS.md",
+      "copied": true,
+      "size": 6582,
+      "sha256": "7befcadb5c4634a29220f99f27c7c4c97ef29bc6d4ed9abf187cf11786f0cdd6"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-DIR-FULL16-01\\PREREG.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-DIR-FULL16-01\\PREREG.md",
+      "copied": true,
+      "size": 9739,
+      "sha256": "7b954b5022609d402aebe385c161743415b97a07709298c1c2da955d6825046f"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-DIR-FULL16-01\\xsim.log",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-DIR-FULL16-01\\xsim.log",
+      "copied": true,
+      "size": 6618,
+      "sha256": "55b5e527744af5dc0520ea20305bf8ae11b805b1b1cb641eb3cbd4932de9cc17"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-DIR-FULL16-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-DIR-FULL16-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "copied": true,
+      "size": 319,
+      "sha256": "d1560d2b48293c926058d3cce0e78acdd014083a9d33a650aafa4ebba89a5725"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-DIR-FULL16-01\\SHA256.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-DIR-FULL16-01\\SHA256.txt",
+      "copied": true,
+      "size": 4558,
+      "sha256": "1be08131426568dfa14ac5c825e5ba9cfb6dbe1c330c20e8a048ebfb255b3017"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-DIR-FULL16-01\\FAIL_R0.md",
+      "copied": false,
+      "reason": "missing"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-PAGE-SKIP-01\\GOLDEN.json",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-PAGE-SKIP-01\\GOLDEN.json",
+      "copied": true,
+      "size": 14399,
+      "sha256": "86b536fb6ce46d7ba6ffb59947822bf245d3253647be17664d22565dd31a566e"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-PAGE-SKIP-01\\CLOSEOUT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-PAGE-SKIP-01\\CLOSEOUT.md",
+      "copied": true,
+      "size": 3109,
+      "sha256": "ffe7770156372e72b581f600de69c266c61f3e4f59438d667fbfd2faca28b5e0"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-PAGE-SKIP-01\\RESULTS.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-PAGE-SKIP-01\\RESULTS.md",
+      "copied": true,
+      "size": 6428,
+      "sha256": "597d2490a15fc456f0349f95c988e132ad381474df1f2aeb969758ef1116a3e4"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-PAGE-SKIP-01\\PREREG.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-PAGE-SKIP-01\\PREREG.md",
+      "copied": true,
+      "size": 5736,
+      "sha256": "6c460297a899ae1fd2612d8f261ede3e15abe59e1cd9c169bca11bcf306164b4"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-PAGE-SKIP-01\\xsim.log",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-PAGE-SKIP-01\\xsim.log",
+      "copied": true,
+      "size": 7332,
+      "sha256": "29e38918262536b7f03db9ddb77681b8906ce9db1debc6564548ca2d982bc8d9"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-PAGE-SKIP-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-PAGE-SKIP-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "copied": true,
+      "size": 319,
+      "sha256": "f9f3273ceb21539f3a2977e9598df820e0dc344494d47fd857b57230d53bd0d9"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-PAGE-SKIP-01\\SHA256.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-PAGE-SKIP-01\\SHA256.txt",
+      "copied": true,
+      "size": 4554,
+      "sha256": "e3d9912ebd5a33ac84ea563a9a65f68ca3603c92572307a3650099f38c4908dd"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-PAGE-SKIP-01\\FAIL_R0.md",
+      "copied": false,
+      "reason": "missing"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-CONTEXT-02\\GOLDEN.json",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-CONTEXT-02\\GOLDEN.json",
+      "copied": true,
+      "size": 14180,
+      "sha256": "8fc931f5ac07a72fd146a8e429ab38aed7ce0952464514883b887049ce0c3165"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-CONTEXT-02\\CLOSEOUT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-CONTEXT-02\\CLOSEOUT.md",
+      "copied": true,
+      "size": 3439,
+      "sha256": "f07a20056f4af4a1cdceaee452fa9c06575d8f7501d48babfb80f17566d489f5"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-CONTEXT-02\\RESULTS.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-CONTEXT-02\\RESULTS.md",
+      "copied": true,
+      "size": 4466,
+      "sha256": "b34a38194700a497ec9104cb54d2a09373847cd9c2fe1bc6c716ad2b2028a327"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-CONTEXT-02\\PREREG.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-CONTEXT-02\\PREREG.md",
+      "copied": true,
+      "size": 8327,
+      "sha256": "836d506dae38211630e8230225992385f7e60fd88555e579552e0803075039a7"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-CONTEXT-02\\xsim.log",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-CONTEXT-02\\xsim.log",
+      "copied": true,
+      "size": 5859,
+      "sha256": "e749c9b0314c69f4b706655348b07505adf13c1ae8d7faaeeff00e76cd010f66"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-CONTEXT-02\\GOLD_HASH_PRE_XVLOG.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-CONTEXT-02\\GOLD_HASH_PRE_XVLOG.txt",
+      "copied": true,
+      "size": 319,
+      "sha256": "953b0430163332057571c9237aa37ca951e330538dd31f53fe2d55bf237f1036"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-CONTEXT-02\\SHA256.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-CONTEXT-02\\SHA256.txt",
+      "copied": true,
+      "size": 4847,
+      "sha256": "ae05a9ec77d267243d688f752cd213cb71ae5552dce621b76f5c94b9f68c2d23"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-CONTEXT-02\\FAIL_R0.md",
+      "copied": false,
+      "reason": "missing"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-16K-01\\GOLDEN.json",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-16K-01\\GOLDEN.json",
+      "copied": true,
+      "size": 14059,
+      "sha256": "0e539d48be5862d006e5785cf3c74355d5540dff09bec5e8c738ac842ea83b99"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-16K-01\\CLOSEOUT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-16K-01\\CLOSEOUT.md",
+      "copied": true,
+      "size": 4180,
+      "sha256": "0dbe227750af345098bd6e11926b50eca280c7d7265d763da460228e465d8887"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-16K-01\\RESULTS.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-16K-01\\RESULTS.md",
+      "copied": true,
+      "size": 5188,
+      "sha256": "0fb9f2c9df4013b27e3d6c1ee5e66da996ce3071fac137022da385bb1c52d0dc"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-16K-01\\PREREG.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-16K-01\\PREREG.md",
+      "copied": true,
+      "size": 9528,
+      "sha256": "d09e139352d812e0e3b67419cc1e9b51286a5657c3328a2bb6e4501709bc0a9a"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-16K-01\\xsim.log",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-16K-01\\xsim.log",
+      "copied": true,
+      "size": 6087,
+      "sha256": "bc03a39b8376b72da3d6ed845999cf83a95e87aa3b6e35f482d43b5b60651d3e"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-16K-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-16K-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "copied": true,
+      "size": 420,
+      "sha256": "04c85700cbdce21906bbd26b799dbbb0941b43268a42b5d0df08d67e84ae9009"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-16K-01\\SHA256.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-16K-01\\SHA256.txt",
+      "copied": true,
+      "size": 5598,
+      "sha256": "ed5beeb8cf13a1f748c0cc21b3952728838fc0d7d97fd6634e95cd0375cd8755"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-16K-01\\FAIL_R0.md",
+      "copied": false,
+      "reason": "missing"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-HELDOUT-01\\GOLDEN.json",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-HELDOUT-01\\GOLDEN.json",
+      "copied": true,
+      "size": 15174,
+      "sha256": "3c1eda7d1639ef1d90e06d8eb799cd7f2a382cd42de1a4dd4319d131d3bcfcb4"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-HELDOUT-01\\CLOSEOUT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-HELDOUT-01\\CLOSEOUT.md",
+      "copied": true,
+      "size": 4127,
+      "sha256": "410a1b1801bad9b3359cdd8eb6990e872599bf9b746f10233778b4b8a8cef91d"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-HELDOUT-01\\RESULTS.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-HELDOUT-01\\RESULTS.md",
+      "copied": true,
+      "size": 6523,
+      "sha256": "d45b6dd9c3b5c8e3a34234654a4eb531c7cc57aa4ee308ce8f93004df9a59fe6"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-HELDOUT-01\\PREREG.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-HELDOUT-01\\PREREG.md",
+      "copied": true,
+      "size": 11400,
+      "sha256": "54577589c8f6c97694c2b1d5e1d3db844dce3f79a7115301d51fca4088b779c6"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-HELDOUT-01\\xsim.log",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-HELDOUT-01\\xsim.log",
+      "copied": true,
+      "size": 6268,
+      "sha256": "38ed2631d50c650791d87334141465f39d3b19b2497b18f3967b8ce0d425b446"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-HELDOUT-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-HELDOUT-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "copied": true,
+      "size": 420,
+      "sha256": "bfa1960859b3194c81a8707620965f249728db82f203561a7a6af18cfc04c282"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-HELDOUT-01\\SHA256.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-HELDOUT-01\\SHA256.txt",
+      "copied": true,
+      "size": 5662,
+      "sha256": "bf9c2876fac1c19617bd32f1a3314ccccaa8daaeca20d83d19c9dc9d182d59d2"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-HELDOUT-01\\FAIL_R0.md",
+      "copied": false,
+      "reason": "missing"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-01\\GOLDEN.json",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-01\\GOLDEN.json",
+      "copied": true,
+      "size": 5737,
+      "sha256": "9fce7fad371afbc3a0fe3173d3b7c3c154ce338f05e2374255ac51aa38f8bff2"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-01\\CLOSEOUT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-01\\CLOSEOUT.md",
+      "copied": true,
+      "size": 3925,
+      "sha256": "fb3e0a3e1d82762eb24235ca15257b2771fa337faf5b6936c9217b2be9b39a27"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-01\\RESULTS.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-01\\RESULTS.md",
+      "copied": true,
+      "size": 4786,
+      "sha256": "9a89394306ff91b19e9d538a7fb5e88a0a7a2f239ffb4f916e157e33581a2860"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-01\\PREREG.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-01\\PREREG.md",
+      "copied": true,
+      "size": 11746,
+      "sha256": "2d1dd2abad332f13481aaf17989a7348a203b2336dccdf2c5c42b3ce50ecb4d5"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-01\\xsim.log",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-01\\xsim.log",
+      "copied": true,
+      "size": 3399,
+      "sha256": "5095f1e360d63ba8ef372c0d74611960b9385404d2fe670986b413691241c00a"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "copied": true,
+      "size": 420,
+      "sha256": "4e9decc62d3e9304ac0eb1214d9664a0e49eaa7687f69e03190dc973385588a8"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-01\\SHA256.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-01\\SHA256.txt",
+      "copied": true,
+      "size": 5716,
+      "sha256": "070395ea298b682743eb6b8903ba9f6b45be3747a8c3838dee28bdaeba5a9007"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-01\\FAIL_R0.md",
+      "copied": false,
+      "reason": "missing"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-01\\GOLDEN.json",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-01\\GOLDEN.json",
+      "copied": true,
+      "size": 6267,
+      "sha256": "dfa19dde41e2566dc2a0d277c0ad30dc1394a6ebb90872f548de557d7a7b20a2"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-01\\CLOSEOUT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-01\\CLOSEOUT.md",
+      "copied": true,
+      "size": 4312,
+      "sha256": "18e04a5ac965731498f0b4824d5937df0c440b2ba6af0a5c02bbd969dd59dea9"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-01\\RESULTS.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-01\\RESULTS.md",
+      "copied": true,
+      "size": 6254,
+      "sha256": "2ccde441073b92a5d059fd6606d489b4cd47d8a17fbcdcfb30be98940b710add"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-01\\PREREG.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-01\\PREREG.md",
+      "copied": true,
+      "size": 12908,
+      "sha256": "a8d4a873dbb1689d04bc2583701d634207e6627020be2272537cbb14161a0826"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-01\\xsim.log",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-01\\xsim.log",
+      "copied": true,
+      "size": 3572,
+      "sha256": "cee6e63d48b79cb15c8de492517f84d58fa239cbe34ffb6fc5391db218a50f28"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "copied": true,
+      "size": 420,
+      "sha256": "e00aec15beaeb344de5f8af74dfda79dc5d05d4dd80effbc3c2e02562064c271"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-01\\SHA256.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-01\\SHA256.txt",
+      "copied": true,
+      "size": 5783,
+      "sha256": "a6751dfcbc9178daf406fc1bc9f3e9ac60dfa9ec8366d2262c9b3dcb53be1d61"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-01\\FAIL_R0.md",
+      "copied": false,
+      "reason": "missing"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-R2-01\\GOLDEN.json",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-R2-01\\GOLDEN.json",
+      "copied": true,
+      "size": 13930,
+      "sha256": "be1eb641931e7666b4751b71dfaa309030aa3ac3ba454f92ac7768e5a9bcd8bc"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-R2-01\\CLOSEOUT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-R2-01\\CLOSEOUT.md",
+      "copied": true,
+      "size": 5165,
+      "sha256": "5eaf8e66b7b6495f06d4a98acfb87c2c489b35e2c143cd07847bb89094c9b597"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-R2-01\\RESULTS.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-R2-01\\RESULTS.md",
+      "copied": true,
+      "size": 6172,
+      "sha256": "d5d3fad3e4c4854a78dd1d8a9f7d2069b74fc85d89f74931010413d33d488308"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-R2-01\\PREREG.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-R2-01\\PREREG.md",
+      "copied": true,
+      "size": 11139,
+      "sha256": "742173778ad9af0c7db150001a9959c14bb394962e2d382508e65a73135a14c1"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-R2-01\\xsim.log",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-R2-01\\xsim.log",
+      "copied": true,
+      "size": 5654,
+      "sha256": "ea8581ee5bc7b28891b6643cd0f9ff148917a1e0cc3c5e23f79446294e921627"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-R2-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-R2-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "copied": true,
+      "size": 420,
+      "sha256": "f76cf5c7133f44b7e6b35a453e9474a4d6351fbbf51f33f12a4fbff3aacf6d63"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-R2-01\\SHA256.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-R2-01\\SHA256.txt",
+      "copied": true,
+      "size": 5841,
+      "sha256": "14ce60456320546866f62757b3e94935167e9cd3638bee1bd98a45b4a609b0f0"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-R2-01\\FAIL_R0.md",
+      "copied": false,
+      "reason": "missing"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-NL-01\\GOLDEN.json",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-NL-01\\GOLDEN.json",
+      "copied": true,
+      "size": 5262,
+      "sha256": "6fa2a93f15a32b2135357c8876700b89c59dcb4972936ef79f130922c593b53b"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-NL-01\\CLOSEOUT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-NL-01\\CLOSEOUT.md",
+      "copied": true,
+      "size": 4102,
+      "sha256": "3a6170cfb54a5cde9fff1d8db923b7d30db51880b1275382dcfea6453b06191f"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-NL-01\\RESULTS.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-NL-01\\RESULTS.md",
+      "copied": true,
+      "size": 6467,
+      "sha256": "4cbe5876f06f94c456c7bb093f5278197edafb8794d4850924c2705f28f4f01a"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-NL-01\\PREREG.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-NL-01\\PREREG.md",
+      "copied": true,
+      "size": 11660,
+      "sha256": "4664f17c5f757a463a33c24a39fb1e6466fe32527b642c9876c78ad57ec64de9"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-NL-01\\xsim.log",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-NL-01\\xsim.log",
+      "copied": true,
+      "size": 3689,
+      "sha256": "1ff11f304e579e954832c06e5fc2c5216f22f7f41df24cfa774151d872165db5"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-NL-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-NL-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "copied": true,
+      "size": 420,
+      "sha256": "e0fb276adb269bb32c0f4b4b7bb16d802594667ff31fd484301340705b2456f7"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-NL-01\\SHA256.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-NL-01\\SHA256.txt",
+      "copied": true,
+      "size": 5603,
+      "sha256": "2d33a4efe917e0f6b75f4946734a3f20045e2aa815cbf73d927ce3127b0cb99e"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-NL-01\\FAIL_R0.md",
+      "copied": false,
+      "reason": "missing"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SYNONYM-LAW-01\\GOLDEN.json",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SYNONYM-LAW-01\\GOLDEN.json",
+      "copied": true,
+      "size": 5845,
+      "sha256": "587e6ac3841105f1a570b28094784dfdad3eff168549d9d8112280af02022936"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SYNONYM-LAW-01\\CLOSEOUT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SYNONYM-LAW-01\\CLOSEOUT.md",
+      "copied": true,
+      "size": 3801,
+      "sha256": "63e7f9b35495774791eb3a51ccaadacec1deeaa2132cf353f03d84f421ce7bdd"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SYNONYM-LAW-01\\RESULTS.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SYNONYM-LAW-01\\RESULTS.md",
+      "copied": true,
+      "size": 4572,
+      "sha256": "5399be13929d5eef13bfc11c2578a15efd9b678cfd4eaaa6c122690e806be2cf"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SYNONYM-LAW-01\\PREREG.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SYNONYM-LAW-01\\PREREG.md",
+      "copied": true,
+      "size": 11687,
+      "sha256": "e0ba62e2915cb26a526fbd938d8d5e4225a9953742b1bf96d66238905620e91b"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SYNONYM-LAW-01\\xsim.log",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SYNONYM-LAW-01\\xsim.log",
+      "copied": true,
+      "size": 3852,
+      "sha256": "fe4b0ac4690868abed79a1a108d2bc566e75b5150fed2637088b24b24844068b"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SYNONYM-LAW-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SYNONYM-LAW-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "copied": true,
+      "size": 513,
+      "sha256": "d59fa198ef755a5c4be9b357b469a98342fb38d3f060e6a1f6148189cef3f62f"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SYNONYM-LAW-01\\SHA256.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SYNONYM-LAW-01\\SHA256.txt",
+      "copied": true,
+      "size": 6674,
+      "sha256": "f06e589b17d68ba2d350436d3cd87e0773a295f5046a0a359f76175802a3807e"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SYNONYM-LAW-01\\FAIL_R0.md",
+      "copied": false,
+      "reason": "missing"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N65536-SCALE-01\\GOLDEN.json",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N65536-SCALE-01\\GOLDEN.json",
+      "copied": true,
+      "size": 6682,
+      "sha256": "0c9258631bdc811b33a38b2443df01f911478b130c9fa748fbf03d3b84dad68f"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N65536-SCALE-01\\CLOSEOUT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N65536-SCALE-01\\CLOSEOUT.md",
+      "copied": true,
+      "size": 1997,
+      "sha256": "06c4b37979ff3bb7b41dbb77fdc274ece4a3af8c6a513e442900b008a4c8f97d"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N65536-SCALE-01\\RESULTS.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N65536-SCALE-01\\RESULTS.md",
+      "copied": true,
+      "size": 1491,
+      "sha256": "ca8d121e6ef28139aaa66053b29478e77d40dd6abaef8b92ff858abfad11f982"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N65536-SCALE-01\\PREREG.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N65536-SCALE-01\\PREREG.md",
+      "copied": true,
+      "size": 617,
+      "sha256": "694c24ac6bc37d065e804189dd7a4d8008e47558c4aa11995a322aaacb76fc77"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N65536-SCALE-01\\xsim.log",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N65536-SCALE-01\\xsim.log",
+      "copied": true,
+      "size": 4720,
+      "sha256": "deb617d59fd27b2ef1df35b87f76c4e5e4e81b2f60aba312b14e964e4ec67c1b"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N65536-SCALE-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N65536-SCALE-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "copied": true,
+      "size": 514,
+      "sha256": "b3323ead38f89a45a29a313e3df7c88c5aecb8b358261bcc20f0b621c8779405"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N65536-SCALE-01\\SHA256.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N65536-SCALE-01\\SHA256.txt",
+      "copied": true,
+      "size": 6642,
+      "sha256": "757d04077f7c7736598feccb0bd34653aef2f08de9eb05bbb8a8aae287fbb119"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N65536-SCALE-01\\FAIL_R0.md",
+      "copied": false,
+      "reason": "missing"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N262144-SCALE-01\\GOLDEN.json",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N262144-SCALE-01\\GOLDEN.json",
+      "copied": true,
+      "size": 6698,
+      "sha256": "777de4e087ace05b9533532f709d2b2628d3cbf92291b3e85db32ba1b096f89a"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N262144-SCALE-01\\CLOSEOUT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N262144-SCALE-01\\CLOSEOUT.md",
+      "copied": true,
+      "size": 1367,
+      "sha256": "b1bb891cac3eda3667db94febf2d0b1e100a93f0cb5942270b3b66cd69192d39"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N262144-SCALE-01\\RESULTS.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N262144-SCALE-01\\RESULTS.md",
+      "copied": true,
+      "size": 677,
+      "sha256": "03c72467e696a85dc0fe550cd372dcaac32a3db72ed2c4fcc741e6dc8a0a1b03"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N262144-SCALE-01\\PREREG.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N262144-SCALE-01\\PREREG.md",
+      "copied": true,
+      "size": 441,
+      "sha256": "f5b6a03076cda30ca5ce0ec93bcc2ecb883b6a52e8c0f481efc8a724e4886f46"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N262144-SCALE-01\\xsim.log",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N262144-SCALE-01\\xsim.log",
+      "copied": true,
+      "size": 4752,
+      "sha256": "4c8cae971b43a05903c4657811c0218e1c996bb0df60198bbc67c7501a9172c6"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N262144-SCALE-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N262144-SCALE-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "copied": true,
+      "size": 514,
+      "sha256": "d651f6e9a30aa82b4c5c9fc0e0cd3d7f99641230b327de5d6a73a42367db5b75"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N262144-SCALE-01\\SHA256.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N262144-SCALE-01\\SHA256.txt",
+      "copied": true,
+      "size": 6665,
+      "sha256": "360ff312e28c264607906ac86cdb8de30ad120fa876541054dc8ee34b04fd57e"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N262144-SCALE-01\\FAIL_R0.md",
+      "copied": false,
+      "reason": "missing"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N800000-SCALE-01\\GOLDEN.json",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N800000-SCALE-01\\GOLDEN.json",
+      "copied": true,
+      "size": 12614,
+      "sha256": "3b900979101d48fc20613615be84f2b98717bebea5544c5c0ae0e03c1a559397"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N800000-SCALE-01\\CLOSEOUT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N800000-SCALE-01\\CLOSEOUT.md",
+      "copied": true,
+      "size": 1994,
+      "sha256": "1dcf58dbda9e9fa17dc6443efe5f242aeda8b6f45e7cbd4d4f78117f29d345e2"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N800000-SCALE-01\\RESULTS.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N800000-SCALE-01\\RESULTS.md",
+      "copied": true,
+      "size": 1254,
+      "sha256": "d149425e6687e2509a72ae95a61a0c1b3ecf7b1e06045ccea3fb20a114f13aa9"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N800000-SCALE-01\\PREREG.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N800000-SCALE-01\\PREREG.md",
+      "copied": true,
+      "size": 441,
+      "sha256": "d6217c6ec2fedbba0fa3a70c99449741b4e682b999f604653ca867bf726856b3"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N800000-SCALE-01\\xsim.log",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N800000-SCALE-01\\xsim.log",
+      "copied": true,
+      "size": 7067,
+      "sha256": "92aad0c74ff2941fa9f6831be506f25f16dfd01fbd5de394a4477edbba1b93c1"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N800000-SCALE-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N800000-SCALE-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "copied": true,
+      "size": 514,
+      "sha256": "2a3ed88e60073456f90fe430faba4822366d78e757d964b27f38948516b0d5e7"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N800000-SCALE-01\\SHA256.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-N800000-SCALE-01\\SHA256.txt",
+      "copied": true,
+      "size": 6665,
+      "sha256": "2e41552c73a9f642fd19d0796ac4bf9a24f56971f4de3c802bf2e394e9e2fcc1"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N800000-SCALE-01\\FAIL_R0.md",
+      "copied": false,
+      "reason": "missing"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-CAND-CAP-SWEEP-01\\GOLDEN.json",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-CAND-CAP-SWEEP-01\\GOLDEN.json",
+      "copied": true,
+      "size": 12614,
+      "sha256": "3b900979101d48fc20613615be84f2b98717bebea5544c5c0ae0e03c1a559397"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-CAND-CAP-SWEEP-01\\CLOSEOUT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-CAND-CAP-SWEEP-01\\CLOSEOUT.md",
+      "copied": true,
+      "size": 1353,
+      "sha256": "974158a00d94d4f154da2bae78b45e277477884230a39d3a676e82a27ce4af15"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-CAND-CAP-SWEEP-01\\RESULTS.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-CAND-CAP-SWEEP-01\\RESULTS.md",
+      "copied": true,
+      "size": 879,
+      "sha256": "e3525cd53442403d358ea233a329daadc70ad0372f59f24fd67059972698468c"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-CAND-CAP-SWEEP-01\\PREREG.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-CAND-CAP-SWEEP-01\\PREREG.md",
+      "copied": true,
+      "size": 322,
+      "sha256": "5b529a95519c763bbca8ab713a145c7e19730de02e00757fc8d349720d51c879"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-CAND-CAP-SWEEP-01\\xsim.log",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-CAND-CAP-SWEEP-01\\xsim.log",
+      "copied": true,
+      "size": 29299,
+      "sha256": "9d95f83ecd3710060bf8d28dc08d98781d7dc5219add3dc466856ce716fe1b0a"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-CAND-CAP-SWEEP-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-CAND-CAP-SWEEP-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "copied": true,
+      "size": 514,
+      "sha256": "2a3ed88e60073456f90fe430faba4822366d78e757d964b27f38948516b0d5e7"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-CAND-CAP-SWEEP-01\\SHA256.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-CAND-CAP-SWEEP-01\\SHA256.txt",
+      "copied": true,
+      "size": 6928,
+      "sha256": "77787876803156c05ce20c8493f0dec1f8df737e6316e04fe6f3dfd28b89764a"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-CAND-CAP-SWEEP-01\\FAIL_R0.md",
+      "copied": false,
+      "reason": "missing"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-800K-01\\GOLDEN.json",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-800K-01\\GOLDEN.json",
+      "copied": true,
+      "size": 5739,
+      "sha256": "acdbc3797ac7746c8a98cf5357750d0875dd48c74d747b7788b4b82f4b28209a"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-800K-01\\CLOSEOUT.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-800K-01\\CLOSEOUT.md",
+      "copied": true,
+      "size": 3652,
+      "sha256": "519f0cdde290773795c239abcc575751adb7fbad0b6b8a09c6162069aea13001"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-800K-01\\RESULTS.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-800K-01\\RESULTS.md",
+      "copied": true,
+      "size": 5301,
+      "sha256": "7becbcb6934898936fa2efdf35ff7ab12cf4c77c0d9681439fdfe290b778a2bf"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-800K-01\\PREREG.md",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-800K-01\\PREREG.md",
+      "copied": true,
+      "size": 11728,
+      "sha256": "17722455ffe565a1dda10e1c861d50de2a55f534f402b3ef50e3a74a06240a64"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-800K-01\\xsim.log",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-800K-01\\xsim.log",
+      "copied": true,
+      "size": 3914,
+      "sha256": "7d0a52ac3a4c19ef8f3990b16294b52cc8d518a20f177058bd80954d6bc394d5"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-800K-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-800K-01\\GOLD_HASH_PRE_XVLOG.txt",
+      "copied": true,
+      "size": 514,
+      "sha256": "7c1e8eb9dcb96f8e5577a226057cc352f9a52292f40d86530aa49b0a8b49a67b"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-800K-01\\SHA256.txt",
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\bags\\ASTRA-C1-SEMANTIC-800K-01\\SHA256.txt",
+      "copied": true,
+      "size": 6665,
+      "sha256": "c8d0950df5ed308ed81fe3c15811ca6c5e29c09116964bd261fc6f070fc3b8f3"
+    },
+    {
+      "src": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-800K-01\\FAIL_R0.md",
+      "copied": false,
+      "reason": "missing"
+    },
+    {
+      "dst": "D:\\FPGA\\ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT\\snapshots\\rtl_hashes.json",
+      "copied": true,
+      "kind": "rtl_hashes"
+    }
+  ]
+}

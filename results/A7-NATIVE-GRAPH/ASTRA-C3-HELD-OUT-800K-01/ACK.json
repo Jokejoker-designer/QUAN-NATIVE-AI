@@ -1,0 +1,8 @@
+{
+  "gate": "ASTRA-C3-HELD-OUT-800K-01",
+  "program": false,
+  "board_pass": false,
+  "mig": false,
+  "master_c3_claimed": false,
+  "one_unknown": "5-seed 4-arm disjoint held-out gain on 800k cartesian dir + C3 fact_pack; not planted 96-slot; not MIG"
+}

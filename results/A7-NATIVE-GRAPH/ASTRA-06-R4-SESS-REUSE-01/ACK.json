@@ -1,0 +1,16 @@
+{
+  "task_id": "ASTRA-06-R4-SESS-REUSE-01",
+  "observed_session_id": "UNKNOWN",
+  "cwd": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "branch": "grok-orch/astra-native-v1-00",
+  "base": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+  "role": "implementer_not_v31_manager",
+  "write_scope": "new bag + distinctly named candidate RTL/TB/helpers only",
+  "PROGRAM": false,
+  "jtag": "NO_CALLS",
+  "conflict_writer": false,
+  "preserves": "results/A7-NATIVE-GRAPH/ASTRA-06-WARM-PERSIST-01, ASTRA-06-R2-EVICT-HIGHID-01, ASTRA-06-R3-MULTI-SLOT-01, ASTRA-F2R-SHARED-RANK-PENDING-01, ASTRA-F2R-R2-PENDING-HANDSHAKE-LAW, ASTRA-F2R-R3-SEMANTIC-GUARD-01, ASTRA-F2R-R4-AXI-TIMEOUT-DRAIN-01, ASTRA-F2R-R5-TXN-WRAP-RESET-01, ASTRA-F3-SHARED-TRANSFER-01, ASTRA-F3-R2-INDEPENDENT-WORLDS-01, ASTRA-F3-R3-SAMPLED-WORLDS-01, ASTRA-F3-R4-DISTINCT-HOLD-PHI-01 (not edited); a7ng_astra_06_warm_persist.sv/.svh, a7ng_astra_06_r2_evict_highid.sv/.svh, a7ng_astra_06_r3_multi_slot.sv/.svh, a7ng_astra_f2r2_hs_law.sv, a7ng_shared_rank_sgd_q8_sym_f2r2.sv, a7ng_astra_f2r3_sem_guard.sv, a7ng_astra_f2r4_axi_drain.sv, a7ng_astra_f2r5_txn_wrap.sv, a7ng_astra_f3_shared_xfer.sv, a7ng_astra_f3r2_ind_worlds.sv, a7ng_astra_f3r3_sampled_worlds.sv, a7ng_astra_f3r4_distinct_hold_phi.sv not patched; those bags' run scripts not rerun",
+  "prior_acceptance": "AUDITOR_20260906T1200Z ACCEPT_PARTIAL on ASTRA-06-R3-MULTI-SLOT-01; R3 CLOSED_NARROW (on-chip persist CAP_N=2); Master ASTRA-06 OPEN; leftover host sess_id reuse after rst_n without restore (not DDR, not BOARD)",
+  "gate_claim": "auditor 1200Z leftover host sess_id reuse without restore only: sess_id is part of the pending/persist key; rst without restore must not accept a replay of pre-rst {sess,txn} as a new live pending; persist+rst+reload matching sess → delayed rew commits; persist+rst no restore, host drives same sess_id → delayed rew n_stale; new sess_id after rst without restore does not pull old weights; UNREL no stale proof; ISO +5. Frozen SGD instantiated. New named DUT/TB. 20-bit eids kept. Not Master ASTRA-06, not DDR/NVM/QSPI, not F3/LM06/BOARD, not a patch of persist/R2/R3 DUT.",
+  "does_not_close": ["Master_ASTRA-06", "Master_F3_10pp_CI", "LM06", "BOARD_PASS", "ASTRA-13", "persistence_DDR", "ASTRA-07_index_image", "NVM_QSPI_journal", "schemaV2_DDR_store", "index_eviction_DDR_N_gt_1", "power_loss_NVM_journal"]
+}

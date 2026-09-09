@@ -1,0 +1,27 @@
+{
+  "gate": "ASTRA-C4-LM06-GROUNDED-GEN-HELDOUT-20-01",
+  "program": false,
+  "master_c4_claimed": false,
+  "board_pass": false,
+  "lm06_byte256_frozen": false,
+  "tinygpt_802k": "RETIRED_PER_GROK_550",
+  "n_heldout": 20,
+  "heldout_obj": [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39],
+  "disjoint_from_compact": [10, 11, 12, 13, 14, 15, 16, 17],
+  "acc_ge90_min": 18,
+  "halluc_le5_max_nonzero": 1,
+  "required_class_substrings": [
+    "CLASS_grounded_acc_ge90",
+    "CLASS_w_normal_grounded",
+    "CLASS_w_zero_safe",
+    "CLASS_w_corrupt_not_gold",
+    "CLASS_evid_removed_safe",
+    "CLASS_evid_removed_halluc_le5",
+    "CLASS_host_next_token_zero",
+    "CLASS_eos_or_max",
+    "CLASS_not_compose_renderer",
+    "CLASS_not_tinygpt_802k"
+  ],
+  "marker": "ASTRA_C4_LM06_GROUNDED_GEN_HELDOUT20_XSIM_PASS",
+  "note": "GOLDEN lists identities. Compact V=64 class-ID head. Do not regenerate after xvlog. Do not stamp C4_MASTER."
+}

@@ -1,0 +1,23 @@
+{
+  "task_id": "ASTRA-09-R4-UART-ISO-01",
+  "observed_session_id": "UNKNOWN",
+  "cwd": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "branch": "grok-orch/astra-native-v1-00",
+  "base": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+  "role": "implementer_not_v31_manager",
+  "write_scope": "new bag + distinctly named UART ISO wrap/TB that instantiate frozen a7ng_shared_rank_sgd_q8_sym_f2r2 + frozen a7ng_astra_09_r2_cand_ovf (no copy-paste graph; frozen a7ng_astra_09_integ_path.sv not compiled as DUT; A09-R2 DUT source not patched; ASTRA-09-R3 wrap/TB not edited)",
+  "PROGRAM": false,
+  "jtag": "NO_CALLS",
+  "bitstream": "NOT_BUILT",
+  "write_bitstream": false,
+  "xsdb": false,
+  "com12": "UNTOUCHED",
+  "hw_server": false,
+  "conflict_writer": false,
+  "PRODUCTION_TOP": "UNKNOWN",
+  "winner_frozen": false,
+  "preserves": "results/A7-NATIVE-GRAPH/ASTRA-09-R3-UART-XSIM-01 (not edited; MAGIC A2 OVF/SMOKE/UNREL xsim.log not overwritten), ASTRA-12-R3-UART-WRAP-CANDIDATES-01 (9-row table not rewritten), ASTRA-11-A09R3-UART-* (not edited; those bags' run scripts not rerun), ASTRA-09-R2-CAND-OVF-01, ASTRA-11-A09R2-IMPL-ROUTE-01, ASTRA-SOC-RTP-WRAP-UART-XSIM, ASTRA-09-INTEGRATED-PATH-01, ASTRA-12-*, ASTRA-10-*, ASTRA-06-*, ASTRA-F2R-*, ASTRA-F3-* (not edited); frozen A09 RTL not patched (hash 9fdbe0d6…); R2 DUT not patched (hash 15a919f1…); frozen SGD not patched (hash b66ef328…); uart_rx/uart_tx not patched; no .bit generated; PRODUCTION_TOP not written as a module name",
+  "prior_acceptance": "AUDITOR_20260906T1930Z ACCEPT_PARTIAL on ASTRA-12-R3-UART-WRAP-CANDIDATES-01; 9-row table PASS_NARROW; PRODUCTION_TOP UNKNOWN; ASTRA-13 BLOCKED; T1700 residual 6: ISO_P3 was not replayed on the UART byte stream — this bag is UART-facing ISO of frozen A09-R2 SGD law (+3 x0=50 → dw0=+5 and -3 x0=64 → dw0=-6), not a bit, not a freeze; board plugged; PROGRAM=NO",
+  "gate_claim": "one named UART-facing ISO XSim only: UART 8N1 delivers isolated SGD update x[0]=50 rew=+3 showing w0=+5 and x[0]=64 rew=-3 showing w0=-6 on the result stream or hierarchical w_o, load_from_tb=0. Instantiates frozen SGD + frozen A09-R2. Not BOARD_PASS. Not ASTRA-09-R3 results. Not wrap-route bit. Not ASTRA-13. PRODUCTION_TOP stays UNKNOWN.",
+  "does_not_close": ["Master_ASTRA-09", "Master_F3_10pp_CI", "Master_ASTRA-06", "LM06", "BOARD_PASS", "ASTRA-13", "ASTRA-11_SoC_UART_wrap", "ASTRA-09-R3-UART-XSIM-01", "ASTRA-SOC-RTP-WRAP-UART-XSIM", "production_top_identity", "write_bitstream", "wrap_route_bit", "silicon_UART"]
+}

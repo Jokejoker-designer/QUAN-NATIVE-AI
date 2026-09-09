@@ -1,0 +1,1 @@
+WRAP-ROUTE: `arty_a7_astra_rtp_soc_top` impl+route COMPLETE. DUT = r2 + `a7ng_axi_bram128` PLANT_R2_BASE=1 + UART + 50 MHz MMCM. Not astra09_pipe. WNS=5.733 (summary) / clk50u intra WNS=7.150 WHS=0.029. Post-route BRAM_TILE=2. Bit UNPROGRAMMED. PROGRAM=NO. Not BOARD_PASS. Stop for auditor.

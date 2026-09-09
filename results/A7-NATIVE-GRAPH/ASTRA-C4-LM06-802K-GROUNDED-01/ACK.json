@@ -1,0 +1,9 @@
+{
+  "gate": "ASTRA-C4-LM06-802K-GROUNDED-01",
+  "program": false,
+  "board_pass": false,
+  "master_c4_claimed": false,
+  "lm06_byte256_frozen": false,
+  "tinygpt_dut": true,
+  "one_unknown": "TinyGPT-802k generation path from FPGA QUERY/PROOF bytes with host next-token=0; 90% Master letter is measured, not this-gate PASS"
+}

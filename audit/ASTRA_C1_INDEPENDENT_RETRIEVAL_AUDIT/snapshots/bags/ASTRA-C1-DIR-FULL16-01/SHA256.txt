@@ -1,0 +1,47 @@
+# SHA freeze BEFORE xvlog 2026-09-07T12:44:46.5776979+07:00
+# PROGRAM=NO C1_800K=OPEN CAND_CAP=16 N=256 N_BUCKETS=65536 LAW=qse-v2-stream-intersect-02 POKE_V=0
+# CAND_CAP_FINAL=NOT_FROZEN DDR_QUERY_BOUND_FINAL=NOT_FROZEN
+# HASH_GATE MATCH vs C0 FINAL_CONTRACT + STREAM-02 DUT 14f75db7 (frozen files not patched)
+# FROZEN_RTL
+cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27  rtl/native_graph/query/a7ng_query_role_extract.sv
+381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c  rtl/native_graph/query/qse_role_lexicon.svh
+09334e42c3913d4de3a1b59147f48c810481cd634e63b37e64bc669a6c36bb24  rtl/native_graph/memory/a7ng_sparse_dir_axi.sv
+5a4ad04d498c588b4447431c290a862252abfbecdef8e934ed4215b9b9c5c0fa  rtl/native_graph/integrate/a7ng_query_axi_sparse.sv
+49a66da21dc075d1487c320d399643ff94e87b02af13f3d6f36d346a1be3a385  rtl/native_graph/query/a7ng_route_valid_gate.sv
+# KEEP_NOT_DUT
+93811ed17adbd9c2adc1a93514faf35b23ba8184d325a7204aee90e09c77057d  rtl/native_graph/query/a7ng_query_role_keys_relbind.sv
+a912786f6cc0be62a28c4ee1efc7aeca26fc07ae26865249191aa41d1ed6408c  rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect.sv
+# STREAM_02_DUT_INSTANTIATE_NOT_EDIT N_BUCKETS=65536
+14f75db787dee2405dc917604e54b4ab0dbea5cb327d4c4485f5be5cd874f0ac  rtl/native_graph/integrate/a7ng_query_axi_sparse_stream_intersect.sv
+# COMPILED
+7cf9885217562c8e26b3c8818b10b4488fd637621b62f6a3652fe7ff5aee57a6  rtl/native_graph/pkg/a7ng_pkg.sv
+cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27  rtl/native_graph/query/a7ng_query_role_extract.sv
+93811ed17adbd9c2adc1a93514faf35b23ba8184d325a7204aee90e09c77057d  rtl/native_graph/query/a7ng_query_role_keys_relbind.sv
+49a66da21dc075d1487c320d399643ff94e87b02af13f3d6f36d346a1be3a385  rtl/native_graph/query/a7ng_route_valid_gate.sv
+09334e42c3913d4de3a1b59147f48c810481cd634e63b37e64bc669a6c36bb24  rtl/native_graph/memory/a7ng_sparse_dir_axi.sv
+40df08bb58e7eb6e1cc0f0a87b4d67564e8ea602cace166c67eed7d088d8007c  rtl/native_graph/memory/a7ng_axi_mem_model.sv
+14f75db787dee2405dc917604e54b4ab0dbea5cb327d4c4485f5be5cd874f0ac  rtl/native_graph/integrate/a7ng_query_axi_sparse_stream_intersect.sv
+d235d7d324b84db91ca667cb26bf2f67469767c24adf6234223b534354def486  results/A7-NATIVE-GRAPH/ASTRA-C1-DIR-FULL16-01/tb_astra_c1_dir_full16.sv
+# TRANSITIVE_INCLUDES
+9a06e6d390dff66db34daa395a29ea563bed2365e9f2db5bdedcfcb9e9added7  rtl/native_graph/control/a7ng_gate14_crc.svh
+381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c  rtl/native_graph/query/qse_role_lexicon.svh
+308cfbdf3a5e0e821115f56792f75df7f5b3ed76c3b8460c202a40a2b1ef9e7a  results/A7-NATIVE-GRAPH/ASTRA-C1-DIR-FULL16-01/qse_role_lexicon.svh
+89a463150d67d86aae9049adff8ba9900605fede880522f274c448724838e3ba  results/A7-NATIVE-GRAPH/ASTRA-C1-DIR-FULL16-01/query_gold.svh
+# TB_INCLUDE_PATH_LEXICON_EXTENSION (C0 file unedited MATCH above; bag copy adds boiler=26 header=27)
+308cfbdf3a5e0e821115f56792f75df7f5b3ed76c3b8460c202a40a2b1ef9e7a  results/A7-NATIVE-GRAPH/ASTRA-C1-DIR-FULL16-01/qse_role_lexicon.svh
+# INDEPENDENT_GOLD_BEFORE_XVLOG
+2f6ab31e41837fd3fd283dab8ef57fea40602bd27719c07e0cd99f619a5eb6f5  results/A7-NATIVE-GRAPH/ASTRA-C1-DIR-FULL16-01/GOLDEN.json
+89a463150d67d86aae9049adff8ba9900605fede880522f274c448724838e3ba  results/A7-NATIVE-GRAPH/ASTRA-C1-DIR-FULL16-01/query_gold.svh
+afc0f56c828ff243113410bb98cfb2b25d58c40fd0cbd12a99bc6d0ff6b0ab08  results/A7-NATIVE-GRAPH/ASTRA-C1-DIR-FULL16-01/corpus.json
+# BAG
+7b954b5022609d402aebe385c161743415b97a07709298c1c2da955d6825046f  results/A7-NATIVE-GRAPH/ASTRA-C1-DIR-FULL16-01/PREREG.md
+55cb671822b142dc1d774a99b171bf9f804018530fbdf8e59b52c3a72d811db2  results/A7-NATIVE-GRAPH/ASTRA-C1-DIR-FULL16-01/ACK.json
+daf9cf6a5a324b5df6ff1f710afe109560f83806c4b5bcc1a44295d51ff3bb47  results/A7-NATIVE-GRAPH/ASTRA-C1-DIR-FULL16-01/run_xsim.ps1
+f361e906c408568eda31b321e3de35882532078034649a75769b01ededab2613  results/A7-NATIVE-GRAPH/ASTRA-C1-DIR-FULL16-01/host_astra_c1_dir_full16.py
+d235d7d324b84db91ca667cb26bf2f67469767c24adf6234223b534354def486  results/A7-NATIVE-GRAPH/ASTRA-C1-DIR-FULL16-01/tb_astra_c1_dir_full16.sv
+# FORBIDDEN leftover a7ng_astra_09_integ_path NOT on xvlog DUT list
+# FORBIDDEN frozen a7ng_query_axi_sparse.sv NOT compiled as DUT
+# FORBIDDEN a7ng_query_axi_sparse_intersect.sv NOT compiled as DUT (KEEP KEY-INTERSECT)
+# FORBIDDEN a7ng_query_axi_sparse_relbind.sv NOT compiled as DUT
+# REDUCTION_X1000 NOT_EMITTED (not 1-CAND_CAP/N)
+# CAND_CAP_FINAL NOT_FROZEN DDR_QUERY_BOUND_FINAL NOT_FROZEN

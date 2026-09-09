@@ -1,0 +1,16 @@
+{
+  "gate": "ASTRA-C5-PEND-PROOF-PHI-01",
+  "program": false,
+  "closes_c5_master": false,
+  "persist_schema_version": "NOT_FROZEN",
+  "c2_keep_edited": false,
+  "old_ckpt_edited": false,
+  "required_class_substrings": [
+    "CLASS_exact32_reload",
+    "CLASS_exact_pend_phi_reload",
+    "CLASS_crc_no_install",
+    "CLASS_schema1_reject",
+    "CLASS_bresp_no_persist"
+  ],
+  "marker": "ASTRA_C5_PEND_PROOF_PHI_XSIM_PASS"
+}

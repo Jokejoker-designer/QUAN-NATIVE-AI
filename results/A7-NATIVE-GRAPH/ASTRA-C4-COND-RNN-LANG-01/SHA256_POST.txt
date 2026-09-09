@@ -1,0 +1,4 @@
+# SHA verify AFTER xsim 2026-09-09T10:36:08.6051383+07:00
+467b0a4b55c913e335eb3718d2ddcb83501faa800245b5d31fa1d1ccf4f78f8b  rtl/native_graph/integrate/a7ng_astra_c4_cond_rnn.sv
+6c6d4a2f22168930778c79e63d69ada4feb7833b29b5dfa93e26615b2ccd9800  results/A7-NATIVE-GRAPH/ASTRA-C4-COND-RNN-LANG-01/tb_astra_c4_cond_rnn_lang.sv
+e3a1bfb48b8e7eec8701021648e6bc5bd834f9ab81fc9da465ed5c61f6d99c4c  results/A7-NATIVE-GRAPH/ASTRA-C4-COND-RNN-LANG-01/a7ng_astra_c4_cond_rnn_lang.hex

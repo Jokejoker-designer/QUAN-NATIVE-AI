@@ -1,0 +1,6 @@
+{
+  "gate": "ASTRA-C4-LM06-RED-BYTE256-01",
+  "program": false,
+  "board_pass": false,
+  "one_unknown": "does a reduced LM06-compatible BYTE256 decoder (not TinyGPT-802k) consume prefix and evidence in scores"
+}

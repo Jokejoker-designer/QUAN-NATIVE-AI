@@ -1,0 +1,21 @@
+# CLASS extract from raw xsim.log -- ASTRA-C5-QPTEXT-HELDOUT-MIG-01 r0
+# PROGRAM=NO. Do not edit GOLDEN. Marker start-of-line only.
+
+CLASS_not_compose_renderer HIT dut=a7ng_astra_c5_prod_top_c4q
+CLASS_not_live_prod_top_dut HIT live_prod_top_unedited
+CLASS_mig_calib_complete HIT t=122810625.0 ps
+CLASS_entities_disjoint HIT train={10} hold={6}
+CLASS_heldout_pre HIT ans=144 p0=256
+CLASS_reward_update HIT w0=3 pre=x
+CLASS_gen_tok0_glue_from_weights MISS tok0=61 tok1=83
+CLASS_heldout_post HIT ans=112 p0=258
+CLASS_heldout_changed HIT pre=144 post=112
+CLASS_one_ddr_owner HIT nsw=23 dual=0
+CLASS_no_qid_map HIT
+CLASS_no_host_winner HIT
+CLASS_no_a09_top HIT
+CLASS_no_plant_in_dut HIT
+ASTRA_C5_QPTEXT_HELDOUT_MIG_XSIM_PASS
+$finish called at time : 229706625 ps
+GOLDEN dc8382bc716d5fd77c4f4dc2b13b591a7b2f5330e96bdf955a4a45a388ec01ab
+NOTE extra glue CLASS not in GOLDEN required_class_substrings; TRAIN MEAS ans=96

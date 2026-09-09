@@ -1,0 +1,23 @@
+{
+  "task_id": "ASTRA-11-A09R2-IMPL-ROUTE-01",
+  "observed_session_id": "UNKNOWN",
+  "cwd": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "branch": "grok-orch/astra-native-v1-00",
+  "base": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+  "role": "implementer_not_v31_manager",
+  "write_scope": "new bag + distinctly named impl/route wrapper that instantiates a7ng_astra_09_r2_cand_ovf (no copy-paste graph; frozen a7ng_astra_09_integ_path.sv not compiled as DUT)",
+  "PROGRAM": false,
+  "jtag": "NO_CALLS",
+  "bitstream": "NOT_BUILT",
+  "write_bitstream": false,
+  "xsdb": false,
+  "com12": "UNTOUCHED",
+  "hw_server": false,
+  "conflict_writer": false,
+  "PRODUCTION_TOP": "UNKNOWN",
+  "winner_frozen": false,
+  "preserves": "results/A7-NATIVE-GRAPH/ASTRA-09-R2-CAND-OVF-01, ASTRA-11-A09-IMPL-ROUTE-01 (WNS=+1.041 not overwritten), ASTRA-10-RESOURCE-BOUND-01, ASTRA-09-INTEGRATED-PATH-01, ASTRA-06-*, ASTRA-F2R-*, ASTRA-F3-*, ASTRA-11-SOC-WRAP*, ASTRA-11-TIMING-FIX, ASTRA-SOC-RTP-WRAP-ROUTE (not edited; wrap-route WNS=+5.733 not overwritten); frozen A09 RTL not patched (hash 9fdbe0d6…); R2 DUT not patched (hash 15a919f1…); frozen SGD not patched; those bags' run scripts not rerun; no .bit generated; PRODUCTION_TOP not written as a module name",
+  "prior_acceptance": "AUDITOR_20260906T1600Z ACCEPT_PARTIAL on ASTRA-09-R2-CAND-OVF-01; A09-R2 DUT INCOMP ans=0 CLOSED_NARROW; frozen A09 leftover ans=4 remains a known hole in a7ng_astra_09_integ_path.sv; do not freeze PRODUCTION_TOP; ASTRA-13 BLOCKED; next physical evidence is implement+route of instantiated a7ng_astra_09_r2_cand_ovf at 50 MHz with clock-network, not OOC, not BOARD, not bitstream; board plugged; PROGRAM=NO",
+  "gate_claim": "after implement+route of instantiated a7ng_astra_09_r2_cand_ovf on xc7a100tcsg324-1 at declared 50 MHz (clock-network delay included), is routed WNS >= 0 — without a bitstream; not BOARD_PASS; not A09 wrap-route WNS=+1.041; not wrap-route WNS=+5.733; not OOC WNS=+2.283; not Master ASTRA-09/F3/LM06/ASTRA-13 close; PRODUCTION_TOP stays UNKNOWN",
+  "does_not_close": ["Master_ASTRA-09", "Master_F3_10pp_CI", "Master_ASTRA-06", "LM06", "BOARD_PASS", "ASTRA-13", "ASTRA-11_SoC_UART_wrap", "Master_ASTRA-10_whole_chip", "production_top_identity", "write_bitstream"]
+}

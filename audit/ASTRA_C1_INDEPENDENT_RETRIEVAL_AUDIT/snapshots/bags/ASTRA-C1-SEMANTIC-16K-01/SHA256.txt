@@ -1,0 +1,56 @@
+# SHA freeze BEFORE xvlog 2026-09-07T14:50:34.1513152+07:00
+# PROGRAM=NO C1_800K=OPEN CAND_CAP=16 N=16384 N_BUCKETS=65536 LAW=qse-v2-intersect-context-02 LEX=qse-v2-lex-semantic-16k-01 POKE_V=0
+# CAND_CAP_FINAL=NOT_FROZEN DDR_QUERY_BOUND_FINAL=NOT_FROZEN
+# HASH_GATE MATCH vs C0 FINAL_CONTRACT (frozen files not patched)
+# XVLOG_INCLUDE bag FIRST then C0 query dir (NEW lexicon law, not silent C0 59-word claim)
+# FROZEN_RTL
+cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27  rtl/native_graph/query/a7ng_query_role_extract.sv
+381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c  rtl/native_graph/query/qse_role_lexicon.svh
+09334e42c3913d4de3a1b59147f48c810481cd634e63b37e64bc669a6c36bb24  rtl/native_graph/memory/a7ng_sparse_dir_axi.sv
+5a4ad04d498c588b4447431c290a862252abfbecdef8e934ed4215b9b9c5c0fa  rtl/native_graph/integrate/a7ng_query_axi_sparse.sv
+49a66da21dc075d1487c320d399643ff94e87b02af13f3d6f36d346a1be3a385  rtl/native_graph/query/a7ng_route_valid_gate.sv
+# KEEP_NOT_DUT
+93811ed17adbd9c2adc1a93514faf35b23ba8184d325a7204aee90e09c77057d  rtl/native_graph/query/a7ng_query_role_keys_relbind.sv
+a912786f6cc0be62a28c4ee1efc7aeca26fc07ae26865249191aa41d1ed6408c  rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect.sv
+14f75db787dee2405dc917604e54b4ab0dbea5cb327d4c4485f5be5cd874f0ac  rtl/native_graph/integrate/a7ng_query_axi_sparse_stream_intersect.sv
+dab15d76da42b33a934d8c68c1108665a79b8544d44b4986b840972841135817  rtl/native_graph/integrate/a7ng_query_axi_sparse_page_skip.sv
+# INSTANTIATE_NOT_EDIT
+124be80804b38a1e1a924924091b751a4d13d85e28241695eda00ca5ded500d1  rtl/native_graph/query/a7ng_query_role_keys_ctx.sv
+8255a7988b902c4fd6d76679cc42ef0726d50099961f7c211010ace54a24d989  rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect_context.sv
+# NEW_LEXICON_LAW qse-v2-lex-semantic-16k-01
+df0e8833ff9664cd4e21a6aa6d3d223112c8d6733871d6398b133e37296e1aa4  results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-16K-01/qse_role_lexicon_semantic_16k.svh
+7966f321171cfe97b396ad90bb1ebd156c09a165782df40a3a98109ee59ac263  results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-16K-01/qse_role_lexicon.svh
+# COMPILED
+7cf9885217562c8e26b3c8818b10b4488fd637621b62f6a3652fe7ff5aee57a6  rtl/native_graph/pkg/a7ng_pkg.sv
+cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27  rtl/native_graph/query/a7ng_query_role_extract.sv
+124be80804b38a1e1a924924091b751a4d13d85e28241695eda00ca5ded500d1  rtl/native_graph/query/a7ng_query_role_keys_ctx.sv
+49a66da21dc075d1487c320d399643ff94e87b02af13f3d6f36d346a1be3a385  rtl/native_graph/query/a7ng_route_valid_gate.sv
+09334e42c3913d4de3a1b59147f48c810481cd634e63b37e64bc669a6c36bb24  rtl/native_graph/memory/a7ng_sparse_dir_axi.sv
+40df08bb58e7eb6e1cc0f0a87b4d67564e8ea602cace166c67eed7d088d8007c  rtl/native_graph/memory/a7ng_axi_mem_model.sv
+8255a7988b902c4fd6d76679cc42ef0726d50099961f7c211010ace54a24d989  rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect_context.sv
+42a0c41977732d19f608d11188aa0c9eb8cf875134a9b345f349c90c63b32c24  results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-16K-01/tb_astra_c1_semantic_16k.sv
+# TRANSITIVE_INCLUDES
+381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c  rtl/native_graph/query/qse_role_lexicon.svh  # C0 FILE KEEP unedited; NOT runtime this bag
+9a06e6d390dff66db34daa395a29ea563bed2365e9f2db5bdedcfcb9e9added7  rtl/native_graph/control/a7ng_gate14_crc.svh
+cfa165c0f9921f0c19802dc5e25a247aa93eb1d19f43155b715f111706336e5b  results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-16K-01/query_gold.svh
+# INDEPENDENT_GOLD_BEFORE_XVLOG
+0e539d48be5862d006e5785cf3c74355d5540dff09bec5e8c738ac842ea83b99  results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-16K-01/GOLDEN.json
+cfa165c0f9921f0c19802dc5e25a247aa93eb1d19f43155b715f111706336e5b  results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-16K-01/query_gold.svh
+2b5d3028b95205213aa359fdafde86153ae07aae92e4349597a194ff716c81d9  results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-16K-01/corpus.json
+df0e8833ff9664cd4e21a6aa6d3d223112c8d6733871d6398b133e37296e1aa4  results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-16K-01/qse_role_lexicon_semantic_16k.svh
+# BAG
+d09e139352d812e0e3b67419cc1e9b51286a5657c3328a2bb6e4501709bc0a9a  results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-16K-01/PREREG.md
+da0b9ac9a7e669e7394b4fc256123da74a72935f78dc6d79b280523885183663  results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-16K-01/ACK.json
+f90ed87a024103dbdfeba23e7588938d0922532eefbd95c4799343994e73832d  results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-16K-01/run_xsim.ps1
+4bfd87ff45d7c13da2340040b6839fd4ec91a24e2c98eaa0a562ed0b64a02380  results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-16K-01/host_astra_c1_semantic_16k.py
+42a0c41977732d19f608d11188aa0c9eb8cf875134a9b345f349c90c63b32c24  results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-16K-01/tb_astra_c1_semantic_16k.sv
+# FORBIDDEN leftover a7ng_astra_09_integ_path NOT on xvlog DUT list
+# FORBIDDEN frozen a7ng_query_axi_sparse.sv NOT compiled as DUT
+# FORBIDDEN a7ng_query_axi_sparse_intersect.sv NOT compiled as DUT (KEEP KEY-INTERSECT)
+# FORBIDDEN a7ng_query_axi_sparse_stream_intersect.sv NOT compiled as DUT (KEEP STREAM-02 14f75db7)
+# FORBIDDEN a7ng_query_axi_sparse_page_skip.sv NOT compiled as DUT (KEEP PAGE-SKIP dab15d76)
+# FORBIDDEN a7ng_query_axi_sparse_relbind.sv NOT compiled as DUT
+# FORBIDDEN a7ng_query_role_keys_relbind.sv NOT compiled (ctx keys instantiated)
+# NEW_LEXICON_LAW documented; bag qse_role_lexicon.svh is include-name for named semantic table; C0 FILE unedited
+# REDUCTION_X1000 NOT_EMITTED (not 1-CAND_CAP/N)
+# CAND_CAP_FINAL NOT_FROZEN DDR_QUERY_BOUND_FINAL NOT_FROZEN C1_800K OPEN

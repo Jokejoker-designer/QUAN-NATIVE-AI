@@ -1,0 +1,16 @@
+# SHA freeze BEFORE xvlog 2026-09-09T10:22:04.7316672+07:00
+# PROGRAM=NO BOARD_PASS=NOT_CLAIMED C5_MASTER=OPEN PERSIST_SCHEMA_VERSION=NOT_FROZEN
+cfb896325a0911c37281c217cff17878d329627f83a2f794f443131c1b530dfc  rtl/native_graph/integrate/a7ng_astra_c3_held_out.sv
+c4fcca30c945a550f81f0870025c8d52875cd6097dfbfc459aeb1fe47a367922  rtl/native_graph/integrate/a7ng_astra_c5_prod_top.sv
+86a7a0695712d9aa818bf95aac30b83289fb9af80ddd0bdc2455e935a14d8764  rtl/native_graph/integrate/a7ng_astra_c2_persist_commit.sv
+e419caef0e64d75e399a08cb66f7458eebd1591d352cff2283c804c4d650eead  rtl/native_graph/integrate/a7ng_astra_c5_sgd32_ckpt.sv
+# COMPILED
+b66ef32847bae8dceb902b36a2755eae8bcd48289bd00c133fb16f095fc67aac  rtl/native_graph/learn/a7ng_shared_rank_sgd_q8_sym_f2r2.sv
+94e97329ec607c44aff6ff5fe4e2228301e300f1446e445919958f4f315dd8be  rtl/native_graph/integrate/a7ng_astra_c5_sgd32_ckpt_pend.sv
+b11259e2951ee67ecc825567cbbcb1baf69c439421f2ccbcdf3c38fb8580a9d2  results/A7-NATIVE-GRAPH/ASTRA-C5-PEND-PROOF-PHI-01/tb_astra_c5_pend_proof_phi.sv
+95f6c24c5747d380aeeadfb9dd2b72be5e188a0f9d8bf33061ae5b70789e0c5e  rtl/native_graph/integrate/a7ng_astra_c5_sgd32_ckpt_pend.svh
+71a9aaa2c2b220d6834badb34032470c1fb3115a8bc6b8fc2be30f021e29c2c4  results/A7-NATIVE-GRAPH/ASTRA-C5-PEND-PROOF-PHI-01/GOLDEN.json
+54c1605401ed42283a0160800985d6fae4117af16c6e5b553a4c644c5dd9d750  results/A7-NATIVE-GRAPH/ASTRA-C5-PEND-PROOF-PHI-01/PREREG.md
+f526daf4a981a43c8f82a84e57e84eb3fc660377d393aabf2a819931ff5a12d3  results/A7-NATIVE-GRAPH/ASTRA-C5-PEND-PROOF-PHI-01/ACK.json
+590c5e980ab6149cfa2ef133afce3b91ee8a1dd3d6b8f4a1b097cc3920239fd4  results/A7-NATIVE-GRAPH/ASTRA-C5-PEND-PROOF-PHI-01/PLAN.md
+f8588d613337f2cadf16ec7b5619698f18c416f62867177ac53bb1d1186d3086  results/A7-NATIVE-GRAPH/ASTRA-C5-PEND-PROOF-PHI-01/run_xsim.ps1

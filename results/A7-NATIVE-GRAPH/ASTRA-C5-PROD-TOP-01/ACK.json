@@ -1,0 +1,9 @@
+{
+  "gate": "ASTRA-C5-PROD-TOP-01",
+  "program": false,
+  "board_pass": false,
+  "mig": false,
+  "master_c5_claimed": false,
+  "ddr_query_bound_final": "NOT_FROZEN",
+  "one_unknown": "all accepted blocks coexist in one production hierarchy with no qid-map / host-winner / A09 / in-DUT plant; DDR through C5 exclusive owner"
+}

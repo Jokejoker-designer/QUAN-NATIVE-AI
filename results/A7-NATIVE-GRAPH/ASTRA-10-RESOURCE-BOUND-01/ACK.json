@@ -1,0 +1,21 @@
+{
+  "task_id": "ASTRA-10-RESOURCE-BOUND-01",
+  "observed_session_id": "UNKNOWN",
+  "cwd": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "branch": "grok-orch/astra-native-v1-00",
+  "base": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+  "role": "implementer_not_v31_manager",
+  "write_scope": "new bag + distinctly named synth wrapper that instantiates a7ng_astra_09_integ_path (no copy-paste graph)",
+  "PROGRAM": false,
+  "jtag": "NO_CALLS",
+  "bitstream": "NOT_BUILT",
+  "write_bitstream": false,
+  "xsdb": false,
+  "com12": "UNTOUCHED",
+  "hw_server": false,
+  "conflict_writer": false,
+  "preserves": "results/A7-NATIVE-GRAPH/ASTRA-09-INTEGRATED-PATH-01, ASTRA-06-*, ASTRA-F2R-*, ASTRA-F3-*, ASTRA-11-TIMING-FIX, ASTRA-SOC-RTP-WRAP-ROUTE (not edited); frozen RTL not patched; those bags' run scripts not rerun",
+  "prior_acceptance": "AUDITOR_20260906T1300Z ACCEPT_PARTIAL on ASTRA-09-INTEGRATED-PATH-01; ASTRA-09 XSim CLOSED_NARROW; Master ASTRA-09 OPEN; residual 3 next XSim-class is ASTRA-07/08/10 not silent 09 close; parent chose ASTRA-10 resources; board plugged; PROGRAM=NO",
+  "gate_claim": "post-synth LUT/FF/BRAM/DSP and WNS at declared 50 MHz for a named wrapper that instantiates a7ng_astra_09_integ_path on xc7a100tcsg324-1; synth-only (opt/place allowed); no write_bitstream; not BOARD_PASS; not WNS of ASTRA-SOC-RTP-WRAP-ROUTE; not Master ASTRA-09 close",
+  "does_not_close": ["Master_ASTRA-09", "Master_F3_10pp_CI", "Master_ASTRA-06", "LM06", "BOARD_PASS", "ASTRA-13", "ASTRA-11_SoC_UART_wrap", "persistence_DDR", "ASTRA-07_index_image"]
+}

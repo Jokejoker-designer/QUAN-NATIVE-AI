@@ -1,0 +1,131 @@
+{
+  "program": false,
+  "BOARD_PASS": false,
+  "C1_MASTER": "OPEN",
+  "DDR_QUERY_BOUND_FINAL": "NOT_FROZEN",
+  "image_class": "procedural_cartesian_800k",
+  "N": 800000,
+  "n_stream": 799996,
+  "index_base": "0x05000000",
+  "post_heap": "0x05400000",
+  "dir_hi": "0x053FFFF0",
+  "cand_cap_in_law": 16,
+  "cand_cap_frozen_from_this_bag": false,
+  "dictionary_image": "NOT_PINNED",
+  "query_role_lexicon_rtl": "381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c",
+  "c1_extract_keep": "cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27",
+  "full_byte_dump": false,
+  "sample_n": 23,
+  "law_files": {
+    "gen_800k.svh": "cd3273105a643e073e2b87b531419482598abbbf8a51fada916fb7a1d6972932",
+    "query_gold.svh": "dafe6c39e1eff95b9a8b60290ae886800ec4e9a5d1ef373b5c5ca90b402ab394",
+    "qse_role_lexicon.svh": "381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c",
+    "a7ng_query_role_extract.sv": "cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27"
+  },
+  "samples": [
+    {
+      "addr": "0000010",
+      "data": "00000000000000000000000000000000"
+    },
+    {
+      "addr": "5000000",
+      "data": "00000000000000000000000000000000"
+    },
+    {
+      "addr": "500d040",
+      "data": "000c6574101000070001000405741000"
+    },
+    {
+      "addr": "500d340",
+      "data": "00000574d0100007000000010574d000"
+    },
+    {
+      "addr": "510e040",
+      "data": "000c5978101000070001000409781000"
+    },
+    {
+      "addr": "510e340",
+      "data": "00000978d0100007000000010978d000"
+    },
+    {
+      "addr": "5200000",
+      "data": "00000000000000000000000000000000"
+    },
+    {
+      "addr": "5300640",
+      "data": "00000000000000000000000000000000"
+    },
+    {
+      "addr": "5741000",
+      "data": "0000025b0000007a0000007900000078"
+    },
+    {
+      "addr": "5741010",
+      "data": "0000025f0000025e0000025d0000025c"
+    },
+    {
+      "addr": "5741320",
+      "data": "00000000000000000000032100000320"
+    },
+    {
+      "addr": "574d000",
+      "data": "00000000000000000000000000000079"
+    },
+    {
+      "addr": "9781000",
+      "data": "0000219b0000007a0000007900000078"
+    },
+    {
+      "addr": "8945000",
+      "data": "000000000000000000000000000c34ff"
+    },
+    {
+      "addr": "8905000",
+      "data": "000c343d000c343c000c343b000c343a"
+    },
+    {
+      "addr": "9745000",
+      "data": "00004d5a00003dba00002e1a00001e7a"
+    },
+    {
+      "addr": "510d140",
+      "data": "000c4974501000070001000409745000"
+    },
+    {
+      "addr": "53ffff0",
+      "data": "00000000000000000000000000000000"
+    },
+    {
+      "addr": "5400000",
+      "data": "00000000000000000000000000000000"
+    },
+    {
+      "addr": "5300000",
+      "data": "00000000000000000000000000000000"
+    },
+    {
+      "addr": "50d5140",
+      "data": "00000894501000070000000108945000"
+    },
+    {
+      "addr": "50d4140",
+      "data": "000c1890501000070001000408905000"
+    },
+    {
+      "addr": "5011070",
+      "data": "000c45841c1000070001000405841c00"
+    }
+  ],
+  "self_check": {
+    "occ_fill_k0_0d04": 202,
+    "occ_high_k0_d514": 1,
+    "occ_high_k1_0d14": 200,
+    "occ_late_k0_d414": 197,
+    "fill_head3": [
+      120,
+      121,
+      122
+    ]
+  },
+  "note": "Sample byte cross-check of procedural law vs independent Python. Not a freeze of DDR_QUERY_BOUND_FINAL. Dictionary DDR image remains unpinned."
+}

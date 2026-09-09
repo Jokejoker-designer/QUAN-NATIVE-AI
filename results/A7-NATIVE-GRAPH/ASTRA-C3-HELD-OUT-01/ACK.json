@@ -1,0 +1,8 @@
+{
+  "gate": "ASTRA-C3-HELD-OUT-01",
+  "program": false,
+  "board_pass": false,
+  "mig": false,
+  "master_c3_claimed": false,
+  "one_unknown": "shared 32-feature KEEP learner vs frozen/shuffled/per-ID on disjoint held-out entities via C1 synonym retrieve path"
+}

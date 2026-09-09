@@ -1,0 +1,46 @@
+# FREEZE_MANIFEST — ASTRA-C6-WHOLECHIP-COFIT-03
+# Extracted from bag SHA256.txt / SHA256_POST.txt / ROUTE_LETTERS.txt.
+# PROGRAM=NO. Not C6_MASTER close. Not BOARD_PASS.
+# Does not freeze DDR_QUERY_BOUND_FINAL or PERSIST_SCHEMA_VERSION.
+# Bit is freeze evidence only. Do not program (PINNED_SHA_e51bdca2_ONLY).
+
+FINAL_SOURCE_COMMIT          = NOT_A_CLEAN_TREE_PIN
+  note                         = C6-03 authority is bag SHA256 freeze, not live HEAD.
+  live_HEAD_at_extract         = 5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1
+  live_worktree                = DIRTY (do not treat HEAD as the routed source pin)
+
+TOP                          = a7ng_astra_c6_wholechip
+PART                         = xc7a100tcsg324-1
+Vivado                       = 2026.1
+XDC SHA                      = 0052e7192e83571c700e2365c649f0f7e9cfb44dfd1b64a04941754b50454a54  c6_wholechip.xdc
+MIG wrap SHA                 = 97c078b18015e0c6a47ca4d41b659e483f2e983d37f8bb6e579efa4d19e523b5  mig_native_wrap.sv
+official mig.prj SHA         = 914a9e4bb1b3002837592944cdf49f8dfbaf4d112552dd8b5be48602ff1ac329
+
+RTL wrap SHA                 = 64275ba07fef59f6c0ae2a515b38dfd8e747df8a57c8cc5ed44e019002c34ea5  a7ng_astra_c6_wholechip.sv
+prod_top SHA                 = c4fcca30c945a550f81f0870025c8d52875cd6097dfbfc459aeb1fe47a367922  a7ng_astra_c5_prod_top.sv
+C3 wrap SHA                  = cfb896325a0911c37281c217cff17878d329627f83a2f794f443131c1b530dfc  a7ng_astra_c3_held_out.sv
+C2 KEEP SHA                  = 86a7a0695712d9aa818bf95aac30b83289fb9af80ddd0bdc2455e935a14d8764
+SGD KEEP SHA                 = b66ef32847bae8dceb902b36a2755eae8bcd48289bd00c133fb16f095fc67aac
+GOLDEN SHA                   = e0d2d17a0c4ce73505c992079747e31ecb56e366050e70cfaba68b196e3db713
+build script SHA             = e5b1225b9498a1023de16931e4e1a7d71ab919f7af03c9d013ae99f953cc66ce  run_impl.tcl
+                             = 2f01e7ce7c92e467add962696a8abfca3bb410f9ea159c921ac9da792d26b931  run_impl.ps1
+
+BIT SHA256                   = edda8575f3130b6f645af223c5d9000539a1a80db23731bb18f7a280ad06c0ba
+PROGRAM                      = NO
+
+ROUTE (raw ROUTE_LETTERS.txt)
+  WNS=0.233 TNS=0.000 WHS=0.013 THS=0.000
+  UNROUTED=0 FAILED_ROUTE=0 DRC_ERROR_FATAL=0 CRITICAL_UNCONSTRAINED=0 FIT_OK=1
+
+UTIL routed                  = LUT=9056 FF=7095 BRAM_TILE=0 DSP=0
+
+LM checkpoint/weight image   = compact a7ng_astra_c4_lm06_grounded_gen in this top
+  TinyGPT-802k / a7lm06_wmem.hex = NOT in this hierarchy (BRAM 260>135)
+corpus image SHA             = NOT_A_800K_CARTESIAN_IMAGE (UART-loop planted/compact C3)
+index image SHA              = NOT_PINNED
+dictionary/vocab SHA         = NOT_PINNED (BYTE256 not frozen)
+learned-state initial image  = NOT_PINNED
+
+A09R8 is not this top.
+C6_MASTER=OPEN pending independent auditor hunt.
+BOARD_PASS=REJECT

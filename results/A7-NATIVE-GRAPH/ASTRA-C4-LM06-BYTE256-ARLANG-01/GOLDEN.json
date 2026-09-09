@@ -1,0 +1,26 @@
+{
+  "gate": "ASTRA-C4-LM06-BYTE256-ARLANG-01",
+  "program": false,
+  "master_c4_claimed": false,
+  "board_pass": false,
+  "lm06_byte256_frozen": false,
+  "tinygpt_802k": "RETIRED_PER_GROK_550",
+  "n_heldout": 20,
+  "heldout_dst": [40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59],
+  "gold_prefix": [121, 101, 115],
+  "acc_ge90_min": 18,
+  "required_class_substrings": [
+    "CLASS_grounded_acc_ge90",
+    "CLASS_ar_yes_prefix",
+    "CLASS_w_zero_safe",
+    "CLASS_w_corrupt_not_gold",
+    "CLASS_evid_removed_safe",
+    "CLASS_evid_removed_halluc_le5",
+    "CLASS_host_next_token_zero",
+    "CLASS_eos_or_max",
+    "CLASS_not_tinygpt_802k",
+    "CLASS_not_compose_renderer"
+  ],
+  "marker": "ASTRA_C4_LM06_BYTE256_ARLANG_XSIM_PASS",
+  "note": "GOLDEN identities only. Do not regenerate after xvlog. Do not stamp C4_MASTER."
+}

@@ -1,0 +1,9 @@
+{
+  "gate": "ASTRA-C5-EDGE-MUTATION-01",
+  "program": false,
+  "board_pass": false,
+  "mig": false,
+  "master_c5_claimed": false,
+  "ddr_query_bound_final": "NOT_FROZEN",
+  "one_unknown": "same C5 hierarchy: delete/replace/reverse of the planted 2-hop second edge changes C3 status and ans_o"
+}

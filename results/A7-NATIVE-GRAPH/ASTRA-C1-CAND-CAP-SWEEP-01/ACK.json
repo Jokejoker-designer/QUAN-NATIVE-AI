@@ -1,0 +1,12 @@
+{
+  "gate": "ASTRA-C1-CAND-CAP-SWEEP-01",
+  "n": 800000,
+  "program": false,
+  "board_pass": false,
+  "gold_copied_from": "ASTRA-C1-N800000-SCALE-01",
+  "gold_regenerated": false,
+  "caps": [16, 64, 128, 256],
+  "CAND_CAP_FINAL": "NOT_FROZEN",
+  "DDR_QUERY_BOUND_FINAL": "NOT_FROZEN",
+  "does_not_edit": "ASTRA-C1-SEMANTIC-800K-01"
+}

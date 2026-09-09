@@ -1,0 +1,19 @@
+{
+  "gate": "ASTRA-C5-AXI-ERRORS-04B",
+  "program": false,
+  "master_c5_claimed": false,
+  "closes_c5_master": false,
+  "sim_override_8000_800": true,
+  "final_clk_hz": 83333333,
+  "final_baud": 115200,
+  "required_class_substrings": [
+    "CLASS_adp_not_okay",
+    "CLASS_bresp_slverr",
+    "CLASS_rresp_slverr",
+    "CLASS_b_stall",
+    "CLASS_no_drop",
+    "CLASS_okay_persist_reload"
+  ],
+  "marker": "ASTRA_C5_AXI_ERRORS_04B_XSIM_PASS",
+  "note": "Named resp top. RRESP/BRESP/RID/BID/RLAST/WSTRB through adapters, no fabricated OKAY. Modeled AXI. Do not regenerate GOLDEN after xvlog."
+}

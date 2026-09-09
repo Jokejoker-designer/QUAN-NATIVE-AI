@@ -1,0 +1,22 @@
+{
+  "gate": "ASTRA-C3-HELD-OUT-RELOAD-01",
+  "program": false,
+  "master_c3_claimed": false,
+  "board_pass": false,
+  "n_seed": 5,
+  "n_hold": 8,
+  "train_subjects": [10, 11, 1],
+  "hold_subjects": [6, 9],
+  "required_class_substrings": [
+    "CLASS_entities_disjoint",
+    "CLASS_host_winner_zero",
+    "CLASS_awaddr_06000000",
+    "CLASS_flush_w0_zero",
+    "CLASS_c2_persist_reload",
+    "CLASS_c2_w0_match",
+    "CLASS_retention_le5pp"
+  ],
+  "marker": "ASTRA_C3_HELD_OUT_RELOAD_XSIM_PASS",
+  "quality_bound": "C2 KEEP journals w0 only. w[1:31] TB-restored after C2 reload of w0. Compact TB-AXI, not MIG.",
+  "note": "GOLDEN lists required log substrings and disjoint IDs, not post-hoc scores. Do not regenerate after xvlog."
+}

@@ -1,0 +1,11 @@
+# KEEP verify after ASTRA-C3-HELD-OUT-800K-RELOAD-01 r1 PASS
+# Independent KEEP_HASHES.json vs live Get-FileHash. PROGRAM=NO.
+MATCH rtl/native_graph/query/a7ng_query_role_extract.sv cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27
+MATCH rtl/native_graph/query/a7ng_query_role_relctx_synonym.sv e862208ce34d8835c34fef1b2f2e4d32a91938a26cf22bc3854593ff852ea922
+MATCH rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect_synonym.sv a84bbf7e9a2c0b9e3753b3cb2e1ae734c2afde59267d733aa0e52108e47d8ec8
+MATCH rtl/native_graph/integrate/a7ng_astra_c2_persist_commit.sv 86a7a0695712d9aa818bf95aac30b83289fb9af80ddd0bdc2455e935a14d8764
+KEEP_MISMATCHES=0
+NOTE live tree has no KEEP_HASHES.json; canonical file is independent-audit KEEP_HASHES.json
+GOLDEN frozen MATCH 2bac646d3e30ef15950385e0f1c4b78a81f70db85f4ae3c21464f21dae746b26
+DUT bag-local a7ng_astra_c3_held_out_nb64k.sv (KEEP a7ng_astra_c3_held_out.sv not compiled, not edited)
+PROGRAM=NO C3_MASTER=OPEN BOARD_PASS=REJECT

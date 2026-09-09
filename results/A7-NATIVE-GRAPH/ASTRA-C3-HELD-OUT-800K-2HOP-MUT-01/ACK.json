@@ -1,0 +1,8 @@
+{
+  "gate": "ASTRA-C3-HELD-OUT-800K-2HOP-MUT-01",
+  "program": false,
+  "board_pass": false,
+  "mig": false,
+  "master_c3_claimed": false,
+  "one_unknown": "delete/replace/reverse of 800k cartesian 2-hop ctx overlay after +rew train; not MIG"
+}

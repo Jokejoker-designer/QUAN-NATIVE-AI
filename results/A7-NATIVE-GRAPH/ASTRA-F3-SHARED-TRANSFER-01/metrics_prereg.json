@@ -1,0 +1,21 @@
+{
+  "task_id": "ASTRA-F3-SHARED-TRANSFER-01",
+  "frozen_before_xvlog": true,
+  "master_f3_claimed": false,
+  "master_thresholds_not_retargeted": {
+    "gain_pp_vs_no_update": 10,
+    "paired_ci_lo": 0,
+    "retention_drop_pp_max": 5
+  },
+  "plumbing_pass_requires": {
+    "iso_p3_x50_dw0": 5,
+    "en_hold_c": 5,
+    "fr_hold_c": 0,
+    "sh_hold_c": 0,
+    "unrel_unknown": 1,
+    "load_from_tb": 0,
+    "seeds_not_id_permutations": true
+  },
+  "observed": null,
+  "note": "observed filled after XSim in metrics.json; do not edit these plumbing targets after scores"
+}

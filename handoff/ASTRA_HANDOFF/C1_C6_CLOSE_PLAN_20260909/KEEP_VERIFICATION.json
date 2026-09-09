@@ -1,0 +1,110 @@
+[
+  {
+    "path": "rtl/native_graph/query/a7ng_query_role_extract.sv",
+    "expected": "cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27",
+    "actual": "CD7BAF49BB433220D7ED3CD1B2FE942F7A1A9EE54F1171CDBB650CECD83A9F27",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/query/qse_role_lexicon.svh",
+    "expected": "381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c",
+    "actual": "381899749158ECAA0B3209F16F618D6C65F4D8483F7FFFF7CE0AF3FFA4A50D0C",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/memory/a7ng_sparse_dir_axi.sv",
+    "expected": "09334e42c3913d4de3a1b59147f48c810481cd634e63b37e64bc669a6c36bb24",
+    "actual": "09334E42C3913D4DE3A1B59147F48C810481CD634E63B37E64BC669A6C36BB24",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/integrate/a7ng_query_axi_sparse.sv",
+    "expected": "5a4ad04d498c588b4447431c290a862252abfbecdef8e934ed4215b9b9c5c0fa",
+    "actual": "5A4AD04D498C588B4447431C290A862252ABFBECDEF8E934ED4215B9B9C5C0FA",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/query/a7ng_route_valid_gate.sv",
+    "expected": "49a66da21dc075d1487c320d399643ff94e87b02af13f3d6f36d346a1be3a385",
+    "actual": "49A66DA21DC075D1487C320D399643FF94E87B02AF13F3D6F36D346A1BE3A385",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/integrate/a7ng_query_axi_sparse_stream_intersect.sv",
+    "expected": "14f75db787dee2405dc917604e54b4ab0dbea5cb327d4c4485f5be5cd874f0ac",
+    "actual": "14F75DB787DEE2405DC917604E54B4AB0DBEA5CB327D4C4485F5BE5CD874F0AC",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/query/a7ng_query_role_keys_ctx.sv",
+    "expected": "124be80804b38a1e1a924924091b751a4d13d85e28241695eda00ca5ded500d1",
+    "actual": "124BE80804B38A1E1A924924091B751A4D13D85E28241695EDA00CA5DED500D1",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect_context.sv",
+    "expected": "8255a7988b902c4fd6d76679cc42ef0726d50099961f7c211010ace54a24d989",
+    "actual": "8255A7988B902C4FD6D76679CC42EF0726D50099961F7C211010ACE54A24D989",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/integrate/a7ng_query_axi_sparse_page_skip.sv",
+    "expected": "dab15d76da42b33a934d8c68c1108665a79b8544d44b4986b840972841135817",
+    "actual": "DAB15D76DA42B33A934D8C68C1108665A79B8544D44B4986B840972841135817",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/query/qse_relctx_synonym_01.svh",
+    "expected": "551655a1cda97463841a681e34f8073e22b1b2c1beb2ae03847bdc9a5bb41dfd",
+    "actual": "551655A1CDA97463841A681E34F8073E22B1B2C1BEB2AE03847BDC9A5BB41DFD",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/query/a7ng_query_role_relctx_synonym.sv",
+    "expected": "e862208ce34d8835c34fef1b2f2e4d32a91938a26cf22bc3854593ff852ea922",
+    "actual": "E862208CE34D8835C34FEF1B2F2E4D32A91938A26CF22BC3854593FF852EA922",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect_synonym.sv",
+    "expected": "a84bbf7e9a2c0b9e3753b3cb2e1ae734c2afde59267d733aa0e52108e47d8ec8",
+    "actual": "A84BBF7E9A2C0B9E3753B3CB2E1AE734C2AFDE59267D733AA0E52108E47D8EC8",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/integrate/a7ng_astra_c2_persist_commit.sv",
+    "expected": "86a7a0695712d9aa818bf95aac30b83289fb9af80ddd0bdc2455e935a14d8764",
+    "actual": "86A7A0695712D9AA818BF95AAC30B83289FB9AF80DDD0BDC2455E935A14D8764",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/integrate/a7ng_astra_c2_persist_multi_slot.sv",
+    "expected": "bc8b8993edbba8bc048bc03ebc6398744cf80da01d346801c3683a15881682fd",
+    "actual": "BC8B8993EDBBA8BC048BC03EBC6398744CF80DA01D346801C3683A15881682FD",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/integrate/a7ng_astra_c2_persist_ddr_stall.sv",
+    "expected": "55f5ac0d4e9a5280d83951fb147fc85734417f7fff0ae22ed5d4422b65710862",
+    "actual": "55F5AC0D4E9A5280D83951FB147FC85734417F7FFF0AE22ED5D4422B65710862",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/integrate/a7ng_astra_c2_persist_mig.sv",
+    "expected": "17741214c066de125c7306cce47d1834531b2a7c8607febe3c9d91cc06a555b2",
+    "actual": "17741214C066DE125C7306CCE47D1834531B2A7C8607FEBE3C9D91CC06A555B2",
+    "match": true
+  },
+  {
+    "path": "rtl/ddr/mig_native_wrap.sv",
+    "expected": "97c078b18015e0c6a47ca4d41b659e483f2e983d37f8bb6e579efa4d19e523b5",
+    "actual": "97C078B18015E0C6A47CA4D41B659E483F2E983D37F8BB6E579EFA4D19E523B5",
+    "match": true
+  },
+  {
+    "path": "third_party/digilent/arty-a7-100/E.0/1.0/mig.prj",
+    "expected": "914a9e4bb1b3002837592944cdf49f8dfbaf4d112552dd8b5be48602ff1ac329",
+    "actual": "914A9E4BB1B3002837592944CDF49F8DFBAF4D112552DD8B5BE48602FF1AC329",
+    "match": true
+  }
+]

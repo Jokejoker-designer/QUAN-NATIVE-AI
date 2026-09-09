@@ -1,0 +1,30 @@
+{
+  "task_id": "ASTRA-F3-R2-INDEPENDENT-WORLDS-01",
+  "frozen_before_xvlog": true,
+  "master_f3_claimed": false,
+  "master_thresholds_not_retargeted": {
+    "gain_pp_vs_no_update": 10,
+    "paired_ci_lo": 0,
+    "retention_drop_pp_max": 5
+  },
+  "do_not_print_wilson_ci_as_master": true,
+  "plumbing_pass_requires": {
+    "iso_p3_x50_dw0": 5,
+    "en_e1_c": 5,
+    "fr_c": 0,
+    "sh_c": 0,
+    "pid_c": 0,
+    "phi_neq_c": 5,
+    "en_e2_c": 5,
+    "en_rl_c": 5,
+    "unrel_unknown": 1,
+    "wdut0_cleared": 1,
+    "load_from_tb": 0,
+    "hold_phi_not_train_phi_remap": true,
+    "shuffle_is_action_pair_permute": true,
+    "per_id_is_dest_keyed_scored_on_hold": true,
+    "retention_is_hold_after_epoch2_and_reload": true
+  },
+  "observed": null,
+  "note": "observed filled after XSim in metrics.json; do not edit these plumbing targets after scores; Master F3 left OPEN"
+}

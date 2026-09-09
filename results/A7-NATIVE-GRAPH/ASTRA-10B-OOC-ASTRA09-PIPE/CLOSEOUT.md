@@ -1,0 +1,14 @@
+# CLOSEOUT — ASTRA-10B
+
+```text
+GATE       = ASTRA-10B-OOC-ASTRA09-PIPE
+RESULT     = PASS_NARROW
+LUT        = 3707
+FF         = 2364
+DSP        = 2
+BRAM       = 0
+BIT_BUILD  = NO
+PROGRAM    = NO
+COM12      = UNTOUCHED
+NEXT       = NONE (ASTRA-11/13 still BLOCKED)
+```

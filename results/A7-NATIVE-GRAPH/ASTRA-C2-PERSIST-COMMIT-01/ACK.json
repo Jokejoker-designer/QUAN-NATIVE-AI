@@ -1,0 +1,7 @@
+{
+  "gate": "ASTRA-C2-PERSIST-COMMIT-01",
+  "program": false,
+  "board_pass": false,
+  "mig": false,
+  "one_unknown": "20-bit persist identity + five phases + false success=0 on AXI journal"
+}

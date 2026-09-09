@@ -1,0 +1,45 @@
+{
+  "task_id": "ASTRA-F3-R3-SAMPLED-WORLDS-01",
+  "frozen_before_xvlog": true,
+  "master_f3_claimed": false,
+  "master_thresholds_not_retargeted": {
+    "gain_pp_vs_no_update": 10,
+    "paired_ci_lo": 0,
+    "retention_drop_pp_max": 5
+  },
+  "do_not_print_wilson_ci_as_master": true,
+  "protocol_frozen": {
+    "gen_seed": "0xA5F33001",
+    "n_worlds": 5,
+    "n_shared_facts": 3,
+    "n_private_facts": 2,
+    "n_train_q": 8,
+    "n_hold_q": 8,
+    "n_epoch": 2,
+    "astra07_24x8_run": false,
+    "transfer_feature": "mixed_ctx",
+    "overlap_hold_q": [6, 7]
+  },
+  "plumbing_pass_requires": {
+    "iso_p3_x50_dw0": 5,
+    "en_e1_c": 8,
+    "fr_c": 0,
+    "sh_c": 0,
+    "phi_neq_c": 8,
+    "en_e2_c": 8,
+    "en_rl_c": 8,
+    "pid_ov_c_ge": 1,
+    "pid_dj_c": 0,
+    "unrel_unknown": 1,
+    "wdut0_cleared": 1,
+    "load_from_tb": 0,
+    "hold_phi_not_train_phi": true,
+    "shuffle_mislabels_overlapping_mixed_ctx": true,
+    "per_id_is_dest_keyed_scored_on_hold": true,
+    "per_id_overlap_ids_where_it_could_win": true,
+    "retention_is_hold_after_epoch2_and_reload": true,
+    "phi32_dumped_on_log": true
+  },
+  "observed": null,
+  "note": "observed filled after XSim in metrics.json; do not edit these plumbing targets after scores; Master F3 left OPEN; do not print Wilson as Master"
+}

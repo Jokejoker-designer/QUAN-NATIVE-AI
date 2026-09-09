@@ -1,0 +1,21 @@
+GATE=ASTRA-09-UNIFIED-PIPELINE
+PREREG=PREREG.md
+LOCKED=2026-09-05
+BIT=NO
+PROGRAM=NO
+COM12=UNTOUCHED
+RTL_EDIT=YES
+PIPE=rtl/native_graph/integrate/a7ng_astra09_pipe.sv
+QSE=qse-v2-role-00 a7ng_query_role_extract (v1 UNCHANGED)
+ENGINE=a7ng_rel_engine_2hop loaded edges, not exam ROM
+RANK=a7ng_shared_rank_sgd_q8 freeze_i=1
+COMPOSE=a7ng_evidence_compose datapath only LANGUAGE_UNPROVEN
+SPARSE_AXI=omitted (optional; ASTRA-01)
+CTX_INDIRECT=2 additive v2 lexicon (indirect/indirectly), no v1 key retarget
+IDS=pump=10 chiller=1 condenser=2 compressor=4 rel_sup=1 rel_req=2 eid_ab=1 eid_bc=2 eid_sup0=3 eid_sup1=4
+CORPUS=pump requires chiller; chiller requires compressor; pump supplies chiller; chiller supplies condenser
+NOT_STORED=pump requires compressor
+FREEZE_I=1
+HOST_QUERY_POKE=FORBIDDEN
+DO_NOT_REDO=U4A-R4 U4A-R5 U4A-R6 SCHEMA_V2_LOW16 ASTRA-01 ASTRA-02 ASTRA-03 ASTRA-04 ASTRA-05 ASTRA-06 ASTRA-07 ASTRA-08
+NOT_CLAIMED=gate14 board nlu ddr800k lm_language

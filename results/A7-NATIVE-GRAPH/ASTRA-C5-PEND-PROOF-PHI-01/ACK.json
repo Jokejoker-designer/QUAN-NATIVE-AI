@@ -1,0 +1,7 @@
+{
+  "gate": "ASTRA-C5-PEND-PROOF-PHI-01",
+  "program": false,
+  "board_pass": false,
+  "self_accept": false,
+  "one_unknown": "AXI snapshot restore of 32 weights plus pending proof IDs and 32 phi equals the captured live pending, without installing on CRC or schema mismatch"
+}

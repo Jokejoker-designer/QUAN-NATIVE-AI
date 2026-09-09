@@ -1,0 +1,45 @@
+{
+  "note": "Live Get-FileHash SHA256. Prefix mismatch = FAIL. Do not invent. Do not edit these files.",
+  "checked_at_local": "2026-09-07T23:52:52+07:00",
+  "c0_frozen": {
+    "rtl/native_graph/query/a7ng_query_role_extract.sv": "cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27",
+    "rtl/native_graph/query/qse_role_lexicon.svh": "381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c",
+    "rtl/native_graph/memory/a7ng_sparse_dir_axi.sv": "09334e42c3913d4de3a1b59147f48c810481cd634e63b37e64bc669a6c36bb24",
+    "rtl/native_graph/integrate/a7ng_query_axi_sparse.sv": "5a4ad04d498c588b4447431c290a862252abfbecdef8e934ed4215b9b9c5c0fa",
+    "rtl/native_graph/query/a7ng_route_valid_gate.sv": "49a66da21dc075d1487c320d399643ff94e87b02af13f3d6f36d346a1be3a385"
+  },
+  "c1_keep_instantiate_do_not_edit": {
+    "rtl/native_graph/integrate/a7ng_query_axi_sparse_stream_intersect.sv": "14f75db787dee2405dc917604e54b4ab0dbea5cb327d4c4485f5be5cd874f0ac",
+    "rtl/native_graph/query/a7ng_query_role_keys_ctx.sv": "124be80804b38a1e1a924924091b751a4d13d85e28241695eda00ca5ded500d1",
+    "rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect_context.sv": "8255a7988b902c4fd6d76679cc42ef0726d50099961f7c211010ace54a24d989",
+    "rtl/native_graph/integrate/a7ng_query_axi_sparse_page_skip.sv": "dab15d76da42b33a934d8c68c1108665a79b8544d44b4986b840972841135817",
+    "rtl/native_graph/query/qse_relctx_synonym_01.svh": "551655a1cda97463841a681e34f8073e22b1b2c1beb2ae03847bdc9a5bb41dfd",
+    "rtl/native_graph/query/a7ng_query_role_relctx_synonym.sv": "e862208ce34d8835c34fef1b2f2e4d32a91938a26cf22bc3854593ff852ea922",
+    "rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect_synonym.sv": "a84bbf7e9a2c0b9e3753b3cb2e1ae734c2afde59267d733aa0e52108e47d8ec8"
+  },
+  "c1_keep_not_compiled_as_dut_on_800k_scale": [
+    "rtl/native_graph/integrate/a7ng_query_axi_sparse_stream_intersect.sv",
+    "rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect_context.sv",
+    "rtl/native_graph/integrate/a7ng_query_axi_sparse.sv"
+  ],
+  "c2_keep_do_not_edit": {
+    "rtl/native_graph/integrate/a7ng_astra_c2_persist_commit.sv": "86a7a0695712d9aa818bf95aac30b83289fb9af80ddd0bdc2455e935a14d8764",
+    "rtl/native_graph/integrate/a7ng_astra_c2_persist_multi_slot.sv": "bc8b8993edbba8bc048bc03ebc6398744cf80da01d346801c3683a15881682fd",
+    "rtl/native_graph/integrate/a7ng_astra_c2_persist_ddr_stall.sv": "55f5ac0d4e9a5280d83951fb147fc85734417f7fff0ae22ed5d4422b65710862",
+    "rtl/native_graph/integrate/a7ng_astra_c2_persist_mig.sv": "17741214c066de125c7306cce47d1834531b2a7c8607febe3c9d91cc06a555b2",
+    "rtl/ddr/mig_native_wrap.sv": "97c078b18015e0c6a47ca4d41b659e483f2e983d37f8bb6e579efa4d19e523b5",
+    "third_party/digilent/arty-a7-100/E.0/1.0/mig.prj": "914a9e4bb1b3002837592944cdf49f8dfbaf4d112552dd8b5be48602ff1ac329"
+  },
+  "checkpoint_bit_test_vehicle_only": {
+    "file": "results/A7-NATIVE-GRAPH/ASTRA-11-A09R8-UART-FREEZE-BIT-01/a7ng_astra_11_a09r8_uart_freeze_wrap.bit",
+    "sha256": "e51bdca253a7179aa1037695918d0069c43770581a3152665fb8a2739ed461bb",
+    "jtag": "210319BE776EA",
+    "note": "Not the final production bit. New bits need WNS>=0 + auditor ACCEPT + owner."
+  },
+  "forbidden_dut": [
+    "rtl/native_graph/integrate/a7ng_astra_09_integ_path.sv",
+    "rtl/native_graph/integrate/a7ng_learned_prior_store.sv",
+    "rtl/native_graph/integrate/a7ng_astra_06_warm_persist.sv",
+    "vivado/ip/.../mig_7series_0_mig.v (synth; compile mig_7series_0_mig_sim.v for MIG XSim)"
+  ]
+}

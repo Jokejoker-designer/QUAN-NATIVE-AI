@@ -1,0 +1,5 @@
+5aa8285 U5-MEM02: bounded AXI traffic vs N; sentinel 799999. No 800k fill.
+4677ad2 U4-MEM02: FPGA qse keys drive 4x4096 AXI dir/posting. XSim PASS.
+e1117ff Record persist ACCEPT FAIL/PASS and C7_ADDR OBSERVE_ONLY residual.
+d166ca8 U4-PRE0: P4_4k_h64 AXI dir geometry. Exact k0..k3, 4096 buckets.
+342b8c9 PERSIST-IDENTITY-SCHEMA-V2-00: two-beat full 32-bit subj/obj.

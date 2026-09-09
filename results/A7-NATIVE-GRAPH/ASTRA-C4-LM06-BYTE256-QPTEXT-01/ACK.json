@@ -1,0 +1,9 @@
+{
+  "gate": "ASTRA-C4-LM06-BYTE256-QPTEXT-01",
+  "program": false,
+  "board_pass": false,
+  "mig": false,
+  "master_c4_claimed": false,
+  "lm06_byte256_frozen": false,
+  "one_unknown": "held-out BYTE256 glue-from-weights then hop-2 object name from live C3 QUERY/PROOF FPGA dict; tok0 is not ans dest ch0; 90/95/5 plus weight and dest ablations; host next-token=0"
+}

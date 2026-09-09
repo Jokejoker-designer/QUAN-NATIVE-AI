@@ -1,0 +1,4 @@
+# SHA verify AFTER xsim 2026-09-09T10:14:14.0662511+07:00
+b45773d309200675e375decc2570c4a55cbc6e90569632420a232c08686bee4b  rtl/native_graph/integrate/a7ng_astra_c4_lm06_red.sv
+804e2fe33e65caa2ede91ed29c6051230c9f2932965e930b214ef7d2ff745d3c  results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-BYTE256-01/tb_astra_c4_lm06_red_byte256.sv
+1fbdc00a4e040b2ffd925dfc8477129f4c14247768ceb0c73cbf3a31d5f2503b  rtl/native_graph/integrate/a7ng_astra_c4_lm06_grounded_gen.sv

@@ -1,0 +1,16 @@
+{
+  "gate": "ASTRA-C4-COND-RNN-LANG-01",
+  "program": false,
+  "master_c4_claimed": false,
+  "closes_c4_master": false,
+  "LM06_BYTE256": "NOT_FROZEN",
+  "required_class_substrings": [
+    "CLASS_safe_no",
+    "CLASS_host_tok0",
+    "CLASS_lang_90",
+    "CLASS_lang_safe95",
+    "CLASS_lang_hall5"
+  ],
+  "marker": "ASTRA_C4_COND_RNN_LANG_XSIM_PASS",
+  "note": "Language measurement on unedited rival-1 Elman plus local trained hex. 90/95/5 may MISS. Do not stamp C4_MASTER."
+}

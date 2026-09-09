@@ -1,0 +1,109 @@
+{
+  "generated_at": "2026-09-07T18:21:53.335170+00:00",
+  "classification": "FACT: C3 is OPEN. A09R8 w0 and ASTRA-07 are not C3. This gate stays red until a 5-seed 4-arm disjoint held-out bag HITs Master \u00a79 letter.",
+  "c3_close": "NO",
+  "board_pass": "REJECT",
+  "a09r8_w0_is_c3": false,
+  "blocking_fail_ids": [],
+  "master_section": 9,
+  "required_arms": [
+    "A_shared_32_feature",
+    "B_frozen",
+    "C_shuffled_reward",
+    "D_perid_prior"
+  ],
+  "required_metrics": [
+    "gain(A over B) >= 10 pp",
+    "paired CI lower bound > 0",
+    "A > shuffled",
+    "A > or complements per-ID",
+    "retention drop after reload <= 5 pp (may be later bag)",
+    "host winner/address/weight update = 0"
+  ],
+  "findings": [
+    {
+      "id": "C3_BAG_EXISTS",
+      "ok": true,
+      "blocking_for_c3_close": true,
+      "detail": "C3 bag xsim.log present",
+      "verdict": "PASS"
+    },
+    {
+      "id": "A09R8_W0_MUST_NOT_CLOSE_C3",
+      "ok": true,
+      "blocking_for_c3_close": false,
+      "detail": "FACT: A09R8 w0 0\u2192-5 is SGD reachability (Master \u00a79). Using it as C3 transfer is OVERCLAIM.",
+      "verdict": "PASS"
+    },
+    {
+      "id": "ASTRA07_IS_NOT_C3",
+      "ok": true,
+      "blocking_for_c3_close": false,
+      "detail": "Historical ASTRA-07-HELD-OUT-TRANSFER cannot close Master \u00a79 (not frozen C1 law, not 5-seed 4-arm, not production persist reload).",
+      "verdict": "PASS"
+    },
+    {
+      "id": "NEED_CLASS_arm_A_learner",
+      "ok": true,
+      "blocking_for_c3_close": true,
+      "detail": "CLASS_arm_A_learner not in C3 xsim.log (required Master \u00a79)",
+      "verdict": "PASS"
+    },
+    {
+      "id": "NEED_CLASS_arm_B_frozen",
+      "ok": true,
+      "blocking_for_c3_close": true,
+      "detail": "CLASS_arm_B_frozen not in C3 xsim.log (required Master \u00a79)",
+      "verdict": "PASS"
+    },
+    {
+      "id": "NEED_CLASS_arm_C_shuffled",
+      "ok": true,
+      "blocking_for_c3_close": true,
+      "detail": "CLASS_arm_C_shuffled not in C3 xsim.log (required Master \u00a79)",
+      "verdict": "PASS"
+    },
+    {
+      "id": "NEED_CLASS_arm_D_perid",
+      "ok": true,
+      "blocking_for_c3_close": true,
+      "detail": "CLASS_arm_D_perid not in C3 xsim.log (required Master \u00a79)",
+      "verdict": "PASS"
+    },
+    {
+      "id": "NEED_CLASS_entities_disjoint",
+      "ok": true,
+      "blocking_for_c3_close": true,
+      "detail": "CLASS_entities_disjoint not in C3 xsim.log (required Master \u00a79)",
+      "verdict": "PASS"
+    },
+    {
+      "id": "NEED_CLASS_host_winner_zero",
+      "ok": true,
+      "blocking_for_c3_close": true,
+      "detail": "CLASS_host_winner_zero not in C3 xsim.log (required Master \u00a79)",
+      "verdict": "PASS"
+    },
+    {
+      "id": "NEED_CLASS_gain_A_over_B",
+      "ok": true,
+      "blocking_for_c3_close": true,
+      "detail": "CLASS_gain_A_over_B not in C3 xsim.log (required Master \u00a79)",
+      "verdict": "PASS"
+    },
+    {
+      "id": "NO_SELF_CLOSE",
+      "ok": true,
+      "blocking_for_c3_close": true,
+      "detail": "C3 RESULTS must not self-stamp Master/BOARD close",
+      "verdict": "PASS"
+    },
+    {
+      "id": "LOOP_C3_STILL_OPEN",
+      "ok": true,
+      "blocking_for_c3_close": false,
+      "detail": "unblocked_item=ASTRA-C3-HELD-OUT-RELOAD-01 c_gate=C3_HELD_OUT",
+      "verdict": "PASS"
+    }
+  ]
+}

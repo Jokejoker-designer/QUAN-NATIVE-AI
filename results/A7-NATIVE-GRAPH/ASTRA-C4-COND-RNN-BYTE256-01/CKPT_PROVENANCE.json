@@ -1,0 +1,47 @@
+{
+  "seed": 7,
+  "seq_seed0": [
+    201,
+    5,
+    84,
+    84,
+    84,
+    84
+  ],
+  "seq_seed_y": [
+    201,
+    5,
+    109,
+    84,
+    84,
+    84
+  ],
+  "seq_ctx_b": [
+    247,
+    70,
+    70,
+    70,
+    70,
+    70
+  ],
+  "seq_zero": [
+    0
+  ],
+  "seq_safe": [
+    110,
+    111,
+    0
+  ],
+  "program": false,
+  "c4_master": "OPEN",
+  "rival": "compact_recurrent_byte256",
+  "V": 256,
+  "E": 4,
+  "H": 8,
+  "SHR": 4,
+  "N_W": 1384,
+  "hex_sha256": "46b81cd7a56a3a7b95d3d031210eea1b737924f7e98b40a2dbf69b08c2712495",
+  "hex_rel": "rtl/native_graph/integrate/a7ng_astra_c4_cond_rnn.hex",
+  "training": "none_synthetic_lcg_search",
+  "note": "Hand-constructed integer Elman; not 90/95/5 language close."
+}

@@ -1,0 +1,36 @@
+{
+  "program": false,
+  "full_byte_dump": false,
+  "n_triples_claimed": 800000,
+  "n_stream": 799996,
+  "sample_n": 23,
+  "regions": {
+    "below_dir": 1,
+    "dir_tbl0": 6,
+    "dir_tbl1": 3,
+    "dir_tbl2plus": 4,
+    "post_heap": 9,
+    "nonzero": 16,
+    "zero": 7
+  },
+  "occ_vs_query_gold": {
+    "G_OCC_is_query_not_always_k0_dir": true,
+    "G_OCC_fill_q0": 202,
+    "replica_fill_k0": 202,
+    "G_OCC_high_q9": 200,
+    "replica_high_k0_d514": 1,
+    "replica_high_k1_0d14": 200,
+    "G_OCC_late_q8": 199,
+    "replica_late_k0_d414": 197
+  },
+  "overflow_page_sampled": true,
+  "high_id_page_sampled": true,
+  "special_dir_keys": [
+    3380,
+    3636
+  ],
+  "dictionary_ddr_image": "NOT_PINNED",
+  "query_lexicon_rtl": "PINNED_FILE_NOT_A_DDR_DICT",
+  "DDR_QUERY_BOUND_FINAL": "NOT_FROZEN",
+  "note": "Coverage is sample/range, not a dump of 800000 records."
+}

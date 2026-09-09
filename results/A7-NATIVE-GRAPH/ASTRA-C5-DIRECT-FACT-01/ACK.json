@@ -1,0 +1,9 @@
+{
+  "gate": "ASTRA-C5-DIRECT-FACT-01",
+  "program": false,
+  "board_pass": false,
+  "mig": false,
+  "master_c5_claimed": false,
+  "ddr_query_bound_final": "NOT_FROZEN",
+  "one_unknown": "same C5 hierarchy: 1-hop ANSWER dest=valve vs 2-hop ANSWER dest=64 on a later UART line"
+}

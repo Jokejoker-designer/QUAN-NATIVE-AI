@@ -1,0 +1,7 @@
+{
+  "gate": "ASTRA-C2-PERSIST-MIG-01",
+  "program": false,
+  "board_pass": false,
+  "mig": "xsim_official_axi_mig_sim",
+  "one_unknown": "20-bit persist identity+w0 reload through Digilent AXI MIG+ddr3_model after calib"
+}

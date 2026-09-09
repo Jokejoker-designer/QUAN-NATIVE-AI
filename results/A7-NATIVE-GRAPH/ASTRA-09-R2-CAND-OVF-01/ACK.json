@@ -1,0 +1,23 @@
+{
+  "task_id": "ASTRA-09-R2-CAND-OVF-01",
+  "observed_session_id": "UNKNOWN",
+  "cwd": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "branch": "grok-orch/astra-native-v1-00",
+  "base": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+  "role": "implementer_not_v31_manager",
+  "write_scope": "new bag + distinctly named A09 revision RTL/TB/helpers only; do not patch frozen a7ng_astra_09_integ_path.sv/.svh; do not edit ASTRA-07-SCALE-NARROW-01 or ASTRA-09-INTEGRATED-PATH-01 bags; instantiate frozen SGD; not a wrap around leftover A09 ans=4",
+  "PROGRAM": false,
+  "jtag": "NO_CALLS",
+  "bitstream": "NOT_BUILT",
+  "write_bitstream": false,
+  "xsdb": false,
+  "com12": "UNTOUCHED",
+  "hw_server": false,
+  "conflict_writer": false,
+  "PRODUCTION_TOP": "UNKNOWN",
+  "winner_frozen": false,
+  "preserves": "results/A7-NATIVE-GRAPH/ASTRA-07-SCALE-NARROW-01, ASTRA-09-INTEGRATED-PATH-01, ASTRA-12-*, ASTRA-11-*, ASTRA-10-*, ASTRA-06-*, ASTRA-F2R-*, ASTRA-F3-* (not edited; those bags' run scripts not rerun); a7ng_astra_09_integ_path.sv/.svh not patched (frozen hash 9fdbe0d6…); a7ng_astra_07_scale_narrow.sv/.svh not patched; frozen SGD a7ng_shared_rank_sgd_q8_sym_f2r2.sv not patched; no .bit generated; PRODUCTION_TOP not written as a module name",
+  "prior_acceptance": "AUDITOR_20260906T1530Z ACCEPT_PARTIAL on ASTRA-07-SCALE-NARROW-01; wrap INCOMP CLOSED_NARROW; frozen A09 leftover ans=4 is a known hole; residual 3: a new named A09 revision may close ntrunc→INCOMP; do not patch frozen a7ng_astra_09_integ_path.sv; board plugged; PROGRAM=NO; do not silent-freeze a top; do not ASTRA-13; do not claim Master ASTRA-07 65536/800k",
+  "gate_claim": "one named XSim A09 revision only: when walker truncates (n_trunc_o!=0 / N>CAND_CAP) with leftover legal 2-hops, the DUT itself publishes ST_INCOMP ans=0 p0=0 (hierarchical peek of this DUT must not show ans=4). Not a wrap around frozen A09 leftover ans=4. MAX_PATH 5>4 still INCOMP. Smoke two-proof after overflow still ANSWER 4. UNREL no stale. ISO +5. load_from_tb=0. Not 65536, not 800k, not BOARD, not Master ASTRA-07, not LM06, not ASTRA-13.",
+  "does_not_close": ["Master_ASTRA-07_65536_262144_800000", "ASTRA-07_index_image", "Master_ASTRA-09", "Master_F3_10pp_CI", "Master_ASTRA-06", "LM06", "BOARD_PASS", "ASTRA-13", "production_top_identity", "write_bitstream"]
+}

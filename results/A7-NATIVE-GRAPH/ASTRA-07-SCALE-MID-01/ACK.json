@@ -1,0 +1,23 @@
+{
+  "task_id": "ASTRA-07-SCALE-MID-01",
+  "observed_session_id": "UNKNOWN",
+  "cwd": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "branch": "grok-orch/astra-native-v1-00",
+  "base": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+  "role": "implementer_not_v31_manager",
+  "write_scope": "new bag + bag-local TB/helpers only; instantiate frozen a7ng_astra_09_r2_cand_ovf as DUT (A09-R2 itself, not a wrap around leftover A09); instantiate frozen SGD for ISO without force; do not patch frozen A09-R2 / leftover A09 / A07-NARROW wrap / SGD; do not edit ASTRA-07-SCALE-NARROW-01, ASTRA-09-R2, ASTRA-12-R5, leftover A09 bags",
+  "PROGRAM": false,
+  "jtag": "NO_CALLS",
+  "bitstream": "NOT_BUILT",
+  "write_bitstream": false,
+  "xsdb": false,
+  "com12": "UNTOUCHED",
+  "hw_server": false,
+  "conflict_writer": false,
+  "PRODUCTION_TOP": "UNKNOWN",
+  "winner_frozen": false,
+  "preserves": "results/A7-NATIVE-GRAPH/ASTRA-07-SCALE-NARROW-01, ASTRA-09-R2-CAND-OVF-01, ASTRA-09-INTEGRATED-PATH-01, ASTRA-12-R5-FREEZE-BRIEF-01, ASTRA-12-*, ASTRA-11-*, ASTRA-10-*, ASTRA-06-*, ASTRA-F2R-*, ASTRA-F3-* (not edited; those bags' run scripts not rerun); a7ng_astra_09_r2_cand_ovf.sv/.svh not patched (frozen hash 15a919f1…); a7ng_astra_09_integ_path.sv/.svh not patched and not compiled as DUT (frozen leftover hash 9fdbe0d6…); a7ng_astra_07_scale_narrow.sv/.svh not patched; frozen SGD a7ng_shared_rank_sgd_q8_sym_f2r2.sv not patched; no .bit generated; PRODUCTION_TOP not written as a module name",
+  "prior_acceptance": "AUDITOR_20260907T0300Z ACCEPT_PARTIAL / PASS_NARROW on ASTRA-12-R5-FREEZE-BRIEF-01; PRODUCTION_TOP=UNKNOWN; ASTRA-13 BLOCKED; board plugged; PROGRAM=NO; parent residual: ASTRA-07 scale-mid posting N=64>CAND_CAP=16 on instantiated frozen A09-R2 INCOMP path; do not silent-freeze a top; do not ASTRA-13; do not claim Master ASTRA-07 65536/800k",
+  "gate_claim": "one named XSim path only: posting N=64 > CAND_CAP=16 on frozen a7ng_astra_09_r2_cand_ovf itself (not leftover A09, not A07-NARROW wrap) publishes ST_INCOMP ans=0 p0=0; hierarchical peek of this DUT must not show ans=4; smoke two-proof after reset still ANSWER 4 p0=17; UNREL no stale; ISO +5 on instantiated frozen SGD without force. Not 65536, not 800k, not BOARD, not Master F3 10pp, not LM06, not ASTRA-13.",
+  "does_not_close": ["Master_ASTRA-07_65536_262144_800000", "ASTRA-07_index_image", "Master_ASTRA-09", "Master_F3_10pp_CI", "Master_ASTRA-06", "LM06", "BOARD_PASS", "ASTRA-13", "production_top_identity", "write_bitstream"]
+}

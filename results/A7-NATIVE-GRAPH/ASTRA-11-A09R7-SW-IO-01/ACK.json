@@ -1,0 +1,99 @@
+{
+  "task_id": "ASTRA-11-A09R7-SW-IO-01",
+  "observed_session_id": "UNKNOWN",
+  "cwd": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "branch": "grok-orch/astra-native-v1-00",
+  "base": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+  "role": "implementer_not_v31_manager",
+  "write_scope": "new bag + distinctly named SW-IO wrap that instantiates frozen a7ng_astra_09_r2_cand_ovf as u_a09r2 with UART-class D10/A9 kept, LED LD4-LD7 H5/J5/T9/T10 kept, BTN0-BTN3 D9/C9/B9/B8 kept but false-pathed (BTN unknown already closed in BTN bags; not this residual), and SW0-SW3 pins plus SW input delays frozen in PREREG before impl (SW IN max 2.000 min 0.500 vs pipe clk50u; LED OUT 2.000/0.500 vs clk50u; UART envelope copied 2.000/0.500 + FALSE_PATH_HOLD_ASYNC_UART); cited pinout constraints/arty_a7_100.xdc (Digilent Arty-A7-100-Master) SW A8/C11/C10/A10; do not set_false_path on sw[*]; do not edit ASTRA-11-A09R7-BTN-IDELAY-01; do not edit ASTRA-11-A09R7-BTN-IO-01; do not edit ASTRA-11-A09R7-LED-IO-01; do not edit ASTRA-12-R7-BTN-CANDIDATES-01; frozen a7ng_astra_09_integ_path.sv not compiled as DUT; A09-R2 DUT source not patched; uart_rx/uart_tx not patched; prior bags not edited",
+  "PROGRAM": false,
+  "jtag": "NO_CALLS",
+  "bitstream": "NOT_BUILT",
+  "write_bitstream": false,
+  "xsdb": false,
+  "com12": "UNTOUCHED",
+  "hw_server": false,
+  "conflict_writer": false,
+  "PRODUCTION_TOP": "UNKNOWN",
+  "winner_frozen": false,
+  "wrap": "a7ng_astra_11_a09r7_sw_io_wrap",
+  "dut": "a7ng_astra_09_r2_cand_ovf",
+  "dut_instance": "u_a09r2",
+  "r7_btn_io_wrap_compiled_as_top": false,
+  "r7_btn_idelay_wrap_compiled_as_top": false,
+  "r7_led_io_wrap_compiled_as_top": false,
+  "r7_uart_impl_wrap_compiled_as_top": false,
+  "r7_btn_io_wrap_keep_not_compiled": "results/A7-NATIVE-GRAPH/ASTRA-11-A09R7-BTN-IO-01/a7ng_astra_11_a09r7_btn_io_wrap.sv",
+  "r7_btn_idelay_wrap_keep_not_compiled": "results/A7-NATIVE-GRAPH/ASTRA-11-A09R7-BTN-IDELAY-01/a7ng_astra_11_a09r7_btn_idelay_wrap.sv",
+  "r7_led_io_wrap_keep_not_compiled": "results/A7-NATIVE-GRAPH/ASTRA-11-A09R7-LED-IO-01/a7ng_astra_11_a09r7_led_io_wrap.sv",
+  "r7_uart_impl_wrap_keep_not_compiled": "results/A7-NATIVE-GRAPH/ASTRA-11-A09R7-UART-IMPL-ROUTE-01/a7ng_astra_11_a09r7_uart_impl_wrap.sv",
+  "frozen_a09r2": "INSTANTIATED_NOT_PATCHED",
+  "preserves": "results/A7-NATIVE-GRAPH/ASTRA-11-A09R7-BTN-IDELAY-01 (not edited; auditor 20260907T0530Z PASS_NARROW TAP=31 WNS=+0.574 WHS=+0.131 BTN pad hold MET +0.638), ASTRA-11-A09R7-BTN-IO-01 (not edited; fail_r0 + WHS=-2.068 kept; delays 2.000/0.500 not retuned), ASTRA-12-R7-BTN-CANDIDATES-01 (not edited; auditor 20260907T0600Z ACCEPT_PARTIAL unique 14 PASS_NARROW not repeated), ASTRA-11-A09R7-LED-IO-01 (not edited; routed WNS=+0.411 WHS=+0.027), ASTRA-11-A09R7-UART-IMPL-ROUTE-01 (not edited; routed WNS=+0.336 WHS=+0.104), ASTRA-12-R6-LED-CANDIDATES-01 (not edited), ASTRA-07-SCALE-MID-01 (not edited), ASTRA-09-R7-UART-QUERY-REW-01, ASTRA-11-A09R3-UART-IOBFF-HOLD-01 (WNS=+0.115 WHS=+0.131), ASTRA-11-A09R3-UART-IOBFF-01 (WNS=+0.115 WHS=-4.915), ASTRA-11-A09R3-UART-IODELAY-01, ASTRA-11-A09R3-UART-IMPL-ROUTE-01 (WNS=+0.305), ASTRA-11-A09R2-IMPL-ROUTE-01 (WNS=+0.648), ASTRA-11-A09-IMPL-ROUTE-01 (WNS=+1.041), ASTRA-SOC-RTP-WRAP-ROUTE (WNS=+5.733), ASTRA-09-R6/R5/R4/R3, ASTRA-09-R2-CAND-OVF-01, ASTRA-09-INTEGRATED-PATH-01, ASTRA-10-*, ASTRA-12-*, ASTRA-06-*, ASTRA-F2R-*, ASTRA-F3-* (not edited; those bags' run scripts not rerun); frozen A09 RTL not patched (hash 9fdbe0d6…); R2 DUT not patched (hash 15a919f1…); frozen SGD not patched (hash b66ef328…); uart_rx/uart_tx not patched (8e802d0b… / b4b7d097…); no .bit generated; PRODUCTION_TOP not written as a module name",
+  "prior_acceptance": "AUDITOR_20260907T0600Z ACCEPT_PARTIAL on ASTRA-12-R7-BTN-CANDIDATES-01; BTN table CLOSED_NARROW; residual slide-switch I/O on a new named wrap instantiating frozen A09-R2, Arty A7 SW0-SW3 pins, input delay frozen in PREREG 2.000/0.500, implement+route, no bitstream, no set_false_path on sw[*]; FAIL this bag if WHS<0; one bounded IDELAY experiment if FAIL (new PREREG tap); PRODUCTION_TOP UNKNOWN; ASTRA-13 BLOCKED; board plugged; PROGRAM=NO",
+  "gate_claim": "with SW0-SW3 mapped (cited constraints/arty_a7_100.xdc: sw[0]=A8 sw[1]=C11 sw[2]=C10 sw[3]=A10) plus frozen SW input delays IN max 2.000 min 0.500 vs clk50u, after implement+route of a new named wrap instantiating a7ng_astra_09_r2_cand_ovf on xc7a100tcsg324-1 at declared 50 MHz, is Design Timing Summary WNS >= 0 and WHS >= 0 — without a bitstream, without set_false_path on sw[*], and without claiming BOARD_PASS; quote raw WNS and WHS; FAIL this bag if WHS<0; one bounded IDELAY experiment if FAIL (new PREREG tap, not silent, still no bit); not BTN-IDELAY wrap WNS=+0.574 WHS=+0.131; not BTN-IO wrap WNS=+0.452 WHS=-2.068; not LED wrap WNS=+0.411 WHS=+0.027; not R7 UART wrap WNS=+0.336 WHS=+0.104; not 12-R7 BTN table; not Master ASTRA-09/F3/LM06/ASTRA-13 close; PRODUCTION_TOP stays UNKNOWN",
+  "does_not_close": ["Master_ASTRA-09", "Master_F3_10pp_CI", "Master_ASTRA-06", "LM06", "BOARD_PASS", "ASTRA-13", "ASTRA-11_SoC_UART_wrap", "ASTRA-12-R7-BTN-CANDIDATES-01", "ASTRA-12-R6-LED-CANDIDATES-01", "ASTRA-11-A09R7-BTN-IDELAY-01", "ASTRA-11-A09R7-BTN-IO-01", "ASTRA-11-A09R7-LED-IO-01", "ASTRA-11-A09R7-UART-IMPL-ROUTE-01", "ASTRA-07-SCALE-MID-01", "ASTRA-09-R7-UART-QUERY-REW-01", "ASTRA-11-A09R3-UART-IOBFF-HOLD-01", "ASTRA-11-A09R3-UART-IOBFF-01", "ASTRA-11-A09R3-UART-IODELAY-01", "ASTRA-11-A09R3-UART-IMPL-ROUTE-01", "ASTRA-SOC-RTP-WRAP-UART-XSIM", "ASTRA-09-R3-UART-XSIM-01", "Master_ASTRA-10_whole_chip", "production_top_identity", "write_bitstream", "silicon_UART", "silicon_BTN", "silicon_SW", "N64_INCOMP_repeat"],
+  "sw_pinout_frozen_before_impl": {
+    "cite": "constraints/arty_a7_100.xdc (Digilent digilent-xdc / Arty-A7-100-Master.xdc Rev. D and Rev. E). Do not edit that file. Clone uses this set; no other SW set in this clone's master XDC.",
+    "mapping": {
+      "sw[0]": {"package_pin": "A8", "sch": "sw[0]", "board": "SW0"},
+      "sw[1]": {"package_pin": "C11", "sch": "sw[1]", "board": "SW1"},
+      "sw[2]": {"package_pin": "C10", "sch": "sw[2]", "board": "SW2"},
+      "sw[3]": {"package_pin": "A10", "sch": "sw[3]", "board": "SW3"}
+    },
+    "iostandard": "LVCMOS33"
+  },
+  "sw_iodelay_frozen_before_impl": {
+    "source": "copy 2.000/0.500 from repo 3.3 V CMOS I/O class (ASTRA-11-A09R3-UART-IODELAY-01 / ASTRA-11-A09R7-LED-IO-01 / ASTRA-11-A09R7-BTN-IO-01 / vivado/tcl/build_a7eam01r.tcl); not invented after WNS; slide switches are on-board related inputs of pipe clk50u (not async FTDI)",
+    "sw_in_max_ns": 2.000,
+    "sw_in_min_ns": 0.500,
+    "clock_ref": "clk50u period 20.000 ns (MMCM+BUFG REAL; related). Applied after synth when clk50u exists (MMCM-derived; cannot bind at pre-synth read_xdc). Numbers frozen here and in sw_iodelay.xdc before impl.",
+    "xdc": [
+      "set_input_delay -clock [get_clocks clk50u] -max 2.000 [get_ports {sw[*]}]",
+      "set_input_delay -clock [get_clocks clk50u] -min 0.500 [get_ports {sw[*]}]"
+    ],
+    "hold_policy": "RELATED_CLK50U_NO_FALSE_PATH_HOLD",
+    "hold_rationale": "On-board slide switches are captured by clk50u IOB FFs. Do not time them against virtual uart_io_vclk (that class created UART WHS=-4.915). Do not except SW hold. Do not retune 0.500 after WNS/WHS. Do not set_false_path -from sw[*] (BTN/LED bag residual). If pad hold fails like BTN (WHS=-2.068 class), FAIL this bag honestly and run one bounded IDELAY experiment with a NEW PREREG tap."
+  },
+  "sw_function_map_frozen_before_impl": {
+    "sw[1:0]": "plant_sel after IOB FF sw_q (same plant fixture as prior wraps; SW IOB-sampled, never raw sw)",
+    "sw[3:2]": "LED mix after IOB FF sw_q",
+    "sw[3:0]": "all four pads timed pad->sw_q IOB FF vs clk50u 2.000/0.500"
+  },
+  "btn_kept_false_pathed": {
+    "reason": "BTN unknown already closed in ASTRA-11-A09R7-BTN-IO-01 FAIL_WHS and ASTRA-11-A09R7-BTN-IDELAY-01 PASS_NARROW; this bag's unknown is SW. Keep board pins D9/C9/B9/B8. btn[0] is async reset (LED-wrap class 2-FF). set_false_path -from btn[*]. Do not time BTN here. Do not mix BTN pad hold into this WHS.",
+    "btn0": "D9 BTN0",
+    "btn1": "C9 BTN1",
+    "btn2": "B9 BTN2",
+    "btn3": "B8 BTN3",
+    "hold_policy": "FALSE_PATH_BTN_NOT_THIS_UNKNOWN"
+  },
+  "led_kept": {
+    "reason": "prior UART+LED pins stay on this additive wrap",
+    "led0": "H5 LD4",
+    "led1": "J5 LD5",
+    "led2": "T9 LD6",
+    "led3": "T10 LD7",
+    "led_out_max_ns": 2.000,
+    "led_out_min_ns": 0.500,
+    "hold_policy": "RELATED_CLK50U_NO_FALSE_PATH_HOLD"
+  },
+  "uart_kept": {
+    "reason": "UART D10/A9 stay on this additive wrap",
+    "uart_txd_in_A9_input_delay_max_ns": 2.000,
+    "uart_txd_in_A9_input_delay_min_ns": 0.500,
+    "uart_rxd_out_D10_output_delay_max_ns": 2.000,
+    "uart_rxd_out_D10_output_delay_min_ns": 0.500,
+    "hold_policy": "FALSE_PATH_HOLD_ASYNC_UART"
+  },
+  "iob_ff_policy_frozen_before_impl": {
+    "uart_ports": ["uart_txd_in", "uart_rxd_out"],
+    "led_ports": ["led[0]", "led[1]", "led[2]", "led[3]"],
+    "sw_ports": ["sw[0]", "sw[1]", "sw[2]", "sw[3]"],
+    "method": "wrap-level (* IOB = TRUE *) registers plus XDC set_property IOB TRUE; do not patch frozen uart_rx.sv / uart_tx.sv",
+    "sw_reg": "sw_q (registered SW, samples sw[3:0])",
+    "led_reg": "led_q (registered LED, drives led[3:0])",
+    "if_it_still_packs": "quote routed BEL/LOC of sw_q_reg[*] in IOB/ILOGIC plus util IOB Flip Flops / ILOGIC; bag does not FAIL solely on SW unpack if WNS>=0 and WHS>=0 and io.rpt shows SW IOB A8/C11/C10/A10 FIXED"
+  },
+  "idelay_first_impl": false,
+  "idelay_if_fail": "one bounded IDELAY experiment with a NEW PREREG tap recorded in PREREG_EXP.md before the second impl; still 2.000/0.500 vs clk50u; still no set_false_path on sw[*]; still no bitstream"
+}

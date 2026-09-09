@@ -1,0 +1,92 @@
+[
+  {
+    "path": "rtl/native_graph/query/a7ng_query_role_extract.sv",
+    "expected": "cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27",
+    "actual": "CD7BAF49BB433220D7ED3CD1B2FE942F7A1A9EE54F1171CDBB650CECD83A9F27",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/query/qse_role_lexicon.svh",
+    "expected": "381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c",
+    "actual": "381899749158ECAA0B3209F16F618D6C65F4D8483F7FFFF7CE0AF3FFA4A50D0C",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/query/role_lexicon.py",
+    "expected": "c276cceebfc19ffe5dc365e402df54391da2fdf8ee47a9dd8467ff02b188aa74",
+    "actual": "C276CCEEBFC19FFE5DC365E402DF54391DA2FDF8EE47A9DD8467FF02B188AA74",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/query/twin_role.py",
+    "expected": "4fe31d7448bdd5a298cf38965f0c64cb4f0c284d5289165634ee44a321640f2a",
+    "actual": "4FE31D7448BDD5A298CF38965F0C64CB4F0C284D5289165634EE44A321640F2A",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/query/a7ng_query_struct_extract.sv",
+    "expected": "ede064f0c2a5c956eeba5269f539690dbd63c0773b9ded11128bd9be05496768",
+    "actual": "EDE064F0C2A5C956EEBA5269F539690DBD63C0773B9DED11128BD9BE05496768",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/query/qse_lexicon.svh",
+    "expected": "420c04b9dfb649a0569af25024a08c44f59d7598f2f2a3f1ae13c68b349c5cf7",
+    "actual": "420C04B9DFB649A0569AF25024A08C44F59D7598F2F2A3F1AE13C68B349C5CF7",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/query/a7ng_route_valid_gate.sv",
+    "expected": "49a66da21dc075d1487c320d399643ff94e87b02af13f3d6f36d346a1be3a385",
+    "actual": "49A66DA21DC075D1487C320D399643FF94E87B02AF13F3D6F36D346A1BE3A385",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/integrate/a7ng_query_axi_sparse.sv",
+    "expected": "5a4ad04d498c588b4447431c290a862252abfbecdef8e934ed4215b9b9c5c0fa",
+    "actual": "5A4AD04D498C588B4447431C290A862252ABFBECDEF8E934ED4215B9B9C5C0FA",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/integrate/a7ng_rel_engine_2hop.sv",
+    "expected": "47e8a27f12f55e39cd22b53dbba7b7acd2d87bd9f8f51a3badb255e4d513d5c1",
+    "actual": "47E8A27F12F55E39CD22B53DBBA7B7ACD2D87BD9F8F51A3BADB255E4D513D5C1",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/integrate/a7ng_rel_engine_2hop_v2.sv",
+    "expected": "241ca5bde7c9a8362d576607980a2be604cba808f4461939a2bf822ad9adabdd",
+    "actual": "241CA5BDE7C9A8362D576607980A2BE604CBA808F4461939A2BF822AD9ADABDD",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/integrate/a7ng_astra09_pipe.sv",
+    "expected": "48c9e480cbf2f6820f61a379f95f948f942340fbf478f6fb036fa011212b488b",
+    "actual": "48C9E480CBF2F6820F61A379F95F948F942340FBF478F6FB036FA011212B488B",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/integrate/a7ng_unified_pipe.sv",
+    "expected": "5c82ad95bd1804a024d1934314228095451e1635c3e55ec8039ddb9ae805a404",
+    "actual": "5C82AD95BD1804A024D1934314228095451E1635C3E55EC8039DDB9AE805A404",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/learn/a7ng_shared_rank_sgd_q8.sv",
+    "expected": "1786bd82f36a0872b93215dadf471b5db84e68ee8c86ba686e7ea7051f38767b",
+    "actual": "1786BD82F36A0872B93215DADF471B5DB84E68EE8C86BA686E7EA7051F38767B",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/memory/a7ng_sparse_dir_axi.sv",
+    "expected": "09334e42c3913d4de3a1b59147f48c810481cd634e63b37e64bc669a6c36bb24",
+    "actual": "09334E42C3913D4DE3A1B59147F48C810481CD634E63B37E64BC669A6C36BB24",
+    "match": true
+  },
+  {
+    "path": "rtl/native_graph/lm/a7ng_evidence_compose.sv",
+    "expected": "47448c9c82d58a1a837571d47df6afb2a3937ff048754a72dbf9dd5bc9df13e1",
+    "actual": "47448C9C82D58A1A837571D47DF6AFB2A3937FF048754A72DBF9DD5BC9DF13E1",
+    "match": true
+  }
+]

@@ -1,0 +1,199 @@
+{
+  "project": "QUAN NATIVE AI",
+  "source": "d:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "file_count": 6146,
+  "bytes": 39948524,
+  "mib": 38.1,
+  "largest": [
+    {
+      "path": "tests/xsim/a7lm05_wmem.hex",
+      "bytes": 1198080
+    },
+    {
+      "path": "results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-R2-01/query_gold.svh",
+      "bytes": 899643
+    },
+    {
+      "path": "results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-HELDOUT-01/query_gold.svh",
+      "bytes": 898933
+    },
+    {
+      "path": "results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-16K-01/query_gold.svh",
+      "bytes": 898910
+    },
+    {
+      "path": "results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-01/query_gold.svh",
+      "bytes": 896683
+    },
+    {
+      "path": "results/A7-NATIVE-GRAPH/ASTRA-C1-SYNONYM-LAW-01/query_gold.svh",
+      "bytes": 896526
+    },
+    {
+      "path": "results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-NL-01/query_gold.svh",
+      "bytes": 896231
+    },
+    {
+      "path": "results/A7-NATIVE-GRAPH/PACK_MANIFEST_20260822_0723.txt",
+      "bytes": 360331
+    },
+    {
+      "path": "tests/xsim/a7lm04_wmem.hex",
+      "bytes": 301056
+    },
+    {
+      "path": "results/diagnostics/A7-LM-04/multitoken_xsim/seed17_wmem.hex",
+      "bytes": 301056
+    },
+    {
+      "path": "results/A7-NATIVE-GRAPH/ASTRA-C1-N4096-STREAM-02/query_gold.svh",
+      "bytes": 213281
+    },
+    {
+      "path": "results/A7-NATIVE-GRAPH/ASTRA-C1-N4096-INTERSECT-01/query_gold.svh",
+      "bytes": 212612
+    },
+    {
+      "path": "vivado/ip/mig_7series_0/mig_7series_0.xci",
+      "bytes": 168203
+    },
+    {
+      "path": "results/A7-NATIVE-GRAPH/E2R-TILE-TOK-NLINE-CXSIM-00/xsim_stdout.txt",
+      "bytes": 161123
+    },
+    {
+      "path": "web/glassbox/eam-scrolled.png",
+      "bytes": 146790
+    },
+    {
+      "path": "rtl/board/arty_a7_ng_native_v1_ab_soc_top.sv",
+      "bytes": 108286
+    },
+    {
+      "path": "results/A7-NATIVE-GRAPH/E2R-CDC-AR-XSIM-00/xsim_transcript.txt",
+      "bytes": 105272
+    },
+    {
+      "path": "results/A7-NATIVE-GRAPH/E2R-UART-MGO-HB-FIX-00-EXCL/uart_capture_r2_mixed_preprogram_bootflood.txt",
+      "bytes": 100096
+    },
+    {
+      "path": "results/A7-NATIVE-GRAPH/GROK-ORCH-00/P2-WDMA-RELEASE-CDC-AUDIT-03/arty_a7_ng_native_v1_ab_soc_top.sv",
+      "bytes": 96005
+    },
+    {
+      "path": "results/A7-NATIVE-GRAPH/GROK-ORCH-00/P2-MIG-PERSIST-CDC-CLOSURE-02/arty_a7_ng_native_v1_ab_soc_top.sv",
+      "bytes": 95768
+    },
+    {
+      "path": "results/A7-NATIVE-GRAPH/GROK-ORCH-00/P2-G1G5-FULLCHIP-MIG-PERSIST-01/arty_a7_ng_native_v1_ab_soc_top.sv",
+      "bytes": 95349
+    },
+    {
+      "path": "results/A7-NATIVE-GRAPH/GROK-ORCH-00/P2-G1G5-FULLCHIP-COFIT-00/arty_a7_ng_native_v1_ab_soc_top.sv",
+      "bytes": 91000
+    },
+    {
+      "path": "results/A7-NATIVE-GRAPH/AUDITOR/20260907T1755Z/REPORT.md",
+      "bytes": 78752
+    },
+    {
+      "path": "audit/ASTRA_C1_INDEPENDENT_RETRIEVAL_AUDIT/snapshots/AUDITOR/20260907T1755Z/REPORT.md",
+      "bytes": 78752
+    },
+    {
+      "path": "results/A7-NATIVE-GRAPH/AUDITOR/20260907T1955Z/REPORT.md",
+      "bytes": 78689
+    }
+  ],
+  "excluded_policy": [
+    "Vivado/XSim run dumps (xsim.dir, .exe, .sdb, .rtd, .log, .jou)",
+    "Bitstreams and checkpoints (.bit, .dcp)",
+    "Training metric JSON dumps and files >8MiB",
+    "Generated Xilinx MIG user_design RTL (regenerate in Vivado)",
+    "Independent-audit drafts/ tick spam"
+  ],
+  "skipped_sample": [
+    "tests/xsim/a7lm06_after.hex",
+    "tests/xsim/a7lm06_wmem.hex",
+    "web/glassbox/package-lock.json",
+    "results/A7-EAM-02H/audit.json",
+    "results/A7-EAM-03E/A02_L/triplet_twin_sweep.json",
+    "results/A7-EAM-03E/A02_L_S3/triplet_twin_sweep.json",
+    "results/A7-EAM-03E/A02_L_S3/horizon100k/triplet_twin_sweep.json",
+    "results/A7-EAM-03E/A02_L_S3/sh4/triplet_twin_sweep.json",
+    "results/A7-EAM-03E/A02_L_S3/sh5/triplet_twin_sweep.json",
+    "results/A7-EAM-03E/A02_L_S3/sh6/triplet_twin_sweep.json",
+    "results/A7-EAM-03E/A02_STABILITY/rootcause.json",
+    "results/A7-EAM-03E/A02_STABILITY/stability_sweep.json",
+    "results/A7-EAM-03E/A03_PAIR_S3/stability_sweep.json",
+    "results/A7-EAM-03E/A03_S/stability_sweep.json",
+    "results/A7-EAM-03E/A03_SIGNED/stability_sweep.json",
+    "results/A7-EAM-03E/A03_UNGATED/stability_sweep.json",
+    "results/A7-EAM-03E/A03_UNGATED_S3/stability_sweep.json",
+    "results/A7-EAM-03E/A04_UNGATED/stability_sweep.json",
+    "results/A7-EAM-03E/A04_UNGATED/gated_control/stability_sweep.json",
+    "results/A7-EAM-03E/E1_UNGATED_100K/stability_sweep.json",
+    "results/A7-EAM-03E/E2A_S1_RATE16/triplet_twin_sweep.json",
+    "results/A7-EAM-03E/E4_ATTR_100K/triplet_twin_sweep.json",
+    "results/A7-EAM-03E/E5_L2_SWEEP/triplet_twin_sweep.json",
+    "results/A7-EAM-03E/E6_SCALE_TARGET1024/triplet_twin_sweep.json",
+    "results/A7-EAM-03E/E7_BAND_800_3100/triplet_twin_sweep.json",
+    "results/A7-LM-04/candidate_r2/ladder.json",
+    "results/A7-LM-04/candidate_r2/ladder_attempt1.json",
+    "results/A7-LM-04/candidate_r2/ladder_attempt2.json",
+    "results/A7-LM-04/candidate_r4/dev_sweep.json",
+    "results/A7-LM-04/candidate_r5/board/ladder.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-02-SCALE-SELECTIVITY-00/METRICS.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-02-SCALE-SELECTIVITY-00/SAMPLE.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-02-U5-SCALE-SELECTIVITY-800K/GOLDEN.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C1-AXI-BEAT-ACCOUNTING-01/corpus.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C1-CONTEXT-02/corpus.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C1-DIR-FULL16-01/corpus.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C1-KEY-INTERSECT-01/corpus.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C1-KEY-RELBIND-01/corpus.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C1-N256-R2-ROLE-RETRIEVAL-01/corpus.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C1-N256-R3-DISTRACTOR-01/corpus.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C1-N256-ROLE-RETRIEVAL-01/corpus.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C1-N4096-INTERSECT-01/corpus.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C1-N4096-STREAM-02/corpus.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C1-PAGE-SKIP-01/corpus.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-16K-01/corpus.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-HELDOUT-01/corpus.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-NL-01/corpus.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-UNSEEN-SRO-01/corpus.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-01/corpus.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-R2-01/corpus.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C1-STREAM-INTERSECT-02/corpus.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C1-SYNONYM-LAW-01/corpus.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-COND-RNN-H16-01/TRAIN_METRICS.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-COND-RNN-LANG-01/TRAIN_METRICS.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-COND-RNN-ONLINE-01/TRAIN_METRICS.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-COND-RNN-ONLINE-01/TRAIN_METRICS_LONG.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-802K-GROUNDED-01/xsim_work/a7lm06_wmem.hex",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-BPTT-01/TRAIN_METRICS.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-BPTT-01/TRAIN_METRICS_COPY.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-BPTT-01/TRAIN_METRICS_STE.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-COPYCORPUS-01/TRAIN_METRICS.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-COPYCORPUS-01/TRAIN_METRICS_ONLINE.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-FLOATTFM-01/TRAIN_METRICS.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-FLOATTFM-01/TRAIN_METRICS_AUX.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-FLOATTFM-01/TRAIN_METRICS_BEST.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-FLOATTFM-01/TRAIN_METRICS_D64.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-FLOATTFM-01/TRAIN_METRICS_D64F.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-FLOATTFM-01/TRAIN_METRICS_F12.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-FLOATTFM-01/TRAIN_METRICS_FILM.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-FLOATTFM-01/TRAIN_METRICS_FT.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-FLOATTFM-01/TRAIN_METRICS_GATED.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-FLOATTFM-01/TRAIN_METRICS_GATED_MIX.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-FLOATTFM-01/TRAIN_METRICS_GATED_UNREL.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-FLOATTFM-01/TRAIN_METRICS_PCG.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-FLOATTFM-01/TRAIN_METRICS_PCGF.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-FLOATTFM-01/TRAIN_METRICS_Q0.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-FLOATTFM-01/TRAIN_METRICS_R32.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-FLOATTFM-01/TRAIN_METRICS_REFUSE.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-FLOATTFM-01/TRAIN_METRICS_RONLY.json",
+    "results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-FLOATTFM-01/TRAIN_METRICS_RUP.json"
+  ],
+  "skipped_count": 134
+}

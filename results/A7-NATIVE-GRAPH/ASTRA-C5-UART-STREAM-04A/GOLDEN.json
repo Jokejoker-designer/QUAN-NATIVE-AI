@@ -1,0 +1,18 @@
+{
+  "gate": "ASTRA-C5-UART-STREAM-04A",
+  "program": false,
+  "master_c5_claimed": false,
+  "sim_override_8000_800": false,
+  "final_clk_hz": 83333333,
+  "final_baud": 115200,
+  "required_class_substrings": [
+    "CLASS_stream_ge3",
+    "CLASS_not_last_only",
+    "CLASS_pin_decode",
+    "CLASS_n_eq_gen",
+    "CLASS_fifo_ovf0",
+    "CLASS_consec_stream"
+  ],
+  "marker": "ASTRA_C5_UART_STREAM_04A_XSIM_PASS",
+  "note": "Named stream top. FIFO UART not last_gen-only. Defaults 83.333MHz/115200. Do not regenerate GOLDEN after xvlog."
+}

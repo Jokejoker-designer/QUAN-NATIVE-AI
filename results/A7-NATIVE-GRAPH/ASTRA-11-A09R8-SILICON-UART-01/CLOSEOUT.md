@@ -1,0 +1,19 @@
+# CLOSEOUT — ASTRA-11-A09R8-SILICON-UART-01
+
+```text
+RESULT           = PASS_NARROW_PROGRAM_LADDER
+PROGRAM          = PASS (reprogram + UART ladder, SW0 ON)
+UART_LINK        = PASS
+SMOKE            = PASS
+REW_M3           = PASS w0=-5 phi0=50
+UNREL            = PASS UNKNOWN
+BIT_SHA256       = e51bdca253a7179aa1037695918d0069c43770581a3152665fb8a2739ed461bb
+JTAG             = 210319BE776EA
+FRAME_SW0_OFF    = a2 01 00 00 00 00 00 00 00 00 00 00 00 00 00 0a  (UNKNOWN)
+FRAME_SW0_ON     = a2 10 04 00 00 11 00 00 22 00 00 02 00 00 00 0a
+DECODE           = st=0 ANSWER acc=1 ans=4 p0=17 p1=34 npath=2 ntrunc=0
+MATCHES_XSIM     = ASTRA-09-R7 SMOKE_UART exact
+BOARD_PASS       = NOT_CLAIMED
+ASTRA-13         = NOT_CLOSED
+NOT              = DDR MIG index LM06 reward-silicon
+```

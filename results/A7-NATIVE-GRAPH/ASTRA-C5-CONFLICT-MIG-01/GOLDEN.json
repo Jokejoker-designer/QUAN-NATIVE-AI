@@ -1,0 +1,20 @@
+{
+  "gate": "ASTRA-C5-CONFLICT-MIG-01",
+  "program": false,
+  "master_c5_claimed": false,
+  "board_pass": false,
+  "required_class_substrings": [
+    "CLASS_mig_calib_complete",
+    "CLASS_base_two_hop",
+    "CLASS_conflict",
+    "CLASS_conflict_no_upd",
+    "CLASS_one_ddr_owner",
+    "CLASS_no_qid_map",
+    "CLASS_no_host_winner",
+    "CLASS_no_a09_top",
+    "CLASS_no_plant_in_dut"
+  ],
+  "marker": "ASTRA_C5_CONFLICT_MIG_XSIM_PASS",
+  "quality_bound": "Official MIG PHY XSim, not silicon. Polarity CONFLICT only; two positive dests still rank. A09 not DUT. UART baud sim 8000/800.",
+  "note": "GOLDEN lists required CLASS strings, not post-hoc scores. Do not regenerate after xvlog. TB defparam TO_CYC=65535 only. plant=0 after axi_wr."
+}

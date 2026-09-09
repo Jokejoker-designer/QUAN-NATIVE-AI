@@ -1,0 +1,4 @@
+# independent gold hashed BEFORE first xvlog — do not regenerate after FAIL
+96f445a9dbff7759a63cbc00032c8ca359a78f1a15649254129f9cffdcc5ea9a  GOLDEN.json
+a0d993117e538b4847cd9a4bfa520824e9d8cc0ba1f432556b44a18cfdd7de47  query_gold.svh
+0ce3bfffafa319891fd628c65070f00aff3c05bf954cfcb854f3a6b75f1428cf  corpus.json

@@ -1,0 +1,11 @@
+{
+  "gate": "ASTRA-C3-PEND-LOAD-01",
+  "program": false,
+  "closes_c3_master": false,
+  "c3_keep_edited": false,
+  "required_class_substrings": [
+    "CLASS_exact32_reload",
+    "CLASS_c3_pend_phi_reload"
+  ],
+  "marker": "ASTRA_C3_PEND_LOAD_XSIM_PASS"
+}

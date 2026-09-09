@@ -1,0 +1,1057 @@
+{
+  "generated_at": "2026-09-07T17:21:05.133071+00:00",
+  "classification": "FACT from live files this run. C1_CLOSE=YES_XSIM is XSim law close only; BOARD_PASS stays REJECT; DDR_QUERY_BOUND_FINAL stays NOT_FROZEN.",
+  "c1_close": "YES_XSIM",
+  "c2_may_start": "YES",
+  "blocking_fail_ids": [],
+  "findings": [
+    {
+      "id": "LADDER_65536_BAG",
+      "ok": true,
+      "blocking_for_c1_close": true,
+      "detail": "Master \u00a77 requires N=65536 before 262144 and 800000. Bag ASTRA-C1-N65536-SCALE-01 missing or no xsim.log.",
+      "verdict": "PASS"
+    },
+    {
+      "id": "LADDER_262144_BAG",
+      "ok": true,
+      "blocking_for_c1_close": true,
+      "detail": "Master \u00a77 requires N=262144 before 800000. Bag missing or no xsim.log.",
+      "verdict": "PASS"
+    },
+    {
+      "id": "N800K_RESULTS_EXIST",
+      "ok": true,
+      "blocking_for_c1_close": true,
+      "detail": "ASTRA-C1-SEMANTIC-800K-01 has no results yet (IN_PROGRESS / not started).",
+      "verdict": "PASS"
+    },
+    {
+      "id": "N800K_BANNER_IS_800000",
+      "ok": true,
+      "blocking_for_c1_close": true,
+      "detail": "banner N=800000",
+      "verdict": "PASS"
+    },
+    {
+      "id": "SYNONYM_STILL_16K_CARTESIAN",
+      "ok": true,
+      "blocking_for_c1_close": false,
+      "detail": "Current frozen semantic corpus n_claim=16384 records=16384 fill_frac=1.0 unique_nids=16384. Cloning this as N=800000 is OVERCLAIM.",
+      "verdict": "PASS"
+    },
+    {
+      "id": "NO_16K_CLONE_AS_800K",
+      "ok": true,
+      "blocking_for_c1_close": true,
+      "detail": "If 800k bag exists, corpus must have 800000 distinct nids; 16k KEEP copy printed as 800k is FAIL.",
+      "verdict": "PASS"
+    },
+    {
+      "id": "OCCUPANCY_PROJECTION_800K",
+      "ok": false,
+      "blocking_for_c1_close": false,
+      "detail": "Max CLASS occ on 16k bags=142; naive same-entity 800k projection\u22486933. Synonym wrap MERGE_POST_AR_MAX default=256 (~1024 posting IDs). Same 120-entity cartesian at 800k trips SEARCH_INCOMPLETE. Widen entity namespace, instantiate PAGE-SKIP as a named bag, or a NEW named wrap with documented MERGE_POST_AR_MAX. Do not silent-edit KEEP stream-02.",
+      "verdict": "WARN"
+    },
+    {
+      "id": "REDUCTION_METRIC_EMITTED",
+      "ok": true,
+      "blocking_for_c1_close": true,
+      "detail": "65k/262k/800k-scale bags must print REDUCTION_VS_N_X1000 (occupancy vs N), never 1-CAND_CAP/N. scale65=True scale262=True scale800=True. SEMANTIC-800K-01 historically REDUCTION_X1000=NOT_EMITTED (ACCEPT_PARTIAL only).",
+      "verdict": "PASS"
+    },
+    {
+      "id": "SCALE_800K_XSIM_PASS",
+      "ok": true,
+      "blocking_for_c1_close": true,
+      "detail": "ASTRA-C1-N800000-SCALE-01 marker/banner missing.",
+      "verdict": "PASS"
+    },
+    {
+      "id": "SCALE_800K_MASTER_CLASSES",
+      "ok": true,
+      "blocking_for_c1_close": true,
+      "detail": "All 11 Master \u00a77 class prints present on N800000-SCALE-01.",
+      "verdict": "PASS"
+    },
+    {
+      "id": "CAND_CAP_SWEEP_BAG",
+      "ok": true,
+      "blocking_for_c1_close": true,
+      "detail": "ASTRA-C1-CAND-CAP-SWEEP-01 must PASS caps 16/64/128/256 on frozen 800k-scale gold. has_xsim=True caps_ok=True.",
+      "verdict": "PASS"
+    },
+    {
+      "id": "AUDITOR_ACCEPT_C1_XSIM",
+      "ok": true,
+      "blocking_for_c1_close": true,
+      "detail": "Need auditor 20260907T2148Z machine lines C1_XSIM_LAW=ACCEPT, C1_800K_CLOSED_XSIM=YES, BOARD_PASS=REJECT, ACCEPT_BOARD=REJECT. present=True",
+      "verdict": "PASS"
+    },
+    {
+      "id": "NO_TAUTOLOGY_REDUCTION",
+      "ok": true,
+      "blocking_for_c1_close": true,
+      "detail": "No tautology reduction string in sampled CLOSEOUT/RESULTS.",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C0_EXTRACT_UNPATCHED",
+      "ok": true,
+      "blocking_for_c1_close": true,
+      "detail": "live extract sha=cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C0_LEXICON_FILE_UNPATCHED",
+      "ok": true,
+      "blocking_for_c1_close": true,
+      "detail": "live C0 lexicon FILE sha=381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C0_DIR_UNPATCHED",
+      "ok": true,
+      "blocking_for_c1_close": true,
+      "detail": "live dir sha=09334e42c3913d4de3a1b59147f48c810481cd634e63b37e64bc669a6c36bb24",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C0_SPARSE_FILE_UNPATCHED",
+      "ok": true,
+      "blocking_for_c1_close": true,
+      "detail": "live C0 sparse FILE sha=5a4ad04d498c588b4447431c290a862252abfbecdef8e934ed4215b9b9c5c0fa (often not compiled as DUT)",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C0_GATE_UNPATCHED",
+      "ok": true,
+      "blocking_for_c1_close": true,
+      "detail": "live route gate sha=49a66da21dc075d1487c320d399643ff94e87b02af13f3d6f36d346a1be3a385",
+      "verdict": "PASS"
+    },
+    {
+      "id": "CTX_KEYS_UNEDITED",
+      "ok": true,
+      "blocking_for_c1_close": true,
+      "detail": "live ctx keys sha=124be80804b38a1e1a924924091b751a4d13d85e28241695eda00ca5ded500d1",
+      "verdict": "PASS"
+    },
+    {
+      "id": "STREAM02_UNEDITED",
+      "ok": true,
+      "blocking_for_c1_close": true,
+      "detail": "live stream02 sha=14f75db787dee2405dc917604e54b4ab0dbea5cb327d4c4485f5be5cd874f0ac",
+      "verdict": "PASS"
+    },
+    {
+      "id": "SYNONYM_IS_ONE_PAIR",
+      "ok": true,
+      "blocking_for_c1_close": false,
+      "detail": "QSE_SYN_N=1. Growing the table in place is a new law id, not silent C0. 1-pair is not general NL; C1 paraphrase class may use this pair only if gold says so.",
+      "verdict": "PASS"
+    },
+    {
+      "id": "NL_FAIL_KEPT",
+      "ok": true,
+      "blocking_for_c1_close": false,
+      "detail": "SEMANTIC-NL-01 raw FAIL emit 131 kept. Do not relabel gold to 131. Synonym overlay is the named fix.",
+      "verdict": "PASS"
+    },
+    {
+      "id": "U5_HISTORICAL_NOT_C1",
+      "ok": true,
+      "blocking_for_c1_close": false,
+      "detail": "Historical U5 path exists=True. Pre-role-law 800k cannot close C1 (Master \u00a76).",
+      "verdict": "PASS"
+    },
+    {
+      "id": "LOOP_NOT_CLAIMING_BOARD",
+      "ok": true,
+      "blocking_for_c1_close": false,
+      "detail": "LOOP c1_800k=CLOSED_XSIM_CARTESIAN_PROCEDURAL c1_800k_closed=True final_promotion=REJECT board_pass=False",
+      "verdict": "PASS"
+    }
+  ],
+  "bags": {
+    "n256_stream": {
+      "path": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-STREAM-INTERSECT-02",
+      "exists": true,
+      "has_xsim": true,
+      "has_closeout": true,
+      "banner_n": 256,
+      "golden_n": 256,
+      "search_incomplete": false,
+      "xsim_has_search_incomplete_line": false,
+      "reduction_not_emitted": true,
+      "c1_800k_open": true,
+      "pass_marker": true,
+      "classes": [
+        {
+          "class": "direct",
+          "occ": 8,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "paraphrase",
+          "occ": 8,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "role_reversal",
+          "occ": 11,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "wrong_relation",
+          "occ": 22,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "wrong_context",
+          "occ": 8,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "distractor",
+          "occ": 8,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "high_occupancy",
+          "occ": 22,
+          "emit_n": 16,
+          "incomp": 0
+        },
+        {
+          "class": "overflow_page",
+          "occ": 11,
+          "emit_n": 5,
+          "incomp": 0
+        },
+        {
+          "class": "high_id_sentinel",
+          "occ": 10,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "late_gold",
+          "occ": 23,
+          "emit_n": 1,
+          "incomp": 0
+        }
+      ]
+    },
+    "n4096_stream": {
+      "path": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N4096-STREAM-02",
+      "exists": true,
+      "has_xsim": true,
+      "has_closeout": true,
+      "banner_n": 4096,
+      "golden_n": 4096,
+      "search_incomplete": false,
+      "xsim_has_search_incomplete_line": false,
+      "reduction_not_emitted": true,
+      "c1_800k_open": true,
+      "pass_marker": true,
+      "classes": [
+        {
+          "class": "direct",
+          "occ": 108,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "paraphrase",
+          "occ": 108,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "role_reversal",
+          "occ": 111,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "wrong_relation",
+          "occ": 111,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "wrong_context",
+          "occ": 108,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "distractor",
+          "occ": 108,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "high_occupancy",
+          "occ": 116,
+          "emit_n": 16,
+          "incomp": 0
+        },
+        {
+          "class": "overflow_page",
+          "occ": 110,
+          "emit_n": 5,
+          "incomp": 0
+        },
+        {
+          "class": "high_id_sentinel",
+          "occ": 106,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "late_gold",
+          "occ": 116,
+          "emit_n": 1,
+          "incomp": 0
+        }
+      ]
+    },
+    "n16384_semantic": {
+      "path": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-16K-01",
+      "exists": true,
+      "has_xsim": true,
+      "has_closeout": true,
+      "banner_n": 16384,
+      "golden_n": 16384,
+      "search_incomplete": false,
+      "xsim_has_search_incomplete_line": false,
+      "reduction_not_emitted": true,
+      "c1_800k_open": true,
+      "pass_marker": true,
+      "classes": [
+        {
+          "class": "direct",
+          "occ": 121,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "paraphrase",
+          "occ": 121,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "role_reversal",
+          "occ": 119,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "wrong_relation",
+          "occ": 119,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "wrong_context",
+          "occ": 1,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "distractor",
+          "occ": 121,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "high_occupancy",
+          "occ": 142,
+          "emit_n": 16,
+          "incomp": 0
+        },
+        {
+          "class": "overflow_page",
+          "occ": 123,
+          "emit_n": 5,
+          "incomp": 0
+        },
+        {
+          "class": "high_id_sentinel",
+          "occ": 18,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "late_gold",
+          "occ": 34,
+          "emit_n": 1,
+          "incomp": 0
+        }
+      ]
+    },
+    "n65536": {
+      "path": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N65536-SCALE-01",
+      "exists": true,
+      "has_xsim": true,
+      "has_closeout": true,
+      "banner_n": 65536,
+      "golden_n": 65536,
+      "search_incomplete": false,
+      "xsim_has_search_incomplete_line": false,
+      "reduction_not_emitted": false,
+      "c1_800k_open": false,
+      "pass_marker": true,
+      "classes": [
+        {
+          "class": "fill_template",
+          "occ": 102,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "nl_synonym",
+          "occ": 102,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "late_gold",
+          "occ": 81,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "high_id_sentinel",
+          "occ": 82,
+          "emit_n": 1,
+          "incomp": 0
+        }
+      ]
+    },
+    "n262144": {
+      "path": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N262144-SCALE-01",
+      "exists": true,
+      "has_xsim": true,
+      "has_closeout": true,
+      "banner_n": 262144,
+      "golden_n": 262144,
+      "search_incomplete": false,
+      "xsim_has_search_incomplete_line": false,
+      "reduction_not_emitted": false,
+      "c1_800k_open": false,
+      "pass_marker": true,
+      "classes": [
+        {
+          "class": "fill_template",
+          "occ": 191,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "nl_synonym",
+          "occ": 191,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "late_gold",
+          "occ": 187,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "high_id_sentinel",
+          "occ": 173,
+          "emit_n": 1,
+          "incomp": 0
+        }
+      ]
+    },
+    "n800000": {
+      "path": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-800K-01",
+      "exists": true,
+      "has_xsim": true,
+      "has_closeout": true,
+      "banner_n": 800000,
+      "golden_n": 800000,
+      "search_incomplete": false,
+      "xsim_has_search_incomplete_line": false,
+      "reduction_not_emitted": true,
+      "c1_800k_open": false,
+      "pass_marker": true,
+      "classes": [
+        {
+          "class": "fill_template",
+          "occ": 202,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "nl_synonym",
+          "occ": 202,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "high_id_sentinel",
+          "occ": 200,
+          "emit_n": 1,
+          "incomp": 0
+        }
+      ]
+    },
+    "n800000_scale": {
+      "path": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-N800000-SCALE-01",
+      "exists": true,
+      "has_xsim": true,
+      "has_closeout": true,
+      "banner_n": 800000,
+      "golden_n": 800000,
+      "search_incomplete": false,
+      "xsim_has_search_incomplete_line": false,
+      "reduction_not_emitted": false,
+      "c1_800k_open": false,
+      "pass_marker": true,
+      "classes": [
+        {
+          "class": "fill_template",
+          "occ": 202,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "paraphrase",
+          "occ": 202,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "nl_synonym",
+          "occ": 202,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "role_reversal",
+          "occ": 200,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "wrong_relation",
+          "occ": 200,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "wrong_context",
+          "occ": 1,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "distractor",
+          "occ": 202,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "high_occupancy",
+          "occ": 200,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "late_gold",
+          "occ": 199,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "high_id_sentinel",
+          "occ": 200,
+          "emit_n": 1,
+          "incomp": 0
+        }
+      ]
+    },
+    "cand_cap_sweep": {
+      "path": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-CAND-CAP-SWEEP-01",
+      "exists": true,
+      "has_xsim": true,
+      "has_closeout": true,
+      "banner_n": 800000,
+      "golden_n": 800000,
+      "search_incomplete": false,
+      "xsim_has_search_incomplete_line": false,
+      "reduction_not_emitted": false,
+      "c1_800k_open": false,
+      "pass_marker": true,
+      "classes": [
+        {
+          "class": "fill_template",
+          "occ": 202,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "paraphrase",
+          "occ": 202,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "nl_synonym",
+          "occ": 202,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "role_reversal",
+          "occ": 200,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "wrong_relation",
+          "occ": 200,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "wrong_context",
+          "occ": 1,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "distractor",
+          "occ": 202,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "high_occupancy",
+          "occ": 200,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "late_gold",
+          "occ": 199,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "high_id_sentinel",
+          "occ": 200,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "fill_template",
+          "occ": 202,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "paraphrase",
+          "occ": 202,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "nl_synonym",
+          "occ": 202,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "role_reversal",
+          "occ": 200,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "wrong_relation",
+          "occ": 200,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "wrong_context",
+          "occ": 1,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "distractor",
+          "occ": 202,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "high_occupancy",
+          "occ": 200,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "late_gold",
+          "occ": 199,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "high_id_sentinel",
+          "occ": 200,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "fill_template",
+          "occ": 202,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "paraphrase",
+          "occ": 202,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "nl_synonym",
+          "occ": 202,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "role_reversal",
+          "occ": 200,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "wrong_relation",
+          "occ": 200,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "wrong_context",
+          "occ": 1,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "distractor",
+          "occ": 202,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "high_occupancy",
+          "occ": 200,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "late_gold",
+          "occ": 199,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "high_id_sentinel",
+          "occ": 200,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "fill_template",
+          "occ": 202,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "paraphrase",
+          "occ": 202,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "nl_synonym",
+          "occ": 202,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "role_reversal",
+          "occ": 200,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "wrong_relation",
+          "occ": 200,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "wrong_context",
+          "occ": 1,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "distractor",
+          "occ": 202,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "high_occupancy",
+          "occ": 200,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "late_gold",
+          "occ": 199,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "high_id_sentinel",
+          "occ": 200,
+          "emit_n": 1,
+          "incomp": 0
+        }
+      ]
+    },
+    "synonym": {
+      "path": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SYNONYM-LAW-01",
+      "exists": true,
+      "has_xsim": true,
+      "has_closeout": true,
+      "banner_n": 16384,
+      "golden_n": 16384,
+      "search_incomplete": false,
+      "xsim_has_search_incomplete_line": false,
+      "reduction_not_emitted": true,
+      "c1_800k_open": true,
+      "pass_marker": true,
+      "classes": [
+        {
+          "class": "fill_template",
+          "occ": 121,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "nl_synonym",
+          "occ": 121,
+          "emit_n": 3,
+          "incomp": 0
+        }
+      ]
+    },
+    "nl_fail": {
+      "path": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-NL-01",
+      "exists": true,
+      "has_xsim": true,
+      "has_closeout": true,
+      "banner_n": 16384,
+      "golden_n": 16384,
+      "search_incomplete": false,
+      "xsim_has_search_incomplete_line": false,
+      "reduction_not_emitted": true,
+      "c1_800k_open": true,
+      "pass_marker": false,
+      "classes": [
+        {
+          "class": "fill_template",
+          "occ": 121,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "nl_synonym",
+          "occ": 119,
+          "emit_n": 1,
+          "incomp": 0
+        }
+      ]
+    },
+    "unseen_r2": {
+      "path": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-R2-01",
+      "exists": true,
+      "has_xsim": true,
+      "has_closeout": true,
+      "banner_n": 16384,
+      "golden_n": 16384,
+      "search_incomplete": false,
+      "xsim_has_search_incomplete_line": false,
+      "reduction_not_emitted": true,
+      "c1_800k_open": true,
+      "pass_marker": true,
+      "classes": [
+        {
+          "class": "fill_template",
+          "occ": 121,
+          "emit_n": 3,
+          "incomp": 0
+        },
+        {
+          "class": "unseen_sro_123",
+          "occ": 2,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "unseen_sro_124",
+          "occ": 1,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "unseen_sro_125",
+          "occ": 2,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "unseen_sro_126",
+          "occ": 1,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "unseen_sro_127",
+          "occ": 1,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "unseen_sro_128",
+          "occ": 1,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "unseen_sro_129",
+          "occ": 1,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "unseen_sro_130",
+          "occ": 1,
+          "emit_n": 1,
+          "incomp": 0
+        },
+        {
+          "class": "unbound_sro",
+          "occ": 121,
+          "emit_n": 0,
+          "incomp": 0
+        }
+      ]
+    },
+    "u5_hist": {
+      "path": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-02-U5-SCALE-SELECTIVITY-800K",
+      "exists": true,
+      "has_xsim": true,
+      "has_closeout": true,
+      "banner_n": null,
+      "golden_n": null,
+      "search_incomplete": false,
+      "xsim_has_search_incomplete_line": false,
+      "reduction_not_emitted": false,
+      "c1_800k_open": false,
+      "pass_marker": false,
+      "classes": []
+    }
+  },
+  "synonym_corpus": {
+    "present": true,
+    "n_claim": 16384,
+    "n_records": 16384,
+    "unique_texts": 16384,
+    "unique_nids": 16384,
+    "fill_template_n": 16384,
+    "fill_template_frac": 1.0,
+    "contiguous_from_0": true,
+    "twelve_entity_flag": false,
+    "corpus_sha_header": "ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-01"
+  },
+  "live_hashes_prefix": {
+    "extract": "cd7baf49bb433220",
+    "lexicon_file": "381899749158ecaa",
+    "dir": "09334e42c3913d4d",
+    "sparse": "5a4ad04d498c588b",
+    "gate": "49a66da21dc075d1",
+    "stream02": "14f75db787dee240",
+    "ctx_keys": "124be80804b38a1e",
+    "ctx_dut": "8255a7988b902c4f",
+    "syn_svh": "551655a1cda97463",
+    "syn_mod": "e862208ce34d8835",
+    "syn_dut": "a84bbf7e9a2c0b9e"
+  },
+  "occupancy_max_16k": 142,
+  "occupancy_proj_800k_same_entities": 6933,
+  "root_causes": [
+    {
+      "id": "RC-LADDER-SKIP",
+      "statement": "20260907T2148Z ACCEPT C1 XSim law (ladder+11 class+sweep). Cartesian procedural AXI and 1-pair synonym remain quality bounds. BOARD_PASS / ACCEPT_BOARD / DDR_QUERY_BOUND_FINAL remain REJECT/NOT_FROZEN.",
+      "fix": "C2 may start as persist identity PROGRAM=NO. Do not treat XSim C1 as silicon. Do not claim general NL or semantic mass."
+    },
+    {
+      "id": "RC-CARTESIAN-16K",
+      "statement": "Semantic index is still a 16384 cartesian {ent}{rel}{ent} KEEP copy (6991adc7) plus 8 plants.",
+      "fix": "800k bag must address 800000 distinct nids. Procedural gen OK. 16k clone with banner N=800000 = OVERCLAIM."
+    },
+    {
+      "id": "RC-REDUCTION-ABSENT",
+      "statement": "REDUCTION_X1000=NOT_EMITTED on 16k/synonym KEEP. Scale bags print REDUCTION_VS_N_X1000. Cap sweep shows cap is not binding (emit 1\u20133). Cannot freeze CAND_CAP_FINAL as Master \u226590% cap policy from this cartesian image.",
+      "fix": "Auditor may record a candidate cap=16 / DDR bound=1632 bytes. Freeze FINAL only after ACCEPT. Never 1-CAND_CAP/N."
+    },
+    {
+      "id": "RC-INCOMP-POLICY",
+      "statement": "N4096 INTERSECT closed with SEARCH_INCOMPLETE on sentinel; STREAM-02 fixed AND-then-cap. Scale bags must FAIL on incomp for gold_n>=1.",
+      "fix": "Keep STREAM-02 instantiate. Late gold n-2 and sentinel n-1 must HIT. incomp=1 = bag FAIL."
+    },
+    {
+      "id": "RC-NL-ONE-ALIAS",
+      "statement": "Frozen QSE cannot bind supply\u2260feeds; 1-pair overlay remaps id 1\u21924. Not general NL.",
+      "fix": "C1 required paraphrase class: either stay on supported aliases in the frozen synonym table (new named law if more pairs) or FAIL that class honestly. Do not silent-patch C0."
+    },
+    {
+      "id": "RC-OCCUPANCY-BLOWUP",
+      "statement": "16k max occ=142; same 120 entities at 800k projects occ\u22486933 \u2192 DDR bytes and SEARCH_INCOMPLETE risk.",
+      "fix": "Either widen entity namespace (new named corpus, not C0) or prove stream merge + page-skip still HIT late gold within MERGE_POST_AR_MAX and emit SEARCH_INCOMPLETE when not."
+    },
+    {
+      "id": "RC-MERGE-BUDGET-256",
+      "statement": "Synonym DUT copies STREAM-02 with MERGE_POST_AR_MAX=256. Projected 800k two-list walk exceeds that budget (proj occ=6933).",
+      "fix": "Do not silent-bump the KEEP file. Named wrap parameter or PAGE-SKIP bag first. 65k/262k rungs will show the trip before 800k if occupancy scales with N."
+    },
+    {
+      "id": "RC-AXI-MEM-NOT-DDR",
+      "statement": "C1 bags use axi_mem_model. C2 is persist-to-DDR. Closing C1 XSim does not close C2.",
+      "fix": "C1 XSim may close without MIG. C2 first bag is persist identity. Do not freeze DDR_QUERY_BOUND_FINAL from AXI procedural bytes. PROGRAM=NO until persist XSim."
+    }
+  ]
+}

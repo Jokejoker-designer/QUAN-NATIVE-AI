@@ -1,0 +1,167 @@
+{
+  "contract_id": "ASTRA_C0_FINAL_CONTRACT",
+  "gate": "C0_FINAL_AUTHORITY_AND_LAW_FREEZE",
+  "master": "docs/ASTRA/authority/ASTRA_NATIVE_AI_MASTER_V1_1_POST_SILICON_FINAL.md",
+  "master_section": "6",
+  "bag": "results/A7-NATIVE-GRAPH/ASTRA-C0-LAW-FREEZE-01",
+  "recorded_at_utc": "2026-09-07T01:02:20Z",
+  "hash_algorithm": "SHA256",
+  "hash_tool": "PowerShell Get-FileHash -Algorithm SHA256",
+  "cwd": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "branch": "grok-orch/astra-native-v1-00",
+  "git_head": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+  "c1_800k_inspected": false,
+  "c1_800k_generated": false,
+  "PROGRAM": "NO",
+  "PRODUCTION_TOP": "UNKNOWN",
+  "BOARD_PASS": "NOT_CLAIMED",
+  "ASTRA-13": "NOT_CLOSED",
+  "hash_check": {
+    "policy": "live Get-FileHash; FAIL on expected-prefix mismatch; do not invent",
+    "sgd_expected_prefix": "b66ef328",
+    "a09r2_expected_prefix": "15a919f1",
+    "leftover_a09_expected_prefix": "9fdbe0d6",
+    "checkpoint_bit_expected": "e51bdca253a7179aa1037695918d0069c43770581a3152665fb8a2739ed461bb",
+    "sgd_match": true,
+    "a09r2_match": true,
+    "leftover_a09_match": true,
+    "checkpoint_bit_match": true,
+    "result": "PASS"
+  },
+  "ROLE_PARSER_LAW": {
+    "law_id": "qse-v2-role-00",
+    "status": "FROZEN_CHECKPOINT",
+    "rtl": "rtl/native_graph/query/a7ng_query_role_extract.sv",
+    "rtl_sha256": "cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27",
+    "lexicon": "rtl/native_graph/query/qse_role_lexicon.svh",
+    "lexicon_sha256": "381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c",
+    "lexicon_n": 59,
+    "instantiated_in_checkpoint": true,
+    "instantiation": "a7ng_query_axi_sparse LAW_SEL=1 → a7ng_query_role_extract inside a7ng_astra_09_r2_cand_ovf u_a09r2"
+  },
+  "QUERY_KEY_LAW": {
+    "law_id": "qse-v2-role-00",
+    "status": "FROZEN_CHECKPOINT",
+    "LAW_SEL": 1,
+    "rtl": "rtl/native_graph/integrate/a7ng_query_axi_sparse.sv",
+    "rtl_sha256": "5a4ad04d498c588b4447431c290a862252abfbecdef8e934ed4215b9b9c5c0fa",
+    "note": "LAW_SEL=1 maps subj→entity_id_o, obj→intent_id_o. LAW_SEL=0 qse-v1 is control-only and is not the checkpoint parser."
+  },
+  "QSE_V1_CONTROL": {
+    "law_id": "qse-v1-lexicon-hdc-00",
+    "status": "FROZEN_CONTROL_NOT_CHECKPOINT_PARSER",
+    "rtl": "rtl/native_graph/query/a7ng_query_struct_extract.sv",
+    "rtl_sha256": "ede064f0c2a5c956eeba5269f539690dbd63c0773b9ded11128bd9be05496768",
+    "lexicon": "rtl/native_graph/query/qse_lexicon.svh",
+    "lexicon_sha256": "420c04b9dfb649a0569af25024a08c44f59d7598f2f2a3f1ae13c68b349c5cf7",
+    "instantiated_in_checkpoint": false
+  },
+  "LEARNER_LAW": {
+    "law_id": "native-rank-sgd-q8-v1-sym-f2r2",
+    "status": "FROZEN_CHECKPOINT",
+    "rtl": "rtl/native_graph/learn/a7ng_shared_rank_sgd_q8_sym_f2r2.sv",
+    "rtl_sha256": "b66ef32847bae8dceb902b36a2755eae8bcd48289bd00c133fb16f095fc67aac",
+    "expected_prefix": "b66ef328",
+    "N": 32,
+    "SHIFT": 6,
+    "instantiated_in_checkpoint": true,
+    "instantiation": "u_a09r2.u_sgd inside a7ng_astra_09_r2_cand_ovf"
+  },
+  "SGD_ROUNDING_LAW": {
+    "law_id": "native-rank-sgd-q8-v1-symmetric-RSH",
+    "status": "FROZEN_CHECKPOINT",
+    "RSH": "sign(v)*floor((abs(v)+2^(s-1))/2^s)",
+    "v_q8": "clamp(RSH(acc,7), -768, +768)",
+    "w_next": "sat16(w + RSH(error * x, 7 + SHIFT))",
+    "SHIFT": 6,
+    "note": "Floor-shift F2R >>> is a different law and is not this freeze."
+  },
+  "A09_R2_DUT": {
+    "module": "a7ng_astra_09_r2_cand_ovf",
+    "status": "FROZEN_CHECKPOINT",
+    "rtl": "rtl/native_graph/integrate/a7ng_astra_09_r2_cand_ovf.sv",
+    "rtl_sha256": "15a919f19226bad2c8dc87f7862246a3869643db022303338cca5f8d8b70ee23",
+    "expected_prefix": "15a919f1",
+    "svh": "rtl/native_graph/integrate/a7ng_astra_09_r2_cand_ovf.svh",
+    "svh_sha256": "feaed571ce02bec4218e2105986349a464d6c44bcf1a818260ee27a171afd329",
+    "checkpoint_instance": "u_a09r2",
+    "parameter_overrides_on_wrap": "NONE_DEFAULTS_USED"
+  },
+  "LEFTOVER_A09_INTEG_PATH": {
+    "module": "a7ng_astra_09_integ_path",
+    "status": "FROZEN_NOT_INSTANTIATED_IN_CHECKPOINT",
+    "rtl": "rtl/native_graph/integrate/a7ng_astra_09_integ_path.sv",
+    "rtl_sha256": "9fdbe0d642dd5f36d1c43626de71a125cfbf7725ffa9dd81e920ecfebb5c776c",
+    "expected_prefix": "9fdbe0d6",
+    "svh": "rtl/native_graph/integrate/a7ng_astra_09_integ_path.svh",
+    "svh_sha256": "ad2d66d4783bba33cfbd324fc0a9661fb2a46eeaffb5b4fb6989246fb4e94302",
+    "instantiated_in_checkpoint": false,
+    "note": "Keep off the checkpoint xvlog/impl DUT list. Wrap comment and impl tcl FORBIDDEN_DUT if this cell appears."
+  },
+  "UART": {
+    "rx": {
+      "rtl": "rtl/board/uart_rx.sv",
+      "sha256": "8e802d0b4f7466d7683c9b0109d6666ba5b5d77cf67e45f5ab7c0564bcd5369a"
+    },
+    "tx": {
+      "rtl": "rtl/board/uart_tx.sv",
+      "sha256": "b4b7d09758cc95bb52a382bf5c11b5861ddcf0f74055d478824386531b36367b"
+    },
+    "framing": "115200 8N1 MAGIC=A2 EOL=0A CMD_REW=A6 CMD_RET=A7 OBS_TAG=57 TX_N=16",
+    "pins": {"UART_RXD_OUT": "D10", "UART_TXD_IN": "A9"}
+  },
+  "CHECKPOINT_BIT": {
+    "top": "a7ng_astra_11_a09r8_uart_freeze_wrap",
+    "file": "results/A7-NATIVE-GRAPH/ASTRA-11-A09R8-UART-FREEZE-BIT-01/a7ng_astra_11_a09r8_uart_freeze_wrap.bit",
+    "sha256": "e51bdca253a7179aa1037695918d0069c43770581a3152665fb8a2739ed461bb",
+    "bytes": 3826016,
+    "jtag": "210319BE776EA",
+    "device": "xc7a100t_0",
+    "part": "xc7a100tcsg324-1",
+    "status": "PROGRAMMED_CHECKPOINT_NOT_PRODUCTION_TOP",
+    "wrap_sha256": "f4ff4d769d4f1acb1e718b283562ee47a03bf69f99bccb6554b754a86610d443",
+    "plant_sha256": "d7951ce830f19ed2e3f0dd0a5729582da52f0aedd8e361acff1534c899a3a1d0",
+    "plant_class": "LABELED_AXI_PLANT_NOT_DDR"
+  },
+  "INSTANTIATED_BOUNDS": {
+    "CAND_CAP": 16,
+    "CAND_CAP_source": "A7NG_A09R2_CAND_CAP default; wrap does not override",
+    "MAX_PATH": 4,
+    "MAX_PATH_source": "A7NG_A09R2_MAX_PATH default; wrap does not override",
+    "MAX_HOPS": 2,
+    "MAX_HOPS_source": "Master V1.1 freeze. A09-R2 S_EJ composes two edges. Silicon smoke npath=2. Not a Verilog parameter named MAX_HOPS.",
+    "CAND_CAP_SWEEP": "NOT_FROZEN",
+    "CAND_CAP_FINAL": "NOT_FROZEN",
+    "DDR_QUERY_BOUND_FINAL": "NOT_FROZEN"
+  },
+  "MASTER_C0_VERSION_TABLE": {
+    "DOMAIN_VERSION": "CHECKPOINT_QSE_V2_ROLE_00_LEXICON_59; production domain image NOT_FROZEN",
+    "TOKENIZER_VERSION": "streaming tokenizer inside a7ng_query_role_extract.sv (same SHA as ROLE_PARSER_LAW); no separate package id",
+    "VOCAB_VERSION": "parser=qse_role_lexicon.svh; LM vocab NOT_FROZEN",
+    "QUERY_PACKET_VERSION": "A09R8_R7_MAGIC_A2_16BYTE",
+    "ROLE_PARSER_LAW": "qse-v2-role-00",
+    "QUERY_KEY_LAW": "qse-v2-role-00 LAW_SEL=1",
+    "CORPUS_SCHEMA_VERSION": "NOT_FROZEN",
+    "INDEX_SCHEMA_VERSION": "NOT_FROZEN",
+    "CAND_CAP_SWEEP": "NOT_FROZEN",
+    "RULE_TABLE_VERSION": "NOT_FROZEN",
+    "MAX_HOPS": 2,
+    "LEARNER_LAW": "native-rank-sgd-q8-v1-sym-f2r2",
+    "SGD_ROUNDING_LAW": "native-rank-sgd-q8-v1-symmetric-RSH",
+    "PERSIST_SCHEMA_VERSION": "NOT_FROZEN",
+    "LM_CONTEXT_SERIALIZATION_VERSION": "NOT_FROZEN"
+  },
+  "LM06_BYTE256": "NOT_FROZEN",
+  "DDR_INDEX": "NOT_FROZEN",
+  "explicitly_not_this_contract": [
+    "production DDR/MIG index path",
+    "stable-law 800k retrieval",
+    "production DDR learned-state persistence",
+    "integrated held-out transfer",
+    "LM06 meaningful grounded generation",
+    "one complete production top",
+    "final whole-chip co-fit",
+    "ASTRA-13 blind final exam",
+    "historical ASTRA-02-U5 800k as C1"
+  ]
+}

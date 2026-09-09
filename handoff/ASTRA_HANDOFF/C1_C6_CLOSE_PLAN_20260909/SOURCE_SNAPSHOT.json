@@ -1,0 +1,42 @@
+[
+  {
+    "path": "rtl/native_graph/integrate/a7ng_astra_c4_lm06_grounded_gen.sv",
+    "sha256": "1FBDC00A4E040B2FFD925DFC8477129F4C14247768CEB0C73CBF3A31D5F2503B"
+  },
+  {
+    "path": "rtl/native_graph/integrate/a7ng_astra_c4_lm06_grounded_gen.svh",
+    "sha256": "F99DF367F58E655A52D56CC04F37F6A421218C9A5028BCFDBD303A9A6F5DC14B"
+  },
+  {
+    "path": "rtl/native_graph/integrate/a7ng_astra_c4_lm06_byte256.sv",
+    "sha256": "F63F35AD5D33210F9387EABA3456105ADF222B6E0E9C5C62D78D9E2E2EB8C926"
+  },
+  {
+    "path": "rtl/native_graph/integrate/a7ng_astra_c5_prod_top.sv",
+    "sha256": "C4FCCA30C945A550F81F0870025C8D52875CD6097DFBFC459AEB1FE47A367922"
+  },
+  {
+    "path": "rtl/native_graph/integrate/a7ng_astra_c5_prod_top.svh",
+    "sha256": "CB4FE1B6BACDD7FC8F06CB9B62C53FA3561D41158CC754FBD6C22E39AFC0A874"
+  },
+  {
+    "path": "rtl/native_graph/integrate/a7ng_astra_c2_persist_commit.sv",
+    "sha256": "86A7A0695712D9AA818BF95AAC30B83289FB9AF80DDD0BDC2455E935A14D8764"
+  },
+  {
+    "path": "rtl/native_graph/integrate/a7ng_astra_c3_held_out.sv",
+    "sha256": "CFB896325A0911C37281C217CFF17878D329627F83A2F794F443131C1B530DFC"
+  },
+  {
+    "path": "rtl/native_graph/integrate/a7ng_astra_c6_wholechip.sv",
+    "sha256": "64275BA07FEF59F6C0AE2A515B38DFD8E747DF8A57C8CC5ED44E019002C34EA5"
+  },
+  {
+    "path": "docs/ASTRA/LOOP_STATE.json",
+    "sha256": "33C80AA77646B3CBA539A675F7E2C5F5EB56D9C3A9241AC86ED0E048596215E2"
+  },
+  {
+    "path": "results/A7-NATIVE-GRAPH/ASTRA-C6-WHOLECHIP-COFIT-03/FREEZE_MANIFEST.txt",
+    "sha256": "EF1AC43596434040EAB59C2246023D27012155B6D8348FFFAE25BC7AD1E68A54"
+  }
+]

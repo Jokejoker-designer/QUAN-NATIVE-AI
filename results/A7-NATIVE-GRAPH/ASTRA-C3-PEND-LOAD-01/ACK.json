@@ -1,0 +1,7 @@
+{
+  "gate": "ASTRA-C3-PEND-LOAD-01",
+  "program": false,
+  "board_pass": false,
+  "self_accept": false,
+  "one_unknown": "ckpt_pend AXI reload installs 32 weights plus pending proof IDs and phi into the named C3 wrap load ports without TB force during the exam"
+}

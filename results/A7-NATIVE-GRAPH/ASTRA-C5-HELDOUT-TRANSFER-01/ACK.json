@@ -1,0 +1,8 @@
+{
+  "gate": "ASTRA-C5-HELDOUT-TRANSFER-01",
+  "program": false,
+  "board_pass": false,
+  "mig": false,
+  "master_c5_claimed": false,
+  "one_unknown": "held-out PRE distractor vs POST gold dest after +rew train on C5 prod_top; modeled AXI not MIG"
+}

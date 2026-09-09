@@ -1,0 +1,13 @@
+{
+  "gate": "ASTRA-C4-BIAS-LOAD-DEAD-01",
+  "program": false,
+  "fixes_dut": false,
+  "master_c4_claimed": false,
+  "required_class_substrings": [
+    "CLASS_v_slice_is_zero",
+    "CLASS_bias_idx1_rejected",
+    "CLASS_bias_idx63_rejected"
+  ],
+  "marker": "ASTRA_C4_BIAS_LOAD_DEAD_XSIM_PASS",
+  "note": "Falsifier. PASS means the guard is dead. Do not regenerate after xvlog."
+}

@@ -1,0 +1,32 @@
+# SHA freeze BEFORE xvlog 2026-09-07T08:31:56.0070125+07:00
+# PROGRAM=NO C1_800K=OPEN CAND_CAP=16 N=256 LAW_SEL=1
+# HASH_GATE MATCH vs C0 FINAL_CONTRACT
+# FROZEN_RTL
+cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27  rtl/native_graph/query/a7ng_query_role_extract.sv
+381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c  rtl/native_graph/query/qse_role_lexicon.svh
+09334e42c3913d4de3a1b59147f48c810481cd634e63b37e64bc669a6c36bb24  rtl/native_graph/memory/a7ng_sparse_dir_axi.sv
+5a4ad04d498c588b4447431c290a862252abfbecdef8e934ed4215b9b9c5c0fa  rtl/native_graph/integrate/a7ng_query_axi_sparse.sv
+49a66da21dc075d1487c320d399643ff94e87b02af13f3d6f36d346a1be3a385  rtl/native_graph/query/a7ng_route_valid_gate.sv
+# COMPILED
+7cf9885217562c8e26b3c8818b10b4488fd637621b62f6a3652fe7ff5aee57a6  rtl/native_graph/pkg/a7ng_pkg.sv
+cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27  rtl/native_graph/query/a7ng_query_role_extract.sv
+49a66da21dc075d1487c320d399643ff94e87b02af13f3d6f36d346a1be3a385  rtl/native_graph/query/a7ng_route_valid_gate.sv
+09334e42c3913d4de3a1b59147f48c810481cd634e63b37e64bc669a6c36bb24  rtl/native_graph/memory/a7ng_sparse_dir_axi.sv
+40df08bb58e7eb6e1cc0f0a87b4d67564e8ea602cace166c67eed7d088d8007c  rtl/native_graph/memory/a7ng_axi_mem_model.sv
+5a4ad04d498c588b4447431c290a862252abfbecdef8e934ed4215b9b9c5c0fa  rtl/native_graph/integrate/a7ng_query_axi_sparse.sv
+625617b301adfdbb711c44b60b64a2684660549d7b10c1f84ba8f16c44c54173  results/A7-NATIVE-GRAPH/ASTRA-C1-N256-ROLE-RETRIEVAL-01/tb_astra_c1_n256.sv
+# TRANSITIVE_INCLUDES
+9a06e6d390dff66db34daa395a29ea563bed2365e9f2db5bdedcfcb9e9added7  rtl/native_graph/control/a7ng_gate14_crc.svh
+381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c  rtl/native_graph/query/qse_role_lexicon.svh
+4b61d88f56ccfd9186ed104602d3b914741190ce3b58cb8da5da7d74779c3dfd  results/A7-NATIVE-GRAPH/ASTRA-C1-N256-ROLE-RETRIEVAL-01/query_gold.svh
+# INDEPENDENT_GOLD_BEFORE_XVLOG
+414f9952583084e3e7c25b1c1e70a6bc1c3dca28e235291f6476f968a66b95b7  results/A7-NATIVE-GRAPH/ASTRA-C1-N256-ROLE-RETRIEVAL-01/GOLDEN.json
+4b61d88f56ccfd9186ed104602d3b914741190ce3b58cb8da5da7d74779c3dfd  results/A7-NATIVE-GRAPH/ASTRA-C1-N256-ROLE-RETRIEVAL-01/query_gold.svh
+8c342aa23afdbfc8da7f253ee235ccde3a0d0beec40a3cbcdb4e3a487bd22f34  results/A7-NATIVE-GRAPH/ASTRA-C1-N256-ROLE-RETRIEVAL-01/corpus.json
+# BAG
+5fde9a7f1642cf32d52a3d316cc796a356345f5dc085712c1c8b5dc966ea628b  results/A7-NATIVE-GRAPH/ASTRA-C1-N256-ROLE-RETRIEVAL-01/PREREG.md
+3d0282c826a6cc2b3539cf35b3f34cd7d356ed0e0b75ab7a73076fc2a4e0a05f  results/A7-NATIVE-GRAPH/ASTRA-C1-N256-ROLE-RETRIEVAL-01/ACK.json
+13d824d801a2b6b32bd2445e8cd27e8f2a5c21d1523139b71bb0ed30eff18b0a  results/A7-NATIVE-GRAPH/ASTRA-C1-N256-ROLE-RETRIEVAL-01/run_xsim.ps1
+27e1b80e00fd02c96e97dedb9619bf61c59a955af0f37d0102baa6a8a5a958da  results/A7-NATIVE-GRAPH/ASTRA-C1-N256-ROLE-RETRIEVAL-01/host_astra_c1.py
+625617b301adfdbb711c44b60b64a2684660549d7b10c1f84ba8f16c44c54173  results/A7-NATIVE-GRAPH/ASTRA-C1-N256-ROLE-RETRIEVAL-01/tb_astra_c1_n256.sv
+# FORBIDDEN leftover a7ng_astra_09_integ_path NOT on xvlog DUT list

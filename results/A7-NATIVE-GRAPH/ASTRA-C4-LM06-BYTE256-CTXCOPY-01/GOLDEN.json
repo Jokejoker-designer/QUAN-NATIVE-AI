@@ -1,0 +1,29 @@
+{
+  "gate": "ASTRA-C4-LM06-BYTE256-CTXCOPY-01",
+  "program": false,
+  "master_c4_claimed": false,
+  "board_pass": false,
+  "lm06_byte256_frozen": false,
+  "vocab_ver": 2,
+  "n_hold": 20,
+  "n_unsupported": 20,
+  "train_obj_declared": [10, 11, 12, 13, 14, 15, 16, 17, 18, 19],
+  "hold_obj": [20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39],
+  "required_class_substrings": [
+    "CLASS_no_obj_lut",
+    "CLASS_dict_fpga_visible",
+    "CLASS_query_proof_bytes",
+    "CLASS_entities_disjoint",
+    "CLASS_path_evid_lm_feedback_eos",
+    "CLASS_host_next_token_zero",
+    "CLASS_grounded_acc_ge90",
+    "CLASS_unsupported_safe_ge95",
+    "CLASS_halluc_le5",
+    "CLASS_w_zero_differs",
+    "CLASS_evid_replaced_changes",
+    "CLASS_eos_or_max",
+    "CLASS_not_compose_renderer"
+  ],
+  "marker": "ASTRA_C4_LM06_BYTE256_CTXCOPY_XSIM_PASS",
+  "note": "GOLDEN lists identities and required CLASS strings, not a Master close. PROOF context-copy, not obj LUT, not 802k. Do not regenerate after xvlog."
+}

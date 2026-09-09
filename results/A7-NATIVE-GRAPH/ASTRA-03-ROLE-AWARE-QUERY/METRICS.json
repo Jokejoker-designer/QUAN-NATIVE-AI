@@ -1,0 +1,19 @@
+{
+  "gate": "ASTRA-03-ROLE-AWARE-QUERY",
+  "law": "qse-v2-role-00",
+  "control_law": "qse-v1-lexicon-hdc-00",
+  "n_queries": 21,
+  "n_reverse_pairs": 7,
+  "reverse_packets_differ": true,
+  "reverse_keys_swap": true,
+  "paraphrase_identity_match": true,
+  "v1_role_keys_identical": true,
+  "v1_chiller_eid": 1,
+  "unrelated_emit": 0,
+  "n_host": 0,
+  "open_nlu_claimed": false,
+  "exam_sentence_rom": false,
+  "result_host": "PASS",
+  "result_xsim": "PASS",
+  "result": "PASS"
+}

@@ -1,0 +1,24 @@
+{
+  "gate": "ASTRA-SOC-RTP-WRAP-UART-XSIM",
+  "result": "PASS_NARROW",
+  "result_xsim": "ASTRA_SOC_RTP_WRAP_UART_XSIM_PASS",
+  "dut": "arty_a7_astra_rtp_soc_top",
+  "pipe": "a7ng_astra_rtp_pipe_r2",
+  "mem": "a7ng_axi_bram128",
+  "plant_r2_base": 1,
+  "tbl": 0,
+  "mmcm": "UNISIM_MMCME2_BASE",
+  "mmcm_stub_used": false,
+  "sim_ns": 3385615,
+  "xsim_elapsed_s": 15,
+  "xsim_cpu_ms": 14671,
+  "lock_rst_n_ps": 5645000,
+  "cases": {
+    "BASE_UART": {"st": 0, "ans": 4, "p0": 17, "p1": 34, "tbl": 0, "nload": 2, "magic": "a2"}
+  },
+  "bit": false,
+  "program": false,
+  "com12": "UNTOUCHED",
+  "board_pass": false,
+  "open_world_claimed": false
+}

@@ -1,0 +1,8 @@
+{
+  "gate": "ASTRA-C3-HELD-OUT-800K-RELOAD-01",
+  "program": false,
+  "board_pass": false,
+  "mig": false,
+  "master_c3_claimed": false,
+  "one_unknown": "retention drop after C2 persist_clr+reload on 800k cartesian 2-hop ctx overlay; C2 journals w0 only; w[1:31] TB-restored; not MIG; not silicon"
+}

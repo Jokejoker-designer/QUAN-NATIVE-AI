@@ -1,0 +1,21 @@
+{
+  "task_id": "ASTRA-12-PREPROGRAM-PACK-01",
+  "observed_session_id": "UNKNOWN",
+  "cwd": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "branch": "grok-orch/astra-native-v1-00",
+  "base": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+  "role": "implementer_not_v31_manager",
+  "write_scope": "new bag only: ACK + PACK.md + MISSING.md + POLICY.md + SHA256 of cited evidence + RESULTS/CLOSEOUT; no RTL; no bitstream; no prior-bag rewrite",
+  "PROGRAM": false,
+  "jtag": "NO_CALLS",
+  "bitstream": "NOT_BUILT",
+  "write_bitstream": false,
+  "xsdb": false,
+  "com12": "UNTOUCHED",
+  "hw_server": false,
+  "conflict_writer": false,
+  "preserves": "results/A7-NATIVE-GRAPH/ASTRA-11-A09-IMPL-ROUTE-01, ASTRA-11-SOC-WRAP*, ASTRA-SOC-RTP-WRAP-ROUTE, ASTRA-09-INTEGRATED-PATH-01, ASTRA-10-RESOURCE-BOUND-01, ASTRA-06-*, ASTRA-F2R-*, ASTRA-F3-*, ASTRA-12-FINAL-SOURCE-FREEZE, ASTRA-12B-POST-GLUE-FREEZE (not edited; those bags' run scripts not rerun); frozen RTL not patched; no .bit generated",
+  "prior_acceptance": "AUDITOR_20260906T1400Z ACCEPT_PARTIAL | REJECT_PROMOTION on ASTRA-11-A09-IMPL-ROUTE-01; bag PASS_NARROW routed WNS=+1.041 Design State=Routed clk50u 20 ns; Master ASTRA-11/13 OPEN; ASTRA-13 BLOCKED; BOARD still blocked YES; board plugged; PROGRAM=NO",
+  "gate_claim": "frozen evidence pack with hashes of routed A09 wrap WNS, A09 XSim marker, ASTRA-10 util_synth, ASTRA-06-R4 sess-reuse marker, plus explicit missing items (UART/LED I/O, SoC top identity, bitstream SHA, auditor ACCEPT_BOARD) — without claiming BOARD_PASS; production-top identity not silently chosen",
+  "does_not_close": ["Master_ASTRA-09", "Master_ASTRA-11_FULLCHIP_COFIT", "Master_ASTRA-12_FINAL_SOURCE_FREEZE_as_this_bag", "Master_F3_10pp_CI", "Master_ASTRA-06", "LM06", "BOARD_PASS", "ASTRA-13", "ASTRA-11_SoC_UART_wrap", "production_top_identity", "write_bitstream"]
+}

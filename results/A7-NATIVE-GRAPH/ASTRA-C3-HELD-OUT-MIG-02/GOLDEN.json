@@ -1,0 +1,25 @@
+{
+  "gate": "ASTRA-C3-HELD-OUT-MIG-02",
+  "program": false,
+  "master_c3_claimed": false,
+  "board_pass": false,
+  "mig": "XSIM_DIGILENT_AXI_MIG_SIM_PLUS_DDR3_MODEL",
+  "n_seed": 5,
+  "n_hold": 8,
+  "train_subjects": [10, 11, 1],
+  "hold_subjects": [6, 9],
+  "c3_to_cyc": 65535,
+  "required_class_substrings": [
+    "CLASS_mig_calib_complete",
+    "CLASS_arm_A_learner",
+    "CLASS_arm_B_frozen",
+    "CLASS_arm_C_shuffled",
+    "CLASS_arm_D_perid",
+    "CLASS_entities_disjoint",
+    "CLASS_host_winner_zero",
+    "CLASS_gain_A_over_B",
+    "CLASS_no_false_conflict"
+  ],
+  "marker": "ASTRA_C3_HELD_OUT_MIG_02_XSIM_PASS",
+  "note": "GOLDEN lists required log substrings and disjoint IDs, not post-hoc scores. Live CONFLICT C3 wrap. Do not regenerate after xvlog. Not C3_MASTER. Not BOARD_PASS."
+}

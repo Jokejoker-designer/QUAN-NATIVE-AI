@@ -1,0 +1,27 @@
+{
+  "gate": "ASTRA-C2-PERSIST-MIG-01",
+  "law": "astra-c2-persist-mig-01",
+  "schema_ver": 1,
+  "id_w": 20,
+  "persist_base": "0x06000000",
+  "journal_addr_is_low16_of_subject": false,
+  "mig": "XSIM_DIGILENT_AXI_MIG_SIM_PLUS_DDR3_MODEL",
+  "mig_prj": "third_party/digilent/arty-a7-100/E.0/1.0/mig.prj",
+  "program": false,
+  "BOARD_PASS": "NOT_CLAIMED",
+  "DDR_QUERY_BOUND_FINAL": "NOT_FROZEN",
+  "PERSIST_SCHEMA_VERSION": "NOT_FROZEN",
+  "C2_MASTER_CLOSED": false,
+  "high_id": {"subj": 799999, "rel": 4, "obj": 799998, "ctx": 703710, "gen": 3, "rew": 2, "w0": 2},
+  "alias_low16_subj": 13567,
+  "classes": [
+    "mig_calib_complete",
+    "schema_mismatch",
+    "persist_through_mig",
+    "journal_addr_not_low16",
+    "alias_attempt",
+    "bram_clear",
+    "reload_from_mig",
+    "false_success_zero"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "gate": "ASTRA-C5-AUTO-REWARD-REGRESS-01",
+  "program": false,
+  "fixes_dut": false,
+  "master_c5_claimed": false,
+  "required_class_substrings": [
+    "CLASS_auto_rew_pcmt",
+    "CLASS_auto_rew_w0",
+    "CLASS_no_uart_reward_frame"
+  ],
+  "marker": "ASTRA_C5_AUTO_REWARD_REGRESS_XSIM_PASS",
+  "note": "Falsifier. PASS means auto+3 on ANSWER without host reward. Do not regenerate after xvlog."
+}

@@ -1,0 +1,9 @@
+{
+  "gate": "ASTRA-C5-CONFLICT-MIG-01",
+  "program": false,
+  "board_pass": false,
+  "mig": true,
+  "master_c5_claimed": false,
+  "ddr_query_bound_final": "NOT_FROZEN",
+  "one_unknown": "same C5 hierarchy through official MIG PHY: positive 2-hop ANSWER then opposing negative-polarity 2-hop to same dest yields ST_CONFLICT=5"
+}

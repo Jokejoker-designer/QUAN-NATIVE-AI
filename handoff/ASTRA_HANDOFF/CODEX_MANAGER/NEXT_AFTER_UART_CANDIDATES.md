@@ -1,0 +1,9 @@
+# Prepared advice for existing Grok parent — NOT SENT
+
+Only after ASTRA-12-R3-UART-WRAP-CANDIDATES-01 gets its independent auditor and no child owns the next work. Parent stays01a014bd-7215-7ec0-845a-49b35a365632. Do not start a second parent or duplicate implementer.
+
+Read D:/FPGA/ASTRA_HANDOFF/ASTRA_NATIVE_AI_MASTER_V1.md and newest manager reviews. Stop extending the optional wrapper comparison ladder unless a demonstrated blocker requires it. Current reports do not select a production SoC: learned transfer, storage-backed state and LM06 remain missing.
+
+Next bounded work order proposal: ASTRA-01-LM06-CHECKPOINT-FEASIBILITY-RECONCILE. This is the early checkpoint/resource plan required by Master ASTRA-01, not an unauthorized F4 implementation campaign. One Grok read-only audit subagent inventories the exact locally available LM06 core, weight images, tokenizer/vocabulary, provenance, training objective and held-out generation evidence; reconcile8-bit input/10-bit output and materialized evidence contract. Reuse the old LM audit and inspect only missing/current evidence. No downloading, cloud training, rewriting RTL, build/program or historical bag modification. If checkpoint provenance or semantic evidence is missing, label UNKNOWN/NEEDS_EXPERIMENT, never assume trained weights. Produce one concrete local dataset/checkpoint/resource plan and compatibility limits, not another generic audit or fabricated PASS. Parent then obtains independent auditor review before any implementation expansion. This work does not close F3/persist/final or choose PRODUCTION_TOP.
+
+Keep PROGRAM=NO, no COM12/JTAG/bitstream. Do not relax constraints or remove LM/learning to promote a wrapper. If current evidence already closes this feasibility deliverable, reuse it and choose the next unresolved Master dependency instead of repeating it.

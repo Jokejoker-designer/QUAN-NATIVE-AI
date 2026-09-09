@@ -1,0 +1,19 @@
+{
+  "gate": "ASTRA-C4-LM06-RED-BYTE256-01",
+  "program": false,
+  "master_c4_claimed": false,
+  "closes_c4_master": false,
+  "rival": "reduced_lm06_compatible",
+  "tinygpt_802k": "NOT_USED",
+  "required_class_substrings": [
+    "CLASS_prefix_changes",
+    "CLASS_evidence_changes",
+    "CLASS_safe_no",
+    "CLASS_seq_ge3",
+    "CLASS_zero_changes",
+    "CLASS_host_tok0",
+    "CLASS_ref_match"
+  ],
+  "marker": "ASTRA_C4_LM06_RED_BYTE256_XSIM_PASS",
+  "note": "Named reduced decoder-only BYTE256. Causality this-gate. Language 90/95/5 remain MISS. Do not regenerate GOLDEN after xvlog."
+}

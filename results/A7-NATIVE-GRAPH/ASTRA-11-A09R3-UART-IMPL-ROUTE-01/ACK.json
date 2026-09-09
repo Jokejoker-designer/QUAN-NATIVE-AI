@@ -1,0 +1,23 @@
+{
+  "task_id": "ASTRA-11-A09R3-UART-IMPL-ROUTE-01",
+  "observed_session_id": "UNKNOWN",
+  "cwd": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "branch": "grok-orch/astra-native-v1-00",
+  "base": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+  "role": "implementer_not_v31_manager",
+  "write_scope": "new bag + distinctly named UART impl/route wrap that instantiates frozen a7ng_astra_09_r2_cand_ovf and board uart_rx/uart_tx with Arty pins D10/A9 (no copy-paste graph; frozen a7ng_astra_09_integ_path.sv not compiled as DUT; A09-R2 DUT source not patched; prior bags not edited)",
+  "PROGRAM": false,
+  "jtag": "NO_CALLS",
+  "bitstream": "NOT_BUILT",
+  "write_bitstream": false,
+  "xsdb": false,
+  "com12": "UNTOUCHED",
+  "hw_server": false,
+  "conflict_writer": false,
+  "PRODUCTION_TOP": "UNKNOWN",
+  "winner_frozen": false,
+  "preserves": "results/A7-NATIVE-GRAPH/ASTRA-09-R3-UART-XSIM-01 (not edited; UART XSim PASS_NARROW not claimed as this bag), ASTRA-11-A09R2-IMPL-ROUTE-01 (WNS=+0.648 not overwritten), ASTRA-11-A09-IMPL-ROUTE-01 (WNS=+1.041 not overwritten), ASTRA-SOC-RTP-WRAP-ROUTE (WNS=+5.733 not overwritten), ASTRA-SOC-RTP-WRAP-UART-XSIM, ASTRA-09-R2-CAND-OVF-01, ASTRA-09-INTEGRATED-PATH-01, ASTRA-10-*, ASTRA-12-*, ASTRA-06-*, ASTRA-F2R-*, ASTRA-F3-* (not edited; those bags' run scripts not rerun); frozen A09 RTL not patched (hash 9fdbe0d6…); R2 DUT not patched (hash 15a919f1…); frozen SGD not patched (hash b66ef328…); uart_rx/uart_tx not patched (8e802d0b… / b4b7d097…); no .bit generated; PRODUCTION_TOP not written as a module name",
+  "prior_acceptance": "AUDITOR_20260906T1700Z ACCEPT_PARTIAL on ASTRA-09-R3-UART-XSIM-01; UART 8N1 XSim PASS_NARROW CLOSED_NARROW; residual 5: production UART path still needs a named SoC top — this bag is impl+route of a new named UART wrap instantiating frozen A09-R2 with Arty UART pins D10/A9, no bitstream, not a freeze; ASTRA-11-A09R2-IMPL-ROUTE-01 routed WNS=+0.648 untouched; PRODUCTION_TOP UNKNOWN; ASTRA-13 BLOCKED; board plugged; PROGRAM=NO",
+  "gate_claim": "after implement+route of a new named UART wrap instantiating a7ng_astra_09_r2_cand_ovf on xc7a100tcsg324-1 at declared 50 MHz with uart_rxd_out D10 and uart_txd_in A9 constrained, is routed WNS >= 0 — without a bitstream; IOB UART present in io.rpt; not BOARD_PASS; not A09R2 wrap WNS=+0.648; not A09 wrap WNS=+1.041; not wrap-route WNS=+5.733; not UART XSim as this bag; not Master ASTRA-09/F3/LM06/ASTRA-13 close; PRODUCTION_TOP stays UNKNOWN",
+  "does_not_close": ["Master_ASTRA-09", "Master_F3_10pp_CI", "Master_ASTRA-06", "LM06", "BOARD_PASS", "ASTRA-13", "ASTRA-11_SoC_UART_wrap", "ASTRA-SOC-RTP-WRAP-UART-XSIM", "ASTRA-09-R3-UART-XSIM-01", "Master_ASTRA-10_whole_chip", "production_top_identity", "write_bitstream"]
+}

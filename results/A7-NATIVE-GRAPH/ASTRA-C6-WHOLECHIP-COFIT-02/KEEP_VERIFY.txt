@@ -1,0 +1,18 @@
+# KEEP verify after ASTRA-C6-WHOLECHIP-COFIT-02 r2 PASS
+# Independent KEEP_HASHES.json vs live Get-FileHash 2026-09-08T22:51+07:00. PROGRAM=NO.
+# GOLDEN hashed before first Vivado; not regenerated after r0 AV / r1 MISS.
+MATCH rtl/native_graph/query/a7ng_query_role_extract.sv cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27
+MATCH rtl/native_graph/query/a7ng_query_role_relctx_synonym.sv e862208ce34d8835c34fef1b2f2e4d32a91938a26cf22bc3854593ff852ea922
+MATCH rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect_synonym.sv a84bbf7e9a2c0b9e3753b3cb2e1ae734c2afde59267d733aa0e52108e47d8ec8
+MATCH rtl/native_graph/learn/a7ng_shared_rank_sgd_q8_sym_f2r2.sv b66ef32847bae8dceb902b36a2755eae8bcd48289bd00c133fb16f095fc67aac
+MATCH rtl/native_graph/integrate/a7ng_astra_c2_persist_commit.sv 86a7a0695712d9aa818bf95aac30b83289fb9af80ddd0bdc2455e935a14d8764
+MATCH rtl/ddr/mig_native_wrap.sv 97c078b18015e0c6a47ca4d41b659e483f2e983d37f8bb6e579efa4d19e523b5
+MATCH third_party/digilent/arty-a7-100/E.0/1.0/mig.prj 914a9e4bb1b3002837592944cdf49f8dfbaf4d112552dd8b5be48602ff1ac329
+MATCH rtl/native_graph/integrate/a7ng_lm_graph_arb.sv 04b5346ef984af6b7666e43e93fabc442c716f14508fa8545f109e5eb76e3b67
+KEEP_MISMATCHES=0
+NOTE live tree has no KEEP_HASHES.json; canonical file is independent-audit KEEP_HASHES.json
+GOLDEN frozen MATCH 1d9edf3cd94306dcf7ef41ec057c312b9ead718320031c3a22cc330d8158869b
+WRAP live MATCH 64275ba07fef59f6c0ae2a515b38dfd8e747df8a57c8cc5ed44e019002c34ea5
+PROD_TOP live MATCH c4fcca30c945a550f81f0870025c8d52875cd6097dfbfc459aeb1fe47a367922
+BIT evidence-only MATCH d69d39f9c5881c301b802ae06941ba1c27c32228c0557680e308eaf25b29d097
+PROGRAM=NO C6_MASTER=OPEN BOARD_PASS=REJECT

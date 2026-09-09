@@ -1,0 +1,7 @@
+# SHA freeze BEFORE xvlog 2026-09-06T00:17:56.7682538+07:00
+fa605e732e35dacf3336a062076c1a91f52664233637e8bfa200074608c2c5eb  rtl/native_graph/integrate/a7ng_astra_rtp_hop3.sv
+fa605e732e35dacf3336a062076c1a91f52664233637e8bfa200074608c2c5eb  rtl/native_graph/integrate/a7ng_astra_rtp_hop3.sv
+0de5903ec611ceebab77daa46b84f970a6ac16cf883cb49e7dec7b525f7045a9  results/A7-NATIVE-GRAPH/ASTRA-RTP-HOP3/PREREG.md
+35ad8a172fac50adbb9d04d3c80ae4740b1ac3a862f8e3b76fa3b4d02ed5c056  rtl/native_graph/integrate/a7ng_astra_rtp_pipe_r1.sv
+48c9e480cbf2f6820f61a379f95f948f942340fbf478f6fb036fa011212b488b  rtl/native_graph/integrate/a7ng_astra09_pipe.sv
+7840b49244163784618f415a68db7e3398782a0e468941918c6ad14bbc026dbd  results/A7-NATIVE-GRAPH/ASTRA-RTP-HOP3/tb_astra_hop3.sv

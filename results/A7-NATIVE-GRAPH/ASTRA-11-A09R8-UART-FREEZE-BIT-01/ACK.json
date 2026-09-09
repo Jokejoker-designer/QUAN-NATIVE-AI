@@ -1,0 +1,33 @@
+{
+  "task_id": "ASTRA-11-A09R8-UART-FREEZE-BIT-01",
+  "cwd": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "branch": "grok-orch/astra-native-v1-00",
+  "role": "implementer_not_v31_manager",
+  "PROGRAM": false,
+  "jtag": "NO_CALLS",
+  "bitstream": "MAY_WRITE_IF_WNS_WHS_UART_HOLD_MET",
+  "write_bitstream": "CONDITIONAL",
+  "xsdb": false,
+  "com12": "UNTOUCHED",
+  "hw_server": false,
+  "PRODUCTION_TOP": "UNKNOWN",
+  "wrap": "a7ng_astra_11_a09r8_uart_freeze_wrap",
+  "dut": "a7ng_astra_09_r2_cand_ovf",
+  "dut_instance": "u_a09r2",
+  "successor_of": "a7ng_astra_11_a09r7_uart_impl_wrap",
+  "b_bag_keep": "results/A7-NATIVE-GRAPH/ASTRA-11-A09R7-UART-IMPL-ROUTE-01",
+  "rca": "IOB FF + virtual uart_io_vclk hold WHS=-4.915; FALSE_PATH_HOLD made B WHS tautological; write_bitstream aborted",
+  "fix": "no UART IOB pad FFs; delays 2.000/0.500 vs uart_io_vclk; no FALSE_PATH_HOLD; write_bitstream iff WNS>=0 WHS>=0 UART hold numeric>=0",
+  "hold_policy": "RELATED_CHECK_NO_FALSE_PATH_HOLD",
+  "iob_ff_policy": "FALSE",
+  "does_not_close": [
+    "BOARD_PASS",
+    "ASTRA-13",
+    "ACCEPT_BOARD",
+    "LM06",
+    "Master_F3_10pp_CI",
+    "Master_ASTRA-06_DDR",
+    "production_top_identity_without_owner",
+    "programming_COM12"
+  ]
+}

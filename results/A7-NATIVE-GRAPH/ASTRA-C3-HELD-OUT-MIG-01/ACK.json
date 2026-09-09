@@ -1,0 +1,9 @@
+{
+  "gate": "ASTRA-C3-HELD-OUT-MIG-01",
+  "program": false,
+  "board_pass": false,
+  "mig": true,
+  "mig_class": "XSIM_DIGILENT_AXI_MIG_SIM_PLUS_DDR3_MODEL",
+  "master_c3_claimed": false,
+  "one_unknown": "compact C3 5-seed 4-arm held-out protocol with directory/posting/fact AXI through official MIG sim after calib, not 96-slot TB slave"
+}

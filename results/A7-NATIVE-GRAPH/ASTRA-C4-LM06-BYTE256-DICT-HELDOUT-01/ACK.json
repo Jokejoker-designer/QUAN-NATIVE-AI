@@ -1,0 +1,9 @@
+{
+  "gate": "ASTRA-C4-LM06-BYTE256-DICT-HELDOUT-01",
+  "program": false,
+  "board_pass": false,
+  "mig": false,
+  "master_c4_claimed": false,
+  "lm06_byte256_frozen": false,
+  "one_unknown": "preregistered held-out BYTE256 dict QUERY/PROOF name tokens meet 90/95/5 with weight+evidence ablations; host next-token=0; compact head not TinyGPT"
+}

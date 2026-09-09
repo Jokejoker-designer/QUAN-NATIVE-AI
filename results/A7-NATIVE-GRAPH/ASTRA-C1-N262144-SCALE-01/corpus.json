@@ -1,0 +1,33 @@
+{
+  "gate": "ASTRA-C1-N262144-SCALE-01",
+  "n": 262144,
+  "generator": "cartesian_n262144_v1",
+  "procedural": true,
+  "not_16k_clone": true,
+  "n_subjects": 190,
+  "n_rels": 8,
+  "ent0": 13,
+  "ent_hi": 202,
+  "n_stream": 262140,
+  "fill_cidx": 567,
+  "sent_cidx": 287091,
+  "fill_grid_nids": [
+    120,
+    121,
+    122
+  ],
+  "fill_sro": [
+    13,
+    4,
+    14
+  ],
+  "sentinel_nid": 262143,
+  "sentinel_sro": [
+    202,
+    8,
+    13
+  ],
+  "sentinel_text": "bootfit discharges boiler",
+  "historical_u5_cannot_close": true,
+  "records_materialized": false
+}

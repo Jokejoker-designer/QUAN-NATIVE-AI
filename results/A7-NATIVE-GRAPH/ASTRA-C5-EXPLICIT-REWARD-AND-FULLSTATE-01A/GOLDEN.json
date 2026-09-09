@@ -1,0 +1,17 @@
+{
+  "gate": "ASTRA-C5-EXPLICIT-REWARD-AND-FULLSTATE-01A",
+  "program": false,
+  "master_c5_claimed": false,
+  "closes_01b": false,
+  "required_class_substrings": [
+    "CLASS_query_no_sgd",
+    "CLASS_w32_delta0_two_infer",
+    "CLASS_rew_plus3",
+    "CLASS_rew_dup",
+    "CLASS_rew_crc",
+    "CLASS_rew_stale",
+    "CLASS_rew_frz"
+  ],
+  "marker": "ASTRA_C5_EXPLICIT_REWARD_01A_XSIM_PASS",
+  "note": "Named top only. Do not regenerate GOLDEN after xvlog."
+}

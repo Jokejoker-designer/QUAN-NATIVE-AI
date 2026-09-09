@@ -1,0 +1,5 @@
+# SHA verify AFTER xsim 2026-09-09T07:06:41.6742656+07:00
+f63f35ad5d33210f9387eaba3456105adf222b6e0e9c5c62d78d9e2e2eb8c926  rtl/native_graph/integrate/a7ng_astra_c4_lm06_byte256.sv
+e9686f9e784f6e180b8f1006a6d8097f3b88174c993104aedb280299a2a037c9  rtl/native_graph/integrate/a7ng_astra_c4_lm06_byte256_arlang_gen.sv
+3916c5f622a87168b7c20f80f6cbbb4e71a7c342e50d7212a5af8b2c47842ec4  results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-BYTE256-ARLANG-01/tb_astra_c4_lm06_byte256_arlang.sv
+e369d1f7e9c680b314c8c2efe64f93af74ca4b151903b1992883d8ef405ee602  rtl/native_graph/integrate/a7ng_astra_c4_lm06_byte256_arlang.hex

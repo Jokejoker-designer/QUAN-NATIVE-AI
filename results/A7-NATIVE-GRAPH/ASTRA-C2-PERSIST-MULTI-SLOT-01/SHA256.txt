@@ -1,0 +1,19 @@
+# SHA freeze BEFORE xvlog 2026-09-07T22:45:00.7806193+07:00
+# PROGRAM=NO BOARD_PASS=NOT_CLAIMED DDR_QUERY_BOUND_FINAL=NOT_FROZEN MIG=NO
+# LAW=astra-c2-persist-ms-01 CAP_N=2 N_AXI=4 ID_W=20 AXI_JOURNAL PERSIST_BASE=0x06000000
+# HASH_GATE MATCH vs C0 + persist-commit KEEP (not compiled as DUT)
+09334e42c3913d4de3a1b59147f48c810481cd634e63b37e64bc669a6c36bb24  rtl/native_graph/memory/a7ng_sparse_dir_axi.sv
+14f75db787dee2405dc917604e54b4ab0dbea5cb327d4c4485f5be5cd874f0ac  rtl/native_graph/integrate/a7ng_query_axi_sparse_stream_intersect.sv
+5a4ad04d498c588b4447431c290a862252abfbecdef8e934ed4215b9b9c5c0fa  rtl/native_graph/integrate/a7ng_query_axi_sparse.sv
+86a7a0695712d9aa818bf95aac30b83289fb9af80ddd0bdc2455e935a14d8764  rtl/native_graph/integrate/a7ng_astra_c2_persist_commit.sv
+cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27  rtl/native_graph/query/a7ng_query_role_extract.sv
+381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c  rtl/native_graph/query/qse_role_lexicon.svh
+49a66da21dc075d1487c320d399643ff94e87b02af13f3d6f36d346a1be3a385  rtl/native_graph/query/a7ng_route_valid_gate.sv
+8255a7988b902c4fd6d76679cc42ef0726d50099961f7c211010ace54a24d989  rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect_context.sv
+124be80804b38a1e1a924924091b751a4d13d85e28241695eda00ca5ded500d1  rtl/native_graph/query/a7ng_query_role_keys_ctx.sv
+# COMPILED
+bc8b8993edbba8bc048bc03ebc6398744cf80da01d346801c3683a15881682fd  rtl/native_graph/integrate/a7ng_astra_c2_persist_multi_slot.sv
+72866ea04d950e9e1233a0c57cb3ca91eb87d2d83e8d9892eb7387756e6f60c6  results/A7-NATIVE-GRAPH/ASTRA-C2-PERSIST-MULTI-SLOT-01/tb_astra_c2_persist_multi_slot.sv
+ccf002f6a82a6a4045938eedf40a3d2bbb5d8593ce6d0c2df04e43d4a0ca862b  rtl/native_graph/integrate/a7ng_astra_c2_persist_multi_slot.svh
+e452f698ff7b0b556183fe8a259f69e26803f234233e4c03b187c80e6f3fe308  results/A7-NATIVE-GRAPH/ASTRA-C2-PERSIST-MULTI-SLOT-01/GOLDEN.json
+# FORBIDDEN leftover A09 / C0 sparse / STREAM-02 / prior_store / ASTRA-06 / persist-commit not DUT

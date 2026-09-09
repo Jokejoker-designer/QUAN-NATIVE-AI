@@ -1,0 +1,20 @@
+{
+  "frozen_before_xvlog": true,
+  "iso": { "reward": 3, "x0": 50, "dw0": 5 },
+  "unrel": { "query": "payroll tax form", "status": 1, "npath": 0, "ans": 0, "p0": 0 },
+  "load_from_tb": 0,
+  "gen_seed": "0xA5F33001",
+  "tr_w": [0, 1, 2, 3, 4, 0, 1, 2],
+  "ho_w": [4, 3, 0, 1, 2, 4, 3, 1],
+  "overlap_q": [6, 7],
+  "shared_dest": 64,
+  "gold_p0_train": [16, 20, 24, 28, 32, 36, 40, 44],
+  "dist_p0_hold": [256, 260, 264, 268, 272, 276, 280, 284],
+  "gold_p0_hold": [258, 262, 266, 270, 274, 278, 282, 286],
+  "dist_p0_shuf_train": [128, 132, 136, 140, 144, 148, 152, 156],
+  "gold_p0_shuf_hold_nof": [384, 388, 392, 396, 400, 404, 408, 412],
+  "dist_p0_shuf_hold": [386, 390, 394, 398, 402, 406, 410, 414],
+  "hold_gold_dest": [112, 113, 114, 115, 116, 117, 64, 64],
+  "hold_dist_dest": [144, 145, 146, 147, 148, 149, 150, 151],
+  "note": "identities frozen; scores are not goldens. train gold dest=0x40 shared. hold dest 0x70+q disjoint except q6/q7 dest=0x40 overlap. 0x100=256, 0x102=258, 0x80=128, 0x180=384."
+}

@@ -1,0 +1,7 @@
+{
+  "gate": "ASTRA-C2-PERSIST-DDR-STALL-01",
+  "program": false,
+  "board_pass": false,
+  "mig": false,
+  "one_unknown": "AXI AW/W/B backpressure: persist+dirty WB complete, PERSISTED only after B OKAY, not MIG"
+}

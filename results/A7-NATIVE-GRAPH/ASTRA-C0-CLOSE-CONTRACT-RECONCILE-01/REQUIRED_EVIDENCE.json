@@ -1,0 +1,57 @@
+{
+  "program": false,
+  "board_pass": false,
+  "c3_preboard_verified": false,
+  "c3_board_confirmed": false,
+  "c4_master": "OPEN",
+  "c5_master": "OPEN",
+  "c6_master": "OPEN",
+  "c6_preboard_ready": false,
+  "LM06_BYTE256": "NOT_FROZEN",
+  "DDR_QUERY_BOUND_FINAL": "NOT_FROZEN",
+  "PERSIST_SCHEMA_VERSION": "NOT_FROZEN",
+  "TINYGPT_802K": "RETIRED_AS_CANDIDATE_NOT_AS_SECTION_550_LAW",
+  "section_550": "learner_target_not_lm06_ban",
+  "wo0550": "PROPOSAL_NOT_EXECUTABLE_CLOSE",
+  "letters": {
+    "C1": {
+      "kept": ["XSim 800k cartesian/procedural", "cap-sweep"],
+      "missing": ["production image+hash+coverage", "DDR_QUERY_BOUND_FINAL freeze"],
+      "owner_bag": "WO-03"
+    },
+    "C2": {
+      "kept": ["journal/commit/multi-slot/stall/MIG unit"],
+      "missing": ["full C3 SGD32 + pending serialize", "PERSIST_SCHEMA_VERSION freeze"],
+      "owner_bag": "WO-01B"
+    },
+    "C3": {
+      "kept": ["ID-disjoint, mutation, MIG CONFLICT this-gates"],
+      "missing": [">=5 seeds A/B/C/D CI", "full-vector reload drop<=5pp", "no TB restore w[1:31]"],
+      "preboard_label": "C3_PREBOARD_VERIFIED",
+      "board_label": "C3_BOARD_CONFIRMED"
+    },
+    "C4": {
+      "kept": ["BYTE256 adapter", "compact head this-gates", "dict/copy/ARLANG this-gates"],
+      "missing": ["prefix+evidence conditional language", "bias-load actually works", "held-out language metrics"],
+      "falsifier_bags": ["ASTRA-C4-BIAS-LOAD-DEAD-01"],
+      "owner_bag": "WO-02"
+    },
+    "C5": {
+      "kept": ["one hierarchy MIG regressions", "r4 grant-through"],
+      "missing": ["explicit UART reward", "token FIFO", "115200 params", "AXI RRESP/BRESP"],
+      "falsifier_bags": ["ASTRA-C5-AUTO-REWARD-REGRESS-01"],
+      "owner_bag": "WO-01A then WO-04 then WO-05"
+    },
+    "C6": {
+      "kept": ["bit edda8575 timing WNS=+0.233 this-gate"],
+      "missing": ["clean accepted-source freeze", "rebuild after C4/C5 canonical"],
+      "owner_bag": "WO-06",
+      "do_not_program": ["edda8575", "e51bdca2 as C6 license"]
+    }
+  },
+  "canonical_inputs": {
+    "uart": "framed commands + reward packet + query text + EOL",
+    "images": "builder corpus/index/dictionary/init-bank hashes not pinned",
+    "keep": "instantiate C0/C1/C2 KEEP only"
+  }
+}

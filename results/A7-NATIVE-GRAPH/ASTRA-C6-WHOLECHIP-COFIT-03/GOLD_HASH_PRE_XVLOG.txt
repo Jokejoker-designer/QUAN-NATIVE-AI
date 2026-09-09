@@ -1,0 +1,3 @@
+# GOLDEN.json SHA256 hashed BEFORE first Vivado
+# PROGRAM=NO Do not regenerate GOLDEN after FAIL
+e0d2d17a0c4ce73505c992079747e31ecb56e366050e70cfaba68b196e3db713

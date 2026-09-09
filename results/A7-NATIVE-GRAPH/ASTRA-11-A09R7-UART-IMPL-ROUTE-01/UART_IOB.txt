@@ -1,0 +1,4 @@
+UART_TXD_IN_A9=YES uart_txd_in
+UART_RXD_OUT_D10=YES uart_rxd_out
+UART_IOB=YES
+PROGRAM=NO

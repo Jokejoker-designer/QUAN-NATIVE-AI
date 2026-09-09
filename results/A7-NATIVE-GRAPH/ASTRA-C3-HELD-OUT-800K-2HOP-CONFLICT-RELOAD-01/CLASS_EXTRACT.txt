@@ -1,0 +1,17 @@
+# CLASS extract from raw xsim.log — ASTRA-C3-HELD-OUT-800K-2HOP-CONFLICT-RELOAD-01 r0
+# PROGRAM=NO. Do not edit GOLDEN. Marker start-of-line only.
+
+CLASS_entities_disjoint HIT train={13,15,16} hold={19,20}
+CLASS_flush_w0_zero HIT seed=0..4
+CLASS_c2_persist_reload HIT seed=0..4 w0=30
+CLASS_c2_w0_match HIT seed=0..4 w0=30
+CLASS_awaddr_06000000 HIT awaddr=6000000
+CLASS_host_winner_zero HIT
+CLASS_retention_le5pp HIT drop_pp=0 max_seed_drop=0
+CLASS_no_false_conflict HIT n_conf=0
+ASTRA_C3_HELD_OUT_800K_2HOP_CONFLICT_RELOAD_XSIM_PASS
+$finish 395635 ns
+ISO_P3 w0=5 viso=0 PASS ISO_P3_X50_DW5
+C3_RELOAD_SUM pre=40/40 post=40 drop_pp=0 max_seed_drop=0 host_bad=0 saw_base=1 n_false=0 n_conf=0
+GOLDEN a5428b0b10ad46fec4a8adfc6b1a5a562ac19f3374562ad0773e62f4058bd0f1
+C3_MASTER_CLAIM=NO BOARD_PASS=REJECT PROGRAM=NO quality=800K_CARTESIAN_2HOP_LIVE_CONFLICT_C2_W0_NOT_MIG

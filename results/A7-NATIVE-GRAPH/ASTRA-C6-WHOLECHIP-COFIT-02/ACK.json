@@ -1,0 +1,9 @@
+{
+  "gate": "ASTRA-C6-WHOLECHIP-COFIT-02",
+  "program": false,
+  "board_pass": false,
+  "mig": "official_user_design",
+  "master_c6_claimed": false,
+  "ddr_query_bound_final": "NOT_FROZEN",
+  "one_unknown": "does UART-loop C5 prod_top (grant-hold + wstrb) plus official Digilent AXI MIG still close timing on xc7a100tcsg324-1"
+}

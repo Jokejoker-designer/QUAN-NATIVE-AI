@@ -1,0 +1,9 @@
+{
+  "gate": "ASTRA-C4-LM06-BYTE256-ARLANG-01",
+  "program": false,
+  "board_pass": false,
+  "master_c4_claimed": false,
+  "lm06_byte256_frozen": false,
+  "tinygpt_802k": "RETIRED_PER_GROK_550",
+  "one_unknown": "compact AR BYTE256 emits yes+dest-name from embeddings AND proof bytes; host next-token=0"
+}

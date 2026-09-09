@@ -1,0 +1,269 @@
+{
+  "generated_at": "2026-09-07T17:21:05.857453+00:00",
+  "classification": "FACT from live files this run. C2_CLOSE=YES_XSIM is XSim law close only; BOARD_PASS stays REJECT; PERSIST_SCHEMA_VERSION stays NOT_FROZEN.",
+  "c2_close": "YES_XSIM",
+  "c3_may_start": "YES",
+  "board_pass": "REJECT",
+  "blocking_fail_ids": [],
+  "findings": [
+    {
+      "id": "C0_a7ng_query_role_extract.sv",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "rtl/native_graph/query/a7ng_query_role_extract.sv live=cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27 expected=cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C0_qse_role_lexicon.svh",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "rtl/native_graph/query/qse_role_lexicon.svh live=381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c expected=381899749158ecaa0b3209f16f618d6c65f4d8483f7ffff7ce0af3ffa4a50d0c",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C0_a7ng_sparse_dir_axi.sv",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "rtl/native_graph/memory/a7ng_sparse_dir_axi.sv live=09334e42c3913d4de3a1b59147f48c810481cd634e63b37e64bc669a6c36bb24 expected=09334e42c3913d4de3a1b59147f48c810481cd634e63b37e64bc669a6c36bb24",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C0_a7ng_query_axi_sparse.sv",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "rtl/native_graph/integrate/a7ng_query_axi_sparse.sv live=5a4ad04d498c588b4447431c290a862252abfbecdef8e934ed4215b9b9c5c0fa expected=5a4ad04d498c588b4447431c290a862252abfbecdef8e934ed4215b9b9c5c0fa",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C0_a7ng_route_valid_gate.sv",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "rtl/native_graph/query/a7ng_route_valid_gate.sv live=49a66da21dc075d1487c320d399643ff94e87b02af13f3d6f36d346a1be3a385 expected=49a66da21dc075d1487c320d399643ff94e87b02af13f3d6f36d346a1be3a385",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C2KEEP_a7ng_astra_c2_persist_commit.sv",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "rtl/native_graph/integrate/a7ng_astra_c2_persist_commit.sv live=86a7a0695712d9aa818bf95aac30b83289fb9af80ddd0bdc2455e935a14d8764 expected=86a7a0695712d9aa818bf95aac30b83289fb9af80ddd0bdc2455e935a14d8764",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C2KEEP_a7ng_astra_c2_persist_multi_slot.sv",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "rtl/native_graph/integrate/a7ng_astra_c2_persist_multi_slot.sv live=bc8b8993edbba8bc048bc03ebc6398744cf80da01d346801c3683a15881682fd expected=bc8b8993edbba8bc048bc03ebc6398744cf80da01d346801c3683a15881682fd",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C2KEEP_a7ng_astra_c2_persist_ddr_stall.sv",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "rtl/native_graph/integrate/a7ng_astra_c2_persist_ddr_stall.sv live=55f5ac0d4e9a5280d83951fb147fc85734417f7fff0ae22ed5d4422b65710862 expected=55f5ac0d4e9a5280d83951fb147fc85734417f7fff0ae22ed5d4422b65710862",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C2KEEP_a7ng_astra_c2_persist_mig.sv",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "rtl/native_graph/integrate/a7ng_astra_c2_persist_mig.sv live=17741214c066de125c7306cce47d1834531b2a7c8607febe3c9d91cc06a555b2 expected=17741214c066de125c7306cce47d1834531b2a7c8607febe3c9d91cc06a555b2",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C2KEEP_mig_native_wrap.sv",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "rtl/ddr/mig_native_wrap.sv live=97c078b18015e0c6a47ca4d41b659e483f2e983d37f8bb6e579efa4d19e523b5 expected=97c078b18015e0c6a47ca4d41b659e483f2e983d37f8bb6e579efa4d19e523b5",
+      "verdict": "PASS"
+    },
+    {
+      "id": "C2KEEP_mig.prj",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "third_party/digilent/arty-a7-100/E.0/1.0/mig.prj live=914a9e4bb1b3002837592944cdf49f8dfbaf4d112552dd8b5be48602ff1ac329 expected=914a9e4bb1b3002837592944cdf49f8dfbaf4d112552dd8b5be48602ff1ac329",
+      "verdict": "PASS"
+    },
+    {
+      "id": "MARKER_ASTRA-C2-PERSIST-COMMIT-01",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "marker=ASTRA_C2_PERSIST_COMMIT_XSIM_PASS present=True",
+      "verdict": "PASS"
+    },
+    {
+      "id": "DIVERGENCE_ASTRA-C2-PERSIST-COMMIT-01",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "FIRST_DIVERGENCE absent",
+      "verdict": "PASS"
+    },
+    {
+      "id": "GOLD_PRE_ASTRA-C2-PERSIST-COMMIT-01",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "GOLDEN=d24339078e62fc03976a45c3b7c0a14a802f2f7b4c46ae1723c43ddcc46d7963 in PRE_XVLOG=True",
+      "verdict": "PASS"
+    },
+    {
+      "id": "FALSE_ZERO_ASTRA-C2-PERSIST-COMMIT-01",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "false_success zero HIT",
+      "verdict": "PASS"
+    },
+    {
+      "id": "NO_BOARD_CLAIM_ASTRA-C2-PERSIST-COMMIT-01",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "bag does not claim BOARD_PASS",
+      "verdict": "PASS"
+    },
+    {
+      "id": "MARKER_ASTRA-C2-PERSIST-MULTI-SLOT-01",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "marker=ASTRA_C2_PERSIST_MULTI_SLOT_XSIM_PASS present=True",
+      "verdict": "PASS"
+    },
+    {
+      "id": "DIVERGENCE_ASTRA-C2-PERSIST-MULTI-SLOT-01",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "FIRST_DIVERGENCE absent",
+      "verdict": "PASS"
+    },
+    {
+      "id": "GOLD_PRE_ASTRA-C2-PERSIST-MULTI-SLOT-01",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "GOLDEN=e452f698ff7b0b556183fe8a259f69e26803f234233e4c03b187c80e6f3fe308 in PRE_XVLOG=True",
+      "verdict": "PASS"
+    },
+    {
+      "id": "FALSE_ZERO_ASTRA-C2-PERSIST-MULTI-SLOT-01",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "false_success zero HIT",
+      "verdict": "PASS"
+    },
+    {
+      "id": "NO_BOARD_CLAIM_ASTRA-C2-PERSIST-MULTI-SLOT-01",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "bag does not claim BOARD_PASS",
+      "verdict": "PASS"
+    },
+    {
+      "id": "MARKER_ASTRA-C2-PERSIST-DDR-STALL-01",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "marker=ASTRA_C2_PERSIST_DDR_STALL_XSIM_PASS present=True",
+      "verdict": "PASS"
+    },
+    {
+      "id": "DIVERGENCE_ASTRA-C2-PERSIST-DDR-STALL-01",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "FIRST_DIVERGENCE absent",
+      "verdict": "PASS"
+    },
+    {
+      "id": "GOLD_PRE_ASTRA-C2-PERSIST-DDR-STALL-01",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "GOLDEN=ef498f9f861de383e61940bf21fe7bc1974efbe92814075ae545c76f0d530195 in PRE_XVLOG=True",
+      "verdict": "PASS"
+    },
+    {
+      "id": "FALSE_ZERO_ASTRA-C2-PERSIST-DDR-STALL-01",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "false_success zero HIT",
+      "verdict": "PASS"
+    },
+    {
+      "id": "NO_BOARD_CLAIM_ASTRA-C2-PERSIST-DDR-STALL-01",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "bag does not claim BOARD_PASS",
+      "verdict": "PASS"
+    },
+    {
+      "id": "MARKER_ASTRA-C2-PERSIST-MIG-01",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "marker=ASTRA_C2_PERSIST_MIG_XSIM_PASS present=True",
+      "verdict": "PASS"
+    },
+    {
+      "id": "DIVERGENCE_ASTRA-C2-PERSIST-MIG-01",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "FIRST_DIVERGENCE absent",
+      "verdict": "PASS"
+    },
+    {
+      "id": "GOLD_PRE_ASTRA-C2-PERSIST-MIG-01",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "GOLDEN=9618d7acac2af5c4369cd67cfcc56fb19e92d474c6025184c2da83684ffc9c88 in PRE_XVLOG=True",
+      "verdict": "PASS"
+    },
+    {
+      "id": "FALSE_ZERO_ASTRA-C2-PERSIST-MIG-01",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "false_success zero HIT",
+      "verdict": "PASS"
+    },
+    {
+      "id": "NO_BOARD_CLAIM_ASTRA-C2-PERSIST-MIG-01",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "bag does not claim BOARD_PASS",
+      "verdict": "PASS"
+    },
+    {
+      "id": "MIG_RELOAD_IDENTITY",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "MIG reload + AWADDR 0x06000000",
+      "verdict": "PASS"
+    },
+    {
+      "id": "MIG_NOT_LOW16",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "journal address not low16",
+      "verdict": "PASS"
+    },
+    {
+      "id": "STALE_TXN_DEAD_CODE",
+      "ok": true,
+      "blocking_for_c2_close": false,
+      "detail": "WARN: F_BAD_TXN is after same-identity+gen DUP; distinct stale-txn fail_code is NOT_REACHABLE. Mapped to DUP HIT at C2 XSim close.",
+      "verdict": "PASS"
+    },
+    {
+      "id": "LOOP_C2_CLOSED_FLAG",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "c2_persist=CLOSED_XSIM_AXI_JOURNAL_PLUS_MIG_RELOAD closed=True promotion=REJECT",
+      "verdict": "PASS"
+    },
+    {
+      "id": "LOOP_BOARD_STILL_REJECT",
+      "ok": true,
+      "blocking_for_c2_close": true,
+      "detail": "board_pass false and final_promotion REJECT",
+      "verdict": "PASS"
+    },
+    {
+      "id": "SCHEMA_NOT_FROZEN",
+      "ok": true,
+      "blocking_for_c2_close": false,
+      "detail": "PERSIST_SCHEMA_VERSION stays NOT_FROZEN (quality bound, not a C2 XSim fail)",
+      "verdict": "PASS"
+    }
+  ]
+}

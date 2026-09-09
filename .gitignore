@@ -1,0 +1,81 @@
+# QUAN NATIVE AI — keep source, contracts, closeouts; drop machine dumps
+
+# secrets / machine-local
+.env
+.env.*
+*.pem
+*.p12
+*.pfx
+*.key
+id_rsa
+id_rsa.pub
+*.lic
+.cursor/mcp.json
+**/.cursor/mcp.json
+
+# OS / editor
+.DS_Store
+Thumbs.db
+Desktop.ini
+*~
+*.swp
+*.swo
+.idea/
+.vscode/
+*.code-workspace
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / GlassBox
+node_modules/
+.next/
+out/
+dist/
+coverage/
+playwright-report/
+
+# Vivado / XSim scratch
+.Xil/
+*.jou
+*.log
+*.str
+*.pb
+*.dmp
+xsim.dir/
+*.wdb
+*.vcd
+*.saif
+*.vvp
+*.sdb
+*.rtd
+*.exe
+webtalk*/
+usage_statistics*
+
+# Bitstreams and checkpoints (SHA lives in CLOSEOUT / MANIFEST)
+*.dcp
+*.bit
+*.bin
+*.mcs
+*.ltx
+
+# Generated / project-run trees
+build/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.gen/
+
+# Archives
+*.zip
+*.rar
+*.7z

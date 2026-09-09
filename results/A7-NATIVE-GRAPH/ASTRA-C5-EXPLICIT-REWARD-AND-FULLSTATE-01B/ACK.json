@@ -1,0 +1,9 @@
+{
+  "gate": "ASTRA-C5-EXPLICIT-REWARD-AND-FULLSTATE-01B",
+  "program": false,
+  "board_pass": false,
+  "dut": "a7ng_astra_c5_prod_top_ckpt",
+  "c2_instantiated": false,
+  "live_prod_top_untouched": "c4fcca30c945a550f81f0870025c8d52875cd6097dfbfc459aeb1fe47a367922",
+  "c2_keep_untouched": "86a7a0695712d9aa818bf95aac30b83289fb9af80ddd0bdc2455e935a14d8764"
+}

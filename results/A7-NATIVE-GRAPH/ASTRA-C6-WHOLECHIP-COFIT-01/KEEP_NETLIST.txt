@@ -1,0 +1,32 @@
+# KEEP_NETLIST — raw excerpt from util_hier_route.rpt
+# Design a7ng_astra_c6_wholechip  Device xc7a100tcsg324-1  State Routed
+# PROGRAM=NO  Do not paste LUT counts into GOLDEN.json
+
+FACT hier (Instance / Module):
+  u_c5        a7ng_astra_c5_prod_top
+    u_c2      a7ng_astra_c2_persist_commit
+    u_c3      a7ng_astra_c3_held_out
+      u_sp    a7ng_query_axi_sparse_intersect_synonym
+        u_qse a7ng_query_role_extract
+    u_gen     a7ng_astra_c4_lm06_grounded_gen
+  u_mig       mig_native_wrap
+    u_mig     mig_7series_0
+
+FACT SHA256.txt HASH_MATCH before this impl (prefixes):
+  a7ng_query_role_extract.sv                         cd7baf49
+  qse_role_lexicon.svh                               38189974
+  a7ng_sparse_dir_axi.sv                             09334e42
+  a7ng_query_axi_sparse.sv                           5a4ad04d
+  a7ng_route_valid_gate.sv                           49a66da2
+  a7ng_query_role_relctx_synonym.sv                  e862208c
+  a7ng_query_axi_sparse_intersect_synonym.sv         a84bbf7e
+  a7ng_astra_c2_persist_commit.sv                    86a7a069
+  a7ng_shared_rank_sgd_q8_sym_f2r2.sv                b66ef328  (live file SHA, flattened into u_c3)
+
+FACT drc.rpt: Checks found=1 severity=Warning rule=REQP-1709. ERROR=0 FATAL=0.
+
+INFERENCE: synonym overlay / SGD / uart may be flattened into parent
+instances (no separate Module row). A09 / tiny_gpt / a7ng_lm_graph_arb
+are absent from this hierarchy table.
+
+A09_IS_THIS_TOP=NO

@@ -1,0 +1,20 @@
+# CLASS extract from raw xsim.log -- ASTRA-C4-LM06-BYTE256-C3PROOF-01 r0
+# PROGRAM=NO. Do not edit GOLDEN. Marker start-of-line only.
+
+CLASS_not_compose_renderer HIT dut=a7ng_astra_c4_lm06_byte256_c3proof
+CLASS_c3_reasoner_instantiated HIT wrap=a7ng_astra_c3_held_out
+CLASS_fpga_dict_from_c3_ans HIT vocab_ver=3
+CLASS_entities_disjoint HIT train_dst={20..39} hold_dst={40..59}
+CLASS_grounded_acc_ge90 HIT acc=20/20 acc_pp=100
+CLASS_ans_matches_planted_dest HIT n=20
+CLASS_unsupported_safe_ge95 HIT safe=20/20 pp=100
+CLASS_halluc_le5 HIT hall=0/20
+CLASS_w_zero_differs HIT tok0=0
+CLASS_evid_replaced_changes HIT t0a=79 t0b=89
+CLASS_host_next_token_zero HIT
+CLASS_eos_or_max HIT saw_eos=40
+CLASS_path_c3_dict_ctxcopy_eos HIT n_hold=20 acc=22
+ASTRA_C4_LM06_BYTE256_C3PROOF_XSIM_PASS
+C4_MASTER_CLAIM=NO BOARD_PASS=REJECT PROGRAM=NO LM06_BYTE256=NOT_FROZEN quality=C3_DEST_FPGA_DICT_CTXCOPY_NOT_802K
+$finish called at time : 49905 ns : File "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-BYTE256-C3PROOF-01/tb_astra_c4_lm06_byte256_c3proof.sv" Line 254
+GOLDEN 20aac2f884da6a9d0852c0e501b40b7272ecd082502028be250011257ac50758

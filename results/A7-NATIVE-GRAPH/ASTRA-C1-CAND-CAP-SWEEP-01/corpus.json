@@ -1,0 +1,33 @@
+{
+  "gate": "ASTRA-C1-N800000-SCALE-01",
+  "n": 800000,
+  "generator": "cartesian_n800000_v1",
+  "procedural": true,
+  "not_16k_clone": true,
+  "n_subjects": 201,
+  "n_rels": 20,
+  "ent0": 13,
+  "ent_hi": 213,
+  "n_stream": 799996,
+  "fill_cidx": 600,
+  "sent_cidx": 803800,
+  "fill_grid_nids": [
+    120,
+    121,
+    122
+  ],
+  "fill_sro": [
+    13,
+    4,
+    14
+  ],
+  "sentinel_nid": 799999,
+  "sentinel_sro": [
+    213,
+    20,
+    13
+  ],
+  "sentinel_text": "hatchway splits boiler",
+  "historical_u5_cannot_close": true,
+  "records_materialized": false
+}

@@ -1,0 +1,23 @@
+{
+  "task_id": "ASTRA-12-R2-TOP-CANDIDATES-01",
+  "observed_session_id": "UNKNOWN",
+  "cwd": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "branch": "grok-orch/astra-native-v1-00",
+  "base": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+  "role": "implementer_not_v31_manager",
+  "write_scope": "new bag only: ACK + CANDIDATES.md + SHA256 of cited raw reports/XDC/io/bits + RESULTS/CLOSEOUT; no RTL; no bitstream; no freeze of a winner; no prior-bag rewrite",
+  "PROGRAM": false,
+  "jtag": "NO_CALLS",
+  "bitstream": "NOT_BUILT",
+  "write_bitstream": false,
+  "xsdb": false,
+  "com12": "UNTOUCHED",
+  "hw_server": false,
+  "conflict_writer": false,
+  "PRODUCTION_TOP": "UNKNOWN",
+  "winner_frozen": false,
+  "preserves": "results/A7-NATIVE-GRAPH/ASTRA-12-PREPROGRAM-PACK-01, ASTRA-11-A09-IMPL-ROUTE-01, ASTRA-11-SOC-WRAP*, ASTRA-11-TIMING-FIX, ASTRA-SOC-RTP-WRAP-ROUTE, ASTRA-11-RTP-SOC, ASTRA-09-INTEGRATED-PATH-01, ASTRA-10-RESOURCE-BOUND-01, ASTRA-06-*, ASTRA-F2R-*, ASTRA-F3-*, ASTRA-12-FINAL-SOURCE-FREEZE, ASTRA-12B-POST-GLUE-FREEZE (not edited; those bags' run scripts not rerun); frozen RTL not patched; no .bit generated; PRODUCTION_TOP not written as a module name",
+  "prior_acceptance": "AUDITOR_20260906T1430Z ACCEPT_PARTIAL | REJECT_PROMOTION on ASTRA-12-PREPROGRAM-PACK-01; bag PASS_NARROW pack-only; PRODUCTION_TOP=UNKNOWN; A09 wrap WNS=+1.041 Design State=Routed clk50u; Master ASTRA-12 unique-bit / ASTRA-13 OPEN; BOARD still blocked YES; board plugged; PROGRAM=NO; parent residual: do not silent-freeze a top; do not ASTRA-13",
+  "gate_claim": "table existing routed tops already in this clone (name, bag, WNS from raw timing, UART pins from XDC, IOB, bit built?) with hashes, while PRODUCTION_TOP remains UNKNOWN — without write_bitstream, without freezing a winner, without BOARD_PASS",
+  "does_not_close": ["production_top_identity", "Master_ASTRA-12_unique_bit_UART_plan", "Master_ASTRA-13", "BOARD_PASS", "write_bitstream", "ASTRA-11_FULLCHIP_COFIT", "Master_ASTRA-09", "Master_F3_10pp_CI", "Master_ASTRA-06", "LM06", "ACCEPT_BOARD"]
+}

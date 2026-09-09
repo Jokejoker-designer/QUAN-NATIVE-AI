@@ -1,0 +1,23 @@
+{
+  "task_id": "ASTRA-09-R3-UART-XSIM-01",
+  "observed_session_id": "UNKNOWN",
+  "cwd": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "branch": "grok-orch/astra-native-v1-00",
+  "base": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+  "role": "implementer_not_v31_manager",
+  "write_scope": "new bag + distinctly named UART wrap/TB/plant that instantiate frozen a7ng_astra_09_r2_cand_ovf (no copy-paste graph; frozen a7ng_astra_09_integ_path.sv not compiled as DUT; A09-R2 DUT source not patched)",
+  "PROGRAM": false,
+  "jtag": "NO_CALLS",
+  "bitstream": "NOT_BUILT",
+  "write_bitstream": false,
+  "xsdb": false,
+  "com12": "UNTOUCHED",
+  "hw_server": false,
+  "conflict_writer": false,
+  "PRODUCTION_TOP": "UNKNOWN",
+  "winner_frozen": false,
+  "preserves": "results/A7-NATIVE-GRAPH/ASTRA-11-A09R2-IMPL-ROUTE-01 (WNS=+0.648 not overwritten), ASTRA-SOC-RTP-WRAP-UART-XSIM (not edited; that bag's MAGIC A2 ans=4 not claimed), ASTRA-09-R2-CAND-OVF-01, ASTRA-11-A09-IMPL-ROUTE-01, ASTRA-09-INTEGRATED-PATH-01, ASTRA-12-*, ASTRA-10-*, ASTRA-06-*, ASTRA-F2R-*, ASTRA-F3-* (not edited; those bags' run scripts not rerun); frozen A09 RTL not patched (hash 9fdbe0d6…); R2 DUT not patched (hash 15a919f1…); frozen SGD not patched (hash b66ef328…); no .bit generated; PRODUCTION_TOP not written as a module name",
+  "prior_acceptance": "AUDITOR_20260906T1630Z ACCEPT_PARTIAL on ASTRA-11-A09R2-IMPL-ROUTE-01; routed WNS=+0.648 PASS_NARROW; A09-R2 DUT INCOMP ans=0 CLOSED_NARROW; PRODUCTION_TOP UNKNOWN; ASTRA-13 BLOCKED; residual 5 mentions SoC UART wrap as a candidate production path — this bag is XSim UART glue around instantiated A09-R2, not a bit, not a freeze; board plugged; PROGRAM=NO",
+  "gate_claim": "one named UART-side XSim only: UNISIM or behavioral host drives tokens into instantiated a7ng_astra_09_r2_cand_ovf and observes smoke two-proof ANSWER and CAND_CAP overflow INCOMP ans=0 on the UART byte stream, plus UNREL no stale, load_from_tb=0. Not BOARD_PASS. Not ASTRA-SOC-RTP-WRAP-UART-XSIM results. Not wrap-route bit. Not ASTRA-13. PRODUCTION_TOP stays UNKNOWN.",
+  "does_not_close": ["Master_ASTRA-09", "Master_F3_10pp_CI", "Master_ASTRA-06", "LM06", "BOARD_PASS", "ASTRA-13", "ASTRA-11_SoC_UART_wrap", "ASTRA-SOC-RTP-WRAP-UART-XSIM", "production_top_identity", "write_bitstream", "wrap_route_bit"]
+}

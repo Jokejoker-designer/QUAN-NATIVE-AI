@@ -1,0 +1,17 @@
+{
+  "frozen_before_xvlog": true,
+  "iso": { "reward": 3, "x0": 50, "dw0": 5 },
+  "unrel": { "query": "payroll tax form", "status": 1, "npath": 0, "ans": 0, "p0": 0 },
+  "load_from_tb": 0,
+  "gold_p0": {
+    "S0_train": 17, "S0_hold": 529,
+    "S1_train": 40, "S1_hold": 1041,
+    "S2_train": 50, "S2_hold": 1553,
+    "S3_train": 60, "S3_hold": 2065,
+    "S4_train": 70, "S4_hold": 3088
+  },
+  "dist_p0_hold": {
+    "S0": 273, "S1": 785, "S2": 1297, "S3": 1809, "S4": 3072
+  },
+  "note": "identities frozen; scores are not goldens. 0x211=529, 0xC10=3088."
+}
