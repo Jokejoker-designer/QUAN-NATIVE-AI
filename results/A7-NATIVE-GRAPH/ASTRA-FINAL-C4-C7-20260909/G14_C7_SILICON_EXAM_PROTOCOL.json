@@ -1,0 +1,29 @@
+{
+  "schema": "G14_C7_SILICON_EXAM_PROTOCOL_V1",
+  "wo": "§21–22",
+  "PROGRAM": "NO",
+  "runnable": false,
+  "reason": "frozen C6 bit missing",
+  "on_fail": "archive raw UART; do not patch live bit; return earliest gate; new freeze; new bit; new blind C7",
+  "on_pass": "FINAL_RECONCILIATION only if §22 all hold on SAME bit+manifest; never PARTIAL PASS",
+  "pre_program": {
+    "part": "xc7a100tcsg324-1",
+    "board": "Arty A7-100T",
+    "jtag": "210319BE776EA",
+    "uart": "COM12 115200 8N1",
+    "bit_sha": null,
+    "manifest_sha": null
+  },
+  "phases": [
+    {"id": 1, "name": "ROLE-AWARE PARSING", "verdict": "BLOCKED"},
+    {"id": 2, "name": "SAME-LAW SPARSE RETRIEVAL", "verdict": "BLOCKED"},
+    {"id": 3, "name": "BOUNDED PROOF / 2-HOP", "verdict": "BLOCKED"},
+    {"id": 4, "name": "FORWARD GENERATION", "verdict": "BLOCKED"},
+    {"id": 5, "name": "REVERSE GENERATION", "verdict": "BLOCKED"},
+    {"id": 6, "name": "DETERMINISTIC REFUSAL", "verdict": "BLOCKED"},
+    {"id": 7, "name": "SCALAR-REWARD CAUSAL UPDATE", "verdict": "BLOCKED"},
+    {"id": 8, "name": "PERSIST/RELOAD + DUP/STALE", "verdict": "BLOCKED"},
+    {"id": 9, "name": "UART FULL STREAM 115200", "verdict": "BLOCKED"},
+    {"id": 10, "name": "HOST SEMANTIC=0", "verdict": "BLOCKED"}
+  ]
+}

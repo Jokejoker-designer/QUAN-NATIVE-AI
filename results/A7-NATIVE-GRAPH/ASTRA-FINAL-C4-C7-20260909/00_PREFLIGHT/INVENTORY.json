@@ -1,0 +1,52 @@
+{
+  "gate": "G00",
+  "repo": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+  "branch": "grok-orch/astra-native-v1-00",
+  "HEAD": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+  "HEAD_subject": "U5-MEM02: bounded AXI traffic vs N; sentinel 799999. No 800k fill.",
+  "tree_status": "DIRTY_PRESERVED",
+  "canonical_c3_status": {
+    "file": "rtl/native_graph/integrate/a7ng_astra_c3_held_out.svh",
+    "ANSWER": "4'd0",
+    "UNKNOWN": "4'd1",
+    "CONFLICT": "4'd5",
+    "SEARCH_INCOMPLETE": "4'd6",
+    "AMBIGUOUS": "4'd7",
+    "NEG": "4'd8",
+    "never": "3'd1"
+  },
+  "candidates": {
+    "c3_reasoner": "rtl/native_graph/integrate/a7ng_astra_c3_held_out.sv",
+    "c3_pending_load": "rtl/native_graph/integrate/a7ng_astra_c3_held_out_pendld.sv",
+    "c4_historical_d4_f8_not_d32": "rtl/native_graph/integrate/a7ng_astra_c4_lm06_red.sv",
+    "c4_d32_fr_v1": "MISSING — G04 must create a7ng_astra_c4_lm06_d32_fr_v1.sv",
+    "c5_public_old_top": "rtl/native_graph/integrate/a7ng_astra_c5_prod_top.sv",
+    "c5_reward": "rtl/native_graph/integrate/a7ng_astra_c5_prod_top_rew.sv",
+    "c5_uart_stream": "rtl/native_graph/integrate/a7ng_astra_c5_prod_top_stream.sv",
+    "c5_axi_resp": "rtl/native_graph/integrate/a7ng_astra_c5_prod_top_resp.sv",
+    "c5_ckpt": "rtl/native_graph/integrate/a7ng_astra_c5_prod_top_ckpt.sv",
+    "c5_sgd32_pending": "rtl/native_graph/integrate/a7ng_astra_c5_sgd32_ckpt_pend.sv",
+    "c5_final_unified_top": "MISSING — G08 must create a7ng_astra_c5_prod_top_final_v1.sv",
+    "c6_wholechip": "rtl/native_graph/integrate/a7ng_astra_c6_wholechip.sv",
+    "c6_instantiates": "a7ng_astra_c5_prod_top (OLD public top, not final_v1)"
+  },
+  "keep": {
+    "c1_retrieval": true,
+    "c3_proof": true,
+    "reverse_rescue_dev_evidence": "D:/FPGA/C4_RESCUE_20260909/reverse_isolated_identity01/best_dev.npz",
+    "int8_parity_script": "D:/FPGA/C4_RESCUE_20260909/quantize_c4_parity.py"
+  },
+  "merge_later": [
+    "explicit_reward",
+    "sgd32_pending_persistence",
+    "atomicity_replay",
+    "axi_response_error",
+    "uart_token_stream_115200"
+  ],
+  "not_equivalent": {
+    "sibling_PASS": "not C5_MASTER_PASS",
+    "python_PASS": "not C4_MASTER_PASS",
+    "routed_old_bit": "not C6_MASTER_PASS",
+    "historical_board": "not C7 final PASS"
+  }
+}

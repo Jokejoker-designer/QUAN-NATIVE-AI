@@ -1,0 +1,172 @@
+{
+  "n": 16,
+  "n_top1_changed": 0,
+  "n_score_changed": 16,
+  "max_abs_logit_delta": 8.294339179992676,
+  "min_abs_logit_delta": 2.7461252212524414,
+  "note": "Diagnostic only. PREREG required top-1 change; that FAIL stands. WO \u00a78.2 also allows score change.",
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "rows": [
+    {
+      "ctx": "F jdxq rqyz>----",
+      "t0": 114,
+      "t1": 113,
+      "alt": 122,
+      "t1_intervened": 113,
+      "max_abs_logit_delta": 3.2165584564208984,
+      "l1_logit_delta": 441.17138671875,
+      "top1_changed": false
+    },
+    {
+      "ctx": "R sbvt aewb>----",
+      "t0": 115,
+      "t1": 98,
+      "alt": 122,
+      "t1_intervened": 98,
+      "max_abs_logit_delta": 8.294339179992676,
+      "l1_logit_delta": 162.008056640625,
+      "top1_changed": false
+    },
+    {
+      "ctx": "F jktq coza>----",
+      "t0": 99,
+      "t1": 111,
+      "alt": 122,
+      "t1_intervened": 111,
+      "max_abs_logit_delta": 4.523963928222656,
+      "l1_logit_delta": 550.6251220703125,
+      "top1_changed": false
+    },
+    {
+      "ctx": "R qvfl ybmv>----",
+      "t0": 113,
+      "t1": 118,
+      "alt": 122,
+      "t1_intervened": 118,
+      "max_abs_logit_delta": 5.772195816040039,
+      "l1_logit_delta": 225.93228149414062,
+      "top1_changed": false
+    },
+    {
+      "ctx": "F ndhj bduc>----",
+      "t0": 98,
+      "t1": 100,
+      "alt": 122,
+      "t1_intervened": 100,
+      "max_abs_logit_delta": 4.39118766784668,
+      "l1_logit_delta": 280.8102722167969,
+      "top1_changed": false
+    },
+    {
+      "ctx": "R qvlj qqmp>----",
+      "t0": 113,
+      "t1": 118,
+      "alt": 122,
+      "t1_intervened": 118,
+      "max_abs_logit_delta": 5.773634910583496,
+      "l1_logit_delta": 229.05812072753906,
+      "top1_changed": false
+    },
+    {
+      "ctx": "F cmnt oqsf>----",
+      "t0": 111,
+      "t1": 113,
+      "alt": 122,
+      "t1_intervened": 113,
+      "max_abs_logit_delta": 5.566407203674316,
+      "l1_logit_delta": 422.4134521484375,
+      "top1_changed": false
+    },
+    {
+      "ctx": "R dyhe wljv>----",
+      "t0": 100,
+      "t1": 121,
+      "alt": 122,
+      "t1_intervened": 121,
+      "max_abs_logit_delta": 2.7461252212524414,
+      "l1_logit_delta": 453.2549133300781,
+      "top1_changed": false
+    },
+    {
+      "ctx": "F gryk nlmz>----",
+      "t0": 110,
+      "t1": 108,
+      "alt": 122,
+      "t1_intervened": 108,
+      "max_abs_logit_delta": 5.950479030609131,
+      "l1_logit_delta": 1037.830322265625,
+      "top1_changed": false
+    },
+    {
+      "ctx": "R wiwu ddqn>----",
+      "t0": 119,
+      "t1": 105,
+      "alt": 122,
+      "t1_intervened": 105,
+      "max_abs_logit_delta": 4.426427364349365,
+      "l1_logit_delta": 223.0084991455078,
+      "top1_changed": false
+    },
+    {
+      "ctx": "F gzmn ldtg>----",
+      "t0": 108,
+      "t1": 100,
+      "alt": 122,
+      "t1_intervened": 100,
+      "max_abs_logit_delta": 3.280191421508789,
+      "l1_logit_delta": 151.7506103515625,
+      "top1_changed": false
+    },
+    {
+      "ctx": "R kfeg kbzo>----",
+      "t0": 107,
+      "t1": 102,
+      "alt": 122,
+      "t1_intervened": 102,
+      "max_abs_logit_delta": 6.0483551025390625,
+      "l1_logit_delta": 246.59649658203125,
+      "top1_changed": false
+    },
+    {
+      "ctx": "F rsht bjnd>----",
+      "t0": 98,
+      "t1": 106,
+      "alt": 122,
+      "t1_intervened": 106,
+      "max_abs_logit_delta": 4.634782791137695,
+      "l1_logit_delta": 95.60430908203125,
+      "top1_changed": false
+    },
+    {
+      "ctx": "R yqwr uirn>----",
+      "t0": 121,
+      "t1": 113,
+      "alt": 122,
+      "t1_intervened": 113,
+      "max_abs_logit_delta": 4.433958053588867,
+      "l1_logit_delta": 125.484375,
+      "top1_changed": false
+    },
+    {
+      "ctx": "F dlxr yctn>----",
+      "t0": 121,
+      "t1": 99,
+      "alt": 122,
+      "t1_intervened": 99,
+      "max_abs_logit_delta": 4.46551513671875,
+      "l1_logit_delta": 474.690673828125,
+      "top1_changed": false
+    },
+    {
+      "ctx": "R pgsy fvnu>----",
+      "t0": 112,
+      "t1": 103,
+      "alt": 122,
+      "t1_intervened": 103,
+      "max_abs_logit_delta": 4.242292404174805,
+      "l1_logit_delta": 658.389892578125,
+      "top1_changed": false
+    }
+  ]
+}

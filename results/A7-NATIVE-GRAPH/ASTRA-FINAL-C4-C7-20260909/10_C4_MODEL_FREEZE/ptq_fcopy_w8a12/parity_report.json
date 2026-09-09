@@ -1,0 +1,804 @@
+{
+  "float_correct": 20,
+  "integer_correct": 20,
+  "n": 20,
+  "exact_sequence_parity": 20,
+  "retains_float_accuracy": true,
+  "target_min_correct": 12,
+  "target_pass": true,
+  "eval_scope": "historical exposed20 DEV set; not blind Master confirmation",
+  "rows": [
+    {
+      "row": 0,
+      "group": "F",
+      "ctx": "F drum hose>drum",
+      "gold": [
+        104,
+        111,
+        115,
+        101,
+        0
+      ],
+      "float_tokens": [
+        104,
+        111,
+        115,
+        101,
+        0
+      ],
+      "integer_tokens": [
+        104,
+        111,
+        115,
+        101,
+        0
+      ],
+      "float_exact": true,
+      "integer_exact": true,
+      "first_argmax_divergence": null,
+      "max_logit_error": 2.287290200504657
+    },
+    {
+      "row": 1,
+      "group": "F",
+      "ctx": "F vent hose>vent",
+      "gold": [
+        104,
+        111,
+        115,
+        101,
+        0
+      ],
+      "float_tokens": [
+        104,
+        111,
+        115,
+        101,
+        0
+      ],
+      "integer_tokens": [
+        104,
+        111,
+        115,
+        101,
+        0
+      ],
+      "float_exact": true,
+      "integer_exact": true,
+      "first_argmax_divergence": null,
+      "max_logit_error": 2.287290200504657
+    },
+    {
+      "row": 2,
+      "group": "F",
+      "ctx": "F bolt hose>bolt",
+      "gold": [
+        104,
+        111,
+        115,
+        101,
+        0
+      ],
+      "float_tokens": [
+        104,
+        111,
+        115,
+        101,
+        0
+      ],
+      "integer_tokens": [
+        104,
+        111,
+        115,
+        101,
+        0
+      ],
+      "float_exact": true,
+      "integer_exact": true,
+      "first_argmax_divergence": null,
+      "max_logit_error": 2.287290200504657
+    },
+    {
+      "row": 3,
+      "group": "F",
+      "ctx": "F hose drum>hose",
+      "gold": [
+        100,
+        114,
+        117,
+        109,
+        0
+      ],
+      "float_tokens": [
+        100,
+        114,
+        117,
+        109,
+        0
+      ],
+      "integer_tokens": [
+        100,
+        114,
+        117,
+        109,
+        0
+      ],
+      "float_exact": true,
+      "integer_exact": true,
+      "first_argmax_divergence": null,
+      "max_logit_error": 2.3491141131233064
+    },
+    {
+      "row": 4,
+      "group": "F",
+      "ctx": "F vent drum>vent",
+      "gold": [
+        100,
+        114,
+        117,
+        109,
+        0
+      ],
+      "float_tokens": [
+        100,
+        114,
+        117,
+        109,
+        0
+      ],
+      "integer_tokens": [
+        100,
+        114,
+        117,
+        109,
+        0
+      ],
+      "float_exact": true,
+      "integer_exact": true,
+      "first_argmax_divergence": null,
+      "max_logit_error": 2.3491141131233064
+    },
+    {
+      "row": 5,
+      "group": "F",
+      "ctx": "F bolt drum>bolt",
+      "gold": [
+        100,
+        114,
+        117,
+        109,
+        0
+      ],
+      "float_tokens": [
+        100,
+        114,
+        117,
+        109,
+        0
+      ],
+      "integer_tokens": [
+        100,
+        114,
+        117,
+        109,
+        0
+      ],
+      "float_exact": true,
+      "integer_exact": true,
+      "first_argmax_divergence": null,
+      "max_logit_error": 2.3491141131233064
+    },
+    {
+      "row": 6,
+      "group": "F",
+      "ctx": "F hose vent>hose",
+      "gold": [
+        118,
+        101,
+        110,
+        116,
+        0
+      ],
+      "float_tokens": [
+        118,
+        101,
+        110,
+        116,
+        0
+      ],
+      "integer_tokens": [
+        118,
+        101,
+        110,
+        116,
+        0
+      ],
+      "float_exact": true,
+      "integer_exact": true,
+      "first_argmax_divergence": null,
+      "max_logit_error": 2.081741721333799
+    },
+    {
+      "row": 7,
+      "group": "F",
+      "ctx": "F drum vent>drum",
+      "gold": [
+        118,
+        101,
+        110,
+        116,
+        0
+      ],
+      "float_tokens": [
+        118,
+        101,
+        110,
+        116,
+        0
+      ],
+      "integer_tokens": [
+        118,
+        101,
+        110,
+        116,
+        0
+      ],
+      "float_exact": true,
+      "integer_exact": true,
+      "first_argmax_divergence": null,
+      "max_logit_error": 2.081741721333799
+    },
+    {
+      "row": 8,
+      "group": "F",
+      "ctx": "F bolt vent>bolt",
+      "gold": [
+        118,
+        101,
+        110,
+        116,
+        0
+      ],
+      "float_tokens": [
+        118,
+        101,
+        110,
+        116,
+        0
+      ],
+      "integer_tokens": [
+        118,
+        101,
+        110,
+        116,
+        0
+      ],
+      "float_exact": true,
+      "integer_exact": true,
+      "first_argmax_divergence": null,
+      "max_logit_error": 2.081741721333799
+    },
+    {
+      "row": 9,
+      "group": "F",
+      "ctx": "F hose bolt>hose",
+      "gold": [
+        98,
+        111,
+        108,
+        116,
+        0
+      ],
+      "float_tokens": [
+        98,
+        111,
+        108,
+        116,
+        0
+      ],
+      "integer_tokens": [
+        98,
+        111,
+        108,
+        116,
+        0
+      ],
+      "float_exact": true,
+      "integer_exact": true,
+      "first_argmax_divergence": null,
+      "max_logit_error": 2.081741721333799
+    },
+    {
+      "row": 10,
+      "group": "F",
+      "ctx": "F drum bolt>drum",
+      "gold": [
+        98,
+        111,
+        108,
+        116,
+        0
+      ],
+      "float_tokens": [
+        98,
+        111,
+        108,
+        116,
+        0
+      ],
+      "integer_tokens": [
+        98,
+        111,
+        108,
+        116,
+        0
+      ],
+      "float_exact": true,
+      "integer_exact": true,
+      "first_argmax_divergence": null,
+      "max_logit_error": 2.081741721333799
+    },
+    {
+      "row": 11,
+      "group": "F",
+      "ctx": "F vent bolt>vent",
+      "gold": [
+        98,
+        111,
+        108,
+        116,
+        0
+      ],
+      "float_tokens": [
+        98,
+        111,
+        108,
+        116,
+        0
+      ],
+      "integer_tokens": [
+        98,
+        111,
+        108,
+        116,
+        0
+      ],
+      "float_exact": true,
+      "integer_exact": true,
+      "first_argmax_divergence": null,
+      "max_logit_error": 2.081741721333799
+    },
+    {
+      "row": 12,
+      "group": "R",
+      "ctx": "R hose hose>drum",
+      "gold": [
+        100,
+        114,
+        117,
+        109,
+        0
+      ],
+      "float_tokens": [
+        100,
+        114,
+        117,
+        109,
+        0
+      ],
+      "integer_tokens": [
+        100,
+        114,
+        117,
+        109,
+        0
+      ],
+      "float_exact": true,
+      "integer_exact": true,
+      "first_argmax_divergence": null,
+      "max_logit_error": 0.5062471943631621
+    },
+    {
+      "row": 13,
+      "group": "R",
+      "ctx": "R hose hose>vent",
+      "gold": [
+        118,
+        101,
+        110,
+        116,
+        0
+      ],
+      "float_tokens": [
+        118,
+        101,
+        110,
+        116,
+        0
+      ],
+      "integer_tokens": [
+        118,
+        101,
+        110,
+        116,
+        0
+      ],
+      "float_exact": true,
+      "integer_exact": true,
+      "first_argmax_divergence": null,
+      "max_logit_error": 0.501057170072686
+    },
+    {
+      "row": 14,
+      "group": "R",
+      "ctx": "R hose hose>bolt",
+      "gold": [
+        98,
+        111,
+        108,
+        116,
+        0
+      ],
+      "float_tokens": [
+        98,
+        111,
+        108,
+        116,
+        0
+      ],
+      "integer_tokens": [
+        98,
+        111,
+        108,
+        116,
+        0
+      ],
+      "float_exact": true,
+      "integer_exact": true,
+      "first_argmax_divergence": null,
+      "max_logit_error": 0.8349548411978134
+    },
+    {
+      "row": 15,
+      "group": "R",
+      "ctx": "R drum drum>hose",
+      "gold": [
+        104,
+        111,
+        115,
+        101,
+        0
+      ],
+      "float_tokens": [
+        104,
+        111,
+        115,
+        101,
+        0
+      ],
+      "integer_tokens": [
+        104,
+        111,
+        115,
+        101,
+        0
+      ],
+      "float_exact": true,
+      "integer_exact": true,
+      "first_argmax_divergence": null,
+      "max_logit_error": 1.8046083986372565
+    },
+    {
+      "row": 16,
+      "group": "R",
+      "ctx": "R drum drum>vent",
+      "gold": [
+        118,
+        101,
+        110,
+        116,
+        0
+      ],
+      "float_tokens": [
+        118,
+        101,
+        110,
+        116,
+        0
+      ],
+      "integer_tokens": [
+        118,
+        101,
+        110,
+        116,
+        0
+      ],
+      "float_exact": true,
+      "integer_exact": true,
+      "first_argmax_divergence": null,
+      "max_logit_error": 0.5010369557254322
+    },
+    {
+      "row": 17,
+      "group": "R",
+      "ctx": "R drum drum>bolt",
+      "gold": [
+        98,
+        111,
+        108,
+        116,
+        0
+      ],
+      "float_tokens": [
+        98,
+        111,
+        108,
+        116,
+        0
+      ],
+      "integer_tokens": [
+        98,
+        111,
+        108,
+        116,
+        0
+      ],
+      "float_exact": true,
+      "integer_exact": true,
+      "first_argmax_divergence": null,
+      "max_logit_error": 0.8349548412015082
+    },
+    {
+      "row": 18,
+      "group": "R",
+      "ctx": "R vent vent>hose",
+      "gold": [
+        104,
+        111,
+        115,
+        101,
+        0
+      ],
+      "float_tokens": [
+        104,
+        111,
+        115,
+        101,
+        0
+      ],
+      "integer_tokens": [
+        104,
+        111,
+        115,
+        101,
+        0
+      ],
+      "float_exact": true,
+      "integer_exact": true,
+      "first_argmax_divergence": null,
+      "max_logit_error": 1.8046083986352102
+    },
+    {
+      "row": 19,
+      "group": "R",
+      "ctx": "R vent vent>drum",
+      "gold": [
+        100,
+        114,
+        117,
+        109,
+        0
+      ],
+      "float_tokens": [
+        100,
+        114,
+        117,
+        109,
+        0
+      ],
+      "integer_tokens": [
+        100,
+        114,
+        117,
+        109,
+        0
+      ],
+      "float_exact": true,
+      "integer_exact": true,
+      "first_argmax_divergence": null,
+      "max_logit_error": 0.5062471592866764
+    }
+  ],
+  "layers": {
+    "x": {
+      "mse": 3.256215375190564e-05,
+      "max_abs": 0.014631828871015579
+    },
+    "q": {
+      "mse": 0.0005355243095979516,
+      "max_abs": 0.0729546934070866
+    },
+    "k": {
+      "mse": 0.0003622351605348511,
+      "max_abs": 0.09308506880414091
+    },
+    "v": {
+      "mse": 0.0006302837935216136,
+      "max_abs": 0.12347466395639595
+    },
+    "dots": {
+      "mse": 0.026430666192447407,
+      "max_abs": 0.7463897272340319
+    },
+    "a": {
+      "mse": 9.050580901389736e-07,
+      "max_abs": 0.01600655107447635
+    },
+    "h": {
+      "mse": 0.0008690970143350907,
+      "max_abs": 0.18039366061339956
+    },
+    "y": {
+      "mse": 0.00092653619399824,
+      "max_abs": 0.1747756022822478
+    },
+    "t": {
+      "mse": 0.0008458206486902689,
+      "max_abs": 0.23881783899844433
+    },
+    "z": {
+      "mse": 0.00464601483214965,
+      "max_abs": 0.5295934608879378
+    },
+    "logits": {
+      "mse": 0.26670218991348194,
+      "max_abs": 2.3491141131233064
+    }
+  },
+  "weights": {
+    "We": {
+      "scale": 0.013431295635193352,
+      "zero_pct": 0.1953125,
+      "mse": 1.4995587461846575e-05,
+      "storage_bits": 8
+    },
+    "Wq": {
+      "scale": 0.015820861801387757,
+      "zero_pct": 2.9296875,
+      "mse": 2.0601236423879333e-05,
+      "storage_bits": 8
+    },
+    "Wk": {
+      "scale": 0.01724674758010023,
+      "zero_pct": 2.1484375,
+      "mse": 2.400829476271618e-05,
+      "storage_bits": 8
+    },
+    "Wv": {
+      "scale": 0.023349155591228816,
+      "zero_pct": 4.39453125,
+      "mse": 4.612305929540595e-05,
+      "storage_bits": 8
+    },
+    "W1": {
+      "scale": 0.007574568113942784,
+      "zero_pct": 1.806640625,
+      "mse": 4.738951508295803e-06,
+      "storage_bits": 8
+    },
+    "W2": {
+      "scale": 0.0070409352385152986,
+      "zero_pct": 2.197265625,
+      "mse": 4.057565105974568e-06,
+      "storage_bits": 8
+    },
+    "by": {
+      "scale": 2.564305435854339e-09,
+      "zero_pct": 0.0,
+      "mse": 4.859081459838389e-19,
+      "storage_bits": 32
+    },
+    "Pe": {
+      "scale": 0.014435981202313281,
+      "zero_pct": 1.8229166666666667,
+      "mse": 1.708087975733062e-05,
+      "storage_bits": 8
+    },
+    "WqR": {
+      "scale": 0.012323310056070643,
+      "zero_pct": 0.78125,
+      "mse": 1.298787306469533e-05,
+      "storage_bits": 8
+    },
+    "WkR": {
+      "scale": 0.011383918326670728,
+      "zero_pct": 2.1484375,
+      "mse": 1.1038724036353692e-05,
+      "storage_bits": 8
+    },
+    "WvR": {
+      "scale": 0.0171024161060964,
+      "zero_pct": 2.5390625,
+      "mse": 2.4521630901111404e-05,
+      "storage_bits": 8
+    }
+  },
+  "activation_ranges": {
+    "x": 2.53968745470047,
+    "q": 14.727984036113764,
+    "k": 11.955556033280658,
+    "v": 9.489261097252793,
+    "h": 8.089911888508333,
+    "y": 10.382575009896204,
+    "t": 19.501620785467658,
+    "z": 42.20470042311771,
+    "logits": 207.58616304573374
+  },
+  "saturation": {
+    "x": [
+      0,
+      121600
+    ],
+    "q": [
+      0,
+      6400
+    ],
+    "k": [
+      0,
+      121600
+    ],
+    "v": [
+      0,
+      121600
+    ],
+    "h": [
+      0,
+      6400
+    ],
+    "y": [
+      0,
+      6400
+    ],
+    "t": [
+      0,
+      12800
+    ],
+    "z": [
+      0,
+      6400
+    ],
+    "logits": [
+      0,
+      51200
+    ]
+  },
+  "observed_mac_peak": {
+    "q": 493075,
+    "k": 426186,
+    "v": 157538,
+    "dots": 11584833,
+    "h": 32242728,
+    "t": 304200,
+    "z": 444498,
+    "logits": 558513,
+    "qR": 565788,
+    "kR": 300776,
+    "vR": 290209
+  },
+  "conservative_mac_bounds": {
+    "q": 5787136,
+    "k": 5787136,
+    "v": 5787136,
+    "dots": 67185440,
+    "h": 892053456,
+    "t": 4844288,
+    "z": 9973056,
+    "logits": 6270752,
+    "qR": 5787136,
+    "kR": 5787136,
+    "vR": 5787136
+  },
+  "rtl_bit_exact": "NOT_RUN",
+  "checkpoint_sha256": "a462dd69d80ea5a2bf07d8d01359d0c01219919643e50204425ca4032320c4ed",
+  "script_sha256": "0339bee1170492eaf942bffb8895f07eedcbb441b1b0facd0eb7078afa87df08"
+}

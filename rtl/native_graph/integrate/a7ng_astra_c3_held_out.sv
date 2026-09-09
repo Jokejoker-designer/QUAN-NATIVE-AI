@@ -43,6 +43,7 @@ module a7ng_astra_c3_held_out #(
   output logic [ID_W-1:0] proof1_o,
   output logic [4:0]  n_path_o,
   output logic [3:0]  status_o,
+  output logic        proof_ok_o,
   output logic [7:0]  obj_o,
   output logic [7:0]  ctx_o,
   output logic [7:0]  subj_o,
@@ -106,6 +107,7 @@ module a7ng_astra_c3_held_out #(
   logic r_ovf, r_neg, r_amb, r_two, r_obj_v, path_ovf, r_conf, have_pos, have_neg;
   logic [19:0] concl0, neg0;
   logic [3:0] r_st;
+  logic proof_ok;
   logic [15:0] nupd, ndup, nbad, tocnt;
   logic signed [15:0] sgd_v, v_best, v_second;
   logic sgd_ready, sgd_done, sgd_go, sgd_upd, freeze_q;
@@ -151,6 +153,7 @@ module a7ng_astra_c3_held_out #(
   assign proof1_o = best_p1;
   assign n_path_o = np;
   assign status_o = r_st;
+  assign proof_ok_o = proof_ok;
   assign obj_o = r_obj;
   assign ctx_o = r_ctx;
   assign subj_o = r_subj;
@@ -286,6 +289,7 @@ module a7ng_astra_c3_held_out #(
       path_ovf <= 1'b0; r_conf <= 1'b0; have_pos <= 1'b0; have_neg <= 1'b0;
       concl0 <= '0; neg0 <= '0;
       r_st <= A7NG_C3_ST_UNKNOWN;
+      proof_ok <= 1'b0;
       txn <= 8'd0; pend_id <= 8'd0; gen <= 8'd0; pend_gen <= 8'd0;
       pend_acc <= 1'b0; pend_cmt <= 1'b0; retire_hold <= 1'b0; rew_lat <= '0;
       sel_idx <= '0; best_a <= '0; best_p0 <= '0; best_p1 <= '0;
@@ -302,6 +306,7 @@ module a7ng_astra_c3_held_out #(
           for (kf = 0; kf < 16; kf = kf + 1) fv[kf] <= 1'b0;
           best_a <= '0; best_p0 <= '0; best_p1 <= '0; v_best <= '0; v_second <= '0;
           r_st <= A7NG_C3_ST_UNKNOWN;
+          proof_ok <= 1'b0;
           if (qse_valid) begin
             r_subj <= qse_subj; r_obj <= qse_obj; r_rel <= qse_rel; r_ctx <= qse_ctx;
             r_two <= (qse_ctx == A7NG_C3_CTX_INDIRECT);
@@ -317,8 +322,8 @@ module a7ng_astra_c3_held_out #(
           end
           if (w_done) begin
             r_ovf <= w_ovf; qse_retire <= 1'b1; fi <= '0;
-            if (r_amb) begin r_st <= A7NG_C3_ST_AMB; st <= S_HOLD; end
-            else if (r_neg) begin r_st <= A7NG_C3_ST_NEG; st <= S_HOLD; end
+            if (r_amb) begin r_st <= A7NG_C3_ST_AMB; proof_ok <= 1'b0; st <= S_HOLD; end
+            else if (r_neg) begin r_st <= A7NG_C3_ST_NEG; proof_ok <= 1'b0; st <= S_HOLD; end
             else st <= (nc==0) ? S_HOLD : S_AR;
           end
         end
@@ -329,7 +334,7 @@ module a7ng_astra_c3_held_out #(
           if (f_arready && f_arvalid) begin
             f_arvalid <= 1'b0; tocnt <= '0; st <= S_R;
           end else if (tocnt >= TO_CYC[15:0]) begin
-            f_arvalid <= 1'b0; r_st <= A7NG_C3_ST_INCOMP; st <= S_HOLD;
+            f_arvalid <= 1'b0; r_st <= A7NG_C3_ST_INCOMP; proof_ok <= 1'b0; st <= S_HOLD;
           end
         end
         S_R: begin
@@ -353,19 +358,20 @@ module a7ng_astra_c3_held_out #(
             if (fi + 1'b1 == nc) begin ei <= '0; st <= S_EI; end
             else begin fi <= fi + 1'b1; st <= S_AR; end
           end else if (tocnt >= TO_CYC[15:0]) begin
-            r_st <= A7NG_C3_ST_INCOMP; st <= S_HOLD;
+            r_st <= A7NG_C3_ST_INCOMP; proof_ok <= 1'b0; st <= S_HOLD;
           end
         end
         S_EI: begin
-          if (r_ovf) begin r_st <= A7NG_C3_ST_INCOMP; st <= S_HOLD; end
+          if (r_ovf) begin r_st <= A7NG_C3_ST_INCOMP; proof_ok <= 1'b0; st <= S_HOLD; end
           else if (ei >= nf) begin
             if (r_conf) begin
               r_st <= A7NG_C3_ST_CONFLICT;
+              proof_ok <= 1'b0;
               best_a <= '0; best_p0 <= '0; best_p1 <= '0;
               pend_acc <= 1'b0; pend_cmt <= 1'b0;
               st <= S_HOLD;
-            end else if (np == 0) begin r_st <= A7NG_C3_ST_UNKNOWN; st <= S_HOLD; end
-            else if (path_ovf) begin r_st <= A7NG_C3_ST_INCOMP; st <= S_HOLD; end
+            end else if (np == 0) begin r_st <= A7NG_C3_ST_UNKNOWN; proof_ok <= 1'b0; st <= S_HOLD; end
+            else if (path_ovf) begin r_st <= A7NG_C3_ST_INCOMP; proof_ok <= 1'b0; st <= S_HOLD; end
             else begin pi <= '0; st <= S_SC; end
           end else if (r_two) begin ej <= '0; st <= S_EJ; end
           else st <= S_ED;
@@ -443,6 +449,7 @@ module a7ng_astra_c3_held_out #(
           best_a <= c_best_a; best_p0 <= c_best_p0; best_p1 <= c_best_p1;
           sel_idx <= c_best_idx;
           r_st <= A7NG_C3_ST_ANSWER;
+          proof_ok <= 1'b1;
           pend_id <= txn + 8'd1; txn <= txn + 8'd1;
           pend_gen <= gen + 8'd1; gen <= gen + 8'd1;
           pend_acc <= 1'b1; pend_cmt <= 1'b0;

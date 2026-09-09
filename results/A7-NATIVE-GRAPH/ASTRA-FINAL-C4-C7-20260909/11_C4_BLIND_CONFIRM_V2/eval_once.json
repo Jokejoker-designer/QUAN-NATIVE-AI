@@ -1,0 +1,37 @@
+{
+  "confirm_sha256": "42986b035d32df26cfdb812f2f6ba1a6eea75e5632807b5bc8b5194b235dd604",
+  "checkpoint": "D:\\FPGA\\C4_RESCUE_20260909\\EXPERIMENTS\\V2_INVARIANT_01\\runs\\V2_R_FRESH_PE_02\\last.npz",
+  "checkpoint_sha256": "fcfe37be0ca006de9a0973331cb0b1b82703a96c0f10097e21d7e0bff85987dc",
+  "opened_once": true,
+  "used_for_selection": false,
+  "confirm_v1_for_pass": false,
+  "groups": {
+    "F": {
+      "n": 120,
+      "correct": 120
+    },
+    "R": {
+      "n": 120,
+      "correct": 119
+    }
+  },
+  "overall": 0.9958333333333333,
+  "eos_fraction": 1.0,
+  "learned_prereg_pass": true,
+  "U_not_scored_as_learned_pass": true,
+  "C4_MASTER": "OPEN",
+  "PROGRAM": "NO",
+  "ASTRA_NATIVE_AI_BOARD_PASS": "OPEN",
+  "self_accept": false,
+  "note": "Float Confirm V2 only. Integer/RTL parity and C4_MASTER remain OPEN.",
+  "misses": [
+    {
+      "id": "cv2-0257",
+      "ctx": "R pqvx lthp>----",
+      "ans": "pqvx",
+      "group": "R",
+      "pred": "pvvx"
+    }
+  ],
+  "miss_n": 1
+}

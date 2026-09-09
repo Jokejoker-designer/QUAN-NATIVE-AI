@@ -1,0 +1,94 @@
+{
+  "checkpoint_sha256": "a462dd69d80ea5a2bf07d8d01359d0c01219919643e50204425ca4032320c4ed",
+  "n": 52,
+  "prereg_min_drop": 0.2,
+  "normal": {
+    "k": 52,
+    "n": 52,
+    "p": 1.0,
+    "F": {
+      "n": 28,
+      "correct": 28
+    },
+    "R": {
+      "n": 24,
+      "correct": 24
+    }
+  },
+  "zero_We": {
+    "k": 0,
+    "n": 52,
+    "p": 0.0,
+    "F": {
+      "n": 28,
+      "correct": 0
+    },
+    "R": {
+      "n": 24,
+      "correct": 0
+    }
+  },
+  "corrupt_Wq": {
+    "k": 0,
+    "n": 52,
+    "p": 0.0,
+    "F": {
+      "n": 28,
+      "correct": 0
+    },
+    "R": {
+      "n": 24,
+      "correct": 0
+    }
+  },
+  "evidence_replaced_old_gold": {
+    "k": 0,
+    "n": 28,
+    "p": 0.0,
+    "F": {
+      "n": 28,
+      "correct": 0
+    },
+    "R": {
+      "n": 0,
+      "correct": 0
+    }
+  },
+  "evidence_replaced_new_gold": {
+    "k": 28,
+    "n": 28,
+    "p": 1.0,
+    "F": {
+      "n": 28,
+      "correct": 28
+    },
+    "R": {
+      "n": 0,
+      "correct": 0
+    }
+  },
+  "wrong_bank": {
+    "k": 0,
+    "n": 52,
+    "p": 0.0,
+    "F": {
+      "n": 28,
+      "correct": 0
+    },
+    "R": {
+      "n": 24,
+      "correct": 0
+    }
+  },
+  "zero_drop": 1.0,
+  "corrupt_drop": 1.0,
+  "zero_pass": true,
+  "corrupt_pass": true,
+  "replaced_old_fails": true,
+  "replaced_new_hits": true,
+  "wrong_bank_changes": true,
+  "confirm_360_not_used_for_tuning": true,
+  "C4_MASTER": "OPEN",
+  "PROGRAM": "NO",
+  "note": "Safety-gate S_SAFE is G05; this file is learned path with gate held ANSWER."
+}

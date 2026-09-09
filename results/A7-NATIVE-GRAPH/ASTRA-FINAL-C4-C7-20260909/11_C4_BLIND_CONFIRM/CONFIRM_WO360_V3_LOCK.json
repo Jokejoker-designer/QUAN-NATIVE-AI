@@ -1,0 +1,22 @@
+{
+  "file": "confirm_wo360_v3.json",
+  "sha256_canonical": "f876633e6daf4ca79317bec55ef9888e12ff726e26d316ad87193eaba74b3e6a",
+  "counts": {
+    "F": 120,
+    "R": 120,
+    "U": 120
+  },
+  "kind_counts": {
+    "supported_forward": 120,
+    "supported_reverse": 120,
+    "unrelated": 20,
+    "missing_evidence": 20,
+    "wrong_context": 20,
+    "conflict": 20,
+    "ambiguous": 20,
+    "search_incomplete": 20
+  },
+  "opened_for_selection": false,
+  "confirm_v1_for_pass": false,
+  "confirm_v2_for_pass": false
+}

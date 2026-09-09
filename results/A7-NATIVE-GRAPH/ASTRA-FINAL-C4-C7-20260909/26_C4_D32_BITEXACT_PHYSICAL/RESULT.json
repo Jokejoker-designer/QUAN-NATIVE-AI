@@ -1,0 +1,49 @@
+{
+  "bag": "26_C4_D32_BITEXACT_PHYSICAL",
+  "stage": "E3a PARTIAL + G14 BLOCKED_PRE_BOARD",
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "C5_MASTER": "OPEN",
+  "C6_MASTER": "OPEN",
+  "ASTRA_NATIVE_AI_BOARD_PASS": "OPEN",
+  "self_accept": false,
+  "rtl_modified": false,
+  "e3b_started": false,
+  "programmed": false,
+  "bit_files": 0,
+  "dcp_files": 0,
+  "e3a": "PARTIAL",
+  "top_n": "MISSING",
+  "wns_ns": -83.427,
+  "worst_path_families": {
+    "attn": 283,
+    "psum": 33,
+    "eden": 2,
+    "elut": 2,
+    "weight_names": 0
+  },
+  "artifacts": [
+    {
+      "name": "E3A.md",
+      "sha256": "c9e08ca1fd3049e39329275f7a14b5b8ed70e7c24f7b5695d4371238a9757124",
+      "bytes": 1591
+    },
+    {
+      "name": "E3A_WORST_PATH.json",
+      "sha256": "1460363cdf3608931c2d435880805c5e801c9c47bb0a1a6e3720125b531486b5",
+      "bytes": 2147
+    },
+    {
+      "name": "parse_e3a_worst_path.py",
+      "sha256": "5c594085c48601123af88823a4004c97f656a3d9a62a4e968c5cfca780bc4db6",
+      "bytes": 4821
+    },
+    {
+      "name": "run_e3a_topn.tcl",
+      "sha256": "5568bae45a5406e3eb7862be4ff1a39f9dd79847db78888de0e4d392a543d0b2",
+      "bytes": 1673
+    }
+  ],
+  "g14_gate_sha256": "e56d1fac7e7a93af265576572c47733ce678b300df90db6933b2f74768a61092",
+  "first_divergence": "No frozen C6 bit; C4/C5 OPEN; OOC WNS -83.427 ns"
+}

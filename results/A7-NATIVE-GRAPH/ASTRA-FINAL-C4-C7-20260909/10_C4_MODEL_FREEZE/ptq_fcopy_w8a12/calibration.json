@@ -1,0 +1,962 @@
+[
+  {
+    "ctx": "F msqi gxel>msqi",
+    "ans": "gxel",
+    "group": "F"
+  },
+  {
+    "ctx": "R espr espr>kzhq",
+    "ans": "kzhq",
+    "group": "R"
+  },
+  {
+    "ctx": "F gfei pnuz>rcnj",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F aqfs lbjy>aqfs",
+    "ans": "lbjy",
+    "group": "F"
+  },
+  {
+    "ctx": "R ptrt ptrt>zcqy",
+    "ans": "zcqy",
+    "group": "R"
+  },
+  {
+    "ctx": "F qtds fixq>zdbx",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F rdnr mynl>rdnr",
+    "ans": "mynl",
+    "group": "F"
+  },
+  {
+    "ctx": "R yaql yaql>fjey",
+    "ans": "fjey",
+    "group": "R"
+  },
+  {
+    "ctx": "F inga rnio>yxra",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F fqul johd>fqul",
+    "ans": "johd",
+    "group": "F"
+  },
+  {
+    "ctx": "R iqmr iqmr>asug",
+    "ans": "asug",
+    "group": "R"
+  },
+  {
+    "ctx": "F ojqj vtlr>bkae",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F mlwh ymnw>mlwh",
+    "ans": "ymnw",
+    "group": "F"
+  },
+  {
+    "ctx": "R uboh uboh>nslh",
+    "ans": "nslh",
+    "group": "R"
+  },
+  {
+    "ctx": "F ziob sbuv>jqap",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F bfde wrpu>bfde",
+    "ans": "wrpu",
+    "group": "F"
+  },
+  {
+    "ctx": "R zxmg zxmg>fdfy",
+    "ans": "fdfy",
+    "group": "R"
+  },
+  {
+    "ctx": "F ndfr oqhv>ezgr",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F gigd pghs>gigd",
+    "ans": "pghs",
+    "group": "F"
+  },
+  {
+    "ctx": "R vmwg vmwg>asxn",
+    "ans": "asxn",
+    "group": "R"
+  },
+  {
+    "ctx": "F bqbp peja>gneh",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F moob hxno>moob",
+    "ans": "hxno",
+    "group": "F"
+  },
+  {
+    "ctx": "R iaws iaws>vxru",
+    "ans": "vxru",
+    "group": "R"
+  },
+  {
+    "ctx": "F zmuu itbc>sutz",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F xill vmsk>xill",
+    "ans": "vmsk",
+    "group": "F"
+  },
+  {
+    "ctx": "R abfj abfj>iwig",
+    "ans": "iwig",
+    "group": "R"
+  },
+  {
+    "ctx": "F xfcs ktug>dzsa",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F znjo ehfx>znjo",
+    "ans": "ehfx",
+    "group": "F"
+  },
+  {
+    "ctx": "R juxc juxc>vrry",
+    "ans": "vrry",
+    "group": "R"
+  },
+  {
+    "ctx": "F ydwk ryvm>jpld",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F gazp kwcm>gazp",
+    "ans": "kwcm",
+    "group": "F"
+  },
+  {
+    "ctx": "R xbdv xbdv>hjzp",
+    "ans": "hjzp",
+    "group": "R"
+  },
+  {
+    "ctx": "F fzdg tytj>qnvv",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F qoha jrnh>qoha",
+    "ans": "jrnh",
+    "group": "F"
+  },
+  {
+    "ctx": "R hsey hsey>abpp",
+    "ans": "abpp",
+    "group": "R"
+  },
+  {
+    "ctx": "F ytyy ntjg>mxot",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F rdzh owre>rdzh",
+    "ans": "owre",
+    "group": "F"
+  },
+  {
+    "ctx": "R nkbf nkbf>hugx",
+    "ans": "hugx",
+    "group": "R"
+  },
+  {
+    "ctx": "F ijrx rmam>xucy",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F mljk fniv>mljk",
+    "ans": "fniv",
+    "group": "F"
+  },
+  {
+    "ctx": "R oetu oetu>dqjz",
+    "ans": "dqjz",
+    "group": "R"
+  },
+  {
+    "ctx": "F vsbb dkci>qhca",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F aiqr ozeh>aiqr",
+    "ans": "ozeh",
+    "group": "F"
+  },
+  {
+    "ctx": "R pyyy pyyy>ibja",
+    "ans": "ibja",
+    "group": "R"
+  },
+  {
+    "ctx": "F rkuf wbow>gvea",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F okrg pfvu>okrg",
+    "ans": "pfvu",
+    "group": "F"
+  },
+  {
+    "ctx": "R mwco mwco>bjlu",
+    "ans": "bjlu",
+    "group": "R"
+  },
+  {
+    "ctx": "F ybnc citd>snsv",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F nhey bsgn>nhey",
+    "ans": "bsgn",
+    "group": "F"
+  },
+  {
+    "ctx": "R hhvj hhvj>jnnj",
+    "ans": "jnnj",
+    "group": "R"
+  },
+  {
+    "ctx": "F eftu dnze>iaoh",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F rrej iavo>rrej",
+    "ans": "iavo",
+    "group": "F"
+  },
+  {
+    "ctx": "R wdmq wdmq>eqas",
+    "ans": "eqas",
+    "group": "R"
+  },
+  {
+    "ctx": "F wxkw aiee>ukdc",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F ztkl phep>ztkl",
+    "ans": "phep",
+    "group": "F"
+  },
+  {
+    "ctx": "R ufbe ufbe>asvf",
+    "ans": "asvf",
+    "group": "R"
+  },
+  {
+    "ctx": "F ukpa xsaw>ozmi",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F vmyf efjd>vmyf",
+    "ans": "efjd",
+    "group": "F"
+  },
+  {
+    "ctx": "R tuov tuov>jnza",
+    "ans": "jnza",
+    "group": "R"
+  },
+  {
+    "ctx": "F khzj dirc>efzj",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F zuww oxnr>zuww",
+    "ans": "oxnr",
+    "group": "F"
+  },
+  {
+    "ctx": "R whls whls>gruo",
+    "ans": "gruo",
+    "group": "R"
+  },
+  {
+    "ctx": "F jokj rypl>qjrh",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F gyxv xfzb>gyxv",
+    "ans": "xfzb",
+    "group": "F"
+  },
+  {
+    "ctx": "R lulp lulp>vakx",
+    "ans": "vakx",
+    "group": "R"
+  },
+  {
+    "ctx": "F frtl fpnf>wifa",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F igrw akcl>igrw",
+    "ans": "akcl",
+    "group": "F"
+  },
+  {
+    "ctx": "R iafb iafb>mstb",
+    "ans": "mstb",
+    "group": "R"
+  },
+  {
+    "ctx": "F ilda hmwp>zmle",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F wwma knhp>wwma",
+    "ans": "knhp",
+    "group": "F"
+  },
+  {
+    "ctx": "R eydt eydt>cpoy",
+    "ans": "cpoy",
+    "group": "R"
+  },
+  {
+    "ctx": "F fxog yghg>qtxt",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F jrbd vahr>jrbd",
+    "ans": "vahr",
+    "group": "F"
+  },
+  {
+    "ctx": "R jfzl jfzl>ggqo",
+    "ans": "ggqo",
+    "group": "R"
+  },
+  {
+    "ctx": "F iauc vdwf>lwml",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F kqga snrt>kqga",
+    "ans": "snrt",
+    "group": "F"
+  },
+  {
+    "ctx": "R niee niee>kmnn",
+    "ans": "kmnn",
+    "group": "R"
+  },
+  {
+    "ctx": "F jeue yuxz>cvgx",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F gbaq kuwq>gbaq",
+    "ans": "kuwq",
+    "group": "F"
+  },
+  {
+    "ctx": "R fdqb fdqb>vgnq",
+    "ans": "vgnq",
+    "group": "R"
+  },
+  {
+    "ctx": "F frxq jwkq>uikj",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F kmyg vmtq>kmyg",
+    "ans": "vmtq",
+    "group": "F"
+  },
+  {
+    "ctx": "R wzlw wzlw>gpeo",
+    "ans": "gpeo",
+    "group": "R"
+  },
+  {
+    "ctx": "F pcxh tbgt>setc",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F agcg kiwu>agcg",
+    "ans": "kiwu",
+    "group": "F"
+  },
+  {
+    "ctx": "R ilds ilds>zzrj",
+    "ans": "zzrj",
+    "group": "R"
+  },
+  {
+    "ctx": "F nzwg zjun>fvza",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F tvtz vxzj>tvtz",
+    "ans": "vxzj",
+    "group": "F"
+  },
+  {
+    "ctx": "R tvms tvms>glps",
+    "ans": "glps",
+    "group": "R"
+  },
+  {
+    "ctx": "F yukb yppr>uxxs",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F tzkz sogb>tzkz",
+    "ans": "sogb",
+    "group": "F"
+  },
+  {
+    "ctx": "R dnss dnss>wonh",
+    "ans": "wonh",
+    "group": "R"
+  },
+  {
+    "ctx": "F lzgx gvze>bpke",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F vmuu lwus>vmuu",
+    "ans": "lwus",
+    "group": "F"
+  },
+  {
+    "ctx": "R whvw whvw>dvar",
+    "ans": "dvar",
+    "group": "R"
+  },
+  {
+    "ctx": "F ysya fupe>rjzm",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F upku nnku>upku",
+    "ans": "nnku",
+    "group": "F"
+  },
+  {
+    "ctx": "R qgpw qgpw>eicl",
+    "ans": "eicl",
+    "group": "R"
+  },
+  {
+    "ctx": "F rabe rvrd>ipej",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F wben xwjo>wben",
+    "ans": "xwjo",
+    "group": "F"
+  },
+  {
+    "ctx": "R rkke rkke>pshd",
+    "ans": "pshd",
+    "group": "R"
+  },
+  {
+    "ctx": "F txjr bkgn>fvri",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F ycsi lfgr>ycsi",
+    "ans": "lfgr",
+    "group": "F"
+  },
+  {
+    "ctx": "R lvxf lvxf>vzju",
+    "ans": "vzju",
+    "group": "R"
+  },
+  {
+    "ctx": "F oxak facz>rsih",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F ufjb gabq>ufjb",
+    "ans": "gabq",
+    "group": "F"
+  },
+  {
+    "ctx": "R uqvx uqvx>jswc",
+    "ans": "jswc",
+    "group": "R"
+  },
+  {
+    "ctx": "F yfge egwi>qumd",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F trjg umnm>trjg",
+    "ans": "umnm",
+    "group": "F"
+  },
+  {
+    "ctx": "R ioni ioni>gvaz",
+    "ans": "gvaz",
+    "group": "R"
+  },
+  {
+    "ctx": "F rgyf msmb>iuen",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F dcob yqed>dcob",
+    "ans": "yqed",
+    "group": "F"
+  },
+  {
+    "ctx": "R irls irls>bgzi",
+    "ans": "bgzi",
+    "group": "R"
+  },
+  {
+    "ctx": "F zhag ykqs>gpdp",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F jxws pgfv>jxws",
+    "ans": "pgfv",
+    "group": "F"
+  },
+  {
+    "ctx": "R ynqw ynqw>sxcy",
+    "ans": "sxcy",
+    "group": "R"
+  },
+  {
+    "ctx": "F binu lxmn>yooy",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F ckya xzfh>ckya",
+    "ans": "xzfh",
+    "group": "F"
+  },
+  {
+    "ctx": "R oefb oefb>ijlu",
+    "ans": "ijlu",
+    "group": "R"
+  },
+  {
+    "ctx": "F tihm mfxu>pirk",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F mdsd basj>mdsd",
+    "ans": "basj",
+    "group": "F"
+  },
+  {
+    "ctx": "R zovo zovo>zciz",
+    "ans": "zciz",
+    "group": "R"
+  },
+  {
+    "ctx": "F kjuo kfbx>bwrn",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F xzcr flei>xzcr",
+    "ans": "flei",
+    "group": "F"
+  },
+  {
+    "ctx": "R pxpm pxpm>jzle",
+    "ans": "jzle",
+    "group": "R"
+  },
+  {
+    "ctx": "F qfcu jeyc>vcjb",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F ozwl jjhd>ozwl",
+    "ans": "jjhd",
+    "group": "F"
+  },
+  {
+    "ctx": "R gohw gohw>tzvy",
+    "ans": "tzvy",
+    "group": "R"
+  },
+  {
+    "ctx": "F wcoa voim>iewe",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F huto ytor>huto",
+    "ans": "ytor",
+    "group": "F"
+  },
+  {
+    "ctx": "R kfqk kfqk>wsxo",
+    "ans": "wsxo",
+    "group": "R"
+  },
+  {
+    "ctx": "F mgtg szwk>mfjw",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F dnwc xsgt>dnwc",
+    "ans": "xsgt",
+    "group": "F"
+  },
+  {
+    "ctx": "R drfa drfa>rbhu",
+    "ans": "rbhu",
+    "group": "R"
+  },
+  {
+    "ctx": "F skdi lxtt>lizt",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F dbpt jiib>dbpt",
+    "ans": "jiib",
+    "group": "F"
+  },
+  {
+    "ctx": "R plxb plxb>afry",
+    "ans": "afry",
+    "group": "R"
+  },
+  {
+    "ctx": "F tzpn jsnr>hsnn",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F gxlh mziz>gxlh",
+    "ans": "mziz",
+    "group": "F"
+  },
+  {
+    "ctx": "R rauv rauv>tabb",
+    "ans": "tabb",
+    "group": "R"
+  },
+  {
+    "ctx": "F ylbc sard>uhdk",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F qcai phuu>qcai",
+    "ans": "phuu",
+    "group": "F"
+  },
+  {
+    "ctx": "R ounb ounb>udup",
+    "ans": "udup",
+    "group": "R"
+  },
+  {
+    "ctx": "F riiv gjzf>qpzr",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F vlia recv>vlia",
+    "ans": "recv",
+    "group": "F"
+  },
+  {
+    "ctx": "R dunc dunc>luuy",
+    "ans": "luuy",
+    "group": "R"
+  },
+  {
+    "ctx": "F urwv rmbj>xxlo",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F hzqn psro>hzqn",
+    "ans": "psro",
+    "group": "F"
+  },
+  {
+    "ctx": "R axjh axjh>porc",
+    "ans": "porc",
+    "group": "R"
+  },
+  {
+    "ctx": "F twqb whul>lwjk",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F zqbl bctd>zqbl",
+    "ans": "bctd",
+    "group": "F"
+  },
+  {
+    "ctx": "R rmwy rmwy>xhrj",
+    "ans": "xhrj",
+    "group": "R"
+  },
+  {
+    "ctx": "F fump nnfh>ehxz",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F ncwi owhg>ncwi",
+    "ans": "owhg",
+    "group": "F"
+  },
+  {
+    "ctx": "R rczb rczb>imic",
+    "ans": "imic",
+    "group": "R"
+  },
+  {
+    "ctx": "F zqnl xubd>wicg",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F epvk ewqp>epvk",
+    "ans": "ewqp",
+    "group": "F"
+  },
+  {
+    "ctx": "R vsbz vsbz>hzko",
+    "ans": "hzko",
+    "group": "R"
+  },
+  {
+    "ctx": "F krad lmub>szov",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F jxtp jxxu>jxtp",
+    "ans": "jxxu",
+    "group": "F"
+  },
+  {
+    "ctx": "R pruz pruz>serr",
+    "ans": "serr",
+    "group": "R"
+  },
+  {
+    "ctx": "F uefx jyif>ssea",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F kccu wxym>kccu",
+    "ans": "wxym",
+    "group": "F"
+  },
+  {
+    "ctx": "R vtmd vtmd>ihhy",
+    "ans": "ihhy",
+    "group": "R"
+  },
+  {
+    "ctx": "F lomq acta>baxo",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F kebl nrcv>kebl",
+    "ans": "nrcv",
+    "group": "F"
+  },
+  {
+    "ctx": "R fppc fppc>ohol",
+    "ans": "ohol",
+    "group": "R"
+  },
+  {
+    "ctx": "F vnll fuvt>wxhk",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F zlkc cjuu>zlkc",
+    "ans": "cjuu",
+    "group": "F"
+  },
+  {
+    "ctx": "R ytvc ytvc>mnph",
+    "ans": "mnph",
+    "group": "R"
+  },
+  {
+    "ctx": "F yohq indr>rtfd",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F bcla agpy>bcla",
+    "ans": "agpy",
+    "group": "F"
+  },
+  {
+    "ctx": "R yqzc yqzc>ghay",
+    "ans": "ghay",
+    "group": "R"
+  },
+  {
+    "ctx": "F bjxh oear>lzjm",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F jifx fctn>jifx",
+    "ans": "fctn",
+    "group": "F"
+  },
+  {
+    "ctx": "R piuq piuq>gfqy",
+    "ans": "gfqy",
+    "group": "R"
+  },
+  {
+    "ctx": "F yxsz onxw>qxxz",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F qwlx sykl>qwlx",
+    "ans": "sykl",
+    "group": "F"
+  },
+  {
+    "ctx": "R suek suek>grin",
+    "ans": "grin",
+    "group": "R"
+  },
+  {
+    "ctx": "F noyv kdei>orcl",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F ulyc maxj>ulyc",
+    "ans": "maxj",
+    "group": "F"
+  },
+  {
+    "ctx": "R xekd xekd>pajv",
+    "ans": "pajv",
+    "group": "R"
+  },
+  {
+    "ctx": "F ggik bqaz>uvgc",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F muqh fybf>muqh",
+    "ans": "fybf",
+    "group": "F"
+  },
+  {
+    "ctx": "R seqi seqi>xhse",
+    "ans": "xhse",
+    "group": "R"
+  },
+  {
+    "ctx": "F ufpu krel>tvbo",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F bvkk kzwx>bvkk",
+    "ans": "kzwx",
+    "group": "F"
+  },
+  {
+    "ctx": "R oqrp oqrp>nnaz",
+    "ans": "nnaz",
+    "group": "R"
+  },
+  {
+    "ctx": "F ewfb njtd>lnjn",
+    "ans": "no",
+    "group": "U"
+  },
+  {
+    "ctx": "F npvi dhto>npvi",
+    "ans": "dhto",
+    "group": "F"
+  },
+  {
+    "ctx": "R oqld oqld>amqa",
+    "ans": "amqa",
+    "group": "R"
+  },
+  {
+    "ctx": "F tbyy qqny>gtmv",
+    "ans": "no",
+    "group": "U"
+  }
+]

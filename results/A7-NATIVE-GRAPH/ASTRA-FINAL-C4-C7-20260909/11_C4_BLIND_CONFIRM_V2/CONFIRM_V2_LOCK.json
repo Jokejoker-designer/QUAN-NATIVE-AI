@@ -1,0 +1,13 @@
+{
+  "file": "confirm_v2.json",
+  "sha256_canonical": "42986b035d32df26cfdb812f2f6ba1a6eea75e5632807b5bc8b5194b235dd604",
+  "counts": {
+    "F": 120,
+    "R": 120,
+    "U": 120
+  },
+  "opened_for_selection": false,
+  "confirm_v1_for_pass": false,
+  "layout": "C4_CONTEXT_CONTRACT_V2",
+  "checkpoint_sha256": "fcfe37be0ca006de9a0973331cb0b1b82703a96c0f10097e21d7e0bff85987dc"
+}

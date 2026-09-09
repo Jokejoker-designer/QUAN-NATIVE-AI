@@ -1,0 +1,35 @@
+{
+  "schema": "C4_V2_CAUSAL_PREREG_01",
+  "layout": "C4_CONTEXT_CONTRACT_V2",
+  "gate": "ANSWER held open; answer_allowed=1; S_SAFE not in this bag",
+  "checkpoint_sha256": "fcfe37be0ca006de9a0973331cb0b1b82703a96c0f10097e21d7e0bff85987dc",
+  "confirm_v3_not_used_for_selection": true,
+  "confirm_v3_entities_excluded": true,
+  "seed": 40302,
+  "n_F": 32,
+  "n_R": 32,
+  "prereg_min_drop": 0.20,
+  "criteria": {
+    "normal_grounded_min": 0.90,
+    "zero_drop_min": 0.20,
+    "corrupt_drop_min": 0.20,
+    "replaced_old_gold_max": 0.50,
+    "replaced_new_gold_min": 0.90,
+    "removed_old_gold_max": 0.50,
+    "wrong_bank_must_be_below_normal": true,
+    "prefix_intervention_min_changed": 1
+  },
+  "ops": {
+    "F_copy": "DST at ctx[7:11]",
+    "R_copy": "SRC at ctx[2:6]",
+    "replace_F": "rotate DST letters; old gold must fail; new DST must hit",
+    "replace_R": "rotate SRC letters; old gold must fail; new SRC must hit",
+    "remove": "overwrite copied endpoint with PAD ---- while gate held open",
+    "zero": "zero We",
+    "corrupt": "Wq += 4; WqR += -4",
+    "wrong_bank": "swap opcode byte F<->R, keep remaining 15 bytes",
+    "prefix": "after first generated token, append a different byte; subsequent top-1 must change on >=1 probe"
+  },
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN"
+}

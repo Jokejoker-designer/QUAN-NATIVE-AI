@@ -1,0 +1,34 @@
+{
+  "schema": "A7NG_E1B_PROOF_ENDPOINTS_NEW_GATE_V1",
+  "bag": "25_C5_FPGA_DIRECTION_ENDPOINT_DICT",
+  "PROGRAM": "NO",
+  "rtl_modified": false,
+  "gate": "versioned interface export allowed under KEEP; using c3_ans as DST without fo equality is OPEN",
+  "forbidden": [
+    "use proof0/proof1 (fact-record IDs) as entity IDs",
+    "truncate 20-bit entity to 8 bits as identity",
+    "rename c3_ans to dst without fo equality",
+    "infer 800k entity parser from 800k record capacity"
+  ],
+  "current_fact": {
+    "c5": "entity_src_i={12'd0,c3_subj}; entity_dst_i=c3_ans  (a7ng_astra_c5_prod_top_final_v1.sv:433-434)",
+    "c3_1hop": "pans=fo[ei]; proof0=fe[ei] fact-record; fs=[19:0] fo=[39:20]",
+    "c3_2hop": "proof0=fe[ei]; proof1=fe[ej]; pans=fo[ej]",
+    "materializer_forbidden": "c3_answer_id in C4_CONTEXT_CONTRACT_V2"
+  },
+  "required_export": {
+    "src_20": "fs[p0] latched with proof_ok and txn identity",
+    "dst_20": "1-hop fo[p0]; 2-hop fo[p1] with fo[p0]==fs[p1]",
+    "proof_ok": "real checker, not fake 1",
+    "if_c3_ans_used": "assert c3_ans==fo of selected path AND reconcile forbidden c3_answer_id clause"
+  },
+  "qse_8_to_entity_20": {
+    "status": "OPEN",
+    "need": "versioned map or explicit scope restriction",
+    "tests": ["two IDs same low 8 bits", "high entity ID", "high fact ID", "stale proof", "context mismatch"]
+  },
+  "counts": {
+    "records": "report separately",
+    "entities": "report separately"
+  }
+}

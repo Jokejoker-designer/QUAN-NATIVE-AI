@@ -1,0 +1,11 @@
+{
+  "sv": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\rtl\\native_graph\\integrate\\a7ng_astra_c4_lm06_d32_fr_v2.sv",
+  "svh": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\rtl\\native_graph\\integrate\\a7ng_astra_c4_lm06_d32_fr_v2.svh",
+  "mem": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\rtl\\native_graph\\integrate\\a7ng_astra_c4_lm06_d32_fr_v2_mem",
+  "v1_svh_sha256": "75d6760217b1456cac736d7e917d24b3eebd3f905e23a18df0cf4a997dd107dd",
+  "v2_svh_sha256": "cc7926c49308f57a441adf7a94e13d7746c8dba04593a40938a66d64bc017400",
+  "v2_sv_sha256": "34d934935768baf1d20e7a5d8da49945554716df48bfa6c8e89c3443790819f6",
+  "gold_svh_sha256": "a3130b49cf4552f771e01cac7bfeff3b3d25ca5bb4adedc9fa8340b520ff0221",
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN"
+}

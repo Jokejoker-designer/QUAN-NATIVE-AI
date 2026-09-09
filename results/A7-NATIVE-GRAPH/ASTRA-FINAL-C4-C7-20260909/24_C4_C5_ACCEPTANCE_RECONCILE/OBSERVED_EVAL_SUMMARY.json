@@ -1,0 +1,154 @@
+{
+  "OBSERVED_EVAL_V1.json": {
+    "n": 360,
+    "n_FR": 240,
+    "n_U": 120,
+    "measured_system": 0,
+    "learned_counts": {
+      "allowed_correct": 240,
+      "not_measured": 120
+    },
+    "system_counts": {
+      "not_measured": 240,
+      "expected_by_contract": 120
+    },
+    "LEARNED_NUMERICAL": {
+      "scope": "240 F/R D32 tokens; U must not be required here",
+      "n_FR": 240,
+      "allowed_correct": 240,
+      "allowed_wrong": 0,
+      "not_measured": 120
+    },
+    "SYSTEM_360": {
+      "scope": "240 F/R + 120 unsupported; reference-system \u2194 RTL-system",
+      "measured": 0,
+      "n": 360,
+      "note": "PASS only when measured_system == n and expected vs observed are separate fields"
+    },
+    "UNSUPPORTED": {
+      "scope": "C3 status \u2192 answer_allowed=0 \u2192 S_SAFE; D32 bypass",
+      "expected_by_contract": 120,
+      "safe_refuse": 0,
+      "unsafe_accept": 0,
+      "not_measured": 240
+    },
+    "pass_system_safe_observed": false,
+    "source": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-FINAL-C4-C7-20260909\\11_C4_BLIND_CONFIRM\\results\\confirm_wo360_v3_once.json",
+    "meta": {
+      "corpus": "V1_confirm_wo360_v3_once"
+    },
+    "PROGRAM": "NO",
+    "C4_MASTER": "OPEN",
+    "C5_MASTER": "OPEN",
+    "note": "Observed scorer. Does not mutate legacy eval files. expected_by_contract means old U safety was constant-assigned. LEARNED_NUMERICAL must not be mixed with SYSTEM_360.",
+    "n_rows_omitted": 360,
+    "sha256_full": "0206a07f6bcf6bc1659db82023f6585ad3fc701050b79f87112e61f01748476a",
+    "examples": {
+      "not_measured/allowed_correct": [
+        {
+          "id": "c3-0129",
+          "expected_group": "F",
+          "expected_kind": "supported_forward",
+          "expected_ans": "fhop",
+          "system_class": "not_measured",
+          "learned_class": "allowed_correct",
+          "note": "learned D32 tokens present; system-path tokens/status absent"
+        },
+        {
+          "id": "c3-0131",
+          "expected_group": "F",
+          "expected_kind": "supported_forward",
+          "expected_ans": "cxle",
+          "system_class": "not_measured",
+          "learned_class": "allowed_correct",
+          "note": "learned D32 tokens present; system-path tokens/status absent"
+        }
+      ],
+      "expected_by_contract/not_measured": [
+        {
+          "id": "c3-0282",
+          "expected_group": "U",
+          "expected_kind": "unrelated",
+          "expected_ans": "no",
+          "system_class": "expected_by_contract",
+          "learned_class": "not_measured",
+          "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+        },
+        {
+          "id": "c3-0319",
+          "expected_group": "U",
+          "expected_kind": "unrelated",
+          "expected_ans": "no",
+          "system_class": "expected_by_contract",
+          "learned_class": "not_measured",
+          "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+        }
+      ]
+    }
+  },
+  "OBSERVED_EVAL_V2.json": {
+    "n": 360,
+    "n_FR": 240,
+    "n_U": 120,
+    "measured_system": 0,
+    "learned_counts": {
+      "not_measured": 360
+    },
+    "system_counts": {
+      "not_measured": 360
+    },
+    "LEARNED_NUMERICAL": {
+      "scope": "240 F/R D32 tokens; U must not be required here",
+      "n_FR": 240,
+      "allowed_correct": 0,
+      "allowed_wrong": 0,
+      "not_measured": 360
+    },
+    "SYSTEM_360": {
+      "scope": "240 F/R + 120 unsupported; reference-system \u2194 RTL-system",
+      "measured": 0,
+      "n": 360,
+      "note": "PASS only when measured_system == n and expected vs observed are separate fields"
+    },
+    "UNSUPPORTED": {
+      "scope": "C3 status \u2192 answer_allowed=0 \u2192 S_SAFE; D32 bypass",
+      "expected_by_contract": 0,
+      "safe_refuse": 0,
+      "unsafe_accept": 0,
+      "not_measured": 360
+    },
+    "pass_system_safe_observed": false,
+    "source": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-FINAL-C4-C7-20260909\\11_C4_BLIND_CONFIRM_V3\\confirm_v3.json + D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-FINAL-C4-C7-20260909\\11_C4_BLIND_CONFIRM_V3\\eval_once.json",
+    "meta": {
+      "corpus": "V2_confirm_v3_plus_eval_once"
+    },
+    "PROGRAM": "NO",
+    "C4_MASTER": "OPEN",
+    "C5_MASTER": "OPEN",
+    "note": "Observed scorer. Does not mutate legacy eval files. expected_by_contract means old U safety was constant-assigned. LEARNED_NUMERICAL must not be mixed with SYSTEM_360.",
+    "n_rows_omitted": 360,
+    "sha256_full": "06d5285b3200a9790f7d6965d3760d17551df5f5ba27260b2a2fc2bf251bee19",
+    "examples": {
+      "not_measured/not_measured": [
+        {
+          "id": "cv3-0123",
+          "expected_group": "F",
+          "expected_kind": null,
+          "expected_ans": "tifh",
+          "system_class": "not_measured",
+          "learned_class": "not_measured",
+          "note": "no observed_status or observed_system_tokens"
+        },
+        {
+          "id": "cv3-0309",
+          "expected_group": "F",
+          "expected_kind": null,
+          "expected_ans": "xlrc",
+          "system_class": "not_measured",
+          "learned_class": "not_measured",
+          "note": "no observed_status or observed_system_tokens"
+        }
+      ]
+    }
+  }
+}

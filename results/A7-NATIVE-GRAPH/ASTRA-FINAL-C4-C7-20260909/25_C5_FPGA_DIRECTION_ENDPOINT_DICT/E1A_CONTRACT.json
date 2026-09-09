@@ -1,0 +1,65 @@
+{
+  "schema": "A7NG_E1A_DIRECTION_NEW_GATE_V1",
+  "bag": "25_C5_FPGA_DIRECTION_ENDPOINT_DICT",
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "C5_MASTER": "OPEN",
+  "rtl_modified": false,
+  "gate": "NEW_GATE",
+  "keep": "C1/C2/C3 EXISTING SEMANTICS",
+  "forbidden": [
+    "wire direction_o to bank_r as reverse",
+    "treat requires as undirected",
+    "reuse C3 answer and only flip bank",
+    "invent encoding as bit0 of current 2'd0",
+    "TB bank_r_i on production / C6 path",
+    "silent change to existing F SVO-as-written"
+  ],
+  "existing_fact": {
+    "extract_direction_o": "2'd0 tied a7ng_query_role_extract.sv:98",
+    "parse_direction_o": "2'd0; comment reverse voice later grammar",
+    "registered_encoding": {
+      "A7NG_C4_DIR_SVO_AS_WRITTEN": "2'd0",
+      "file": "a7ng_astra_c4_entity_alias_v1.svh"
+    },
+    "dir_known": "telemetry today; not in answer_allowed_o",
+    "c6_bank_r": "tied 0"
+  },
+  "package_proposal_not_implemented": {
+    "name": "a7ng_op_dir_pkg",
+    "width": 2,
+    "OP_F_SVO_AS_WRITTEN": "2'd0 KEEP existing F",
+    "OP_R_INVERSE": "2'd1 NEW — must not be claimed until parser+proof law exist",
+    "OP_INVALID": "2'd2 NEW — ambiguous/unknown voice → safe",
+    "OP_RESERVED": "2'd3",
+    "note": "2'd0 remains F. Reverse is a new code, not a reinterpretation of 2'd0."
+  },
+  "latch_law": {
+    "when": "query acceptance (valid accepted UART line / session start)",
+    "what": ["operation", "session", "txn", "generation"],
+    "hold_until": "transaction end (retire of this query, including UART drain)"
+  },
+  "requires_proof_law": {
+    "world": "A requires B is directed: A has prerequisite B",
+    "forward_question": "find prerequisite of A → roles SRC=A DST=B, witness fo[p0]=B for 1-hop requires",
+    "inverse_question": "find entity that needs B → roles ask for SRC such that (SRC, requires, B); not DST=A with bank flip",
+    "2hop": "src=fs[p0], fo[p0]=fs[p1], dst=fo[p1]; orientation must match the asked direction"
+  },
+  "gate_integration": {
+    "dir_known": "must be in answer_allowed, not telemetry",
+    "invalid_or_unknown_op": "answer_allowed=0 → S_SAFE",
+    "production_bank": "materializer bank from latched operation only"
+  },
+  "replay_required_when_implemented": [
+    "existing F C1/C3 regressions must not change",
+    "paired F/R",
+    "role reversal",
+    "invalid/ambiguous direction",
+    "opposite-direction distractor",
+    "2-hop orientation",
+    "back-to-back F/R",
+    "reset between queries",
+    "no bank_r override in end-to-end TB"
+  ],
+  "sibling_not_this_gate": "25_C5_EDGE_DIR_V1 TB exists, XSim not run, not this contract"
+}

@@ -1,0 +1,7125 @@
+{
+  "n": 360,
+  "n_FR": 240,
+  "n_U": 120,
+  "measured_system": 0,
+  "learned_counts": {
+    "allowed_correct": 240,
+    "not_measured": 120
+  },
+  "system_counts": {
+    "not_measured": 240,
+    "expected_by_contract": 120
+  },
+  "LEARNED_NUMERICAL": {
+    "scope": "240 F/R D32 tokens; U must not be required here",
+    "n_FR": 240,
+    "allowed_correct": 240,
+    "allowed_wrong": 0,
+    "not_measured": 120
+  },
+  "SYSTEM_360": {
+    "scope": "240 F/R + 120 unsupported; reference-system \u2194 RTL-system",
+    "measured": 0,
+    "n": 360,
+    "note": "PASS only when measured_system == n and expected vs observed are separate fields"
+  },
+  "UNSUPPORTED": {
+    "scope": "C3 status \u2192 answer_allowed=0 \u2192 S_SAFE; D32 bypass",
+    "expected_by_contract": 120,
+    "safe_refuse": 0,
+    "unsafe_accept": 0,
+    "not_measured": 240
+  },
+  "pass_system_safe_observed": false,
+  "rows": [
+    {
+      "id": "c3-0129",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "fhop",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "f",
+        "h",
+        "o",
+        "p",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0131",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "cxle",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "c",
+        "x",
+        "l",
+        "e",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0167",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "scwm",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "s",
+        "c",
+        "w",
+        "m",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0000",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "fwmd",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "f",
+        "w",
+        "m",
+        "d",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0280",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "xjoo",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "x",
+        "j",
+        "o",
+        "o",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0030",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "apzz",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "a",
+        "p",
+        "z",
+        "z",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0158",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "etcn",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "e",
+        "t",
+        "c",
+        "n",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0284",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "vrfq",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "v",
+        "r",
+        "f",
+        "q",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0331",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "nsaf",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "n",
+        "s",
+        "a",
+        "f",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0341",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "qjbw",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "q",
+        "j",
+        "b",
+        "w",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0266",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "qkgo",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "q",
+        "k",
+        "g",
+        "o",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0273",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "ryfn",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "r",
+        "y",
+        "f",
+        "n",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0313",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "ixcj",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "i",
+        "x",
+        "c",
+        "j",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0073",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "nvyt",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "n",
+        "v",
+        "y",
+        "t",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0021",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "agur",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "a",
+        "g",
+        "u",
+        "r",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0175",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "jpib",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "j",
+        "p",
+        "i",
+        "b",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0287",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "ouuf",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "o",
+        "u",
+        "u",
+        "f",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0179",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "hjwo",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "h",
+        "j",
+        "w",
+        "o",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0269",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "jjbk",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "j",
+        "j",
+        "b",
+        "k",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0187",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "hkic",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "h",
+        "k",
+        "i",
+        "c",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0088",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "eqsx",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "e",
+        "q",
+        "s",
+        "x",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0353",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "elpt",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "e",
+        "l",
+        "p",
+        "t",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0262",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "tdlv",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "t",
+        "d",
+        "l",
+        "v",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0035",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "wnmd",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "w",
+        "n",
+        "m",
+        "d",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0116",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "gpxv",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "g",
+        "p",
+        "x",
+        "v",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0349",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "phqh",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "p",
+        "h",
+        "q",
+        "h",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0225",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "bcnl",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "b",
+        "c",
+        "n",
+        "l",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0174",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "fnag",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "f",
+        "n",
+        "a",
+        "g",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0171",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "ddaj",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "d",
+        "d",
+        "a",
+        "j",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0111",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "mamx",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "m",
+        "a",
+        "m",
+        "x",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0121",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "ooqz",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "o",
+        "o",
+        "q",
+        "z",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0019",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "fprt",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "f",
+        "p",
+        "r",
+        "t",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0123",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "lmlm",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "l",
+        "m",
+        "l",
+        "m",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0028",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "pwuz",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "p",
+        "w",
+        "u",
+        "z",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0147",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "vlkc",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "v",
+        "l",
+        "k",
+        "c",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0076",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "xbzz",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "x",
+        "b",
+        "z",
+        "z",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0007",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "ewol",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "e",
+        "w",
+        "o",
+        "l",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0031",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "fyhz",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "f",
+        "y",
+        "h",
+        "z",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0150",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "fhdp",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "f",
+        "h",
+        "d",
+        "p",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0034",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "kvgt",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "k",
+        "v",
+        "g",
+        "t",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0206",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "hkqp",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "h",
+        "k",
+        "q",
+        "p",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0080",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "sqhy",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "s",
+        "q",
+        "h",
+        "y",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0188",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "niax",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "n",
+        "i",
+        "a",
+        "x",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0027",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "wajl",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "w",
+        "a",
+        "j",
+        "l",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0345",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "vezu",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "v",
+        "e",
+        "z",
+        "u",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0081",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "yqnj",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "y",
+        "q",
+        "n",
+        "j",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0099",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "vfcs",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "v",
+        "f",
+        "c",
+        "s",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0170",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "wmnl",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "w",
+        "m",
+        "n",
+        "l",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0063",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "uydh",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "u",
+        "y",
+        "d",
+        "h",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0327",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "cscb",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "c",
+        "s",
+        "c",
+        "b",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0292",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "vrra",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "v",
+        "r",
+        "r",
+        "a",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0271",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "hfmd",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "h",
+        "f",
+        "m",
+        "d",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0267",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "wden",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "w",
+        "d",
+        "e",
+        "n",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0100",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "lenw",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "l",
+        "e",
+        "n",
+        "w",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0105",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "bczw",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "b",
+        "c",
+        "z",
+        "w",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0041",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "bgab",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "b",
+        "g",
+        "a",
+        "b",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0161",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "quni",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "q",
+        "u",
+        "n",
+        "i",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0217",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "fpti",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "f",
+        "p",
+        "t",
+        "i",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0324",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "hnyy",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "h",
+        "n",
+        "y",
+        "y",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0144",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "ntxp",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "n",
+        "t",
+        "x",
+        "p",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0241",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "qwpb",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "q",
+        "w",
+        "p",
+        "b",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0037",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "ontt",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "o",
+        "n",
+        "t",
+        "t",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0060",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "fmkt",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "f",
+        "m",
+        "k",
+        "t",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0002",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "vhob",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "v",
+        "h",
+        "o",
+        "b",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0140",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "fmwh",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "f",
+        "m",
+        "w",
+        "h",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0248",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "ttrj",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "t",
+        "t",
+        "r",
+        "j",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0036",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "azwq",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "a",
+        "z",
+        "w",
+        "q",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0173",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "zpbw",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "z",
+        "p",
+        "b",
+        "w",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0058",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "kvjl",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "k",
+        "v",
+        "j",
+        "l",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0095",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "thpi",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "t",
+        "h",
+        "p",
+        "i",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0110",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "ryjw",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "r",
+        "y",
+        "j",
+        "w",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0159",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "edac",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "e",
+        "d",
+        "a",
+        "c",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0351",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "dlvz",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "d",
+        "l",
+        "v",
+        "z",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0310",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "qyie",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "q",
+        "y",
+        "i",
+        "e",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0102",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "lvyd",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "l",
+        "v",
+        "y",
+        "d",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0210",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "rena",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "r",
+        "e",
+        "n",
+        "a",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0249",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "fwud",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "f",
+        "w",
+        "u",
+        "d",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0215",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "pczm",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "p",
+        "c",
+        "z",
+        "m",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0216",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "qkmy",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "q",
+        "k",
+        "m",
+        "y",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0023",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "mekx",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "m",
+        "e",
+        "k",
+        "x",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0254",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "lusz",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "l",
+        "u",
+        "s",
+        "z",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0285",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "ktlr",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "k",
+        "t",
+        "l",
+        "r",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0312",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "tpph",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "t",
+        "p",
+        "p",
+        "h",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0332",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "ypyz",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "y",
+        "p",
+        "y",
+        "z",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0050",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "pwyz",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "p",
+        "w",
+        "y",
+        "z",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0077",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "nmkj",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "n",
+        "m",
+        "k",
+        "j",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0203",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "oiln",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "o",
+        "i",
+        "l",
+        "n",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0067",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "datu",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "d",
+        "a",
+        "t",
+        "u",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0072",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "tfph",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "t",
+        "f",
+        "p",
+        "h",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0308",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "utvv",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "u",
+        "t",
+        "v",
+        "v",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0314",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "uugd",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "u",
+        "u",
+        "g",
+        "d",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0128",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "eehs",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "e",
+        "e",
+        "h",
+        "s",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0008",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "eczc",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "e",
+        "c",
+        "z",
+        "c",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0162",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "idpu",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "i",
+        "d",
+        "p",
+        "u",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0054",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "rwty",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "r",
+        "w",
+        "t",
+        "y",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0352",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "eqjz",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "e",
+        "q",
+        "j",
+        "z",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0059",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "posd",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "p",
+        "o",
+        "s",
+        "d",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0293",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "rnjc",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "r",
+        "n",
+        "j",
+        "c",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0198",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "evan",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "e",
+        "v",
+        "a",
+        "n",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0257",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "mgav",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "m",
+        "g",
+        "a",
+        "v",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0259",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "brtx",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "b",
+        "r",
+        "t",
+        "x",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0137",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "lren",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "l",
+        "r",
+        "e",
+        "n",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0085",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "twzb",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "t",
+        "w",
+        "z",
+        "b",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0033",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "kfpr",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "k",
+        "f",
+        "p",
+        "r",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0192",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "erah",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "e",
+        "r",
+        "a",
+        "h",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0012",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "myta",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "m",
+        "y",
+        "t",
+        "a",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0251",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "qiro",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "q",
+        "i",
+        "r",
+        "o",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0205",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "ibsi",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "i",
+        "b",
+        "s",
+        "i",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0240",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "csst",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "c",
+        "s",
+        "s",
+        "t",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0115",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "aejq",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "a",
+        "e",
+        "j",
+        "q",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0348",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "sfmo",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "s",
+        "f",
+        "m",
+        "o",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0305",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "wrzv",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "w",
+        "r",
+        "z",
+        "v",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0200",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "apft",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "a",
+        "p",
+        "f",
+        "t",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0232",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "krmr",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "k",
+        "r",
+        "m",
+        "r",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0227",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "iugt",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "i",
+        "u",
+        "g",
+        "t",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0090",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "dter",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "d",
+        "t",
+        "e",
+        "r",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0357",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "qtkr",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "q",
+        "t",
+        "k",
+        "r",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0336",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "eqht",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "e",
+        "q",
+        "h",
+        "t",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0274",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "rxwx",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "r",
+        "x",
+        "w",
+        "x",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0132",
+      "expected_group": "F",
+      "expected_kind": "supported_forward",
+      "expected_ans": "xpqq",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "x",
+        "p",
+        "q",
+        "q",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0092",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "opav",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "o",
+        "p",
+        "a",
+        "v",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0196",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "ckqh",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "c",
+        "k",
+        "q",
+        "h",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0344",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "ayhk",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "a",
+        "y",
+        "h",
+        "k",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0242",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "zglv",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "z",
+        "g",
+        "l",
+        "v",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0258",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "pqer",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "p",
+        "q",
+        "e",
+        "r",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0148",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "znfw",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "z",
+        "n",
+        "f",
+        "w",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0186",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "vgdd",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "v",
+        "g",
+        "d",
+        "d",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0049",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "ygan",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "y",
+        "g",
+        "a",
+        "n",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0124",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "mdpa",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "m",
+        "d",
+        "p",
+        "a",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0208",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "cmxj",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "c",
+        "m",
+        "x",
+        "j",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0176",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "jnbt",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "j",
+        "n",
+        "b",
+        "t",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0153",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "aday",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "a",
+        "d",
+        "a",
+        "y",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0163",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "ylhv",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "y",
+        "l",
+        "h",
+        "v",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0117",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "tidn",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "t",
+        "i",
+        "d",
+        "n",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0055",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "igqm",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "i",
+        "g",
+        "q",
+        "m",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0145",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "udrl",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "u",
+        "d",
+        "r",
+        "l",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0025",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "rhla",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "r",
+        "h",
+        "l",
+        "a",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0288",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "ekti",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "e",
+        "k",
+        "t",
+        "i",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0219",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "sjtq",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "s",
+        "j",
+        "t",
+        "q",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0139",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "zojw",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "z",
+        "o",
+        "j",
+        "w",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0320",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "zujt",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "z",
+        "u",
+        "j",
+        "t",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0068",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "qtqf",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "q",
+        "t",
+        "q",
+        "f",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0056",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "bxud",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "b",
+        "x",
+        "u",
+        "d",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0006",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "qwvq",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "q",
+        "w",
+        "v",
+        "q",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0316",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "ejsj",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "e",
+        "j",
+        "s",
+        "j",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0015",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "kgel",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "k",
+        "g",
+        "e",
+        "l",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0275",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "jnbi",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "j",
+        "n",
+        "b",
+        "i",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0165",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "lmlr",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "l",
+        "m",
+        "l",
+        "r",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0005",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "vuxs",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "v",
+        "u",
+        "x",
+        "s",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0046",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "eutv",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "e",
+        "u",
+        "t",
+        "v",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0209",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "nnvs",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "n",
+        "n",
+        "v",
+        "s",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0016",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "djsz",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "d",
+        "j",
+        "s",
+        "z",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0237",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "vqib",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "v",
+        "q",
+        "i",
+        "b",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0212",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "odjw",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "o",
+        "d",
+        "j",
+        "w",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0062",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "mlys",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "m",
+        "l",
+        "y",
+        "s",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0154",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "rjxq",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "r",
+        "j",
+        "x",
+        "q",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0135",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "ijqh",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "i",
+        "j",
+        "q",
+        "h",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0087",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "pukf",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "p",
+        "u",
+        "k",
+        "f",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0260",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "dexg",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "d",
+        "e",
+        "x",
+        "g",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0255",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "yysl",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "y",
+        "y",
+        "s",
+        "l",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0264",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "huuc",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "h",
+        "u",
+        "u",
+        "c",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0083",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "oyci",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "o",
+        "y",
+        "c",
+        "i",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0350",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "qrnf",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "q",
+        "r",
+        "n",
+        "f",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0103",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "rvyo",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "r",
+        "v",
+        "y",
+        "o",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0239",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "cqzd",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "c",
+        "q",
+        "z",
+        "d",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0093",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "bmmt",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "b",
+        "m",
+        "m",
+        "t",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0011",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "wonh",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "w",
+        "o",
+        "n",
+        "h",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0029",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "rfei",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "r",
+        "f",
+        "e",
+        "i",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0078",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "ymca",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "y",
+        "m",
+        "c",
+        "a",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0108",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "wlsn",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "w",
+        "l",
+        "s",
+        "n",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0070",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "ufye",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "u",
+        "f",
+        "y",
+        "e",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0190",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "dmvs",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "d",
+        "m",
+        "v",
+        "s",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0189",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "agid",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "a",
+        "g",
+        "i",
+        "d",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0211",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "ysye",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "y",
+        "s",
+        "y",
+        "e",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0223",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "fppe",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "f",
+        "p",
+        "p",
+        "e",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0214",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "cvhy",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "c",
+        "v",
+        "h",
+        "y",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0299",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "tsov",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "t",
+        "s",
+        "o",
+        "v",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0142",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "fzwi",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "f",
+        "z",
+        "w",
+        "i",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0358",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "gyou",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "g",
+        "y",
+        "o",
+        "u",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0278",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "kdiu",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "k",
+        "d",
+        "i",
+        "u",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0228",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "iizz",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "i",
+        "i",
+        "z",
+        "z",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0207",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "fjva",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "f",
+        "j",
+        "v",
+        "a",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0010",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "feyz",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "f",
+        "e",
+        "y",
+        "z",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0146",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "wwsp",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "w",
+        "w",
+        "s",
+        "p",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0118",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "mhqv",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "m",
+        "h",
+        "q",
+        "v",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0201",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "ojnx",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "o",
+        "j",
+        "n",
+        "x",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0079",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "udmg",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "u",
+        "d",
+        "m",
+        "g",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0323",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "amiy",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "a",
+        "m",
+        "i",
+        "y",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0064",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "azln",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "a",
+        "z",
+        "l",
+        "n",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0277",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "pqdk",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "p",
+        "q",
+        "d",
+        "k",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0042",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "pvmd",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "p",
+        "v",
+        "m",
+        "d",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0355",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "yiyn",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "y",
+        "i",
+        "y",
+        "n",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0043",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "wery",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "w",
+        "e",
+        "r",
+        "y",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0053",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "ffdm",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "f",
+        "f",
+        "d",
+        "m",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0182",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "pciy",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "p",
+        "c",
+        "i",
+        "y",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0180",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "hkkb",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "h",
+        "k",
+        "k",
+        "b",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0126",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "dddy",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "d",
+        "d",
+        "d",
+        "y",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0236",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "pupv",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "p",
+        "u",
+        "p",
+        "v",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0114",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "zqlc",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "z",
+        "q",
+        "l",
+        "c",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0230",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "nyfu",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "n",
+        "y",
+        "f",
+        "u",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0185",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "xqln",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "x",
+        "q",
+        "l",
+        "n",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0243",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "twfr",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "t",
+        "w",
+        "f",
+        "r",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0112",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "uiud",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "u",
+        "i",
+        "u",
+        "d",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0039",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "cilo",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "c",
+        "i",
+        "l",
+        "o",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0125",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "yxfs",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "y",
+        "x",
+        "f",
+        "s",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0172",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "ydzv",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "y",
+        "d",
+        "z",
+        "v",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0321",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "itus",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "i",
+        "t",
+        "u",
+        "s",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0130",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "lsbg",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "l",
+        "s",
+        "b",
+        "g",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0235",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "nvqr",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "n",
+        "v",
+        "q",
+        "r",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0022",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "itss",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "i",
+        "t",
+        "s",
+        "s",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0222",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "gqlj",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "g",
+        "q",
+        "l",
+        "j",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0224",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "zokw",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "z",
+        "o",
+        "k",
+        "w",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0245",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "zptx",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "z",
+        "p",
+        "t",
+        "x",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0306",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "jrji",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "j",
+        "r",
+        "j",
+        "i",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0084",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "oged",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "o",
+        "g",
+        "e",
+        "d",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0204",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "rudo",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "r",
+        "u",
+        "d",
+        "o",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0048",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "ezje",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "e",
+        "z",
+        "j",
+        "e",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0109",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "azsq",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "a",
+        "z",
+        "s",
+        "q",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0169",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "lqsr",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "l",
+        "q",
+        "s",
+        "r",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0281",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "kpwx",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "k",
+        "p",
+        "w",
+        "x",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0307",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "efwo",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "e",
+        "f",
+        "w",
+        "o",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0338",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "tems",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "t",
+        "e",
+        "m",
+        "s",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0141",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "uuju",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "u",
+        "u",
+        "j",
+        "u",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0238",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "vfuj",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "v",
+        "f",
+        "u",
+        "j",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0149",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "jovw",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "j",
+        "o",
+        "v",
+        "w",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0133",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "auqi",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "a",
+        "u",
+        "q",
+        "i",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0322",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "laxv",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "l",
+        "a",
+        "x",
+        "v",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0047",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "hzin",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "h",
+        "z",
+        "i",
+        "n",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0295",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "nuhk",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "n",
+        "u",
+        "h",
+        "k",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0276",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "axya",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "a",
+        "x",
+        "y",
+        "a",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0038",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "tbwy",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "t",
+        "b",
+        "w",
+        "y",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0017",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "zsgi",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "z",
+        "s",
+        "g",
+        "i",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0001",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "zzph",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "z",
+        "z",
+        "p",
+        "h",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0231",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "troa",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "t",
+        "r",
+        "o",
+        "a",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0286",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "hddo",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "h",
+        "d",
+        "d",
+        "o",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0213",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "wspn",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "w",
+        "s",
+        "p",
+        "n",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0061",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "cpxr",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "c",
+        "p",
+        "x",
+        "r",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0303",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "hbot",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "h",
+        "b",
+        "o",
+        "t",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0301",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "tibn",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "t",
+        "i",
+        "b",
+        "n",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0181",
+      "expected_group": "R",
+      "expected_kind": "supported_reverse",
+      "expected_ans": "pmjb",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "p",
+        "m",
+        "j",
+        "b",
+        "EOS"
+      ],
+      "learned_class": "allowed_correct",
+      "system_class": "not_measured",
+      "evidence_class": "FACT",
+      "note": "learned D32 tokens present; system-path tokens/status absent"
+    },
+    {
+      "id": "c3-0282",
+      "expected_group": "U",
+      "expected_kind": "unrelated",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "s",
+        "a",
+        "s",
+        "c"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0319",
+      "expected_group": "U",
+      "expected_kind": "unrelated",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "k",
+        "y",
+        "e",
+        "z"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0051",
+      "expected_group": "U",
+      "expected_kind": "unrelated",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "f",
+        "j",
+        "u",
+        "s"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0075",
+      "expected_group": "U",
+      "expected_kind": "unrelated",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "z",
+        "d",
+        "r",
+        "j"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0252",
+      "expected_group": "U",
+      "expected_kind": "unrelated",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "p",
+        "j",
+        "p",
+        "a"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0221",
+      "expected_group": "U",
+      "expected_kind": "unrelated",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "w",
+        "v",
+        "a",
+        "d"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0328",
+      "expected_group": "U",
+      "expected_kind": "unrelated",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "w",
+        "s",
+        "k",
+        "g"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0253",
+      "expected_group": "U",
+      "expected_kind": "unrelated",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "a",
+        "o",
+        "p",
+        "g"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0013",
+      "expected_group": "U",
+      "expected_kind": "unrelated",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "c",
+        "h",
+        "q",
+        "q"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0263",
+      "expected_group": "U",
+      "expected_kind": "unrelated",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "y",
+        "f",
+        "g",
+        "e"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0218",
+      "expected_group": "U",
+      "expected_kind": "unrelated",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "c",
+        "m",
+        "h",
+        "n"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0197",
+      "expected_group": "U",
+      "expected_kind": "unrelated",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "z",
+        "f",
+        "p",
+        "u"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0138",
+      "expected_group": "U",
+      "expected_kind": "unrelated",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "n",
+        "o",
+        "y",
+        "a"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0337",
+      "expected_group": "U",
+      "expected_kind": "unrelated",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "y",
+        "f",
+        "k",
+        "e"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0156",
+      "expected_group": "U",
+      "expected_kind": "unrelated",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "o",
+        "e",
+        "s",
+        "t"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0272",
+      "expected_group": "U",
+      "expected_kind": "unrelated",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "k",
+        "g",
+        "e",
+        "t"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0296",
+      "expected_group": "U",
+      "expected_kind": "unrelated",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "u",
+        "k",
+        "x",
+        "z"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0101",
+      "expected_group": "U",
+      "expected_kind": "unrelated",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "s",
+        "r",
+        "j",
+        "f"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0354",
+      "expected_group": "U",
+      "expected_kind": "unrelated",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "q",
+        "h",
+        "u",
+        "a"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0057",
+      "expected_group": "U",
+      "expected_kind": "unrelated",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "o",
+        "s",
+        "v",
+        "o"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0018",
+      "expected_group": "U",
+      "expected_kind": "missing_evidence",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "g",
+        "p",
+        "u",
+        "d"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0220",
+      "expected_group": "U",
+      "expected_kind": "missing_evidence",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "v",
+        "m",
+        "y",
+        "p"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0119",
+      "expected_group": "U",
+      "expected_kind": "missing_evidence",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "c",
+        "m",
+        "w",
+        "l"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0136",
+      "expected_group": "U",
+      "expected_kind": "missing_evidence",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "j",
+        "y",
+        "n",
+        "y"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0347",
+      "expected_group": "U",
+      "expected_kind": "missing_evidence",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "r",
+        "f",
+        "u",
+        "m"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0160",
+      "expected_group": "U",
+      "expected_kind": "missing_evidence",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "j",
+        "u",
+        "k",
+        "v"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0193",
+      "expected_group": "U",
+      "expected_kind": "missing_evidence",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "p",
+        "v",
+        "d",
+        "o"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0356",
+      "expected_group": "U",
+      "expected_kind": "missing_evidence",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "p",
+        "m",
+        "t",
+        "d"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0246",
+      "expected_group": "U",
+      "expected_kind": "missing_evidence",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "v",
+        "j",
+        "o",
+        "e"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0113",
+      "expected_group": "U",
+      "expected_kind": "missing_evidence",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "x",
+        "j",
+        "l",
+        "e"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0234",
+      "expected_group": "U",
+      "expected_kind": "missing_evidence",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "f",
+        "x",
+        "s",
+        "r"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0164",
+      "expected_group": "U",
+      "expected_kind": "missing_evidence",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "d",
+        "a",
+        "a",
+        "x"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0279",
+      "expected_group": "U",
+      "expected_kind": "missing_evidence",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "g",
+        "t",
+        "t",
+        "u"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0082",
+      "expected_group": "U",
+      "expected_kind": "missing_evidence",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "p",
+        "u",
+        "t",
+        "p"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0127",
+      "expected_group": "U",
+      "expected_kind": "missing_evidence",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "x",
+        "e",
+        "u",
+        "l"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0325",
+      "expected_group": "U",
+      "expected_kind": "missing_evidence",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "p",
+        "y",
+        "t",
+        "l"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0291",
+      "expected_group": "U",
+      "expected_kind": "missing_evidence",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "w",
+        "x",
+        "b",
+        "c"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0014",
+      "expected_group": "U",
+      "expected_kind": "missing_evidence",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "i",
+        "p",
+        "n",
+        "v"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0311",
+      "expected_group": "U",
+      "expected_kind": "missing_evidence",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "i",
+        "b",
+        "x",
+        "a"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0066",
+      "expected_group": "U",
+      "expected_kind": "missing_evidence",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "h",
+        "k",
+        "m",
+        "q"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0020",
+      "expected_group": "U",
+      "expected_kind": "wrong_context",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "i",
+        "v",
+        "a",
+        "c"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0157",
+      "expected_group": "U",
+      "expected_kind": "wrong_context",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "c",
+        "j",
+        "j",
+        "k"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0106",
+      "expected_group": "U",
+      "expected_kind": "wrong_context",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "v",
+        "t",
+        "t",
+        "g"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0250",
+      "expected_group": "U",
+      "expected_kind": "wrong_context",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "h",
+        "s",
+        "e",
+        "k"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0166",
+      "expected_group": "U",
+      "expected_kind": "wrong_context",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "n",
+        "h",
+        "c",
+        "s"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0226",
+      "expected_group": "U",
+      "expected_kind": "wrong_context",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "x",
+        "d",
+        "z",
+        "c"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0065",
+      "expected_group": "U",
+      "expected_kind": "wrong_context",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "j",
+        "v",
+        "p",
+        "h"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0326",
+      "expected_group": "U",
+      "expected_kind": "wrong_context",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "p",
+        "e",
+        "f",
+        "p"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0120",
+      "expected_group": "U",
+      "expected_kind": "wrong_context",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "j",
+        "r",
+        "d",
+        "i"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0091",
+      "expected_group": "U",
+      "expected_kind": "wrong_context",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "w",
+        "c",
+        "a",
+        "h"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0069",
+      "expected_group": "U",
+      "expected_kind": "wrong_context",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "f",
+        "e",
+        "m",
+        "i"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0045",
+      "expected_group": "U",
+      "expected_kind": "wrong_context",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "n",
+        "w",
+        "j",
+        "n"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0290",
+      "expected_group": "U",
+      "expected_kind": "wrong_context",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "z",
+        "g",
+        "h",
+        "a"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0342",
+      "expected_group": "U",
+      "expected_kind": "wrong_context",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "m",
+        "s",
+        "k",
+        "a"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0122",
+      "expected_group": "U",
+      "expected_kind": "wrong_context",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "z",
+        "r",
+        "d",
+        "x"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0304",
+      "expected_group": "U",
+      "expected_kind": "wrong_context",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "z",
+        "d",
+        "m",
+        "b"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0309",
+      "expected_group": "U",
+      "expected_kind": "wrong_context",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "g",
+        "h",
+        "l",
+        "i"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0044",
+      "expected_group": "U",
+      "expected_kind": "wrong_context",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "r",
+        "k",
+        "o",
+        "q"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0195",
+      "expected_group": "U",
+      "expected_kind": "wrong_context",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "p",
+        "u",
+        "g",
+        "j"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0032",
+      "expected_group": "U",
+      "expected_kind": "wrong_context",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "i",
+        "z",
+        "x",
+        "k"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0040",
+      "expected_group": "U",
+      "expected_kind": "conflict",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "z",
+        "p",
+        "c",
+        "y"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0152",
+      "expected_group": "U",
+      "expected_kind": "conflict",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "w",
+        "k",
+        "y",
+        "k"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0052",
+      "expected_group": "U",
+      "expected_kind": "conflict",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "w",
+        "h",
+        "o",
+        "a"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0097",
+      "expected_group": "U",
+      "expected_kind": "conflict",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "l",
+        "g",
+        "y",
+        "h"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0096",
+      "expected_group": "U",
+      "expected_kind": "conflict",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "w",
+        "b",
+        "w",
+        "r"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0317",
+      "expected_group": "U",
+      "expected_kind": "conflict",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "t",
+        "p",
+        "g",
+        "x"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0268",
+      "expected_group": "U",
+      "expected_kind": "conflict",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "b",
+        "p",
+        "n",
+        "d"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0024",
+      "expected_group": "U",
+      "expected_kind": "conflict",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "q",
+        "w",
+        "f",
+        "p"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0256",
+      "expected_group": "U",
+      "expected_kind": "conflict",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "p",
+        "w",
+        "k",
+        "t"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0177",
+      "expected_group": "U",
+      "expected_kind": "conflict",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "b",
+        "r",
+        "u",
+        "u"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0289",
+      "expected_group": "U",
+      "expected_kind": "conflict",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "b",
+        "j",
+        "w",
+        "q"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0107",
+      "expected_group": "U",
+      "expected_kind": "conflict",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "a",
+        "a",
+        "f",
+        "n"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0339",
+      "expected_group": "U",
+      "expected_kind": "conflict",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "x",
+        "p",
+        "z",
+        "e"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0302",
+      "expected_group": "U",
+      "expected_kind": "conflict",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "l",
+        "w",
+        "g",
+        "n"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0183",
+      "expected_group": "U",
+      "expected_kind": "conflict",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "e",
+        "b",
+        "n",
+        "c"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0199",
+      "expected_group": "U",
+      "expected_kind": "conflict",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "a",
+        "z",
+        "l",
+        "u"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0094",
+      "expected_group": "U",
+      "expected_kind": "conflict",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "f",
+        "u",
+        "w",
+        "w"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0329",
+      "expected_group": "U",
+      "expected_kind": "conflict",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "r",
+        "s",
+        "w",
+        "f"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0335",
+      "expected_group": "U",
+      "expected_kind": "conflict",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "a",
+        "f",
+        "b",
+        "r"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0315",
+      "expected_group": "U",
+      "expected_kind": "conflict",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "g",
+        "g",
+        "p",
+        "l"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0004",
+      "expected_group": "U",
+      "expected_kind": "ambiguous",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "s",
+        "x",
+        "d",
+        "d"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0247",
+      "expected_group": "U",
+      "expected_kind": "ambiguous",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "t",
+        "l",
+        "k",
+        "m"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0003",
+      "expected_group": "U",
+      "expected_kind": "ambiguous",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "r",
+        "o",
+        "a",
+        "r"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0155",
+      "expected_group": "U",
+      "expected_kind": "ambiguous",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "w",
+        "s",
+        "r",
+        "r"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0184",
+      "expected_group": "U",
+      "expected_kind": "ambiguous",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "p",
+        "n",
+        "z",
+        "l"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0330",
+      "expected_group": "U",
+      "expected_kind": "ambiguous",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "g",
+        "z",
+        "n",
+        "g"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0298",
+      "expected_group": "U",
+      "expected_kind": "ambiguous",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "x",
+        "a",
+        "q",
+        "y"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0194",
+      "expected_group": "U",
+      "expected_kind": "ambiguous",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "b",
+        "g",
+        "q",
+        "v"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0333",
+      "expected_group": "U",
+      "expected_kind": "ambiguous",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "n",
+        "t",
+        "e",
+        "c"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0265",
+      "expected_group": "U",
+      "expected_kind": "ambiguous",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "s",
+        "l",
+        "s",
+        "e"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0089",
+      "expected_group": "U",
+      "expected_kind": "ambiguous",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "a",
+        "y",
+        "k",
+        "r"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0191",
+      "expected_group": "U",
+      "expected_kind": "ambiguous",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "o",
+        "a",
+        "n",
+        "r"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0074",
+      "expected_group": "U",
+      "expected_kind": "ambiguous",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "z",
+        "r",
+        "u",
+        "h"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0168",
+      "expected_group": "U",
+      "expected_kind": "ambiguous",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "s",
+        "k",
+        "t",
+        "q"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0343",
+      "expected_group": "U",
+      "expected_kind": "ambiguous",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "y",
+        "a",
+        "x",
+        "y"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0178",
+      "expected_group": "U",
+      "expected_kind": "ambiguous",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "s",
+        "a",
+        "d",
+        "b"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0283",
+      "expected_group": "U",
+      "expected_kind": "ambiguous",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "r",
+        "z",
+        "g",
+        "p"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0229",
+      "expected_group": "U",
+      "expected_kind": "ambiguous",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "m",
+        "a",
+        "c",
+        "g"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0134",
+      "expected_group": "U",
+      "expected_kind": "ambiguous",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "e",
+        "h",
+        "r",
+        "w"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0098",
+      "expected_group": "U",
+      "expected_kind": "ambiguous",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "a",
+        "o",
+        "v",
+        "h"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0026",
+      "expected_group": "U",
+      "expected_kind": "search_incomplete",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "b",
+        "j",
+        "i",
+        "p"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0318",
+      "expected_group": "U",
+      "expected_kind": "search_incomplete",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "t",
+        "f",
+        "w",
+        "u"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0297",
+      "expected_group": "U",
+      "expected_kind": "search_incomplete",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "e",
+        "y",
+        "u",
+        "g"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0071",
+      "expected_group": "U",
+      "expected_kind": "search_incomplete",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "x",
+        "a",
+        "n",
+        "q"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0300",
+      "expected_group": "U",
+      "expected_kind": "search_incomplete",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "t",
+        "c",
+        "q",
+        "m"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0244",
+      "expected_group": "U",
+      "expected_kind": "search_incomplete",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "y",
+        "j",
+        "p",
+        "e"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0086",
+      "expected_group": "U",
+      "expected_kind": "search_incomplete",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "a",
+        "x",
+        "r",
+        "b"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0104",
+      "expected_group": "U",
+      "expected_kind": "search_incomplete",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "h",
+        "u",
+        "y",
+        "y"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0359",
+      "expected_group": "U",
+      "expected_kind": "search_incomplete",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "t",
+        "a",
+        "e",
+        "o"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0202",
+      "expected_group": "U",
+      "expected_kind": "search_incomplete",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "m",
+        "r",
+        "g",
+        "t"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0294",
+      "expected_group": "U",
+      "expected_kind": "search_incomplete",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "n",
+        "g",
+        "t",
+        "r"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0143",
+      "expected_group": "U",
+      "expected_kind": "search_incomplete",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "n",
+        "b",
+        "s",
+        "t"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0346",
+      "expected_group": "U",
+      "expected_kind": "search_incomplete",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "u",
+        "n",
+        "c",
+        "b"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0270",
+      "expected_group": "U",
+      "expected_kind": "search_incomplete",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "n",
+        "u",
+        "r",
+        "x"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0334",
+      "expected_group": "U",
+      "expected_kind": "search_incomplete",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "n",
+        "w",
+        "v",
+        "c"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0233",
+      "expected_group": "U",
+      "expected_kind": "search_incomplete",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "o",
+        "x",
+        "m",
+        "p"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0151",
+      "expected_group": "U",
+      "expected_kind": "search_incomplete",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "b",
+        "j",
+        "p",
+        "r"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0340",
+      "expected_group": "U",
+      "expected_kind": "search_incomplete",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "d",
+        "s",
+        "u",
+        "b"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0009",
+      "expected_group": "U",
+      "expected_kind": "search_incomplete",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "y",
+        "q",
+        "q",
+        "s"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    },
+    {
+      "id": "c3-0261",
+      "expected_group": "U",
+      "expected_kind": "search_incomplete",
+      "expected_ans": "no",
+      "observed_status": null,
+      "observed_allowed": null,
+      "observed_system_tokens": null,
+      "learned_tokens": [
+        "u",
+        "y",
+        "v",
+        "m"
+      ],
+      "learned_class": "not_measured",
+      "system_class": "expected_by_contract",
+      "evidence_class": "FACT",
+      "note": "U safety assigned without observed system status/tokens; D32 may have run ungated"
+    }
+  ],
+  "source": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-FINAL-C4-C7-20260909\\11_C4_BLIND_CONFIRM\\results\\confirm_wo360_v3_once.json",
+  "meta": {
+    "corpus": "V1_confirm_wo360_v3_once"
+  },
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "C5_MASTER": "OPEN",
+  "note": "Observed scorer. Does not mutate legacy eval files. expected_by_contract means old U safety was constant-assigned. LEARNED_NUMERICAL must not be mixed with SYSTEM_360."
+}

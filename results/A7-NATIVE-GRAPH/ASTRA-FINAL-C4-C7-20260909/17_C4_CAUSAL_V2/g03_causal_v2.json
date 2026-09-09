@@ -1,0 +1,268 @@
+{
+  "prereg_sha256": "15f7828aef5cf7c48e1adeb4faf7c79ffd0c5ffb3ff22f2e41e2e926564d29fe",
+  "checkpoint_sha256": "fcfe37be0ca006de9a0973331cb0b1b82703a96c0f10097e21d7e0bff85987dc",
+  "n": 64,
+  "confirm_v3_not_used_for_selection": true,
+  "normal": {
+    "k": 64,
+    "n": 64,
+    "p": 1.0,
+    "F": {
+      "n": 32,
+      "correct": 32
+    },
+    "R": {
+      "n": 32,
+      "correct": 32
+    }
+  },
+  "zero_We": {
+    "k": 0,
+    "n": 64,
+    "p": 0.0,
+    "F": {
+      "n": 32,
+      "correct": 0
+    },
+    "R": {
+      "n": 32,
+      "correct": 0
+    }
+  },
+  "corrupt_Wq": {
+    "k": 0,
+    "n": 64,
+    "p": 0.0,
+    "F": {
+      "n": 32,
+      "correct": 0
+    },
+    "R": {
+      "n": 32,
+      "correct": 0
+    }
+  },
+  "evidence_replaced_old_gold": {
+    "k": 0,
+    "n": 64,
+    "p": 0.0,
+    "F": {
+      "n": 32,
+      "correct": 0
+    },
+    "R": {
+      "n": 32,
+      "correct": 0
+    }
+  },
+  "evidence_replaced_new_gold": {
+    "k": 62,
+    "n": 64,
+    "p": 0.96875,
+    "F": {
+      "n": 32,
+      "correct": 32
+    },
+    "R": {
+      "n": 32,
+      "correct": 30
+    }
+  },
+  "evidence_removed_old_gold": {
+    "k": 0,
+    "n": 64,
+    "p": 0.0,
+    "F": {
+      "n": 32,
+      "correct": 0
+    },
+    "R": {
+      "n": 32,
+      "correct": 0
+    }
+  },
+  "wrong_bank": {
+    "k": 0,
+    "n": 64,
+    "p": 0.0,
+    "F": {
+      "n": 32,
+      "correct": 0
+    },
+    "R": {
+      "n": 32,
+      "correct": 0
+    }
+  },
+  "prefix_changed": 0,
+  "prefix_probes": [
+    {
+      "ctx": "F jdxq rqyz>----",
+      "t0": 114,
+      "t1": 113,
+      "alt": 122,
+      "t1_intervened": 113,
+      "changed": false
+    },
+    {
+      "ctx": "R sbvt aewb>----",
+      "t0": 115,
+      "t1": 98,
+      "alt": 122,
+      "t1_intervened": 98,
+      "changed": false
+    },
+    {
+      "ctx": "F jktq coza>----",
+      "t0": 99,
+      "t1": 111,
+      "alt": 122,
+      "t1_intervened": 111,
+      "changed": false
+    },
+    {
+      "ctx": "R qvfl ybmv>----",
+      "t0": 113,
+      "t1": 118,
+      "alt": 122,
+      "t1_intervened": 118,
+      "changed": false
+    },
+    {
+      "ctx": "F ndhj bduc>----",
+      "t0": 98,
+      "t1": 100,
+      "alt": 122,
+      "t1_intervened": 100,
+      "changed": false
+    },
+    {
+      "ctx": "R qvlj qqmp>----",
+      "t0": 113,
+      "t1": 118,
+      "alt": 122,
+      "t1_intervened": 118,
+      "changed": false
+    },
+    {
+      "ctx": "F cmnt oqsf>----",
+      "t0": 111,
+      "t1": 113,
+      "alt": 122,
+      "t1_intervened": 113,
+      "changed": false
+    },
+    {
+      "ctx": "R dyhe wljv>----",
+      "t0": 100,
+      "t1": 121,
+      "alt": 122,
+      "t1_intervened": 121,
+      "changed": false
+    },
+    {
+      "ctx": "F gryk nlmz>----",
+      "t0": 110,
+      "t1": 108,
+      "alt": 122,
+      "t1_intervened": 108,
+      "changed": false
+    },
+    {
+      "ctx": "R wiwu ddqn>----",
+      "t0": 119,
+      "t1": 105,
+      "alt": 122,
+      "t1_intervened": 105,
+      "changed": false
+    },
+    {
+      "ctx": "F gzmn ldtg>----",
+      "t0": 108,
+      "t1": 100,
+      "alt": 122,
+      "t1_intervened": 100,
+      "changed": false
+    },
+    {
+      "ctx": "R kfeg kbzo>----",
+      "t0": 107,
+      "t1": 102,
+      "alt": 122,
+      "t1_intervened": 102,
+      "changed": false
+    },
+    {
+      "ctx": "F rsht bjnd>----",
+      "t0": 98,
+      "t1": 106,
+      "alt": 122,
+      "t1_intervened": 106,
+      "changed": false
+    },
+    {
+      "ctx": "R yqwr uirn>----",
+      "t0": 121,
+      "t1": 113,
+      "alt": 122,
+      "t1_intervened": 113,
+      "changed": false
+    },
+    {
+      "ctx": "F dlxr yctn>----",
+      "t0": 121,
+      "t1": 99,
+      "alt": 122,
+      "t1_intervened": 99,
+      "changed": false
+    },
+    {
+      "ctx": "R pgsy fvnu>----",
+      "t0": 112,
+      "t1": 103,
+      "alt": 122,
+      "t1_intervened": 103,
+      "changed": false
+    }
+  ],
+  "integer_normal": {
+    "k": 64,
+    "n": 64,
+    "p": 1.0,
+    "F": {
+      "n": 32,
+      "correct": 32
+    },
+    "R": {
+      "n": 32,
+      "correct": 32
+    }
+  },
+  "integer_zero_We": {
+    "k": 0,
+    "n": 64,
+    "p": 0.0,
+    "F": {
+      "n": 32,
+      "correct": 0
+    },
+    "R": {
+      "n": 32,
+      "correct": 0
+    }
+  },
+  "zero_drop": 1.0,
+  "corrupt_drop": 1.0,
+  "zero_pass": true,
+  "corrupt_pass": true,
+  "normal_pass": true,
+  "replaced_old_fails": true,
+  "replaced_new_hits": true,
+  "removed_old_fails": true,
+  "wrong_bank_changes": true,
+  "prefix_pass": false,
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "note": "Safety-gate S_SAFE is G05; this file is learned path with gate held ANSWER. V2 layout only.",
+  "learned_causal_pass": false
+}

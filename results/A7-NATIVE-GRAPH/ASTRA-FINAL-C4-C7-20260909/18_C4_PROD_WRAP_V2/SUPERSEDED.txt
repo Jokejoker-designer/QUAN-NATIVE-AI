@@ -1,0 +1,4 @@
+SUPERSEDED by ..\19_C4_SURFACE_WRAP_V2
+
+This bag’s TB drove 8-bit materializer slot IDs as if they were C3 IDs.
+XSim was not the production wrap. Do not treat ASTRA_C4_PROD_WRAP_V2 markers here as C5-ready.

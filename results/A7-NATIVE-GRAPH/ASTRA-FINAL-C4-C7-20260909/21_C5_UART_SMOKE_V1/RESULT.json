@@ -1,0 +1,22 @@
+{
+  "marker": "ASTRA_C5_FINAL_V1_UART_SMOKE_XSIM_PASS",
+  "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .\\run_xsim.ps1",
+  "cwd": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-FINAL-C4-C7-20260909\\21_C5_UART_SMOKE_V1",
+  "exit_code": 0,
+  "sim_time_ns": 5549885,
+  "cases": {
+    "ALIAS_MISS_SAFE": "PASS n=3 C3 ANSWER ans=11 p0=20 pok=1 allow=0",
+    "F_LEARNED": "PASS n=5 tokens 116,105,102,104,0",
+    "R_LEARNED": "PASS n=5 tokens 118,109,103,104,0 bank_r_i=1",
+    "UNK_SAFE": "PASS n=3 C3 UNKNOWN st=1"
+  },
+  "class_host_tok0": "HIT",
+  "n_rew_ok": 0,
+  "prod_dict": "OPEN",
+  "tb_alias": "synthetic Confirm V3 4-char on C3 endpoints src=10 dst=11",
+  "c5_master": "OPEN",
+  "board_pass": "OPEN",
+  "PROGRAM": "NO",
+  "xsim_log": "xsim.log",
+  "note": "Modeled AXI + pin UART. DUT defaults remain 83.333MHz/115200; TB override 8000/800. Not C5_MASTER. Reverse used explicit bank_r_i, not parser qse_dir."
+}

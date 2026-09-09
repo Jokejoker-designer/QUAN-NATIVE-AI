@@ -1,0 +1,13 @@
+{
+  "gate": "G00",
+  "result": "G00_PREFLIGHT_PASS",
+  "BOARD_PASS": "OPEN",
+  "C4_MASTER": "OPEN",
+  "C5_MASTER": "OPEN",
+  "PROGRAM": "NO",
+  "HEAD": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+  "dirty_tree_preserved": true,
+  "d32_rtl_present": false,
+  "c5_final_top_present": false,
+  "c6_instantiates_old_c5_prod_top": true
+}

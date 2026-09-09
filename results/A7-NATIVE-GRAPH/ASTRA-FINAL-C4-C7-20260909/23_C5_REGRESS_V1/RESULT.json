@@ -1,0 +1,20 @@
+{
+  "marker": "ASTRA_C5_FINAL_V1_REGRESS_XSIM_PASS",
+  "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .\\run_xsim.ps1",
+  "cwd": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-FINAL-C4-C7-20260909\\23_C5_REGRESS_V1",
+  "exit_code": 0,
+  "classes": {
+    "base_two_hop": "HIT ans=64 p0=16 p1=17 pok=1 UART=n,o,EOS (empty alias)",
+    "rew_plus3": "HIT nupd=1",
+    "rew_dup": "HIT ndup+1 nupd=1",
+    "rew_crc": "HIT",
+    "rew_stale": "HIT nbad+1 nupd=1",
+    "conflict": "HIT st=5 UART=n,o,EOS nupd unchanged"
+  },
+  "c5_master": "OPEN",
+  "board_pass": "OPEN",
+  "PROGRAM": "NO",
+  "prod_dict": "OPEN",
+  "xsim_log": "xsim.log",
+  "note": "WO §15 subset on final_v1. Not C5_MASTER. Empty alias is honest S_SAFE, not learned 2-hop vocalization."
+}

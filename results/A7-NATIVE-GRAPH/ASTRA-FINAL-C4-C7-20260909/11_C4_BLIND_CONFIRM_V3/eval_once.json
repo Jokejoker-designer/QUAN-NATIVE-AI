@@ -1,0 +1,31 @@
+{
+  "confirm_sha256": "f41805115312b0a52703b6dddae44b8ceb3e133f1132608a4af72a94a34651d6",
+  "checkpoint_sha256": "fcfe37be0ca006de9a0973331cb0b1b82703a96c0f10097e21d7e0bff85987dc",
+  "ptq": "PTQ_W8A12_TRAINONLY_01",
+  "opened_once": true,
+  "used_for_selection": false,
+  "confirm_v2_read": false,
+  "groups": {
+    "F": {
+      "n": 120,
+      "correct": 120
+    },
+    "R": {
+      "n": 120,
+      "correct": 120
+    }
+  },
+  "overall": 1.0,
+  "eos_fraction": 1.0,
+  "float_n": 240,
+  "integer_exact": 240,
+  "sequence_parity": 240,
+  "learned_prereg_pass": true,
+  "float_int_parity_100": true,
+  "misses": [],
+  "C4_MASTER": "OPEN",
+  "PROGRAM": "NO",
+  "ASTRA_NATIVE_AI_BOARD_PASS": "OPEN",
+  "rtl": "NOT_READY",
+  "note": "Blind integer evidence is Confirm V3, not Confirm V2. TARGET_PASS law unchanged: ic>=min_correct and ic>=fc."
+}

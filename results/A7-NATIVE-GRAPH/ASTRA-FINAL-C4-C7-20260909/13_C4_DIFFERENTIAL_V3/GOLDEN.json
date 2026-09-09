@@ -1,0 +1,3643 @@
+{
+  "confirm_v3_sha256": "f41805115312b0a52703b6dddae44b8ceb3e133f1132608a4af72a94a34651d6",
+  "checkpoint_sha256": "fcfe37be0ca006de9a0973331cb0b1b82703a96c0f10097e21d7e0bff85987dc",
+  "manifest_sha256": "ac69d2f88eb5988f07c224f6c8ead6f57e6f731981a5d6e7da4adc1f9f34a15e",
+  "n": 242,
+  "smoke_n": 4,
+  "smoke_order": [
+    "first_F",
+    "first_R",
+    "safe",
+    "zero_w"
+  ],
+  "cases": [
+    {
+      "name": "cv3-0123",
+      "ctx": "F pkev tifh>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        116,
+        105,
+        102,
+        104,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0114",
+      "ctx": "R vmgh pmnv>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        118,
+        109,
+        103,
+        104,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0309",
+      "ctx": "F lkna xlrc>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        120,
+        108,
+        114,
+        99,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0242",
+      "ctx": "F enpv pnjs>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        112,
+        110,
+        106,
+        115,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0267",
+      "ctx": "F dipv cjhk>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        99,
+        106,
+        104,
+        107,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0188",
+      "ctx": "F ifuq kysn>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        107,
+        121,
+        115,
+        110,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0254",
+      "ctx": "F rzpl nkiu>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        110,
+        107,
+        105,
+        117,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0159",
+      "ctx": "F rrix tyft>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        116,
+        121,
+        102,
+        116,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0249",
+      "ctx": "F zklu wwuf>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        119,
+        119,
+        117,
+        102,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0183",
+      "ctx": "F sduo oxvs>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        111,
+        120,
+        118,
+        115,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0313",
+      "ctx": "F sqtq eixy>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        101,
+        105,
+        120,
+        121,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0041",
+      "ctx": "F tsgw ltbf>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        108,
+        116,
+        98,
+        102,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0161",
+      "ctx": "F nwxj zsvk>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        122,
+        115,
+        118,
+        107,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0155",
+      "ctx": "F ahdq zkyn>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        122,
+        107,
+        121,
+        110,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0290",
+      "ctx": "F mmfz hurn>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        104,
+        117,
+        114,
+        110,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0180",
+      "ctx": "F oflf ksja>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        107,
+        115,
+        106,
+        97,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0004",
+      "ctx": "F crau jiph>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        106,
+        105,
+        112,
+        104,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0173",
+      "ctx": "F aajb fvgm>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        102,
+        118,
+        103,
+        109,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0160",
+      "ctx": "F kspe yhyk>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        121,
+        104,
+        121,
+        107,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0258",
+      "ctx": "F egsv jpbk>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        106,
+        112,
+        98,
+        107,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0089",
+      "ctx": "F stwv fpjz>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        102,
+        112,
+        106,
+        122,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0225",
+      "ctx": "F ixln quei>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        113,
+        117,
+        101,
+        105,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0072",
+      "ctx": "F usie vnxv>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        118,
+        110,
+        120,
+        118,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0150",
+      "ctx": "F rgmw fgon>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        102,
+        103,
+        111,
+        110,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0322",
+      "ctx": "F vdod ktsk>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        107,
+        116,
+        115,
+        107,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0061",
+      "ctx": "F afpg nbsg>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        110,
+        98,
+        115,
+        103,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0001",
+      "ctx": "F dgtz ndhs>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        110,
+        100,
+        104,
+        115,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0087",
+      "ctx": "F ctlc pvep>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        112,
+        118,
+        101,
+        112,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0095",
+      "ctx": "F hlzk qmtz>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        113,
+        109,
+        116,
+        122,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0195",
+      "ctx": "F czgd jojs>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        106,
+        111,
+        106,
+        115,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0292",
+      "ctx": "F yjvu zkxs>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        122,
+        107,
+        120,
+        115,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0314",
+      "ctx": "F yjjt tscl>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        116,
+        115,
+        99,
+        108,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0142",
+      "ctx": "F vmuo hltd>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        104,
+        108,
+        116,
+        100,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0134",
+      "ctx": "F bahy uwwg>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        117,
+        119,
+        119,
+        103,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0028",
+      "ctx": "F lvjc ppai>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        112,
+        112,
+        97,
+        105,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0022",
+      "ctx": "F vgqo wmle>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        119,
+        109,
+        108,
+        101,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0191",
+      "ctx": "F xago olzp>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        111,
+        108,
+        122,
+        112,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0280",
+      "ctx": "F ixbr tefa>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        116,
+        101,
+        102,
+        97,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0019",
+      "ctx": "F hbjl baca>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        98,
+        97,
+        99,
+        97,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0042",
+      "ctx": "F qlya dflu>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        100,
+        102,
+        108,
+        117,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0117",
+      "ctx": "F ffqm fpid>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        102,
+        112,
+        105,
+        100,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0158",
+      "ctx": "F hevo fqfw>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        102,
+        113,
+        102,
+        119,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0104",
+      "ctx": "F akdg dubz>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        100,
+        117,
+        98,
+        122,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0177",
+      "ctx": "F wwdu calh>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        99,
+        97,
+        108,
+        104,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0007",
+      "ctx": "F yzta gyyv>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        103,
+        121,
+        121,
+        118,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0175",
+      "ctx": "F jcly xupb>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        120,
+        117,
+        112,
+        98,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0077",
+      "ctx": "F zlee lfbe>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        108,
+        102,
+        98,
+        101,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0053",
+      "ctx": "F vyox xabx>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        120,
+        97,
+        98,
+        120,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0228",
+      "ctx": "F bedx irwa>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        105,
+        114,
+        119,
+        97,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0141",
+      "ctx": "F zabw sdfp>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        115,
+        100,
+        102,
+        112,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0139",
+      "ctx": "F mvpb gzop>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        103,
+        122,
+        111,
+        112,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0356",
+      "ctx": "F zmbn ofsp>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        111,
+        102,
+        115,
+        112,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0281",
+      "ctx": "F tbil vmiy>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        118,
+        109,
+        105,
+        121,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0101",
+      "ctx": "F dfjs opoo>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        111,
+        112,
+        111,
+        111,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0307",
+      "ctx": "F qbrm rbjp>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        114,
+        98,
+        106,
+        112,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0219",
+      "ctx": "F appq wjnw>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        119,
+        106,
+        110,
+        119,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0220",
+      "ctx": "F kloa tbpi>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        116,
+        98,
+        112,
+        105,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0287",
+      "ctx": "F txbj kuwe>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        107,
+        117,
+        119,
+        101,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0204",
+      "ctx": "F ayxt wwdn>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        119,
+        119,
+        100,
+        110,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0146",
+      "ctx": "F zpgr vcwd>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        118,
+        99,
+        119,
+        100,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0330",
+      "ctx": "F ltbl uvwh>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        117,
+        118,
+        119,
+        104,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0248",
+      "ctx": "F untq twza>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        116,
+        119,
+        122,
+        97,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0122",
+      "ctx": "F ciit cebe>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        99,
+        101,
+        98,
+        101,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0211",
+      "ctx": "F kvyn ehlz>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        101,
+        104,
+        108,
+        122,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0200",
+      "ctx": "F fyiw hnqi>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        104,
+        110,
+        113,
+        105,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0025",
+      "ctx": "F mmlf errx>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        101,
+        114,
+        114,
+        120,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0264",
+      "ctx": "F txuk foud>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        102,
+        111,
+        117,
+        100,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0341",
+      "ctx": "F fboy lzld>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        108,
+        122,
+        108,
+        100,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0083",
+      "ctx": "F hlnp pvse>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        112,
+        118,
+        115,
+        101,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0098",
+      "ctx": "F rriy dirj>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        100,
+        105,
+        114,
+        106,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0261",
+      "ctx": "F neai zqxb>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        122,
+        113,
+        120,
+        98,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0262",
+      "ctx": "F okdr lszu>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        108,
+        115,
+        122,
+        117,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0074",
+      "ctx": "F fggy ofwx>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        111,
+        102,
+        119,
+        120,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0166",
+      "ctx": "F fila hcio>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        104,
+        99,
+        105,
+        111,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0090",
+      "ctx": "F hmfy vlka>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        118,
+        108,
+        107,
+        97,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0009",
+      "ctx": "F dbnb prgk>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        112,
+        114,
+        103,
+        107,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0336",
+      "ctx": "F itwd rmkf>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        114,
+        109,
+        107,
+        102,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0297",
+      "ctx": "F gpos mtkw>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        109,
+        116,
+        107,
+        119,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0103",
+      "ctx": "F igyx dkpg>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        100,
+        107,
+        112,
+        103,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0131",
+      "ctx": "F bokl gpnz>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        103,
+        112,
+        110,
+        122,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0266",
+      "ctx": "F ydaw qnqb>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        113,
+        110,
+        113,
+        98,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0300",
+      "ctx": "F ihtp ased>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        97,
+        115,
+        101,
+        100,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0030",
+      "ctx": "F ygsu vyls>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        118,
+        121,
+        108,
+        115,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0079",
+      "ctx": "F tgow ufay>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        117,
+        102,
+        97,
+        121,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0067",
+      "ctx": "F gglq gfuq>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        103,
+        102,
+        117,
+        113,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0021",
+      "ctx": "F hgwa cfdt>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        99,
+        102,
+        100,
+        116,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0068",
+      "ctx": "F ebvy sggm>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        115,
+        103,
+        103,
+        109,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0076",
+      "ctx": "F xamm csxa>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        99,
+        115,
+        120,
+        97,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0012",
+      "ctx": "F kjlx qdsy>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        113,
+        100,
+        115,
+        121,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0069",
+      "ctx": "F jeji zhkz>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        122,
+        104,
+        107,
+        122,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0185",
+      "ctx": "F xqqs pqro>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        112,
+        113,
+        114,
+        111,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0014",
+      "ctx": "F zrkd vmfg>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        118,
+        109,
+        102,
+        103,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0130",
+      "ctx": "F hinw yoou>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        121,
+        111,
+        111,
+        117,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0035",
+      "ctx": "F zzyd vjvk>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        118,
+        106,
+        118,
+        107,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0205",
+      "ctx": "F sohh epbe>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        101,
+        112,
+        98,
+        101,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0286",
+      "ctx": "F mlah csqm>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        99,
+        115,
+        113,
+        109,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0232",
+      "ctx": "F urfo agjq>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        97,
+        103,
+        106,
+        113,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0302",
+      "ctx": "F xqcg mlpu>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        109,
+        108,
+        112,
+        117,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0285",
+      "ctx": "F onay dbbz>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        100,
+        98,
+        98,
+        122,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0239",
+      "ctx": "F dnah drry>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        100,
+        114,
+        114,
+        121,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0282",
+      "ctx": "F ygth waaw>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        119,
+        97,
+        97,
+        119,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0081",
+      "ctx": "F veqk jxlb>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        106,
+        120,
+        108,
+        98,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0221",
+      "ctx": "F thlh xqcu>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        120,
+        113,
+        99,
+        117,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0059",
+      "ctx": "F zchy yxlc>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        121,
+        120,
+        108,
+        99,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0296",
+      "ctx": "F jcxm owhf>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        111,
+        119,
+        104,
+        102,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0215",
+      "ctx": "F nghc ihtc>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        105,
+        104,
+        116,
+        99,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0226",
+      "ctx": "F nfaa jnoq>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        106,
+        110,
+        111,
+        113,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0097",
+      "ctx": "F zbzr wolp>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        119,
+        111,
+        108,
+        112,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0088",
+      "ctx": "F bben eqec>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        101,
+        113,
+        101,
+        99,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0304",
+      "ctx": "F zzmo ewuo>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        101,
+        119,
+        117,
+        111,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0250",
+      "ctx": "F ddrb nghk>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        110,
+        103,
+        104,
+        107,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0153",
+      "ctx": "F bfre bmxv>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        98,
+        109,
+        120,
+        118,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0013",
+      "ctx": "F vatj tovc>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        116,
+        111,
+        118,
+        99,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0334",
+      "ctx": "F ckow mtbn>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        109,
+        116,
+        98,
+        110,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0294",
+      "ctx": "F dwil mxnm>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        109,
+        120,
+        110,
+        109,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0167",
+      "ctx": "F nbkc njky>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        110,
+        106,
+        107,
+        121,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0332",
+      "ctx": "F nnkd vhng>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        118,
+        104,
+        110,
+        103,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0234",
+      "ctx": "F bqbc ynku>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        121,
+        110,
+        107,
+        117,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0056",
+      "ctx": "F jzvn tnub>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        116,
+        110,
+        117,
+        98,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0255",
+      "ctx": "F djke bkxi>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        98,
+        107,
+        120,
+        105,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0115",
+      "ctx": "F quoy oqdm>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        111,
+        113,
+        100,
+        109,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0243",
+      "ctx": "R odko ljnb>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        111,
+        100,
+        107,
+        111,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0151",
+      "ctx": "R nlmh ajad>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        110,
+        108,
+        109,
+        104,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0015",
+      "ctx": "R kejb peis>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        107,
+        101,
+        106,
+        98,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0270",
+      "ctx": "R ffwy dzrn>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        102,
+        102,
+        119,
+        121,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0299",
+      "ctx": "R lcwx tgsn>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        108,
+        99,
+        119,
+        120,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0032",
+      "ctx": "R hvtx nkag>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        104,
+        118,
+        116,
+        120,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0045",
+      "ctx": "R udnd gkxn>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        117,
+        100,
+        110,
+        100,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0208",
+      "ctx": "R nbza qwcw>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        110,
+        98,
+        122,
+        97,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0316",
+      "ctx": "R cpnw nwvr>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        99,
+        112,
+        110,
+        119,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0308",
+      "ctx": "R rtsp drtc>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        114,
+        116,
+        115,
+        112,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0137",
+      "ctx": "R xalu bqvv>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        120,
+        97,
+        108,
+        117,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0118",
+      "ctx": "R dczf dini>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        100,
+        99,
+        122,
+        102,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0121",
+      "ctx": "R bgxs iatk>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        98,
+        103,
+        120,
+        115,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0182",
+      "ctx": "R jfhw aibe>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        106,
+        102,
+        104,
+        119,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0046",
+      "ctx": "R wvca imua>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        119,
+        118,
+        99,
+        97,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0106",
+      "ctx": "R aeoa qcia>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        97,
+        101,
+        111,
+        97,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0202",
+      "ctx": "R kkjf tomy>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        107,
+        107,
+        106,
+        102,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0171",
+      "ctx": "R esrj dxos>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        101,
+        115,
+        114,
+        106,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0252",
+      "ctx": "R hsmc jbzs>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        104,
+        115,
+        109,
+        99,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0210",
+      "ctx": "R bohv qqwp>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        98,
+        111,
+        104,
+        118,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0113",
+      "ctx": "R lsig varn>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        108,
+        115,
+        105,
+        103,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0298",
+      "ctx": "R fmlu mobb>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        102,
+        109,
+        108,
+        117,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0268",
+      "ctx": "R nlbu nvfq>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        110,
+        108,
+        98,
+        117,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0055",
+      "ctx": "R jtel jdhi>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        106,
+        116,
+        101,
+        108,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0358",
+      "ctx": "R dktb pdfq>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        100,
+        107,
+        116,
+        98,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0057",
+      "ctx": "R xpjr nnou>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        120,
+        112,
+        106,
+        114,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0002",
+      "ctx": "R uttd cgmy>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        117,
+        116,
+        116,
+        100,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0084",
+      "ctx": "R lmis jvrm>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        108,
+        109,
+        105,
+        115,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0049",
+      "ctx": "R rqno ykdc>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        114,
+        113,
+        110,
+        111,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0031",
+      "ctx": "R ssxs pugl>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        115,
+        115,
+        120,
+        115,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0319",
+      "ctx": "R yafk hnpn>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        121,
+        97,
+        102,
+        107,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0026",
+      "ctx": "R eerj zkyo>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        101,
+        101,
+        114,
+        106,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0005",
+      "ctx": "R vcdh mpsw>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        118,
+        99,
+        100,
+        104,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0323",
+      "ctx": "R bqes qgjg>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        98,
+        113,
+        101,
+        115,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0229",
+      "ctx": "R fbjm zksg>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        102,
+        98,
+        106,
+        109,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0233",
+      "ctx": "R jeen cjlo>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        106,
+        101,
+        101,
+        110,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0271",
+      "ctx": "R ynvh xmfl>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        121,
+        110,
+        118,
+        104,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0054",
+      "ctx": "R yfgb xuvm>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        121,
+        102,
+        103,
+        98,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0096",
+      "ctx": "R vpav sdse>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        118,
+        112,
+        97,
+        118,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0148",
+      "ctx": "R hmes fhdh>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        104,
+        109,
+        101,
+        115,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0351",
+      "ctx": "R kzwy auye>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        107,
+        122,
+        119,
+        121,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0066",
+      "ctx": "R zfzi fsqy>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        122,
+        102,
+        122,
+        105,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0277",
+      "ctx": "R vqts tldw>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        118,
+        113,
+        116,
+        115,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0086",
+      "ctx": "R bjpn hggi>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        98,
+        106,
+        112,
+        110,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0306",
+      "ctx": "R ormt lenn>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        111,
+        114,
+        109,
+        116,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0023",
+      "ctx": "R ikhj vbsn>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        105,
+        107,
+        104,
+        106,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0135",
+      "ctx": "R mtms yflf>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        109,
+        116,
+        109,
+        115,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0144",
+      "ctx": "R moqm jkcp>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        109,
+        111,
+        113,
+        109,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0043",
+      "ctx": "R liuo sgpe>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        108,
+        105,
+        117,
+        111,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0217",
+      "ctx": "R yles ldig>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        121,
+        108,
+        101,
+        115,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0293",
+      "ctx": "R ucja zqaf>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        117,
+        99,
+        106,
+        97,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0189",
+      "ctx": "R fvku oznd>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        102,
+        118,
+        107,
+        117,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0273",
+      "ctx": "R whwv tpqb>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        119,
+        104,
+        119,
+        118,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0315",
+      "ctx": "R yuxc cegn>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        121,
+        117,
+        120,
+        99,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0339",
+      "ctx": "R jfcb irxu>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        106,
+        102,
+        99,
+        98,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0247",
+      "ctx": "R rvvi jfjx>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        114,
+        118,
+        118,
+        105,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0272",
+      "ctx": "R tvgb time>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        116,
+        118,
+        103,
+        98,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0324",
+      "ctx": "R txph npni>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        116,
+        120,
+        112,
+        104,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0190",
+      "ctx": "R ikna prhz>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        105,
+        107,
+        110,
+        97,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0331",
+      "ctx": "R zxhq dqxp>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        122,
+        120,
+        104,
+        113,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0170",
+      "ctx": "R aohr epjy>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        97,
+        111,
+        104,
+        114,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0149",
+      "ctx": "R zatz sifw>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        122,
+        97,
+        116,
+        122,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0207",
+      "ctx": "R nsqn nspt>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        110,
+        115,
+        113,
+        110,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0051",
+      "ctx": "R wnzl nrrz>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        119,
+        110,
+        122,
+        108,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0303",
+      "ctx": "R hmhv nneq>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        104,
+        109,
+        104,
+        118,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0240",
+      "ctx": "R rzjt hlzo>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        114,
+        122,
+        106,
+        116,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0216",
+      "ctx": "R lzkp usvz>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        108,
+        122,
+        107,
+        112,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0295",
+      "ctx": "R csmq nqqs>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        99,
+        115,
+        109,
+        113,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0124",
+      "ctx": "R yyao ijrz>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        121,
+        121,
+        97,
+        111,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0145",
+      "ctx": "R xiwj lolh>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        120,
+        105,
+        119,
+        106,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0105",
+      "ctx": "R rzng gipg>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        114,
+        122,
+        110,
+        103,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0162",
+      "ctx": "R nlio jqja>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        110,
+        108,
+        105,
+        111,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0006",
+      "ctx": "R gpoo jqrq>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        103,
+        112,
+        111,
+        111,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0352",
+      "ctx": "R epja zcoo>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        101,
+        112,
+        106,
+        97,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0259",
+      "ctx": "R rmfi ohpn>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        114,
+        109,
+        102,
+        105,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0269",
+      "ctx": "R woaf xiqu>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        119,
+        111,
+        97,
+        102,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0328",
+      "ctx": "R ebtu pjsl>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        101,
+        98,
+        116,
+        117,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0318",
+      "ctx": "R ygls fmyj>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        121,
+        103,
+        108,
+        115,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0245",
+      "ctx": "R jaiy lzdo>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        106,
+        97,
+        105,
+        121,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0265",
+      "ctx": "R lqpd qgrw>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        108,
+        113,
+        112,
+        100,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0092",
+      "ctx": "R yekq linn>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        121,
+        101,
+        107,
+        113,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0070",
+      "ctx": "R snjn wowk>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        115,
+        110,
+        106,
+        110,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0289",
+      "ctx": "R kdds wqac>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        107,
+        100,
+        100,
+        115,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0017",
+      "ctx": "R jbwk bbrj>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        106,
+        98,
+        119,
+        107,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0044",
+      "ctx": "R xymr bqxe>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        120,
+        121,
+        109,
+        114,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0008",
+      "ctx": "R rybu oixd>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        114,
+        121,
+        98,
+        117,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0310",
+      "ctx": "R uafr gufg>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        117,
+        97,
+        102,
+        114,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0355",
+      "ctx": "R bqqt mozo>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        98,
+        113,
+        113,
+        116,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0011",
+      "ctx": "R mzmz yrdi>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        109,
+        122,
+        109,
+        122,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0050",
+      "ctx": "R bumu bowz>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        98,
+        117,
+        109,
+        117,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0291",
+      "ctx": "R rwzy kyhw>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        114,
+        119,
+        122,
+        121,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0197",
+      "ctx": "R oyuf nuvd>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        111,
+        121,
+        117,
+        102,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0128",
+      "ctx": "R petz vbzh>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        112,
+        101,
+        116,
+        122,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0223",
+      "ctx": "R anhv ebia>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        97,
+        110,
+        104,
+        118,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0156",
+      "ctx": "R cosz uumr>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        99,
+        111,
+        115,
+        122,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0342",
+      "ctx": "R ezak laft>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        101,
+        122,
+        97,
+        107,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0335",
+      "ctx": "R wljf fdse>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        119,
+        108,
+        106,
+        102,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0251",
+      "ctx": "R xlub rwim>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        120,
+        108,
+        117,
+        98,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0196",
+      "ctx": "R ictd rydb>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        105,
+        99,
+        116,
+        100,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0058",
+      "ctx": "R uqzk bqnc>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        117,
+        113,
+        122,
+        107,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0192",
+      "ctx": "R bqcf wzsi>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        98,
+        113,
+        99,
+        102,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0179",
+      "ctx": "R iqcg eoze>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        105,
+        113,
+        99,
+        103,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0278",
+      "ctx": "R raba zapo>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        114,
+        97,
+        98,
+        97,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0353",
+      "ctx": "R gzkw xqyw>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        103,
+        122,
+        107,
+        119,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0062",
+      "ctx": "R jews xana>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        106,
+        101,
+        119,
+        115,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0350",
+      "ctx": "R xuic ghft>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        120,
+        117,
+        105,
+        99,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0276",
+      "ctx": "R zxfv doxx>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        122,
+        120,
+        102,
+        118,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0132",
+      "ctx": "R jhsc wuiw>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        106,
+        104,
+        115,
+        99,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0029",
+      "ctx": "R anwy jzjf>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        97,
+        110,
+        119,
+        121,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0163",
+      "ctx": "R zorg zsbx>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        122,
+        111,
+        114,
+        103,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0065",
+      "ctx": "R gotu vwnz>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        103,
+        111,
+        116,
+        117,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0082",
+      "ctx": "R ejta vnau>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        101,
+        106,
+        116,
+        97,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0199",
+      "ctx": "R dtul hzjn>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        100,
+        116,
+        117,
+        108,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0231",
+      "ctx": "R lvpj akvw>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        108,
+        118,
+        112,
+        106,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0257",
+      "ctx": "R lfnm mfke>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        108,
+        102,
+        110,
+        109,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0110",
+      "ctx": "R rgtb kuzo>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        114,
+        103,
+        116,
+        98,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0301",
+      "ctx": "R zsbr jsfg>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        122,
+        115,
+        98,
+        114,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0238",
+      "ctx": "R gexe xxmy>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        103,
+        101,
+        120,
+        101,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "cv3-0340",
+      "ctx": "R pylw bxod>----",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        112,
+        121,
+        108,
+        119,
+        0
+      ],
+      "kind": "confirm_v3"
+    },
+    {
+      "name": "safe",
+      "ctx": "F pkev tifh>----",
+      "group": "U",
+      "allowed": 0,
+      "zero": 0,
+      "tokens": [
+        110,
+        111,
+        0
+      ],
+      "kind": "safe"
+    },
+    {
+      "name": "zero_w",
+      "ctx": "F pkev tifh>----",
+      "group": "F",
+      "allowed": 1,
+      "zero": 1,
+      "tokens": [
+        0
+      ],
+      "kind": "zero"
+    }
+  ],
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "ASTRA_NATIVE_AI_BOARD_PASS": "OPEN",
+  "note": "RTL/int golden from IntegerModel on Confirm V3 F/R plus hardware safe/zero. Not C4_MASTER. Not BOARD_PASS."
+}

@@ -1,0 +1,30 @@
+{
+  "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .\\run_xsim.ps1",
+  "cwd": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-FINAL-C4-C7-20260909\\24_C5_REFUSE_FIFO_V1",
+  "exit_code": 0,
+  "refuse": {
+    "marker": "ASTRA_C5_FINAL_V1_REFUSE_XSIM_PASS",
+    "log": "xsim_refuse.log",
+    "finish_ns": 2830495,
+    "classes": {
+      "parser_amb": "HIT st=7 UART=n,o,EOS",
+      "parser_neg": "HIT st=8 UART=n,o,EOS",
+      "search_incomp": "HIT st=6 UART=n,o,EOS dir[48] ovf",
+      "fifo_fullseq": "HIT nstr=5 npin=5 tifh+EOS n_fifo_ovf=0 TB_ALIAS=SYNTHETIC"
+    }
+  },
+  "baud": {
+    "marker": "ASTRA_C5_FINAL_V1_BAUD115200_XSIM_PASS",
+    "log": "xsim_baud.log",
+    "finish_ns": 1467102,
+    "elab": "uart_rx(CLK_HZ=83333333) uart_tx(CLK_HZ=83333333) NO_SIM_OVERRIDE",
+    "classes": {
+      "uart_115200_fifo": "HIT CPB=723 UNKNOWN st=1 UART=n,o,EOS nstr=3"
+    }
+  },
+  "c5_master": "OPEN",
+  "board_pass": "OPEN",
+  "PROGRAM": "NO",
+  "prod_dict": "OPEN",
+  "parser_reverse": "OPEN direction_o=2'd0"
+}

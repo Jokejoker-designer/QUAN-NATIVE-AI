@@ -1,0 +1,10 @@
+{
+  "id": "R_POS1_ATTENTION_FIRST_DIVERGENCE",
+  "status": "ARCHIVED",
+  "source": "D:\\FPGA\\C4_RESCUE_20260909\\EXPERIMENTS\\V2_INVARIANT_01\\R_POS1_ATTENTION_FIRST_DIVERGENCE.json",
+  "finding": "R step0 routes to canonical SRC, while steps1-3 route to obsolete V1 slot-C/PAD coordinates; TF≈FREE, so autoregressive exposure bias is not the primary cause.",
+  "confirm_v2_instantiated": false,
+  "materializer_v2_modified": false,
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN"
+}

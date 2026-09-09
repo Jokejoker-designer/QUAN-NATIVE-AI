@@ -171,6 +171,13 @@
   "board_pass": false,
   "astra13": "BLOCKED",
   "production_top": "PASS_THIS_GATE_ONLY_POST_ROUTE_C5_PLUS_OFFICIAL_MIG",
-  "cursor_ladder_note": "checker tick 55 ACCEPT HELDOUT-20 class-ID; ARLANG r0 XSim PASS yes+dest-name 20/20; LM06_BYTE256 NOT_FROZEN c4_master OPEN; PROGRAM=NO BOARD_PASS REJECT",
-  "updated": "2026-09-09T07:07:00+07:00"
+  "cursor_ladder_note": "2026-09-09 C4 E3d OOC DONE WNS -24.357 BRAM 0 SMRES 0/20; E3a was -83.427 20/20 SMRES; E3b/E3c GOLDEN 242 PASS; C4_MASTER OPEN PROGRAM=NO BOARD_PASS REJECT",
+  "updated": "2026-09-09T20:09:31+07:00",
+  "progress_file": "docs/ASTRA/PROGRESS_20260909.md",
+  "c4_e3a_topn": "DONE_WNS_-83.427_20_OF_20_SMRES",
+  "c4_e3b_div": "GOLDEN_242_PASS",
+  "c4_e3c_ram": "GOLDEN_242_PASS",
+  "c4_e3d_ooc": "DONE_WNS_-24.357_BRAM_0_SMRES_0_OF_20",
+  "c4_e3d_bram_inferred": false,
+  "astra_c4_c7_program": false
 }

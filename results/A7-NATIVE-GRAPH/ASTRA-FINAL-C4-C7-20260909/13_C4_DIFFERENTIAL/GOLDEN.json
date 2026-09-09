@@ -1,0 +1,345 @@
+{
+  "checkpoint": "D:\\FPGA\\C4_RESCUE_20260909\\EXPERIMENTS\\F_COPY_BALANCED_01\\runs\\fr_balanced_01\\best_dev.npz",
+  "manifest": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-FINAL-C4-C7-20260909\\10_C4_MODEL_FREEZE\\ptq_fcopy_w8a12\\quant_manifest.json",
+  "cases": [
+    {
+      "name": "F drum hose>drum",
+      "ctx": "F drum hose>drum",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        104,
+        111,
+        115,
+        101,
+        0
+      ],
+      "kind": "supported"
+    },
+    {
+      "name": "F vent hose>vent",
+      "ctx": "F vent hose>vent",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        104,
+        111,
+        115,
+        101,
+        0
+      ],
+      "kind": "supported"
+    },
+    {
+      "name": "F bolt hose>bolt",
+      "ctx": "F bolt hose>bolt",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        104,
+        111,
+        115,
+        101,
+        0
+      ],
+      "kind": "supported"
+    },
+    {
+      "name": "F hose drum>hose",
+      "ctx": "F hose drum>hose",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        100,
+        114,
+        117,
+        109,
+        0
+      ],
+      "kind": "supported"
+    },
+    {
+      "name": "F vent drum>vent",
+      "ctx": "F vent drum>vent",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        100,
+        114,
+        117,
+        109,
+        0
+      ],
+      "kind": "supported"
+    },
+    {
+      "name": "F bolt drum>bolt",
+      "ctx": "F bolt drum>bolt",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        100,
+        114,
+        117,
+        109,
+        0
+      ],
+      "kind": "supported"
+    },
+    {
+      "name": "F hose vent>hose",
+      "ctx": "F hose vent>hose",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        118,
+        101,
+        110,
+        116,
+        0
+      ],
+      "kind": "supported"
+    },
+    {
+      "name": "F drum vent>drum",
+      "ctx": "F drum vent>drum",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        118,
+        101,
+        110,
+        116,
+        0
+      ],
+      "kind": "supported"
+    },
+    {
+      "name": "F bolt vent>bolt",
+      "ctx": "F bolt vent>bolt",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        118,
+        101,
+        110,
+        116,
+        0
+      ],
+      "kind": "supported"
+    },
+    {
+      "name": "F hose bolt>hose",
+      "ctx": "F hose bolt>hose",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        98,
+        111,
+        108,
+        116,
+        0
+      ],
+      "kind": "supported"
+    },
+    {
+      "name": "F drum bolt>drum",
+      "ctx": "F drum bolt>drum",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        98,
+        111,
+        108,
+        116,
+        0
+      ],
+      "kind": "supported"
+    },
+    {
+      "name": "F vent bolt>vent",
+      "ctx": "F vent bolt>vent",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        98,
+        111,
+        108,
+        116,
+        0
+      ],
+      "kind": "supported"
+    },
+    {
+      "name": "R hose hose>drum",
+      "ctx": "R hose hose>drum",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        100,
+        114,
+        117,
+        109,
+        0
+      ],
+      "kind": "supported"
+    },
+    {
+      "name": "R hose hose>vent",
+      "ctx": "R hose hose>vent",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        118,
+        101,
+        110,
+        116,
+        0
+      ],
+      "kind": "supported"
+    },
+    {
+      "name": "R hose hose>bolt",
+      "ctx": "R hose hose>bolt",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        98,
+        111,
+        108,
+        116,
+        0
+      ],
+      "kind": "supported"
+    },
+    {
+      "name": "R drum drum>hose",
+      "ctx": "R drum drum>hose",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        104,
+        111,
+        115,
+        101,
+        0
+      ],
+      "kind": "supported"
+    },
+    {
+      "name": "R drum drum>vent",
+      "ctx": "R drum drum>vent",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        118,
+        101,
+        110,
+        116,
+        0
+      ],
+      "kind": "supported"
+    },
+    {
+      "name": "R drum drum>bolt",
+      "ctx": "R drum drum>bolt",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        98,
+        111,
+        108,
+        116,
+        0
+      ],
+      "kind": "supported"
+    },
+    {
+      "name": "R vent vent>hose",
+      "ctx": "R vent vent>hose",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        104,
+        111,
+        115,
+        101,
+        0
+      ],
+      "kind": "supported"
+    },
+    {
+      "name": "R vent vent>drum",
+      "ctx": "R vent vent>drum",
+      "group": "R",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        100,
+        114,
+        117,
+        109,
+        0
+      ],
+      "kind": "supported"
+    },
+    {
+      "name": "replaced_src",
+      "ctx": "F drum oseh>drum",
+      "group": "F",
+      "allowed": 1,
+      "zero": 0,
+      "tokens": [
+        111,
+        115,
+        101,
+        104,
+        0
+      ],
+      "kind": "replaced"
+    },
+    {
+      "name": "safe",
+      "ctx": "F drum hose>drum",
+      "group": "U",
+      "allowed": 0,
+      "zero": 0,
+      "tokens": [
+        110,
+        111,
+        0
+      ],
+      "kind": "safe"
+    },
+    {
+      "name": "zero_w",
+      "ctx": "F drum hose>drum",
+      "group": "F",
+      "allowed": 1,
+      "zero": 1,
+      "tokens": [
+        0
+      ],
+      "kind": "zero"
+    }
+  ]
+}

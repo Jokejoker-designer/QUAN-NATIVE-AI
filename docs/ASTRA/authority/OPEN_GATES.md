@@ -1,9 +1,14 @@
 # OPEN GATES — Master V1.1 C1–C7
 
+**2026-09-09 overlay:** C4 physical E3a **DONE** (OOC WNS −83.427 ns, 20/20 SMRES).
+E3b divider + E3c RAM split: GOLDEN.svh **n=242 PASS**. E3d OOC **DONE** (WNS −24.357 ns, BRAM 0, top-20 SMRES 0/20).
+`C4_MASTER` / `C5_MASTER` / `C6_MASTER` / `ASTRA_NATIVE_AI_BOARD_PASS` remain **OPEN / BLOCKED**.
+`PROGRAM=NO` for the C4–C7 freeze path. Live snapshot: `docs/ASTRA/PROGRESS_20260909.md`.
+
 C0 hashes/versions are recorded in `FINAL_CONTRACT.json` (bag
 `ASTRA-C0-LAW-FREEZE-01`). C1 XSim law is **CLOSED_XSIM** (auditor
 `20260907T2148Z`). C2 XSim persist law is **CLOSED_XSIM** (auditor
-`20260907T1652Z`). C3–C7 remain **OPEN**. BOARD_PASS remains **NOT_CLAIMED**.
+`20260907T1652Z`). C3–C7 remain **OPEN** as MASTER letters. BOARD_PASS remains **NOT_CLAIMED**.
 
 ```text
 LM06_BYTE256           = NOT_FROZEN

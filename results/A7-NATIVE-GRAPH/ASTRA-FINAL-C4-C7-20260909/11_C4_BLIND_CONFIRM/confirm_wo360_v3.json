@@ -1,0 +1,3155 @@
+{
+  "name": "confirm_wo360_v3",
+  "locked": true,
+  "opened_for_selection": false,
+  "prereg": {
+    "n_F": 120,
+    "n_R": 120,
+    "n_U": 120,
+    "grounded_n": 240,
+    "unsupported_n": 120,
+    "overall_min": 0.9,
+    "F_min": 0.9,
+    "R_min": 0.9,
+    "system_safe_min": 0.95,
+    "system_hall_max": 0.05,
+    "termination": 1.0,
+    "float_int": 1.0,
+    "system_refusal": "n then o then EOS; not a learned-U claim"
+  },
+  "seed": 36009,
+  "disjoint_from": "historic, confirm_v1, confirm_v2, reverse train/dev, F-copy train/dev",
+  "kind_counts": {
+    "supported_forward": 120,
+    "supported_reverse": 120,
+    "unrelated": 20,
+    "missing_evidence": 20,
+    "wrong_context": 20,
+    "conflict": 20,
+    "ambiguous": 20,
+    "search_incomplete": 20
+  },
+  "rows": [
+    {
+      "ctx": "F xrls fhop>xrls",
+      "ans": "fhop",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0129"
+    },
+    {
+      "ctx": "F ujmf cxle>ujmf",
+      "ans": "cxle",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0131"
+    },
+    {
+      "ctx": "F nbdd scwm>nbdd",
+      "ans": "scwm",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0167"
+    },
+    {
+      "ctx": "F hwbv fwmd>hwbv",
+      "ans": "fwmd",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0000"
+    },
+    {
+      "ctx": "F zxjw xjoo>zxjw",
+      "ans": "xjoo",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0280"
+    },
+    {
+      "ctx": "F mnww apzz>mnww",
+      "ans": "apzz",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0030"
+    },
+    {
+      "ctx": "F pnbg etcn>pnbg",
+      "ans": "etcn",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0158"
+    },
+    {
+      "ctx": "F oetu vrfq>oetu",
+      "ans": "vrfq",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0284"
+    },
+    {
+      "ctx": "F dzge nsaf>dzge",
+      "ans": "nsaf",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0331"
+    },
+    {
+      "ctx": "F ajae qjbw>ajae",
+      "ans": "qjbw",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0341"
+    },
+    {
+      "ctx": "F wbie qkgo>wbie",
+      "ans": "qkgo",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0266"
+    },
+    {
+      "ctx": "F bnzw ryfn>bnzw",
+      "ans": "ryfn",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0273"
+    },
+    {
+      "ctx": "F ffpc ixcj>ffpc",
+      "ans": "ixcj",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0313"
+    },
+    {
+      "ctx": "F fehr nvyt>fehr",
+      "ans": "nvyt",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0073"
+    },
+    {
+      "ctx": "F cjsk agur>cjsk",
+      "ans": "agur",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0021"
+    },
+    {
+      "ctx": "F jdug jpib>jdug",
+      "ans": "jpib",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0175"
+    },
+    {
+      "ctx": "F nwjp ouuf>nwjp",
+      "ans": "ouuf",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0287"
+    },
+    {
+      "ctx": "F ephh hjwo>ephh",
+      "ans": "hjwo",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0179"
+    },
+    {
+      "ctx": "F kdvw jjbk>kdvw",
+      "ans": "jjbk",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0269"
+    },
+    {
+      "ctx": "F ysqc hkic>ysqc",
+      "ans": "hkic",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0187"
+    },
+    {
+      "ctx": "F agui eqsx>agui",
+      "ans": "eqsx",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0088"
+    },
+    {
+      "ctx": "F jufb elpt>jufb",
+      "ans": "elpt",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0353"
+    },
+    {
+      "ctx": "F odbl tdlv>odbl",
+      "ans": "tdlv",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0262"
+    },
+    {
+      "ctx": "F ejwr wnmd>ejwr",
+      "ans": "wnmd",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0035"
+    },
+    {
+      "ctx": "F ahvg gpxv>ahvg",
+      "ans": "gpxv",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0116"
+    },
+    {
+      "ctx": "F zbqw phqh>zbqw",
+      "ans": "phqh",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0349"
+    },
+    {
+      "ctx": "F uyvz bcnl>uyvz",
+      "ans": "bcnl",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0225"
+    },
+    {
+      "ctx": "F omko fnag>omko",
+      "ans": "fnag",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0174"
+    },
+    {
+      "ctx": "F miyz ddaj>miyz",
+      "ans": "ddaj",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0171"
+    },
+    {
+      "ctx": "F ebwk mamx>ebwk",
+      "ans": "mamx",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0111"
+    },
+    {
+      "ctx": "F brps ooqz>brps",
+      "ans": "ooqz",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0121"
+    },
+    {
+      "ctx": "F zpbl fprt>zpbl",
+      "ans": "fprt",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0019"
+    },
+    {
+      "ctx": "F mmhw lmlm>mmhw",
+      "ans": "lmlm",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0123"
+    },
+    {
+      "ctx": "F eilh pwuz>eilh",
+      "ans": "pwuz",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0028"
+    },
+    {
+      "ctx": "F tezu vlkc>tezu",
+      "ans": "vlkc",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0147"
+    },
+    {
+      "ctx": "F uqis xbzz>uqis",
+      "ans": "xbzz",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0076"
+    },
+    {
+      "ctx": "F zcui ewol>zcui",
+      "ans": "ewol",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0007"
+    },
+    {
+      "ctx": "F rduc fyhz>rduc",
+      "ans": "fyhz",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0031"
+    },
+    {
+      "ctx": "F biag fhdp>biag",
+      "ans": "fhdp",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0150"
+    },
+    {
+      "ctx": "F czpc kvgt>czpc",
+      "ans": "kvgt",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0034"
+    },
+    {
+      "ctx": "F rcte hkqp>rcte",
+      "ans": "hkqp",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0206"
+    },
+    {
+      "ctx": "F bovu sqhy>bovu",
+      "ans": "sqhy",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0080"
+    },
+    {
+      "ctx": "F sszp niax>sszp",
+      "ans": "niax",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0188"
+    },
+    {
+      "ctx": "F xoka wajl>xoka",
+      "ans": "wajl",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0027"
+    },
+    {
+      "ctx": "F folv vezu>folv",
+      "ans": "vezu",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0345"
+    },
+    {
+      "ctx": "F slmj yqnj>slmj",
+      "ans": "yqnj",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0081"
+    },
+    {
+      "ctx": "F thys vfcs>thys",
+      "ans": "vfcs",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0099"
+    },
+    {
+      "ctx": "F pbkc wmnl>pbkc",
+      "ans": "wmnl",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0170"
+    },
+    {
+      "ctx": "F ebgr uydh>ebgr",
+      "ans": "uydh",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0063"
+    },
+    {
+      "ctx": "F efgl cscb>efgl",
+      "ans": "cscb",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0327"
+    },
+    {
+      "ctx": "F paeq vrra>paeq",
+      "ans": "vrra",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0292"
+    },
+    {
+      "ctx": "F urbh hfmd>urbh",
+      "ans": "hfmd",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0271"
+    },
+    {
+      "ctx": "F ggou wden>ggou",
+      "ans": "wden",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0267"
+    },
+    {
+      "ctx": "F dsjg lenw>dsjg",
+      "ans": "lenw",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0100"
+    },
+    {
+      "ctx": "F qnfq bczw>qnfq",
+      "ans": "bczw",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0105"
+    },
+    {
+      "ctx": "F pyye bgab>pyye",
+      "ans": "bgab",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0041"
+    },
+    {
+      "ctx": "F mgyn quni>mgyn",
+      "ans": "quni",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0161"
+    },
+    {
+      "ctx": "F zave fpti>zave",
+      "ans": "fpti",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0217"
+    },
+    {
+      "ctx": "F mxty hnyy>mxty",
+      "ans": "hnyy",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0324"
+    },
+    {
+      "ctx": "F bxov ntxp>bxov",
+      "ans": "ntxp",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0144"
+    },
+    {
+      "ctx": "F exrj qwpb>exrj",
+      "ans": "qwpb",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0241"
+    },
+    {
+      "ctx": "F vncr ontt>vncr",
+      "ans": "ontt",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0037"
+    },
+    {
+      "ctx": "F gzfn fmkt>gzfn",
+      "ans": "fmkt",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0060"
+    },
+    {
+      "ctx": "F ltnl vhob>ltnl",
+      "ans": "vhob",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0002"
+    },
+    {
+      "ctx": "F vhvg fmwh>vhvg",
+      "ans": "fmwh",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0140"
+    },
+    {
+      "ctx": "F gyqd ttrj>gyqd",
+      "ans": "ttrj",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0248"
+    },
+    {
+      "ctx": "F httu azwq>httu",
+      "ans": "azwq",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0036"
+    },
+    {
+      "ctx": "F nlfj zpbw>nlfj",
+      "ans": "zpbw",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0173"
+    },
+    {
+      "ctx": "F pekf kvjl>pekf",
+      "ans": "kvjl",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0058"
+    },
+    {
+      "ctx": "F parq thpi>parq",
+      "ans": "thpi",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0095"
+    },
+    {
+      "ctx": "F dqjp ryjw>dqjp",
+      "ans": "ryjw",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0110"
+    },
+    {
+      "ctx": "F jipz edac>jipz",
+      "ans": "edac",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0159"
+    },
+    {
+      "ctx": "F htko dlvz>htko",
+      "ans": "dlvz",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0351"
+    },
+    {
+      "ctx": "F obzc qyie>obzc",
+      "ans": "qyie",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0310"
+    },
+    {
+      "ctx": "F xipd lvyd>xipd",
+      "ans": "lvyd",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0102"
+    },
+    {
+      "ctx": "F kxvw rena>kxvw",
+      "ans": "rena",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0210"
+    },
+    {
+      "ctx": "F xesd fwud>xesd",
+      "ans": "fwud",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0249"
+    },
+    {
+      "ctx": "F jmxs pczm>jmxs",
+      "ans": "pczm",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0215"
+    },
+    {
+      "ctx": "F cmyd qkmy>cmyd",
+      "ans": "qkmy",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0216"
+    },
+    {
+      "ctx": "F evbt mekx>evbt",
+      "ans": "mekx",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0023"
+    },
+    {
+      "ctx": "F gidq lusz>gidq",
+      "ans": "lusz",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0254"
+    },
+    {
+      "ctx": "F khce ktlr>khce",
+      "ans": "ktlr",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0285"
+    },
+    {
+      "ctx": "F blcr tpph>blcr",
+      "ans": "tpph",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0312"
+    },
+    {
+      "ctx": "F xhks ypyz>xhks",
+      "ans": "ypyz",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0332"
+    },
+    {
+      "ctx": "F uymg pwyz>uymg",
+      "ans": "pwyz",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0050"
+    },
+    {
+      "ctx": "F txnb nmkj>txnb",
+      "ans": "nmkj",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0077"
+    },
+    {
+      "ctx": "F vpbx oiln>vpbx",
+      "ans": "oiln",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0203"
+    },
+    {
+      "ctx": "F zgpv datu>zgpv",
+      "ans": "datu",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0067"
+    },
+    {
+      "ctx": "F fvjb tfph>fvjb",
+      "ans": "tfph",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0072"
+    },
+    {
+      "ctx": "F mhlu utvv>mhlu",
+      "ans": "utvv",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0308"
+    },
+    {
+      "ctx": "F efal uugd>efal",
+      "ans": "uugd",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0314"
+    },
+    {
+      "ctx": "F tpzi eehs>tpzi",
+      "ans": "eehs",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0128"
+    },
+    {
+      "ctx": "F caxx eczc>caxx",
+      "ans": "eczc",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0008"
+    },
+    {
+      "ctx": "F hdec idpu>hdec",
+      "ans": "idpu",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0162"
+    },
+    {
+      "ctx": "F nzwq rwty>nzwq",
+      "ans": "rwty",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0054"
+    },
+    {
+      "ctx": "F hffe eqjz>hffe",
+      "ans": "eqjz",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0352"
+    },
+    {
+      "ctx": "F tamd posd>tamd",
+      "ans": "posd",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0059"
+    },
+    {
+      "ctx": "F drkn rnjc>drkn",
+      "ans": "rnjc",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0293"
+    },
+    {
+      "ctx": "F fivy evan>fivy",
+      "ans": "evan",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0198"
+    },
+    {
+      "ctx": "F gvtp mgav>gvtp",
+      "ans": "mgav",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0257"
+    },
+    {
+      "ctx": "F vkbb brtx>vkbb",
+      "ans": "brtx",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0259"
+    },
+    {
+      "ctx": "F ueav lren>ueav",
+      "ans": "lren",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0137"
+    },
+    {
+      "ctx": "F ybbu twzb>ybbu",
+      "ans": "twzb",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0085"
+    },
+    {
+      "ctx": "F dqih kfpr>dqih",
+      "ans": "kfpr",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0033"
+    },
+    {
+      "ctx": "F rmsu erah>rmsu",
+      "ans": "erah",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0192"
+    },
+    {
+      "ctx": "F neue myta>neue",
+      "ans": "myta",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0012"
+    },
+    {
+      "ctx": "F iugy qiro>iugy",
+      "ans": "qiro",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0251"
+    },
+    {
+      "ctx": "F txgw ibsi>txgw",
+      "ans": "ibsi",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0205"
+    },
+    {
+      "ctx": "F yguk csst>yguk",
+      "ans": "csst",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0240"
+    },
+    {
+      "ctx": "F ryaa aejq>ryaa",
+      "ans": "aejq",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0115"
+    },
+    {
+      "ctx": "F ynfu sfmo>ynfu",
+      "ans": "sfmo",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0348"
+    },
+    {
+      "ctx": "F gpwk wrzv>gpwk",
+      "ans": "wrzv",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0305"
+    },
+    {
+      "ctx": "F kgan apft>kgan",
+      "ans": "apft",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0200"
+    },
+    {
+      "ctx": "F ritu krmr>ritu",
+      "ans": "krmr",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0232"
+    },
+    {
+      "ctx": "F rbyw iugt>rbyw",
+      "ans": "iugt",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0227"
+    },
+    {
+      "ctx": "F omya dter>omya",
+      "ans": "dter",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0090"
+    },
+    {
+      "ctx": "F rxco qtkr>rxco",
+      "ans": "qtkr",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0357"
+    },
+    {
+      "ctx": "F fnvy eqht>fnvy",
+      "ans": "eqht",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0336"
+    },
+    {
+      "ctx": "F uskx rxwx>uskx",
+      "ans": "rxwx",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0274"
+    },
+    {
+      "ctx": "F hbqe xpqq>hbqe",
+      "ans": "xpqq",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0132"
+    },
+    {
+      "ctx": "R rmwc rmwc>opav",
+      "ans": "opav",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0092"
+    },
+    {
+      "ctx": "R slat slat>ckqh",
+      "ans": "ckqh",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0196"
+    },
+    {
+      "ctx": "R nczb nczb>ayhk",
+      "ans": "ayhk",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0344"
+    },
+    {
+      "ctx": "R ftvs ftvs>zglv",
+      "ans": "zglv",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0242"
+    },
+    {
+      "ctx": "R fxex fxex>pqer",
+      "ans": "pqer",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0258"
+    },
+    {
+      "ctx": "R ixek ixek>znfw",
+      "ans": "znfw",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0148"
+    },
+    {
+      "ctx": "R qjrm qjrm>vgdd",
+      "ans": "vgdd",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0186"
+    },
+    {
+      "ctx": "R kjhh kjhh>ygan",
+      "ans": "ygan",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0049"
+    },
+    {
+      "ctx": "R egfa egfa>mdpa",
+      "ans": "mdpa",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0124"
+    },
+    {
+      "ctx": "R axae axae>cmxj",
+      "ans": "cmxj",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0208"
+    },
+    {
+      "ctx": "R abvm abvm>jnbt",
+      "ans": "jnbt",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0176"
+    },
+    {
+      "ctx": "R nnva nnva>aday",
+      "ans": "aday",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0153"
+    },
+    {
+      "ctx": "R uhbz uhbz>ylhv",
+      "ans": "ylhv",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0163"
+    },
+    {
+      "ctx": "R hmhk hmhk>tidn",
+      "ans": "tidn",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0117"
+    },
+    {
+      "ctx": "R bbmk bbmk>igqm",
+      "ans": "igqm",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0055"
+    },
+    {
+      "ctx": "R usuq usuq>udrl",
+      "ans": "udrl",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0145"
+    },
+    {
+      "ctx": "R krel krel>rhla",
+      "ans": "rhla",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0025"
+    },
+    {
+      "ctx": "R tfpc tfpc>ekti",
+      "ans": "ekti",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0288"
+    },
+    {
+      "ctx": "R vrsn vrsn>sjtq",
+      "ans": "sjtq",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0219"
+    },
+    {
+      "ctx": "R gqkk gqkk>zojw",
+      "ans": "zojw",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0139"
+    },
+    {
+      "ctx": "R jlnm jlnm>zujt",
+      "ans": "zujt",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0320"
+    },
+    {
+      "ctx": "R hnhp hnhp>qtqf",
+      "ans": "qtqf",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0068"
+    },
+    {
+      "ctx": "R hlik hlik>bxud",
+      "ans": "bxud",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0056"
+    },
+    {
+      "ctx": "R zbmx zbmx>qwvq",
+      "ans": "qwvq",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0006"
+    },
+    {
+      "ctx": "R guql guql>ejsj",
+      "ans": "ejsj",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0316"
+    },
+    {
+      "ctx": "R biqg biqg>kgel",
+      "ans": "kgel",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0015"
+    },
+    {
+      "ctx": "R rdpi rdpi>jnbi",
+      "ans": "jnbi",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0275"
+    },
+    {
+      "ctx": "R ensf ensf>lmlr",
+      "ans": "lmlr",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0165"
+    },
+    {
+      "ctx": "R ggbq ggbq>vuxs",
+      "ans": "vuxs",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0005"
+    },
+    {
+      "ctx": "R nqlc nqlc>eutv",
+      "ans": "eutv",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0046"
+    },
+    {
+      "ctx": "R sbbx sbbx>nnvs",
+      "ans": "nnvs",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0209"
+    },
+    {
+      "ctx": "R hvwn hvwn>djsz",
+      "ans": "djsz",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0016"
+    },
+    {
+      "ctx": "R lqby lqby>vqib",
+      "ans": "vqib",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0237"
+    },
+    {
+      "ctx": "R qwjq qwjq>odjw",
+      "ans": "odjw",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0212"
+    },
+    {
+      "ctx": "R klfg klfg>mlys",
+      "ans": "mlys",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0062"
+    },
+    {
+      "ctx": "R kmhq kmhq>rjxq",
+      "ans": "rjxq",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0154"
+    },
+    {
+      "ctx": "R gfpd gfpd>ijqh",
+      "ans": "ijqh",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0135"
+    },
+    {
+      "ctx": "R didn didn>pukf",
+      "ans": "pukf",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0087"
+    },
+    {
+      "ctx": "R ozsg ozsg>dexg",
+      "ans": "dexg",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0260"
+    },
+    {
+      "ctx": "R oyam oyam>yysl",
+      "ans": "yysl",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0255"
+    },
+    {
+      "ctx": "R qetp qetp>huuc",
+      "ans": "huuc",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0264"
+    },
+    {
+      "ctx": "R feld feld>oyci",
+      "ans": "oyci",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0083"
+    },
+    {
+      "ctx": "R wteq wteq>qrnf",
+      "ans": "qrnf",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0350"
+    },
+    {
+      "ctx": "R oxki oxki>rvyo",
+      "ans": "rvyo",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0103"
+    },
+    {
+      "ctx": "R zgrc zgrc>cqzd",
+      "ans": "cqzd",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0239"
+    },
+    {
+      "ctx": "R cabz cabz>bmmt",
+      "ans": "bmmt",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0093"
+    },
+    {
+      "ctx": "R ckde ckde>wonh",
+      "ans": "wonh",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0011"
+    },
+    {
+      "ctx": "R osce osce>rfei",
+      "ans": "rfei",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0029"
+    },
+    {
+      "ctx": "R esqy esqy>ymca",
+      "ans": "ymca",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0078"
+    },
+    {
+      "ctx": "R xsnu xsnu>wlsn",
+      "ans": "wlsn",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0108"
+    },
+    {
+      "ctx": "R rmjp rmjp>ufye",
+      "ans": "ufye",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0070"
+    },
+    {
+      "ctx": "R rcyz rcyz>dmvs",
+      "ans": "dmvs",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0190"
+    },
+    {
+      "ctx": "R ooau ooau>agid",
+      "ans": "agid",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0189"
+    },
+    {
+      "ctx": "R ytec ytec>ysye",
+      "ans": "ysye",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0211"
+    },
+    {
+      "ctx": "R lmyo lmyo>fppe",
+      "ans": "fppe",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0223"
+    },
+    {
+      "ctx": "R djtt djtt>cvhy",
+      "ans": "cvhy",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0214"
+    },
+    {
+      "ctx": "R rrkk rrkk>tsov",
+      "ans": "tsov",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0299"
+    },
+    {
+      "ctx": "R pjvt pjvt>fzwi",
+      "ans": "fzwi",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0142"
+    },
+    {
+      "ctx": "R ozkx ozkx>gyou",
+      "ans": "gyou",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0358"
+    },
+    {
+      "ctx": "R hnqb hnqb>kdiu",
+      "ans": "kdiu",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0278"
+    },
+    {
+      "ctx": "R gmwv gmwv>iizz",
+      "ans": "iizz",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0228"
+    },
+    {
+      "ctx": "R tesb tesb>fjva",
+      "ans": "fjva",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0207"
+    },
+    {
+      "ctx": "R sbwf sbwf>feyz",
+      "ans": "feyz",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0010"
+    },
+    {
+      "ctx": "R wgik wgik>wwsp",
+      "ans": "wwsp",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0146"
+    },
+    {
+      "ctx": "R iwma iwma>mhqv",
+      "ans": "mhqv",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0118"
+    },
+    {
+      "ctx": "R gvlv gvlv>ojnx",
+      "ans": "ojnx",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0201"
+    },
+    {
+      "ctx": "R pqxj pqxj>udmg",
+      "ans": "udmg",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0079"
+    },
+    {
+      "ctx": "R qavn qavn>amiy",
+      "ans": "amiy",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0323"
+    },
+    {
+      "ctx": "R peof peof>azln",
+      "ans": "azln",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0064"
+    },
+    {
+      "ctx": "R uyhn uyhn>pqdk",
+      "ans": "pqdk",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0277"
+    },
+    {
+      "ctx": "R wbaa wbaa>pvmd",
+      "ans": "pvmd",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0042"
+    },
+    {
+      "ctx": "R gwzc gwzc>yiyn",
+      "ans": "yiyn",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0355"
+    },
+    {
+      "ctx": "R kznx kznx>wery",
+      "ans": "wery",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0043"
+    },
+    {
+      "ctx": "R tvbg tvbg>ffdm",
+      "ans": "ffdm",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0053"
+    },
+    {
+      "ctx": "R mloc mloc>pciy",
+      "ans": "pciy",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0182"
+    },
+    {
+      "ctx": "R fdfl fdfl>hkkb",
+      "ans": "hkkb",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0180"
+    },
+    {
+      "ctx": "R ozge ozge>dddy",
+      "ans": "dddy",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0126"
+    },
+    {
+      "ctx": "R gjot gjot>pupv",
+      "ans": "pupv",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0236"
+    },
+    {
+      "ctx": "R wwid wwid>zqlc",
+      "ans": "zqlc",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0114"
+    },
+    {
+      "ctx": "R ipuh ipuh>nyfu",
+      "ans": "nyfu",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0230"
+    },
+    {
+      "ctx": "R ehhb ehhb>xqln",
+      "ans": "xqln",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0185"
+    },
+    {
+      "ctx": "R yujb yujb>twfr",
+      "ans": "twfr",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0243"
+    },
+    {
+      "ctx": "R rgpe rgpe>uiud",
+      "ans": "uiud",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0112"
+    },
+    {
+      "ctx": "R pniv pniv>cilo",
+      "ans": "cilo",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0039"
+    },
+    {
+      "ctx": "R ovzf ovzf>yxfs",
+      "ans": "yxfs",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0125"
+    },
+    {
+      "ctx": "R onlb onlb>ydzv",
+      "ans": "ydzv",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0172"
+    },
+    {
+      "ctx": "R ygcp ygcp>itus",
+      "ans": "itus",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0321"
+    },
+    {
+      "ctx": "R mszn mszn>lsbg",
+      "ans": "lsbg",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0130"
+    },
+    {
+      "ctx": "R bxid bxid>nvqr",
+      "ans": "nvqr",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0235"
+    },
+    {
+      "ctx": "R cezi cezi>itss",
+      "ans": "itss",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0022"
+    },
+    {
+      "ctx": "R ccsa ccsa>gqlj",
+      "ans": "gqlj",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0222"
+    },
+    {
+      "ctx": "R anks anks>zokw",
+      "ans": "zokw",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0224"
+    },
+    {
+      "ctx": "R mmkw mmkw>zptx",
+      "ans": "zptx",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0245"
+    },
+    {
+      "ctx": "R xvtu xvtu>jrji",
+      "ans": "jrji",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0306"
+    },
+    {
+      "ctx": "R rosh rosh>oged",
+      "ans": "oged",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0084"
+    },
+    {
+      "ctx": "R mjhg mjhg>rudo",
+      "ans": "rudo",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0204"
+    },
+    {
+      "ctx": "R jmei jmei>ezje",
+      "ans": "ezje",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0048"
+    },
+    {
+      "ctx": "R thng thng>azsq",
+      "ans": "azsq",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0109"
+    },
+    {
+      "ctx": "R skra skra>lqsr",
+      "ans": "lqsr",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0169"
+    },
+    {
+      "ctx": "R xhba xhba>kpwx",
+      "ans": "kpwx",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0281"
+    },
+    {
+      "ctx": "R uyjv uyjv>efwo",
+      "ans": "efwo",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0307"
+    },
+    {
+      "ctx": "R wcvp wcvp>tems",
+      "ans": "tems",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0338"
+    },
+    {
+      "ctx": "R ktqd ktqd>uuju",
+      "ans": "uuju",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0141"
+    },
+    {
+      "ctx": "R vwrm vwrm>vfuj",
+      "ans": "vfuj",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0238"
+    },
+    {
+      "ctx": "R bbdu bbdu>jovw",
+      "ans": "jovw",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0149"
+    },
+    {
+      "ctx": "R gxwt gxwt>auqi",
+      "ans": "auqi",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0133"
+    },
+    {
+      "ctx": "R mhbk mhbk>laxv",
+      "ans": "laxv",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0322"
+    },
+    {
+      "ctx": "R tqtz tqtz>hzin",
+      "ans": "hzin",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0047"
+    },
+    {
+      "ctx": "R utps utps>nuhk",
+      "ans": "nuhk",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0295"
+    },
+    {
+      "ctx": "R xtyw xtyw>axya",
+      "ans": "axya",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0276"
+    },
+    {
+      "ctx": "R lawe lawe>tbwy",
+      "ans": "tbwy",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0038"
+    },
+    {
+      "ctx": "R utvq utvq>zsgi",
+      "ans": "zsgi",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0017"
+    },
+    {
+      "ctx": "R rkfa rkfa>zzph",
+      "ans": "zzph",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0001"
+    },
+    {
+      "ctx": "R ochw ochw>troa",
+      "ans": "troa",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0231"
+    },
+    {
+      "ctx": "R dbcd dbcd>hddo",
+      "ans": "hddo",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0286"
+    },
+    {
+      "ctx": "R xwct xwct>wspn",
+      "ans": "wspn",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0213"
+    },
+    {
+      "ctx": "R dtav dtav>cpxr",
+      "ans": "cpxr",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0061"
+    },
+    {
+      "ctx": "R wvti wvti>hbot",
+      "ans": "hbot",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0303"
+    },
+    {
+      "ctx": "R jowi jowi>tibn",
+      "ans": "tibn",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0301"
+    },
+    {
+      "ctx": "R grrv grrv>pmjb",
+      "ans": "pmjb",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0181"
+    },
+    {
+      "ctx": "F jvru sasc>csjn",
+      "ans": "no",
+      "group": "U",
+      "kind": "unrelated",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0282"
+    },
+    {
+      "ctx": "F gflx kyez>sdzz",
+      "ans": "no",
+      "group": "U",
+      "kind": "unrelated",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0319"
+    },
+    {
+      "ctx": "F hbrc fjus>dawr",
+      "ans": "no",
+      "group": "U",
+      "kind": "unrelated",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0051"
+    },
+    {
+      "ctx": "F jyfa zdrj>mzpa",
+      "ans": "no",
+      "group": "U",
+      "kind": "unrelated",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0075"
+    },
+    {
+      "ctx": "F ljxq pjpa>dakn",
+      "ans": "no",
+      "group": "U",
+      "kind": "unrelated",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0252"
+    },
+    {
+      "ctx": "F uwro wvad>bnrz",
+      "ans": "no",
+      "group": "U",
+      "kind": "unrelated",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0221"
+    },
+    {
+      "ctx": "F zssy wskg>nnda",
+      "ans": "no",
+      "group": "U",
+      "kind": "unrelated",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0328"
+    },
+    {
+      "ctx": "F vyzh aopg>arbe",
+      "ans": "no",
+      "group": "U",
+      "kind": "unrelated",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0253"
+    },
+    {
+      "ctx": "F ubck chqq>fvgk",
+      "ans": "no",
+      "group": "U",
+      "kind": "unrelated",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0013"
+    },
+    {
+      "ctx": "F bcxe yfge>nqcp",
+      "ans": "no",
+      "group": "U",
+      "kind": "unrelated",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0263"
+    },
+    {
+      "ctx": "F qsnx cmhn>cgmj",
+      "ans": "no",
+      "group": "U",
+      "kind": "unrelated",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0218"
+    },
+    {
+      "ctx": "F nbpz zfpu>vluq",
+      "ans": "no",
+      "group": "U",
+      "kind": "unrelated",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0197"
+    },
+    {
+      "ctx": "F tgpa noya>llpe",
+      "ans": "no",
+      "group": "U",
+      "kind": "unrelated",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0138"
+    },
+    {
+      "ctx": "F kliq yfke>okrn",
+      "ans": "no",
+      "group": "U",
+      "kind": "unrelated",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0337"
+    },
+    {
+      "ctx": "F npgh oest>zmey",
+      "ans": "no",
+      "group": "U",
+      "kind": "unrelated",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0156"
+    },
+    {
+      "ctx": "F bjkp kget>wvkm",
+      "ans": "no",
+      "group": "U",
+      "kind": "unrelated",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0272"
+    },
+    {
+      "ctx": "F cche ukxz>mqgs",
+      "ans": "no",
+      "group": "U",
+      "kind": "unrelated",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0296"
+    },
+    {
+      "ctx": "F pelc srjf>jsmv",
+      "ans": "no",
+      "group": "U",
+      "kind": "unrelated",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0101"
+    },
+    {
+      "ctx": "F ijff qhua>gsgi",
+      "ans": "no",
+      "group": "U",
+      "kind": "unrelated",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0354"
+    },
+    {
+      "ctx": "F gjlo osvo>wkjn",
+      "ans": "no",
+      "group": "U",
+      "kind": "unrelated",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0057"
+    },
+    {
+      "ctx": "F ymho gpud>none",
+      "ans": "no",
+      "group": "U",
+      "kind": "missing_evidence",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0018"
+    },
+    {
+      "ctx": "F lntl vmyp>none",
+      "ans": "no",
+      "group": "U",
+      "kind": "missing_evidence",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0220"
+    },
+    {
+      "ctx": "F eizd cmwl>none",
+      "ans": "no",
+      "group": "U",
+      "kind": "missing_evidence",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0119"
+    },
+    {
+      "ctx": "F qgrx jyny>none",
+      "ans": "no",
+      "group": "U",
+      "kind": "missing_evidence",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0136"
+    },
+    {
+      "ctx": "F qvul rfum>none",
+      "ans": "no",
+      "group": "U",
+      "kind": "missing_evidence",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0347"
+    },
+    {
+      "ctx": "F rmav jukv>none",
+      "ans": "no",
+      "group": "U",
+      "kind": "missing_evidence",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0160"
+    },
+    {
+      "ctx": "F igdk pvdo>none",
+      "ans": "no",
+      "group": "U",
+      "kind": "missing_evidence",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0193"
+    },
+    {
+      "ctx": "F zlbg pmtd>none",
+      "ans": "no",
+      "group": "U",
+      "kind": "missing_evidence",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0356"
+    },
+    {
+      "ctx": "F hpgm vjoe>none",
+      "ans": "no",
+      "group": "U",
+      "kind": "missing_evidence",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0246"
+    },
+    {
+      "ctx": "F rxwq xjle>none",
+      "ans": "no",
+      "group": "U",
+      "kind": "missing_evidence",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0113"
+    },
+    {
+      "ctx": "F qzdy fxsr>none",
+      "ans": "no",
+      "group": "U",
+      "kind": "missing_evidence",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0234"
+    },
+    {
+      "ctx": "F fibw daax>none",
+      "ans": "no",
+      "group": "U",
+      "kind": "missing_evidence",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0164"
+    },
+    {
+      "ctx": "F pkim gttu>none",
+      "ans": "no",
+      "group": "U",
+      "kind": "missing_evidence",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0279"
+    },
+    {
+      "ctx": "F fntm putp>none",
+      "ans": "no",
+      "group": "U",
+      "kind": "missing_evidence",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0082"
+    },
+    {
+      "ctx": "F kcrt xeul>none",
+      "ans": "no",
+      "group": "U",
+      "kind": "missing_evidence",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0127"
+    },
+    {
+      "ctx": "F xteu pytl>none",
+      "ans": "no",
+      "group": "U",
+      "kind": "missing_evidence",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0325"
+    },
+    {
+      "ctx": "F rmtd wxbc>none",
+      "ans": "no",
+      "group": "U",
+      "kind": "missing_evidence",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0291"
+    },
+    {
+      "ctx": "F qton ipnv>none",
+      "ans": "no",
+      "group": "U",
+      "kind": "missing_evidence",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0014"
+    },
+    {
+      "ctx": "F yrbr ibxa>none",
+      "ans": "no",
+      "group": "U",
+      "kind": "missing_evidence",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0311"
+    },
+    {
+      "ctx": "F brsz hkmq>none",
+      "ans": "no",
+      "group": "U",
+      "kind": "missing_evidence",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0066"
+    },
+    {
+      "ctx": "F ugws ivac>phms",
+      "ans": "no",
+      "group": "U",
+      "kind": "wrong_context",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0020"
+    },
+    {
+      "ctx": "F kssh cjjk>vwas",
+      "ans": "no",
+      "group": "U",
+      "kind": "wrong_context",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0157"
+    },
+    {
+      "ctx": "F rlqd vttg>pzlc",
+      "ans": "no",
+      "group": "U",
+      "kind": "wrong_context",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0106"
+    },
+    {
+      "ctx": "F ufhm hsek>lgci",
+      "ans": "no",
+      "group": "U",
+      "kind": "wrong_context",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0250"
+    },
+    {
+      "ctx": "F bppg nhcs>mvix",
+      "ans": "no",
+      "group": "U",
+      "kind": "wrong_context",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0166"
+    },
+    {
+      "ctx": "F dxmg xdzc>tfzh",
+      "ans": "no",
+      "group": "U",
+      "kind": "wrong_context",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0226"
+    },
+    {
+      "ctx": "F fjrp jvph>wico",
+      "ans": "no",
+      "group": "U",
+      "kind": "wrong_context",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0065"
+    },
+    {
+      "ctx": "F spjw pefp>vsae",
+      "ans": "no",
+      "group": "U",
+      "kind": "wrong_context",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0326"
+    },
+    {
+      "ctx": "F rihl jrdi>rfgi",
+      "ans": "no",
+      "group": "U",
+      "kind": "wrong_context",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0120"
+    },
+    {
+      "ctx": "F pacr wcah>ecrm",
+      "ans": "no",
+      "group": "U",
+      "kind": "wrong_context",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0091"
+    },
+    {
+      "ctx": "F kfss femi>bjfz",
+      "ans": "no",
+      "group": "U",
+      "kind": "wrong_context",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0069"
+    },
+    {
+      "ctx": "F smbw nwjn>ohph",
+      "ans": "no",
+      "group": "U",
+      "kind": "wrong_context",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0045"
+    },
+    {
+      "ctx": "F etom zgha>lsmt",
+      "ans": "no",
+      "group": "U",
+      "kind": "wrong_context",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0290"
+    },
+    {
+      "ctx": "F hwkz mska>ftkf",
+      "ans": "no",
+      "group": "U",
+      "kind": "wrong_context",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0342"
+    },
+    {
+      "ctx": "F qqro zrdx>wbgr",
+      "ans": "no",
+      "group": "U",
+      "kind": "wrong_context",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0122"
+    },
+    {
+      "ctx": "F kuyd zdmb>arac",
+      "ans": "no",
+      "group": "U",
+      "kind": "wrong_context",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0304"
+    },
+    {
+      "ctx": "F iqiq ghli>hedo",
+      "ans": "no",
+      "group": "U",
+      "kind": "wrong_context",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0309"
+    },
+    {
+      "ctx": "F reqg rkoq>mmjg",
+      "ans": "no",
+      "group": "U",
+      "kind": "wrong_context",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0044"
+    },
+    {
+      "ctx": "F tkhb pugj>wlab",
+      "ans": "no",
+      "group": "U",
+      "kind": "wrong_context",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0195"
+    },
+    {
+      "ctx": "F wfvf izxk>eznc",
+      "ans": "no",
+      "group": "U",
+      "kind": "wrong_context",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0032"
+    },
+    {
+      "ctx": "R vzvq vzvq>zpcy",
+      "ans": "no",
+      "group": "U",
+      "kind": "conflict",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0040"
+    },
+    {
+      "ctx": "R pkro pkro>wkyk",
+      "ans": "no",
+      "group": "U",
+      "kind": "conflict",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0152"
+    },
+    {
+      "ctx": "R lxfc lxfc>whoa",
+      "ans": "no",
+      "group": "U",
+      "kind": "conflict",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0052"
+    },
+    {
+      "ctx": "R yhac yhac>lgyh",
+      "ans": "no",
+      "group": "U",
+      "kind": "conflict",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0097"
+    },
+    {
+      "ctx": "R eejc eejc>wbwr",
+      "ans": "no",
+      "group": "U",
+      "kind": "conflict",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0096"
+    },
+    {
+      "ctx": "R lbjh lbjh>tpgx",
+      "ans": "no",
+      "group": "U",
+      "kind": "conflict",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0317"
+    },
+    {
+      "ctx": "R rpeq rpeq>bpnd",
+      "ans": "no",
+      "group": "U",
+      "kind": "conflict",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0268"
+    },
+    {
+      "ctx": "R rhbl rhbl>qwfp",
+      "ans": "no",
+      "group": "U",
+      "kind": "conflict",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0024"
+    },
+    {
+      "ctx": "R hwnh hwnh>pwkt",
+      "ans": "no",
+      "group": "U",
+      "kind": "conflict",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0256"
+    },
+    {
+      "ctx": "R unlz unlz>bruu",
+      "ans": "no",
+      "group": "U",
+      "kind": "conflict",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0177"
+    },
+    {
+      "ctx": "R psdz psdz>bjwq",
+      "ans": "no",
+      "group": "U",
+      "kind": "conflict",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0289"
+    },
+    {
+      "ctx": "R xiuk xiuk>aafn",
+      "ans": "no",
+      "group": "U",
+      "kind": "conflict",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0107"
+    },
+    {
+      "ctx": "R laeq laeq>xpze",
+      "ans": "no",
+      "group": "U",
+      "kind": "conflict",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0339"
+    },
+    {
+      "ctx": "R wxtc wxtc>lwgn",
+      "ans": "no",
+      "group": "U",
+      "kind": "conflict",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0302"
+    },
+    {
+      "ctx": "R bhld bhld>ebnc",
+      "ans": "no",
+      "group": "U",
+      "kind": "conflict",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0183"
+    },
+    {
+      "ctx": "R xivj xivj>azlu",
+      "ans": "no",
+      "group": "U",
+      "kind": "conflict",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0199"
+    },
+    {
+      "ctx": "R wlnv wlnv>fuww",
+      "ans": "no",
+      "group": "U",
+      "kind": "conflict",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0094"
+    },
+    {
+      "ctx": "R lbgs lbgs>rswf",
+      "ans": "no",
+      "group": "U",
+      "kind": "conflict",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0329"
+    },
+    {
+      "ctx": "R flzh flzh>afbr",
+      "ans": "no",
+      "group": "U",
+      "kind": "conflict",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0335"
+    },
+    {
+      "ctx": "R kuvh kuvh>ggpl",
+      "ans": "no",
+      "group": "U",
+      "kind": "conflict",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0315"
+    },
+    {
+      "ctx": "F glda sxdd>glda",
+      "ans": "no",
+      "group": "U",
+      "kind": "ambiguous",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0004"
+    },
+    {
+      "ctx": "F qwxp tlkm>qwxp",
+      "ans": "no",
+      "group": "U",
+      "kind": "ambiguous",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0247"
+    },
+    {
+      "ctx": "F gyzp roar>gyzp",
+      "ans": "no",
+      "group": "U",
+      "kind": "ambiguous",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0003"
+    },
+    {
+      "ctx": "F ebth wsrr>ebth",
+      "ans": "no",
+      "group": "U",
+      "kind": "ambiguous",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0155"
+    },
+    {
+      "ctx": "F ldtf pnzl>ldtf",
+      "ans": "no",
+      "group": "U",
+      "kind": "ambiguous",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0184"
+    },
+    {
+      "ctx": "F aoir gzng>aoir",
+      "ans": "no",
+      "group": "U",
+      "kind": "ambiguous",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0330"
+    },
+    {
+      "ctx": "F sful xaqy>sful",
+      "ans": "no",
+      "group": "U",
+      "kind": "ambiguous",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0298"
+    },
+    {
+      "ctx": "F zcnf bgqv>zcnf",
+      "ans": "no",
+      "group": "U",
+      "kind": "ambiguous",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0194"
+    },
+    {
+      "ctx": "F lqpj ntec>lqpj",
+      "ans": "no",
+      "group": "U",
+      "kind": "ambiguous",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0333"
+    },
+    {
+      "ctx": "F ybhh slse>ybhh",
+      "ans": "no",
+      "group": "U",
+      "kind": "ambiguous",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0265"
+    },
+    {
+      "ctx": "F rehi aykr>rehi",
+      "ans": "no",
+      "group": "U",
+      "kind": "ambiguous",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0089"
+    },
+    {
+      "ctx": "F rpiw oanr>rpiw",
+      "ans": "no",
+      "group": "U",
+      "kind": "ambiguous",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0191"
+    },
+    {
+      "ctx": "F tkkd zruh>tkkd",
+      "ans": "no",
+      "group": "U",
+      "kind": "ambiguous",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0074"
+    },
+    {
+      "ctx": "F faqx sktq>faqx",
+      "ans": "no",
+      "group": "U",
+      "kind": "ambiguous",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0168"
+    },
+    {
+      "ctx": "F sbyl yaxy>sbyl",
+      "ans": "no",
+      "group": "U",
+      "kind": "ambiguous",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0343"
+    },
+    {
+      "ctx": "F wubc sadb>wubc",
+      "ans": "no",
+      "group": "U",
+      "kind": "ambiguous",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0178"
+    },
+    {
+      "ctx": "F hngd rzgp>hngd",
+      "ans": "no",
+      "group": "U",
+      "kind": "ambiguous",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0283"
+    },
+    {
+      "ctx": "F nega macg>nega",
+      "ans": "no",
+      "group": "U",
+      "kind": "ambiguous",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0229"
+    },
+    {
+      "ctx": "F gfub ehrw>gfub",
+      "ans": "no",
+      "group": "U",
+      "kind": "ambiguous",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0134"
+    },
+    {
+      "ctx": "F kpeq aovh>kpeq",
+      "ans": "no",
+      "group": "U",
+      "kind": "ambiguous",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0098"
+    },
+    {
+      "ctx": "F wxkj bjip>wxkj",
+      "ans": "no",
+      "group": "U",
+      "kind": "search_incomplete",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0026"
+    },
+    {
+      "ctx": "F mnnw tfwu>mnnw",
+      "ans": "no",
+      "group": "U",
+      "kind": "search_incomplete",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0318"
+    },
+    {
+      "ctx": "F opgs eyug>opgs",
+      "ans": "no",
+      "group": "U",
+      "kind": "search_incomplete",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0297"
+    },
+    {
+      "ctx": "F thzd xanq>thzd",
+      "ans": "no",
+      "group": "U",
+      "kind": "search_incomplete",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0071"
+    },
+    {
+      "ctx": "F xoqf tcqm>xoqf",
+      "ans": "no",
+      "group": "U",
+      "kind": "search_incomplete",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0300"
+    },
+    {
+      "ctx": "F jyho yjpe>jyho",
+      "ans": "no",
+      "group": "U",
+      "kind": "search_incomplete",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0244"
+    },
+    {
+      "ctx": "F lyep axrb>lyep",
+      "ans": "no",
+      "group": "U",
+      "kind": "search_incomplete",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0086"
+    },
+    {
+      "ctx": "F bysg huyy>bysg",
+      "ans": "no",
+      "group": "U",
+      "kind": "search_incomplete",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0104"
+    },
+    {
+      "ctx": "F syfp taeo>syfp",
+      "ans": "no",
+      "group": "U",
+      "kind": "search_incomplete",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0359"
+    },
+    {
+      "ctx": "F wnna mrgt>wnna",
+      "ans": "no",
+      "group": "U",
+      "kind": "search_incomplete",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0202"
+    },
+    {
+      "ctx": "F wqvo ngtr>wqvo",
+      "ans": "no",
+      "group": "U",
+      "kind": "search_incomplete",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0294"
+    },
+    {
+      "ctx": "F xtps nbst>xtps",
+      "ans": "no",
+      "group": "U",
+      "kind": "search_incomplete",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0143"
+    },
+    {
+      "ctx": "F qdrn uncb>qdrn",
+      "ans": "no",
+      "group": "U",
+      "kind": "search_incomplete",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0346"
+    },
+    {
+      "ctx": "F anrp nurx>anrp",
+      "ans": "no",
+      "group": "U",
+      "kind": "search_incomplete",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0270"
+    },
+    {
+      "ctx": "F vaoo nwvc>vaoo",
+      "ans": "no",
+      "group": "U",
+      "kind": "search_incomplete",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0334"
+    },
+    {
+      "ctx": "F msjd oxmp>msjd",
+      "ans": "no",
+      "group": "U",
+      "kind": "search_incomplete",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0233"
+    },
+    {
+      "ctx": "F wlyt bjpr>wlyt",
+      "ans": "no",
+      "group": "U",
+      "kind": "search_incomplete",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0151"
+    },
+    {
+      "ctx": "F httn dsub>httn",
+      "ans": "no",
+      "group": "U",
+      "kind": "search_incomplete",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0340"
+    },
+    {
+      "ctx": "F xecp yqqs>xecp",
+      "ans": "no",
+      "group": "U",
+      "kind": "search_incomplete",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0009"
+    },
+    {
+      "ctx": "F hdzn uyvm>hdzn",
+      "ans": "no",
+      "group": "U",
+      "kind": "search_incomplete",
+      "system_expected": [
+        "n",
+        "o",
+        0
+      ],
+      "id": "c3-0261"
+    }
+  ],
+  "sha256_canonical": "f876633e6daf4ca79317bec55ef9888e12ff726e26d316ad87193eaba74b3e6a"
+}

@@ -1,0 +1,10 @@
+{
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "e3c": "RAM writes split off async-reset FSM (x,qv,kv,vv,zv,logits)",
+  "d32_sha": "7a2f0b3b4a67b1bea49c70f23bead0a7897dfc035fdd5b66dcccd8acc4d00b78",
+  "xsim": "ASTRA_C4_D32_FR_V2_XSIM_PASS n=242",
+  "class_ref_match": true,
+  "elapsed_s": 1297,
+  "note": "1-cycle we/wdata delay held token parity. BRAM inference unproven until E3d OOC. Not BOARD_PASS."
+}

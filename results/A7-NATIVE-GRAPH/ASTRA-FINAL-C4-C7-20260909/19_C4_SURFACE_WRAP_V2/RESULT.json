@@ -1,0 +1,23 @@
+{
+  "marker": "ASTRA_C4_PROD_WRAP_V2_XSIM_PASS",
+  "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .\\run_xsim.ps1",
+  "cwd": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-FINAL-C4-C7-20260909\\19_C4_SURFACE_WRAP_V2",
+  "exit_code": 0,
+  "cases": {
+    "F_LEARNED": "PASS n=5",
+    "R_LEARNED": "PASS n=5",
+    "UNK_SAFE": "PASS n=3",
+    "ALIAS_MISS_SAFE": "PASS n=3",
+    "ALIAS_KEEP20_collide_lo8": "0x01 miss (20'h10001 vs 20'hA0001)"
+  },
+  "class_ref_match": "HIT",
+  "class_host_tok0": "HIT",
+  "entity_alias_ent_w": 20,
+  "prod_dict": "OPEN",
+  "c5_integrate": "NO",
+  "c4_master": "OPEN",
+  "board_pass": "OPEN",
+  "PROGRAM": "NO",
+  "xsim_log": "xsim.log",
+  "note": "Wrap smoke only. TB alias table is synthetic. Materializer IDs are local slots 0/1. C3 proof0/proof1 (fact-record IDs) are not on this path. Do not stamp C4_MASTER. Do not Copy-Item C5 siblings."
+}

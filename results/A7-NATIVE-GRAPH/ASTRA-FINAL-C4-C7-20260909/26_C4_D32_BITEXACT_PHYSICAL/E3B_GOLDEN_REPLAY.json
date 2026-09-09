@@ -1,0 +1,15 @@
+{
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "ASTRA_NATIVE_AI_BOARD_PASS": "OPEN",
+  "e3a_n20_sha256": "7250e48a1bec08ef660762293aa1afe331bd78b8767e3c640ea23dc663c61466",
+  "e3b_unblocked": true,
+  "n20": {"n": 20, "smres_named": 20, "weight_named": 0},
+  "d32_sha_pre": "34d934935768baf1d20e7a5d8da49945554716df48bfa6c8e89c3443790819f6",
+  "d32_sha_post": "872d410753935509e57295d11804f89e6f151ce592693dfc8728c640b5cff560",
+  "xsim": "ASTRA_C4_D32_FR_V2_XSIM_PASS n=242",
+  "class_ref_match": true,
+  "class_host_tok0": true,
+  "ooc_after_divider": "NOT_RUN",
+  "note": "OOC DCP/timing_n20 are pre-divider. E3d must re-synth the new D32. Not BOARD_PASS."
+}

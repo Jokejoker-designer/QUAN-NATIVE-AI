@@ -6,7 +6,9 @@ The FPGA owns retrieve → 2-hop proof → grounded generation → pending rewar
 
 This snapshot is built so **any AI or engineer can follow the design, replay XSim bags, and hunt remaining C3–C6 gaps** without downloading Vivado run dumps, compiled simulators, or bitstream binaries.
 
-**Honest status (2026-09-09):** named C1–C6 *this-gate* bags exist. Master letters `C3_MASTER` / `C4_MASTER` / `C5_MASTER` / `C6_MASTER` remain **OPEN**. This repo does **not** stamp `BOARD_PASS` or `ASTRA_NATIVE_AI_BOARD_PASS`.
+**Honest status (2026-09-09 20:10 +07):** named C1–C6 *this-gate* bags exist. Master letters `C3_MASTER` / `C4_MASTER` / `C5_MASTER` / `C6_MASTER` remain **OPEN**. This repo does **not** stamp `BOARD_PASS` or `ASTRA_NATIVE_AI_BOARD_PASS`. `PROGRAM=NO` on the C4–C7 freeze path.
+
+Live C4 physical: E3a OOC WNS **−83.427 ns** (20/20 SMRES). E3b divider + E3c RAM split: GOLDEN.svh **n=242 PASS**. E3d OOC **DONE** WNS **−24.357 ns**, **BRAM 0**, top-20 SMRES **0/20** (`di_reg` → `vv_wdata`). Snapshot: [`docs/ASTRA/PROGRESS_20260909.md`](docs/ASTRA/PROGRESS_20260909.md). Bag: `results/A7-NATIVE-GRAPH/ASTRA-FINAL-C4-C7-20260909/`.
 
 ---
 
@@ -16,7 +18,7 @@ This snapshot is built so **any AI or engineer can follow the design, replay XSi
 
 **Không** đẩy bitstream, checkpoint Vivado, thư mục `xsim.dir`, file JSON train nặng, hay RTL MIG do Vivado generate (EULA Xilinx). SHA của bit và marker PASS/FAIL nằm trong `CLOSEOUT.md`.
 
-Đọc bắt đầu: [`AI_FOLLOW.md`](AI_FOLLOW.md) → [`results/A7-NATIVE-GRAPH/STATUS/HARD_BLOCK_MASTER_C3_C6.md`](results/A7-NATIVE-GRAPH/STATUS/HARD_BLOCK_MASTER_C3_C6.md) → [`handoff/ASTRA_HANDOFF/C1_C6_CLOSE_PLAN_20260909/MASTER_CLOSURE_PLAN.md`](handoff/ASTRA_HANDOFF/C1_C6_CLOSE_PLAN_20260909/MASTER_CLOSURE_PLAN.md).
+Đọc bắt đầu: [`docs/ASTRA/PROGRESS_20260909.md`](docs/ASTRA/PROGRESS_20260909.md) → [`AI_FOLLOW.md`](AI_FOLLOW.md) → [`results/A7-NATIVE-GRAPH/STATUS/HARD_BLOCK_MASTER_C3_C6.md`](results/A7-NATIVE-GRAPH/STATUS/HARD_BLOCK_MASTER_C3_C6.md). `C4_MASTER` vẫn OPEN.
 
 ---
 
@@ -24,14 +26,15 @@ This snapshot is built so **any AI or engineer can follow the design, replay XSi
 
 | Order | Path | Why |
 |---|---|---|
-| 1 | [`AI_FOLLOW.md`](AI_FOLLOW.md) | How to audit this tree without overclaiming |
-| 2 | [`AGENTS.md`](AGENTS.md) | Agent lock, frozen lanes, Native Graph rules |
-| 3 | [`docs/NATIVE_AI_ARTY_A7_BLUEPRINT/00_CURRENT_AUTHORITY.md`](docs/NATIVE_AI_ARTY_A7_BLUEPRINT/00_CURRENT_AUTHORITY.md) | Authority order: evidence > LOOP_STATE > blueprint |
-| 4 | [`docs/NATIVE_AI_ARTY_A7_BLUEPRINT/04_HARDSTOPS.md`](docs/NATIVE_AI_ARTY_A7_BLUEPRINT/04_HARDSTOPS.md) | HS-01…HS-25 |
-| 5 | [`docs/authority-root/ASTRA_NATIVE_AI_MASTER_V1_1_POST_SILICON_FINAL.md`](docs/authority-root/ASTRA_NATIVE_AI_MASTER_V1_1_POST_SILICON_FINAL.md) | Master V1.1 post-silicon letter |
-| 6 | [`results/A7-NATIVE-GRAPH/STATUS/LOOP_STATE.json`](results/A7-NATIVE-GRAPH/STATUS/LOOP_STATE.json) | Live execution pointer |
-| 7 | [`results/A7-NATIVE-GRAPH/STATUS/HARD_BLOCK_MASTER_C3_C6.md`](results/A7-NATIVE-GRAPH/STATUS/HARD_BLOCK_MASTER_C3_C6.md) | Why C3–C6 are not final PASS |
-| 8 | [`handoff/ASTRA_HANDOFF/C1_C6_CLOSE_PLAN_20260909/`](handoff/ASTRA_HANDOFF/C1_C6_CLOSE_PLAN_20260909/) | Independent close plan + Cursor work orders |
+| 1 | [`docs/ASTRA/PROGRESS_20260909.md`](docs/ASTRA/PROGRESS_20260909.md) | Live C4–C7 snapshot (E3d OOC numbers) |
+| 2 | [`docs/ASTRA/authority/WO_FINAL_ASTRA_C4_C7_CONVERGENCE_20260909.md`](docs/ASTRA/authority/WO_FINAL_ASTRA_C4_C7_CONVERGENCE_20260909.md) | Binding C4–C7 work order |
+| 3 | [`results/A7-NATIVE-GRAPH/STATUS/ASTRA_C4_C7_LIVE.json`](results/A7-NATIVE-GRAPH/STATUS/ASTRA_C4_C7_LIVE.json) | Machine-readable live pointer |
+| 4 | [`AI_FOLLOW.md`](AI_FOLLOW.md) | How to audit this tree without overclaiming |
+| 5 | [`AGENTS.md`](AGENTS.md) | Agent lock, frozen lanes, Native Graph rules |
+| 6 | [`docs/NATIVE_AI_ARTY_A7_BLUEPRINT/00_CURRENT_AUTHORITY.md`](docs/NATIVE_AI_ARTY_A7_BLUEPRINT/00_CURRENT_AUTHORITY.md) | Authority order: evidence > LOOP_STATE > blueprint |
+| 7 | [`docs/NATIVE_AI_ARTY_A7_BLUEPRINT/04_HARDSTOPS.md`](docs/NATIVE_AI_ARTY_A7_BLUEPRINT/04_HARDSTOPS.md) | HS-01…HS-25 |
+| 8 | [`results/A7-NATIVE-GRAPH/STATUS/HARD_BLOCK_MASTER_C3_C6.md`](results/A7-NATIVE-GRAPH/STATUS/HARD_BLOCK_MASTER_C3_C6.md) | Why C3–C6 are not final PASS |
+| 9 | [`handoff/ASTRA_HANDOFF/C1_C6_CLOSE_PLAN_20260909/`](handoff/ASTRA_HANDOFF/C1_C6_CLOSE_PLAN_20260909/) | Independent close plan + Cursor work orders |
 
 Chat memory is **not** project authority.
 

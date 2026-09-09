@@ -1,0 +1,53 @@
+`ifndef A7NG_ASTRA_C4_LM06_D32_FR_V1_SVH
+`define A7NG_ASTRA_C4_LM06_D32_FR_V1_SVH
+// Generated from C4_D32_NUMERICAL_CONTRACT_V1. Do not hand-edit scales.
+// PROGRAM=NO. Not C4_MASTER. Not BOARD_PASS.
+localparam int unsigned A7NG_C4D32_V          = 256;
+localparam int unsigned A7NG_C4D32_D          = 32;
+localparam int unsigned A7NG_C4D32_F          = 64;
+localparam int unsigned A7NG_C4D32_CTX        = 16;
+localparam int unsigned A7NG_C4D32_MAX_TOK    = 6;
+localparam int unsigned A7NG_C4D32_TMAX       = 24;
+localparam int unsigned A7NG_C4D32_ABITS      = 12;
+localparam int unsigned A7NG_C4D32_ALIM       = (1<<(A7NG_C4D32_ABITS-1))-1;
+localparam int unsigned A7NG_C4D32_LUT_N      = 4097;
+localparam logic [7:0]  A7NG_C4D32_EOS        = 8'd0;
+localparam logic [7:0]  A7NG_C4D32_CH_N       = 8'h6E;
+localparam logic [7:0]  A7NG_C4D32_CH_O       = 8'h6F;
+localparam logic [7:0]  A7NG_C4D32_OP_R       = 8'd82;
+localparam logic [3:0]  A7NG_C4D32_VOCAB_VER  = 4'd3;
+localparam int unsigned A7NG_C4D32_RQ_EMB_WE_MUL = 581199660;
+localparam int unsigned A7NG_C4D32_RQ_EMB_WE_SHR = 26;
+localparam int unsigned A7NG_C4D32_RQ_EMB_PE_MUL = 624674462;
+localparam int unsigned A7NG_C4D32_RQ_EMB_PE_SHR = 26;
+localparam int unsigned A7NG_C4D32_RQ_Q_MUL = 749906195;
+localparam int unsigned A7NG_C4D32_RQ_Q_SHR = 38;
+localparam int unsigned A7NG_C4D32_RQ_K_MUL = 1007065079;
+localparam int unsigned A7NG_C4D32_RQ_K_SHR = 38;
+localparam int unsigned A7NG_C4D32_RQ_V_MUL = 858872893;
+localparam int unsigned A7NG_C4D32_RQ_V_SHR = 37;
+localparam int unsigned A7NG_C4D32_RQ_QR_MUL = 584122829;
+localparam int unsigned A7NG_C4D32_RQ_QR_SHR = 38;
+localparam int unsigned A7NG_C4D32_RQ_KR_MUL = 664725135;
+localparam int unsigned A7NG_C4D32_RQ_KR_SHR = 38;
+localparam int unsigned A7NG_C4D32_RQ_VR_MUL = 629093482;
+localparam int unsigned A7NG_C4D32_RQ_VR_SHR = 37;
+localparam int unsigned A7NG_C4D32_RQ_DOTS_MUL = 816774623;
+localparam int unsigned A7NG_C4D32_RQ_DOTS_SHR = 38;
+localparam int unsigned A7NG_C4D32_RQ_H_MUL = 629755158;
+localparam int unsigned A7NG_C4D32_RQ_H_SHR = 44;
+localparam int unsigned A7NG_C4D32_RQ_YX_MUL = 1050594342;
+localparam int unsigned A7NG_C4D32_RQ_YX_SHR = 32;
+localparam int unsigned A7NG_C4D32_RQ_YH_MUL = 836639922;
+localparam int unsigned A7NG_C4D32_RQ_YH_SHR = 30;
+localparam int unsigned A7NG_C4D32_RQ_T_MUL = 554245384;
+localparam int unsigned A7NG_C4D32_RQ_T_SHR = 37;
+localparam int unsigned A7NG_C4D32_RQ_ZY_MUL = 1056584211;
+localparam int unsigned A7NG_C4D32_RQ_ZY_SHR = 32;
+localparam int unsigned A7NG_C4D32_RQ_ZT_MUL = 894293492;
+localparam int unsigned A7NG_C4D32_RQ_ZT_SHR = 38;
+localparam int unsigned A7NG_C4D32_RQ_LOGITS_MUL = 750620055;
+localparam int unsigned A7NG_C4D32_RQ_LOGITS_SHR = 38;
+localparam int unsigned A7NG_C4D32_RQ_BIAS_MUL = 728834534;
+localparam int unsigned A7NG_C4D32_RQ_BIAS_SHR = 55;
+`endif

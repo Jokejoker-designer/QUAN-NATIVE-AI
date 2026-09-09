@@ -1,0 +1,47 @@
+{
+  "C4_MASTER": "OPEN",
+  "C5_MASTER": "OPEN",
+  "C6_MASTER": "OPEN",
+  "PROGRAM": "NO",
+  "ASTRA_NATIVE_AI_BOARD_PASS": "OPEN",
+  "wo13": {
+    "new_blind_360": "NOT_MET Confirm V3 is 240 grounded F/R + 120 U, not a frozen 360 set",
+    "grounded_overall": "PASS python Confirm V3 240/240",
+    "forward": "PASS 120/120",
+    "reverse": "PASS 120/120",
+    "safe": "PASS hardware S_SAFE XSim; LM U not a learned pass",
+    "hallucination": "OPEN not independently scored on wrap/C5 path",
+    "termination": "PASS Confirm V3 eos 240/240 and XSim cases terminate",
+    "float_int_parity": "PASS 240/240 Confirm V3",
+    "rtl_int_parity": "PASS ASTRA_C4_D32_FR_V2_XSIM_PASS n=242",
+    "learned_causal": "PREREG_TOP1_FAIL prefix 0/16; WO_8_2_SCORE_PASS 16/16 logit delta; zero/corrupt/replace/remove/wrong-bank PASS",
+    "semantic_gate": "PASS G05; wrap adds mat_valid to allowed",
+    "materializer": "PASS G06-A; wrap instantiates V2 materializer",
+    "d32_ooc": "SYNTH_DONE 14_C4_OOC_V2 BRAM=0 WNS=-83ns OOC-only not C4_MASTER",
+    "host_semantic": "PASS n_host_tok hardwired 0 on D32 V2"
+  },
+  "c5_final_v1": {
+    "elab": "ASTRA_C5_FINAL_V1_ELAB_OK",
+    "uart_smoke": "ASTRA_C5_FINAL_V1_UART_SMOKE_XSIM_PASS 21_C5_UART_SMOKE_V1",
+    "axi_err": "ASTRA_C5_FINAL_V1_AXI_ERR_XSIM_PASS 22_C5_AXI_ERR_V1",
+    "regress_23": "ASTRA_C5_FINAL_V1_REGRESS_XSIM_PASS 2-hop+dup/stale/crc+CONFLICT",
+    "refuse_24": "ASTRA_C5_FINAL_V1_REFUSE_XSIM_PASS AMB/NEG/INCOMP + FIFO fullseq (TB alias synthetic)",
+    "baud_24": "ASTRA_C5_FINAL_V1_BAUD115200_XSIM_PASS default 83333333/115200 CPB=723 UNKNOWN S_SAFE",
+    "retire_law": "ST_TXNL does not retire C3 pending; reward 0x16 can attach",
+    "bank_r": "TB pin only; C6 tied 0; wrap.direction_i = C3 qse_dir (still 2'd0)",
+    "prod_dict": "OPEN"
+  },
+  "c6": {
+    "live_top": "a7ng_astra_c6_wholechip still instantiates a7ng_astra_c5_prod_top (historical)",
+    "named_wrap": "a7ng_astra_c6_wholechip_final_v1.sv instantiates final_v1, forwards RRESP/RLAST/RID/BRESP/BID, ARID from address, bank_r_i=0 (not sw[3])",
+    "freeze": "NO unique bit SHA"
+  },
+  "blockers_to_c6_bit": [
+    "C4_MASTER not closed (360 set, prefix prereg top-1)",
+    "C5_MASTER OPEN: remaining on final_v1: wrong-direction UART, evidence replacement, scalar-reward later ranking, C4 zero/corrupt control, 360-set; sibling proofs do not close C5",
+    "Production 20-bit entity→4-char map OPEN; C6 alias_wr=0 so silicon F/R is S_SAFE",
+    "Parser direction_o tied 2'd0 in extract; reverse grammar is later; C7 P2/P6 cannot pass",
+    "No C6 freeze/timing/DRC/CDC on wholechip_final_v1",
+    "PROGRAM=NO until frozen C6 bit"
+  ]
+}

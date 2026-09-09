@@ -1,0 +1,47 @@
+{
+  "EXPECTED_OUTCOME": "UNKNOWN",
+  "OLD_C4_CONTEXT_COMPATIBILITY": "FAIL",
+  "FIRST_DIVERGENCE": "V1-trained decoder depends on answer-aligned serialization",
+  "same_FR_endpoint": false,
+  "opcode_flip": {
+    "ctx": "R drum hose>----",
+    "got": "oooo",
+    "expected": "drum",
+    "match": false
+  },
+  "rows": [
+    {
+      "id": "C1",
+      "ctx": "F drum hose>----",
+      "expected": "hose",
+      "got": "hdse",
+      "match": false
+    },
+    {
+      "id": "C2",
+      "ctx": "R drum hose>----",
+      "expected": "drum",
+      "got": "oooo",
+      "match": false
+    },
+    {
+      "id": "C3a",
+      "ctx": "R bolt hose>----",
+      "expected": "bolt",
+      "got": "tnnn",
+      "match": false
+    },
+    {
+      "id": "C3b",
+      "ctx": "R vent hose>----",
+      "expected": "vent",
+      "got": "tnnn",
+      "match": false
+    }
+  ],
+  "checkpoint": "D:\\FPGA\\C4_RESCUE_20260909\\EXPERIMENTS\\F_COPY_BALANCED_01\\runs\\fr_balanced_01\\best_dev.npz",
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "materializer_unchanged": true,
+  "confirm_v2_instantiated": false
+}

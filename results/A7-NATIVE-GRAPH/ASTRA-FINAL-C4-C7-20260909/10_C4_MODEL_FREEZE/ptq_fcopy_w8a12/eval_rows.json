@@ -1,0 +1,102 @@
+[
+  {
+    "ctx": "F drum hose>drum",
+    "ans": "hose",
+    "group": "F"
+  },
+  {
+    "ctx": "F vent hose>vent",
+    "ans": "hose",
+    "group": "F"
+  },
+  {
+    "ctx": "F bolt hose>bolt",
+    "ans": "hose",
+    "group": "F"
+  },
+  {
+    "ctx": "F hose drum>hose",
+    "ans": "drum",
+    "group": "F"
+  },
+  {
+    "ctx": "F vent drum>vent",
+    "ans": "drum",
+    "group": "F"
+  },
+  {
+    "ctx": "F bolt drum>bolt",
+    "ans": "drum",
+    "group": "F"
+  },
+  {
+    "ctx": "F hose vent>hose",
+    "ans": "vent",
+    "group": "F"
+  },
+  {
+    "ctx": "F drum vent>drum",
+    "ans": "vent",
+    "group": "F"
+  },
+  {
+    "ctx": "F bolt vent>bolt",
+    "ans": "vent",
+    "group": "F"
+  },
+  {
+    "ctx": "F hose bolt>hose",
+    "ans": "bolt",
+    "group": "F"
+  },
+  {
+    "ctx": "F drum bolt>drum",
+    "ans": "bolt",
+    "group": "F"
+  },
+  {
+    "ctx": "F vent bolt>vent",
+    "ans": "bolt",
+    "group": "F"
+  },
+  {
+    "ctx": "R hose hose>drum",
+    "ans": "drum",
+    "group": "R"
+  },
+  {
+    "ctx": "R hose hose>vent",
+    "ans": "vent",
+    "group": "R"
+  },
+  {
+    "ctx": "R hose hose>bolt",
+    "ans": "bolt",
+    "group": "R"
+  },
+  {
+    "ctx": "R drum drum>hose",
+    "ans": "hose",
+    "group": "R"
+  },
+  {
+    "ctx": "R drum drum>vent",
+    "ans": "vent",
+    "group": "R"
+  },
+  {
+    "ctx": "R drum drum>bolt",
+    "ans": "bolt",
+    "group": "R"
+  },
+  {
+    "ctx": "R vent vent>hose",
+    "ans": "hose",
+    "group": "R"
+  },
+  {
+    "ctx": "R vent vent>drum",
+    "ans": "drum",
+    "group": "R"
+  }
+]

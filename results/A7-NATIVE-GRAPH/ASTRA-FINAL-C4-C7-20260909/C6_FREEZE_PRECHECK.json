@@ -1,0 +1,24 @@
+{
+  "schema": "C6_FREEZE_PRECHECK_V1",
+  "wo": "§18–19 then §21",
+  "PROGRAM": "NO",
+  "C6_MASTER": "OPEN",
+  "freeze_allowed": false,
+  "reason": "C4/C5 acceptance OPEN; no unique bit SHA; OOC WNS -83.427 ns; alias_wr=0; reverse NEW GATE unimplemented",
+  "required_pins": {
+    "git_clean": false,
+    "source_commit": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1 dirty 488",
+    "c4_checkpoint": "fcfe37be0ca006de9a0973331cb0b1b82703a96c0f10097e21d7e0bff85987dc",
+    "c5_source": "5d959a6d719fcc1f12062c721e983f9516864da6b3c41f5f15b6bcf2198ec329",
+    "c6_source": "525880f4e1c610b24af73d603ba7ecaead8e6f3d62e5057d93d9e532061eabd8",
+    "dictionary_image_sha": null,
+    "mig_prj_untouched": "do not hand-edit",
+    "xdc": "OPEN",
+    "wns_ge_0": false,
+    "learned_and_safe_reachable": false
+  },
+  "bitstream": {
+    "exists": false,
+    "sha256": null
+  }
+}

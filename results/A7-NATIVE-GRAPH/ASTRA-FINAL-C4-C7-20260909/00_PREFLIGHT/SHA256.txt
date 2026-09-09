@@ -1,0 +1,42 @@
+# G00 SHA256 — recorded 2026-09-09
+
+## WO / goal set
+D:\FPGA\WO_FINAL_ASTRA_C4_C7_CONVERGENCE_20260909.md  ae1487d180bf40e61c7a58dce84fc466cdc41c084dcd184496bf5dfd0e11685b
+D:\FPGA\WO_FINAL_ASTRA_C4_C7_GOAL_SET_20260909.md     735092ef1873277c51fca380a9839ec7599d3a854be6bc9a224adc9f684e1dd8
+
+## Reverse rescue KEEP
+train_c4_reverse_isolated.py                         b21bc485a2ba63798d7b4391506c1f2f21c07bd74b5ebc8fc9304f880cf72206
+reverse_isolated_identity01/best_dev.npz             8ae46886b227273ed9486e26248c768d9ac66134a1fe0ae83840dc548604a369
+reverse_isolated_identity01_ptq/quant_manifest.json  76e42b4343cb1e06531c4d2eb10ea82ee745bf19fa022b0b7fd383c44d05cc70
+quantize_c4_parity.py                                0339bee1170492eaf942bffb8895f07eedcbb441b1b0facd0eb7078afa87df08
+by.hex                                               55eb1b15ccdc6c6311e5888fb6c6009df00291c9199d260fb6cf566a184d2bee
+Pe.hex                                               3d691593a2e2b44b114e1e90508f91adcd31d4c5fefe23cabc5733b0eeb650f5
+softmax_exp_q15.hex                                  fcbf293dacd567e1be2c8a50846b9c214f48d6fb6e60462ca19543142da4a683
+W1.hex                                               65cbf30f92a28d15d583ff45048b2c4b01d158764973cc030fd3ad651d4f9f2c
+W2.hex                                               a1f90ba87c1ee8398081250a668946bc7c1f174d09f3394df2fddb490c7b8b47
+We.hex                                               07f22e5d4cf4940251b7898c6e9f5f2328c67bbcffd0c9feec0b8892f7e80783
+Wk.hex                                               754d8aacc88480debae13af24f743bd5fac1d6577bb97730d7384f44b157c567
+WkR.hex                                              2c5f2d96f79d60201a7e5da6d4be64351c82670f19cd0b62312fb101a526f7e0
+Wq.hex                                               8076bceea85a494e118312c365c3a010c35d8c3b967d9f4da7c4227d555f6c54
+WqR.hex                                              65fe8f57cab98ba38896a1d27a4b36ea6db5ea2d9b81b58749deab9531c7c13b
+Wv.hex                                               f6b079c216ae142a2a70b01242fe5f90a85b5364291a248627510f16fd4a317a
+WvR.hex                                              bb1ea8733dd96f761cef088f992f20b6f442bee6b0fb74481185b5050adcac7f
+
+## F-copy candidate (post Confirm v1; not C4_MASTER)
+train_c4_f_copy_balanced.py                          fb48df0cbfda413543c261208842bb317458d383c90e6a1097a8bd374f2a6520
+fr_balanced_01/best_dev.npz                          a462dd69d80ea5a2bf07d8d01359d0c01219919643e50204425ca4032320c4ed
+confirm_v2.json file SHA                             b835c3dbfad005a169222e65968016124a5dd3504d05c7665b7eb14f176dc462
+CONFIRM_V2_LOCK canonical                            c8ee9e160f5a2ee3a8f9e859ea9373003c7a61e0892d16497a5d178a64c3956a
+
+## Candidate RTL
+a7ng_astra_c3_held_out.svh                           01d0299cb048fc4c7a52be1c0389897f27769eeefc4b07784d736559cc18ef39
+a7ng_astra_c3_held_out.sv                            cfb896325a0911c37281c217cff17878d329627f83a2f794f443131c1b530dfc
+a7ng_astra_c3_held_out_pendld.sv                     2346ca6beb01271887b73cf27e1ee7a8ce019c988b9aaeec6e16378a7e41619e
+a7ng_astra_c4_lm06_red.sv                            b45773d309200675e375decc2570c4a55cbc6e90569632420a232c08686bee4b
+a7ng_astra_c5_prod_top.sv                            c4fcca30c945a550f81f0870025c8d52875cd6097dfbfc459aeb1fe47a367922
+a7ng_astra_c5_prod_top_rew.sv                        2c14477cce96feafab0a69eccf5a258fab75a8b3c1d5d6bfbb39211b0c12e021
+a7ng_astra_c5_prod_top_stream.sv                     0bd48fe1228065bf0c8e12fee7cc3244784bed861f781ed9bbbc4c51b755989c
+a7ng_astra_c5_prod_top_resp.sv                       885bd05ea4f0cb4caf4c69af1a6cc93af2f941f30b7c7614631c6fb693e5c11f
+a7ng_astra_c5_prod_top_ckpt.sv                       9fd51ef767d2066ead1ab508a90c4f0a0da567ffa1f284eafdad01c475125fc7
+a7ng_astra_c5_sgd32_ckpt_pend.sv                     94e97329ec607c44aff6ff5fe4e2228301e300f1446e445919958f4f315dd8be
+a7ng_astra_c6_wholechip.sv                           64275ba07fef59f6c0ae2a515b38dfd8e747df8a57c8cc5ed44e019002c34ea5

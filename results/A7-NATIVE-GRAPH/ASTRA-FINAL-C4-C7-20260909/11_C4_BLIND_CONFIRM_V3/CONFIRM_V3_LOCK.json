@@ -1,0 +1,13 @@
+{
+  "file": "confirm_v3.json",
+  "sha256_canonical": "f41805115312b0a52703b6dddae44b8ceb3e133f1132608a4af72a94a34651d6",
+  "counts": {
+    "F": 120,
+    "R": 120,
+    "U": 120
+  },
+  "opened_for_selection": false,
+  "confirm_v2_read": false,
+  "checkpoint_sha256": "fcfe37be0ca006de9a0973331cb0b1b82703a96c0f10097e21d7e0bff85987dc",
+  "ptq_manifest_sha256": "ac69d2f88eb5988f07c224f6c8ead6f57e6f731981a5d6e7da4adc1f9f34a15e"
+}

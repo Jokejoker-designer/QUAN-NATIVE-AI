@@ -1,0 +1,64 @@
+{
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "e3a": "PARTIAL",
+  "e3b_started": false,
+  "report": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/results/A7-NATIVE-GRAPH/ASTRA-FINAL-C4-C7-20260909/14_C4_OOC_V2/timing_ooc.rpt",
+  "report_sha256": "a50231bd9a7644a74f097a3fcdbb57df6e61a1a680a06f5d5d6b4850e94290b3",
+  "setup_failing_endpoints": 62840,
+  "wns_ns": -83.427,
+  "tns_ns": -1364570.227,
+  "hold_failing_endpoints": 0,
+  "max_delay_paths_in_report": 1,
+  "worst_path": {
+    "slack_ns": -83.427,
+    "source": "elut_reg[11][5]/C",
+    "destination": "acc1__0__0/B[14]",
+    "data_path_delay_ns": 92.893,
+    "logic_levels": 319,
+    "level_breakdown": "CARRY4=305 LUT1=2 LUT2=2 LUT3=2 LUT4=2 LUT5=2 LUT6=4",
+    "cell_histogram": {
+      "FDRE": 2,
+      "LUT6": 4,
+      "LUT5": 2,
+      "CARRY4": 305,
+      "LUT3": 2,
+      "LUT4": 2,
+      "LUT2": 2,
+      "LUT1": 2,
+      "DSP48E1": 3
+    },
+    "name_family_counts": {
+      "other": 2,
+      "elut": 2,
+      "eden": 2,
+      "attn": 283,
+      "psum": 33
+    },
+    "n_named_resources": 0,
+    "n_nets": 322,
+    "has_ramb": false,
+    "has_dsp": true,
+    "has_carry4": true,
+    "has_divide_unisim": false,
+    "note": "Artix-7 has no DIVIDE unisim; signed / maps to CARRY/LUT."
+  },
+  "rtl_map": {
+    "source_elut_reg": "S_SMDIV/S_SMRES numerator (softmax exp LUT)",
+    "eden_attn_psum_names": "S_SMRES (elut*32767+(eden/2))/eden and psum accumulate",
+    "dest_acc1_dsp_B": "S_H MAC attn[ti]*vv[ti][dj] DSP B port",
+    "rtl_lines": "a7ng_astra_c4_lm06_d32_fr_v2.sv:265-277"
+  },
+  "synth_warnings": {
+    "unique_case_parallel": "vivado_ooc.log Synth 8-294 lines 76 and 78",
+    "ti_acc_blocking_nba": "Synth 8-6090 lines 77 and 79"
+  },
+  "competing_weight_mux": {
+    "this_worst_path": "NOT named We/Wq/Wk/Wv",
+    "bram": 0,
+    "lut_as_memory": 0,
+    "other_62840_endpoints": "UNKNOWN without top-N report"
+  },
+  "top_n": "MISSING \u2014 timing_summary dumps 1 setup path; no DCP saved; re-synth ~54 min",
+  "e3b_gate": "BLOCKED until top-N or explicit authority that worst-path INFERENCE is enough"
+}

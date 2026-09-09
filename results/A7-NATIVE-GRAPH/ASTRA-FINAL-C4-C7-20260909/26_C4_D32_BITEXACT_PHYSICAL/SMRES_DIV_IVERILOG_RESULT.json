@@ -1,0 +1,17 @@
+{
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "E3B": "BLOCKED_UNTIL_TIMING_N20",
+  "instantiated_in_d32": false,
+  "d32_sha256": "34d934935768baf1d20e7a5d8da49945554716df48bfa6c8e89c3443790819f6",
+  "simulator": "iverilog -g2012 + vvp",
+  "not_xsim": true,
+  "license_conflict": "OOC parent PID held BASIC; iverilog used instead of xvlog",
+  "n": 13,
+  "result": "ASTRA_SMRES_DIV_MCYCLE_IVERILOG_PASS",
+  "legal_envelope_case": {"elut": 32767, "eden": 786408, "q": 1365},
+  "cycles_nonzero_den": 33,
+  "unique_case": "iverilog ignores unique quality",
+  "log": "smres_div_iverilog.log",
+  "divider_rtl_sha256": "8f3eaf1e2594d5352e3a222d0bb3125abfc235daf9f306676ae7a544f94ab30e"
+}

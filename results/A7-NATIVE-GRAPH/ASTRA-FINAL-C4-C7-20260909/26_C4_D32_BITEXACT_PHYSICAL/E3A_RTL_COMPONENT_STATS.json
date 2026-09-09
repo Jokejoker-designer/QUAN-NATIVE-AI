@@ -1,0 +1,29 @@
+{
+  "source": "vivado_e3a_topn.log RTL Component Statistics (in-flight OOC, after Phase 2)",
+  "PROGRAM": "NO",
+  "evidence_class": "FACT",
+  "adders": {
+    "64b_2in": 68,
+    "64b_3in": 11,
+    "32b_2in": 16,
+    "32b_3in": 2
+  },
+  "registers": {
+    "64b": 1,
+    "32b": 336,
+    "16b": 2496
+  },
+  "multipliers": {
+    "31x32": 1,
+    "16x32": 3,
+    "16x31": 3,
+    "8x31": 2
+  },
+  "muxes": {
+    "21in_32b": 7,
+    "21in_8b": 4,
+    "21in_1b": 2499,
+    "2in_1b": 3510
+  },
+  "note": "21-input muxes are a separate hypothesis from the worst-path attn/CARRY4 chain. TMAX=24. 31x32 multiplier is consistent with elut*32767. Top-N still required to rank these vs S_SMRES divide."
+}

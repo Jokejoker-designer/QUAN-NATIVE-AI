@@ -1,0 +1,11 @@
+{
+  "marker": "ASTRA_C5_FINAL_V1_ELAB_OK",
+  "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .\\run_elab.ps1",
+  "cwd": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-FINAL-C4-C7-20260909\\20_C5_FINAL_V1",
+  "exit_code": 0,
+  "C5_MASTER": "OPEN",
+  "C6_SWITCH": "NO",
+  "PROGRAM": "NO",
+  "prod_dict": "OPEN",
+  "note": "Hierarchy elaborates: pendld+proof_ok, axi1b_v1, ckpt_pend, wrap V2, D32 V2, UART, no grounded_gen. Empty alias => S_SAFE until a verified 20-bit map exists. Not C5_MASTER. Not BOARD_PASS. C6 still instantiates live prod_top."
+}

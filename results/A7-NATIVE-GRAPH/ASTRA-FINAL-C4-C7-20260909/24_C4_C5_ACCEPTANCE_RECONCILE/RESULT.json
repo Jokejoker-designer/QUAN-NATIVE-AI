@@ -1,0 +1,107 @@
+{
+  "bag": "24_C4_C5_ACCEPTANCE_RECONCILE",
+  "task": "E0 acceptance reconcile + record coordinator WO amendments",
+  "recorded_at": "2026-09-09T17:45:00+07:00",
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "C5_MASTER": "OPEN",
+  "C6_MASTER": "OPEN",
+  "ASTRA_NATIVE_AI_BOARD_PASS": "OPEN",
+  "self_accept": false,
+  "rtl_modified": false,
+  "bulk_rerun": false,
+  "e1_opened": false,
+  "e3b_opened": false,
+  "git": {
+    "root": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+    "branch": "grok-orch/astra-native-v1-00",
+    "HEAD": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+    "dirty_porcelain_lines": 488,
+    "modified": 106,
+    "untracked": 382
+  },
+  "first_divergence": {
+    "authority": "Gemini 'nghiệm thu toàn bộ C4' CONTRADICTED by Codex REJECT_C4_C5_FINAL_ACCEPTANCE and by this bag",
+    "scoring": "V1 pass_system_safe/pass_c4_numerical_wo are expected_by_contract; observed scorer measured_system=0/360 on both corpora",
+    "keep_vs_e1": "Resolved this turn: EXISTING SEMANTICS KEEP; reverse query is NEW GATE; not direction_o→bank_r",
+    "provenance": "bag22 xsim.log 17:08:55 before current C5 17:14:10 and C3 pendld 17:14:02 — audit-time SHA must not retro-certify that log",
+    "physical": "OOC worst path is elut→attn/eden/psum3 CARRY4→DSP; E3a still OPEN (one path, not top-N)"
+  },
+  "amendments_accepted": [
+    "A1 C1/C2/C3 EXISTING SEMANTICS KEEP; reverse=NEW GATE",
+    "A2 LEARNED_NUMERICAL 240 vs SYSTEM_360 vs UNSUPPORTED",
+    "A3 E3a critical-path attribution before divider RTL",
+    "A4 dictionary DICT_LOCK for entire exam/run",
+    "prefix FAIL retained; independent E3a/E4 provenance may continue"
+  ],
+  "observed_eval": {
+    "script_sha256": "03596b74b9a809278ae55b5a07414a17c10c94c5dcac02344ffeb34cc8eb21b0",
+    "V1": {
+      "learned_allowed_correct": 240,
+      "system_expected_by_contract": 120,
+      "measured_system": 0,
+      "n": 360
+    },
+    "V2": {
+      "learned_per_case": "not_measured (eval_once has aggregates only)",
+      "eval_once_aggregate": "F 120/120 R 120/120 float/int 240/240",
+      "measured_system": 0,
+      "n": 360,
+      "U_kinds": "absent"
+    },
+    "legacy_files_untouched": [
+      "11_C4_BLIND_CONFIRM/eval_wo360_v3_once.py",
+      "11_C4_BLIND_CONFIRM/results/confirm_wo360_v3_once.json",
+      "11_C4_BLIND_CONFIRM_V3/eval_once.json"
+    ]
+  },
+  "current_hashes": {
+    "d32_v2": "34d934935768baf1d20e7a5d8da49945554716df48bfa6c8e89c3443790819f6",
+    "c5_final_v1": "5d959a6d719fcc1f12062c721e983f9516864da6b3c41f5f15b6bcf2198ec329",
+    "c6_final_v1": "525880f4e1c610b24af73d603ba7ecaead8e6f3d62e5057d93d9e532061eabd8",
+    "checkpoint_v2": "fcfe37be0ca006de9a0973331cb0b1b82703a96c0f10097e21d7e0bff85987dc",
+    "confirm_v2_canonical": "f41805115312b0a52703b6dddae44b8ceb3e133f1132608a4af72a94a34651d6",
+    "confirm_v1_canonical": "f876633e6daf4ca79317bec55ef9888e12ff726e26d316ad87193eaba74b3e6a",
+    "checkpoint_v1": "a462dd69d80ea5a2bf07d8d01359d0c01219919643e50204425ca4032320c4ed",
+    "ooc_timing": "a50231bd9a7644a74f097a3fcdbb57df6e61a1a680a06f5d5d6b4850e94290b3",
+    "wo_final": "ae1487d180bf40e61c7a58dce84fc466cdc41c084dcd184496bf5dfd0e11685b",
+    "wo_amendment": "8f03e7c3e311ab1494009101f83792154d3690203796368565a29a56ca134923",
+    "review_workspace": "4fe0399a3a2052d483afdb07e6da23a54cf9289b3f6ffeb01112cee6afa5a37c",
+    "golden_svh": "a3130b49cf4552f771e01cac7bfeff3b3d25ca5bb4adedc9fa8340b520ff0221"
+  },
+  "artifacts": [
+    {"name": "ACK.md", "sha256": "8135a2365b8a799d6a64c3e01f80c4f8039e32949d4d4b99cd2635631f511979"},
+    {"name": "OPEN_DECISIONS.md", "sha256": "10c5f0d69140d5311363e827093462a1e362fb3851bc61b30a7f1c84ac77cb92"},
+    {"name": "EVIDENCE_MATRIX.json", "sha256": "6c7b929f26fde8013398ea68889f0741d33c62002cbdb92d1d1f7633acbd5cda"},
+    {"name": "C5_FINAL_REGRESSION_MATRIX.json", "sha256": "1e7ce21085dedca9448f50e3d2eb688aa72ec018d8d6ec237adacda9ebdcbd71"},
+    {"name": "eval_observed_system_v1.py", "sha256": "03596b74b9a809278ae55b5a07414a17c10c94c5dcac02344ffeb34cc8eb21b0"},
+    {"name": "OBSERVED_EVAL_SUMMARY.json", "sha256": "6fcc870873d189ec90b9e576f80cb26d4c7da320cd3269c4d3b915014732b959"},
+    {"name": "OBSERVED_EVAL_V1.json", "sha256": "0206a07f6bcf6bc1659db82023f6585ad3fc701050b79f87112e61f01748476a"},
+    {"name": "OBSERVED_EVAL_V2.json", "sha256": "06d5285b3200a9790f7d6965d3760d17551df5f5ba27260b2a2fc2bf251bee19"},
+    {"name": "WO_AMENDMENT_ASTRA_C4_C7_E0_ACCEPTED_20260909.md", "sha256": "8f03e7c3e311ab1494009101f83792154d3690203796368565a29a56ca134923"}
+  ],
+  "e0_exit": {
+    "matrix_lineage": true,
+    "open_decisions_written": true,
+    "legacy_eval_kept": true,
+    "new_observed_evaluator": true,
+    "c5_18_row_matrix": true,
+    "prefix_top1": "FAIL retained 0/16",
+    "four_char_vocab": "registered V2 product symbols; keep fcfe37be freeze",
+    "next_allowed_after_codex_review": [
+      "E3a READ-ONLY top-N path attribution (physical; independent of prefix FAIL)",
+      "E1a NEW GATE contract package only — no direction_o→bank_r, no silent F change",
+      "E4 affected rerun of bag 22 against current C5 SHA"
+    ],
+    "next_forbidden": [
+      "stamp C4_MASTER/C5_MASTER/C6_MASTER",
+      "program bitstream",
+      "E3b divider RTL before E3a top-N",
+      "mix E1 semantic and E3 physical in one run",
+      "retrain or rewrite prefix criterion",
+      "bulk rerun of valid old bags"
+    ]
+  },
+  "proposed_learning_note": "Audit-time source hashes cannot certify older XSim logs (bag 22). Split LEARNED_NUMERICAL 240 from SYSTEM_360. Reverse query is a NEW GATE, not KEEP wiring. OOC worst-path names implicate S_SMRES attn/eden/psum but one path ≠ top-N attribution.",
+  "persistent_learning_written": false
+}

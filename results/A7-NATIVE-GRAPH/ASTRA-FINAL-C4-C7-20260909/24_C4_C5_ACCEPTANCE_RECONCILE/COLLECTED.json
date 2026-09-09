@@ -1,0 +1,744 @@
+{
+  "collected_at": "2026-09-09T17:37:09+07:00",
+  "hashes": {
+    "d32_v2_sv": {
+      "path": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/rtl/native_graph/integrate/a7ng_astra_c4_lm06_d32_fr_v2.sv",
+      "exists": true,
+      "sha256": "34d934935768baf1d20e7a5d8da49945554716df48bfa6c8e89c3443790819f6",
+      "mtime": "2026-09-09T15:26:02",
+      "bytes": 14113
+    },
+    "c5_final_sv": {
+      "path": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/rtl/native_graph/integrate/a7ng_astra_c5_prod_top_final_v1.sv",
+      "exists": true,
+      "sha256": "5d959a6d719fcc1f12062c721e983f9516864da6b3c41f5f15b6bcf2198ec329",
+      "mtime": "2026-09-09T17:14:10",
+      "bytes": 28720
+    },
+    "c6_final_sv": {
+      "path": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/rtl/native_graph/integrate/a7ng_astra_c6_wholechip_final_v1.sv",
+      "exists": true,
+      "sha256": "525880f4e1c610b24af73d603ba7ecaead8e6f3d62e5057d93d9e532061eabd8",
+      "mtime": "2026-09-09T17:14:11",
+      "bytes": 7793
+    },
+    "extract_sv": {
+      "path": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/rtl/native_graph/query/a7ng_query_role_extract.sv",
+      "exists": true,
+      "sha256": "cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27",
+      "mtime": "2026-09-05T19:48:18",
+      "bytes": 9541
+    },
+    "wrap_v2_sv": {
+      "path": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/rtl/native_graph/integrate/a7ng_astra_c4_prod_wrap_v2.sv",
+      "exists": true,
+      "sha256": "a08d0ee1232d49e8beef5ae365e84800a8912d591413ed4169a60dbf93d3d428",
+      "mtime": "2026-09-09T16:05:55",
+      "bytes": 4276
+    },
+    "ooc_timing": {
+      "path": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/results/A7-NATIVE-GRAPH/ASTRA-FINAL-C4-C7-20260909/14_C4_OOC_V2/timing_ooc.rpt",
+      "exists": true,
+      "sha256": "a50231bd9a7644a74f097a3fcdbb57df6e61a1a680a06f5d5d6b4850e94290b3",
+      "mtime": "2026-09-09T16:27:21",
+      "bytes": 96338
+    },
+    "ooc_util": {
+      "path": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/results/A7-NATIVE-GRAPH/ASTRA-FINAL-C4-C7-20260909/14_C4_OOC_V2/util_ooc.rpt",
+      "exists": true,
+      "sha256": "0e846b0087c73630938c70bf1160621bfff4551ccf25c66e3540e8fa12ff6f2a",
+      "mtime": "2026-09-09T16:26:44",
+      "bytes": 8617
+    },
+    "confirm_v2": {
+      "path": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/results/A7-NATIVE-GRAPH/ASTRA-FINAL-C4-C7-20260909/11_C4_BLIND_CONFIRM_V3/confirm_v3.json",
+      "exists": true,
+      "sha256": "2f50269b68c26ac18c0145cbd9ecc3e3dbef6d556cde8117330867c0b018fa65",
+      "mtime": "2026-09-09T15:14:14",
+      "bytes": 42194
+    },
+    "eval_v2": {
+      "path": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/results/A7-NATIVE-GRAPH/ASTRA-FINAL-C4-C7-20260909/11_C4_BLIND_CONFIRM_V3/eval_once.json",
+      "exists": true,
+      "sha256": "1182db3032a7fba6131b1120f960d226cebe0d8dc3b8ea8adcc5647d5486c02a",
+      "mtime": "2026-09-09T15:14:15",
+      "bytes": 870
+    },
+    "lock_v2": {
+      "path": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/results/A7-NATIVE-GRAPH/ASTRA-FINAL-C4-C7-20260909/11_C4_BLIND_CONFIRM_V3/CONFIRM_V3_LOCK.json",
+      "exists": true,
+      "sha256": "0a5d4edf848e5a7c2629739356276a138266eb0716fdc2f5d8c94270f872ea57",
+      "mtime": "2026-09-09T15:14:14",
+      "bytes": 440
+    },
+    "confirm_v1": {
+      "path": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/results/A7-NATIVE-GRAPH/ASTRA-FINAL-C4-C7-20260909/11_C4_BLIND_CONFIRM/confirm_wo360_v3.json",
+      "exists": true,
+      "sha256": "8943a6653d3be63a9e23fbe3744b3fbe3ed11bf6730eb92d061247531d72a47b",
+      "mtime": "2026-09-09T13:33:02",
+      "bytes": 63666
+    },
+    "eval_v1": {
+      "path": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/results/A7-NATIVE-GRAPH/ASTRA-FINAL-C4-C7-20260909/11_C4_BLIND_CONFIRM/eval_wo360_v3_once.py",
+      "exists": true,
+      "sha256": "b0603b61806da1bacc630bc51d7a9e7257635d78e449a1ee5f8fe50c37531aff",
+      "mtime": "2026-09-09T13:35:05",
+      "bytes": 5716
+    },
+    "prereg_causal": {
+      "path": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/results/A7-NATIVE-GRAPH/ASTRA-FINAL-C4-C7-20260909/17_C4_CAUSAL_V2/PREREG.json",
+      "exists": true,
+      "sha256": "15f7828aef5cf7c48e1adeb4faf7c79ffd0c5ffb3ff22f2e41e2e926564d29fe",
+      "mtime": "2026-09-09T15:31:18",
+      "bytes": 1331
+    },
+    "g03_causal": {
+      "path": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/results/A7-NATIVE-GRAPH/ASTRA-FINAL-C4-C7-20260909/17_C4_CAUSAL_V2/g03_causal_v2.json",
+      "exists": true,
+      "sha256": "379e40606cafef5b33210016bafad99e7d3f5dd09337ae94284488f473461570",
+      "mtime": "2026-09-09T15:33:07",
+      "bytes": 4907
+    },
+    "prefix_diag": {
+      "path": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/results/A7-NATIVE-GRAPH/ASTRA-FINAL-C4-C7-20260909/17_C4_CAUSAL_V2/PREFIX_LOGIT_DIAG.json",
+      "exists": true,
+      "sha256": "a0f138605812241ab53828767f183829de412b062a9a03a21b5e5acee93e31fc",
+      "mtime": "2026-09-09T15:34:42",
+      "bytes": 4401
+    },
+    "xsim_21": {
+      "path": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/results/A7-NATIVE-GRAPH/ASTRA-FINAL-C4-C7-20260909/21_C5_UART_SMOKE_V1/xsim.log",
+      "exists": true,
+      "sha256": "62581e085c95e6c95b585dddde99db7e12f240b09a67d3b48173831837c51068",
+      "mtime": "2026-09-09T17:16:56",
+      "bytes": 3239
+    },
+    "xsim_22": {
+      "path": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/results/A7-NATIVE-GRAPH/ASTRA-FINAL-C4-C7-20260909/22_C5_AXI_ERR_V1/xsim.log",
+      "exists": true,
+      "sha256": "af0e636d6b9feb79b8de85eaa49b64c96a7ceec1bf0d51457561fc595350dd71",
+      "mtime": "2026-09-09T17:08:55",
+      "bytes": 2926
+    },
+    "xsim_23": {
+      "path": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/results/A7-NATIVE-GRAPH/ASTRA-FINAL-C4-C7-20260909/23_C5_REGRESS_V1/xsim.log",
+      "exists": true,
+      "sha256": "23acab57b14a756bbc0b1f10a314928176f71e312fae03eed207176548af5e43",
+      "mtime": "2026-09-09T17:16:33",
+      "bytes": 2677
+    },
+    "xsim_24_refuse": {
+      "path": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/results/A7-NATIVE-GRAPH/ASTRA-FINAL-C4-C7-20260909/24_C5_REFUSE_FIFO_V1/xsim_refuse.log",
+      "exists": true,
+      "sha256": "a24a9dcfb7a79158fa84f78b68769ec169ba085074a54a030a2327089bf35c90",
+      "mtime": "2026-09-09T17:29:42",
+      "bytes": 3100
+    },
+    "xsim_24_baud": {
+      "path": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/results/A7-NATIVE-GRAPH/ASTRA-FINAL-C4-C7-20260909/24_C5_REFUSE_FIFO_V1/xsim_baud.log",
+      "exists": true,
+      "sha256": "d525411802147c7bf12b5c2ec936f06d48f9d888b24317999ac758be9fec8983",
+      "mtime": "2026-09-09T17:29:53",
+      "bytes": 2291
+    },
+    "diff_xsim": {
+      "path": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/results/A7-NATIVE-GRAPH/ASTRA-FINAL-C4-C7-20260909/13_C4_DIFFERENTIAL_V3/xsim.log",
+      "exists": true,
+      "sha256": "e7e1e8aba8763ad39ea35f019e9880fb8f67a981c3e262709b71dea347b43a64",
+      "mtime": "2026-09-09T15:28:52",
+      "bytes": 23799
+    },
+    "context_v2": {
+      "path": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/rtl/native_graph/integrate/a7ng_astra_c4_context_v2.svh",
+      "exists": true,
+      "sha256": "a97ea4315a9982b01925b0fdddb97b5188a2173883ce5b722ab77dfa6594b81f",
+      "mtime": "2026-09-09T14:21:31",
+      "bytes": 428
+    },
+    "entity_alias_md": {
+      "path": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/results/A7-NATIVE-GRAPH/ASTRA-FINAL-C4-C7-20260909/19_C4_SURFACE_WRAP_V2/ENTITY_ALIAS_V1.md",
+      "exists": true,
+      "sha256": "66094aed000ea2660cb69cfba0c2227d2201785f09ccce18b1a2e3180cdd3688",
+      "mtime": "2026-09-09T16:07:57",
+      "bytes": 1932
+    },
+    "c3_id_md": {
+      "path": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/results/A7-NATIVE-GRAPH/ASTRA-FINAL-C4-C7-20260909/19_C4_SURFACE_WRAP_V2/C3_ID_PROOF_IDENTITY.md",
+      "exists": true,
+      "sha256": "32f0a393552c264162ac897dcb7778b326de1f49e2a8003e3eefa91420562470",
+      "mtime": "2026-09-09T16:07:37",
+      "bytes": 4271
+    },
+    "eval_v1_py_live": {
+      "path": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/results/A7-NATIVE-GRAPH/ASTRA-FINAL-C4-C7-20260909/11_C4_BLIND_CONFIRM/eval_wo360_v3_once.py",
+      "exists": true,
+      "sha256": "b0603b61806da1bacc630bc51d7a9e7257635d78e449a1ee5f8fe50c37531aff",
+      "mtime": "2026-09-09T13:35:05",
+      "bytes": 5716
+    },
+    "lock_eval_rescue": {
+      "path": "D:/FPGA/C4_RESCUE_20260909/lock_eval_confirm_v3.py",
+      "exists": true,
+      "sha256": "2dc91e6d5cbd5042bb07518009e294684377facf26b97785f75061ebfc16e971",
+      "mtime": "2026-09-09T15:13:25",
+      "bytes": 7487
+    }
+  },
+  "hex_v2": [
+    {
+      "name": "by.hex",
+      "sha256": "bb47401587a54664d886532495595575992c2c14902c89f8228d48fbfd7a2ad6",
+      "bytes": 2560
+    },
+    {
+      "name": "Pe.hex",
+      "sha256": "3891bad3fd8574bf153f3f525838f3ebdf63d8a5a97b2666be3ccf9078d18f72",
+      "bytes": 3072
+    },
+    {
+      "name": "softmax_exp_q15.hex",
+      "sha256": "fcbf293dacd567e1be2c8a50846b9c214f48d6fb6e60462ca19543142da4a683",
+      "bytes": 24582
+    },
+    {
+      "name": "W1.hex",
+      "sha256": "3ef52c6ba2fd3dc65b21e0cde5cf859aa063d2ac5c2204a4546108e253f25976",
+      "bytes": 8192
+    },
+    {
+      "name": "W2.hex",
+      "sha256": "e7e8e65651655bca28fe3e13f06f8f5e030b2caa7b5c241b7eb44de2c9d71bb4",
+      "bytes": 8192
+    },
+    {
+      "name": "We.hex",
+      "sha256": "c5302e5a49cd6d11eb46668cb872526d4d30dfae79815490124e7224c90c9a9e",
+      "bytes": 32768
+    },
+    {
+      "name": "Wk.hex",
+      "sha256": "376154d88a545974c3abef55b39069abfb66412960fc7292454a8e4584e5915d",
+      "bytes": 4096
+    },
+    {
+      "name": "WkR.hex",
+      "sha256": "b930e2c354483816011684b1dcaa536962f42400224b70d54fb294132ee46a4b",
+      "bytes": 4096
+    },
+    {
+      "name": "Wq.hex",
+      "sha256": "2149b12fe64968ff1eadfb4f4aba996bf5a2ae9529bf672db64843008a202020",
+      "bytes": 4096
+    },
+    {
+      "name": "WqR.hex",
+      "sha256": "be340dc8d759c26e9508b4b3567f39f09cc15e426753879fb1fb12499a101049",
+      "bytes": 4096
+    },
+    {
+      "name": "Wv.hex",
+      "sha256": "8a7505a95666685c60954e3c8a8187fe0cc5a775d5b4dc4b29ce9eeaa99bf33a",
+      "bytes": 4096
+    },
+    {
+      "name": "WvR.hex",
+      "sha256": "a0a7e1f129fce434a2db8fa196c9917f983de0fa0a28bc0e8882abdbff76b5a6",
+      "bytes": 4096
+    }
+  ],
+  "confirm_v2": {
+    "n_rows": 360,
+    "groups": {
+      "F": 120,
+      "R": 120,
+      "U": 120
+    },
+    "u_kind_field_present_count": 0,
+    "u_kinds": {
+      "null": 120
+    },
+    "u_keys": [
+      "ans",
+      "ctx",
+      "group",
+      "id"
+    ],
+    "sha256_canonical": "f41805115312b0a52703b6dddae44b8ceb3e133f1132608a4af72a94a34651d6",
+    "checkpoint_sha256": "fcfe37be0ca006de9a0973331cb0b1b82703a96c0f10097e21d7e0bff85987dc",
+    "layout": "C4_CONTEXT_CONTRACT_V2",
+    "f_ctx_sample": "F pkev tifh>----"
+  },
+  "confirm_v1": {
+    "exists": true,
+    "n": 360,
+    "groups": {
+      "F": 120,
+      "R": 120,
+      "U": 120
+    },
+    "u_kinds": {
+      "unrelated": 20,
+      "missing_evidence": 20,
+      "wrong_context": 20,
+      "conflict": 20,
+      "ambiguous": 20,
+      "search_incomplete": 20
+    },
+    "sha256_canonical": "f876633e6daf4ca79317bec55ef9888e12ff726e26d316ad87193eaba74b3e6a",
+    "checkpoint_sha256": null,
+    "layout": null
+  },
+  "eval_v2_once": {
+    "learned_supported": null,
+    "system_unsupported": null,
+    "pass_system_safe": null,
+    "pass_c4_numerical_wo": null,
+    "pass_learned_fr": null,
+    "n": null,
+    "float_int_seq_eq": null,
+    "confirm_sha256": "f41805115312b0a52703b6dddae44b8ceb3e133f1132608a4af72a94a34651d6",
+    "checkpoint_sha256": "fcfe37be0ca006de9a0973331cb0b1b82703a96c0f10097e21d7e0bff85987dc"
+  },
+  "causal": {
+    "g03": {
+      "prereg_sha256": "15f7828aef5cf7c48e1adeb4faf7c79ffd0c5ffb3ff22f2e41e2e926564d29fe",
+      "checkpoint_sha256": "fcfe37be0ca006de9a0973331cb0b1b82703a96c0f10097e21d7e0bff85987dc",
+      "n": 64,
+      "confirm_v3_not_used_for_selection": true,
+      "normal": {
+        "k": 64,
+        "n": 64,
+        "p": 1.0,
+        "F": {
+          "n": 32,
+          "correct": 32
+        },
+        "R": {
+          "n": 32,
+          "correct": 32
+        }
+      },
+      "zero_We": {
+        "k": 0,
+        "n": 64,
+        "p": 0.0,
+        "F": {
+          "n": 32,
+          "correct": 0
+        },
+        "R": {
+          "n": 32,
+          "correct": 0
+        }
+      },
+      "corrupt_Wq": {
+        "k": 0,
+        "n": 64,
+        "p": 0.0,
+        "F": {
+          "n": 32,
+          "correct": 0
+        },
+        "R": {
+          "n": 32,
+          "correct": 0
+        }
+      },
+      "evidence_replaced_old_gold": {
+        "k": 0,
+        "n": 64,
+        "p": 0.0,
+        "F": {
+          "n": 32,
+          "correct": 0
+        },
+        "R": {
+          "n": 32,
+          "correct": 0
+        }
+      },
+      "evidence_replaced_new_gold": {
+        "k": 62,
+        "n": 64,
+        "p": 0.96875,
+        "F": {
+          "n": 32,
+          "correct": 32
+        },
+        "R": {
+          "n": 32,
+          "correct": 30
+        }
+      },
+      "evidence_removed_old_gold": {
+        "k": 0,
+        "n": 64,
+        "p": 0.0,
+        "F": {
+          "n": 32,
+          "correct": 0
+        },
+        "R": {
+          "n": 32,
+          "correct": 0
+        }
+      },
+      "wrong_bank": {
+        "k": 0,
+        "n": 64,
+        "p": 0.0,
+        "F": {
+          "n": 32,
+          "correct": 0
+        },
+        "R": {
+          "n": 32,
+          "correct": 0
+        }
+      },
+      "prefix_changed": 0,
+      "prefix_probes": [
+        {
+          "ctx": "F jdxq rqyz>----",
+          "t0": 114,
+          "t1": 113,
+          "alt": 122,
+          "t1_intervened": 113,
+          "changed": false
+        },
+        {
+          "ctx": "R sbvt aewb>----",
+          "t0": 115,
+          "t1": 98,
+          "alt": 122,
+          "t1_intervened": 98,
+          "changed": false
+        },
+        {
+          "ctx": "F jktq coza>----",
+          "t0": 99,
+          "t1": 111,
+          "alt": 122,
+          "t1_intervened": 111,
+          "changed": false
+        },
+        {
+          "ctx": "R qvfl ybmv>----",
+          "t0": 113,
+          "t1": 118,
+          "alt": 122,
+          "t1_intervened": 118,
+          "changed": false
+        },
+        {
+          "ctx": "F ndhj bduc>----",
+          "t0": 98,
+          "t1": 100,
+          "alt": 122,
+          "t1_intervened": 100,
+          "changed": false
+        },
+        {
+          "ctx": "R qvlj qqmp>----",
+          "t0": 113,
+          "t1": 118,
+          "alt": 122,
+          "t1_intervened": 118,
+          "changed": false
+        },
+        {
+          "ctx": "F cmnt oqsf>----",
+          "t0": 111,
+          "t1": 113,
+          "alt": 122,
+          "t1_intervened": 113,
+          "changed": false
+        },
+        {
+          "ctx": "R dyhe wljv>----",
+          "t0": 100,
+          "t1": 121,
+          "alt": 122,
+          "t1_intervened": 121,
+          "changed": false
+        },
+        {
+          "ctx": "F gryk nlmz>----",
+          "t0": 110,
+          "t1": 108,
+          "alt": 122,
+          "t1_intervened": 108,
+          "changed": false
+        },
+        {
+          "ctx": "R wiwu ddqn>----",
+          "t0": 119,
+          "t1": 105,
+          "alt": 122,
+          "t1_intervened": 105,
+          "changed": false
+        },
+        {
+          "ctx": "F gzmn ldtg>----",
+          "t0": 108,
+          "t1": 100,
+          "alt": 122,
+          "t1_intervened": 100,
+          "changed": false
+        },
+        {
+          "ctx": "R kfeg kbzo>----",
+          "t0": 107,
+          "t1": 102,
+          "alt": 122,
+          "t1_intervened": 102,
+          "changed": false
+        },
+        {
+          "ctx": "F rsht bjnd>----",
+          "t0": 98,
+          "t1": 106,
+          "alt": 122,
+          "t1_intervened": 106,
+          "changed": false
+        },
+        {
+          "ctx": "R yqwr uirn>----",
+          "t0": 121,
+          "t1": 113,
+          "alt": 122,
+          "t1_intervened": 113,
+          "changed": false
+        },
+        {
+          "ctx": "F dlxr yctn>----",
+          "t0": 121,
+          "t1": 99,
+          "alt": 122,
+          "t1_intervened": 99,
+          "changed": false
+        },
+        {
+          "ctx": "R pgsy fvnu>----",
+          "t0": 112,
+          "t1": 103,
+          "alt": 122,
+          "t1_intervened": 103,
+          "changed": false
+        }
+      ],
+      "integer_normal": {
+        "k": 64,
+        "n": 64,
+        "p": 1.0,
+        "F": {
+          "n": 32,
+          "correct": 32
+        },
+        "R": {
+          "n": 32,
+          "correct": 32
+        }
+      },
+      "integer_zero_We": {
+        "k": 0,
+        "n": 64,
+        "p": 0.0,
+        "F": {
+          "n": 32,
+          "correct": 0
+        },
+        "R": {
+          "n": 32,
+          "correct": 0
+        }
+      },
+      "zero_drop": 1.0,
+      "corrupt_drop": 1.0,
+      "zero_pass": true,
+      "corrupt_pass": true,
+      "normal_pass": true,
+      "replaced_old_fails": true,
+      "replaced_new_hits": true,
+      "removed_old_fails": true,
+      "wrong_bank_changes": true,
+      "prefix_pass": false,
+      "PROGRAM": "NO",
+      "C4_MASTER": "OPEN",
+      "note": "Safety-gate S_SAFE is G05; this file is learned path with gate held ANSWER. V2 layout only.",
+      "learned_causal_pass": false
+    },
+    "prefix": {
+      "n": 16,
+      "n_top1_changed": 0,
+      "n_score_changed": 16,
+      "max_abs_logit_delta": 8.294339179992676,
+      "min_abs_logit_delta": 2.7461252212524414,
+      "note": "Diagnostic only. PREREG required top-1 change; that FAIL stands. WO \u00a78.2 also allows score change.",
+      "PROGRAM": "NO",
+      "C4_MASTER": "OPEN",
+      "rows": [
+        {
+          "ctx": "F jdxq rqyz>----",
+          "t0": 114,
+          "t1": 113,
+          "alt": 122,
+          "t1_intervened": 113,
+          "max_abs_logit_delta": 3.2165584564208984,
+          "l1_logit_delta": 441.17138671875,
+          "top1_changed": false
+        },
+        {
+          "ctx": "R sbvt aewb>----",
+          "t0": 115,
+          "t1": 98,
+          "alt": 122,
+          "t1_intervened": 98,
+          "max_abs_logit_delta": 8.294339179992676,
+          "l1_logit_delta": 162.008056640625,
+          "top1_changed": false
+        },
+        {
+          "ctx": "F jktq coza>----",
+          "t0": 99,
+          "t1": 111,
+          "alt": 122,
+          "t1_intervened": 111,
+          "max_abs_logit_delta": 4.523963928222656,
+          "l1_logit_delta": 550.6251220703125,
+          "top1_changed": false
+        },
+        {
+          "ctx": "R qvfl ybmv>----",
+          "t0": 113,
+          "t1": 118,
+          "alt": 122,
+          "t1_intervened": 118,
+          "max_abs_logit_delta": 5.772195816040039,
+          "l1_logit_delta": 225.93228149414062,
+          "top1_changed": false
+        },
+        {
+          "ctx": "F ndhj bduc>----",
+          "t0": 98,
+          "t1": 100,
+          "alt": 122,
+          "t1_intervened": 100,
+          "max_abs_logit_delta": 4.39118766784668,
+          "l1_logit_delta": 280.8102722167969,
+          "top1_changed": false
+        },
+        {
+          "ctx": "R qvlj qqmp>----",
+          "t0": 113,
+          "t1": 118,
+          "alt": 122,
+          "t1_intervened": 118,
+          "max_abs_logit_delta": 5.773634910583496,
+          "l1_logit_delta": 229.05812072753906,
+          "top1_changed": false
+        },
+        {
+          "ctx": "F cmnt oqsf>----",
+          "t0": 111,
+          "t1": 113,
+          "alt": 122,
+          "t1_intervened": 113,
+          "max_abs_logit_delta": 5.566407203674316,
+          "l1_logit_delta": 422.4134521484375,
+          "top1_changed": false
+        },
+        {
+          "ctx": "R dyhe wljv>----",
+          "t0": 100,
+          "t1": 121,
+          "alt": 122,
+          "t1_intervened": 121,
+          "max_abs_logit_delta": 2.7461252212524414,
+          "l1_logit_delta": 453.2549133300781,
+          "top1_changed": false
+        },
+        {
+          "ctx": "F gryk nlmz>----",
+          "t0": 110,
+          "t1": 108,
+          "alt": 122,
+          "t1_intervened": 108,
+          "max_abs_logit_delta": 5.950479030609131,
+          "l1_logit_delta": 1037.830322265625,
+          "top1_changed": false
+        },
+        {
+          "ctx": "R wiwu ddqn>----",
+          "t0": 119,
+          "t1": 105,
+          "alt": 122,
+          "t1_intervened": 105,
+          "max_abs_logit_delta": 4.426427364349365,
+          "l1_logit_delta": 223.0084991455078,
+          "top1_changed": false
+        },
+        {
+          "ctx": "F gzmn ldtg>----",
+          "t0": 108,
+          "t1": 100,
+          "alt": 122,
+          "t1_intervened": 100,
+          "max_abs_logit_delta": 3.280191421508789,
+          "l1_logit_delta": 151.7506103515625,
+          "top1_changed": false
+        },
+        {
+          "ctx": "R kfeg kbzo>----",
+          "t0": 107,
+          "t1": 102,
+          "alt": 122,
+          "t1_intervened": 102,
+          "max_abs_logit_delta": 6.0483551025390625,
+          "l1_logit_delta": 246.59649658203125,
+          "top1_changed": false
+        },
+        {
+          "ctx": "F rsht bjnd>----",
+          "t0": 98,
+          "t1": 106,
+          "alt": 122,
+          "t1_intervened": 106,
+          "max_abs_logit_delta": 4.634782791137695,
+          "l1_logit_delta": 95.60430908203125,
+          "top1_changed": false
+        },
+        {
+          "ctx": "R yqwr uirn>----",
+          "t0": 121,
+          "t1": 113,
+          "alt": 122,
+          "t1_intervened": 113,
+          "max_abs_logit_delta": 4.433958053588867,
+          "l1_logit_delta": 125.484375,
+          "top1_changed": false
+        },
+        {
+          "ctx": "F dlxr yctn>----",
+          "t0": 121,
+          "t1": 99,
+          "alt": 122,
+          "t1_intervened": 99,
+          "max_abs_logit_delta": 4.46551513671875,
+          "l1_logit_delta": 474.690673828125,
+          "top1_changed": false
+        },
+        {
+          "ctx": "R pgsy fvnu>----",
+          "t0": 112,
+          "t1": 103,
+          "alt": 122,
+          "t1_intervened": 103,
+          "max_abs_logit_delta": 4.242292404174805,
+          "l1_logit_delta": 658.389892578125,
+          "top1_changed": false
+        }
+      ]
+    }
+  }
+}

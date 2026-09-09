@@ -1,0 +1,190 @@
+{
+  "contract": "C4_CONTEXT_CONTRACT_V2",
+  "stage": "V2_R_FRESH_PE_02",
+  "checkpoint": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-FINAL-C4-C7-20260909\\10_C4_MODEL_FREEZE\\c4_v2_fresh_pe_02_best_dev.npz",
+  "checkpoint_sha256": "fcfe37be0ca006de9a0973331cb0b1b82703a96c0f10097e21d7e0bff85987dc",
+  "selected": {
+    "step": 400,
+    "elapsed": 20.0072021484375,
+    "F_DEV_EXACT": 1.0,
+    "R_DEV_TF_EXACT": 1.0,
+    "R_DEV_FREE_EXACT": 1.0,
+    "R_LOOP_RATE": 0.125,
+    "R_TF_EXPECTED_SRC_KEY_FRACTION": 1.0,
+    "PAD_LOCKED": false,
+    "locked_positions": [],
+    "frozen_hashes_ok": true,
+    "positions": {
+      "pos0": {
+        "tf_accuracy": 1.0,
+        "free_run_accuracy": 1.0,
+        "ce_loss": 0.035699378699064255,
+        "expected_key": 2,
+        "tf_SRC_FIELD_MASS": 0.9999762177467346,
+        "tf_DST_FIELD_MASS": 7.489496056223288e-06,
+        "tf_PAD_MASS": 6.932191922714992e-07,
+        "tf_ARGMAX_KEY_MODE": 2,
+        "tf_ARGMAX_KEY_HISTOGRAM": {
+          "2": 48
+        },
+        "tf_ARGMAX_IS_EXPECTED_SRC_BYTE": 1.0,
+        "free_SRC_FIELD_MASS": 0.9999762177467346,
+        "free_DST_FIELD_MASS": 7.489496056223288e-06,
+        "free_PAD_MASS": 6.932191922714992e-07,
+        "free_ARGMAX_KEY_MODE": 2,
+        "free_ARGMAX_KEY_HISTOGRAM": {
+          "2": 48
+        },
+        "free_ARGMAX_IS_EXPECTED_SRC_BYTE": 1.0
+      },
+      "pos1": {
+        "tf_accuracy": 1.0,
+        "free_run_accuracy": 1.0,
+        "ce_loss": 0.1387992948293686,
+        "expected_key": 3,
+        "tf_SRC_FIELD_MASS": 0.9935867190361023,
+        "tf_DST_FIELD_MASS": 0.00043253207695670426,
+        "tf_PAD_MASS": 0.005010025110095739,
+        "tf_ARGMAX_KEY_MODE": 3,
+        "tf_ARGMAX_KEY_HISTOGRAM": {
+          "3": 48
+        },
+        "tf_ARGMAX_IS_EXPECTED_SRC_BYTE": 1.0,
+        "free_SRC_FIELD_MASS": 0.9935867190361023,
+        "free_DST_FIELD_MASS": 0.00043253207695670426,
+        "free_PAD_MASS": 0.005010025110095739,
+        "free_ARGMAX_KEY_MODE": 3,
+        "free_ARGMAX_KEY_HISTOGRAM": {
+          "3": 48
+        },
+        "free_ARGMAX_IS_EXPECTED_SRC_BYTE": 1.0
+      },
+      "pos2": {
+        "tf_accuracy": 1.0,
+        "free_run_accuracy": 1.0,
+        "ce_loss": 0.08536898344755173,
+        "expected_key": 4,
+        "tf_SRC_FIELD_MASS": 0.9999987483024597,
+        "tf_DST_FIELD_MASS": 7.334782026191533e-07,
+        "tf_PAD_MASS": 9.563728697870033e-10,
+        "tf_ARGMAX_KEY_MODE": 4,
+        "tf_ARGMAX_KEY_HISTOGRAM": {
+          "4": 48
+        },
+        "tf_ARGMAX_IS_EXPECTED_SRC_BYTE": 1.0,
+        "free_SRC_FIELD_MASS": 0.9999987483024597,
+        "free_DST_FIELD_MASS": 7.334782026191533e-07,
+        "free_PAD_MASS": 9.563728697870033e-10,
+        "free_ARGMAX_KEY_MODE": 4,
+        "free_ARGMAX_KEY_HISTOGRAM": {
+          "4": 48
+        },
+        "free_ARGMAX_IS_EXPECTED_SRC_BYTE": 1.0
+      },
+      "pos3": {
+        "tf_accuracy": 1.0,
+        "free_run_accuracy": 1.0,
+        "ce_loss": 0.06905510276556015,
+        "expected_key": 5,
+        "tf_SRC_FIELD_MASS": 0.9989083409309387,
+        "tf_DST_FIELD_MASS": 0.00033532376983202994,
+        "tf_PAD_MASS": 7.56182344048284e-05,
+        "tf_ARGMAX_KEY_MODE": 5,
+        "tf_ARGMAX_KEY_HISTOGRAM": {
+          "5": 48
+        },
+        "tf_ARGMAX_IS_EXPECTED_SRC_BYTE": 1.0,
+        "free_SRC_FIELD_MASS": 0.9989083409309387,
+        "free_DST_FIELD_MASS": 0.00033532376983202994,
+        "free_PAD_MASS": 7.56182344048284e-05,
+        "free_ARGMAX_KEY_MODE": 5,
+        "free_ARGMAX_KEY_HISTOGRAM": {
+          "5": 48
+        },
+        "free_ARGMAX_IS_EXPECTED_SRC_BYTE": 1.0
+      },
+      "EOS": {
+        "tf_accuracy": 1.0,
+        "free_run_accuracy": 1.0,
+        "ce_loss": 9.530572424409911e-05,
+        "expected_key": null,
+        "tf_SRC_FIELD_MASS": 0.9999019503593445,
+        "tf_DST_FIELD_MASS": 7.629210449522361e-05,
+        "tf_PAD_MASS": 1.7903359548654407e-05,
+        "tf_ARGMAX_KEY_MODE": 5,
+        "tf_ARGMAX_KEY_HISTOGRAM": {
+          "3": 11,
+          "4": 17,
+          "5": 20
+        },
+        "tf_ARGMAX_IS_EXPECTED_SRC_BYTE": null,
+        "free_SRC_FIELD_MASS": 0.9999019503593445,
+        "free_DST_FIELD_MASS": 7.629210449522361e-05,
+        "free_PAD_MASS": 1.7903359548654407e-05,
+        "free_ARGMAX_KEY_MODE": 5,
+        "free_ARGMAX_KEY_HISTOGRAM": {
+          "3": 11,
+          "4": 17,
+          "5": 20
+        },
+        "free_ARGMAX_IS_EXPECTED_SRC_BYTE": null
+      }
+    },
+    "eligible": true
+  },
+  "L_train": "CE_R",
+  "trainable_at_freeze": [
+    "WqR",
+    "WkR",
+    "WvR",
+    "Pe"
+  ],
+  "frozen_hashes": {
+    "We": "ab56a645fed0c030683bece87a1a9281a889c8f7f685f3ce771576d3ee7deeb2",
+    "Wq": "ab737e67300e6df75a1010a6869349280c379bd8f9ccf7356f32c1273f6b0b88",
+    "Wk": "a2bcd135808805e5c790290439658f8a71a1df27ec445187d8ed2260f4517978",
+    "Wv": "c3c9ca737d9127609f43585a6bcf0f011e20149c1e30786c864015a280cf7475",
+    "W1": "ce66538116c86fdfb9755cb09ced4c4aea54266637a78b5e516024c3d4b42737",
+    "W2": "7f61ac7ad4f3c9b3f8d04cfc89b053d7f6517b7c681fcb4e66642120800f136b",
+    "by": "1906db61741487ba4c79443faf86624167da41860d0243a7926db268b37219b1"
+  },
+  "supervision": "token CE_R only; no structural attention supervision",
+  "F_DEV_EXACT": 1.0,
+  "R_DEV_FREE_EXACT": 1.0,
+  "R_DEV_TF_EXACT": 1.0,
+  "R_TF_EXPECTED_SRC_KEY_FRACTION": 1.0,
+  "PAD_LOCKED": false,
+  "g06_post_freeze": {
+    "used_for_selection": false,
+    "F_DEV_EXACT": 1.0,
+    "R_DEV_FREE_EXACT": 1.0,
+    "positions": {
+      "pos0": {
+        "tf": 1.0,
+        "free": 1.0,
+        "exp": 1.0
+      },
+      "pos1": {
+        "tf": 1.0,
+        "free": 1.0,
+        "exp": 1.0
+      },
+      "pos2": {
+        "tf": 1.0,
+        "free": 1.0,
+        "exp": 1.0
+      },
+      "pos3": {
+        "tf": 1.0,
+        "free": 1.0,
+        "exp": 1.0
+      }
+    }
+  },
+  "confirm_v2_instantiated": false,
+  "confirm_v2_used_for_selection": false,
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "ASTRA_NATIVE_AI_BOARD_PASS": "OPEN",
+  "architecture": "D32 F64 F/R banks; Pe trained in 02; We/FFN/F-bank inherited"
+}

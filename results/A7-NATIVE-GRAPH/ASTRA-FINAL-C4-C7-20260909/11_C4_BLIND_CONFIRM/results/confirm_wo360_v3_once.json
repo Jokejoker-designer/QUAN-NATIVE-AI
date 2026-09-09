@@ -1,0 +1,4734 @@
+{
+  "confirm_sha256": "f876633e6daf4ca79317bec55ef9888e12ff726e26d316ad87193eaba74b3e6a",
+  "checkpoint_sha256": "a462dd69d80ea5a2bf07d8d01359d0c01219919643e50204425ca4032320c4ed",
+  "manifest_sha256": "42a29de8234f889a0f42492429976800c09f1153b928e26d69990645a8dfd9ff",
+  "confirm_v1_for_pass": false,
+  "confirm_v2_for_pass": false,
+  "opened_once": true,
+  "learned_supported": {
+    "F": {
+      "k": 120,
+      "n": 120,
+      "p": 1.0
+    },
+    "R": {
+      "k": 120,
+      "n": 120,
+      "p": 1.0
+    },
+    "overall": 1.0,
+    "integer_exact": 240,
+    "integer_n": 240
+  },
+  "learned_unsupported": {
+    "n": 120,
+    "factual_proxy": 120,
+    "hallucination_proxy": 1.0,
+    "note": "LM outputs on ungated unsupported rows; production path is S_SAFE not learned U",
+    "rows": [
+      {
+        "id": "c3-0282",
+        "kind": "unrelated",
+        "ctx": "F jvru sasc>csjn",
+        "learned": "sasc",
+        "int": "sasc",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0319",
+        "kind": "unrelated",
+        "ctx": "F gflx kyez>sdzz",
+        "learned": "kyez",
+        "int": "kyez",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0051",
+        "kind": "unrelated",
+        "ctx": "F hbrc fjus>dawr",
+        "learned": "fjus",
+        "int": "fjus",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0075",
+        "kind": "unrelated",
+        "ctx": "F jyfa zdrj>mzpa",
+        "learned": "zdrj",
+        "int": "zdrj",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0252",
+        "kind": "unrelated",
+        "ctx": "F ljxq pjpa>dakn",
+        "learned": "pjpa",
+        "int": "pjpa",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0221",
+        "kind": "unrelated",
+        "ctx": "F uwro wvad>bnrz",
+        "learned": "wvad",
+        "int": "wvad",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0328",
+        "kind": "unrelated",
+        "ctx": "F zssy wskg>nnda",
+        "learned": "wskg",
+        "int": "wskg",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0253",
+        "kind": "unrelated",
+        "ctx": "F vyzh aopg>arbe",
+        "learned": "aopg",
+        "int": "aopg",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0013",
+        "kind": "unrelated",
+        "ctx": "F ubck chqq>fvgk",
+        "learned": "chqq",
+        "int": "chqq",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0263",
+        "kind": "unrelated",
+        "ctx": "F bcxe yfge>nqcp",
+        "learned": "yfge",
+        "int": "yfge",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0218",
+        "kind": "unrelated",
+        "ctx": "F qsnx cmhn>cgmj",
+        "learned": "cmhn",
+        "int": "cmhn",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0197",
+        "kind": "unrelated",
+        "ctx": "F nbpz zfpu>vluq",
+        "learned": "zfpu",
+        "int": "zfpu",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0138",
+        "kind": "unrelated",
+        "ctx": "F tgpa noya>llpe",
+        "learned": "noya",
+        "int": "noya",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0337",
+        "kind": "unrelated",
+        "ctx": "F kliq yfke>okrn",
+        "learned": "yfke",
+        "int": "yfke",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0156",
+        "kind": "unrelated",
+        "ctx": "F npgh oest>zmey",
+        "learned": "oest",
+        "int": "oest",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0272",
+        "kind": "unrelated",
+        "ctx": "F bjkp kget>wvkm",
+        "learned": "kget",
+        "int": "kget",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0296",
+        "kind": "unrelated",
+        "ctx": "F cche ukxz>mqgs",
+        "learned": "ukxz",
+        "int": "ukxz",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0101",
+        "kind": "unrelated",
+        "ctx": "F pelc srjf>jsmv",
+        "learned": "srjf",
+        "int": "srjf",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0354",
+        "kind": "unrelated",
+        "ctx": "F ijff qhua>gsgi",
+        "learned": "qhua",
+        "int": "qhua",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0057",
+        "kind": "unrelated",
+        "ctx": "F gjlo osvo>wkjn",
+        "learned": "osvo",
+        "int": "osvo",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0018",
+        "kind": "missing_evidence",
+        "ctx": "F ymho gpud>none",
+        "learned": "gpud",
+        "int": "gpud",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0220",
+        "kind": "missing_evidence",
+        "ctx": "F lntl vmyp>none",
+        "learned": "vmyp",
+        "int": "vmyp",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0119",
+        "kind": "missing_evidence",
+        "ctx": "F eizd cmwl>none",
+        "learned": "cmwl",
+        "int": "cmwl",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0136",
+        "kind": "missing_evidence",
+        "ctx": "F qgrx jyny>none",
+        "learned": "jyny",
+        "int": "jyny",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0347",
+        "kind": "missing_evidence",
+        "ctx": "F qvul rfum>none",
+        "learned": "rfum",
+        "int": "rfum",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0160",
+        "kind": "missing_evidence",
+        "ctx": "F rmav jukv>none",
+        "learned": "jukv",
+        "int": "jukv",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0193",
+        "kind": "missing_evidence",
+        "ctx": "F igdk pvdo>none",
+        "learned": "pvdo",
+        "int": "pvdo",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0356",
+        "kind": "missing_evidence",
+        "ctx": "F zlbg pmtd>none",
+        "learned": "pmtd",
+        "int": "pmtd",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0246",
+        "kind": "missing_evidence",
+        "ctx": "F hpgm vjoe>none",
+        "learned": "vjoe",
+        "int": "vjoe",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0113",
+        "kind": "missing_evidence",
+        "ctx": "F rxwq xjle>none",
+        "learned": "xjle",
+        "int": "xjle",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0234",
+        "kind": "missing_evidence",
+        "ctx": "F qzdy fxsr>none",
+        "learned": "fxsr",
+        "int": "fxsr",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0164",
+        "kind": "missing_evidence",
+        "ctx": "F fibw daax>none",
+        "learned": "daax",
+        "int": "daax",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0279",
+        "kind": "missing_evidence",
+        "ctx": "F pkim gttu>none",
+        "learned": "gttu",
+        "int": "gttu",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0082",
+        "kind": "missing_evidence",
+        "ctx": "F fntm putp>none",
+        "learned": "putp",
+        "int": "putp",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0127",
+        "kind": "missing_evidence",
+        "ctx": "F kcrt xeul>none",
+        "learned": "xeul",
+        "int": "xeul",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0325",
+        "kind": "missing_evidence",
+        "ctx": "F xteu pytl>none",
+        "learned": "pytl",
+        "int": "pytl",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0291",
+        "kind": "missing_evidence",
+        "ctx": "F rmtd wxbc>none",
+        "learned": "wxbc",
+        "int": "wxbc",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0014",
+        "kind": "missing_evidence",
+        "ctx": "F qton ipnv>none",
+        "learned": "ipnv",
+        "int": "ipnv",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0311",
+        "kind": "missing_evidence",
+        "ctx": "F yrbr ibxa>none",
+        "learned": "ibxa",
+        "int": "ibxa",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0066",
+        "kind": "missing_evidence",
+        "ctx": "F brsz hkmq>none",
+        "learned": "hkmq",
+        "int": "hkmq",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0020",
+        "kind": "wrong_context",
+        "ctx": "F ugws ivac>phms",
+        "learned": "ivac",
+        "int": "ivac",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0157",
+        "kind": "wrong_context",
+        "ctx": "F kssh cjjk>vwas",
+        "learned": "cjjk",
+        "int": "cjjk",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0106",
+        "kind": "wrong_context",
+        "ctx": "F rlqd vttg>pzlc",
+        "learned": "vttg",
+        "int": "vttg",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0250",
+        "kind": "wrong_context",
+        "ctx": "F ufhm hsek>lgci",
+        "learned": "hsek",
+        "int": "hsek",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0166",
+        "kind": "wrong_context",
+        "ctx": "F bppg nhcs>mvix",
+        "learned": "nhcs",
+        "int": "nhcs",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0226",
+        "kind": "wrong_context",
+        "ctx": "F dxmg xdzc>tfzh",
+        "learned": "xdzc",
+        "int": "xdzc",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0065",
+        "kind": "wrong_context",
+        "ctx": "F fjrp jvph>wico",
+        "learned": "jvph",
+        "int": "jvph",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0326",
+        "kind": "wrong_context",
+        "ctx": "F spjw pefp>vsae",
+        "learned": "pefp",
+        "int": "pefp",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0120",
+        "kind": "wrong_context",
+        "ctx": "F rihl jrdi>rfgi",
+        "learned": "jrdi",
+        "int": "jrdi",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0091",
+        "kind": "wrong_context",
+        "ctx": "F pacr wcah>ecrm",
+        "learned": "wcah",
+        "int": "wcah",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0069",
+        "kind": "wrong_context",
+        "ctx": "F kfss femi>bjfz",
+        "learned": "femi",
+        "int": "femi",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0045",
+        "kind": "wrong_context",
+        "ctx": "F smbw nwjn>ohph",
+        "learned": "nwjn",
+        "int": "nwjn",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0290",
+        "kind": "wrong_context",
+        "ctx": "F etom zgha>lsmt",
+        "learned": "zgha",
+        "int": "zgha",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0342",
+        "kind": "wrong_context",
+        "ctx": "F hwkz mska>ftkf",
+        "learned": "mska",
+        "int": "mska",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0122",
+        "kind": "wrong_context",
+        "ctx": "F qqro zrdx>wbgr",
+        "learned": "zrdx",
+        "int": "zrdx",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0304",
+        "kind": "wrong_context",
+        "ctx": "F kuyd zdmb>arac",
+        "learned": "zdmb",
+        "int": "zdmb",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0309",
+        "kind": "wrong_context",
+        "ctx": "F iqiq ghli>hedo",
+        "learned": "ghli",
+        "int": "ghli",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0044",
+        "kind": "wrong_context",
+        "ctx": "F reqg rkoq>mmjg",
+        "learned": "rkoq",
+        "int": "rkoq",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0195",
+        "kind": "wrong_context",
+        "ctx": "F tkhb pugj>wlab",
+        "learned": "pugj",
+        "int": "pugj",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0032",
+        "kind": "wrong_context",
+        "ctx": "F wfvf izxk>eznc",
+        "learned": "izxk",
+        "int": "izxk",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0040",
+        "kind": "conflict",
+        "ctx": "R vzvq vzvq>zpcy",
+        "learned": "zpcy",
+        "int": "zpcy",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0152",
+        "kind": "conflict",
+        "ctx": "R pkro pkro>wkyk",
+        "learned": "wkyk",
+        "int": "wkyk",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0052",
+        "kind": "conflict",
+        "ctx": "R lxfc lxfc>whoa",
+        "learned": "whoa",
+        "int": "whoa",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0097",
+        "kind": "conflict",
+        "ctx": "R yhac yhac>lgyh",
+        "learned": "lgyh",
+        "int": "lgyh",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0096",
+        "kind": "conflict",
+        "ctx": "R eejc eejc>wbwr",
+        "learned": "wbwr",
+        "int": "wbwr",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0317",
+        "kind": "conflict",
+        "ctx": "R lbjh lbjh>tpgx",
+        "learned": "tpgx",
+        "int": "tpgx",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0268",
+        "kind": "conflict",
+        "ctx": "R rpeq rpeq>bpnd",
+        "learned": "bpnd",
+        "int": "bpnd",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0024",
+        "kind": "conflict",
+        "ctx": "R rhbl rhbl>qwfp",
+        "learned": "qwfp",
+        "int": "qwfp",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0256",
+        "kind": "conflict",
+        "ctx": "R hwnh hwnh>pwkt",
+        "learned": "pwkt",
+        "int": "pwkt",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0177",
+        "kind": "conflict",
+        "ctx": "R unlz unlz>bruu",
+        "learned": "bruu",
+        "int": "bruu",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0289",
+        "kind": "conflict",
+        "ctx": "R psdz psdz>bjwq",
+        "learned": "bjwq",
+        "int": "bjwq",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0107",
+        "kind": "conflict",
+        "ctx": "R xiuk xiuk>aafn",
+        "learned": "aafn",
+        "int": "aafn",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0339",
+        "kind": "conflict",
+        "ctx": "R laeq laeq>xpze",
+        "learned": "xpze",
+        "int": "xpze",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0302",
+        "kind": "conflict",
+        "ctx": "R wxtc wxtc>lwgn",
+        "learned": "lwgn",
+        "int": "lwgn",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0183",
+        "kind": "conflict",
+        "ctx": "R bhld bhld>ebnc",
+        "learned": "ebnc",
+        "int": "ebnc",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0199",
+        "kind": "conflict",
+        "ctx": "R xivj xivj>azlu",
+        "learned": "azlu",
+        "int": "azlu",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0094",
+        "kind": "conflict",
+        "ctx": "R wlnv wlnv>fuww",
+        "learned": "fuww",
+        "int": "fuww",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0329",
+        "kind": "conflict",
+        "ctx": "R lbgs lbgs>rswf",
+        "learned": "rswf",
+        "int": "rswf",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0335",
+        "kind": "conflict",
+        "ctx": "R flzh flzh>afbr",
+        "learned": "afbr",
+        "int": "afbr",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0315",
+        "kind": "conflict",
+        "ctx": "R kuvh kuvh>ggpl",
+        "learned": "ggpl",
+        "int": "ggpl",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0004",
+        "kind": "ambiguous",
+        "ctx": "F glda sxdd>glda",
+        "learned": "sxdd",
+        "int": "sxdd",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0247",
+        "kind": "ambiguous",
+        "ctx": "F qwxp tlkm>qwxp",
+        "learned": "tlkm",
+        "int": "tlkm",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0003",
+        "kind": "ambiguous",
+        "ctx": "F gyzp roar>gyzp",
+        "learned": "roar",
+        "int": "roar",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0155",
+        "kind": "ambiguous",
+        "ctx": "F ebth wsrr>ebth",
+        "learned": "wsrr",
+        "int": "wsrr",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0184",
+        "kind": "ambiguous",
+        "ctx": "F ldtf pnzl>ldtf",
+        "learned": "pnzl",
+        "int": "pnzl",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0330",
+        "kind": "ambiguous",
+        "ctx": "F aoir gzng>aoir",
+        "learned": "gzng",
+        "int": "gzng",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0298",
+        "kind": "ambiguous",
+        "ctx": "F sful xaqy>sful",
+        "learned": "xaqy",
+        "int": "xaqy",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0194",
+        "kind": "ambiguous",
+        "ctx": "F zcnf bgqv>zcnf",
+        "learned": "bgqv",
+        "int": "bgqv",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0333",
+        "kind": "ambiguous",
+        "ctx": "F lqpj ntec>lqpj",
+        "learned": "ntec",
+        "int": "ntec",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0265",
+        "kind": "ambiguous",
+        "ctx": "F ybhh slse>ybhh",
+        "learned": "slse",
+        "int": "slse",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0089",
+        "kind": "ambiguous",
+        "ctx": "F rehi aykr>rehi",
+        "learned": "aykr",
+        "int": "aykr",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0191",
+        "kind": "ambiguous",
+        "ctx": "F rpiw oanr>rpiw",
+        "learned": "oanr",
+        "int": "oanr",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0074",
+        "kind": "ambiguous",
+        "ctx": "F tkkd zruh>tkkd",
+        "learned": "zruh",
+        "int": "zruh",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0168",
+        "kind": "ambiguous",
+        "ctx": "F faqx sktq>faqx",
+        "learned": "sktq",
+        "int": "sktq",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0343",
+        "kind": "ambiguous",
+        "ctx": "F sbyl yaxy>sbyl",
+        "learned": "yaxy",
+        "int": "yaxy",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0178",
+        "kind": "ambiguous",
+        "ctx": "F wubc sadb>wubc",
+        "learned": "sadb",
+        "int": "sadb",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0283",
+        "kind": "ambiguous",
+        "ctx": "F hngd rzgp>hngd",
+        "learned": "rzgp",
+        "int": "rzgp",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0229",
+        "kind": "ambiguous",
+        "ctx": "F nega macg>nega",
+        "learned": "macg",
+        "int": "macg",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0134",
+        "kind": "ambiguous",
+        "ctx": "F gfub ehrw>gfub",
+        "learned": "ehrw",
+        "int": "ehrw",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0098",
+        "kind": "ambiguous",
+        "ctx": "F kpeq aovh>kpeq",
+        "learned": "aovh",
+        "int": "aovh",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0026",
+        "kind": "search_incomplete",
+        "ctx": "F wxkj bjip>wxkj",
+        "learned": "bjip",
+        "int": "bjip",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0318",
+        "kind": "search_incomplete",
+        "ctx": "F mnnw tfwu>mnnw",
+        "learned": "tfwu",
+        "int": "tfwu",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0297",
+        "kind": "search_incomplete",
+        "ctx": "F opgs eyug>opgs",
+        "learned": "eyug",
+        "int": "eyug",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0071",
+        "kind": "search_incomplete",
+        "ctx": "F thzd xanq>thzd",
+        "learned": "xanq",
+        "int": "xanq",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0300",
+        "kind": "search_incomplete",
+        "ctx": "F xoqf tcqm>xoqf",
+        "learned": "tcqm",
+        "int": "tcqm",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0244",
+        "kind": "search_incomplete",
+        "ctx": "F jyho yjpe>jyho",
+        "learned": "yjpe",
+        "int": "yjpe",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0086",
+        "kind": "search_incomplete",
+        "ctx": "F lyep axrb>lyep",
+        "learned": "axrb",
+        "int": "axrb",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0104",
+        "kind": "search_incomplete",
+        "ctx": "F bysg huyy>bysg",
+        "learned": "huyy",
+        "int": "huyy",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0359",
+        "kind": "search_incomplete",
+        "ctx": "F syfp taeo>syfp",
+        "learned": "taeo",
+        "int": "taeo",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0202",
+        "kind": "search_incomplete",
+        "ctx": "F wnna mrgt>wnna",
+        "learned": "mrgt",
+        "int": "mrgt",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0294",
+        "kind": "search_incomplete",
+        "ctx": "F wqvo ngtr>wqvo",
+        "learned": "ngtr",
+        "int": "ngtr",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0143",
+        "kind": "search_incomplete",
+        "ctx": "F xtps nbst>xtps",
+        "learned": "nbst",
+        "int": "nbst",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0346",
+        "kind": "search_incomplete",
+        "ctx": "F qdrn uncb>qdrn",
+        "learned": "uncb",
+        "int": "uncb",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0270",
+        "kind": "search_incomplete",
+        "ctx": "F anrp nurx>anrp",
+        "learned": "nurx",
+        "int": "nurx",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0334",
+        "kind": "search_incomplete",
+        "ctx": "F vaoo nwvc>vaoo",
+        "learned": "nwvc",
+        "int": "nwvc",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0233",
+        "kind": "search_incomplete",
+        "ctx": "F msjd oxmp>msjd",
+        "learned": "oxmp",
+        "int": "oxmp",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0151",
+        "kind": "search_incomplete",
+        "ctx": "F wlyt bjpr>wlyt",
+        "learned": "bjpr",
+        "int": "bjpr",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0340",
+        "kind": "search_incomplete",
+        "ctx": "F httn dsub>httn",
+        "learned": "dsub",
+        "int": "dsub",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0009",
+        "kind": "search_incomplete",
+        "ctx": "F xecp yqqs>xecp",
+        "learned": "yqqs",
+        "int": "yqqs",
+        "seq_eq": true,
+        "factual": true
+      },
+      {
+        "id": "c3-0261",
+        "kind": "search_incomplete",
+        "ctx": "F hdzn uyvm>hdzn",
+        "learned": "uyvm",
+        "int": "uyvm",
+        "seq_eq": true,
+        "factual": true
+      }
+    ]
+  },
+  "system_unsupported": {
+    "safe_refuse": 120,
+    "n": 120,
+    "safe_rate": 1.0,
+    "hallucination": 0.0,
+    "sequence": [
+      "n",
+      "o",
+      "EOS"
+    ],
+    "note": "scored by contracted hardware refusal, not by LM"
+  },
+  "float_int_seq_eq": 360,
+  "n": 360,
+  "termination_float_int_has_eos": 1.0,
+  "pass_learned_fr": true,
+  "pass_system_safe": true,
+  "pass_c4_numerical_wo": true,
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "BOARD_PASS": "OPEN",
+  "supported_rows": [
+    {
+      "ctx": "F xrls fhop>xrls",
+      "ans": "fhop",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0129",
+      "predicted_tokens": [
+        102,
+        104,
+        111,
+        112,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F ujmf cxle>ujmf",
+      "ans": "cxle",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0131",
+      "predicted_tokens": [
+        99,
+        120,
+        108,
+        101,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F nbdd scwm>nbdd",
+      "ans": "scwm",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0167",
+      "predicted_tokens": [
+        115,
+        99,
+        119,
+        109,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F hwbv fwmd>hwbv",
+      "ans": "fwmd",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0000",
+      "predicted_tokens": [
+        102,
+        119,
+        109,
+        100,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F zxjw xjoo>zxjw",
+      "ans": "xjoo",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0280",
+      "predicted_tokens": [
+        120,
+        106,
+        111,
+        111,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F mnww apzz>mnww",
+      "ans": "apzz",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0030",
+      "predicted_tokens": [
+        97,
+        112,
+        122,
+        122,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F pnbg etcn>pnbg",
+      "ans": "etcn",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0158",
+      "predicted_tokens": [
+        101,
+        116,
+        99,
+        110,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F oetu vrfq>oetu",
+      "ans": "vrfq",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0284",
+      "predicted_tokens": [
+        118,
+        114,
+        102,
+        113,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F dzge nsaf>dzge",
+      "ans": "nsaf",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0331",
+      "predicted_tokens": [
+        110,
+        115,
+        97,
+        102,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F ajae qjbw>ajae",
+      "ans": "qjbw",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0341",
+      "predicted_tokens": [
+        113,
+        106,
+        98,
+        119,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F wbie qkgo>wbie",
+      "ans": "qkgo",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0266",
+      "predicted_tokens": [
+        113,
+        107,
+        103,
+        111,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F bnzw ryfn>bnzw",
+      "ans": "ryfn",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0273",
+      "predicted_tokens": [
+        114,
+        121,
+        102,
+        110,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F ffpc ixcj>ffpc",
+      "ans": "ixcj",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0313",
+      "predicted_tokens": [
+        105,
+        120,
+        99,
+        106,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F fehr nvyt>fehr",
+      "ans": "nvyt",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0073",
+      "predicted_tokens": [
+        110,
+        118,
+        121,
+        116,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F cjsk agur>cjsk",
+      "ans": "agur",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0021",
+      "predicted_tokens": [
+        97,
+        103,
+        117,
+        114,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F jdug jpib>jdug",
+      "ans": "jpib",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0175",
+      "predicted_tokens": [
+        106,
+        112,
+        105,
+        98,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F nwjp ouuf>nwjp",
+      "ans": "ouuf",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0287",
+      "predicted_tokens": [
+        111,
+        117,
+        117,
+        102,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F ephh hjwo>ephh",
+      "ans": "hjwo",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0179",
+      "predicted_tokens": [
+        104,
+        106,
+        119,
+        111,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F kdvw jjbk>kdvw",
+      "ans": "jjbk",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0269",
+      "predicted_tokens": [
+        106,
+        106,
+        98,
+        107,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F ysqc hkic>ysqc",
+      "ans": "hkic",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0187",
+      "predicted_tokens": [
+        104,
+        107,
+        105,
+        99,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F agui eqsx>agui",
+      "ans": "eqsx",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0088",
+      "predicted_tokens": [
+        101,
+        113,
+        115,
+        120,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F jufb elpt>jufb",
+      "ans": "elpt",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0353",
+      "predicted_tokens": [
+        101,
+        108,
+        112,
+        116,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F odbl tdlv>odbl",
+      "ans": "tdlv",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0262",
+      "predicted_tokens": [
+        116,
+        100,
+        108,
+        118,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F ejwr wnmd>ejwr",
+      "ans": "wnmd",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0035",
+      "predicted_tokens": [
+        119,
+        110,
+        109,
+        100,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F ahvg gpxv>ahvg",
+      "ans": "gpxv",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0116",
+      "predicted_tokens": [
+        103,
+        112,
+        120,
+        118,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F zbqw phqh>zbqw",
+      "ans": "phqh",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0349",
+      "predicted_tokens": [
+        112,
+        104,
+        113,
+        104,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F uyvz bcnl>uyvz",
+      "ans": "bcnl",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0225",
+      "predicted_tokens": [
+        98,
+        99,
+        110,
+        108,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F omko fnag>omko",
+      "ans": "fnag",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0174",
+      "predicted_tokens": [
+        102,
+        110,
+        97,
+        103,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F miyz ddaj>miyz",
+      "ans": "ddaj",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0171",
+      "predicted_tokens": [
+        100,
+        100,
+        97,
+        106,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F ebwk mamx>ebwk",
+      "ans": "mamx",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0111",
+      "predicted_tokens": [
+        109,
+        97,
+        109,
+        120,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F brps ooqz>brps",
+      "ans": "ooqz",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0121",
+      "predicted_tokens": [
+        111,
+        111,
+        113,
+        122,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F zpbl fprt>zpbl",
+      "ans": "fprt",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0019",
+      "predicted_tokens": [
+        102,
+        112,
+        114,
+        116,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F mmhw lmlm>mmhw",
+      "ans": "lmlm",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0123",
+      "predicted_tokens": [
+        108,
+        109,
+        108,
+        109,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F eilh pwuz>eilh",
+      "ans": "pwuz",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0028",
+      "predicted_tokens": [
+        112,
+        119,
+        117,
+        122,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F tezu vlkc>tezu",
+      "ans": "vlkc",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0147",
+      "predicted_tokens": [
+        118,
+        108,
+        107,
+        99,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F uqis xbzz>uqis",
+      "ans": "xbzz",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0076",
+      "predicted_tokens": [
+        120,
+        98,
+        122,
+        122,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F zcui ewol>zcui",
+      "ans": "ewol",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0007",
+      "predicted_tokens": [
+        101,
+        119,
+        111,
+        108,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F rduc fyhz>rduc",
+      "ans": "fyhz",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0031",
+      "predicted_tokens": [
+        102,
+        121,
+        104,
+        122,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F biag fhdp>biag",
+      "ans": "fhdp",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0150",
+      "predicted_tokens": [
+        102,
+        104,
+        100,
+        112,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F czpc kvgt>czpc",
+      "ans": "kvgt",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0034",
+      "predicted_tokens": [
+        107,
+        118,
+        103,
+        116,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F rcte hkqp>rcte",
+      "ans": "hkqp",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0206",
+      "predicted_tokens": [
+        104,
+        107,
+        113,
+        112,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F bovu sqhy>bovu",
+      "ans": "sqhy",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0080",
+      "predicted_tokens": [
+        115,
+        113,
+        104,
+        121,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F sszp niax>sszp",
+      "ans": "niax",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0188",
+      "predicted_tokens": [
+        110,
+        105,
+        97,
+        120,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F xoka wajl>xoka",
+      "ans": "wajl",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0027",
+      "predicted_tokens": [
+        119,
+        97,
+        106,
+        108,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F folv vezu>folv",
+      "ans": "vezu",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0345",
+      "predicted_tokens": [
+        118,
+        101,
+        122,
+        117,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F slmj yqnj>slmj",
+      "ans": "yqnj",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0081",
+      "predicted_tokens": [
+        121,
+        113,
+        110,
+        106,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F thys vfcs>thys",
+      "ans": "vfcs",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0099",
+      "predicted_tokens": [
+        118,
+        102,
+        99,
+        115,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F pbkc wmnl>pbkc",
+      "ans": "wmnl",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0170",
+      "predicted_tokens": [
+        119,
+        109,
+        110,
+        108,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F ebgr uydh>ebgr",
+      "ans": "uydh",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0063",
+      "predicted_tokens": [
+        117,
+        121,
+        100,
+        104,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F efgl cscb>efgl",
+      "ans": "cscb",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0327",
+      "predicted_tokens": [
+        99,
+        115,
+        99,
+        98,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F paeq vrra>paeq",
+      "ans": "vrra",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0292",
+      "predicted_tokens": [
+        118,
+        114,
+        114,
+        97,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F urbh hfmd>urbh",
+      "ans": "hfmd",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0271",
+      "predicted_tokens": [
+        104,
+        102,
+        109,
+        100,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F ggou wden>ggou",
+      "ans": "wden",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0267",
+      "predicted_tokens": [
+        119,
+        100,
+        101,
+        110,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F dsjg lenw>dsjg",
+      "ans": "lenw",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0100",
+      "predicted_tokens": [
+        108,
+        101,
+        110,
+        119,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F qnfq bczw>qnfq",
+      "ans": "bczw",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0105",
+      "predicted_tokens": [
+        98,
+        99,
+        122,
+        119,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F pyye bgab>pyye",
+      "ans": "bgab",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0041",
+      "predicted_tokens": [
+        98,
+        103,
+        97,
+        98,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F mgyn quni>mgyn",
+      "ans": "quni",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0161",
+      "predicted_tokens": [
+        113,
+        117,
+        110,
+        105,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F zave fpti>zave",
+      "ans": "fpti",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0217",
+      "predicted_tokens": [
+        102,
+        112,
+        116,
+        105,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F mxty hnyy>mxty",
+      "ans": "hnyy",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0324",
+      "predicted_tokens": [
+        104,
+        110,
+        121,
+        121,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F bxov ntxp>bxov",
+      "ans": "ntxp",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0144",
+      "predicted_tokens": [
+        110,
+        116,
+        120,
+        112,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F exrj qwpb>exrj",
+      "ans": "qwpb",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0241",
+      "predicted_tokens": [
+        113,
+        119,
+        112,
+        98,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F vncr ontt>vncr",
+      "ans": "ontt",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0037",
+      "predicted_tokens": [
+        111,
+        110,
+        116,
+        116,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F gzfn fmkt>gzfn",
+      "ans": "fmkt",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0060",
+      "predicted_tokens": [
+        102,
+        109,
+        107,
+        116,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F ltnl vhob>ltnl",
+      "ans": "vhob",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0002",
+      "predicted_tokens": [
+        118,
+        104,
+        111,
+        98,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F vhvg fmwh>vhvg",
+      "ans": "fmwh",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0140",
+      "predicted_tokens": [
+        102,
+        109,
+        119,
+        104,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F gyqd ttrj>gyqd",
+      "ans": "ttrj",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0248",
+      "predicted_tokens": [
+        116,
+        116,
+        114,
+        106,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F httu azwq>httu",
+      "ans": "azwq",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0036",
+      "predicted_tokens": [
+        97,
+        122,
+        119,
+        113,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F nlfj zpbw>nlfj",
+      "ans": "zpbw",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0173",
+      "predicted_tokens": [
+        122,
+        112,
+        98,
+        119,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F pekf kvjl>pekf",
+      "ans": "kvjl",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0058",
+      "predicted_tokens": [
+        107,
+        118,
+        106,
+        108,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F parq thpi>parq",
+      "ans": "thpi",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0095",
+      "predicted_tokens": [
+        116,
+        104,
+        112,
+        105,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F dqjp ryjw>dqjp",
+      "ans": "ryjw",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0110",
+      "predicted_tokens": [
+        114,
+        121,
+        106,
+        119,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F jipz edac>jipz",
+      "ans": "edac",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0159",
+      "predicted_tokens": [
+        101,
+        100,
+        97,
+        99,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F htko dlvz>htko",
+      "ans": "dlvz",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0351",
+      "predicted_tokens": [
+        100,
+        108,
+        118,
+        122,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F obzc qyie>obzc",
+      "ans": "qyie",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0310",
+      "predicted_tokens": [
+        113,
+        121,
+        105,
+        101,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F xipd lvyd>xipd",
+      "ans": "lvyd",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0102",
+      "predicted_tokens": [
+        108,
+        118,
+        121,
+        100,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F kxvw rena>kxvw",
+      "ans": "rena",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0210",
+      "predicted_tokens": [
+        114,
+        101,
+        110,
+        97,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F xesd fwud>xesd",
+      "ans": "fwud",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0249",
+      "predicted_tokens": [
+        102,
+        119,
+        117,
+        100,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F jmxs pczm>jmxs",
+      "ans": "pczm",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0215",
+      "predicted_tokens": [
+        112,
+        99,
+        122,
+        109,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F cmyd qkmy>cmyd",
+      "ans": "qkmy",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0216",
+      "predicted_tokens": [
+        113,
+        107,
+        109,
+        121,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F evbt mekx>evbt",
+      "ans": "mekx",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0023",
+      "predicted_tokens": [
+        109,
+        101,
+        107,
+        120,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F gidq lusz>gidq",
+      "ans": "lusz",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0254",
+      "predicted_tokens": [
+        108,
+        117,
+        115,
+        122,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F khce ktlr>khce",
+      "ans": "ktlr",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0285",
+      "predicted_tokens": [
+        107,
+        116,
+        108,
+        114,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F blcr tpph>blcr",
+      "ans": "tpph",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0312",
+      "predicted_tokens": [
+        116,
+        112,
+        112,
+        104,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F xhks ypyz>xhks",
+      "ans": "ypyz",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0332",
+      "predicted_tokens": [
+        121,
+        112,
+        121,
+        122,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F uymg pwyz>uymg",
+      "ans": "pwyz",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0050",
+      "predicted_tokens": [
+        112,
+        119,
+        121,
+        122,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F txnb nmkj>txnb",
+      "ans": "nmkj",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0077",
+      "predicted_tokens": [
+        110,
+        109,
+        107,
+        106,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F vpbx oiln>vpbx",
+      "ans": "oiln",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0203",
+      "predicted_tokens": [
+        111,
+        105,
+        108,
+        110,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F zgpv datu>zgpv",
+      "ans": "datu",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0067",
+      "predicted_tokens": [
+        100,
+        97,
+        116,
+        117,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F fvjb tfph>fvjb",
+      "ans": "tfph",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0072",
+      "predicted_tokens": [
+        116,
+        102,
+        112,
+        104,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F mhlu utvv>mhlu",
+      "ans": "utvv",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0308",
+      "predicted_tokens": [
+        117,
+        116,
+        118,
+        118,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F efal uugd>efal",
+      "ans": "uugd",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0314",
+      "predicted_tokens": [
+        117,
+        117,
+        103,
+        100,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F tpzi eehs>tpzi",
+      "ans": "eehs",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0128",
+      "predicted_tokens": [
+        101,
+        101,
+        104,
+        115,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F caxx eczc>caxx",
+      "ans": "eczc",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0008",
+      "predicted_tokens": [
+        101,
+        99,
+        122,
+        99,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F hdec idpu>hdec",
+      "ans": "idpu",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0162",
+      "predicted_tokens": [
+        105,
+        100,
+        112,
+        117,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F nzwq rwty>nzwq",
+      "ans": "rwty",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0054",
+      "predicted_tokens": [
+        114,
+        119,
+        116,
+        121,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F hffe eqjz>hffe",
+      "ans": "eqjz",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0352",
+      "predicted_tokens": [
+        101,
+        113,
+        106,
+        122,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F tamd posd>tamd",
+      "ans": "posd",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0059",
+      "predicted_tokens": [
+        112,
+        111,
+        115,
+        100,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F drkn rnjc>drkn",
+      "ans": "rnjc",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0293",
+      "predicted_tokens": [
+        114,
+        110,
+        106,
+        99,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F fivy evan>fivy",
+      "ans": "evan",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0198",
+      "predicted_tokens": [
+        101,
+        118,
+        97,
+        110,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F gvtp mgav>gvtp",
+      "ans": "mgav",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0257",
+      "predicted_tokens": [
+        109,
+        103,
+        97,
+        118,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F vkbb brtx>vkbb",
+      "ans": "brtx",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0259",
+      "predicted_tokens": [
+        98,
+        114,
+        116,
+        120,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F ueav lren>ueav",
+      "ans": "lren",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0137",
+      "predicted_tokens": [
+        108,
+        114,
+        101,
+        110,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F ybbu twzb>ybbu",
+      "ans": "twzb",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0085",
+      "predicted_tokens": [
+        116,
+        119,
+        122,
+        98,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F dqih kfpr>dqih",
+      "ans": "kfpr",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0033",
+      "predicted_tokens": [
+        107,
+        102,
+        112,
+        114,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F rmsu erah>rmsu",
+      "ans": "erah",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0192",
+      "predicted_tokens": [
+        101,
+        114,
+        97,
+        104,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F neue myta>neue",
+      "ans": "myta",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0012",
+      "predicted_tokens": [
+        109,
+        121,
+        116,
+        97,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F iugy qiro>iugy",
+      "ans": "qiro",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0251",
+      "predicted_tokens": [
+        113,
+        105,
+        114,
+        111,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F txgw ibsi>txgw",
+      "ans": "ibsi",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0205",
+      "predicted_tokens": [
+        105,
+        98,
+        115,
+        105,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F yguk csst>yguk",
+      "ans": "csst",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0240",
+      "predicted_tokens": [
+        99,
+        115,
+        115,
+        116,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F ryaa aejq>ryaa",
+      "ans": "aejq",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0115",
+      "predicted_tokens": [
+        97,
+        101,
+        106,
+        113,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F ynfu sfmo>ynfu",
+      "ans": "sfmo",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0348",
+      "predicted_tokens": [
+        115,
+        102,
+        109,
+        111,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F gpwk wrzv>gpwk",
+      "ans": "wrzv",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0305",
+      "predicted_tokens": [
+        119,
+        114,
+        122,
+        118,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F kgan apft>kgan",
+      "ans": "apft",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0200",
+      "predicted_tokens": [
+        97,
+        112,
+        102,
+        116,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F ritu krmr>ritu",
+      "ans": "krmr",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0232",
+      "predicted_tokens": [
+        107,
+        114,
+        109,
+        114,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F rbyw iugt>rbyw",
+      "ans": "iugt",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0227",
+      "predicted_tokens": [
+        105,
+        117,
+        103,
+        116,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F omya dter>omya",
+      "ans": "dter",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0090",
+      "predicted_tokens": [
+        100,
+        116,
+        101,
+        114,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F rxco qtkr>rxco",
+      "ans": "qtkr",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0357",
+      "predicted_tokens": [
+        113,
+        116,
+        107,
+        114,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F fnvy eqht>fnvy",
+      "ans": "eqht",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0336",
+      "predicted_tokens": [
+        101,
+        113,
+        104,
+        116,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F uskx rxwx>uskx",
+      "ans": "rxwx",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0274",
+      "predicted_tokens": [
+        114,
+        120,
+        119,
+        120,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "F hbqe xpqq>hbqe",
+      "ans": "xpqq",
+      "group": "F",
+      "kind": "supported_forward",
+      "id": "c3-0132",
+      "predicted_tokens": [
+        120,
+        112,
+        113,
+        113,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R rmwc rmwc>opav",
+      "ans": "opav",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0092",
+      "predicted_tokens": [
+        111,
+        112,
+        97,
+        118,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R slat slat>ckqh",
+      "ans": "ckqh",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0196",
+      "predicted_tokens": [
+        99,
+        107,
+        113,
+        104,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R nczb nczb>ayhk",
+      "ans": "ayhk",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0344",
+      "predicted_tokens": [
+        97,
+        121,
+        104,
+        107,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R ftvs ftvs>zglv",
+      "ans": "zglv",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0242",
+      "predicted_tokens": [
+        122,
+        103,
+        108,
+        118,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R fxex fxex>pqer",
+      "ans": "pqer",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0258",
+      "predicted_tokens": [
+        112,
+        113,
+        101,
+        114,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R ixek ixek>znfw",
+      "ans": "znfw",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0148",
+      "predicted_tokens": [
+        122,
+        110,
+        102,
+        119,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R qjrm qjrm>vgdd",
+      "ans": "vgdd",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0186",
+      "predicted_tokens": [
+        118,
+        103,
+        100,
+        100,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R kjhh kjhh>ygan",
+      "ans": "ygan",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0049",
+      "predicted_tokens": [
+        121,
+        103,
+        97,
+        110,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R egfa egfa>mdpa",
+      "ans": "mdpa",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0124",
+      "predicted_tokens": [
+        109,
+        100,
+        112,
+        97,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R axae axae>cmxj",
+      "ans": "cmxj",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0208",
+      "predicted_tokens": [
+        99,
+        109,
+        120,
+        106,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R abvm abvm>jnbt",
+      "ans": "jnbt",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0176",
+      "predicted_tokens": [
+        106,
+        110,
+        98,
+        116,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R nnva nnva>aday",
+      "ans": "aday",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0153",
+      "predicted_tokens": [
+        97,
+        100,
+        97,
+        121,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R uhbz uhbz>ylhv",
+      "ans": "ylhv",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0163",
+      "predicted_tokens": [
+        121,
+        108,
+        104,
+        118,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R hmhk hmhk>tidn",
+      "ans": "tidn",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0117",
+      "predicted_tokens": [
+        116,
+        105,
+        100,
+        110,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R bbmk bbmk>igqm",
+      "ans": "igqm",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0055",
+      "predicted_tokens": [
+        105,
+        103,
+        113,
+        109,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R usuq usuq>udrl",
+      "ans": "udrl",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0145",
+      "predicted_tokens": [
+        117,
+        100,
+        114,
+        108,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R krel krel>rhla",
+      "ans": "rhla",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0025",
+      "predicted_tokens": [
+        114,
+        104,
+        108,
+        97,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R tfpc tfpc>ekti",
+      "ans": "ekti",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0288",
+      "predicted_tokens": [
+        101,
+        107,
+        116,
+        105,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R vrsn vrsn>sjtq",
+      "ans": "sjtq",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0219",
+      "predicted_tokens": [
+        115,
+        106,
+        116,
+        113,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R gqkk gqkk>zojw",
+      "ans": "zojw",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0139",
+      "predicted_tokens": [
+        122,
+        111,
+        106,
+        119,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R jlnm jlnm>zujt",
+      "ans": "zujt",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0320",
+      "predicted_tokens": [
+        122,
+        117,
+        106,
+        116,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R hnhp hnhp>qtqf",
+      "ans": "qtqf",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0068",
+      "predicted_tokens": [
+        113,
+        116,
+        113,
+        102,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R hlik hlik>bxud",
+      "ans": "bxud",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0056",
+      "predicted_tokens": [
+        98,
+        120,
+        117,
+        100,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R zbmx zbmx>qwvq",
+      "ans": "qwvq",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0006",
+      "predicted_tokens": [
+        113,
+        119,
+        118,
+        113,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R guql guql>ejsj",
+      "ans": "ejsj",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0316",
+      "predicted_tokens": [
+        101,
+        106,
+        115,
+        106,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R biqg biqg>kgel",
+      "ans": "kgel",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0015",
+      "predicted_tokens": [
+        107,
+        103,
+        101,
+        108,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R rdpi rdpi>jnbi",
+      "ans": "jnbi",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0275",
+      "predicted_tokens": [
+        106,
+        110,
+        98,
+        105,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R ensf ensf>lmlr",
+      "ans": "lmlr",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0165",
+      "predicted_tokens": [
+        108,
+        109,
+        108,
+        114,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R ggbq ggbq>vuxs",
+      "ans": "vuxs",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0005",
+      "predicted_tokens": [
+        118,
+        117,
+        120,
+        115,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R nqlc nqlc>eutv",
+      "ans": "eutv",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0046",
+      "predicted_tokens": [
+        101,
+        117,
+        116,
+        118,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R sbbx sbbx>nnvs",
+      "ans": "nnvs",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0209",
+      "predicted_tokens": [
+        110,
+        110,
+        118,
+        115,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R hvwn hvwn>djsz",
+      "ans": "djsz",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0016",
+      "predicted_tokens": [
+        100,
+        106,
+        115,
+        122,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R lqby lqby>vqib",
+      "ans": "vqib",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0237",
+      "predicted_tokens": [
+        118,
+        113,
+        105,
+        98,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R qwjq qwjq>odjw",
+      "ans": "odjw",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0212",
+      "predicted_tokens": [
+        111,
+        100,
+        106,
+        119,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R klfg klfg>mlys",
+      "ans": "mlys",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0062",
+      "predicted_tokens": [
+        109,
+        108,
+        121,
+        115,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R kmhq kmhq>rjxq",
+      "ans": "rjxq",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0154",
+      "predicted_tokens": [
+        114,
+        106,
+        120,
+        113,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R gfpd gfpd>ijqh",
+      "ans": "ijqh",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0135",
+      "predicted_tokens": [
+        105,
+        106,
+        113,
+        104,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R didn didn>pukf",
+      "ans": "pukf",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0087",
+      "predicted_tokens": [
+        112,
+        117,
+        107,
+        102,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R ozsg ozsg>dexg",
+      "ans": "dexg",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0260",
+      "predicted_tokens": [
+        100,
+        101,
+        120,
+        103,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R oyam oyam>yysl",
+      "ans": "yysl",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0255",
+      "predicted_tokens": [
+        121,
+        121,
+        115,
+        108,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R qetp qetp>huuc",
+      "ans": "huuc",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0264",
+      "predicted_tokens": [
+        104,
+        117,
+        117,
+        99,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R feld feld>oyci",
+      "ans": "oyci",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0083",
+      "predicted_tokens": [
+        111,
+        121,
+        99,
+        105,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R wteq wteq>qrnf",
+      "ans": "qrnf",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0350",
+      "predicted_tokens": [
+        113,
+        114,
+        110,
+        102,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R oxki oxki>rvyo",
+      "ans": "rvyo",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0103",
+      "predicted_tokens": [
+        114,
+        118,
+        121,
+        111,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R zgrc zgrc>cqzd",
+      "ans": "cqzd",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0239",
+      "predicted_tokens": [
+        99,
+        113,
+        122,
+        100,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R cabz cabz>bmmt",
+      "ans": "bmmt",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0093",
+      "predicted_tokens": [
+        98,
+        109,
+        109,
+        116,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R ckde ckde>wonh",
+      "ans": "wonh",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0011",
+      "predicted_tokens": [
+        119,
+        111,
+        110,
+        104,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R osce osce>rfei",
+      "ans": "rfei",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0029",
+      "predicted_tokens": [
+        114,
+        102,
+        101,
+        105,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R esqy esqy>ymca",
+      "ans": "ymca",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0078",
+      "predicted_tokens": [
+        121,
+        109,
+        99,
+        97,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R xsnu xsnu>wlsn",
+      "ans": "wlsn",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0108",
+      "predicted_tokens": [
+        119,
+        108,
+        115,
+        110,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R rmjp rmjp>ufye",
+      "ans": "ufye",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0070",
+      "predicted_tokens": [
+        117,
+        102,
+        121,
+        101,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R rcyz rcyz>dmvs",
+      "ans": "dmvs",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0190",
+      "predicted_tokens": [
+        100,
+        109,
+        118,
+        115,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R ooau ooau>agid",
+      "ans": "agid",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0189",
+      "predicted_tokens": [
+        97,
+        103,
+        105,
+        100,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R ytec ytec>ysye",
+      "ans": "ysye",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0211",
+      "predicted_tokens": [
+        121,
+        115,
+        121,
+        101,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R lmyo lmyo>fppe",
+      "ans": "fppe",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0223",
+      "predicted_tokens": [
+        102,
+        112,
+        112,
+        101,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R djtt djtt>cvhy",
+      "ans": "cvhy",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0214",
+      "predicted_tokens": [
+        99,
+        118,
+        104,
+        121,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R rrkk rrkk>tsov",
+      "ans": "tsov",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0299",
+      "predicted_tokens": [
+        116,
+        115,
+        111,
+        118,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R pjvt pjvt>fzwi",
+      "ans": "fzwi",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0142",
+      "predicted_tokens": [
+        102,
+        122,
+        119,
+        105,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R ozkx ozkx>gyou",
+      "ans": "gyou",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0358",
+      "predicted_tokens": [
+        103,
+        121,
+        111,
+        117,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R hnqb hnqb>kdiu",
+      "ans": "kdiu",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0278",
+      "predicted_tokens": [
+        107,
+        100,
+        105,
+        117,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R gmwv gmwv>iizz",
+      "ans": "iizz",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0228",
+      "predicted_tokens": [
+        105,
+        105,
+        122,
+        122,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R tesb tesb>fjva",
+      "ans": "fjva",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0207",
+      "predicted_tokens": [
+        102,
+        106,
+        118,
+        97,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R sbwf sbwf>feyz",
+      "ans": "feyz",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0010",
+      "predicted_tokens": [
+        102,
+        101,
+        121,
+        122,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R wgik wgik>wwsp",
+      "ans": "wwsp",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0146",
+      "predicted_tokens": [
+        119,
+        119,
+        115,
+        112,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R iwma iwma>mhqv",
+      "ans": "mhqv",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0118",
+      "predicted_tokens": [
+        109,
+        104,
+        113,
+        118,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R gvlv gvlv>ojnx",
+      "ans": "ojnx",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0201",
+      "predicted_tokens": [
+        111,
+        106,
+        110,
+        120,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R pqxj pqxj>udmg",
+      "ans": "udmg",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0079",
+      "predicted_tokens": [
+        117,
+        100,
+        109,
+        103,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R qavn qavn>amiy",
+      "ans": "amiy",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0323",
+      "predicted_tokens": [
+        97,
+        109,
+        105,
+        121,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R peof peof>azln",
+      "ans": "azln",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0064",
+      "predicted_tokens": [
+        97,
+        122,
+        108,
+        110,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R uyhn uyhn>pqdk",
+      "ans": "pqdk",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0277",
+      "predicted_tokens": [
+        112,
+        113,
+        100,
+        107,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R wbaa wbaa>pvmd",
+      "ans": "pvmd",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0042",
+      "predicted_tokens": [
+        112,
+        118,
+        109,
+        100,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R gwzc gwzc>yiyn",
+      "ans": "yiyn",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0355",
+      "predicted_tokens": [
+        121,
+        105,
+        121,
+        110,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R kznx kznx>wery",
+      "ans": "wery",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0043",
+      "predicted_tokens": [
+        119,
+        101,
+        114,
+        121,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R tvbg tvbg>ffdm",
+      "ans": "ffdm",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0053",
+      "predicted_tokens": [
+        102,
+        102,
+        100,
+        109,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R mloc mloc>pciy",
+      "ans": "pciy",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0182",
+      "predicted_tokens": [
+        112,
+        99,
+        105,
+        121,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R fdfl fdfl>hkkb",
+      "ans": "hkkb",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0180",
+      "predicted_tokens": [
+        104,
+        107,
+        107,
+        98,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R ozge ozge>dddy",
+      "ans": "dddy",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0126",
+      "predicted_tokens": [
+        100,
+        100,
+        100,
+        121,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R gjot gjot>pupv",
+      "ans": "pupv",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0236",
+      "predicted_tokens": [
+        112,
+        117,
+        112,
+        118,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R wwid wwid>zqlc",
+      "ans": "zqlc",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0114",
+      "predicted_tokens": [
+        122,
+        113,
+        108,
+        99,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R ipuh ipuh>nyfu",
+      "ans": "nyfu",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0230",
+      "predicted_tokens": [
+        110,
+        121,
+        102,
+        117,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R ehhb ehhb>xqln",
+      "ans": "xqln",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0185",
+      "predicted_tokens": [
+        120,
+        113,
+        108,
+        110,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R yujb yujb>twfr",
+      "ans": "twfr",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0243",
+      "predicted_tokens": [
+        116,
+        119,
+        102,
+        114,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R rgpe rgpe>uiud",
+      "ans": "uiud",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0112",
+      "predicted_tokens": [
+        117,
+        105,
+        117,
+        100,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R pniv pniv>cilo",
+      "ans": "cilo",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0039",
+      "predicted_tokens": [
+        99,
+        105,
+        108,
+        111,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R ovzf ovzf>yxfs",
+      "ans": "yxfs",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0125",
+      "predicted_tokens": [
+        121,
+        120,
+        102,
+        115,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R onlb onlb>ydzv",
+      "ans": "ydzv",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0172",
+      "predicted_tokens": [
+        121,
+        100,
+        122,
+        118,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R ygcp ygcp>itus",
+      "ans": "itus",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0321",
+      "predicted_tokens": [
+        105,
+        116,
+        117,
+        115,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R mszn mszn>lsbg",
+      "ans": "lsbg",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0130",
+      "predicted_tokens": [
+        108,
+        115,
+        98,
+        103,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R bxid bxid>nvqr",
+      "ans": "nvqr",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0235",
+      "predicted_tokens": [
+        110,
+        118,
+        113,
+        114,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R cezi cezi>itss",
+      "ans": "itss",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0022",
+      "predicted_tokens": [
+        105,
+        116,
+        115,
+        115,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R ccsa ccsa>gqlj",
+      "ans": "gqlj",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0222",
+      "predicted_tokens": [
+        103,
+        113,
+        108,
+        106,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R anks anks>zokw",
+      "ans": "zokw",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0224",
+      "predicted_tokens": [
+        122,
+        111,
+        107,
+        119,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R mmkw mmkw>zptx",
+      "ans": "zptx",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0245",
+      "predicted_tokens": [
+        122,
+        112,
+        116,
+        120,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R xvtu xvtu>jrji",
+      "ans": "jrji",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0306",
+      "predicted_tokens": [
+        106,
+        114,
+        106,
+        105,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R rosh rosh>oged",
+      "ans": "oged",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0084",
+      "predicted_tokens": [
+        111,
+        103,
+        101,
+        100,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R mjhg mjhg>rudo",
+      "ans": "rudo",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0204",
+      "predicted_tokens": [
+        114,
+        117,
+        100,
+        111,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R jmei jmei>ezje",
+      "ans": "ezje",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0048",
+      "predicted_tokens": [
+        101,
+        122,
+        106,
+        101,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R thng thng>azsq",
+      "ans": "azsq",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0109",
+      "predicted_tokens": [
+        97,
+        122,
+        115,
+        113,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R skra skra>lqsr",
+      "ans": "lqsr",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0169",
+      "predicted_tokens": [
+        108,
+        113,
+        115,
+        114,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R xhba xhba>kpwx",
+      "ans": "kpwx",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0281",
+      "predicted_tokens": [
+        107,
+        112,
+        119,
+        120,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R uyjv uyjv>efwo",
+      "ans": "efwo",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0307",
+      "predicted_tokens": [
+        101,
+        102,
+        119,
+        111,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R wcvp wcvp>tems",
+      "ans": "tems",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0338",
+      "predicted_tokens": [
+        116,
+        101,
+        109,
+        115,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R ktqd ktqd>uuju",
+      "ans": "uuju",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0141",
+      "predicted_tokens": [
+        117,
+        117,
+        106,
+        117,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R vwrm vwrm>vfuj",
+      "ans": "vfuj",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0238",
+      "predicted_tokens": [
+        118,
+        102,
+        117,
+        106,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R bbdu bbdu>jovw",
+      "ans": "jovw",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0149",
+      "predicted_tokens": [
+        106,
+        111,
+        118,
+        119,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R gxwt gxwt>auqi",
+      "ans": "auqi",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0133",
+      "predicted_tokens": [
+        97,
+        117,
+        113,
+        105,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R mhbk mhbk>laxv",
+      "ans": "laxv",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0322",
+      "predicted_tokens": [
+        108,
+        97,
+        120,
+        118,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R tqtz tqtz>hzin",
+      "ans": "hzin",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0047",
+      "predicted_tokens": [
+        104,
+        122,
+        105,
+        110,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R utps utps>nuhk",
+      "ans": "nuhk",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0295",
+      "predicted_tokens": [
+        110,
+        117,
+        104,
+        107,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R xtyw xtyw>axya",
+      "ans": "axya",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0276",
+      "predicted_tokens": [
+        97,
+        120,
+        121,
+        97,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R lawe lawe>tbwy",
+      "ans": "tbwy",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0038",
+      "predicted_tokens": [
+        116,
+        98,
+        119,
+        121,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R utvq utvq>zsgi",
+      "ans": "zsgi",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0017",
+      "predicted_tokens": [
+        122,
+        115,
+        103,
+        105,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R rkfa rkfa>zzph",
+      "ans": "zzph",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0001",
+      "predicted_tokens": [
+        122,
+        122,
+        112,
+        104,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R ochw ochw>troa",
+      "ans": "troa",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0231",
+      "predicted_tokens": [
+        116,
+        114,
+        111,
+        97,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R dbcd dbcd>hddo",
+      "ans": "hddo",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0286",
+      "predicted_tokens": [
+        104,
+        100,
+        100,
+        111,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R xwct xwct>wspn",
+      "ans": "wspn",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0213",
+      "predicted_tokens": [
+        119,
+        115,
+        112,
+        110,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R dtav dtav>cpxr",
+      "ans": "cpxr",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0061",
+      "predicted_tokens": [
+        99,
+        112,
+        120,
+        114,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R wvti wvti>hbot",
+      "ans": "hbot",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0303",
+      "predicted_tokens": [
+        104,
+        98,
+        111,
+        116,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R jowi jowi>tibn",
+      "ans": "tibn",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0301",
+      "predicted_tokens": [
+        116,
+        105,
+        98,
+        110,
+        0
+      ],
+      "correct": true
+    },
+    {
+      "ctx": "R grrv grrv>pmjb",
+      "ans": "pmjb",
+      "group": "R",
+      "kind": "supported_reverse",
+      "id": "c3-0181",
+      "predicted_tokens": [
+        112,
+        109,
+        106,
+        98,
+        0
+      ],
+      "correct": true
+    }
+  ]
+}

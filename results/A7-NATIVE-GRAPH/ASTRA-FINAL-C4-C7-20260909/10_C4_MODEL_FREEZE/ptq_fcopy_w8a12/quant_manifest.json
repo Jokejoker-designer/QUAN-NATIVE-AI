@@ -1,0 +1,246 @@
+{
+  "schema": "c4-w8-a12-lut-v1",
+  "checkpoint_sha256": "a462dd69d80ea5a2bf07d8d01359d0c01219919643e50204425ca4032320c4ed",
+  "activation_bits": 12,
+  "activation_storage_bits": 16,
+  "weight_scales": {
+    "We": 0.013431295635193352,
+    "Wq": 0.015820861801387757,
+    "Wk": 0.01724674758010023,
+    "Wv": 0.023349155591228816,
+    "W1": 0.007574568113942784,
+    "W2": 0.0070409352385152986,
+    "by": 2.564305435854339e-09,
+    "Pe": 0.014435981202313281,
+    "WqR": 0.012323310056070643,
+    "WkR": 0.011383918326670728,
+    "WvR": 0.0171024161060964
+  },
+  "activation_scales": {
+    "x": 0.0015508594618346787,
+    "q": 0.008993639494451493,
+    "k": 0.007300657079433719,
+    "v": 0.005794614739406933,
+    "h": 0.004940102521072504,
+    "y": 0.006340116640141795,
+    "t": 0.011908659492835648,
+    "z": 0.02577228897356968,
+    "logits": 0.12676243468840606
+  },
+  "requant": {
+    "emb_we": {
+      "multiplier": 581199660,
+      "right_shift": 26
+    },
+    "emb_pe": {
+      "multiplier": 624674462,
+      "right_shift": 26
+    },
+    "q": {
+      "multiplier": 749906195,
+      "right_shift": 38
+    },
+    "k": {
+      "multiplier": 1007065079,
+      "right_shift": 38
+    },
+    "v": {
+      "multiplier": 858872893,
+      "right_shift": 37
+    },
+    "qR": {
+      "multiplier": 584122829,
+      "right_shift": 38
+    },
+    "kR": {
+      "multiplier": 664725135,
+      "right_shift": 38
+    },
+    "vR": {
+      "multiplier": 629093482,
+      "right_shift": 37
+    },
+    "dots": {
+      "multiplier": 816774623,
+      "right_shift": 38
+    },
+    "h": {
+      "multiplier": 629755158,
+      "right_shift": 44
+    },
+    "yx": {
+      "multiplier": 1050594342,
+      "right_shift": 32
+    },
+    "yh": {
+      "multiplier": 836639922,
+      "right_shift": 30
+    },
+    "t": {
+      "multiplier": 554245384,
+      "right_shift": 37
+    },
+    "zy": {
+      "multiplier": 1056584211,
+      "right_shift": 32
+    },
+    "zt": {
+      "multiplier": 894293492,
+      "right_shift": 38
+    },
+    "logits": {
+      "multiplier": 750620055,
+      "right_shift": 38
+    },
+    "bias": {
+      "multiplier": 728834534,
+      "right_shift": 55
+    }
+  },
+  "rounding": "symmetric nearest, ties away from zero",
+  "mac_bits": 32,
+  "requant_product_bits": 64,
+  "softmax": {
+    "input_scale": "1/256",
+    "negative_clip": 16,
+    "lut_q": 32767,
+    "normalization": "integer rounded divide, residual on argmax"
+  },
+  "context_bytes": 16,
+  "max_tokens": 6,
+  "eos": 0,
+  "opcode_bank": "R iff first context byte 82 and R bank exists",
+  "layout": [
+    {
+      "name": "We",
+      "shape": [
+        256,
+        32
+      ],
+      "bits": 8,
+      "order": "C",
+      "hex": "We.hex",
+      "sha256": "ea26f17b353b3e876e592d5818f14b9448e5df099e2e1bf4b5d6e00a6b48742d"
+    },
+    {
+      "name": "Wq",
+      "shape": [
+        32,
+        32
+      ],
+      "bits": 8,
+      "order": "C",
+      "hex": "Wq.hex",
+      "sha256": "2677fca143e17a9307309716470eac627d83f60d712354fd5f2bcf07a5712af5"
+    },
+    {
+      "name": "Wk",
+      "shape": [
+        32,
+        32
+      ],
+      "bits": 8,
+      "order": "C",
+      "hex": "Wk.hex",
+      "sha256": "f81cf99575380238b8b03a64df5c4fbb37bfb3148d5ef0c0388ce33efcd8b7a8"
+    },
+    {
+      "name": "Wv",
+      "shape": [
+        32,
+        32
+      ],
+      "bits": 8,
+      "order": "C",
+      "hex": "Wv.hex",
+      "sha256": "7f6f411b916efa2163f7000343530b487d747b32ecee5b659bef3dd667666ec3"
+    },
+    {
+      "name": "W1",
+      "shape": [
+        64,
+        32
+      ],
+      "bits": 8,
+      "order": "C",
+      "hex": "W1.hex",
+      "sha256": "4d876f54cde92cc1524dbe909b853aa7dcb6ce775050601a2109660b53b9b981"
+    },
+    {
+      "name": "W2",
+      "shape": [
+        32,
+        64
+      ],
+      "bits": 8,
+      "order": "C",
+      "hex": "W2.hex",
+      "sha256": "503091bb1189a26feeb35a894157a3834134c4f1058e736419562d93b01a81d0"
+    },
+    {
+      "name": "by",
+      "shape": [
+        256
+      ],
+      "bits": 32,
+      "order": "C",
+      "hex": "by.hex",
+      "sha256": "6b3a51ac3b64a79ad5793109464389fe957a2788365c2b952d8ca50ed971c546"
+    },
+    {
+      "name": "Pe",
+      "shape": [
+        24,
+        32
+      ],
+      "bits": 8,
+      "order": "C",
+      "hex": "Pe.hex",
+      "sha256": "3d691593a2e2b44b114e1e90508f91adcd31d4c5fefe23cabc5733b0eeb650f5"
+    },
+    {
+      "name": "WqR",
+      "shape": [
+        32,
+        32
+      ],
+      "bits": 8,
+      "order": "C",
+      "hex": "WqR.hex",
+      "sha256": "65fe8f57cab98ba38896a1d27a4b36ea6db5ea2d9b81b58749deab9531c7c13b"
+    },
+    {
+      "name": "WkR",
+      "shape": [
+        32,
+        32
+      ],
+      "bits": 8,
+      "order": "C",
+      "hex": "WkR.hex",
+      "sha256": "2c5f2d96f79d60201a7e5da6d4be64351c82670f19cd0b62312fb101a526f7e0"
+    },
+    {
+      "name": "WvR",
+      "shape": [
+        32,
+        32
+      ],
+      "bits": 8,
+      "order": "C",
+      "hex": "WvR.hex",
+      "sha256": "bb1ea8733dd96f761cef088f992f20b6f442bee6b0fb74481185b5050adcac7f"
+    },
+    {
+      "name": "softmax_exp_q15",
+      "shape": [
+        4097
+      ],
+      "bits": 16,
+      "order": "C",
+      "hex": "softmax_exp_q15.hex",
+      "sha256": "fcbf293dacd567e1be2c8a50846b9c214f48d6fb6e60462ca19543142da4a683"
+    }
+  ],
+  "warning": "Export/emulator only, not RTL bit-exact until differential replay passes. Quantization metadata is required with hex files."
+}

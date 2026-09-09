@@ -1,0 +1,583 @@
+D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH
+grok-orch/astra-native-v1-00
+5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1
+ M results/A7-NATIVE-GRAPH/STATUS/PROGRESS_20260822.md
+ M rtl/native_graph/control/a7ng_gate14_crc.svh
+ M rtl/native_graph/memory/a7ng_sparse_dir_axi.sv
+ M vivado/ip/mig_7series_0/mig_7series_0/docs/phy_only_support_readme.txt
+ M vivado/ip/mig_7series_0/mig_7series_0/example_design/par/example_top.xdc
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0_ooc.xdc
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_addr_decode.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_read.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_reg.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_reg_bank.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_top.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_write.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_ar_channel.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_aw_channel.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_b_channel.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_arbiter.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_fsm.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_translator.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_fifo.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_incr_cmd.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_r_channel.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_simple_fifo.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_w_channel.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_wr_cmd_fsm.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_wrap_cmd.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_a_upsizer.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_axi_register_slice.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_axi_upsizer.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_axic_register_slice.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_and.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_latch_and.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_latch_or.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_or.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_command_fifo.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator_sel.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator_sel_static.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_r_upsizer.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_w_upsizer.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_clk_ibuf.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_iodelay_ctrl.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_tempmon.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_mux.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_select.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_common.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_compare.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_mach.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_col_mach.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_mc.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_common.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_mach.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_buf.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_dec_fix.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_gen.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_merge_enc.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/ecc/mig_7series_v4_2_fi_xor.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/ip_top/mig_7series_v4_2_mem_intfc.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/ip_top/mig_7series_v4_2_memc_ui_top_axi.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_if_post_fifo.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_cntlr.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_data.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_edge.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_lim.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_mux.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_po_cntlr.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_samp.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_oclkdelay_cal.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_prbs_rdlvl.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl_off_delay.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_skip_calib_tap.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_poc_cc.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_poc_edge_store.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_poc_meta.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_poc_pd.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_poc_tap_base.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_poc_top.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_cmd.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_top.v
+ M vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v
+?? .agents/handoff/ANTIGRAVITY_START_HERE.md
+?? .agents/handoff/ASTRA-06-R2-EVICT-HIGHID-01.md
+?? .agents/handoff/ASTRA-06-R3-MULTI-SLOT-01.md
+?? .agents/handoff/ASTRA-06-R4-SESS-REUSE-01.md
+?? .agents/handoff/ASTRA-06-WARM-PERSIST-01.md
+?? .agents/handoff/ASTRA-07-SCALE-MID-01.md
+?? .agents/handoff/ASTRA-07-SCALE-NARROW-01.md
+?? .agents/handoff/ASTRA-09-INTEGRATED-PATH-01.md
+?? .agents/handoff/ASTRA-09-R2-CAND-OVF-01.md
+?? .agents/handoff/ASTRA-09-R3-UART-XSIM-01.md
+?? .agents/handoff/ASTRA-09-R4-UART-ISO-01.md
+?? .agents/handoff/ASTRA-09-R5-UART-ISO-INNER-01.md
+?? .agents/handoff/ASTRA-09-R6-UART-ISO-PUBLIC-01.md
+?? .agents/handoff/ASTRA-09-R7-UART-QUERY-REW-01.md
+?? .agents/handoff/ASTRA-10-RESOURCE-BOUND-01.md
+?? .agents/handoff/ASTRA-11-A09-IMPL-ROUTE-01.md
+?? .agents/handoff/ASTRA-11-A09R2-IMPL-ROUTE-01.md
+?? .agents/handoff/ASTRA-11-A09R3-UART-IMPL-ROUTE-01.md
+?? .agents/handoff/ASTRA-11-A09R3-UART-IOBFF-01.md
+?? .agents/handoff/ASTRA-11-A09R3-UART-IOBFF-HOLD-01.md
+?? .agents/handoff/ASTRA-11-A09R3-UART-IODELAY-01.md
+?? .agents/handoff/ASTRA-11-A09R7-BTN-IDELAY-01.md
+?? .agents/handoff/ASTRA-11-A09R7-BTN-IO-01.md
+?? .agents/handoff/ASTRA-11-A09R7-LED-IO-01.md
+?? .agents/handoff/ASTRA-11-A09R7-SW-IO-01.md
+?? .agents/handoff/ASTRA-11-A09R7-UART-IMPL-ROUTE-01.md
+?? .agents/handoff/ASTRA-12-PREPROGRAM-PACK-01.md
+?? .agents/handoff/ASTRA-12-R2-TOP-CANDIDATES-01.md
+?? .agents/handoff/ASTRA-12-R3-UART-WRAP-CANDIDATES-01.md
+?? .agents/handoff/ASTRA-12-R4-R7-UART-CANDIDATES-01.md
+?? .agents/handoff/ASTRA-12-R5-FREEZE-BRIEF-01.md
+?? .agents/handoff/ASTRA-12-R6-LED-CANDIDATES-01.md
+?? .agents/handoff/ASTRA-12-R7-BTN-CANDIDATES-01.md
+?? .agents/handoff/ASTRA-AUDITOR-SILICON-LADDER-01.md
+?? .agents/handoff/ASTRA-C0-LAW-FREEZE-01.md
+?? .agents/handoff/ASTRA-C1-AXI-BEAT-ACCOUNTING-01.md
+?? .agents/handoff/ASTRA-C1-CONTEXT-02.md
+?? .agents/handoff/ASTRA-C1-DIR-FULL16-01.md
+?? .agents/handoff/ASTRA-C1-KEY-INTERSECT-01.md
+?? .agents/handoff/ASTRA-C1-KEY-RELBIND-01.md
+?? .agents/handoff/ASTRA-C1-N256-R2-ROLE-RETRIEVAL-01.md
+?? .agents/handoff/ASTRA-C1-N256-R3-DISTRACTOR-01.md
+?? .agents/handoff/ASTRA-C1-N256-ROLE-RETRIEVAL-01.md
+?? .agents/handoff/ASTRA-C1-N4096-INTERSECT-01.md
+?? .agents/handoff/ASTRA-C1-N4096-STREAM-02.md
+?? .agents/handoff/ASTRA-C1-N65536-SCALE-01.md
+?? .agents/handoff/ASTRA-C1-PAGE-SKIP-01.md
+?? .agents/handoff/ASTRA-C1-SEMANTIC-16K-01.md
+?? .agents/handoff/ASTRA-C1-SEMANTIC-800K-01.md
+?? .agents/handoff/ASTRA-C1-SEMANTIC-HELDOUT-01.md
+?? .agents/handoff/ASTRA-C1-SEMANTIC-NL-01.md
+?? .agents/handoff/ASTRA-C1-SEMANTIC-UNSEEN-SRO-01.md
+?? .agents/handoff/ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-01.md
+?? .agents/handoff/ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-R2-01.md
+?? .agents/handoff/ASTRA-C1-STREAM-INTERSECT-02.md
+?? .agents/handoff/ASTRA-C1-SYNONYM-LAW-01.md
+?? .agents/handoff/ASTRA-C2-PERSIST-COMMIT-01.md
+?? .agents/handoff/ASTRA-C2-PERSIST-DDR-STALL-01.md
+?? .agents/handoff/ASTRA-C2-PERSIST-MIG-01.md
+?? .agents/handoff/ASTRA-C2-PERSIST-MULTI-SLOT-01.md
+?? .agents/handoff/ASTRA-C2-XSIM-CLOSE-01.md
+?? .agents/handoff/ASTRA-F2R-R3-SEMANTIC-GUARD-01.md
+?? .agents/handoff/ASTRA-F2R-R4-AXI-TIMEOUT-DRAIN-01.md
+?? .agents/handoff/ASTRA-F2R-R5-TXN-WRAP-RESET-01.md
+?? .agents/handoff/ASTRA-F2R-SHARED-RANK-PENDING-01.md
+?? .agents/handoff/ASTRA-F3-R2-INDEPENDENT-WORLDS-01.md
+?? .agents/handoff/ASTRA-F3-R3-SAMPLED-WORLDS-01.md
+?? .agents/handoff/ASTRA-F3-R4-DISTINCT-HOLD-PHI-01.md
+?? .agents/handoff/ASTRA-F3-SHARED-TRANSFER-01.md
+?? docs/ASTRA/
+?? results/A7-NATIVE-GRAPH/ASTRA-00-BASELINE-AUTHORITY-FREEZE/
+?? results/A7-NATIVE-GRAPH/ASTRA-01-U4-REAL-AXI-SPARSE-00/
+?? results/A7-NATIVE-GRAPH/ASTRA-01-U4-REAL-AXI-SPARSE-INTEGRATION/
+?? results/A7-NATIVE-GRAPH/ASTRA-02-SCALE-SELECTIVITY-00/
+?? results/A7-NATIVE-GRAPH/ASTRA-02-U5-SCALE-SELECTIVITY-800K/
+?? results/A7-NATIVE-GRAPH/ASTRA-03-ROLE-AWARE-QUERY/
+?? results/A7-NATIVE-GRAPH/ASTRA-04-RELATION-ENGINE-2HOP/
+?? results/A7-NATIVE-GRAPH/ASTRA-05-CAUSAL-PROOF-PERTURBATION/
+?? results/A7-NATIVE-GRAPH/ASTRA-06-R2-EVICT-HIGHID-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-06-R3-MULTI-SLOT-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-06-R4-SESS-REUSE-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-06-SHARED-REWARD-LEARNER/
+?? results/A7-NATIVE-GRAPH/ASTRA-06-WARM-PERSIST-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-07-HELD-OUT-TRANSFER/
+?? results/A7-NATIVE-GRAPH/ASTRA-07-SCALE-MID-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-07-SCALE-NARROW-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-08-LM06-VOCAB-CHECKPOINT-AUDIT/
+?? results/A7-NATIVE-GRAPH/ASTRA-09-INTEGRATED-PATH-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-09-R2-CAND-OVF-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-09-R3-UART-XSIM-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-09-R4-UART-ISO-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-09-R5-UART-ISO-INNER-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-09-R6-UART-ISO-PUBLIC-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-09-R7-UART-QUERY-REW-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-09-SPARSE-GLUE/
+?? results/A7-NATIVE-GRAPH/ASTRA-09-UNIFIED-PIPELINE/
+?? results/A7-NATIVE-GRAPH/ASTRA-10-OOC-RESOURCE/
+?? results/A7-NATIVE-GRAPH/ASTRA-10-RESOURCE-BOUND-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-10B-OOC-ASTRA09-PIPE/
+?? results/A7-NATIVE-GRAPH/ASTRA-11-A09-IMPL-ROUTE-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-11-A09R2-IMPL-ROUTE-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-11-A09R3-UART-IMPL-ROUTE-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-11-A09R3-UART-IOBFF-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-11-A09R3-UART-IOBFF-HOLD-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-11-A09R3-UART-IODELAY-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-11-A09R7-BTN-IDELAY-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-11-A09R7-BTN-IO-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-11-A09R7-LED-IO-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-11-A09R7-SW-IO-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-11-A09R7-UART-IMPL-ROUTE-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-11-A09R8-SILICON-UART-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-11-A09R8-UART-FREEZE-BIT-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-11-FULLCHIP-COFIT/
+?? results/A7-NATIVE-GRAPH/ASTRA-11-RTP-SOC/
+?? results/A7-NATIVE-GRAPH/ASTRA-11-SOC-WRAP/
+?? results/A7-NATIVE-GRAPH/ASTRA-11-TIMING-FIX/
+?? results/A7-NATIVE-GRAPH/ASTRA-12-FINAL-SOURCE-FREEZE/
+?? results/A7-NATIVE-GRAPH/ASTRA-12-PREPROGRAM-PACK-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-12-R2-TOP-CANDIDATES-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-12-R3-UART-WRAP-CANDIDATES-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-12-R4-R7-UART-CANDIDATES-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-12-R5-FREEZE-BRIEF-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-12-R6-LED-CANDIDATES-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-12-R7-BTN-CANDIDATES-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-12B-POST-GLUE-FREEZE/
+?? results/A7-NATIVE-GRAPH/ASTRA-C0-CLOSE-CONTRACT-RECONCILE-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C0-LAW-FREEZE-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-AXI-BEAT-ACCOUNTING-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-C3-CANONICAL-IMAGE-TRANSFER-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-CAND-CAP-SWEEP-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-CONTEXT-02/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-DIR-FULL16-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-IMAGE-CONTRACT-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-KEY-INTERSECT-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-KEY-RELBIND-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-N256-R2-ROLE-RETRIEVAL-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-N256-R3-DISTRACTOR-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-N256-ROLE-RETRIEVAL-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-N262144-SCALE-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-N4096-INTERSECT-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-N4096-STREAM-02/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-N65536-SCALE-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-N800000-SCALE-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-PAGE-SKIP-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-16K-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-800K-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-HELDOUT-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-NL-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-UNSEEN-SRO-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-SEMANTIC-UNSEEN-SRO-16K-R2-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-STREAM-INTERSECT-02/
+?? results/A7-NATIVE-GRAPH/ASTRA-C1-SYNONYM-LAW-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C2-PERSIST-COMMIT-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C2-PERSIST-DDR-STALL-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C2-PERSIST-MIG-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C2-PERSIST-MULTI-SLOT-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C3-HELD-OUT-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C3-HELD-OUT-800K-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C3-HELD-OUT-800K-2HOP-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C3-HELD-OUT-800K-2HOP-CONFLICT-RELOAD-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C3-HELD-OUT-800K-2HOP-CONFLICT-RTL-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C3-HELD-OUT-800K-2HOP-MUT-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C3-HELD-OUT-800K-RELOAD-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C3-HELD-OUT-MIG-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C3-HELD-OUT-MIG-02/
+?? results/A7-NATIVE-GRAPH/ASTRA-C3-HELD-OUT-RELOAD-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C3-PEND-LOAD-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C4-BIAS-LOAD-DEAD-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C4-COND-RNN-BYTE256-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C4-COND-RNN-H16-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C4-COND-RNN-LANG-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C4-COND-RNN-ONLINE-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C4-CONDITIONAL-GEN-FEASIBILITY-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-802K-GROUNDED-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-BYTE256-ARLANG-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-BYTE256-C3PROOF-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-BYTE256-CONTRACT-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-BYTE256-CTXCOPY-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-BYTE256-DICT-HELDOUT-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-BYTE256-QPTEXT-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-GROUNDED-GEN-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-GROUNDED-GEN-HELDOUT-20-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-BPTT-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-BYTE256-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-COPYCORPUS-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-FLOATTFM-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C4-LM06-RED-LANG-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C4-SLOT-COPY-CAPACITY-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C5-AUTO-REWARD-REGRESS-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C5-AXI-ERRORS-04B/
+?? results/A7-NATIVE-GRAPH/ASTRA-C5-CONFLICT-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C5-CONFLICT-MIG-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C5-DDR-ARB-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C5-DIRECT-FACT-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C5-EDGE-MUTATION-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C5-EXPLICIT-REWARD-AND-FULLSTATE-01A/
+?? results/A7-NATIVE-GRAPH/ASTRA-C5-EXPLICIT-REWARD-AND-FULLSTATE-01B/
+?? results/A7-NATIVE-GRAPH/ASTRA-C5-FLUSH-RELOAD-MIG-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C5-HELDOUT-TRANSFER-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C5-HELDOUT-TRANSFER-MIG-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C5-PEND-PROOF-PHI-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C5-PROD-TOP-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C5-PROD-TOP-C3PROOF-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C5-PROD-TOP-MIG-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C5-PROD-TOP-QPTEXT-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C5-PROD-TOP-QPTEXT-MIG-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C5-QPTEXT-HELDOUT-MIG-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C5-QPTEXT-UNIFIED-MIG-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C5-SGD32-CKPT-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C5-UART-STREAM-04A/
+?? results/A7-NATIVE-GRAPH/ASTRA-C5-UNIFIED-REGRESSION-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C5-UNIFIED-REGRESSION-MIG-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C5-UNIFIED-REGRESSION-MIG-02/
+?? results/A7-NATIVE-GRAPH/ASTRA-C6-OOC-PREFLIGHT-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C6-WHOLECHIP-COFIT-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-C6-WHOLECHIP-COFIT-02/
+?? results/A7-NATIVE-GRAPH/ASTRA-C6-WHOLECHIP-COFIT-03/
+?? results/A7-NATIVE-GRAPH/ASTRA-F2R-R2-PENDING-HANDSHAKE-LAW/
+?? results/A7-NATIVE-GRAPH/ASTRA-F2R-R3-SEMANTIC-GUARD-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-F2R-R4-AXI-TIMEOUT-DRAIN-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-F2R-R5-TXN-WRAP-RESET-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-F2R-SHARED-RANK-PENDING-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-F3-R2-INDEPENDENT-WORLDS-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-F3-R3-SAMPLED-WORLDS-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-F3-R4-DISTINCT-HOLD-PHI-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-F3-SHARED-TRANSFER-01/
+?? results/A7-NATIVE-GRAPH/ASTRA-RTP-F2-COMPETE-RANK-REWARD/
+?? results/A7-NATIVE-GRAPH/ASTRA-RTP-F2T-SHARED-TRANSFER/
+?? results/A7-NATIVE-GRAPH/ASTRA-RTP-HOP3/
+?? results/A7-NATIVE-GRAPH/ASTRA-RTP-R1-TRANSPORT-IDENTITY/
+?? results/A7-NATIVE-GRAPH/ASTRA-RTP-R2-HIGHID-ARTO/
+?? results/A7-NATIVE-GRAPH/ASTRA-RTP-RETRIEVAL-TO-PROOF/
+?? results/A7-NATIVE-GRAPH/ASTRA-SGD-PERSIST/
+?? results/A7-NATIVE-GRAPH/ASTRA-SOC-RTP-GLUE/
+?? results/A7-NATIVE-GRAPH/ASTRA-SOC-RTP-WRAP-ROUTE/
+?? results/A7-NATIVE-GRAPH/ASTRA-SOC-RTP-WRAP-UART-XSIM/
+?? results/A7-NATIVE-GRAPH/ASTRA-SOC-RTP-WRAP-XSIM/
+?? results/A7-NATIVE-GRAPH/AUDITOR/
+?? results/A7-NATIVE-GRAPH/STATUS/HARD_BLOCK_MASTER_C3_C6.md
+?? results/A7-NATIVE-GRAPH/STATUS/PROGRESS_20260907.md
+?? results/A7-NATIVE-GRAPH/STATUS/REASONER_ONLY_PRODUCT_C4_BLOCKED.md
+?? rtl/board/arty_a7_astra09_soc_top.sv
+?? rtl/board/arty_a7_astra_rtp_soc_top.sv
+?? rtl/native_graph/integrate/a7ng_astra09_pipe.sv
+?? rtl/native_graph/integrate/a7ng_astra_06_r2_evict_highid.sv
+?? rtl/native_graph/integrate/a7ng_astra_06_r2_evict_highid.svh
+?? rtl/native_graph/integrate/a7ng_astra_06_r3_multi_slot.sv
+?? rtl/native_graph/integrate/a7ng_astra_06_r3_multi_slot.svh
+?? rtl/native_graph/integrate/a7ng_astra_06_r4_sess_reuse.sv
+?? rtl/native_graph/integrate/a7ng_astra_06_r4_sess_reuse.svh
+?? rtl/native_graph/integrate/a7ng_astra_06_warm_persist.sv
+?? rtl/native_graph/integrate/a7ng_astra_06_warm_persist.svh
+?? rtl/native_graph/integrate/a7ng_astra_07_scale_narrow.sv
+?? rtl/native_graph/integrate/a7ng_astra_07_scale_narrow.svh
+?? rtl/native_graph/integrate/a7ng_astra_09_integ_path.sv
+?? rtl/native_graph/integrate/a7ng_astra_09_integ_path.svh
+?? rtl/native_graph/integrate/a7ng_astra_09_r2_cand_ovf.sv
+?? rtl/native_graph/integrate/a7ng_astra_09_r2_cand_ovf.svh
+?? rtl/native_graph/integrate/a7ng_astra_c2_persist_commit.sv
+?? rtl/native_graph/integrate/a7ng_astra_c2_persist_commit.svh
+?? rtl/native_graph/integrate/a7ng_astra_c2_persist_ddr_stall.sv
+?? rtl/native_graph/integrate/a7ng_astra_c2_persist_ddr_stall.svh
+?? rtl/native_graph/integrate/a7ng_astra_c2_persist_mig.sv
+?? rtl/native_graph/integrate/a7ng_astra_c2_persist_mig.svh
+?? rtl/native_graph/integrate/a7ng_astra_c2_persist_multi_slot.sv
+?? rtl/native_graph/integrate/a7ng_astra_c2_persist_multi_slot.svh
+?? rtl/native_graph/integrate/a7ng_astra_c3_held_out.sv
+?? rtl/native_graph/integrate/a7ng_astra_c3_held_out.svh
+?? rtl/native_graph/integrate/a7ng_astra_c3_held_out_pendld.sv
+?? rtl/native_graph/integrate/a7ng_astra_c4_cond_rnn.hex
+?? rtl/native_graph/integrate/a7ng_astra_c4_cond_rnn.sv
+?? rtl/native_graph/integrate/a7ng_astra_c4_cond_rnn.svh
+?? rtl/native_graph/integrate/a7ng_astra_c4_lm06_802k_grounded.sv
+?? rtl/native_graph/integrate/a7ng_astra_c4_lm06_802k_grounded.svh
+?? rtl/native_graph/integrate/a7ng_astra_c4_lm06_byte256.sv
+?? rtl/native_graph/integrate/a7ng_astra_c4_lm06_byte256.svh
+?? rtl/native_graph/integrate/a7ng_astra_c4_lm06_byte256_arlang.hex
+?? rtl/native_graph/integrate/a7ng_astra_c4_lm06_byte256_arlang.sv
+?? rtl/native_graph/integrate/a7ng_astra_c4_lm06_byte256_arlang.svh
+?? rtl/native_graph/integrate/a7ng_astra_c4_lm06_byte256_arlang_gen.sv
+?? rtl/native_graph/integrate/a7ng_astra_c4_lm06_byte256_c3proof.sv
+?? rtl/native_graph/integrate/a7ng_astra_c4_lm06_byte256_c3proof.svh
+?? rtl/native_graph/integrate/a7ng_astra_c4_lm06_byte256_ctxcopy.sv
+?? rtl/native_graph/integrate/a7ng_astra_c4_lm06_byte256_ctxcopy.svh
+?? rtl/native_graph/integrate/a7ng_astra_c4_lm06_byte256_dict.sv
+?? rtl/native_graph/integrate/a7ng_astra_c4_lm06_byte256_dict.svh
+?? rtl/native_graph/integrate/a7ng_astra_c4_lm06_byte256_qptext.sv
+?? rtl/native_graph/integrate/a7ng_astra_c4_lm06_byte256_qptext.svh
+?? rtl/native_graph/integrate/a7ng_astra_c4_lm06_byte256_qptext_gen.sv
+?? rtl/native_graph/integrate/a7ng_astra_c4_lm06_grounded_gen.sv
+?? rtl/native_graph/integrate/a7ng_astra_c4_lm06_grounded_gen.svh
+?? rtl/native_graph/integrate/a7ng_astra_c4_lm06_red.hex
+?? rtl/native_graph/integrate/a7ng_astra_c4_lm06_red.sv
+?? rtl/native_graph/integrate/a7ng_astra_c4_lm06_red.svh
+?? rtl/native_graph/integrate/a7ng_astra_c5_ddr_arb.sv
+?? rtl/native_graph/integrate/a7ng_astra_c5_ddr_arb.svh
+?? rtl/native_graph/integrate/a7ng_astra_c5_prod_top.sv
+?? rtl/native_graph/integrate/a7ng_astra_c5_prod_top.svh
+?? rtl/native_graph/integrate/a7ng_astra_c5_prod_top_c4p.sv
+?? rtl/native_graph/integrate/a7ng_astra_c5_prod_top_c4q.sv
+?? rtl/native_graph/integrate/a7ng_astra_c5_prod_top_ckpt.sv
+?? rtl/native_graph/integrate/a7ng_astra_c5_prod_top_ckpt.svh
+?? rtl/native_graph/integrate/a7ng_astra_c5_prod_top_resp.sv
+?? rtl/native_graph/integrate/a7ng_astra_c5_prod_top_resp.svh
+?? rtl/native_graph/integrate/a7ng_astra_c5_prod_top_rew.sv
+?? rtl/native_graph/integrate/a7ng_astra_c5_prod_top_rew.svh
+?? rtl/native_graph/integrate/a7ng_astra_c5_prod_top_stream.sv
+?? rtl/native_graph/integrate/a7ng_astra_c5_prod_top_stream.svh
+?? rtl/native_graph/integrate/a7ng_astra_c5_sgd32_ckpt.sv
+?? rtl/native_graph/integrate/a7ng_astra_c5_sgd32_ckpt.svh
+?? rtl/native_graph/integrate/a7ng_astra_c5_sgd32_ckpt_pend.sv
+?? rtl/native_graph/integrate/a7ng_astra_c5_sgd32_ckpt_pend.svh
+?? rtl/native_graph/integrate/a7ng_astra_c6_wholechip.sv
+?? rtl/native_graph/integrate/a7ng_astra_f2r2_hs_law.sv
+?? rtl/native_graph/integrate/a7ng_astra_f2r3_sem_guard.sv
+?? rtl/native_graph/integrate/a7ng_astra_f2r4_axi_drain.sv
+?? rtl/native_graph/integrate/a7ng_astra_f2r4_axi_drain.svh
+?? rtl/native_graph/integrate/a7ng_astra_f2r5_txn_wrap.sv
+?? rtl/native_graph/integrate/a7ng_astra_f2r5_txn_wrap.svh
+?? rtl/native_graph/integrate/a7ng_astra_f2r_rank.sv
+?? rtl/native_graph/integrate/a7ng_astra_f3_shared_xfer.sv
+?? rtl/native_graph/integrate/a7ng_astra_f3_shared_xfer.svh
+?? rtl/native_graph/integrate/a7ng_astra_f3r2_ind_worlds.sv
+?? rtl/native_graph/integrate/a7ng_astra_f3r2_ind_worlds.svh
+?? rtl/native_graph/integrate/a7ng_astra_f3r3_sampled_worlds.sv
+?? rtl/native_graph/integrate/a7ng_astra_f3r3_sampled_worlds.svh
+?? rtl/native_graph/integrate/a7ng_astra_f3r4_distinct_hold_phi.sv
+?? rtl/native_graph/integrate/a7ng_astra_f3r4_distinct_hold_phi.svh
+?? rtl/native_graph/integrate/a7ng_astra_rtp_f2.sv
+?? rtl/native_graph/integrate/a7ng_astra_rtp_f2t.sv
+?? rtl/native_graph/integrate/a7ng_astra_rtp_hop3.sv
+?? rtl/native_graph/integrate/a7ng_astra_rtp_pipe.sv
+?? rtl/native_graph/integrate/a7ng_astra_rtp_pipe_r1.sv
+?? rtl/native_graph/integrate/a7ng_astra_rtp_pipe_r2.sv
+?? rtl/native_graph/integrate/a7ng_query_axi_rbeat_probe.sv
+?? rtl/native_graph/integrate/a7ng_query_axi_sparse.sv
+?? rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect.sv
+?? rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect_context.sv
+?? rtl/native_graph/integrate/a7ng_query_axi_sparse_intersect_synonym.sv
+?? rtl/native_graph/integrate/a7ng_query_axi_sparse_page_skip.sv
+?? rtl/native_graph/integrate/a7ng_query_axi_sparse_relbind.sv
+?? rtl/native_graph/integrate/a7ng_query_axi_sparse_stream_intersect.sv
+?? rtl/native_graph/integrate/a7ng_rel_engine_2hop.sv
+?? rtl/native_graph/integrate/a7ng_rel_engine_2hop_v2.sv
+?? rtl/native_graph/integrate/a7ng_unified_pipe.sv
+?? rtl/native_graph/learn/a7ng_shared_rank_sgd_q8.sv
+?? rtl/native_graph/learn/a7ng_shared_rank_sgd_q8_dsp_tfix.sv
+?? rtl/native_graph/learn/a7ng_shared_rank_sgd_q8_sym_f2r2.sv
+?? rtl/native_graph/learn/a7ng_shared_rank_sgd_q8_v1.sv
+?? rtl/native_graph/learn/a7ng_shared_rank_sgd_q8_v1_f2r.sv
+?? rtl/native_graph/memory/a7ng_axi_bram128.sv
+?? rtl/native_graph/memory/a7ng_axi_rtp_plant128.sv
+?? rtl/native_graph/query/a7ng_query_role_extract.sv
+?? rtl/native_graph/query/a7ng_query_role_keys_ctx.sv
+?? rtl/native_graph/query/a7ng_query_role_keys_relbind.sv
+?? rtl/native_graph/query/a7ng_query_role_parse.sv
+?? rtl/native_graph/query/a7ng_query_role_relctx_synonym.sv
+?? rtl/native_graph/query/gen_role_lexicon.py
+?? rtl/native_graph/query/qse_relctx_synonym_01.svh
+?? rtl/native_graph/query/qse_role_lexicon.svh
+?? rtl/native_graph/query/role_lexicon.py
+?? rtl/native_graph/query/twin_role.py
+?? scripts/
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/docs/phy_only_support_readme.txt', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/example_design/par/example_top.xdc', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0.xdc', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/constraints/mig_7series_0_ooc.xdc', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_addr_decode.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_read.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_reg.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_reg_bank.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_top.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_ctrl_write.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_ar_channel.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_aw_channel.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_b_channel.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_arbiter.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_fsm.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_cmd_translator.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_fifo.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_incr_cmd.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_r_channel.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_simple_fifo.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_w_channel.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_wr_cmd_fsm.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_axi_mc_wrap_cmd.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_a_upsizer.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_axi_register_slice.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_axi_upsizer.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_axic_register_slice.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_and.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_latch_and.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_latch_or.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_carry_or.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_command_fifo.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator_sel.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_comparator_sel_static.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_r_upsizer.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/axi/mig_7series_v4_2_ddr_w_upsizer.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_clk_ibuf.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_infrastructure.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_iodelay_ctrl.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/clocking/mig_7series_v4_2_tempmon.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_mux.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_row_col.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_arb_select.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_cntrl.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_common.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_compare.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_mach.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_queue.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_bank_state.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_col_mach.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_mc.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_cntrl.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_common.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_rank_mach.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/controller/mig_7series_v4_2_round_robin_arb.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_buf.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_dec_fix.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_gen.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/ecc/mig_7series_v4_2_ecc_merge_enc.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/ecc/mig_7series_v4_2_fi_xor.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/ip_top/mig_7series_v4_2_mem_intfc.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/ip_top/mig_7series_v4_2_memc_ui_top_axi.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_group_io.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_byte_lane.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_calib_top.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_if_post_fifo.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_mc_phy_wrapper.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_of_pre_fifo.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_4lanes.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ck_addr_cmd_delay.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_dqs_found_cal_hr.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_init.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_cntlr.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_data.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_edge.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_lim.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_mux.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_po_cntlr.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_ocd_samp.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_oclkdelay_cal.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_prbs_rdlvl.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_rdlvl.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_tempmon.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_top.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrcal.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_phy_wrlvl_off_delay.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_prbs_gen.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_ddr_skip_calib_tap.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_poc_cc.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_poc_edge_store.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_poc_meta.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_poc_pd.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_poc_tap_base.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/phy/mig_7series_v4_2_poc_top.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_cmd.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_rd_data.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_top.v', CRLF will be replaced by LF the next time Git touches it
+warning: in the working copy of 'vivado/ip/mig_7series_0/mig_7series_0/user_design/rtl/ui/mig_7series_v4_2_ui_wr_data.v', CRLF will be replaced by LF the next time Git touches it
+ .../A7-NATIVE-GRAPH/STATUS/PROGRESS_20260822.md    |  2 +
+ rtl/native_graph/control/a7ng_gate14_crc.svh       |  3 ++
+ rtl/native_graph/memory/a7ng_sparse_dir_axi.sv     | 58 +++++++++++++++-------
+ .../example_design/par/example_top.xdc             |  2 +-
+ .../user_design/constraints/mig_7series_0.xdc      |  2 +-
+ .../user_design/constraints/mig_7series_0_ooc.xdc  |  2 +-
+ 6 files changed, 47 insertions(+), 22 deletions(-)

@@ -1,0 +1,46 @@
+{
+  "schema": "C4_CONTEXT_CONTRACT_V1",
+  "encoding": "8-bit tokens, 16 ASCII context bytes",
+  "eos": 0,
+  "seed": "append 0 after 16 context bytes; predict at index 16",
+  "max_tokens": 6,
+  "layout": {
+    "0": "opcode F=70 or R=82",
+    "1": "space 0x20",
+    "2_5": "slot_A 4 chars",
+    "6": "space 0x20",
+    "7_10": "slot_B 4 chars",
+    "11": "greater-than 0x3e",
+    "12_15": "slot_C 4 chars"
+  },
+  "forward": {
+    "opcode": "F",
+    "slot_A": "dest",
+    "slot_B": "src",
+    "slot_C": "dest",
+    "answer": "src"
+  },
+  "reverse": {
+    "opcode": "R",
+    "slot_A": "src",
+    "slot_B": "src",
+    "slot_C": "dest",
+    "answer": "dest"
+  },
+  "bank": "R iff ctx[0]==82 else F; no U bank",
+  "host_forbidden": [
+    "expected answer bytes",
+    "next token",
+    "target_slot as gold",
+    "winner",
+    "qid-to-answer",
+    "evidence address as semantic authority"
+  ],
+  "c3_may_supply": [
+    "opcode from FPGA direction/role",
+    "src and dest 4-byte names from proof/evidence",
+    "answer_allowed from canonical status+npath+proof_ok"
+  ],
+  "non_answer": "do not run learned decoder; S_SAFE n then o then EOS",
+  "n_host_tok": 0
+}

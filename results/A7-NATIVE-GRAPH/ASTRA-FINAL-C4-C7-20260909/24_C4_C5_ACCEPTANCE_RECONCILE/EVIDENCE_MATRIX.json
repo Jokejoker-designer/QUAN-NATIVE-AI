@@ -1,0 +1,350 @@
+{
+  "schema": "ASTRA_E0_EVIDENCE_MATRIX_V1",
+  "bag": "24_C4_C5_ACCEPTANCE_RECONCILE",
+  "recorded_at": "2026-09-09T17:41:00+07:00",
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "C5_MASTER": "OPEN",
+  "C6_MASTER": "OPEN",
+  "note": "Audit-time current hashes. Do not use current files to retro-certify older bags. EVIDENCE_HASHES.json is the same class.",
+  "lineage": {
+    "git": {
+      "root": "D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH",
+      "branch": "grok-orch/astra-native-v1-00",
+      "HEAD": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1",
+      "dirty_porcelain_lines": 488,
+      "modified": 106,
+      "untracked": 382
+    },
+    "wo": {
+      "path": "D:/FPGA/WO_FINAL_ASTRA_C4_C7_CONVERGENCE_20260909.md",
+      "sha256": "ae1487d180bf40e61c7a58dce84fc466cdc41c084dcd184496bf5dfd0e11685b",
+      "bytes": 34569
+    },
+    "amendment": {
+      "path": "D:/FPGA/WO_AMENDMENT_ASTRA_C4_C7_E0_ACCEPTED_20260909.md",
+      "status": "accepted_this_turn"
+    },
+    "review_workspace": {
+      "path": "D:/FPGA/REVIEW.md",
+      "sha256": "4fe0399a3a2052d483afdb07e6da23a54cf9289b3f6ffeb01112cee6afa5a37c"
+    },
+    "review_codex": {
+      "path": "D:/FPGA/ASTRA_HANDOFF/CODEX_MANAGER/C4_C5_AUDIT_20260909/REVIEW.md",
+      "sha256": "bb53643b48bc05c8b669d181c88034aa108dd115bf529057171682c33090f38a"
+    },
+    "current_source": {
+      "d32_v2": {
+        "path": "rtl/native_graph/integrate/a7ng_astra_c4_lm06_d32_fr_v2.sv",
+        "sha256": "34d934935768baf1d20e7a5d8da49945554716df48bfa6c8e89c3443790819f6",
+        "mtime": "2026-09-09T15:26:02"
+      },
+      "c5_final_v1": {
+        "path": "rtl/native_graph/integrate/a7ng_astra_c5_prod_top_final_v1.sv",
+        "sha256": "5d959a6d719fcc1f12062c721e983f9516864da6b3c41f5f15b6bcf2198ec329",
+        "mtime": "2026-09-09T17:14:10"
+      },
+      "c6_final_v1": {
+        "path": "rtl/native_graph/integrate/a7ng_astra_c6_wholechip_final_v1.sv",
+        "sha256": "525880f4e1c610b24af73d603ba7ecaead8e6f3d62e5057d93d9e532061eabd8",
+        "mtime": "2026-09-09T17:14:11"
+      },
+      "wrap_v2": {
+        "path": "rtl/native_graph/integrate/a7ng_astra_c4_prod_wrap_v2.sv",
+        "sha256": "a08d0ee1232d49e8beef5ae365e84800a8912d591413ed4169a60dbf93d3d428",
+        "mtime": "2026-09-09T16:05:55"
+      },
+      "extract": {
+        "path": "rtl/native_graph/query/a7ng_query_role_extract.sv",
+        "sha256": "cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27",
+        "mtime": "2026-09-05T19:48:18",
+        "fact": "direction_o assigned 2'd0 at line 98"
+      },
+      "c3_pendld": {
+        "path": "rtl/native_graph/integrate/a7ng_astra_c3_held_out_pendld.sv",
+        "sha256": "c46d43013cc7dda5618a2c7757ed068b059209b89693632ad6d5915c8f917771",
+        "mtime": "2026-09-09T17:14:02"
+      }
+    }
+  },
+  "corpora": {
+    "V1_historical": {
+      "confirm": "11_C4_BLIND_CONFIRM/confirm_wo360_v3.json",
+      "confirm_file_sha256": "8943a6653d3be63a9e23fbe3744b3fbe3ed11bf6730eb92d061247531d72a47b",
+      "confirm_canonical_sha256": "f876633e6daf4ca79317bec55ef9888e12ff726e26d316ad87193eaba74b3e6a",
+      "checkpoint_sha256": "a462dd69d80ea5a2bf07d8d01359d0c01219919643e50204425ca4032320c4ed",
+      "context": "V1 (not G06 PAD layout)",
+      "rows": 360,
+      "U_kinds": {
+        "unrelated": 20,
+        "missing_evidence": 20,
+        "wrong_context": 20,
+        "conflict": 20,
+        "ambiguous": 20,
+        "search_incomplete": 20
+      },
+      "evaluator": "11_C4_BLIND_CONFIRM/eval_wo360_v3_once.py",
+      "evaluator_sha256": "b0603b61806da1bacc630bc51d7a9e7257635d78e449a1ee5f8fe50c37531aff",
+      "raw_result": "11_C4_BLIND_CONFIRM/results/confirm_wo360_v3_once.json",
+      "raw_result_sha256": "2d681661aaa9f6b3ad900739c24e87d94e6f5ef719b954d895e0542198e67c82",
+      "note": "KEEP historical. Do not rewrite. system_safe/system_hall are constants."
+    },
+    "V2_current_freeze": {
+      "confirm": "11_C4_BLIND_CONFIRM_V3/confirm_v3.json",
+      "confirm_file_sha256": "2f50269b68c26ac18c0145cbd9ecc3e3dbef6d556cde8117330867c0b018fa65",
+      "confirm_canonical_sha256": "f41805115312b0a52703b6dddae44b8ceb3e133f1132608a4af72a94a34651d6",
+      "checkpoint_path": "10_C4_MODEL_FREEZE/c4_v2_fresh_pe_02_best_dev.npz",
+      "checkpoint_sha256": "fcfe37be0ca006de9a0973331cb0b1b82703a96c0f10097e21d7e0bff85987dc",
+      "checkpoint_bytes": 80448,
+      "context": "C4_CONTEXT_CONTRACT_V2 [OP][SRC][DST][PAD=----]",
+      "context_contract_sha256": "9af117f595a4b31e19cba4c519e1b3fa60abc5247fbfdaa0859eb5f7f9b89a74",
+      "rows": 360,
+      "groups": {"F": 120, "R": 120, "U": 120},
+      "u_kind_field": "absent",
+      "u_construction": "lock_eval_confirm_v3.py:47 v2_ctx(F)+ans=no",
+      "lock_eval_sha256": "2dc91e6d5cbd5042bb07518009e294684377facf26b97785f75061ebfc16e971",
+      "eval_once": "11_C4_BLIND_CONFIRM_V3/eval_once.json",
+      "eval_once_sha256": "1182db3032a7fba6131b1120f960d226cebe0d8dc3b8ea8adcc5647d5486c02a",
+      "eval_once_scores": "F 120/120 R 120/120 float_n=240 integer_exact=240; U excluded",
+      "hex_n": 12,
+      "golden_svh_sha256": "a3130b49cf4552f771e01cac7bfeff3b3d25ca5bb4adedc9fa8340b520ff0221"
+    }
+  },
+  "requirements": [
+    {
+      "id": "C4-LEARNED-NUMERICAL-240",
+      "wo": "amendment A2 LEARNED_NUMERICAL; WO §7 F/R >=90%",
+      "checkpoint_sha256": "fcfe37be0ca006de9a0973331cb0b1b82703a96c0f10097e21d7e0bff85987dc",
+      "context": "V2",
+      "source": "python IntegerModel + eval_once.json (not RTL system path)",
+      "tb": null,
+      "input": "11_C4_BLIND_CONFIRM_V3/confirm_v3.json canonical f4180511…",
+      "raw_log": "11_C4_BLIND_CONFIRM_V3/eval_once.json",
+      "raw_log_sha256": "1182db3032a7fba6131b1120f960d226cebe0d8dc3b8ea8adcc5647d5486c02a",
+      "expected": "F>=90 R>=90 overall>=90; float↔int 240/240",
+      "observed": "F 120/120 R 120/120 overall 1.0 float_n 240 integer_exact 240",
+      "verdict": "FACT_LEARNED_PYTHON",
+      "evidence_class": "FACT",
+      "closes_C4_MASTER": false,
+      "note": "Python learned path only. Not SYSTEM_360. Not RTL/int 360."
+    },
+    {
+      "id": "C4-RTL-INT-DIFFERENTIAL-242",
+      "wo": "WO RTL unit differential; amendment A2 Integer↔RTL on 240 F/R",
+      "checkpoint_sha256": "fcfe37be0ca006de9a0973331cb0b1b82703a96c0f10097e21d7e0bff85987dc",
+      "context": "V2",
+      "source_sha256": "34d934935768baf1d20e7a5d8da49945554716df48bfa6c8e89c3443790819f6",
+      "tb": "13_C4_DIFFERENTIAL_V3/tb_astra_c4_lm06_d32_fr_v2.sv",
+      "input": "GOLDEN.svh",
+      "input_sha256": "a3130b49cf4552f771e01cac7bfeff3b3d25ca5bb4adedc9fa8340b520ff0221",
+      "raw_log": "13_C4_DIFFERENTIAL_V3/xsim.log",
+      "raw_log_sha256": "e7e1e8aba8763ad39ea35f019e9880fb8f67a981c3e262709b71dea347b43a64",
+      "expected": "integer vs RTL token match on frozen confirm F/R",
+      "observed": "ASTRA_C4_D32_FR_V2_XSIM_PASS n=242 (240 F/R + safe/zero controls)",
+      "verdict": "FACT_UNIT",
+      "evidence_class": "FACT",
+      "closes_C4_MASTER": false,
+      "note": "Not 360 system cases. HOST0 is hardwired 0, not a leak test."
+    },
+    {
+      "id": "C4-SYSTEM-360-OBSERVED",
+      "wo": "amendment A2 SYSTEM_360; WO §7 confusion matrix",
+      "checkpoint_sha256": "fcfe37be0ca006de9a0973331cb0b1b82703a96c0f10097e21d7e0bff85987dc",
+      "source": "eval_observed_system_v1.py",
+      "source_sha256": "03596b74b9a809278ae55b5a07414a17c10c94c5dcac02344ffeb34cc8eb21b0",
+      "input": "V1 once JSON + V2 confirm/eval_once (no new inference)",
+      "raw_log": "24_C4_C5_ACCEPTANCE_RECONCILE/OBSERVED_EVAL_SUMMARY.json",
+      "expected": "per-case observed_status/tokens; expected≠observed fields",
+      "observed": "V1 measured_system=0/360 with 120 expected_by_contract; V2 measured_system=0/360",
+      "verdict": "OPEN",
+      "evidence_class": "FACT",
+      "closes_C4_MASTER": false
+    },
+    {
+      "id": "C4-UNSUPPORTED-SIX-CLASS",
+      "wo": "WO §7 6×20 U; amendment A2 UNSUPPORTED via C3 status",
+      "V1": "kinds present on f876633e corpus; still valid-F-shaped ctx, not raw UART worlds",
+      "V2": "120 U no kind; lock_eval builds F context + ans=no",
+      "expected": "real C3 UNKNOWN/CONFLICT/AMB/INCOMP/NEG from world/evidence",
+      "observed": "not_measured on current freeze",
+      "verdict": "OPEN",
+      "evidence_class": "FACT",
+      "closes_C4_MASTER": false
+    },
+    {
+      "id": "C4-V1-EVALUATOR-CONSTANTS",
+      "wo": "E0: mark expected_by_contract; keep old files",
+      "source": "eval_wo360_v3_once.py:82-83,118",
+      "source_sha256": "b0603b61806da1bacc630bc51d7a9e7257635d78e449a1ee5f8fe50c37531aff",
+      "raw_log": "confirm_wo360_v3_once.json",
+      "raw_log_sha256": "2d681661aaa9f6b3ad900739c24e87d94e6f5ef719b954d895e0542198e67c82",
+      "expected": "do not treat contract constants as measured",
+      "observed": "system_safe=1.0 system_hall=0.0 pass_system_safe=true pass_c4_numerical_wo=true; learned U factual_proxy=120/120",
+      "verdict": "expected_by_contract",
+      "evidence_class": "FACT",
+      "legacy_file_kept": true
+    },
+    {
+      "id": "C4-PREFIX-TOP1",
+      "wo": "WO §8.2; PREREG prefix_intervention_min_changed=1",
+      "checkpoint_sha256": "fcfe37be0ca006de9a0973331cb0b1b82703a96c0f10097e21d7e0bff85987dc",
+      "prereg": "17_C4_CAUSAL_V2/PREREG.json",
+      "prereg_sha256": "15f7828aef5cf7c48e1adeb4faf7c79ffd0c5ffb3ff22f2e41e2e926564d29fe",
+      "raw_log": "17_C4_CAUSAL_V2/g03_causal_v2.json",
+      "raw_log_sha256": "379e40606cafef5b33210016bafad99e7d3f5dd09337ae94284488f473461570",
+      "diag": "17_C4_CAUSAL_V2/PREFIX_LOGIT_DIAG.json",
+      "diag_sha256": "a0f138605812241ab53828767f183829de412b062a9a03a21b5e5acee93e31fc",
+      "expected": "≥1 subsequent top-1 change",
+      "observed": "prefix_changed=0; top1 0/16; score 16/16",
+      "verdict": "FAIL_PREREG_RETAINED",
+      "evidence_class": "FACT",
+      "score_diagnostic": "dependency evidence only; not a criterion rewrite"
+    },
+    {
+      "id": "C4-CAUSAL-OTHER",
+      "wo": "WO §8.2 A-E,G (not prefix)",
+      "raw_log": "17_C4_CAUSAL_V2/g03_causal_v2.json",
+      "observed": "normal 64/64; zero_We 0/64; corrupt_Wq 0/64; replace_new 62/64; wrong_bank 0/64",
+      "verdict": "FACT_PARTIAL",
+      "evidence_class": "FACT",
+      "closes_C4_MASTER": false,
+      "note": "Gate held ANSWER. Not natural-language reasoning."
+    },
+    {
+      "id": "C4-DIRECTION-PARSER",
+      "wo": "E1a NEW GATE; not KEEP silent edit",
+      "source": "a7ng_query_role_extract.sv:98",
+      "source_sha256": "cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27",
+      "expected": "parser owns F/R/INVALID from raw UART; latch with txn",
+      "observed": "direction_o = 2'd0; smoke uses TB bank_r on same 'pump requires valve'",
+      "verdict": "OPEN",
+      "evidence_class": "FACT",
+      "forbidden": "wire direction_o to bank_r as reverse"
+    },
+    {
+      "id": "C4-DIR-KNOWN-GATE",
+      "wo": "dir_known must not be telemetry-only",
+      "source": "a7ng_astra_c4_prod_wrap_v2.sv:58,122",
+      "source_sha256": "a08d0ee1232d49e8beef5ae365e84800a8912d591413ed4169a60dbf93d3d428",
+      "observed": "dir_known_o computed; answer_allowed_o = gate_ok && alias_ok_o && mat_valid_o",
+      "verdict": "OPEN",
+      "evidence_class": "FACT"
+    },
+    {
+      "id": "C4-PROOF-ENDPOINTS",
+      "wo": "E1b; context forbids c3_answer_id",
+      "context_contract": "C4_CONTEXT_CONTRACT_V2.json materializer_forbidden includes c3_answer_id",
+      "source": "a7ng_astra_c5_prod_top_final_v1.sv:433-434",
+      "source_sha256": "5d959a6d719fcc1f12062c721e983f9516864da6b3c41f5f15b6bcf2198ec329",
+      "observed": "entity_src_i={12'd0,c3_subj}; entity_dst_i=c3_ans",
+      "expected": "latched fs[p0]/fo[p0] or 2-hop chain; proof0/proof1 are fact IDs",
+      "verdict": "OPEN",
+      "evidence_class": "FACT",
+      "note": "Rename is not equality proof vs fo."
+    },
+    {
+      "id": "C4-PROD-DICTIONARY",
+      "wo": "E1c amendment A4 exam DICT_LOCK",
+      "source": "a7ng_astra_c6_wholechip_final_v1.sv:189-194",
+      "source_sha256": "525880f4e1c610b24af73d603ba7ecaead8e6f3d62e5057d93d9e532061eabd8",
+      "observed": "alias_wr_v_i=0; bank_r_i=0; C5 alias RAM reset aval=0",
+      "verdict": "OPEN",
+      "evidence_class": "FACT",
+      "inference": "named C6 learned F/R unreachable until boot dictionary; synth prune UNKNOWN"
+    },
+    {
+      "id": "C4-ENDPOINT-VOCAB-4CHAR",
+      "wo": "E0 4-char disposition",
+      "checkpoint_sha256": "fcfe37be0ca006de9a0973331cb0b1b82703a96c0f10097e21d7e0bff85987dc",
+      "observed": "V2 ctx sample 'F pkev tifh>----'; UART smoke 4-char not 'valve'",
+      "disposition": "registered product symbols for V2 G06; not truncated QSE words",
+      "verdict": "ACCEPTED_FOR_CURRENT_FREEZE",
+      "evidence_class": "FACT"
+    },
+    {
+      "id": "C4-OOC-TIMING",
+      "wo": "E3 baseline; amendment A3 E3a first",
+      "source_sha256": "34d934935768baf1d20e7a5d8da49945554716df48bfa6c8e89c3443790819f6",
+      "raw_log": "14_C4_OOC_V2/timing_ooc.rpt",
+      "raw_log_sha256": "a50231bd9a7644a74f097a3fcdbb57df6e61a1a680a06f5d5d6b4850e94290b3",
+      "util": "14_C4_OOC_V2/util_ooc.rpt",
+      "util_sha256": "0e846b0087c73630938c70bf1160621bfff4551ccf25c66e3540e8fa12ff6f2a",
+      "observed": "LUT 38171 FF 50872 DSP 106 BRAM 0; WNS -83.427ns; one max-delay path elut_reg[11][5]→acc1__0__0/B[14] 319 levels CARRY4=305",
+      "verdict": "FACT_OOC_NOT_ROUTED",
+      "e3a": "OPEN — report has 1 setup path not top-N",
+      "evidence_class": "FACT",
+      "closes_C4_MASTER": false
+    },
+    {
+      "id": "C5-BAG21-UART-SMOKE",
+      "wo": "WO §15 class 1/16 partial",
+      "source_sha256": "5d959a6d719fcc1f12062c721e983f9516864da6b3c41f5f15b6bcf2198ec329",
+      "source_pin": "log mtime 17:16:56 after C5 17:14:10",
+      "tb_sha256": "393ec9b304a454916da6d673e0f179e4db2d242cc4663dc0164d598335c31808",
+      "raw_log": "21_C5_UART_SMOKE_V1/xsim.log",
+      "raw_log_sha256": "62581e085c95e6c95b585dddde99db7e12f240b09a67d3b48173831837c51068",
+      "observed": "ASTRA_C5_FINAL_V1_UART_SMOKE_XSIM_PASS; TB bank_r; synthetic alias; CLK 8000/800",
+      "verdict": "PARTIAL",
+      "evidence_class": "FACT",
+      "closes_C5_MASTER": false
+    },
+    {
+      "id": "C5-BAG22-AXI-ERR",
+      "wo": "WO §15 class 15; E4 provenance",
+      "current_c5_sha256": "5d959a6d719fcc1f12062c721e983f9516864da6b3c41f5f15b6bcf2198ec329",
+      "current_c5_mtime": "2026-09-09T17:14:10",
+      "current_c3_mtime": "2026-09-09T17:14:02",
+      "tb_sha256": "23557231dca7fbf899c83a9bcc9817628818f10e34eedf17db7ed1d706ae22b2",
+      "raw_log": "22_C5_AXI_ERR_V1/xsim.log",
+      "raw_log_sha256": "af0e636d6b9feb79b8de85eaa49b64c96a7ceec1bf0d51457561fc595350dd71",
+      "raw_log_mtime": "2026-09-09T17:08:55",
+      "observed": "ASTRA_C5_FINAL_V1_AXI_ERR_XSIM_PASS on a source snapshot before current C5/C3 mtime",
+      "verdict": "OPEN_PROVENANCE",
+      "evidence_class": "FACT",
+      "action": "E4 affected rerun only; do not retro-certify with current SHA"
+    },
+    {
+      "id": "C5-BAG23-REGRESS",
+      "wo": "WO §15 classes 3,7,12 partial",
+      "source_pin": "log 17:16:33 after C5 17:14:10",
+      "tb_sha256": "8b808343d767b6e14514ebf251e7c659a00725b93b5c7570382a3bc6ef2fb2fb",
+      "raw_log": "23_C5_REGRESS_V1/xsim.log",
+      "raw_log_sha256": "23acab57b14a756bbc0b1f10a314928176f71e312fae03eed207176548af5e43",
+      "observed": "2-hop proof ans=64 p0=16 p1=17; +3/dup/CRC/stale; CONFLICT; 2-hop vocalization S_SAFE empty alias",
+      "verdict": "PARTIAL",
+      "evidence_class": "FACT",
+      "closes_C5_MASTER": false
+    },
+    {
+      "id": "C5-BAG24-REFUSE-FIFO",
+      "wo": "WO §15 classes 8,9,16 partial",
+      "note": "Name collision with this E0 bag. Sibling 24_C5_REFUSE_FIFO_V1.",
+      "tb_sha256": "205a08e4bad6c98e861c6d263c400fa007642a6fc8a873197798e2007abff5af",
+      "raw_log": "24_C5_REFUSE_FIFO_V1/xsim_refuse.log",
+      "raw_log_sha256": "a24a9dcfb7a79158fa84f78b68769ec169ba085074a54a030a2327089bf35c90",
+      "baud_log_sha256": "d525411802147c7bf12b5c2ec936f06d48f9d888b24317999ac758be9fec8983",
+      "observed": "AMB st=7 NEG st=8 INCOMP st=6; FIFO 5-token synthetic tifh; baud default 83333333/115200 UNKNOWN S_SAFE; SIM still 8000/800 for refuse",
+      "verdict": "PARTIAL",
+      "evidence_class": "FACT",
+      "closes_C5_MASTER": false
+    },
+    {
+      "id": "C5-BAG25-EDGE-DIR",
+      "wo": "not E1",
+      "tb_sha256": "6220ab2fa681ee9fe429dcdf4a0da22fbc5c9c847bf3dbbfb6955fc47b209433",
+      "raw_log": null,
+      "observed": "TB/PREREG written; XSim not run",
+      "verdict": "OPEN",
+      "evidence_class": "FACT",
+      "do_not_delete": true
+    },
+    {
+      "id": "C4-N-HOST-TOK",
+      "wo": "WO §9 / §15 class 18",
+      "source": "a7ng_astra_c4_lm06_d32_fr_v2.sv:125",
+      "observed": "assign n_host_tok_o = 16'd0",
+      "verdict": "NOT_A_MEASUREMENT",
+      "evidence_class": "FACT"
+    }
+  ]
+}

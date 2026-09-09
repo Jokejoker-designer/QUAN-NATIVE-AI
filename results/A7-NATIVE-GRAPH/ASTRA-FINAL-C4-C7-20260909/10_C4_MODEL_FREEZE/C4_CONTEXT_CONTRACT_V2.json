@@ -1,0 +1,27 @@
+{
+  "schema": "C4_CONTEXT_CONTRACT_V2",
+  "SUPERSEDES_V1_FOR_FINAL_PRODUCTION": true,
+  "V1": "HISTORICAL ONLY",
+  "REASON": "answer-aligned endpoint permutation violated causal direction test",
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "g06_minimal_context": "[OP][SRC][DST][PAD=----]",
+  "production_context": "same as G06 until a separate relation/context contract exists; C3 owns relation/proof, C4 vocalizes endpoint",
+  "layout": {
+    "0": "opcode F=70 or R=82",
+    "1": "space 0x20",
+    "2_5": "SRC once from dict[proof_src_id]",
+    "6": "space 0x20",
+    "7_10": "DST once from dict[proof_dst_id]",
+    "11": "greater-than 0x3e",
+    "12_15": "PAD ---- not an endpoint"
+  },
+  "materializer_inputs": ["opcode_or_direction", "proof_src_id", "proof_dst_id", "dictionary"],
+  "materializer_forbidden": ["answer_i", "answer_id_i", "target_slot_i", "selected_answer_i", "c3_answer_id"],
+  "invariant": "same src_id,dst_id => F and R identical except byte 0",
+  "overflow": "missing/too-long endpoint => ???? , valid=0, factual C4 prohibited",
+  "copy_law_decoder_only": {
+    "F": "emit DST",
+    "R": "emit SRC"
+  }
+}

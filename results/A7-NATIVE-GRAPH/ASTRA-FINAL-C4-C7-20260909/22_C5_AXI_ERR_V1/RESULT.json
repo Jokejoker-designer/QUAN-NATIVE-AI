@@ -1,0 +1,21 @@
+{
+  "marker": "ASTRA_C5_FINAL_V1_AXI_ERR_XSIM_PASS",
+  "command": "powershell -NoProfile -ExecutionPolicy Bypass -File .\\run_xsim.ps1",
+  "cwd": "D:\\FPGA\\FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH\\results\\A7-NATIVE-GRAPH\\ASTRA-FINAL-C4-C7-20260909\\22_C5_AXI_ERR_V1",
+  "exit_code": 0,
+  "classes": {
+    "adp_not_okay": "HIT last_c3rr=SLVERR",
+    "bresp_slverr": "HIT fail=F_BRESP persist=0",
+    "b_stall": "HIT persist=1 wstrb=FFFF",
+    "rresp_slverr": "HIT fail=F_RRESP restored=0",
+    "okay_persist_reload": "HIT exact 32-weight",
+    "no_drop": "HIT ar=r aw=w=b",
+    "host0": "HIT"
+  },
+  "first_fail_pre_fix": "BERR_FAIL — ST_TXNL retired C3 pending before 0x16 reward (n_aw=0)",
+  "fix": "final_v1 ST_TXNL no longer pulses c3_retire; matches resp ST_DONE control vs query split",
+  "c5_master": "OPEN",
+  "board_pass": "OPEN",
+  "PROGRAM": "NO",
+  "xsim_log": "xsim.log"
+}
