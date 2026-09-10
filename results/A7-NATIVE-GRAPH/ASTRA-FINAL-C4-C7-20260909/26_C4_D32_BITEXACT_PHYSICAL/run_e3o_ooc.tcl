@@ -5,7 +5,8 @@ set bag  [file normalize [file dirname [info script]]]
 set root [file normalize [file join $bag ../../../..]]
 set env(XILINXD_LICENSE_FILE) {D:\Xilinx\licenses\vivado_basic.lic}
 set part xc7a100tcsg324-1
-set_param general.maxThreads 8
+# Crash1 used 8 workers then exit -1 at Cross Boundary (16 GB host). Retry uses 4.
+set_param general.maxThreads 4
 
 set inci [file join $root rtl/native_graph/integrate]
 set mem  [file join $inci a7ng_astra_c4_lm06_d32_fr_v2_mem]
