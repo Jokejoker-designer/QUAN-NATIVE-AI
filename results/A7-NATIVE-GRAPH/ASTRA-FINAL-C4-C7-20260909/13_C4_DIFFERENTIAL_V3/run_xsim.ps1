@@ -37,6 +37,8 @@ $pre = @(
 $pre += "$(Sha256 $dut)  rtl/native_graph/integrate/a7ng_astra_c4_lm06_d32_fr_v2.sv"
 $div = Join-Path $inci "a7ng_astra_c4_smres_div_mcycle.sv"
 $pre += "$(Sha256 $div)  rtl/native_graph/integrate/a7ng_astra_c4_smres_div_mcycle.sv"
+$rq = Join-Path $inci "a7ng_astra_c4_rq_mcycle.sv"
+$pre += "$(Sha256 $rq)  rtl/native_graph/integrate/a7ng_astra_c4_rq_mcycle.sv"
 $pre += "$(Sha256 $svh)  rtl/native_graph/integrate/a7ng_astra_c4_lm06_d32_fr_v2.svh"
 $pre += "$(Sha256 $v1svh)  rtl/native_graph/integrate/a7ng_astra_c4_lm06_d32_fr_v1.svh"
 $pre += "$(Sha256 $tb)  tb_astra_c4_lm06_d32_fr_v2.sv"
@@ -60,7 +62,7 @@ Set-Location $work
 if (-not (Test-Path -LiteralPath "$bin\xvlog.bat")) { throw "C4D32V2_XVLOG_NOT_FOUND" }
 $xvlogArgs = @("--sv", "-i", $inci, "-i", $bag)
 if ($Smoke) { $xvlogArgs += @("-d", "C4D32_SMOKE") }
-& "$bin\xvlog.bat" @xvlogArgs $div $dut $tb
+& "$bin\xvlog.bat" @xvlogArgs $div $rq $dut $tb
 if ($LASTEXITCODE -ne 0) { throw "C4D32V2_XVLOG_FAIL" }
 Copy-Item (Join-Path $work "xvlog.log") (Join-Path $bag $(if ($Smoke) { "xvlog_smoke.log" } else { "xvlog.log" })) -Force
 $simName = if ($Smoke) { "c4d32frv2smoke" } else { "c4d32frv2" }

@@ -1,29 +1,99 @@
 {
   "schema": "G14_C7_SILICON_EXAM_PROTOCOL_V1",
-  "wo": "§21–22",
+  "wo": "§20–22",
   "PROGRAM": "NO",
   "runnable": false,
-  "reason": "frozen C6 bit missing",
-  "on_fail": "archive raw UART; do not patch live bit; return earliest gate; new freeze; new bit; new blind C7",
-  "on_pass": "FINAL_RECONCILIATION only if §22 all hold on SAME bit+manifest; never PARTIAL PASS",
+  "reason": "frozen C6 bit missing; C4/C5 acceptance OPEN; freeze_allowed=false",
+  "on_fail": "archive raw UART first; do not patch live bit; return earliest gate; new freeze; new bit; new blind C7",
+  "on_pass": "FINAL_RECONCILIATION artifacts only if §22 all hold on SAME bit+manifest; never PARTIAL PASS",
+  "never": ["PARTIAL PASS", "combine two bits", "host semantic authority", "program unfrozen bit"],
   "pre_program": {
     "part": "xc7a100tcsg324-1",
     "board": "Arty A7-100T",
     "jtag": "210319BE776EA",
     "uart": "COM12 115200 8N1",
     "bit_sha": null,
-    "manifest_sha": null
+    "manifest_sha": null,
+    "identity_mismatch": "stop before programming; do not guess the port",
+    "arm_uart_before_program": true
+  },
+  "preregistration": {
+    "required_files": ["C7_BOARD_EXAM_V1.json", "C7_BOARD_EXAM_V1.md"],
+    "status": "NOT_CREATED",
+    "law": "C7 queries must not be used to tune RTL/model after preregistration. Do not fill live blind queries until C6 freeze exists."
   },
   "phases": [
-    {"id": 1, "name": "ROLE-AWARE PARSING", "verdict": "BLOCKED"},
-    {"id": 2, "name": "SAME-LAW SPARSE RETRIEVAL", "verdict": "BLOCKED"},
-    {"id": 3, "name": "BOUNDED PROOF / 2-HOP", "verdict": "BLOCKED"},
-    {"id": 4, "name": "FORWARD GENERATION", "verdict": "BLOCKED"},
-    {"id": 5, "name": "REVERSE GENERATION", "verdict": "BLOCKED"},
-    {"id": 6, "name": "DETERMINISTIC REFUSAL", "verdict": "BLOCKED"},
-    {"id": 7, "name": "SCALAR-REWARD CAUSAL UPDATE", "verdict": "BLOCKED"},
-    {"id": 8, "name": "PERSIST/RELOAD + DUP/STALE", "verdict": "BLOCKED"},
-    {"id": 9, "name": "UART FULL STREAM 115200", "verdict": "BLOCKED"},
-    {"id": 10, "name": "HOST SEMANTIC=0", "verdict": "BLOCKED"}
-  ]
+    {
+      "id": "P1",
+      "name": "Build/board identity + UART link",
+      "wo": "§21",
+      "verdict": "BLOCKED",
+      "capture": ["program log", "JTAG identity", "UART open parameters", "build fingerprint", "bit SHA", "manifest SHA"]
+    },
+    {
+      "id": "P2",
+      "name": "Raw parser role/direction F vs R",
+      "wo": "§20 P2 / §22 ROLE-AWARE PARSING",
+      "verdict": "BLOCKED",
+      "depends": "E1a NEW GATE implemented and C1/C3 F replayed; reverse is not bank_r"
+    },
+    {
+      "id": "P3",
+      "name": "Sparse retrieval on frozen corpus / high-ID evidence",
+      "wo": "§20 P3 / §22 SAME-LAW SPARSE RETRIEVAL",
+      "verdict": "BLOCKED",
+      "depends": "DICT_LOCK exam-wide; learned path reachable"
+    },
+    {
+      "id": "P4",
+      "name": "Novel 2-hop proof-backed supported query",
+      "wo": "§20 P4 / §22 BOUNDED PROOF REASONING",
+      "verdict": "BLOCKED",
+      "depends": "E1b src_20/dst_20/proof_ok; not proof-record IDs as entity IDs"
+    },
+    {
+      "id": "P5",
+      "name": "C4 Forward learned generation",
+      "wo": "§20 P5 / §22 C4 GROUNDED LEARNED OUTPUT",
+      "verdict": "BLOCKED",
+      "depends": "C6 alias_wr reachable; not alias_wr=0 wrap"
+    },
+    {
+      "id": "P6",
+      "name": "C4 Reverse learned generation",
+      "wo": "§20 P6 / §22 REVERSE GENERATION",
+      "verdict": "BLOCKED",
+      "depends": "E1a reverse NEW GATE; not direction_o wired to bank_r"
+    },
+    {
+      "id": "P7",
+      "name": "UNKNOWN/CONFLICT/AMB/INCOMP deterministic refusal",
+      "wo": "§20 P7 / §22 UNCERTAINTY / SAFE REFUSAL",
+      "verdict": "BLOCKED",
+      "depends": "UNSUPPORTED bucket is S_SAFE; not a D32 float demand"
+    },
+    {
+      "id": "P8",
+      "name": "Scalar reward → causal ranking/decision update",
+      "wo": "§20 P8 / §22 SCALAR-REWARD UPDATE + AUTOREGRESSIVE TOKEN FEEDBACK",
+      "verdict": "BLOCKED",
+      "note": "prefix top-1 FAIL 0/16 retained; do not retrain to force top-1"
+    },
+    {
+      "id": "P9",
+      "name": "Full SGD32 persistence + reload + replay/duplicate rejection",
+      "wo": "§20 P9 / §22 FULL ACTIVE STATE PERSISTENCE + DUPLICATE/STALE + AXI ERROR SAFETY",
+      "verdict": "BLOCKED",
+      "depends": "bag-22 provenance vs current C5 SHA; real MIG"
+    },
+    {
+      "id": "P10",
+      "name": "Repeated end-to-end: full UART stream, host semantic=0, counters clean",
+      "wo": "§20 P10 / §22 UART 115200 FULL STREAM + HOST SEMANTIC AUTHORITY ZERO",
+      "verdict": "BLOCKED",
+      "capture": ["raw RX/TX bytes", "decoded tokens", "host semantic counters", "script hash", "exit codes"],
+      "host_semantic": "must measure 0; hardwired n_host_tok=0 is not a measurement"
+    }
+  ],
+  "section_22_stamp_law": "ASTRA_NATIVE_AI_BOARD_PASS only if every §22 row PASS on the same frozen C6 bit+manifest, including FINAL PHYSICAL CLOSURE and SAME BIT/SAME MANIFEST"
 }

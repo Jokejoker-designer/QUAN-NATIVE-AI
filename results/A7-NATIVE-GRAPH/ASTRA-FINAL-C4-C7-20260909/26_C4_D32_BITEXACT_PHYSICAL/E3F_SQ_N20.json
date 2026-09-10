@@ -1,0 +1,636 @@
+{
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "ASTRA_NATIVE_AI_BOARD_PASS": "OPEN",
+  "e3f_sq": "TOPN_PARSED",
+  "scope": "S_Q_ONLY",
+  "e3h_case_b_stands": true,
+  "e3f_sq_functional": "PASS_n242",
+  "six": {
+    "wns_ns": -20.614,
+    "tns_ns": -51896.881,
+    "failing_endpoints": 3531,
+    "top20_family_counts": {
+      "f1_rq": 20
+    },
+    "qv_wdata_in_top20": 0,
+    "qv_left_top20": true,
+    "qv_still_20_of_20": false,
+    "worst_logic_levels": 45,
+    "worst_carry4": 30,
+    "worst_dsp48e1": 7,
+    "worst_source": "fi_reg[4]/C",
+    "worst_destination": "val0/A[0]",
+    "worst_dest_family": "f1_rq",
+    "e3h_ref": {
+      "wns_ns": -23.364,
+      "logic_levels": 48,
+      "carry4": 31,
+      "dsp48e1": 4,
+      "family": "qv_wdata 20/20"
+    }
+  },
+  "classification": {
+    "case": "B",
+    "label": "path_cut_new_family",
+    "note": "qv_wdata left top-20; WNS only slight/flat. E3f_S_Q still PASS as a path cut. Target the new named family. Do not mass-refactor remaining c4_rq sites.",
+    "wns_delta_vs_e3h_ns": 2.75,
+    "wns_strong": false,
+    "next_gate": "E3i_F1",
+    "thresholds": {
+      "strong_wns_ns": 3.0,
+      "unchanged_wns_ns": 0.35
+    }
+  },
+  "report_sha256": "625ea9427a3145315a3d1f50f6599fe8d0cbddc9199c819e15333b3bfb5a01fc",
+  "n_paths": 20,
+  "util": {
+    "slice_luts": 29908,
+    "lut_as_memory": 224,
+    "slice_registers": 42798,
+    "block_ram_tile": 0,
+    "dsps": 56
+  },
+  "note": "Does not overwrite E3A/E3D/E3E/E3G/E3F/E3H n20. Top-N points; no mass c4_rq refactor.",
+  "paths": [
+    {
+      "rank": 0,
+      "status": "VIOLATED",
+      "slack_ns": -20.614,
+      "source": "fi_reg[4]/C",
+      "destination": "val0/A[0]",
+      "data_path_delay_ns": 30.168,
+      "logic_levels": 45,
+      "level_breakdown": "CARRY4=30 DSP48E1=4 LUT1=1 LUT2=2 LUT3=1 LUT4=3 LUT5=3 MUXF7=1",
+      "cell_histogram": {
+        "LUT5": 3,
+        "MUXF7": 1,
+        "LUT2": 2,
+        "DSP48E1": 7,
+        "CARRY4": 30,
+        "LUT3": 1,
+        "LUT4": 3,
+        "LUT1": 1
+      },
+      "name_family_counts": {
+        "other": 48
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "f1_rq"
+    },
+    {
+      "rank": 1,
+      "status": "VIOLATED",
+      "slack_ns": -20.614,
+      "source": "fi_reg[4]/C",
+      "destination": "val0/A[10]",
+      "data_path_delay_ns": 30.168,
+      "logic_levels": 45,
+      "level_breakdown": "CARRY4=30 DSP48E1=4 LUT1=1 LUT2=2 LUT3=1 LUT4=3 LUT5=2 LUT6=1 MUXF7=1",
+      "cell_histogram": {
+        "LUT5": 2,
+        "MUXF7": 1,
+        "LUT2": 2,
+        "DSP48E1": 7,
+        "CARRY4": 30,
+        "LUT3": 1,
+        "LUT4": 3,
+        "LUT1": 1,
+        "LUT6": 1
+      },
+      "name_family_counts": {
+        "other": 48
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "f1_rq"
+    },
+    {
+      "rank": 2,
+      "status": "VIOLATED",
+      "slack_ns": -20.614,
+      "source": "fi_reg[4]/C",
+      "destination": "val0/A[11]",
+      "data_path_delay_ns": 30.168,
+      "logic_levels": 45,
+      "level_breakdown": "CARRY4=30 DSP48E1=4 LUT1=1 LUT2=2 LUT3=1 LUT4=3 LUT5=2 LUT6=1 MUXF7=1",
+      "cell_histogram": {
+        "LUT5": 2,
+        "MUXF7": 1,
+        "LUT2": 2,
+        "DSP48E1": 7,
+        "CARRY4": 30,
+        "LUT3": 1,
+        "LUT4": 3,
+        "LUT1": 1,
+        "LUT6": 1
+      },
+      "name_family_counts": {
+        "other": 48
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "f1_rq"
+    },
+    {
+      "rank": 3,
+      "status": "VIOLATED",
+      "slack_ns": -20.614,
+      "source": "fi_reg[4]/C",
+      "destination": "val0/A[12]",
+      "data_path_delay_ns": 30.168,
+      "logic_levels": 45,
+      "level_breakdown": "CARRY4=30 DSP48E1=4 LUT1=1 LUT2=2 LUT3=1 LUT4=3 LUT5=2 LUT6=1 MUXF7=1",
+      "cell_histogram": {
+        "LUT5": 2,
+        "MUXF7": 1,
+        "LUT2": 2,
+        "DSP48E1": 7,
+        "CARRY4": 30,
+        "LUT3": 1,
+        "LUT4": 3,
+        "LUT1": 1,
+        "LUT6": 1
+      },
+      "name_family_counts": {
+        "other": 48
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "f1_rq"
+    },
+    {
+      "rank": 4,
+      "status": "VIOLATED",
+      "slack_ns": -20.614,
+      "source": "fi_reg[4]/C",
+      "destination": "val0/A[13]",
+      "data_path_delay_ns": 30.168,
+      "logic_levels": 45,
+      "level_breakdown": "CARRY4=30 DSP48E1=4 LUT1=1 LUT2=2 LUT3=1 LUT4=3 LUT5=2 LUT6=1 MUXF7=1",
+      "cell_histogram": {
+        "LUT5": 2,
+        "MUXF7": 1,
+        "LUT2": 2,
+        "DSP48E1": 7,
+        "CARRY4": 30,
+        "LUT3": 1,
+        "LUT4": 3,
+        "LUT1": 1,
+        "LUT6": 1
+      },
+      "name_family_counts": {
+        "other": 48
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "f1_rq"
+    },
+    {
+      "rank": 5,
+      "status": "VIOLATED",
+      "slack_ns": -20.614,
+      "source": "fi_reg[4]/C",
+      "destination": "val0/A[14]",
+      "data_path_delay_ns": 30.168,
+      "logic_levels": 45,
+      "level_breakdown": "CARRY4=30 DSP48E1=4 LUT1=1 LUT2=2 LUT3=1 LUT4=3 LUT5=2 LUT6=1 MUXF7=1",
+      "cell_histogram": {
+        "LUT5": 2,
+        "MUXF7": 1,
+        "LUT2": 2,
+        "DSP48E1": 7,
+        "CARRY4": 30,
+        "LUT3": 1,
+        "LUT4": 3,
+        "LUT1": 1,
+        "LUT6": 1
+      },
+      "name_family_counts": {
+        "other": 48
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "f1_rq"
+    },
+    {
+      "rank": 6,
+      "status": "VIOLATED",
+      "slack_ns": -20.614,
+      "source": "fi_reg[4]/C",
+      "destination": "val0/A[15]",
+      "data_path_delay_ns": 30.168,
+      "logic_levels": 45,
+      "level_breakdown": "CARRY4=30 DSP48E1=4 LUT1=1 LUT2=2 LUT3=1 LUT4=3 LUT5=2 LUT6=1 MUXF7=1",
+      "cell_histogram": {
+        "LUT5": 2,
+        "MUXF7": 1,
+        "LUT2": 2,
+        "DSP48E1": 7,
+        "CARRY4": 30,
+        "LUT3": 1,
+        "LUT4": 3,
+        "LUT1": 1,
+        "LUT6": 1
+      },
+      "name_family_counts": {
+        "other": 48
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "f1_rq"
+    },
+    {
+      "rank": 7,
+      "status": "VIOLATED",
+      "slack_ns": -20.614,
+      "source": "fi_reg[4]/C",
+      "destination": "val0/A[16]",
+      "data_path_delay_ns": 30.168,
+      "logic_levels": 45,
+      "level_breakdown": "CARRY4=30 DSP48E1=4 LUT1=1 LUT2=2 LUT3=1 LUT4=3 LUT5=2 LUT6=1 MUXF7=1",
+      "cell_histogram": {
+        "LUT5": 2,
+        "MUXF7": 1,
+        "LUT2": 2,
+        "DSP48E1": 7,
+        "CARRY4": 30,
+        "LUT3": 1,
+        "LUT4": 3,
+        "LUT1": 1,
+        "LUT6": 1
+      },
+      "name_family_counts": {
+        "other": 48
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "f1_rq"
+    },
+    {
+      "rank": 8,
+      "status": "VIOLATED",
+      "slack_ns": -20.614,
+      "source": "fi_reg[4]/C",
+      "destination": "val0/A[17]",
+      "data_path_delay_ns": 30.168,
+      "logic_levels": 45,
+      "level_breakdown": "CARRY4=30 DSP48E1=4 LUT1=1 LUT2=2 LUT3=1 LUT4=3 LUT5=2 LUT6=1 MUXF7=1",
+      "cell_histogram": {
+        "LUT5": 2,
+        "MUXF7": 1,
+        "LUT2": 2,
+        "DSP48E1": 7,
+        "CARRY4": 30,
+        "LUT3": 1,
+        "LUT4": 3,
+        "LUT1": 1,
+        "LUT6": 1
+      },
+      "name_family_counts": {
+        "other": 48
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "f1_rq"
+    },
+    {
+      "rank": 9,
+      "status": "VIOLATED",
+      "slack_ns": -20.614,
+      "source": "fi_reg[4]/C",
+      "destination": "val0/A[18]",
+      "data_path_delay_ns": 30.168,
+      "logic_levels": 45,
+      "level_breakdown": "CARRY4=30 DSP48E1=4 LUT1=1 LUT2=2 LUT3=1 LUT4=3 LUT5=2 LUT6=1 MUXF7=1",
+      "cell_histogram": {
+        "LUT5": 2,
+        "MUXF7": 1,
+        "LUT2": 2,
+        "DSP48E1": 7,
+        "CARRY4": 30,
+        "LUT3": 1,
+        "LUT4": 3,
+        "LUT1": 1,
+        "LUT6": 1
+      },
+      "name_family_counts": {
+        "other": 48
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "f1_rq"
+    },
+    {
+      "rank": 10,
+      "status": "VIOLATED",
+      "slack_ns": -20.614,
+      "source": "fi_reg[4]/C",
+      "destination": "val0/A[19]",
+      "data_path_delay_ns": 30.168,
+      "logic_levels": 45,
+      "level_breakdown": "CARRY4=30 DSP48E1=4 LUT1=1 LUT2=2 LUT3=1 LUT4=3 LUT5=2 LUT6=1 MUXF7=1",
+      "cell_histogram": {
+        "LUT5": 2,
+        "MUXF7": 1,
+        "LUT2": 2,
+        "DSP48E1": 7,
+        "CARRY4": 30,
+        "LUT3": 1,
+        "LUT4": 3,
+        "LUT1": 1,
+        "LUT6": 1
+      },
+      "name_family_counts": {
+        "other": 48
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "f1_rq"
+    },
+    {
+      "rank": 11,
+      "status": "VIOLATED",
+      "slack_ns": -20.614,
+      "source": "fi_reg[4]/C",
+      "destination": "val0/A[1]",
+      "data_path_delay_ns": 30.168,
+      "logic_levels": 45,
+      "level_breakdown": "CARRY4=30 DSP48E1=4 LUT1=1 LUT2=2 LUT3=1 LUT4=3 LUT5=2 LUT6=1 MUXF7=1",
+      "cell_histogram": {
+        "LUT5": 2,
+        "MUXF7": 1,
+        "LUT2": 2,
+        "DSP48E1": 7,
+        "CARRY4": 30,
+        "LUT3": 1,
+        "LUT4": 3,
+        "LUT1": 1,
+        "LUT6": 1
+      },
+      "name_family_counts": {
+        "other": 48
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "f1_rq"
+    },
+    {
+      "rank": 12,
+      "status": "VIOLATED",
+      "slack_ns": -20.614,
+      "source": "fi_reg[4]/C",
+      "destination": "val0/A[20]",
+      "data_path_delay_ns": 30.168,
+      "logic_levels": 45,
+      "level_breakdown": "CARRY4=30 DSP48E1=4 LUT1=1 LUT2=2 LUT3=1 LUT4=3 LUT5=2 LUT6=1 MUXF7=1",
+      "cell_histogram": {
+        "LUT5": 2,
+        "MUXF7": 1,
+        "LUT2": 2,
+        "DSP48E1": 7,
+        "CARRY4": 30,
+        "LUT3": 1,
+        "LUT4": 3,
+        "LUT1": 1,
+        "LUT6": 1
+      },
+      "name_family_counts": {
+        "other": 48
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "f1_rq"
+    },
+    {
+      "rank": 13,
+      "status": "VIOLATED",
+      "slack_ns": -20.614,
+      "source": "fi_reg[4]/C",
+      "destination": "val0/A[21]",
+      "data_path_delay_ns": 30.168,
+      "logic_levels": 45,
+      "level_breakdown": "CARRY4=30 DSP48E1=4 LUT1=1 LUT2=2 LUT3=1 LUT4=3 LUT5=2 LUT6=1 MUXF7=1",
+      "cell_histogram": {
+        "LUT5": 2,
+        "MUXF7": 1,
+        "LUT2": 2,
+        "DSP48E1": 7,
+        "CARRY4": 30,
+        "LUT3": 1,
+        "LUT4": 3,
+        "LUT1": 1,
+        "LUT6": 1
+      },
+      "name_family_counts": {
+        "other": 48
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "f1_rq"
+    },
+    {
+      "rank": 14,
+      "status": "VIOLATED",
+      "slack_ns": -20.614,
+      "source": "fi_reg[4]/C",
+      "destination": "val0/A[22]",
+      "data_path_delay_ns": 30.168,
+      "logic_levels": 45,
+      "level_breakdown": "CARRY4=30 DSP48E1=4 LUT1=1 LUT2=2 LUT3=1 LUT4=3 LUT5=2 LUT6=1 MUXF7=1",
+      "cell_histogram": {
+        "LUT5": 2,
+        "MUXF7": 1,
+        "LUT2": 2,
+        "DSP48E1": 7,
+        "CARRY4": 30,
+        "LUT3": 1,
+        "LUT4": 3,
+        "LUT1": 1,
+        "LUT6": 1
+      },
+      "name_family_counts": {
+        "other": 48
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "f1_rq"
+    },
+    {
+      "rank": 15,
+      "status": "VIOLATED",
+      "slack_ns": -20.614,
+      "source": "fi_reg[4]/C",
+      "destination": "val0/A[23]",
+      "data_path_delay_ns": 30.168,
+      "logic_levels": 45,
+      "level_breakdown": "CARRY4=30 DSP48E1=4 LUT1=1 LUT2=2 LUT3=1 LUT4=3 LUT5=2 LUT6=1 MUXF7=1",
+      "cell_histogram": {
+        "LUT5": 2,
+        "MUXF7": 1,
+        "LUT2": 2,
+        "DSP48E1": 7,
+        "CARRY4": 30,
+        "LUT3": 1,
+        "LUT4": 3,
+        "LUT1": 1,
+        "LUT6": 1
+      },
+      "name_family_counts": {
+        "other": 48
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "f1_rq"
+    },
+    {
+      "rank": 16,
+      "status": "VIOLATED",
+      "slack_ns": -20.614,
+      "source": "fi_reg[4]/C",
+      "destination": "val0/A[24]",
+      "data_path_delay_ns": 30.168,
+      "logic_levels": 45,
+      "level_breakdown": "CARRY4=30 DSP48E1=4 LUT1=1 LUT2=2 LUT3=1 LUT4=3 LUT5=2 LUT6=1 MUXF7=1",
+      "cell_histogram": {
+        "LUT5": 2,
+        "MUXF7": 1,
+        "LUT2": 2,
+        "DSP48E1": 7,
+        "CARRY4": 30,
+        "LUT3": 1,
+        "LUT4": 3,
+        "LUT1": 1,
+        "LUT6": 1
+      },
+      "name_family_counts": {
+        "other": 48
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "f1_rq"
+    },
+    {
+      "rank": 17,
+      "status": "VIOLATED",
+      "slack_ns": -20.614,
+      "source": "fi_reg[4]/C",
+      "destination": "val0/A[25]",
+      "data_path_delay_ns": 30.168,
+      "logic_levels": 45,
+      "level_breakdown": "CARRY4=30 DSP48E1=4 LUT1=1 LUT2=2 LUT3=1 LUT4=3 LUT5=2 LUT6=1 MUXF7=1",
+      "cell_histogram": {
+        "LUT5": 2,
+        "MUXF7": 1,
+        "LUT2": 2,
+        "DSP48E1": 7,
+        "CARRY4": 30,
+        "LUT3": 1,
+        "LUT4": 3,
+        "LUT1": 1,
+        "LUT6": 1
+      },
+      "name_family_counts": {
+        "other": 48
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "f1_rq"
+    },
+    {
+      "rank": 18,
+      "status": "VIOLATED",
+      "slack_ns": -20.614,
+      "source": "fi_reg[4]/C",
+      "destination": "val0/A[26]",
+      "data_path_delay_ns": 30.168,
+      "logic_levels": 45,
+      "level_breakdown": "CARRY4=30 DSP48E1=4 LUT1=1 LUT2=2 LUT3=1 LUT4=3 LUT5=2 LUT6=1 MUXF7=1",
+      "cell_histogram": {
+        "LUT5": 2,
+        "MUXF7": 1,
+        "LUT2": 2,
+        "DSP48E1": 7,
+        "CARRY4": 30,
+        "LUT3": 1,
+        "LUT4": 3,
+        "LUT1": 1,
+        "LUT6": 1
+      },
+      "name_family_counts": {
+        "other": 48
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "f1_rq"
+    },
+    {
+      "rank": 19,
+      "status": "VIOLATED",
+      "slack_ns": -20.614,
+      "source": "fi_reg[4]/C",
+      "destination": "val0/A[27]",
+      "data_path_delay_ns": 30.168,
+      "logic_levels": 45,
+      "level_breakdown": "CARRY4=30 DSP48E1=4 LUT1=1 LUT2=2 LUT3=1 LUT4=3 LUT5=2 LUT6=1 MUXF7=1",
+      "cell_histogram": {
+        "LUT5": 2,
+        "MUXF7": 1,
+        "LUT2": 2,
+        "DSP48E1": 7,
+        "CARRY4": 30,
+        "LUT3": 1,
+        "LUT4": 3,
+        "LUT1": 1,
+        "LUT6": 1
+      },
+      "name_family_counts": {
+        "other": 48
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "f1_rq"
+    }
+  ]
+}

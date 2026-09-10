@@ -1,0 +1,14 @@
+{
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "e3f_scope": "S_K_ONLY",
+  "marker": "ASTRA_C4_D32_FR_V2_XSIM_PASS n=242",
+  "CLASS_ref_match": "HIT",
+  "CLASS_host_tok0": "HIT",
+  "nfail_log": 0,
+  "sim_elapsed_s": 181,
+  "wall_ended": "2026-09-09T21:51:41+07:00",
+  "d32_sha256": "da1e0287ca2a620d071f8fcf4572a45a7dda71cdf1e3651d3fe0db0ae381452c",
+  "rq_sha256": "cc287b5b438de4a46b881a0368f2cdfc121fc319d7f9e6998862506e19eb7bbc",
+  "note": "Token parity after S_K snapshot→rq_mcycle→S_K_FIN c4_sat. S_Q still combo. Not BOARD_PASS."
+}

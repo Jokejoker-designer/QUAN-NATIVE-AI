@@ -25,8 +25,10 @@ module a7ng_astra_c4_lm06_d32_fr_v2 (
   output logic [3:0]  vocab_ver_o
 );
   typedef enum logic [5:0] {
-    S_IDLE, S_SAFE, S_EMB, S_Q, S_K, S_V, S_DOT, S_SMMAX, S_SMLUT,
-    S_SMDIV, S_SMRES, S_SMFIX, S_H, S_Y, S_F1, S_F2, S_LOG, S_ARG, S_EMIT, S_DONE
+    S_IDLE, S_SAFE, S_EMB, S_EMB_RQ1, S_EMB_CAP, S_EMB_RQ2, S_EMB_FIN, S_Q, S_Q_RQ, S_Q_FIN, S_K, S_K_RQ, S_K_FIN, S_V, S_V_RQ, S_V_FIN, S_DOT, S_DOT_RQ, S_DOT_FIN, S_SMMAX, S_SMLUT,
+    S_SMDIV, S_SMRES, S_SMFIX, S_H, S_H_SNAP, S_H_RQ, S_H_FIN, S_Y, S_Y_RQ1, S_Y_CAP, S_Y_RQ2, S_Y_FIN, S_F1, S_F1_RQ, S_F1_FIN,
+    S_F2, S_F2_RQ1, S_F2_CAP, S_F2_RQ2, S_F2_FIN, S_LOG, S_LOG_RQ1, S_LOG_CAP,
+    S_LOG_RQ2, S_LOG_FIN, S_ARG, S_EMIT, S_DONE
   } st_t;
   st_t st;
 
@@ -80,7 +82,8 @@ module a7ng_astra_c4_lm06_d32_fr_v2 (
   logic [2:0] n_gen;
   logic [7:0] safe_i;
   logic use_r;
-  logic signed [63:0] acc;
+  (* keep = "true" *) logic signed [63:0] acc;
+  (* keep = "true" *) logic signed [63:0] hacc;
   integer ti, di, dj, fi, vi, posi;
   logic signed [31:0] dmax;
   logic [5:0] amax_i;
@@ -89,6 +92,10 @@ module a7ng_astra_c4_lm06_d32_fr_v2 (
   logic               smres_div_go, smres_div_hold, smres_div_busy, smres_div_done;
   logic signed [31:0] smres_div_q;
   logic [5:0]         smres_div_idx;
+  logic               rq_go, rq_hold, rq_busy, rq_done;
+  logic signed [63:0] rq_val_r, rq_q, rq_q_saved;
+  logic        [31:0] rq_mul_r;
+  logic         [5:0] rq_shr_r;
   logic               x_we, qv_we, kv_we, vv_we, zv_we, logits_we;
   logic signed [15:0] x_wdata, qv_wdata, kv_wdata, vv_wdata, zv_wdata;
   logic signed [31:0] logits_wdata;
@@ -147,6 +154,18 @@ module a7ng_astra_c4_lm06_d32_fr_v2 (
     .idx_o(smres_div_idx)
   );
 
+  a7ng_astra_c4_rq_mcycle u_rq (
+    .clk(clk),
+    .rst_n(rst_n),
+    .start_i(rq_go),
+    .val_i(rq_val_r),
+    .mul_i(rq_mul_r),
+    .shr_i(rq_shr_r),
+    .busy_o(rq_busy),
+    .done_o(rq_done),
+    .q_o(rq_q)
+  );
+
   // E3c: arrays off the async-reset FSM so BRAM/DRAM inference is legal.
   always_ff @(posedge clk) begin
     if (x_we)      x[x_a0][x_a1] <= x_wdata;
@@ -170,9 +189,16 @@ module a7ng_astra_c4_lm06_d32_fr_v2 (
       safe_i <= 8'd0;
       use_r <= 1'b0;
       acc <= 64'sd0;
+      hacc <= 64'sd0;
       ti <= 0; di <= 0; dj <= 0; fi <= 0; vi <= 0; posi <= 0;
       smres_div_go <= 1'b0;
       smres_div_hold <= 1'b0;
+      rq_go <= 1'b0;
+      rq_hold <= 1'b0;
+      rq_val_r <= 64'sd0;
+      rq_mul_r <= 32'd0;
+      rq_shr_r <= 6'd0;
+      rq_q_saved <= 64'sd0;
       x_we <= 1'b0; qv_we <= 1'b0; kv_we <= 1'b0;
       vv_we <= 1'b0; zv_we <= 1'b0; logits_we <= 1'b0;
     end else begin
@@ -180,6 +206,7 @@ module a7ng_astra_c4_lm06_d32_fr_v2 (
       eos_o <= 1'b0;
       x_we <= 1'b0; qv_we <= 1'b0; kv_we <= 1'b0;
       vv_we <= 1'b0; zv_we <= 1'b0; logits_we <= 1'b0;
+      rq_go <= 1'b0;
       unique case (st)
         S_IDLE: begin
           done_o <= 1'b0;
@@ -212,78 +239,185 @@ module a7ng_astra_c4_lm06_d32_fr_v2 (
           // Concatenation is unsigned. 56-bit {48{s},i8} zero-extends into
           // signed [63:0] and turns negative weights into ~2^56. Use 64 bits.
           posi = (ti > 23) ? 23 : ti;
-          acc = c4_rq({{56{wgt8(We[toks[ti]*D + di])[7]}}, wgt8(We[toks[ti]*D + di])}, A7NG_C4D32_RQ_EMB_WE_MUL, A7NG_C4D32_RQ_EMB_WE_SHR)
-              + c4_rq({{56{wgt8(Pe[posi*D + di])[7]}}, wgt8(Pe[posi*D + di])}, A7NG_C4D32_RQ_EMB_PE_MUL, A7NG_C4D32_RQ_EMB_PE_SHR);
+          rq_val_r <= {{56{wgt8(We[toks[ti]*D + di])[7]}}, wgt8(We[toks[ti]*D + di])};
+          rq_mul_r <= A7NG_C4D32_RQ_EMB_WE_MUL[31:0];
+          rq_shr_r <= A7NG_C4D32_RQ_EMB_WE_SHR[5:0];
+          rq_hold <= 1'b0;
+          st <= S_EMB_RQ1;
+        end
+        S_EMB_RQ1: begin
+          if (!rq_hold) begin
+            rq_go <= 1'b1;
+            rq_hold <= 1'b1;
+          end else if (rq_done) begin
+            st <= S_EMB_CAP;
+          end
+        end
+        S_EMB_CAP: begin
+          rq_q_saved <= rq_q;
+          rq_val_r <= {{56{wgt8(Pe[posi*D + di])[7]}}, wgt8(Pe[posi*D + di])};
+          rq_mul_r <= A7NG_C4D32_RQ_EMB_PE_MUL[31:0];
+          rq_shr_r <= A7NG_C4D32_RQ_EMB_PE_SHR[5:0];
+          rq_hold <= 1'b0;
+          st <= S_EMB_RQ2;
+        end
+        S_EMB_RQ2: begin
+          if (!rq_hold) begin
+            rq_go <= 1'b1;
+            rq_hold <= 1'b1;
+          end else if (rq_done) begin
+            st <= S_EMB_FIN;
+          end
+        end
+        S_EMB_FIN: begin
           x_we <= 1'b1;
           x_a0 <= ti[5:0];
           x_a1 <= di[5:0];
-          x_wdata <= c4_sat(acc)[15:0];
+          x_wdata <= c4_sat(rq_q_saved + rq_q)[15:0];
+          rq_hold <= 1'b0;
           if (di == D - 1) begin
             di <= 0;
             if (ti == tlen - 1) begin
               ti <= 0; dj <= 0; acc <= 64'sd0; st <= S_Q;
-            end else ti <= ti + 1;
-          end else di <= di + 1;
+            end else begin
+              ti <= ti + 1;
+              st <= S_EMB;
+            end
+          end else begin
+            di <= di + 1;
+            st <= S_EMB;
+          end
         end
         S_Q: begin
           w8 = use_r ? wgt8(WqR[dj*D + di]) : wgt8(Wq[dj*D + di]);
           acc <= (di == 0) ? (w8 * x[tlen-1][di]) : (acc + w8 * x[tlen-1][di]);
           if (di == D - 1) begin
-            qv_we <= 1'b1;
-            qv_a <= dj[5:0];
-            qv_wdata <= c4_sat(use_r
-              ? c4_rq(acc + w8 * x[tlen-1][di], A7NG_C4D32_RQ_QR_MUL, A7NG_C4D32_RQ_QR_SHR)
-              : c4_rq(acc + w8 * x[tlen-1][di], A7NG_C4D32_RQ_Q_MUL, A7NG_C4D32_RQ_Q_SHR))[15:0];
-            di <= 0;
-            acc <= 64'sd0;
-            if (dj == D - 1) begin dj <= 0; ti <= 0; st <= S_K; end
-            else dj <= dj + 1;
+            rq_val_r <= acc + w8 * x[tlen-1][di];
+            rq_mul_r <= use_r ? A7NG_C4D32_RQ_QR_MUL[31:0] : A7NG_C4D32_RQ_Q_MUL[31:0];
+            rq_shr_r <= use_r ? A7NG_C4D32_RQ_QR_SHR[5:0] : A7NG_C4D32_RQ_Q_SHR[5:0];
+            rq_hold <= 1'b0;
+            st <= S_Q_RQ;
           end else di <= di + 1;
+        end
+        S_Q_RQ: begin
+          if (!rq_hold) begin
+            rq_go <= 1'b1;
+            rq_hold <= 1'b1;
+          end else if (rq_done) begin
+            st <= S_Q_FIN;
+          end
+        end
+        S_Q_FIN: begin
+          qv_we <= 1'b1;
+          qv_a <= dj[5:0];
+          qv_wdata <= c4_sat(rq_q)[15:0];
+          di <= 0; acc <= 64'sd0;
+          rq_hold <= 1'b0;
+          if (dj == D - 1) begin
+            dj <= 0; ti <= 0; st <= S_K;
+          end else begin
+            dj <= dj + 1;
+            st <= S_Q;
+          end
         end
         S_K: begin
           w8 = use_r ? wgt8(WkR[dj*D + di]) : wgt8(Wk[dj*D + di]);
           acc <= (di == 0) ? (w8 * x[ti][di]) : (acc + w8 * x[ti][di]);
           if (di == D - 1) begin
-            kv_we <= 1'b1;
-            kv_a0 <= ti[5:0];
-            kv_a1 <= dj[5:0];
-            kv_wdata <= c4_sat(use_r
-              ? c4_rq(acc + w8 * x[ti][di], A7NG_C4D32_RQ_KR_MUL, A7NG_C4D32_RQ_KR_SHR)
-              : c4_rq(acc + w8 * x[ti][di], A7NG_C4D32_RQ_K_MUL, A7NG_C4D32_RQ_K_SHR))[15:0];
-            di <= 0; acc <= 64'sd0;
-            if (dj == D - 1) begin
-              dj <= 0;
-              if (ti == tlen - 1) begin ti <= 0; st <= S_V; end
-              else ti <= ti + 1;
-            end else dj <= dj + 1;
+            rq_val_r <= acc + w8 * x[ti][di];
+            rq_mul_r <= use_r ? A7NG_C4D32_RQ_KR_MUL[31:0] : A7NG_C4D32_RQ_K_MUL[31:0];
+            rq_shr_r <= use_r ? A7NG_C4D32_RQ_KR_SHR[5:0] : A7NG_C4D32_RQ_K_SHR[5:0];
+            rq_hold <= 1'b0;
+            st <= S_K_RQ;
           end else di <= di + 1;
+        end
+        S_K_RQ: begin
+          if (!rq_hold) begin
+            rq_go <= 1'b1;
+            rq_hold <= 1'b1;
+          end else if (rq_done) begin
+            st <= S_K_FIN;
+          end
+        end
+        S_K_FIN: begin
+          kv_we <= 1'b1;
+          kv_a0 <= ti[5:0];
+          kv_a1 <= dj[5:0];
+          kv_wdata <= c4_sat(rq_q)[15:0];
+          di <= 0; acc <= 64'sd0;
+          rq_hold <= 1'b0;
+          if (dj == D - 1) begin
+            dj <= 0;
+            if (ti == tlen - 1) begin ti <= 0; st <= S_V; end
+            else begin ti <= ti + 1; st <= S_K; end
+          end else begin
+            dj <= dj + 1;
+            st <= S_K;
+          end
         end
         S_V: begin
           w8 = use_r ? wgt8(WvR[dj*D + di]) : wgt8(Wv[dj*D + di]);
           acc <= (di == 0) ? (w8 * x[ti][di]) : (acc + w8 * x[ti][di]);
           if (di == D - 1) begin
-            vv_we <= 1'b1;
-            vv_a0 <= ti[5:0];
-            vv_a1 <= dj[5:0];
-            vv_wdata <= c4_sat(use_r
-              ? c4_rq(acc + w8 * x[ti][di], A7NG_C4D32_RQ_VR_MUL, A7NG_C4D32_RQ_VR_SHR)
-              : c4_rq(acc + w8 * x[ti][di], A7NG_C4D32_RQ_V_MUL, A7NG_C4D32_RQ_V_SHR))[15:0];
-            di <= 0; acc <= 64'sd0;
-            if (dj == D - 1) begin
-              dj <= 0;
-              if (ti == tlen - 1) begin ti <= 0; st <= S_DOT; end
-              else ti <= ti + 1;
-            end else dj <= dj + 1;
+            rq_val_r <= acc + w8 * x[ti][di];
+            rq_mul_r <= use_r ? A7NG_C4D32_RQ_VR_MUL[31:0] : A7NG_C4D32_RQ_V_MUL[31:0];
+            rq_shr_r <= use_r ? A7NG_C4D32_RQ_VR_SHR[5:0] : A7NG_C4D32_RQ_V_SHR[5:0];
+            rq_hold <= 1'b0;
+            st <= S_V_RQ;
           end else di <= di + 1;
+        end
+        S_V_RQ: begin
+          if (!rq_hold) begin
+            rq_go <= 1'b1;
+            rq_hold <= 1'b1;
+          end else if (rq_done) begin
+            st <= S_V_FIN;
+          end
+        end
+        S_V_FIN: begin
+          vv_we <= 1'b1;
+          vv_a0 <= ti[5:0];
+          vv_a1 <= dj[5:0];
+          vv_wdata <= c4_sat(rq_q)[15:0];
+          di <= 0; acc <= 64'sd0;
+          rq_hold <= 1'b0;
+          if (dj == D - 1) begin
+            dj <= 0;
+            if (ti == tlen - 1) begin ti <= 0; st <= S_DOT; end
+            else begin ti <= ti + 1; st <= S_V; end
+          end else begin
+            dj <= dj + 1;
+            st <= S_V;
+          end
         end
         S_DOT: begin
           acc <= (di == 0) ? (kv[ti][di] * qv[di]) : (acc + kv[ti][di] * qv[di]);
           if (di == D - 1) begin
-            dots[ti] <= c4_rq(acc + kv[ti][di] * qv[di], A7NG_C4D32_RQ_DOTS_MUL, A7NG_C4D32_RQ_DOTS_SHR)[31:0];
-            di <= 0; acc <= 64'sd0;
-            if (ti == tlen - 1) begin ti <= 0; dmax <= -32'sh7fffffff; amax_i <= 6'd0; st <= S_SMMAX; end
-            else ti <= ti + 1;
+            rq_val_r <= acc + kv[ti][di] * qv[di];
+            rq_mul_r <= A7NG_C4D32_RQ_DOTS_MUL[31:0];
+            rq_shr_r <= A7NG_C4D32_RQ_DOTS_SHR[5:0];
+            rq_hold <= 1'b0;
+            st <= S_DOT_RQ;
           end else di <= di + 1;
+        end
+        S_DOT_RQ: begin
+          if (!rq_hold) begin
+            rq_go <= 1'b1;
+            rq_hold <= 1'b1;
+          end else if (rq_done) begin
+            st <= S_DOT_FIN;
+          end
+        end
+        S_DOT_FIN: begin
+          dots[ti] <= rq_q[31:0];
+          di <= 0; acc <= 64'sd0;
+          rq_hold <= 1'b0;
+          if (ti == tlen - 1) begin
+            ti <= 0; dmax <= -32'sh7fffffff; amax_i <= 6'd0; st <= S_SMMAX;
+          end else begin
+            ti <= ti + 1;
+            st <= S_DOT;
+          end
         end
         S_SMMAX: begin
           if ((ti == 0) || (dots[ti] > dmax) || ((dots[ti] == dmax) && (ti < amax_i))) begin
@@ -328,65 +462,212 @@ module a7ng_astra_c4_lm06_d32_fr_v2 (
         end
         S_SMFIX: begin
           attn[amax_i] <= attn[amax_i] + (32'sd32767 - psum);
-          ti <= 0; dj <= 0; acc <= 64'sd0; st <= S_H;
+          ti <= 0; dj <= 0; acc <= 64'sd0; hacc <= 64'sd0; st <= S_H;
         end
         S_H: begin
-          acc <= (ti == 0) ? (attn[0] * vv[0][dj]) : (acc + attn[ti] * vv[ti][dj]);
-          if (ti == tlen - 1) begin
-            hv[dj] <= c4_sat(c4_rq(acc + attn[ti] * vv[ti][dj], A7NG_C4D32_RQ_H_MUL, A7NG_C4D32_RQ_H_SHR))[15:0];
-            ti <= 0; acc <= 64'sd0;
-            if (dj == D - 1) begin dj <= 0; di <= 0; st <= S_Y; end
-            else dj <= dj + 1;
-          end else ti <= ti + 1;
+          hacc <= (ti == 0) ? (attn[0] * vv[0][dj]) : (hacc + attn[ti] * vv[ti][dj]);
+          if (ti == tlen - 1) st <= S_H_SNAP;
+          else ti <= ti + 1;
+        end
+        S_H_SNAP: begin
+          rq_val_r <= hacc;
+          rq_mul_r <= A7NG_C4D32_RQ_H_MUL[31:0];
+          rq_shr_r <= A7NG_C4D32_RQ_H_SHR[5:0];
+          rq_hold <= 1'b0;
+          st <= S_H_RQ;
+        end
+        S_H_RQ: begin
+          if (!rq_hold) begin
+            rq_go <= 1'b1;
+            rq_hold <= 1'b1;
+          end else if (rq_done) begin
+            st <= S_H_FIN;
+          end
+        end
+        S_H_FIN: begin
+          hv[dj] <= c4_sat(rq_q)[15:0];
+          ti <= 0; acc <= 64'sd0; hacc <= 64'sd0;
+          rq_hold <= 1'b0;
+          if (dj == D - 1) begin
+            dj <= 0; di <= 0; st <= S_Y;
+          end else begin
+            dj <= dj + 1;
+            st <= S_H;
+          end
         end
         S_Y: begin
-          yv[di] <= c4_sat(
-            c4_rq({{48{x[tlen-1][di][15]}}, x[tlen-1][di]}, A7NG_C4D32_RQ_YX_MUL, A7NG_C4D32_RQ_YX_SHR)
-          + c4_rq({{48{hv[di][15]}}, hv[di]}, A7NG_C4D32_RQ_YH_MUL, A7NG_C4D32_RQ_YH_SHR)
-          )[15:0];
-          if (di == D - 1) begin di <= 0; fi <= 0; acc <= 64'sd0; st <= S_F1; end
-          else di <= di + 1;
+          rq_val_r <= {{48{x[tlen-1][di][15]}}, x[tlen-1][di]};
+          rq_mul_r <= A7NG_C4D32_RQ_YX_MUL[31:0];
+          rq_shr_r <= A7NG_C4D32_RQ_YX_SHR[5:0];
+          rq_hold <= 1'b0;
+          st <= S_Y_RQ1;
+        end
+        S_Y_RQ1: begin
+          if (!rq_hold) begin
+            rq_go <= 1'b1;
+            rq_hold <= 1'b1;
+          end else if (rq_done) begin
+            st <= S_Y_CAP;
+          end
+        end
+        S_Y_CAP: begin
+          rq_q_saved <= rq_q;
+          rq_val_r <= {{48{hv[di][15]}}, hv[di]};
+          rq_mul_r <= A7NG_C4D32_RQ_YH_MUL[31:0];
+          rq_shr_r <= A7NG_C4D32_RQ_YH_SHR[5:0];
+          rq_hold <= 1'b0;
+          st <= S_Y_RQ2;
+        end
+        S_Y_RQ2: begin
+          if (!rq_hold) begin
+            rq_go <= 1'b1;
+            rq_hold <= 1'b1;
+          end else if (rq_done) begin
+            st <= S_Y_FIN;
+          end
+        end
+        S_Y_FIN: begin
+          yv[di] <= c4_sat(rq_q_saved + rq_q)[15:0];
+          rq_hold <= 1'b0;
+          if (di == D - 1) begin
+            di <= 0; fi <= 0; acc <= 64'sd0; st <= S_F1;
+          end else begin
+            di <= di + 1;
+            st <= S_Y;
+          end
         end
         S_F1: begin
-          acc <= (di == 0) ? (wgt8(W1[fi*D + di]) * yv[di]) : (acc + wgt8(W1[fi*D + di]) * yv[di]);
+          w8 = wgt8(W1[fi*D + di]);
+          acc <= (di == 0) ? (w8 * yv[di]) : (acc + w8 * yv[di]);
           if (di == D - 1) begin
-            begin : relu
-              logic signed [31:0] trq;
-              trq = c4_sat(c4_rq(acc + wgt8(W1[fi*D + di]) * yv[di], A7NG_C4D32_RQ_T_MUL, A7NG_C4D32_RQ_T_SHR));
-              tv[fi] <= (trq < 0) ? 16'sd0 : trq[15:0];
-            end
-            di <= 0; acc <= 64'sd0;
-            if (fi == Ff - 1) begin fi <= 0; dj <= 0; st <= S_F2; end
-            else fi <= fi + 1;
+            rq_val_r <= acc + w8 * yv[di];
+            rq_mul_r <= A7NG_C4D32_RQ_T_MUL[31:0];
+            rq_shr_r <= A7NG_C4D32_RQ_T_SHR[5:0];
+            rq_hold <= 1'b0;
+            st <= S_F1_RQ;
           end else di <= di + 1;
+        end
+        S_F1_RQ: begin
+          if (!rq_hold) begin
+            rq_go <= 1'b1;
+            rq_hold <= 1'b1;
+          end else if (rq_done) begin
+            st <= S_F1_FIN;
+          end
+        end
+        S_F1_FIN: begin
+          begin : relu
+            logic signed [31:0] trq;
+            trq = c4_sat(rq_q);
+            tv[fi] <= (trq < 0) ? 16'sd0 : trq[15:0];
+          end
+          di <= 0; acc <= 64'sd0;
+          rq_hold <= 1'b0;
+          if (fi == Ff - 1) begin
+            fi <= 0; dj <= 0; st <= S_F2;
+          end else begin
+            fi <= fi + 1;
+            st <= S_F1;
+          end
         end
         S_F2: begin
           acc <= (fi == 0) ? (wgt8(W2[dj*Ff + fi]) * tv[fi]) : (acc + wgt8(W2[dj*Ff + fi]) * tv[fi]);
           if (fi == Ff - 1) begin
-            zv_we <= 1'b1;
-            zv_a <= dj[5:0];
-            zv_wdata <= c4_sat(
-              c4_rq({{48{yv[dj][15]}}, yv[dj]}, A7NG_C4D32_RQ_ZY_MUL, A7NG_C4D32_RQ_ZY_SHR)
-            + c4_rq(acc + wgt8(W2[dj*Ff + fi]) * tv[fi], A7NG_C4D32_RQ_ZT_MUL, A7NG_C4D32_RQ_ZT_SHR)
-            )[15:0];
-            fi <= 0; acc <= 64'sd0;
-            if (dj == D - 1) begin dj <= 0; vi <= 0; st <= S_LOG; end
-            else dj <= dj + 1;
+            // Snapshot ZT on this cycle: acc is still the pre-NBA value.
+            rq_val_r <= acc + wgt8(W2[dj*Ff + fi]) * tv[fi];
+            rq_mul_r <= A7NG_C4D32_RQ_ZT_MUL[31:0];
+            rq_shr_r <= A7NG_C4D32_RQ_ZT_SHR[5:0];
+            rq_hold <= 1'b0;
+            st <= S_F2_RQ1;
           end else fi <= fi + 1;
         end
+        S_F2_RQ1: begin
+          if (!rq_hold) begin
+            rq_go <= 1'b1;
+            rq_hold <= 1'b1;
+          end else if (rq_done) begin
+            st <= S_F2_CAP;
+          end
+        end
+        S_F2_CAP: begin
+          rq_q_saved <= rq_q;
+          rq_val_r <= {{48{yv[dj][15]}}, yv[dj]};
+          rq_mul_r <= A7NG_C4D32_RQ_ZY_MUL[31:0];
+          rq_shr_r <= A7NG_C4D32_RQ_ZY_SHR[5:0];
+          rq_hold <= 1'b0;
+          st <= S_F2_RQ2;
+        end
+        S_F2_RQ2: begin
+          if (!rq_hold) begin
+            rq_go <= 1'b1;
+            rq_hold <= 1'b1;
+          end else if (rq_done) begin
+            st <= S_F2_FIN;
+          end
+        end
+        S_F2_FIN: begin
+          zv_we <= 1'b1;
+          zv_a <= dj[5:0];
+          zv_wdata <= c4_sat(rq_q_saved + rq_q)[15:0];
+          fi <= 0; acc <= 64'sd0;
+          rq_hold <= 1'b0;
+          if (dj == D - 1) begin
+            dj <= 0; vi <= 0; st <= S_LOG;
+          end else begin
+            dj <= dj + 1;
+            st <= S_F2;
+          end
+        end
         S_LOG: begin
-          acc <= (di == 0) ? (wgt8(We[vi*D + di]) * zv[di]) : (acc + wgt8(We[vi*D + di]) * zv[di]);
+          w8 = wgt8(We[vi*D + di]);
+          acc <= (di == 0) ? (w8 * zv[di]) : (acc + w8 * zv[di]);
           if (di == D - 1) begin
-            logits_we <= 1'b1;
-            logits_a <= vi[7:0];
-            logits_wdata <= c4_sat(
-              c4_rq(acc + wgt8(We[vi*D + di]) * zv[di], A7NG_C4D32_RQ_LOGITS_MUL, A7NG_C4D32_RQ_LOGITS_SHR)
-            + c4_rq({{32{wgt32(By[vi])[31]}}, wgt32(By[vi])}, A7NG_C4D32_RQ_BIAS_MUL, A7NG_C4D32_RQ_BIAS_SHR)
-            );
-            di <= 0; acc <= 64'sd0;
-            if (vi == 255) begin vi <= 0; best_logit <= -32'sh7fffffff; best_tok <= 8'd0; st <= S_ARG; end
-            else vi <= vi + 1;
+            rq_val_r <= acc + w8 * zv[di];
+            rq_mul_r <= A7NG_C4D32_RQ_LOGITS_MUL[31:0];
+            rq_shr_r <= A7NG_C4D32_RQ_LOGITS_SHR[5:0];
+            rq_hold <= 1'b0;
+            st <= S_LOG_RQ1;
           end else di <= di + 1;
+        end
+        S_LOG_RQ1: begin
+          if (!rq_hold) begin
+            rq_go <= 1'b1;
+            rq_hold <= 1'b1;
+          end else if (rq_done) begin
+            st <= S_LOG_CAP;
+          end
+        end
+        S_LOG_CAP: begin
+          rq_q_saved <= rq_q;
+          rq_val_r <= {{32{wgt32(By[vi])[31]}}, wgt32(By[vi])};
+          rq_mul_r <= A7NG_C4D32_RQ_BIAS_MUL[31:0];
+          rq_shr_r <= A7NG_C4D32_RQ_BIAS_SHR[5:0];
+          rq_hold <= 1'b0;
+          st <= S_LOG_RQ2;
+        end
+        S_LOG_RQ2: begin
+          if (!rq_hold) begin
+            rq_go <= 1'b1;
+            rq_hold <= 1'b1;
+          end else if (rq_done) begin
+            st <= S_LOG_FIN;
+          end
+        end
+        S_LOG_FIN: begin
+          logits_we <= 1'b1;
+          logits_a <= vi[7:0];
+          logits_wdata <= c4_sat(rq_q_saved + rq_q);
+          di <= 0; acc <= 64'sd0;
+          rq_hold <= 1'b0;
+          if (vi == 255) begin
+            vi <= 0;
+            best_logit <= -32'sh7fffffff;
+            best_tok <= 8'd0;
+            st <= S_ARG;
+          end else begin
+            vi <= vi + 1;
+            st <= S_LOG;
+          end
         end
         S_ARG: begin
           if ((vi == 0) || (logits[vi] > best_logit)) begin
