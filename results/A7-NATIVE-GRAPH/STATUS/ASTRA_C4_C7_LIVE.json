@@ -94,9 +94,10 @@
   "e3o_scope": "LAST_DI_ACC_SNAP",
   "e3o_rtl": "IN_TREE",
   "e3o_golden": "PASS_n242",
-  "e3o_ooc": "IN_FLIGHT",
+  "e3o_ooc": "CRASH_EXIT_-1_NO_N20",
+  "e3o_ooc_retry": "BLOCKED_LICENSE_GEMINI_BUILD_REAL",
   "d32_sha256_e3o": "0f1791a4298b892c6f2a9d0f4c3467ae0b14ab766310bec09b54eef8ff3de80b",
   "last_closed_ooc": "E3n",
   "last_closed_wns_ns": -5.840,
-  "updated": "2026-09-10T11:59:05+07:00"
+  "updated": "2026-09-10T12:47:00+07:00"
 }
