@@ -4,7 +4,7 @@
   "PROGRAM": "NO",
   "C6_MASTER": "OPEN",
   "freeze_allowed": false,
-  "reason": "C4/C5 acceptance OPEN; no unique bit SHA; last closed OOC WNS -5.998 ns (E3m MIXED, dest rq_val_r); E3n shared-acc keep GOLDEN n=242 PASS, OOC HUNG no n20; alias_wr=0; reverse NEW GATE unimplemented",
+  "reason": "C4/C5 acceptance OPEN; no unique bit SHA; last closed OOC WNS -5.840 ns (E3n MIXED, dest acc_reg / rq_val_r 10/10); E3n keep is not a path-cut PASS; alias_wr=0; reverse NEW GATE unimplemented",
   "required_pins": {
     "git_clean": false,
     "source_commit": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1 dirty 488",
