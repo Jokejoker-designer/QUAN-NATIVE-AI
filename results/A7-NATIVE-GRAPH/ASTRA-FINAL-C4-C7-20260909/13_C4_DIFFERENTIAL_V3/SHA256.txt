@@ -1,6 +1,6 @@
-# SHA freeze BEFORE xvlog 2026-09-10T06:29:46.8957390+07:00
+# SHA freeze BEFORE xvlog 2026-09-10T11:55:55.7117146+07:00
 # PROGRAM=NO BOARD_PASS=OPEN C4_MASTER=OPEN D32_FR_V2
-a699e8b4bbb980c4b062654d5d018ec1d42dfbe18694ea0e4157d9da61d10f4f  rtl/native_graph/integrate/a7ng_astra_c4_lm06_d32_fr_v2.sv
+0f1791a4298b892c6f2a9d0f4c3467ae0b14ab766310bec09b54eef8ff3de80b  rtl/native_graph/integrate/a7ng_astra_c4_lm06_d32_fr_v2.sv
 8f3eaf1e2594d5352e3a222d0bb3125abfc235daf9f306676ae7a544f94ab30e  rtl/native_graph/integrate/a7ng_astra_c4_smres_div_mcycle.sv
 cc287b5b438de4a46b881a0368f2cdfc121fc319d7f9e6998862506e19eb7bbc  rtl/native_graph/integrate/a7ng_astra_c4_rq_mcycle.sv
 cc7926c49308f57a441adf7a94e13d7746c8dba04593a40938a66d64bc017400  rtl/native_graph/integrate/a7ng_astra_c4_lm06_d32_fr_v2.svh

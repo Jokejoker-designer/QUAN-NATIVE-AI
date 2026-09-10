@@ -26,11 +26,12 @@ module a7ng_astra_c4_lm06_d32_fr_v2 (
 );
   typedef enum logic [5:0] {
     S_IDLE, S_SAFE, S_EMB, S_EMB_RQ1, S_EMB_CAP, S_EMB_RQ2, S_EMB_FIN, S_Q, S_Q_RQ, S_Q_FIN, S_K, S_K_RQ, S_K_FIN, S_V, S_V_RQ, S_V_FIN, S_DOT, S_DOT_RQ, S_DOT_FIN, S_SMMAX, S_SMLUT,
-    S_SMDIV, S_SMRES, S_SMFIX, S_H, S_H_SNAP, S_H_RQ, S_H_FIN, S_Y, S_Y_RQ1, S_Y_CAP, S_Y_RQ2, S_Y_FIN, S_F1, S_F1_RQ, S_F1_FIN,
+    S_SMDIV, S_SMRES, S_SMFIX, S_H, S_H_SNAP, S_ACC_SNAP, S_H_RQ, S_H_FIN, S_Y, S_Y_RQ1, S_Y_CAP, S_Y_RQ2, S_Y_FIN, S_F1, S_F1_RQ, S_F1_FIN,
     S_F2, S_F2_RQ1, S_F2_CAP, S_F2_RQ2, S_F2_FIN, S_LOG, S_LOG_RQ1, S_LOG_CAP,
     S_LOG_RQ2, S_LOG_FIN, S_ARG, S_EMIT, S_DONE
   } st_t;
   st_t st;
+  st_t snap_next;
 
   localparam int unsigned D = A7NG_C4D32_D;
   localparam int unsigned Ff = A7NG_C4D32_F;
@@ -199,6 +200,7 @@ module a7ng_astra_c4_lm06_d32_fr_v2 (
       rq_mul_r <= 32'd0;
       rq_shr_r <= 6'd0;
       rq_q_saved <= 64'sd0;
+      snap_next <= S_IDLE;
       x_we <= 1'b0; qv_we <= 1'b0; kv_we <= 1'b0;
       vv_we <= 1'b0; zv_we <= 1'b0; logits_we <= 1'b0;
     end else begin
@@ -292,11 +294,11 @@ module a7ng_astra_c4_lm06_d32_fr_v2 (
           w8 = use_r ? wgt8(WqR[dj*D + di]) : wgt8(Wq[dj*D + di]);
           acc <= (di == 0) ? (w8 * x[tlen-1][di]) : (acc + w8 * x[tlen-1][di]);
           if (di == D - 1) begin
-            rq_val_r <= acc + w8 * x[tlen-1][di];
             rq_mul_r <= use_r ? A7NG_C4D32_RQ_QR_MUL[31:0] : A7NG_C4D32_RQ_Q_MUL[31:0];
             rq_shr_r <= use_r ? A7NG_C4D32_RQ_QR_SHR[5:0] : A7NG_C4D32_RQ_Q_SHR[5:0];
             rq_hold <= 1'b0;
-            st <= S_Q_RQ;
+            snap_next <= S_Q_RQ;
+            st <= S_ACC_SNAP;
           end else di <= di + 1;
         end
         S_Q_RQ: begin
@@ -324,11 +326,11 @@ module a7ng_astra_c4_lm06_d32_fr_v2 (
           w8 = use_r ? wgt8(WkR[dj*D + di]) : wgt8(Wk[dj*D + di]);
           acc <= (di == 0) ? (w8 * x[ti][di]) : (acc + w8 * x[ti][di]);
           if (di == D - 1) begin
-            rq_val_r <= acc + w8 * x[ti][di];
             rq_mul_r <= use_r ? A7NG_C4D32_RQ_KR_MUL[31:0] : A7NG_C4D32_RQ_K_MUL[31:0];
             rq_shr_r <= use_r ? A7NG_C4D32_RQ_KR_SHR[5:0] : A7NG_C4D32_RQ_K_SHR[5:0];
             rq_hold <= 1'b0;
-            st <= S_K_RQ;
+            snap_next <= S_K_RQ;
+            st <= S_ACC_SNAP;
           end else di <= di + 1;
         end
         S_K_RQ: begin
@@ -359,11 +361,11 @@ module a7ng_astra_c4_lm06_d32_fr_v2 (
           w8 = use_r ? wgt8(WvR[dj*D + di]) : wgt8(Wv[dj*D + di]);
           acc <= (di == 0) ? (w8 * x[ti][di]) : (acc + w8 * x[ti][di]);
           if (di == D - 1) begin
-            rq_val_r <= acc + w8 * x[ti][di];
             rq_mul_r <= use_r ? A7NG_C4D32_RQ_VR_MUL[31:0] : A7NG_C4D32_RQ_V_MUL[31:0];
             rq_shr_r <= use_r ? A7NG_C4D32_RQ_VR_SHR[5:0] : A7NG_C4D32_RQ_V_SHR[5:0];
             rq_hold <= 1'b0;
-            st <= S_V_RQ;
+            snap_next <= S_V_RQ;
+            st <= S_ACC_SNAP;
           end else di <= di + 1;
         end
         S_V_RQ: begin
@@ -393,11 +395,11 @@ module a7ng_astra_c4_lm06_d32_fr_v2 (
         S_DOT: begin
           acc <= (di == 0) ? (kv[ti][di] * qv[di]) : (acc + kv[ti][di] * qv[di]);
           if (di == D - 1) begin
-            rq_val_r <= acc + kv[ti][di] * qv[di];
             rq_mul_r <= A7NG_C4D32_RQ_DOTS_MUL[31:0];
             rq_shr_r <= A7NG_C4D32_RQ_DOTS_SHR[5:0];
             rq_hold <= 1'b0;
-            st <= S_DOT_RQ;
+            snap_next <= S_DOT_RQ;
+            st <= S_ACC_SNAP;
           end else di <= di + 1;
         end
         S_DOT_RQ: begin
@@ -476,6 +478,10 @@ module a7ng_astra_c4_lm06_d32_fr_v2 (
           rq_hold <= 1'b0;
           st <= S_H_RQ;
         end
+        S_ACC_SNAP: begin
+          rq_val_r <= acc;
+          st <= snap_next;
+        end
         S_H_RQ: begin
           if (!rq_hold) begin
             rq_go <= 1'b1;
@@ -540,11 +546,11 @@ module a7ng_astra_c4_lm06_d32_fr_v2 (
           w8 = wgt8(W1[fi*D + di]);
           acc <= (di == 0) ? (w8 * yv[di]) : (acc + w8 * yv[di]);
           if (di == D - 1) begin
-            rq_val_r <= acc + w8 * yv[di];
             rq_mul_r <= A7NG_C4D32_RQ_T_MUL[31:0];
             rq_shr_r <= A7NG_C4D32_RQ_T_SHR[5:0];
             rq_hold <= 1'b0;
-            st <= S_F1_RQ;
+            snap_next <= S_F1_RQ;
+            st <= S_ACC_SNAP;
           end else di <= di + 1;
         end
         S_F1_RQ: begin
@@ -622,11 +628,11 @@ module a7ng_astra_c4_lm06_d32_fr_v2 (
           w8 = wgt8(We[vi*D + di]);
           acc <= (di == 0) ? (w8 * zv[di]) : (acc + w8 * zv[di]);
           if (di == D - 1) begin
-            rq_val_r <= acc + w8 * zv[di];
             rq_mul_r <= A7NG_C4D32_RQ_LOGITS_MUL[31:0];
             rq_shr_r <= A7NG_C4D32_RQ_LOGITS_SHR[5:0];
             rq_hold <= 1'b0;
-            st <= S_LOG_RQ1;
+            snap_next <= S_LOG_RQ1;
+            st <= S_ACC_SNAP;
           end else di <= di + 1;
         end
         S_LOG_RQ1: begin

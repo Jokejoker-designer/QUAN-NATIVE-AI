@@ -1,6 +1,6 @@
 {
   "schema": "G14_STAGE14_BOARD_GATE_V1",
-  "recorded_at": "2026-09-10T11:23:00+07:00",
+  "recorded_at": "2026-09-10T12:00:00+07:00",
   "PROGRAM": "NO",
   "C4_MASTER": "OPEN",
   "C5_MASTER": "OPEN",
@@ -14,7 +14,7 @@
   "violated_invariant": "\u00a721 program only the frozen C6 bit \u2014 artifact missing; \u00a722 SAME BIT/SAME MANIFEST cannot hold",
   "affected_module": "C6 freeze / C4 physical closure / C5 unified regression",
   "why_continuation_is_unsafe": "Programming any unfrozen or sibling bit, or stamping BOARD_PASS from XSim/UART smoke, would mix artifacts and violate WO \u00a722. Live WO amendment requires E0\u2192E1 NEW GATE / E3a\u2192E3b before C6 freeze.",
-  "smallest_remaining_experiment": "Last closed OOC is E3n WNS -5.840 ns MIXED (10 acc / 10 rq_snap). Next measured gate is one last-di SNAP (E3o). Do not program.",
+  "smallest_remaining_experiment": "Last closed OOC is E3n WNS -5.840 ns. E3o GOLDEN n=242 PASS, OOC in flight. Do not program. Board currently holds a Gemini bit, not a frozen C6 ASTRA bit.",
   "pre_program_checklist_wo21": {
     "target_part": "xc7a100tcsg324-1",
     "expected_board": "Arty A7-100T",
