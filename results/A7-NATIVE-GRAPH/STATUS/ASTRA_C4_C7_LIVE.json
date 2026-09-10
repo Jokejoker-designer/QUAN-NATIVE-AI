@@ -86,10 +86,12 @@
   "e3m_next_gate": "E3n_acc_keep",
   "e3n_scope": "SHARED_ACC_KEEP_ONLY",
   "e3n_golden": "PASS_n242",
-  "e3n_ooc": "HUNG_NO_N20",
-  "e3n_wns_ns": null,
+  "e3n_ooc": "DONE",
+  "e3n_wns_ns": -5.840,
+  "e3n_case": "MIXED",
   "e3n_next_gate": "E3o_last_di_snap",
-  "last_closed_ooc": "E3m",
-  "last_closed_wns_ns": -5.998,
-  "updated": "2026-09-10T11:13:00+07:00"
+  "e3n_n20_sha256": "55870abf8047e039bd0310966fa5484719c98296675412fc18b5130d05bb382b",
+  "last_closed_ooc": "E3n",
+  "last_closed_wns_ns": -5.840,
+  "updated": "2026-09-10T11:23:00+07:00"
 }
