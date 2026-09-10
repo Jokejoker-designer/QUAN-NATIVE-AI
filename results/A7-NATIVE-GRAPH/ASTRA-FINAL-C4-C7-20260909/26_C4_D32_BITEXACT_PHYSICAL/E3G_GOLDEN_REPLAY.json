@@ -1,0 +1,14 @@
+{
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "e3g_scope": "S_LOG_ONLY",
+  "marker": "ASTRA_C4_D32_FR_V2_XSIM_PASS n=242",
+  "CLASS_ref_match": "HIT",
+  "CLASS_host_tok0": "HIT",
+  "nfail_log": 0,
+  "sim_elapsed_s": 154,
+  "wall_ended": "2026-09-09T21:14:20+07:00",
+  "d32_sha256": "45e86a492cc4e30874115e9b83c40031f5fe2c3deed7c6b757fc7888f3a36a4e",
+  "rq_sha256": "cc287b5b438de4a46b881a0368f2cdfc121fc319d7f9e6998862506e19eb7bbc",
+  "note": "Token parity after S_LOG snapshot→rq logits→CAP→rq bias→S_LOG_FIN c4_sat(sum). S_Q/S_K still combo. S_V still E3e mcycle. Not BOARD_PASS."
+}

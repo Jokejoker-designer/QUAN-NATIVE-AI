@@ -1,0 +1,40 @@
+{
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "ASTRA_NATIVE_AI_BOARD_PASS": "OPEN",
+  "scope": "S_H_ACC_ONLY",
+  "six": {
+    "wns_ns": -5.998,
+    "tns_ns": -2234.909,
+    "failing_endpoints": 647,
+    "top20_family_counts": {
+      "rq_snap": 19,
+      "acc": 1
+    },
+    "acc_in_top20": 1,
+    "acc_left_top20": false,
+    "acc_still_20_of_20": false,
+    "worst_logic_levels": 21,
+    "worst_carry4": 9,
+    "worst_dsp48e1": 1,
+    "worst_source": "di_reg[4]/C",
+    "worst_destination": "rq_val_r_reg[63]/D",
+    "worst_dest_family": "rq_snap"
+  },
+  "classification": {
+    "case": "MIXED",
+    "label": "read_topn",
+    "note": "Neither clean A/B/C. Read timing_n20_e3m.rpt before RTL.",
+    "wns_delta_vs_e3l_ns": 0.5449999999999999,
+    "wns_strong": false,
+    "next_gate": "READ_TOPN"
+  },
+  "report_sha256": "e733fb4f123eca67d8c81b6ca151f6ba110ee4a296e94ffd6e548ead296304ce",
+  "util": {
+    "slice_luts": 27895,
+    "lut_as_memory": 224,
+    "slice_registers": 42960,
+    "block_ram_tile": 0,
+    "dsps": 25
+  }
+}

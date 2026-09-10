@@ -1,0 +1,639 @@
+{
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "ASTRA_NATIVE_AI_BOARD_PASS": "OPEN",
+  "e3f": "TOPN_PARSED",
+  "scope": "S_K_ONLY",
+  "e3g_case_b_stands": true,
+  "e3f_functional": "PASS_n242",
+  "six": {
+    "wns_ns": -22.55,
+    "tns_ns": -63996.18,
+    "failing_endpoints": 4406,
+    "top20_family_counts": {
+      "hv": 20
+    },
+    "kv_wdata_in_top20": 0,
+    "kv_left_top20": true,
+    "kv_still_20_of_20": false,
+    "worst_logic_levels": 46,
+    "worst_carry4": 28,
+    "worst_dsp48e1": 3,
+    "worst_source": "vv_reg[23][27][15]/C",
+    "worst_destination": "hv_reg[0][0]/D",
+    "worst_dest_family": "hv",
+    "e3g_ref": {
+      "wns_ns": -22.718,
+      "logic_levels": 48,
+      "carry4": 31,
+      "dsp48e1": 4,
+      "family": "kv_wdata 20/20"
+    }
+  },
+  "classification": {
+    "case": "B",
+    "label": "path_cut_new_family",
+    "note": "kv_wdata left top-20; WNS only slight/flat. E3f still PASS as a path cut. Target the new named family. Do not mass-refactor remaining c4_rq sites.",
+    "wns_delta_vs_e3g_ns": 0.16799999999999926,
+    "wns_strong": false,
+    "next_gate": "E3h_hv",
+    "thresholds": {
+      "strong_wns_ns": 3.0,
+      "unchanged_wns_ns": 0.35
+    }
+  },
+  "report_sha256": "33fd344924687038640fd496efcb02b62c36b5f1478f661ed91c298756435ab0",
+  "n_paths": 20,
+  "util": {
+    "slice_luts": 30815,
+    "lut_as_memory": 224,
+    "slice_registers": 42817,
+    "block_ram_tile": 0,
+    "dsps": 74
+  },
+  "note": "Does not overwrite E3A/E3D/E3E/E3G n20. Top-N points; no mass c4_rq refactor.",
+  "paths": [
+    {
+      "rank": 0,
+      "status": "VIOLATED",
+      "slack_ns": -22.55,
+      "source": "vv_reg[23][27][15]/C",
+      "destination": "hv_reg[0][0]/D",
+      "data_path_delay_ns": 32.51,
+      "logic_levels": 46,
+      "level_breakdown": "CARRY4=28 DSP48E1=3 LUT1=2 LUT2=3 LUT3=1 LUT5=4 LUT6=2 MUXF7=2 MUXF8=1",
+      "cell_histogram": {
+        "FDRE": 5,
+        "LUT6": 2,
+        "MUXF7": 2,
+        "LUT5": 4,
+        "MUXF8": 1,
+        "DSP48E1": 3,
+        "LUT2": 3,
+        "CARRY4": 28,
+        "LUT1": 2,
+        "LUT3": 1
+      },
+      "name_family_counts": {
+        "other": 49
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "hv"
+    },
+    {
+      "rank": 1,
+      "status": "VIOLATED",
+      "slack_ns": -22.55,
+      "source": "vv_reg[23][27][15]/C",
+      "destination": "hv_reg[0][10]/D",
+      "data_path_delay_ns": 32.51,
+      "logic_levels": 46,
+      "level_breakdown": "CARRY4=28 DSP48E1=3 LUT1=2 LUT2=3 LUT5=5 LUT6=2 MUXF7=2 MUXF8=1",
+      "cell_histogram": {
+        "FDRE": 5,
+        "LUT6": 2,
+        "MUXF7": 2,
+        "LUT5": 5,
+        "MUXF8": 1,
+        "DSP48E1": 3,
+        "LUT2": 3,
+        "CARRY4": 28,
+        "LUT1": 2
+      },
+      "name_family_counts": {
+        "other": 49
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "hv"
+    },
+    {
+      "rank": 2,
+      "status": "VIOLATED",
+      "slack_ns": -22.55,
+      "source": "vv_reg[23][27][15]/C",
+      "destination": "hv_reg[0][11]/D",
+      "data_path_delay_ns": 32.51,
+      "logic_levels": 46,
+      "level_breakdown": "CARRY4=28 DSP48E1=3 LUT1=2 LUT2=3 LUT5=5 LUT6=2 MUXF7=2 MUXF8=1",
+      "cell_histogram": {
+        "FDRE": 5,
+        "LUT6": 2,
+        "MUXF7": 2,
+        "LUT5": 5,
+        "MUXF8": 1,
+        "DSP48E1": 3,
+        "LUT2": 3,
+        "CARRY4": 28,
+        "LUT1": 2
+      },
+      "name_family_counts": {
+        "other": 49
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "hv"
+    },
+    {
+      "rank": 3,
+      "status": "VIOLATED",
+      "slack_ns": -22.55,
+      "source": "vv_reg[23][27][15]/C",
+      "destination": "hv_reg[0][12]/D",
+      "data_path_delay_ns": 32.51,
+      "logic_levels": 46,
+      "level_breakdown": "CARRY4=28 DSP48E1=3 LUT1=2 LUT2=3 LUT5=5 LUT6=2 MUXF7=2 MUXF8=1",
+      "cell_histogram": {
+        "FDRE": 5,
+        "LUT6": 2,
+        "MUXF7": 2,
+        "LUT5": 5,
+        "MUXF8": 1,
+        "DSP48E1": 3,
+        "LUT2": 3,
+        "CARRY4": 28,
+        "LUT1": 2
+      },
+      "name_family_counts": {
+        "other": 49
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "hv"
+    },
+    {
+      "rank": 4,
+      "status": "VIOLATED",
+      "slack_ns": -22.55,
+      "source": "vv_reg[23][27][15]/C",
+      "destination": "hv_reg[0][13]/D",
+      "data_path_delay_ns": 32.51,
+      "logic_levels": 46,
+      "level_breakdown": "CARRY4=28 DSP48E1=3 LUT1=2 LUT2=3 LUT5=5 LUT6=2 MUXF7=2 MUXF8=1",
+      "cell_histogram": {
+        "FDRE": 5,
+        "LUT6": 2,
+        "MUXF7": 2,
+        "LUT5": 5,
+        "MUXF8": 1,
+        "DSP48E1": 3,
+        "LUT2": 3,
+        "CARRY4": 28,
+        "LUT1": 2
+      },
+      "name_family_counts": {
+        "other": 49
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "hv"
+    },
+    {
+      "rank": 5,
+      "status": "VIOLATED",
+      "slack_ns": -22.55,
+      "source": "vv_reg[23][27][15]/C",
+      "destination": "hv_reg[0][14]/D",
+      "data_path_delay_ns": 32.51,
+      "logic_levels": 46,
+      "level_breakdown": "CARRY4=28 DSP48E1=3 LUT1=2 LUT2=3 LUT5=5 LUT6=2 MUXF7=2 MUXF8=1",
+      "cell_histogram": {
+        "FDRE": 5,
+        "LUT6": 2,
+        "MUXF7": 2,
+        "LUT5": 5,
+        "MUXF8": 1,
+        "DSP48E1": 3,
+        "LUT2": 3,
+        "CARRY4": 28,
+        "LUT1": 2
+      },
+      "name_family_counts": {
+        "other": 49
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "hv"
+    },
+    {
+      "rank": 6,
+      "status": "VIOLATED",
+      "slack_ns": -22.55,
+      "source": "vv_reg[23][27][15]/C",
+      "destination": "hv_reg[0][15]/D",
+      "data_path_delay_ns": 32.51,
+      "logic_levels": 46,
+      "level_breakdown": "CARRY4=28 DSP48E1=3 LUT1=2 LUT2=3 LUT5=5 LUT6=2 MUXF7=2 MUXF8=1",
+      "cell_histogram": {
+        "FDRE": 5,
+        "LUT6": 2,
+        "MUXF7": 2,
+        "LUT5": 5,
+        "MUXF8": 1,
+        "DSP48E1": 3,
+        "LUT2": 3,
+        "CARRY4": 28,
+        "LUT1": 2
+      },
+      "name_family_counts": {
+        "other": 49
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "hv"
+    },
+    {
+      "rank": 7,
+      "status": "VIOLATED",
+      "slack_ns": -22.55,
+      "source": "vv_reg[23][27][15]/C",
+      "destination": "hv_reg[0][1]/D",
+      "data_path_delay_ns": 32.51,
+      "logic_levels": 46,
+      "level_breakdown": "CARRY4=28 DSP48E1=3 LUT1=2 LUT2=3 LUT5=5 LUT6=2 MUXF7=2 MUXF8=1",
+      "cell_histogram": {
+        "FDRE": 5,
+        "LUT6": 2,
+        "MUXF7": 2,
+        "LUT5": 5,
+        "MUXF8": 1,
+        "DSP48E1": 3,
+        "LUT2": 3,
+        "CARRY4": 28,
+        "LUT1": 2
+      },
+      "name_family_counts": {
+        "other": 49
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "hv"
+    },
+    {
+      "rank": 8,
+      "status": "VIOLATED",
+      "slack_ns": -22.55,
+      "source": "vv_reg[23][27][15]/C",
+      "destination": "hv_reg[0][2]/D",
+      "data_path_delay_ns": 32.51,
+      "logic_levels": 46,
+      "level_breakdown": "CARRY4=28 DSP48E1=3 LUT1=2 LUT2=3 LUT5=5 LUT6=2 MUXF7=2 MUXF8=1",
+      "cell_histogram": {
+        "FDRE": 5,
+        "LUT6": 2,
+        "MUXF7": 2,
+        "LUT5": 5,
+        "MUXF8": 1,
+        "DSP48E1": 3,
+        "LUT2": 3,
+        "CARRY4": 28,
+        "LUT1": 2
+      },
+      "name_family_counts": {
+        "other": 49
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "hv"
+    },
+    {
+      "rank": 9,
+      "status": "VIOLATED",
+      "slack_ns": -22.55,
+      "source": "vv_reg[23][27][15]/C",
+      "destination": "hv_reg[0][3]/D",
+      "data_path_delay_ns": 32.51,
+      "logic_levels": 46,
+      "level_breakdown": "CARRY4=28 DSP48E1=3 LUT1=2 LUT2=3 LUT5=5 LUT6=2 MUXF7=2 MUXF8=1",
+      "cell_histogram": {
+        "FDRE": 5,
+        "LUT6": 2,
+        "MUXF7": 2,
+        "LUT5": 5,
+        "MUXF8": 1,
+        "DSP48E1": 3,
+        "LUT2": 3,
+        "CARRY4": 28,
+        "LUT1": 2
+      },
+      "name_family_counts": {
+        "other": 49
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "hv"
+    },
+    {
+      "rank": 10,
+      "status": "VIOLATED",
+      "slack_ns": -22.55,
+      "source": "vv_reg[23][27][15]/C",
+      "destination": "hv_reg[0][4]/D",
+      "data_path_delay_ns": 32.51,
+      "logic_levels": 46,
+      "level_breakdown": "CARRY4=28 DSP48E1=3 LUT1=2 LUT2=3 LUT5=5 LUT6=2 MUXF7=2 MUXF8=1",
+      "cell_histogram": {
+        "FDRE": 5,
+        "LUT6": 2,
+        "MUXF7": 2,
+        "LUT5": 5,
+        "MUXF8": 1,
+        "DSP48E1": 3,
+        "LUT2": 3,
+        "CARRY4": 28,
+        "LUT1": 2
+      },
+      "name_family_counts": {
+        "other": 49
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "hv"
+    },
+    {
+      "rank": 11,
+      "status": "VIOLATED",
+      "slack_ns": -22.55,
+      "source": "vv_reg[23][27][15]/C",
+      "destination": "hv_reg[0][5]/D",
+      "data_path_delay_ns": 32.51,
+      "logic_levels": 46,
+      "level_breakdown": "CARRY4=28 DSP48E1=3 LUT1=2 LUT2=3 LUT5=5 LUT6=2 MUXF7=2 MUXF8=1",
+      "cell_histogram": {
+        "FDRE": 5,
+        "LUT6": 2,
+        "MUXF7": 2,
+        "LUT5": 5,
+        "MUXF8": 1,
+        "DSP48E1": 3,
+        "LUT2": 3,
+        "CARRY4": 28,
+        "LUT1": 2
+      },
+      "name_family_counts": {
+        "other": 49
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "hv"
+    },
+    {
+      "rank": 12,
+      "status": "VIOLATED",
+      "slack_ns": -22.55,
+      "source": "vv_reg[23][27][15]/C",
+      "destination": "hv_reg[0][6]/D",
+      "data_path_delay_ns": 32.51,
+      "logic_levels": 46,
+      "level_breakdown": "CARRY4=28 DSP48E1=3 LUT1=2 LUT2=3 LUT5=5 LUT6=2 MUXF7=2 MUXF8=1",
+      "cell_histogram": {
+        "FDRE": 5,
+        "LUT6": 2,
+        "MUXF7": 2,
+        "LUT5": 5,
+        "MUXF8": 1,
+        "DSP48E1": 3,
+        "LUT2": 3,
+        "CARRY4": 28,
+        "LUT1": 2
+      },
+      "name_family_counts": {
+        "other": 49
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "hv"
+    },
+    {
+      "rank": 13,
+      "status": "VIOLATED",
+      "slack_ns": -22.55,
+      "source": "vv_reg[23][27][15]/C",
+      "destination": "hv_reg[0][7]/D",
+      "data_path_delay_ns": 32.51,
+      "logic_levels": 46,
+      "level_breakdown": "CARRY4=28 DSP48E1=3 LUT1=2 LUT2=3 LUT5=5 LUT6=2 MUXF7=2 MUXF8=1",
+      "cell_histogram": {
+        "FDRE": 5,
+        "LUT6": 2,
+        "MUXF7": 2,
+        "LUT5": 5,
+        "MUXF8": 1,
+        "DSP48E1": 3,
+        "LUT2": 3,
+        "CARRY4": 28,
+        "LUT1": 2
+      },
+      "name_family_counts": {
+        "other": 49
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "hv"
+    },
+    {
+      "rank": 14,
+      "status": "VIOLATED",
+      "slack_ns": -22.55,
+      "source": "vv_reg[23][27][15]/C",
+      "destination": "hv_reg[0][8]/D",
+      "data_path_delay_ns": 32.51,
+      "logic_levels": 46,
+      "level_breakdown": "CARRY4=28 DSP48E1=3 LUT1=2 LUT2=3 LUT5=5 LUT6=2 MUXF7=2 MUXF8=1",
+      "cell_histogram": {
+        "FDRE": 5,
+        "LUT6": 2,
+        "MUXF7": 2,
+        "LUT5": 5,
+        "MUXF8": 1,
+        "DSP48E1": 3,
+        "LUT2": 3,
+        "CARRY4": 28,
+        "LUT1": 2
+      },
+      "name_family_counts": {
+        "other": 49
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "hv"
+    },
+    {
+      "rank": 15,
+      "status": "VIOLATED",
+      "slack_ns": -22.55,
+      "source": "vv_reg[23][27][15]/C",
+      "destination": "hv_reg[0][9]/D",
+      "data_path_delay_ns": 32.51,
+      "logic_levels": 46,
+      "level_breakdown": "CARRY4=28 DSP48E1=3 LUT1=2 LUT2=3 LUT5=5 LUT6=2 MUXF7=2 MUXF8=1",
+      "cell_histogram": {
+        "FDRE": 5,
+        "LUT6": 2,
+        "MUXF7": 2,
+        "LUT5": 5,
+        "MUXF8": 1,
+        "DSP48E1": 3,
+        "LUT2": 3,
+        "CARRY4": 28,
+        "LUT1": 2
+      },
+      "name_family_counts": {
+        "other": 49
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "hv"
+    },
+    {
+      "rank": 16,
+      "status": "VIOLATED",
+      "slack_ns": -22.55,
+      "source": "vv_reg[23][27][15]/C",
+      "destination": "hv_reg[10][0]/D",
+      "data_path_delay_ns": 32.51,
+      "logic_levels": 46,
+      "level_breakdown": "CARRY4=28 DSP48E1=3 LUT1=2 LUT2=3 LUT3=1 LUT5=4 LUT6=2 MUXF7=2 MUXF8=1",
+      "cell_histogram": {
+        "FDRE": 5,
+        "LUT6": 2,
+        "MUXF7": 2,
+        "LUT5": 4,
+        "MUXF8": 1,
+        "DSP48E1": 3,
+        "LUT2": 3,
+        "CARRY4": 28,
+        "LUT1": 2,
+        "LUT3": 1
+      },
+      "name_family_counts": {
+        "other": 49
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "hv"
+    },
+    {
+      "rank": 17,
+      "status": "VIOLATED",
+      "slack_ns": -22.55,
+      "source": "vv_reg[23][27][15]/C",
+      "destination": "hv_reg[10][10]/D",
+      "data_path_delay_ns": 32.51,
+      "logic_levels": 46,
+      "level_breakdown": "CARRY4=28 DSP48E1=3 LUT1=2 LUT2=3 LUT5=5 LUT6=2 MUXF7=2 MUXF8=1",
+      "cell_histogram": {
+        "FDRE": 5,
+        "LUT6": 2,
+        "MUXF7": 2,
+        "LUT5": 5,
+        "MUXF8": 1,
+        "DSP48E1": 3,
+        "LUT2": 3,
+        "CARRY4": 28,
+        "LUT1": 2
+      },
+      "name_family_counts": {
+        "other": 49
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "hv"
+    },
+    {
+      "rank": 18,
+      "status": "VIOLATED",
+      "slack_ns": -22.55,
+      "source": "vv_reg[23][27][15]/C",
+      "destination": "hv_reg[10][11]/D",
+      "data_path_delay_ns": 32.51,
+      "logic_levels": 46,
+      "level_breakdown": "CARRY4=28 DSP48E1=3 LUT1=2 LUT2=3 LUT5=5 LUT6=2 MUXF7=2 MUXF8=1",
+      "cell_histogram": {
+        "FDRE": 5,
+        "LUT6": 2,
+        "MUXF7": 2,
+        "LUT5": 5,
+        "MUXF8": 1,
+        "DSP48E1": 3,
+        "LUT2": 3,
+        "CARRY4": 28,
+        "LUT1": 2
+      },
+      "name_family_counts": {
+        "other": 49
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "hv"
+    },
+    {
+      "rank": 19,
+      "status": "VIOLATED",
+      "slack_ns": -22.55,
+      "source": "vv_reg[23][27][15]/C",
+      "destination": "hv_reg[10][12]/D",
+      "data_path_delay_ns": 32.51,
+      "logic_levels": 46,
+      "level_breakdown": "CARRY4=28 DSP48E1=3 LUT1=2 LUT2=3 LUT5=5 LUT6=2 MUXF7=2 MUXF8=1",
+      "cell_histogram": {
+        "FDRE": 5,
+        "LUT6": 2,
+        "MUXF7": 2,
+        "LUT5": 5,
+        "MUXF8": 1,
+        "DSP48E1": 3,
+        "LUT2": 3,
+        "CARRY4": 28,
+        "LUT1": 2
+      },
+      "name_family_counts": {
+        "other": 49
+      },
+      "smres_name_hit": 0,
+      "weight_name_hit": 0,
+      "has_ramb": false,
+      "has_dsp": true,
+      "dest_family": "hv"
+    }
+  ]
+}
