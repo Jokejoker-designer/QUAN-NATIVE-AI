@@ -1,5 +1,22 @@
 {
-  "n_dest": 0,
+  "n_dest": 20,
+  "family_counts": {
+    "other": 19,
+    "d32": 1
+  },
+  "top_family": "other",
+  "case_vs_prior_c3_sgd_w": "NEW_FAMILY",
   "auto_start_next_pipe": false,
-  "stale": true
+  "E3AB": "DO_NOT_START",
+  "dests_head": [
+    "u_c5/u_c3/u_sgd/acc_reg[38]/D",
+    "u_c5/u_c3/u_sgd/acc_reg[28]/D",
+    "u_c5/u_c3/u_sgd/acc_reg[27]/D",
+    "u_c5/u_c3/u_sp/u_qse/xid_reg[0]/D",
+    "u_c5/u_c3/u_sp/u_qse/pst_reg[1]/D",
+    "u_c5/u_c3/u_sp/u_qse/pst_reg[0]/D",
+    "u_c5/u_c3/u_sp/u_qse/ambiguity_o_reg/D",
+    "u_c5/u_c3/u_sp/u_qse/ctx_id_o_reg[1]/D"
+  ],
+  "n20_sha256": "2c00961c884899a1faaa75acb3490db48767bae14f8b68bcfa5e42321a822020"
 }

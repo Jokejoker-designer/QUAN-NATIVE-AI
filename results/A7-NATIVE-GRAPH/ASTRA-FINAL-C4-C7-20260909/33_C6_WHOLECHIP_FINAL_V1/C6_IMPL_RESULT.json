@@ -6,17 +6,47 @@
   "ASTRA_NATIVE_AI_BOARD_PASS": "NOT_EVIDENCED",
   "freeze_allowed": false,
   "top": "a7ng_astra_c6_wholechip_final_v1",
-  "letters": {},
-  "fit_ok": false,
-  "stale_letters_ignored": true,
-  "n20": {
-    "n_dest": 0,
-    "auto_start_next_pipe": false,
-    "stale": true
+  "letters": {
+    "WNS": "0.273",
+    "TNS": "0.000",
+    "WHS": "0.026",
+    "THS": "0.000",
+    "UNROUTED": "0",
+    "FAILED_ROUTE": "0",
+    "DRC_ERROR_FATAL": "0",
+    "CRITICAL_UNCONSTRAINED": "0",
+    "FIT_OK": "1",
+    "PROGRAM": "NO",
+    "C6_MASTER": "OPEN",
+    "TOP": "a7ng_astra_c6_wholechip_final_v1"
   },
-  "route_pass_marker": false,
-  "bit_exists": false,
-  "bit_sha256": null,
+  "fit_ok": true,
+  "stale_letters_ignored": false,
+  "n20": {
+    "n_dest": 20,
+    "family_counts": {
+      "other": 19,
+      "d32": 1
+    },
+    "top_family": "other",
+    "case_vs_prior_c3_sgd_w": "NEW_FAMILY",
+    "auto_start_next_pipe": false,
+    "E3AB": "DO_NOT_START",
+    "dests_head": [
+      "u_c5/u_c3/u_sgd/acc_reg[38]/D",
+      "u_c5/u_c3/u_sgd/acc_reg[28]/D",
+      "u_c5/u_c3/u_sgd/acc_reg[27]/D",
+      "u_c5/u_c3/u_sp/u_qse/xid_reg[0]/D",
+      "u_c5/u_c3/u_sp/u_qse/pst_reg[1]/D",
+      "u_c5/u_c3/u_sp/u_qse/pst_reg[0]/D",
+      "u_c5/u_c3/u_sp/u_qse/ambiguity_o_reg/D",
+      "u_c5/u_c3/u_sp/u_qse/ctx_id_o_reg[1]/D"
+    ],
+    "n20_sha256": "2c00961c884899a1faaa75acb3490db48767bae14f8b68bcfa5e42321a822020"
+  },
+  "route_pass_marker": true,
+  "bit_exists": true,
+  "bit_sha256": "536acbecb41f7a7e53d8160fdcf718856cc724ae21b3ffff6b6d751e147e7935",
   "note": "Routed letters are not a freeze. TIMING_OR_FIT miss is not a bit. Do not program. Do not auto-start next pipe.",
-  "updated": "2026-09-11T22:40:30+07:00"
+  "updated": "2026-09-12T02:46:22+07:00"
 }
