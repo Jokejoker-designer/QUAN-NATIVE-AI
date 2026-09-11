@@ -4,7 +4,7 @@
   "PROGRAM": "NO",
   "C6_MASTER": "OPEN",
   "freeze_allowed": false,
-  "reason": "C4/C5 acceptance OPEN; no unique bit SHA; last closed OOC WNS -5.840 ns (E3n MIXED); E3o last-di SNAP GOLDEN n=242 PASS, OOC in flight; alias_wr=0; reverse NEW GATE unimplemented",
+  "reason": "C4/C5 acceptance OPEN; no unique bit SHA; last closed OOC WNS -1.332 ns (E3y MIXED, S_DOT kv left, S_F2 fi→prod_r 20/20); local E3 stopped at E3_REVIEW (no E3z); freeze_allowed false until post-route WNS>=0 TNS=0 WHS>=0 THS=0; alias_wr=0; E1a reverse XSim HIT not MASTER; PROGRAM not authorized",
   "required_pins": {
     "git_clean": false,
     "source_commit": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1 dirty 488",

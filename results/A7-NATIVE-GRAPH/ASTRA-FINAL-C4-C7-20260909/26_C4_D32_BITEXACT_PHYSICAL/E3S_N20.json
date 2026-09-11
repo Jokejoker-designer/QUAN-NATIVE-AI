@@ -1,0 +1,40 @@
+{
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "ASTRA_NATIVE_AI_BOARD_PASS": "OPEN",
+  "scope": "DMAX_KEEP",
+  "six": {
+    "wns_ns": -3.755,
+    "tns_ns": -1501.355,
+    "failing_endpoints": 519,
+    "top20_family_counts": {
+      "smres": 20
+    },
+    "smres_in_top20": 20,
+    "smres_left_top20": false,
+    "smres_still_20_of_20": true,
+    "worst_logic_levels": 23,
+    "worst_carry4": 9,
+    "worst_dsp48e1": 0,
+    "worst_source": "dots_reg[23][1]/C",
+    "worst_destination": "elut_reg[0][0]/D",
+    "worst_dest_family": "smres",
+    "source_is_dots": true
+  },
+  "classification": {
+    "case": "C",
+    "label": "register_boundary_may_not_have_survived",
+    "note": "elut still 20/20 from dots. dmax keep may not have cut S_SMLUT flatten.",
+    "wns_delta_vs_e3r_ns": -0.08599999999999985,
+    "wns_strong": false,
+    "next_gate": "E3T_SMLUT_PIPE"
+  },
+  "report_sha256": "fc146755028fd27da602776689b7b60728cb9b16aae24a80011b57ae24963aba",
+  "util": {
+    "slice_luts": 27509,
+    "lut_as_memory": 200,
+    "slice_registers": 43084,
+    "block_ram_tile": 0,
+    "dsps": 16
+  }
+}

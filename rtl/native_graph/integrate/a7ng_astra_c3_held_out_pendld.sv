@@ -3,6 +3,7 @@
 // Does not edit KEEP a7ng_astra_c3_held_out.sv / C0 / C1 / C2.
 `timescale 1ns / 1ps
 `include "a7ng_astra_c3_held_out.svh"
+`include "a7ng_op_dir_pkg.svh"
 
 module a7ng_astra_c3_held_out_pendld #(
   parameter int unsigned ID_W       = 20,
@@ -52,6 +53,8 @@ module a7ng_astra_c3_held_out_pendld #(
   output logic [ID_W-1:0] ans_o,
   output logic [ID_W-1:0] proof0_o,
   output logic [ID_W-1:0] proof1_o,
+  output logic [ID_W-1:0] src_ent_o,
+  output logic [ID_W-1:0] dst_ent_o,
   output logic [4:0]  n_path_o,
   output logic [3:0]  status_o,
   output logic        proof_ok_o,
@@ -109,13 +112,14 @@ module a7ng_astra_c3_held_out_pendld #(
   logic [19:0] fs [0:15], fo [0:15], fe [0:15];
   logic [7:0]  fr [0:15], fcf [0:15], fcx [0:15];
   logic        ft [0:15], fpv [0:15], fv [0:15];
-  logic [19:0] pp0 [0:3], pp1 [0:3], pans [0:3];
+  logic [19:0] pp0 [0:3], pp1 [0:3], pans [0:3], psrc [0:3], pdst [0:3];
   logic [7:0]  pc1 [0:3], pc2 [0:3], px1 [0:3], px2 [0:3];
   logic        pt1 [0:3], pt2 [0:3], pp1v [0:3], pp2v [0:3], ph2 [0:3];
   logic signed [15:0] pv [0:3];
   logic signed [7:0]  phis [0:3][0:31];
   logic signed [7:0]  phi [0:31], pend_phi [0:31];
   logic [7:0] r_subj, r_obj, r_rel, r_ctx;
+  logic [1:0] r_dir;
   logic r_ovf, r_neg, r_amb, r_two, r_obj_v, path_ovf, r_conf, have_pos, have_neg;
   logic [19:0] concl0, neg0;
   logic [3:0] r_st;
@@ -127,7 +131,7 @@ module a7ng_astra_c3_held_out_pendld #(
   logic [7:0] txn, pend_id, gen, pend_gen;
   logic pend_acc, pend_cmt, retire_hold;
   logic [1:0] sel_idx, c_best_idx;
-  logic [19:0] best_a, best_p0, best_p1, c_best_a, c_best_p0, c_best_p1;
+  logic [19:0] best_a, best_p0, best_p1, best_src, best_dst, c_best_a, c_best_p0, c_best_p1;
   logic signed [15:0] c_best_v, c_second_v;
   integer k, kf;
 
@@ -163,10 +167,12 @@ module a7ng_astra_c3_held_out_pendld #(
   assign ans_o = best_a;
   assign proof0_o = best_p0;
   assign proof1_o = best_p1;
+  assign src_ent_o = best_src;
+  assign dst_ent_o = best_dst;
   assign n_path_o = np;
   assign status_o = r_st;
   assign proof_ok_o = proof_ok;
-  assign direction_o = qse_dir;
+  assign direction_o = r_dir;
   assign obj_o = r_obj;
   assign ctx_o = r_ctx;
   assign subj_o = r_subj;
@@ -297,7 +303,7 @@ module a7ng_astra_c3_held_out_pendld #(
       f_arvalid <= 1'b0; f_araddr <= '0;
       nc <= '0; fi <= '0; nf <= '0; ei <= '0; ej <= '0; np <= '0; pi <= '0;
       nupd <= '0; ndup <= '0; nbad <= '0; tocnt <= '0;
-      r_subj <= '0; r_obj <= '0; r_rel <= '0; r_ctx <= '0;
+      r_subj <= '0; r_obj <= '0; r_rel <= '0; r_ctx <= '0; r_dir <= A7NG_OP_F_SVO_AS_WRITTEN;
       r_ovf <= 1'b0; r_neg <= 1'b0; r_amb <= 1'b0; r_two <= 1'b0; r_obj_v <= 1'b0;
       path_ovf <= 1'b0; r_conf <= 1'b0; have_pos <= 1'b0; have_neg <= 1'b0;
       concl0 <= '0; neg0 <= '0;
@@ -305,7 +311,7 @@ module a7ng_astra_c3_held_out_pendld #(
       proof_ok <= 1'b0;
       txn <= 8'd0; pend_id <= 8'd0; gen <= 8'd0; pend_gen <= 8'd0;
       pend_acc <= 1'b0; pend_cmt <= 1'b0; retire_hold <= 1'b0; rew_lat <= '0;
-      sel_idx <= '0; best_a <= '0; best_p0 <= '0; best_p1 <= '0;
+      sel_idx <= '0; best_a <= '0; best_p0 <= '0; best_p1 <= '0; best_src <= '0; best_dst <= '0;
       v_best <= '0; v_second <= '0;
       for (kf = 0; kf < 32; kf = kf + 1) pend_phi[kf] <= '0;
     end else begin
@@ -318,7 +324,7 @@ module a7ng_astra_c3_held_out_pendld #(
           concl0 <= '0; neg0 <= '0;
           for (kf = 0; kf < 16; kf = kf + 1) fv[kf] <= 1'b0;
           if (clr_pend_i) begin
-            best_a <= '0; best_p0 <= '0; best_p1 <= '0;
+            best_a <= '0; best_p0 <= '0; best_p1 <= '0; best_src <= '0; best_dst <= '0;
             sel_idx <= '0; v_best <= '0; v_second <= '0;
             r_st <= A7NG_C3_ST_UNKNOWN;
             proof_ok <= 1'b0;
@@ -340,10 +346,11 @@ module a7ng_astra_c3_held_out_pendld #(
           end else if (phi_load_v_i) begin
             pend_phi[phi_idx_i] <= phi_w_i;
           end else if (qse_valid) begin
-            best_a <= '0; best_p0 <= '0; best_p1 <= '0; v_best <= '0; v_second <= '0;
+            best_a <= '0; best_p0 <= '0; best_p1 <= '0; best_src <= '0; best_dst <= '0; v_best <= '0; v_second <= '0;
             r_st <= A7NG_C3_ST_UNKNOWN;
             proof_ok <= 1'b0;
             r_subj <= qse_subj; r_obj <= qse_obj; r_rel <= qse_rel; r_ctx <= qse_ctx;
+            r_dir <= qse_dir;
             r_two <= (qse_ctx == A7NG_C3_CTX_INDIRECT);
             r_obj_v <= (qse_obj != 8'd0);
             r_neg <= qse_neg; r_amb <= qse_amb; r_ovf <= 1'b0;
@@ -402,7 +409,7 @@ module a7ng_astra_c3_held_out_pendld #(
             if (r_conf) begin
               r_st <= A7NG_C3_ST_CONFLICT;
               proof_ok <= 1'b0;
-              best_a <= '0; best_p0 <= '0; best_p1 <= '0;
+              best_a <= '0; best_p0 <= '0; best_p1 <= '0; best_src <= '0; best_dst <= '0;
               pend_acc <= 1'b0; pend_cmt <= 1'b0;
               st <= S_HOLD;
             end else if (np == 0) begin r_st <= A7NG_C3_ST_UNKNOWN; proof_ok <= 1'b0; st <= S_HOLD; end
@@ -412,7 +419,32 @@ module a7ng_astra_c3_held_out_pendld #(
           else st <= S_ED;
         end
         S_ED: begin
-          if (fv[ei[3:0]]
+          if (r_dir == A7NG_OP_R_INVERSE) begin
+            if (fv[ei[3:0]]
+                && r_obj_v
+                && (fr[ei[3:0]]==r_rel)
+                && (fo[ei[3:0]]=={{12{1'b0}}, r_obj})
+                && (fs[ei[3:0]] != fo[ei[3:0]])
+                && fpv[ei[3:0]]) begin
+              if (np < MAX_PATH[4:0]) begin
+                pp0[np[1:0]] <= fe[ei[3:0]];
+                pp1[np[1:0]] <= 20'd0;
+                pans[np[1:0]] <= fs[ei[3:0]];
+                psrc[np[1:0]] <= fs[ei[3:0]];
+                pdst[np[1:0]] <= fo[ei[3:0]];
+                pc1[np[1:0]] <= fcf[ei[3:0]];
+                pc2[np[1:0]] <= fcf[ei[3:0]];
+                px1[np[1:0]] <= fcx[ei[3:0]];
+                px2[np[1:0]] <= fcx[ei[3:0]];
+                pt1[np[1:0]] <= ft[ei[3:0]];
+                pt2[np[1:0]] <= 1'b0;
+                pp1v[np[1:0]] <= fpv[ei[3:0]];
+                pp2v[np[1:0]] <= fpv[ei[3:0]];
+                ph2[np[1:0]] <= 1'b0;
+                np <= np + 1'b1;
+              end else path_ovf <= 1'b1;
+            end
+          end else if (fv[ei[3:0]]
               && (fr[ei[3:0]]==r_rel)
               && (fs[ei[3:0]]=={{12{1'b0}}, r_subj})
               && (fo[ei[3:0]] != {{12{1'b0}}, r_subj})
@@ -422,6 +454,8 @@ module a7ng_astra_c3_held_out_pendld #(
               pp0[np[1:0]] <= fe[ei[3:0]];
               pp1[np[1:0]] <= 20'd0;
               pans[np[1:0]] <= fo[ei[3:0]];
+              psrc[np[1:0]] <= fs[ei[3:0]];
+              pdst[np[1:0]] <= fo[ei[3:0]];
               pc1[np[1:0]] <= fcf[ei[3:0]];
               pc2[np[1:0]] <= fcf[ei[3:0]];
               px1[np[1:0]] <= fcx[ei[3:0]];
@@ -440,7 +474,39 @@ module a7ng_astra_c3_held_out_pendld #(
         S_EJ: begin
           if (ej >= nf) begin ei <= ei + 1'b1; st <= S_EI; end
           else begin
-            if (fv[ei[3:0]] && fv[ej[3:0]] && ft[ei[3:0]] && ft[ej[3:0]]
+            if (r_dir == A7NG_OP_R_INVERSE) begin
+              if (fv[ei[3:0]] && fv[ej[3:0]] && ft[ei[3:0]] && ft[ej[3:0]]
+                  && r_obj_v
+                  && (fr[ei[3:0]]==r_rel) && (fr[ej[3:0]]==r_rel)
+                  && (fs[ej[3:0]]==fo[ei[3:0]])
+                  && (fo[ej[3:0]]=={{12{1'b0}}, r_obj})
+                  && (fs[ei[3:0]] != fo[ej[3:0]])) begin
+                if (!(fpv[ei[3:0]] && fpv[ej[3:0]])) begin
+                  if (have_pos && (fs[ei[3:0]] == concl0)) r_conf <= 1'b1;
+                  if (!have_neg) begin have_neg <= 1'b1; neg0 <= fs[ei[3:0]]; end
+                end else begin
+                  if (have_neg && (fs[ei[3:0]] == neg0)) r_conf <= 1'b1;
+                  if (!have_pos) begin have_pos <= 1'b1; concl0 <= fs[ei[3:0]]; end
+                  if (np < MAX_PATH[4:0]) begin
+                    pp0[np[1:0]] <= fe[ei[3:0]];
+                    pp1[np[1:0]] <= fe[ej[3:0]];
+                    pans[np[1:0]] <= fs[ei[3:0]];
+                    psrc[np[1:0]] <= fs[ei[3:0]];
+                    pdst[np[1:0]] <= fo[ej[3:0]];
+                    pc1[np[1:0]] <= fcf[ei[3:0]];
+                    pc2[np[1:0]] <= fcf[ej[3:0]];
+                    px1[np[1:0]] <= fcx[ei[3:0]];
+                    px2[np[1:0]] <= fcx[ej[3:0]];
+                    pt1[np[1:0]] <= ft[ei[3:0]];
+                    pt2[np[1:0]] <= ft[ej[3:0]];
+                    pp1v[np[1:0]] <= fpv[ei[3:0]];
+                    pp2v[np[1:0]] <= fpv[ej[3:0]];
+                    ph2[np[1:0]] <= 1'b1;
+                    np <= np + 1'b1;
+                  end else path_ovf <= 1'b1;
+                end
+              end
+            end else if (fv[ei[3:0]] && fv[ej[3:0]] && ft[ei[3:0]] && ft[ej[3:0]]
                 && (fr[ei[3:0]]==r_rel) && (fr[ej[3:0]]==r_rel)
                 && (fs[ei[3:0]]=={{12{1'b0}}, r_subj})
                 && (fs[ej[3:0]]==fo[ei[3:0]])
@@ -456,6 +522,8 @@ module a7ng_astra_c3_held_out_pendld #(
                   pp0[np[1:0]] <= fe[ei[3:0]];
                   pp1[np[1:0]] <= fe[ej[3:0]];
                   pans[np[1:0]] <= fo[ej[3:0]];
+                  psrc[np[1:0]] <= fs[ei[3:0]];
+                  pdst[np[1:0]] <= fo[ej[3:0]];
                   pc1[np[1:0]] <= fcf[ei[3:0]];
                   pc2[np[1:0]] <= fcf[ej[3:0]];
                   px1[np[1:0]] <= fcx[ei[3:0]];
@@ -482,6 +550,7 @@ module a7ng_astra_c3_held_out_pendld #(
         S_PICK: begin
           v_best <= c_best_v; v_second <= c_second_v;
           best_a <= c_best_a; best_p0 <= c_best_p0; best_p1 <= c_best_p1;
+          best_src <= psrc[c_best_idx]; best_dst <= pdst[c_best_idx];
           sel_idx <= c_best_idx;
           r_st <= A7NG_C3_ST_ANSWER;
           proof_ok <= 1'b1;

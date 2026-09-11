@@ -1,0 +1,2098 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Thu Sep 10 16:59:24 2026
+| Host         : laptop-Quan running 64-bit major release  (build 9200)
+| Command      : report_timing -delay_type max -max_paths 20 -nworst 1 -sort_by slack -file D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/results/A7-NATIVE-GRAPH/ASTRA-FINAL-C4-C7-20260909/26_C4_D32_BITEXACT_PHYSICAL/timing_n20_e3q.rpt
+| Design       : a7ng_astra_c4_lm06_d32_fr_v2
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (VIOLATED) :        -4.089ns  (required time - arrival time)
+  Source:                 fi_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            acc_reg[63]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        14.049ns  (logic 8.579ns (61.066%)  route 5.470ns (38.934%))
+  Logic Levels:           24  (CARRY4=17 DSP48E1=1 LUT2=1 LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43206, unset)        0.973     0.973    clk
+                         FDCE                                         r  fi_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.478     1.451 r  fi_reg[5]/Q
+                         net (fo=83, unplaced)        0.761     2.212    fi_reg_n_0_[5]
+                         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.839     3.051 r  g0_b0__0__1_i_1/O[2]
+                         net (fo=62, unplaced)        1.055     4.106    g0_b0__0__1_i_1_n_5
+                         LUT6 (Prop_lut6_I2_O)        0.301     4.407 r  acc1_i_118/O
+                         net (fo=1, unplaced)         0.732     5.139    acc1_i_118_n_0
+                         LUT6 (Prop_lut6_I3_O)        0.124     5.263 r  acc1_i_28/O
+                         net (fo=1, unplaced)         0.449     5.712    acc1_i_28_n_0
+                         LUT6 (Prop_lut6_I4_O)        0.124     5.836 r  acc1_i_1/O
+                         net (fo=11, unplaced)        0.803     6.639    B[7]
+                         DSP48E1 (Prop_dsp48e1_B[17]_P[1])
+                                                      3.656    10.295 r  acc1/P[1]
+                         net (fo=2, unplaced)         0.803    11.098    acc1_n_104
+                         LUT2 (Prop_lut2_I1_O)        0.124    11.222 r  acc[3]_i_13/O
+                         net (fo=1, unplaced)         0.000    11.222    acc[3]_i_13_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    11.755 r  acc_reg[3]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.755    acc_reg[3]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.872 r  acc_reg[7]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.872    acc_reg[7]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.989 r  acc_reg[11]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.989    acc_reg[11]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.106 r  acc_reg[15]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.106    acc_reg[15]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.223 r  acc_reg[19]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.223    acc_reg[19]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.340 r  acc_reg[23]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.340    acc_reg[23]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.457 r  acc_reg[27]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.457    acc_reg[27]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.574 r  acc_reg[31]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.574    acc_reg[31]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.691 r  acc_reg[35]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.691    acc_reg[35]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.808 r  acc_reg[39]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.808    acc_reg[39]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.925 r  acc_reg[43]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.925    acc_reg[43]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.042 r  acc_reg[47]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.042    acc_reg[47]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.159 r  acc_reg[51]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.159    acc_reg[51]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.276 r  acc_reg[55]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.276    acc_reg[55]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.393 r  acc_reg[59]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.393    acc_reg[59]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331    13.724 r  acc_reg[63]_i_14/O[3]
+                         net (fo=1, unplaced)         0.448    14.172    data1[63]
+                         LUT5 (Prop_lut5_I3_O)        0.307    14.479 r  acc[63]_i_4/O
+                         net (fo=1, unplaced)         0.419    14.898    acc[63]_i_4_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124    15.022 r  acc[63]_i_1/O
+                         net (fo=1, unplaced)         0.000    15.022    acc[63]_i_1_n_0
+                         FDCE                                         r  acc_reg[63]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43206, unset)        0.924    10.924    clk
+                         FDCE                                         r  acc_reg[63]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    acc_reg[63]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -15.022    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -4.089    <hidden>
+
+Slack (VIOLATED) :        -4.012ns  (required time - arrival time)
+  Source:                 fi_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            acc_reg[62]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        13.972ns  (logic 8.498ns (60.823%)  route 5.474ns (39.177%))
+  Logic Levels:           24  (CARRY4=17 DSP48E1=1 LUT2=1 LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43206, unset)        0.973     0.973    clk
+                         FDCE                                         r  fi_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.478     1.451 r  fi_reg[5]/Q
+                         net (fo=83, unplaced)        0.761     2.212    fi_reg_n_0_[5]
+                         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.839     3.051 r  g0_b0__0__1_i_1/O[2]
+                         net (fo=62, unplaced)        1.055     4.106    g0_b0__0__1_i_1_n_5
+                         LUT6 (Prop_lut6_I2_O)        0.301     4.407 r  acc1_i_118/O
+                         net (fo=1, unplaced)         0.732     5.139    acc1_i_118_n_0
+                         LUT6 (Prop_lut6_I3_O)        0.124     5.263 r  acc1_i_28/O
+                         net (fo=1, unplaced)         0.449     5.712    acc1_i_28_n_0
+                         LUT6 (Prop_lut6_I4_O)        0.124     5.836 r  acc1_i_1/O
+                         net (fo=11, unplaced)        0.803     6.639    B[7]
+                         DSP48E1 (Prop_dsp48e1_B[17]_P[1])
+                                                      3.656    10.295 r  acc1/P[1]
+                         net (fo=2, unplaced)         0.803    11.098    acc1_n_104
+                         LUT2 (Prop_lut2_I1_O)        0.124    11.222 r  acc[3]_i_13/O
+                         net (fo=1, unplaced)         0.000    11.222    acc[3]_i_13_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    11.755 r  acc_reg[3]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.755    acc_reg[3]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.872 r  acc_reg[7]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.872    acc_reg[7]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.989 r  acc_reg[11]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.989    acc_reg[11]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.106 r  acc_reg[15]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.106    acc_reg[15]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.223 r  acc_reg[19]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.223    acc_reg[19]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.340 r  acc_reg[23]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.340    acc_reg[23]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.457 r  acc_reg[27]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.457    acc_reg[27]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.574 r  acc_reg[31]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.574    acc_reg[31]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.691 r  acc_reg[35]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.691    acc_reg[35]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.808 r  acc_reg[39]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.808    acc_reg[39]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.925 r  acc_reg[43]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.925    acc_reg[43]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.042 r  acc_reg[47]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.042    acc_reg[47]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.159 r  acc_reg[51]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.159    acc_reg[51]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.276 r  acc_reg[55]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.276    acc_reg[55]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.393 r  acc_reg[59]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.393    acc_reg[59]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256    13.649 r  acc_reg[63]_i_14/O[2]
+                         net (fo=1, unplaced)         0.452    14.101    data1[62]
+                         LUT5 (Prop_lut5_I3_O)        0.301    14.402 r  acc[62]_i_2/O
+                         net (fo=1, unplaced)         0.419    14.821    acc[62]_i_2_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124    14.945 r  acc[62]_i_1/O
+                         net (fo=1, unplaced)         0.000    14.945    acc[62]_i_1_n_0
+                         FDCE                                         r  acc_reg[62]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43206, unset)        0.924    10.924    clk
+                         FDCE                                         r  acc_reg[62]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    acc_reg[62]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -14.945    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -4.012    <hidden>
+
+Slack (VIOLATED) :        -3.972ns  (required time - arrival time)
+  Source:                 fi_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            acc_reg[59]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        13.932ns  (logic 8.462ns (60.739%)  route 5.470ns (39.261%))
+  Logic Levels:           23  (CARRY4=16 DSP48E1=1 LUT2=1 LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43206, unset)        0.973     0.973    clk
+                         FDCE                                         r  fi_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.478     1.451 r  fi_reg[5]/Q
+                         net (fo=83, unplaced)        0.761     2.212    fi_reg_n_0_[5]
+                         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.839     3.051 r  g0_b0__0__1_i_1/O[2]
+                         net (fo=62, unplaced)        1.055     4.106    g0_b0__0__1_i_1_n_5
+                         LUT6 (Prop_lut6_I2_O)        0.301     4.407 r  acc1_i_118/O
+                         net (fo=1, unplaced)         0.732     5.139    acc1_i_118_n_0
+                         LUT6 (Prop_lut6_I3_O)        0.124     5.263 r  acc1_i_28/O
+                         net (fo=1, unplaced)         0.449     5.712    acc1_i_28_n_0
+                         LUT6 (Prop_lut6_I4_O)        0.124     5.836 r  acc1_i_1/O
+                         net (fo=11, unplaced)        0.803     6.639    B[7]
+                         DSP48E1 (Prop_dsp48e1_B[17]_P[1])
+                                                      3.656    10.295 r  acc1/P[1]
+                         net (fo=2, unplaced)         0.803    11.098    acc1_n_104
+                         LUT2 (Prop_lut2_I1_O)        0.124    11.222 r  acc[3]_i_13/O
+                         net (fo=1, unplaced)         0.000    11.222    acc[3]_i_13_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    11.755 r  acc_reg[3]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.755    acc_reg[3]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.872 r  acc_reg[7]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.872    acc_reg[7]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.989 r  acc_reg[11]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.989    acc_reg[11]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.106 r  acc_reg[15]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.106    acc_reg[15]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.223 r  acc_reg[19]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.223    acc_reg[19]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.340 r  acc_reg[23]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.340    acc_reg[23]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.457 r  acc_reg[27]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.457    acc_reg[27]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.574 r  acc_reg[31]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.574    acc_reg[31]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.691 r  acc_reg[35]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.691    acc_reg[35]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.808 r  acc_reg[39]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.808    acc_reg[39]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.925 r  acc_reg[43]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.925    acc_reg[43]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.042 r  acc_reg[47]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.042    acc_reg[47]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.159 r  acc_reg[51]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.159    acc_reg[51]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.276 r  acc_reg[55]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.276    acc_reg[55]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331    13.607 r  acc_reg[59]_i_10/O[3]
+                         net (fo=1, unplaced)         0.448    14.055    data1[59]
+                         LUT5 (Prop_lut5_I3_O)        0.307    14.362 r  acc[59]_i_3/O
+                         net (fo=1, unplaced)         0.419    14.781    acc[59]_i_3_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124    14.905 r  acc[59]_i_1/O
+                         net (fo=1, unplaced)         0.000    14.905    acc[59]_i_1_n_0
+                         FDCE                                         r  acc_reg[59]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43206, unset)        0.924    10.924    clk
+                         FDCE                                         r  acc_reg[59]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    acc_reg[59]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -14.905    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -3.972    <hidden>
+
+Slack (VIOLATED) :        -3.958ns  (required time - arrival time)
+  Source:                 fi_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            acc_reg[61]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        13.918ns  (logic 8.584ns (61.677%)  route 5.334ns (38.323%))
+  Logic Levels:           24  (CARRY4=17 DSP48E1=1 LUT2=1 LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43206, unset)        0.973     0.973    clk
+                         FDCE                                         r  fi_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.478     1.451 r  fi_reg[5]/Q
+                         net (fo=83, unplaced)        0.761     2.212    fi_reg_n_0_[5]
+                         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.839     3.051 r  g0_b0__0__1_i_1/O[2]
+                         net (fo=62, unplaced)        1.055     4.106    g0_b0__0__1_i_1_n_5
+                         LUT6 (Prop_lut6_I2_O)        0.301     4.407 r  acc1_i_118/O
+                         net (fo=1, unplaced)         0.732     5.139    acc1_i_118_n_0
+                         LUT6 (Prop_lut6_I3_O)        0.124     5.263 r  acc1_i_28/O
+                         net (fo=1, unplaced)         0.449     5.712    acc1_i_28_n_0
+                         LUT6 (Prop_lut6_I4_O)        0.124     5.836 r  acc1_i_1/O
+                         net (fo=11, unplaced)        0.803     6.639    B[7]
+                         DSP48E1 (Prop_dsp48e1_B[17]_P[1])
+                                                      3.656    10.295 r  acc1/P[1]
+                         net (fo=2, unplaced)         0.803    11.098    acc1_n_104
+                         LUT2 (Prop_lut2_I1_O)        0.124    11.222 r  acc[3]_i_13/O
+                         net (fo=1, unplaced)         0.000    11.222    acc[3]_i_13_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    11.755 r  acc_reg[3]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.755    acc_reg[3]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.872 r  acc_reg[7]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.872    acc_reg[7]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.989 r  acc_reg[11]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.989    acc_reg[11]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.106 r  acc_reg[15]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.106    acc_reg[15]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.223 r  acc_reg[19]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.223    acc_reg[19]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.340 r  acc_reg[23]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.340    acc_reg[23]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.457 r  acc_reg[27]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.457    acc_reg[27]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.574 r  acc_reg[31]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.574    acc_reg[31]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.691 r  acc_reg[35]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.691    acc_reg[35]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.808 r  acc_reg[39]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.808    acc_reg[39]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.925 r  acc_reg[43]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.925    acc_reg[43]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.042 r  acc_reg[47]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.042    acc_reg[47]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.159 r  acc_reg[51]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.159    acc_reg[51]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.276 r  acc_reg[55]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.276    acc_reg[55]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.393 r  acc_reg[59]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.393    acc_reg[59]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337    13.730 r  acc_reg[63]_i_14/O[1]
+                         net (fo=1, unplaced)         0.312    14.042    data1[61]
+                         LUT5 (Prop_lut5_I3_O)        0.306    14.348 r  acc[61]_i_2/O
+                         net (fo=1, unplaced)         0.419    14.767    acc[61]_i_2_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124    14.891 r  acc[61]_i_1/O
+                         net (fo=1, unplaced)         0.000    14.891    acc[61]_i_1_n_0
+                         FDCE                                         r  acc_reg[61]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43206, unset)        0.924    10.924    clk
+                         FDCE                                         r  acc_reg[61]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    acc_reg[61]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -14.891    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -3.958    <hidden>
+
+Slack (VIOLATED) :        -3.895ns  (required time - arrival time)
+  Source:                 fi_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            acc_reg[58]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        13.855ns  (logic 8.381ns (60.492%)  route 5.474ns (39.508%))
+  Logic Levels:           23  (CARRY4=16 DSP48E1=1 LUT2=1 LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43206, unset)        0.973     0.973    clk
+                         FDCE                                         r  fi_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.478     1.451 r  fi_reg[5]/Q
+                         net (fo=83, unplaced)        0.761     2.212    fi_reg_n_0_[5]
+                         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.839     3.051 r  g0_b0__0__1_i_1/O[2]
+                         net (fo=62, unplaced)        1.055     4.106    g0_b0__0__1_i_1_n_5
+                         LUT6 (Prop_lut6_I2_O)        0.301     4.407 r  acc1_i_118/O
+                         net (fo=1, unplaced)         0.732     5.139    acc1_i_118_n_0
+                         LUT6 (Prop_lut6_I3_O)        0.124     5.263 r  acc1_i_28/O
+                         net (fo=1, unplaced)         0.449     5.712    acc1_i_28_n_0
+                         LUT6 (Prop_lut6_I4_O)        0.124     5.836 r  acc1_i_1/O
+                         net (fo=11, unplaced)        0.803     6.639    B[7]
+                         DSP48E1 (Prop_dsp48e1_B[17]_P[1])
+                                                      3.656    10.295 r  acc1/P[1]
+                         net (fo=2, unplaced)         0.803    11.098    acc1_n_104
+                         LUT2 (Prop_lut2_I1_O)        0.124    11.222 r  acc[3]_i_13/O
+                         net (fo=1, unplaced)         0.000    11.222    acc[3]_i_13_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    11.755 r  acc_reg[3]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.755    acc_reg[3]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.872 r  acc_reg[7]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.872    acc_reg[7]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.989 r  acc_reg[11]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.989    acc_reg[11]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.106 r  acc_reg[15]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.106    acc_reg[15]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.223 r  acc_reg[19]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.223    acc_reg[19]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.340 r  acc_reg[23]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.340    acc_reg[23]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.457 r  acc_reg[27]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.457    acc_reg[27]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.574 r  acc_reg[31]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.574    acc_reg[31]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.691 r  acc_reg[35]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.691    acc_reg[35]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.808 r  acc_reg[39]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.808    acc_reg[39]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.925 r  acc_reg[43]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.925    acc_reg[43]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.042 r  acc_reg[47]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.042    acc_reg[47]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.159 r  acc_reg[51]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.159    acc_reg[51]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.276 r  acc_reg[55]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.276    acc_reg[55]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256    13.532 r  acc_reg[59]_i_10/O[2]
+                         net (fo=1, unplaced)         0.452    13.984    data1[58]
+                         LUT5 (Prop_lut5_I3_O)        0.301    14.285 r  acc[58]_i_2/O
+                         net (fo=1, unplaced)         0.419    14.704    acc[58]_i_2_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124    14.828 r  acc[58]_i_1/O
+                         net (fo=1, unplaced)         0.000    14.828    acc[58]_i_1_n_0
+                         FDCE                                         r  acc_reg[58]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43206, unset)        0.924    10.924    clk
+                         FDCE                                         r  acc_reg[58]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    acc_reg[58]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -14.828    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -3.895    <hidden>
+
+Slack (VIOLATED) :        -3.855ns  (required time - arrival time)
+  Source:                 fi_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            acc_reg[55]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        13.815ns  (logic 8.345ns (60.407%)  route 5.470ns (39.593%))
+  Logic Levels:           22  (CARRY4=15 DSP48E1=1 LUT2=1 LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43206, unset)        0.973     0.973    clk
+                         FDCE                                         r  fi_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.478     1.451 r  fi_reg[5]/Q
+                         net (fo=83, unplaced)        0.761     2.212    fi_reg_n_0_[5]
+                         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.839     3.051 r  g0_b0__0__1_i_1/O[2]
+                         net (fo=62, unplaced)        1.055     4.106    g0_b0__0__1_i_1_n_5
+                         LUT6 (Prop_lut6_I2_O)        0.301     4.407 r  acc1_i_118/O
+                         net (fo=1, unplaced)         0.732     5.139    acc1_i_118_n_0
+                         LUT6 (Prop_lut6_I3_O)        0.124     5.263 r  acc1_i_28/O
+                         net (fo=1, unplaced)         0.449     5.712    acc1_i_28_n_0
+                         LUT6 (Prop_lut6_I4_O)        0.124     5.836 r  acc1_i_1/O
+                         net (fo=11, unplaced)        0.803     6.639    B[7]
+                         DSP48E1 (Prop_dsp48e1_B[17]_P[1])
+                                                      3.656    10.295 r  acc1/P[1]
+                         net (fo=2, unplaced)         0.803    11.098    acc1_n_104
+                         LUT2 (Prop_lut2_I1_O)        0.124    11.222 r  acc[3]_i_13/O
+                         net (fo=1, unplaced)         0.000    11.222    acc[3]_i_13_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    11.755 r  acc_reg[3]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.755    acc_reg[3]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.872 r  acc_reg[7]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.872    acc_reg[7]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.989 r  acc_reg[11]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.989    acc_reg[11]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.106 r  acc_reg[15]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.106    acc_reg[15]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.223 r  acc_reg[19]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.223    acc_reg[19]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.340 r  acc_reg[23]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.340    acc_reg[23]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.457 r  acc_reg[27]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.457    acc_reg[27]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.574 r  acc_reg[31]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.574    acc_reg[31]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.691 r  acc_reg[35]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.691    acc_reg[35]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.808 r  acc_reg[39]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.808    acc_reg[39]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.925 r  acc_reg[43]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.925    acc_reg[43]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.042 r  acc_reg[47]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.042    acc_reg[47]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.159 r  acc_reg[51]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.159    acc_reg[51]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331    13.490 r  acc_reg[55]_i_10/O[3]
+                         net (fo=1, unplaced)         0.448    13.938    data1[55]
+                         LUT5 (Prop_lut5_I3_O)        0.307    14.245 r  acc[55]_i_3/O
+                         net (fo=1, unplaced)         0.419    14.664    acc[55]_i_3_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124    14.788 r  acc[55]_i_1/O
+                         net (fo=1, unplaced)         0.000    14.788    acc[55]_i_1_n_0
+                         FDCE                                         r  acc_reg[55]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43206, unset)        0.924    10.924    clk
+                         FDCE                                         r  acc_reg[55]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    acc_reg[55]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -14.788    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -3.855    <hidden>
+
+Slack (VIOLATED) :        -3.841ns  (required time - arrival time)
+  Source:                 fi_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            acc_reg[57]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        13.801ns  (logic 8.467ns (61.352%)  route 5.334ns (38.648%))
+  Logic Levels:           23  (CARRY4=16 DSP48E1=1 LUT2=1 LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43206, unset)        0.973     0.973    clk
+                         FDCE                                         r  fi_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.478     1.451 r  fi_reg[5]/Q
+                         net (fo=83, unplaced)        0.761     2.212    fi_reg_n_0_[5]
+                         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.839     3.051 r  g0_b0__0__1_i_1/O[2]
+                         net (fo=62, unplaced)        1.055     4.106    g0_b0__0__1_i_1_n_5
+                         LUT6 (Prop_lut6_I2_O)        0.301     4.407 r  acc1_i_118/O
+                         net (fo=1, unplaced)         0.732     5.139    acc1_i_118_n_0
+                         LUT6 (Prop_lut6_I3_O)        0.124     5.263 r  acc1_i_28/O
+                         net (fo=1, unplaced)         0.449     5.712    acc1_i_28_n_0
+                         LUT6 (Prop_lut6_I4_O)        0.124     5.836 r  acc1_i_1/O
+                         net (fo=11, unplaced)        0.803     6.639    B[7]
+                         DSP48E1 (Prop_dsp48e1_B[17]_P[1])
+                                                      3.656    10.295 r  acc1/P[1]
+                         net (fo=2, unplaced)         0.803    11.098    acc1_n_104
+                         LUT2 (Prop_lut2_I1_O)        0.124    11.222 r  acc[3]_i_13/O
+                         net (fo=1, unplaced)         0.000    11.222    acc[3]_i_13_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    11.755 r  acc_reg[3]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.755    acc_reg[3]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.872 r  acc_reg[7]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.872    acc_reg[7]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.989 r  acc_reg[11]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.989    acc_reg[11]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.106 r  acc_reg[15]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.106    acc_reg[15]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.223 r  acc_reg[19]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.223    acc_reg[19]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.340 r  acc_reg[23]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.340    acc_reg[23]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.457 r  acc_reg[27]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.457    acc_reg[27]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.574 r  acc_reg[31]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.574    acc_reg[31]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.691 r  acc_reg[35]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.691    acc_reg[35]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.808 r  acc_reg[39]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.808    acc_reg[39]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.925 r  acc_reg[43]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.925    acc_reg[43]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.042 r  acc_reg[47]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.042    acc_reg[47]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.159 r  acc_reg[51]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.159    acc_reg[51]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.276 r  acc_reg[55]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.276    acc_reg[55]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337    13.613 r  acc_reg[59]_i_10/O[1]
+                         net (fo=1, unplaced)         0.312    13.925    data1[57]
+                         LUT5 (Prop_lut5_I3_O)        0.306    14.231 r  acc[57]_i_2/O
+                         net (fo=1, unplaced)         0.419    14.650    acc[57]_i_2_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124    14.774 r  acc[57]_i_1/O
+                         net (fo=1, unplaced)         0.000    14.774    acc[57]_i_1_n_0
+                         FDCE                                         r  acc_reg[57]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43206, unset)        0.924    10.924    clk
+                         FDCE                                         r  acc_reg[57]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    acc_reg[57]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -14.774    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -3.841    <hidden>
+
+Slack (VIOLATED) :        -3.841ns  (required time - arrival time)
+  Source:                 fi_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            acc_reg[60]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        13.801ns  (logic 8.468ns (61.359%)  route 5.333ns (38.641%))
+  Logic Levels:           24  (CARRY4=17 DSP48E1=1 LUT2=1 LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43206, unset)        0.973     0.973    clk
+                         FDCE                                         r  fi_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.478     1.451 r  fi_reg[5]/Q
+                         net (fo=83, unplaced)        0.761     2.212    fi_reg_n_0_[5]
+                         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.839     3.051 r  g0_b0__0__1_i_1/O[2]
+                         net (fo=62, unplaced)        1.055     4.106    g0_b0__0__1_i_1_n_5
+                         LUT6 (Prop_lut6_I2_O)        0.301     4.407 r  acc1_i_118/O
+                         net (fo=1, unplaced)         0.732     5.139    acc1_i_118_n_0
+                         LUT6 (Prop_lut6_I3_O)        0.124     5.263 r  acc1_i_28/O
+                         net (fo=1, unplaced)         0.449     5.712    acc1_i_28_n_0
+                         LUT6 (Prop_lut6_I4_O)        0.124     5.836 r  acc1_i_1/O
+                         net (fo=11, unplaced)        0.803     6.639    B[7]
+                         DSP48E1 (Prop_dsp48e1_B[17]_P[1])
+                                                      3.656    10.295 r  acc1/P[1]
+                         net (fo=2, unplaced)         0.803    11.098    acc1_n_104
+                         LUT2 (Prop_lut2_I1_O)        0.124    11.222 r  acc[3]_i_13/O
+                         net (fo=1, unplaced)         0.000    11.222    acc[3]_i_13_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    11.755 r  acc_reg[3]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.755    acc_reg[3]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.872 r  acc_reg[7]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.872    acc_reg[7]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.989 r  acc_reg[11]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.989    acc_reg[11]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.106 r  acc_reg[15]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.106    acc_reg[15]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.223 r  acc_reg[19]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.223    acc_reg[19]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.340 r  acc_reg[23]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.340    acc_reg[23]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.457 r  acc_reg[27]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.457    acc_reg[27]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.574 r  acc_reg[31]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.574    acc_reg[31]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.691 r  acc_reg[35]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.691    acc_reg[35]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.808 r  acc_reg[39]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.808    acc_reg[39]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.925 r  acc_reg[43]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.925    acc_reg[43]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.042 r  acc_reg[47]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.042    acc_reg[47]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.159 r  acc_reg[51]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.159    acc_reg[51]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.276 r  acc_reg[55]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.276    acc_reg[55]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.393 r  acc_reg[59]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.393    acc_reg[59]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.232    13.625 r  acc_reg[63]_i_14/O[0]
+                         net (fo=1, unplaced)         0.311    13.936    data1[60]
+                         LUT5 (Prop_lut5_I3_O)        0.295    14.231 r  acc[60]_i_2/O
+                         net (fo=1, unplaced)         0.419    14.650    acc[60]_i_2_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124    14.774 r  acc[60]_i_1/O
+                         net (fo=1, unplaced)         0.000    14.774    acc[60]_i_1_n_0
+                         FDCE                                         r  acc_reg[60]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43206, unset)        0.924    10.924    clk
+                         FDCE                                         r  acc_reg[60]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    acc_reg[60]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -14.774    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -3.841    <hidden>
+
+Slack (VIOLATED) :        -3.778ns  (required time - arrival time)
+  Source:                 fi_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            acc_reg[54]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        13.738ns  (logic 8.264ns (60.156%)  route 5.474ns (39.844%))
+  Logic Levels:           22  (CARRY4=15 DSP48E1=1 LUT2=1 LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43206, unset)        0.973     0.973    clk
+                         FDCE                                         r  fi_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.478     1.451 r  fi_reg[5]/Q
+                         net (fo=83, unplaced)        0.761     2.212    fi_reg_n_0_[5]
+                         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.839     3.051 r  g0_b0__0__1_i_1/O[2]
+                         net (fo=62, unplaced)        1.055     4.106    g0_b0__0__1_i_1_n_5
+                         LUT6 (Prop_lut6_I2_O)        0.301     4.407 r  acc1_i_118/O
+                         net (fo=1, unplaced)         0.732     5.139    acc1_i_118_n_0
+                         LUT6 (Prop_lut6_I3_O)        0.124     5.263 r  acc1_i_28/O
+                         net (fo=1, unplaced)         0.449     5.712    acc1_i_28_n_0
+                         LUT6 (Prop_lut6_I4_O)        0.124     5.836 r  acc1_i_1/O
+                         net (fo=11, unplaced)        0.803     6.639    B[7]
+                         DSP48E1 (Prop_dsp48e1_B[17]_P[1])
+                                                      3.656    10.295 r  acc1/P[1]
+                         net (fo=2, unplaced)         0.803    11.098    acc1_n_104
+                         LUT2 (Prop_lut2_I1_O)        0.124    11.222 r  acc[3]_i_13/O
+                         net (fo=1, unplaced)         0.000    11.222    acc[3]_i_13_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    11.755 r  acc_reg[3]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.755    acc_reg[3]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.872 r  acc_reg[7]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.872    acc_reg[7]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.989 r  acc_reg[11]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.989    acc_reg[11]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.106 r  acc_reg[15]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.106    acc_reg[15]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.223 r  acc_reg[19]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.223    acc_reg[19]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.340 r  acc_reg[23]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.340    acc_reg[23]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.457 r  acc_reg[27]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.457    acc_reg[27]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.574 r  acc_reg[31]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.574    acc_reg[31]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.691 r  acc_reg[35]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.691    acc_reg[35]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.808 r  acc_reg[39]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.808    acc_reg[39]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.925 r  acc_reg[43]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.925    acc_reg[43]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.042 r  acc_reg[47]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.042    acc_reg[47]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.159 r  acc_reg[51]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.159    acc_reg[51]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256    13.415 r  acc_reg[55]_i_10/O[2]
+                         net (fo=1, unplaced)         0.452    13.867    data1[54]
+                         LUT5 (Prop_lut5_I3_O)        0.301    14.168 r  acc[54]_i_2/O
+                         net (fo=1, unplaced)         0.419    14.587    acc[54]_i_2_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124    14.711 r  acc[54]_i_1/O
+                         net (fo=1, unplaced)         0.000    14.711    acc[54]_i_1_n_0
+                         FDCE                                         r  acc_reg[54]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43206, unset)        0.924    10.924    clk
+                         FDCE                                         r  acc_reg[54]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    acc_reg[54]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -14.711    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -3.778    <hidden>
+
+Slack (VIOLATED) :        -3.738ns  (required time - arrival time)
+  Source:                 fi_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            acc_reg[51]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        13.698ns  (logic 8.228ns (60.068%)  route 5.470ns (39.932%))
+  Logic Levels:           21  (CARRY4=14 DSP48E1=1 LUT2=1 LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43206, unset)        0.973     0.973    clk
+                         FDCE                                         r  fi_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.478     1.451 r  fi_reg[5]/Q
+                         net (fo=83, unplaced)        0.761     2.212    fi_reg_n_0_[5]
+                         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.839     3.051 r  g0_b0__0__1_i_1/O[2]
+                         net (fo=62, unplaced)        1.055     4.106    g0_b0__0__1_i_1_n_5
+                         LUT6 (Prop_lut6_I2_O)        0.301     4.407 r  acc1_i_118/O
+                         net (fo=1, unplaced)         0.732     5.139    acc1_i_118_n_0
+                         LUT6 (Prop_lut6_I3_O)        0.124     5.263 r  acc1_i_28/O
+                         net (fo=1, unplaced)         0.449     5.712    acc1_i_28_n_0
+                         LUT6 (Prop_lut6_I4_O)        0.124     5.836 r  acc1_i_1/O
+                         net (fo=11, unplaced)        0.803     6.639    B[7]
+                         DSP48E1 (Prop_dsp48e1_B[17]_P[1])
+                                                      3.656    10.295 r  acc1/P[1]
+                         net (fo=2, unplaced)         0.803    11.098    acc1_n_104
+                         LUT2 (Prop_lut2_I1_O)        0.124    11.222 r  acc[3]_i_13/O
+                         net (fo=1, unplaced)         0.000    11.222    acc[3]_i_13_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    11.755 r  acc_reg[3]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.755    acc_reg[3]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.872 r  acc_reg[7]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.872    acc_reg[7]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.989 r  acc_reg[11]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.989    acc_reg[11]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.106 r  acc_reg[15]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.106    acc_reg[15]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.223 r  acc_reg[19]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.223    acc_reg[19]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.340 r  acc_reg[23]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.340    acc_reg[23]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.457 r  acc_reg[27]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.457    acc_reg[27]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.574 r  acc_reg[31]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.574    acc_reg[31]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.691 r  acc_reg[35]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.691    acc_reg[35]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.808 r  acc_reg[39]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.808    acc_reg[39]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.925 r  acc_reg[43]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.925    acc_reg[43]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.042 r  acc_reg[47]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.042    acc_reg[47]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.331    13.373 r  acc_reg[51]_i_10/O[3]
+                         net (fo=1, unplaced)         0.448    13.821    data1[51]
+                         LUT5 (Prop_lut5_I3_O)        0.307    14.128 r  acc[51]_i_3/O
+                         net (fo=1, unplaced)         0.419    14.547    acc[51]_i_3_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124    14.671 r  acc[51]_i_1/O
+                         net (fo=1, unplaced)         0.000    14.671    acc[51]_i_1_n_0
+                         FDCE                                         r  acc_reg[51]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43206, unset)        0.924    10.924    clk
+                         FDCE                                         r  acc_reg[51]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    acc_reg[51]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -14.671    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -3.738    <hidden>
+
+Slack (VIOLATED) :        -3.724ns  (required time - arrival time)
+  Source:                 fi_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            acc_reg[53]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        13.684ns  (logic 8.350ns (61.021%)  route 5.334ns (38.979%))
+  Logic Levels:           22  (CARRY4=15 DSP48E1=1 LUT2=1 LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43206, unset)        0.973     0.973    clk
+                         FDCE                                         r  fi_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.478     1.451 r  fi_reg[5]/Q
+                         net (fo=83, unplaced)        0.761     2.212    fi_reg_n_0_[5]
+                         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.839     3.051 r  g0_b0__0__1_i_1/O[2]
+                         net (fo=62, unplaced)        1.055     4.106    g0_b0__0__1_i_1_n_5
+                         LUT6 (Prop_lut6_I2_O)        0.301     4.407 r  acc1_i_118/O
+                         net (fo=1, unplaced)         0.732     5.139    acc1_i_118_n_0
+                         LUT6 (Prop_lut6_I3_O)        0.124     5.263 r  acc1_i_28/O
+                         net (fo=1, unplaced)         0.449     5.712    acc1_i_28_n_0
+                         LUT6 (Prop_lut6_I4_O)        0.124     5.836 r  acc1_i_1/O
+                         net (fo=11, unplaced)        0.803     6.639    B[7]
+                         DSP48E1 (Prop_dsp48e1_B[17]_P[1])
+                                                      3.656    10.295 r  acc1/P[1]
+                         net (fo=2, unplaced)         0.803    11.098    acc1_n_104
+                         LUT2 (Prop_lut2_I1_O)        0.124    11.222 r  acc[3]_i_13/O
+                         net (fo=1, unplaced)         0.000    11.222    acc[3]_i_13_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    11.755 r  acc_reg[3]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.755    acc_reg[3]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.872 r  acc_reg[7]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.872    acc_reg[7]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.989 r  acc_reg[11]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.989    acc_reg[11]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.106 r  acc_reg[15]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.106    acc_reg[15]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.223 r  acc_reg[19]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.223    acc_reg[19]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.340 r  acc_reg[23]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.340    acc_reg[23]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.457 r  acc_reg[27]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.457    acc_reg[27]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.574 r  acc_reg[31]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.574    acc_reg[31]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.691 r  acc_reg[35]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.691    acc_reg[35]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.808 r  acc_reg[39]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.808    acc_reg[39]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.925 r  acc_reg[43]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.925    acc_reg[43]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.042 r  acc_reg[47]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.042    acc_reg[47]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.159 r  acc_reg[51]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.159    acc_reg[51]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337    13.496 r  acc_reg[55]_i_10/O[1]
+                         net (fo=1, unplaced)         0.312    13.808    data1[53]
+                         LUT5 (Prop_lut5_I3_O)        0.306    14.114 r  acc[53]_i_2/O
+                         net (fo=1, unplaced)         0.419    14.533    acc[53]_i_2_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124    14.657 r  acc[53]_i_1/O
+                         net (fo=1, unplaced)         0.000    14.657    acc[53]_i_1_n_0
+                         FDCE                                         r  acc_reg[53]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43206, unset)        0.924    10.924    clk
+                         FDCE                                         r  acc_reg[53]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    acc_reg[53]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -14.657    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -3.724    <hidden>
+
+Slack (VIOLATED) :        -3.724ns  (required time - arrival time)
+  Source:                 fi_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            acc_reg[56]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        13.684ns  (logic 8.351ns (61.029%)  route 5.333ns (38.971%))
+  Logic Levels:           23  (CARRY4=16 DSP48E1=1 LUT2=1 LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43206, unset)        0.973     0.973    clk
+                         FDCE                                         r  fi_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.478     1.451 r  fi_reg[5]/Q
+                         net (fo=83, unplaced)        0.761     2.212    fi_reg_n_0_[5]
+                         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.839     3.051 r  g0_b0__0__1_i_1/O[2]
+                         net (fo=62, unplaced)        1.055     4.106    g0_b0__0__1_i_1_n_5
+                         LUT6 (Prop_lut6_I2_O)        0.301     4.407 r  acc1_i_118/O
+                         net (fo=1, unplaced)         0.732     5.139    acc1_i_118_n_0
+                         LUT6 (Prop_lut6_I3_O)        0.124     5.263 r  acc1_i_28/O
+                         net (fo=1, unplaced)         0.449     5.712    acc1_i_28_n_0
+                         LUT6 (Prop_lut6_I4_O)        0.124     5.836 r  acc1_i_1/O
+                         net (fo=11, unplaced)        0.803     6.639    B[7]
+                         DSP48E1 (Prop_dsp48e1_B[17]_P[1])
+                                                      3.656    10.295 r  acc1/P[1]
+                         net (fo=2, unplaced)         0.803    11.098    acc1_n_104
+                         LUT2 (Prop_lut2_I1_O)        0.124    11.222 r  acc[3]_i_13/O
+                         net (fo=1, unplaced)         0.000    11.222    acc[3]_i_13_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    11.755 r  acc_reg[3]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.755    acc_reg[3]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.872 r  acc_reg[7]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.872    acc_reg[7]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.989 r  acc_reg[11]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.989    acc_reg[11]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.106 r  acc_reg[15]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.106    acc_reg[15]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.223 r  acc_reg[19]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.223    acc_reg[19]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.340 r  acc_reg[23]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.340    acc_reg[23]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.457 r  acc_reg[27]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.457    acc_reg[27]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.574 r  acc_reg[31]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.574    acc_reg[31]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.691 r  acc_reg[35]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.691    acc_reg[35]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.808 r  acc_reg[39]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.808    acc_reg[39]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.925 r  acc_reg[43]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.925    acc_reg[43]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.042 r  acc_reg[47]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.042    acc_reg[47]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.159 r  acc_reg[51]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.159    acc_reg[51]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.276 r  acc_reg[55]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.276    acc_reg[55]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.232    13.508 r  acc_reg[59]_i_10/O[0]
+                         net (fo=1, unplaced)         0.311    13.819    data1[56]
+                         LUT5 (Prop_lut5_I3_O)        0.295    14.114 r  acc[56]_i_2/O
+                         net (fo=1, unplaced)         0.419    14.533    acc[56]_i_2_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124    14.657 r  acc[56]_i_1/O
+                         net (fo=1, unplaced)         0.000    14.657    acc[56]_i_1_n_0
+                         FDCE                                         r  acc_reg[56]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43206, unset)        0.924    10.924    clk
+                         FDCE                                         r  acc_reg[56]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    acc_reg[56]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -14.657    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -3.724    <hidden>
+
+Slack (VIOLATED) :        -3.661ns  (required time - arrival time)
+  Source:                 fi_reg[5]/C
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            acc_reg[50]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        13.621ns  (logic 8.147ns (59.813%)  route 5.474ns (40.187%))
+  Logic Levels:           21  (CARRY4=14 DSP48E1=1 LUT2=1 LUT5=1 LUT6=4)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43206, unset)        0.973     0.973    clk
+                         FDCE                                         r  fi_reg[5]/C
+  -------------------------------------------------------------------    -------------------
+                         FDCE (Prop_fdce_C_Q)         0.478     1.451 r  fi_reg[5]/Q
+                         net (fo=83, unplaced)        0.761     2.212    fi_reg_n_0_[5]
+                         CARRY4 (Prop_carry4_S[0]_O[2])
+                                                      0.839     3.051 r  g0_b0__0__1_i_1/O[2]
+                         net (fo=62, unplaced)        1.055     4.106    g0_b0__0__1_i_1_n_5
+                         LUT6 (Prop_lut6_I2_O)        0.301     4.407 r  acc1_i_118/O
+                         net (fo=1, unplaced)         0.732     5.139    acc1_i_118_n_0
+                         LUT6 (Prop_lut6_I3_O)        0.124     5.263 r  acc1_i_28/O
+                         net (fo=1, unplaced)         0.449     5.712    acc1_i_28_n_0
+                         LUT6 (Prop_lut6_I4_O)        0.124     5.836 r  acc1_i_1/O
+                         net (fo=11, unplaced)        0.803     6.639    B[7]
+                         DSP48E1 (Prop_dsp48e1_B[17]_P[1])
+                                                      3.656    10.295 r  acc1/P[1]
+                         net (fo=2, unplaced)         0.803    11.098    acc1_n_104
+                         LUT2 (Prop_lut2_I1_O)        0.124    11.222 r  acc[3]_i_13/O
+                         net (fo=1, unplaced)         0.000    11.222    acc[3]_i_13_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533    11.755 r  acc_reg[3]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.755    acc_reg[3]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.872 r  acc_reg[7]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.872    acc_reg[7]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    11.989 r  acc_reg[11]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    11.989    acc_reg[11]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.106 r  acc_reg[15]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.106    acc_reg[15]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.223 r  acc_reg[19]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.223    acc_reg[19]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.340 r  acc_reg[23]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.340    acc_reg[23]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.457 r  acc_reg[27]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.457    acc_reg[27]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.574 r  acc_reg[31]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.574    acc_reg[31]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.691 r  acc_reg[35]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.691    acc_reg[35]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.808 r  acc_reg[39]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.808    acc_reg[39]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    12.925 r  acc_reg[43]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    12.925    acc_reg[43]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117    13.042 r  acc_reg[47]_i_10/CO[3]
+                         net (fo=1, unplaced)         0.000    13.042    acc_reg[47]_i_10_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256    13.298 r  acc_reg[51]_i_10/O[2]
+                         net (fo=1, unplaced)         0.452    13.750    data1[50]
+                         LUT5 (Prop_lut5_I3_O)        0.301    14.051 r  acc[50]_i_2/O
+                         net (fo=1, unplaced)         0.419    14.470    acc[50]_i_2_n_0
+                         LUT6 (Prop_lut6_I2_O)        0.124    14.594 r  acc[50]_i_1/O
+                         net (fo=1, unplaced)         0.000    14.594    acc[50]_i_1_n_0
+                         FDCE                                         r  acc_reg[50]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43206, unset)        0.924    10.924    clk
+                         FDCE                                         r  acc_reg[50]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    acc_reg[50]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -14.594    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -3.661    <hidden>
+
+Slack (VIOLATED) :        -3.650ns  (required time - arrival time)
+  Source:                 dots_reg[23][1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            elut_reg[0][0]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        13.610ns  (logic 6.211ns (45.636%)  route 7.399ns (54.364%))
+  Logic Levels:           22  (CARRY4=9 LUT1=1 LUT2=2 LUT3=1 LUT5=2 LUT6=4 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43206, unset)        0.973     0.973    clk
+                         FDRE                                         r  dots_reg[23][1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  dots_reg[23][1]/Q
+                         net (fo=1, unplaced)         0.965     2.416    dots_reg[23]__0[1]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  dmax[1]_i_6/O
+                         net (fo=1, unplaced)         0.000     2.711    dmax[1]_i_6_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  dmax_reg[1]_i_2/O
+                         net (fo=1, unplaced)         0.735     3.693    dmax_reg[1]_i_2_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  dmax[1]_i_1/O
+                         net (fo=6, unplaced)         0.481     4.472    dots[1]
+                         LUT2 (Prop_lut2_I0_O)        0.124     4.596 r  elut[0][13]_i_64/O
+                         net (fo=1, unplaced)         0.000     4.596    elut[0][13]_i_64_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     5.129 r  elut_reg[0][13]_i_44/CO[3]
+                         net (fo=1, unplaced)         0.000     5.129    elut_reg[0][13]_i_44_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.246 r  elut_reg[0][13]_i_31/CO[3]
+                         net (fo=1, unplaced)         0.000     5.246    elut_reg[0][13]_i_31_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.363 r  elut_reg[0][13]_i_30/CO[3]
+                         net (fo=1, unplaced)         0.000     5.363    elut_reg[0][13]_i_30_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.480 r  elut_reg[0][14]_i_80/CO[3]
+                         net (fo=1, unplaced)         0.000     5.480    elut_reg[0][14]_i_80_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.597 r  elut_reg[0][14]_i_102/CO[3]
+                         net (fo=1, unplaced)         0.000     5.597    elut_reg[0][14]_i_102_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     5.853 f  elut_reg[0][14]_i_75/O[2]
+                         net (fo=3, unplaced)         0.470     6.323    p_0_in__2[22]
+                         LUT1 (Prop_lut1_I0_O)        0.301     6.624 r  elut[0][14]_i_100/O
+                         net (fo=1, unplaced)         0.000     6.624    elut[0][14]_i_100_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     7.157 r  elut_reg[0][14]_i_65/CO[3]
+                         net (fo=1, unplaced)         0.000     7.157    elut_reg[0][14]_i_65_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     7.494 r  elut_reg[0][14]_i_64/O[1]
+                         net (fo=4, unplaced)         0.635     8.129    elut_reg[0][14]_i_64_n_6
+                         LUT2 (Prop_lut2_I0_O)        0.332     8.461 r  elut[0][13]_i_16/O
+                         net (fo=1, unplaced)         0.000     8.461    elut[0][13]_i_16_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.547     9.008 f  elut_reg[0][13]_i_4/CO[3]
+                         net (fo=238, unplaced)       0.869     9.877    elut_reg[0][13]_i_4_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124    10.001 r  elut[0][8]_i_28/O
+                         net (fo=106, unplaced)       1.042    11.043    elut[0][8]_i_28_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.124    11.167 r  elut[0][0]_i_128/O
+                         net (fo=1, unplaced)         0.000    11.167    elut[0][0]_i_128_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247    11.414 r  elut_reg[0][0]_i_51/O
+                         net (fo=1, unplaced)         0.735    12.149    elut_reg[0][0]_i_51_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298    12.447 r  elut[0][0]_i_18/O
+                         net (fo=1, unplaced)         0.000    12.447    elut[0][0]_i_18_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247    12.694 r  elut_reg[0][0]_i_6/O
+                         net (fo=1, unplaced)         0.735    13.429    elut_reg[0][0]_i_6_n_0
+                         LUT6 (Prop_lut6_I1_O)        0.298    13.727 r  elut[0][0]_i_2/O
+                         net (fo=1, unplaced)         0.732    14.459    elut[0][0]_i_2_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124    14.583 r  elut[0][0]_i_1/O
+                         net (fo=24, unplaced)        0.000    14.583    elut[0][0]_i_1_n_0
+                         FDRE                                         r  elut_reg[0][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43206, unset)        0.924    10.924    clk
+                         FDRE                                         r  elut_reg[0][0]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDRE (Setup_fdre_C_D)        0.044    10.933    elut_reg[0][0]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -14.583    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -3.650    <hidden>
+
+Slack (VIOLATED) :        -3.650ns  (required time - arrival time)
+  Source:                 dots_reg[23][1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            elut_reg[10][0]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        13.610ns  (logic 6.211ns (45.636%)  route 7.399ns (54.364%))
+  Logic Levels:           22  (CARRY4=9 LUT1=1 LUT2=2 LUT3=1 LUT5=2 LUT6=4 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43206, unset)        0.973     0.973    clk
+                         FDRE                                         r  dots_reg[23][1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  dots_reg[23][1]/Q
+                         net (fo=1, unplaced)         0.965     2.416    dots_reg[23]__0[1]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  dmax[1]_i_6/O
+                         net (fo=1, unplaced)         0.000     2.711    dmax[1]_i_6_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  dmax_reg[1]_i_2/O
+                         net (fo=1, unplaced)         0.735     3.693    dmax_reg[1]_i_2_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  dmax[1]_i_1/O
+                         net (fo=6, unplaced)         0.481     4.472    dots[1]
+                         LUT2 (Prop_lut2_I0_O)        0.124     4.596 r  elut[0][13]_i_64/O
+                         net (fo=1, unplaced)         0.000     4.596    elut[0][13]_i_64_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     5.129 r  elut_reg[0][13]_i_44/CO[3]
+                         net (fo=1, unplaced)         0.000     5.129    elut_reg[0][13]_i_44_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.246 r  elut_reg[0][13]_i_31/CO[3]
+                         net (fo=1, unplaced)         0.000     5.246    elut_reg[0][13]_i_31_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.363 r  elut_reg[0][13]_i_30/CO[3]
+                         net (fo=1, unplaced)         0.000     5.363    elut_reg[0][13]_i_30_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.480 r  elut_reg[0][14]_i_80/CO[3]
+                         net (fo=1, unplaced)         0.000     5.480    elut_reg[0][14]_i_80_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.597 r  elut_reg[0][14]_i_102/CO[3]
+                         net (fo=1, unplaced)         0.000     5.597    elut_reg[0][14]_i_102_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     5.853 f  elut_reg[0][14]_i_75/O[2]
+                         net (fo=3, unplaced)         0.470     6.323    p_0_in__2[22]
+                         LUT1 (Prop_lut1_I0_O)        0.301     6.624 r  elut[0][14]_i_100/O
+                         net (fo=1, unplaced)         0.000     6.624    elut[0][14]_i_100_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     7.157 r  elut_reg[0][14]_i_65/CO[3]
+                         net (fo=1, unplaced)         0.000     7.157    elut_reg[0][14]_i_65_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     7.494 r  elut_reg[0][14]_i_64/O[1]
+                         net (fo=4, unplaced)         0.635     8.129    elut_reg[0][14]_i_64_n_6
+                         LUT2 (Prop_lut2_I0_O)        0.332     8.461 r  elut[0][13]_i_16/O
+                         net (fo=1, unplaced)         0.000     8.461    elut[0][13]_i_16_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.547     9.008 f  elut_reg[0][13]_i_4/CO[3]
+                         net (fo=238, unplaced)       0.869     9.877    elut_reg[0][13]_i_4_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124    10.001 r  elut[0][8]_i_28/O
+                         net (fo=106, unplaced)       1.042    11.043    elut[0][8]_i_28_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.124    11.167 r  elut[0][0]_i_128/O
+                         net (fo=1, unplaced)         0.000    11.167    elut[0][0]_i_128_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247    11.414 r  elut_reg[0][0]_i_51/O
+                         net (fo=1, unplaced)         0.735    12.149    elut_reg[0][0]_i_51_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298    12.447 r  elut[0][0]_i_18/O
+                         net (fo=1, unplaced)         0.000    12.447    elut[0][0]_i_18_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247    12.694 r  elut_reg[0][0]_i_6/O
+                         net (fo=1, unplaced)         0.735    13.429    elut_reg[0][0]_i_6_n_0
+                         LUT6 (Prop_lut6_I1_O)        0.298    13.727 r  elut[0][0]_i_2/O
+                         net (fo=1, unplaced)         0.732    14.459    elut[0][0]_i_2_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124    14.583 r  elut[0][0]_i_1/O
+                         net (fo=24, unplaced)        0.000    14.583    elut[0][0]_i_1_n_0
+                         FDRE                                         r  elut_reg[10][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43206, unset)        0.924    10.924    clk
+                         FDRE                                         r  elut_reg[10][0]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDRE (Setup_fdre_C_D)        0.044    10.933    elut_reg[10][0]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -14.583    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -3.650    <hidden>
+
+Slack (VIOLATED) :        -3.650ns  (required time - arrival time)
+  Source:                 dots_reg[23][1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            elut_reg[11][0]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        13.610ns  (logic 6.211ns (45.636%)  route 7.399ns (54.364%))
+  Logic Levels:           22  (CARRY4=9 LUT1=1 LUT2=2 LUT3=1 LUT5=2 LUT6=4 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43206, unset)        0.973     0.973    clk
+                         FDRE                                         r  dots_reg[23][1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  dots_reg[23][1]/Q
+                         net (fo=1, unplaced)         0.965     2.416    dots_reg[23]__0[1]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  dmax[1]_i_6/O
+                         net (fo=1, unplaced)         0.000     2.711    dmax[1]_i_6_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  dmax_reg[1]_i_2/O
+                         net (fo=1, unplaced)         0.735     3.693    dmax_reg[1]_i_2_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  dmax[1]_i_1/O
+                         net (fo=6, unplaced)         0.481     4.472    dots[1]
+                         LUT2 (Prop_lut2_I0_O)        0.124     4.596 r  elut[0][13]_i_64/O
+                         net (fo=1, unplaced)         0.000     4.596    elut[0][13]_i_64_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     5.129 r  elut_reg[0][13]_i_44/CO[3]
+                         net (fo=1, unplaced)         0.000     5.129    elut_reg[0][13]_i_44_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.246 r  elut_reg[0][13]_i_31/CO[3]
+                         net (fo=1, unplaced)         0.000     5.246    elut_reg[0][13]_i_31_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.363 r  elut_reg[0][13]_i_30/CO[3]
+                         net (fo=1, unplaced)         0.000     5.363    elut_reg[0][13]_i_30_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.480 r  elut_reg[0][14]_i_80/CO[3]
+                         net (fo=1, unplaced)         0.000     5.480    elut_reg[0][14]_i_80_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.597 r  elut_reg[0][14]_i_102/CO[3]
+                         net (fo=1, unplaced)         0.000     5.597    elut_reg[0][14]_i_102_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     5.853 f  elut_reg[0][14]_i_75/O[2]
+                         net (fo=3, unplaced)         0.470     6.323    p_0_in__2[22]
+                         LUT1 (Prop_lut1_I0_O)        0.301     6.624 r  elut[0][14]_i_100/O
+                         net (fo=1, unplaced)         0.000     6.624    elut[0][14]_i_100_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     7.157 r  elut_reg[0][14]_i_65/CO[3]
+                         net (fo=1, unplaced)         0.000     7.157    elut_reg[0][14]_i_65_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     7.494 r  elut_reg[0][14]_i_64/O[1]
+                         net (fo=4, unplaced)         0.635     8.129    elut_reg[0][14]_i_64_n_6
+                         LUT2 (Prop_lut2_I0_O)        0.332     8.461 r  elut[0][13]_i_16/O
+                         net (fo=1, unplaced)         0.000     8.461    elut[0][13]_i_16_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.547     9.008 f  elut_reg[0][13]_i_4/CO[3]
+                         net (fo=238, unplaced)       0.869     9.877    elut_reg[0][13]_i_4_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124    10.001 r  elut[0][8]_i_28/O
+                         net (fo=106, unplaced)       1.042    11.043    elut[0][8]_i_28_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.124    11.167 r  elut[0][0]_i_128/O
+                         net (fo=1, unplaced)         0.000    11.167    elut[0][0]_i_128_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247    11.414 r  elut_reg[0][0]_i_51/O
+                         net (fo=1, unplaced)         0.735    12.149    elut_reg[0][0]_i_51_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298    12.447 r  elut[0][0]_i_18/O
+                         net (fo=1, unplaced)         0.000    12.447    elut[0][0]_i_18_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247    12.694 r  elut_reg[0][0]_i_6/O
+                         net (fo=1, unplaced)         0.735    13.429    elut_reg[0][0]_i_6_n_0
+                         LUT6 (Prop_lut6_I1_O)        0.298    13.727 r  elut[0][0]_i_2/O
+                         net (fo=1, unplaced)         0.732    14.459    elut[0][0]_i_2_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124    14.583 r  elut[0][0]_i_1/O
+                         net (fo=24, unplaced)        0.000    14.583    elut[0][0]_i_1_n_0
+                         FDRE                                         r  elut_reg[11][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43206, unset)        0.924    10.924    clk
+                         FDRE                                         r  elut_reg[11][0]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDRE (Setup_fdre_C_D)        0.044    10.933    elut_reg[11][0]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -14.583    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -3.650    <hidden>
+
+Slack (VIOLATED) :        -3.650ns  (required time - arrival time)
+  Source:                 dots_reg[23][1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            elut_reg[12][0]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        13.610ns  (logic 6.211ns (45.636%)  route 7.399ns (54.364%))
+  Logic Levels:           22  (CARRY4=9 LUT1=1 LUT2=2 LUT3=1 LUT5=2 LUT6=4 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43206, unset)        0.973     0.973    clk
+                         FDRE                                         r  dots_reg[23][1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  dots_reg[23][1]/Q
+                         net (fo=1, unplaced)         0.965     2.416    dots_reg[23]__0[1]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  dmax[1]_i_6/O
+                         net (fo=1, unplaced)         0.000     2.711    dmax[1]_i_6_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  dmax_reg[1]_i_2/O
+                         net (fo=1, unplaced)         0.735     3.693    dmax_reg[1]_i_2_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  dmax[1]_i_1/O
+                         net (fo=6, unplaced)         0.481     4.472    dots[1]
+                         LUT2 (Prop_lut2_I0_O)        0.124     4.596 r  elut[0][13]_i_64/O
+                         net (fo=1, unplaced)         0.000     4.596    elut[0][13]_i_64_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     5.129 r  elut_reg[0][13]_i_44/CO[3]
+                         net (fo=1, unplaced)         0.000     5.129    elut_reg[0][13]_i_44_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.246 r  elut_reg[0][13]_i_31/CO[3]
+                         net (fo=1, unplaced)         0.000     5.246    elut_reg[0][13]_i_31_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.363 r  elut_reg[0][13]_i_30/CO[3]
+                         net (fo=1, unplaced)         0.000     5.363    elut_reg[0][13]_i_30_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.480 r  elut_reg[0][14]_i_80/CO[3]
+                         net (fo=1, unplaced)         0.000     5.480    elut_reg[0][14]_i_80_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.597 r  elut_reg[0][14]_i_102/CO[3]
+                         net (fo=1, unplaced)         0.000     5.597    elut_reg[0][14]_i_102_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     5.853 f  elut_reg[0][14]_i_75/O[2]
+                         net (fo=3, unplaced)         0.470     6.323    p_0_in__2[22]
+                         LUT1 (Prop_lut1_I0_O)        0.301     6.624 r  elut[0][14]_i_100/O
+                         net (fo=1, unplaced)         0.000     6.624    elut[0][14]_i_100_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     7.157 r  elut_reg[0][14]_i_65/CO[3]
+                         net (fo=1, unplaced)         0.000     7.157    elut_reg[0][14]_i_65_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     7.494 r  elut_reg[0][14]_i_64/O[1]
+                         net (fo=4, unplaced)         0.635     8.129    elut_reg[0][14]_i_64_n_6
+                         LUT2 (Prop_lut2_I0_O)        0.332     8.461 r  elut[0][13]_i_16/O
+                         net (fo=1, unplaced)         0.000     8.461    elut[0][13]_i_16_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.547     9.008 f  elut_reg[0][13]_i_4/CO[3]
+                         net (fo=238, unplaced)       0.869     9.877    elut_reg[0][13]_i_4_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124    10.001 r  elut[0][8]_i_28/O
+                         net (fo=106, unplaced)       1.042    11.043    elut[0][8]_i_28_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.124    11.167 r  elut[0][0]_i_128/O
+                         net (fo=1, unplaced)         0.000    11.167    elut[0][0]_i_128_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247    11.414 r  elut_reg[0][0]_i_51/O
+                         net (fo=1, unplaced)         0.735    12.149    elut_reg[0][0]_i_51_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298    12.447 r  elut[0][0]_i_18/O
+                         net (fo=1, unplaced)         0.000    12.447    elut[0][0]_i_18_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247    12.694 r  elut_reg[0][0]_i_6/O
+                         net (fo=1, unplaced)         0.735    13.429    elut_reg[0][0]_i_6_n_0
+                         LUT6 (Prop_lut6_I1_O)        0.298    13.727 r  elut[0][0]_i_2/O
+                         net (fo=1, unplaced)         0.732    14.459    elut[0][0]_i_2_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124    14.583 r  elut[0][0]_i_1/O
+                         net (fo=24, unplaced)        0.000    14.583    elut[0][0]_i_1_n_0
+                         FDRE                                         r  elut_reg[12][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43206, unset)        0.924    10.924    clk
+                         FDRE                                         r  elut_reg[12][0]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDRE (Setup_fdre_C_D)        0.044    10.933    elut_reg[12][0]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -14.583    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -3.650    <hidden>
+
+Slack (VIOLATED) :        -3.650ns  (required time - arrival time)
+  Source:                 dots_reg[23][1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            elut_reg[13][0]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        13.610ns  (logic 6.211ns (45.636%)  route 7.399ns (54.364%))
+  Logic Levels:           22  (CARRY4=9 LUT1=1 LUT2=2 LUT3=1 LUT5=2 LUT6=4 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43206, unset)        0.973     0.973    clk
+                         FDRE                                         r  dots_reg[23][1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  dots_reg[23][1]/Q
+                         net (fo=1, unplaced)         0.965     2.416    dots_reg[23]__0[1]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  dmax[1]_i_6/O
+                         net (fo=1, unplaced)         0.000     2.711    dmax[1]_i_6_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  dmax_reg[1]_i_2/O
+                         net (fo=1, unplaced)         0.735     3.693    dmax_reg[1]_i_2_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  dmax[1]_i_1/O
+                         net (fo=6, unplaced)         0.481     4.472    dots[1]
+                         LUT2 (Prop_lut2_I0_O)        0.124     4.596 r  elut[0][13]_i_64/O
+                         net (fo=1, unplaced)         0.000     4.596    elut[0][13]_i_64_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     5.129 r  elut_reg[0][13]_i_44/CO[3]
+                         net (fo=1, unplaced)         0.000     5.129    elut_reg[0][13]_i_44_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.246 r  elut_reg[0][13]_i_31/CO[3]
+                         net (fo=1, unplaced)         0.000     5.246    elut_reg[0][13]_i_31_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.363 r  elut_reg[0][13]_i_30/CO[3]
+                         net (fo=1, unplaced)         0.000     5.363    elut_reg[0][13]_i_30_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.480 r  elut_reg[0][14]_i_80/CO[3]
+                         net (fo=1, unplaced)         0.000     5.480    elut_reg[0][14]_i_80_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.597 r  elut_reg[0][14]_i_102/CO[3]
+                         net (fo=1, unplaced)         0.000     5.597    elut_reg[0][14]_i_102_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     5.853 f  elut_reg[0][14]_i_75/O[2]
+                         net (fo=3, unplaced)         0.470     6.323    p_0_in__2[22]
+                         LUT1 (Prop_lut1_I0_O)        0.301     6.624 r  elut[0][14]_i_100/O
+                         net (fo=1, unplaced)         0.000     6.624    elut[0][14]_i_100_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     7.157 r  elut_reg[0][14]_i_65/CO[3]
+                         net (fo=1, unplaced)         0.000     7.157    elut_reg[0][14]_i_65_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     7.494 r  elut_reg[0][14]_i_64/O[1]
+                         net (fo=4, unplaced)         0.635     8.129    elut_reg[0][14]_i_64_n_6
+                         LUT2 (Prop_lut2_I0_O)        0.332     8.461 r  elut[0][13]_i_16/O
+                         net (fo=1, unplaced)         0.000     8.461    elut[0][13]_i_16_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.547     9.008 f  elut_reg[0][13]_i_4/CO[3]
+                         net (fo=238, unplaced)       0.869     9.877    elut_reg[0][13]_i_4_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124    10.001 r  elut[0][8]_i_28/O
+                         net (fo=106, unplaced)       1.042    11.043    elut[0][8]_i_28_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.124    11.167 r  elut[0][0]_i_128/O
+                         net (fo=1, unplaced)         0.000    11.167    elut[0][0]_i_128_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247    11.414 r  elut_reg[0][0]_i_51/O
+                         net (fo=1, unplaced)         0.735    12.149    elut_reg[0][0]_i_51_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298    12.447 r  elut[0][0]_i_18/O
+                         net (fo=1, unplaced)         0.000    12.447    elut[0][0]_i_18_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247    12.694 r  elut_reg[0][0]_i_6/O
+                         net (fo=1, unplaced)         0.735    13.429    elut_reg[0][0]_i_6_n_0
+                         LUT6 (Prop_lut6_I1_O)        0.298    13.727 r  elut[0][0]_i_2/O
+                         net (fo=1, unplaced)         0.732    14.459    elut[0][0]_i_2_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124    14.583 r  elut[0][0]_i_1/O
+                         net (fo=24, unplaced)        0.000    14.583    elut[0][0]_i_1_n_0
+                         FDRE                                         r  elut_reg[13][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43206, unset)        0.924    10.924    clk
+                         FDRE                                         r  elut_reg[13][0]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDRE (Setup_fdre_C_D)        0.044    10.933    elut_reg[13][0]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -14.583    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -3.650    <hidden>
+
+Slack (VIOLATED) :        -3.650ns  (required time - arrival time)
+  Source:                 dots_reg[23][1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            elut_reg[14][0]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        13.610ns  (logic 6.211ns (45.636%)  route 7.399ns (54.364%))
+  Logic Levels:           22  (CARRY4=9 LUT1=1 LUT2=2 LUT3=1 LUT5=2 LUT6=4 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43206, unset)        0.973     0.973    clk
+                         FDRE                                         r  dots_reg[23][1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  dots_reg[23][1]/Q
+                         net (fo=1, unplaced)         0.965     2.416    dots_reg[23]__0[1]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  dmax[1]_i_6/O
+                         net (fo=1, unplaced)         0.000     2.711    dmax[1]_i_6_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  dmax_reg[1]_i_2/O
+                         net (fo=1, unplaced)         0.735     3.693    dmax_reg[1]_i_2_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  dmax[1]_i_1/O
+                         net (fo=6, unplaced)         0.481     4.472    dots[1]
+                         LUT2 (Prop_lut2_I0_O)        0.124     4.596 r  elut[0][13]_i_64/O
+                         net (fo=1, unplaced)         0.000     4.596    elut[0][13]_i_64_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     5.129 r  elut_reg[0][13]_i_44/CO[3]
+                         net (fo=1, unplaced)         0.000     5.129    elut_reg[0][13]_i_44_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.246 r  elut_reg[0][13]_i_31/CO[3]
+                         net (fo=1, unplaced)         0.000     5.246    elut_reg[0][13]_i_31_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.363 r  elut_reg[0][13]_i_30/CO[3]
+                         net (fo=1, unplaced)         0.000     5.363    elut_reg[0][13]_i_30_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.480 r  elut_reg[0][14]_i_80/CO[3]
+                         net (fo=1, unplaced)         0.000     5.480    elut_reg[0][14]_i_80_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.597 r  elut_reg[0][14]_i_102/CO[3]
+                         net (fo=1, unplaced)         0.000     5.597    elut_reg[0][14]_i_102_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     5.853 f  elut_reg[0][14]_i_75/O[2]
+                         net (fo=3, unplaced)         0.470     6.323    p_0_in__2[22]
+                         LUT1 (Prop_lut1_I0_O)        0.301     6.624 r  elut[0][14]_i_100/O
+                         net (fo=1, unplaced)         0.000     6.624    elut[0][14]_i_100_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     7.157 r  elut_reg[0][14]_i_65/CO[3]
+                         net (fo=1, unplaced)         0.000     7.157    elut_reg[0][14]_i_65_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     7.494 r  elut_reg[0][14]_i_64/O[1]
+                         net (fo=4, unplaced)         0.635     8.129    elut_reg[0][14]_i_64_n_6
+                         LUT2 (Prop_lut2_I0_O)        0.332     8.461 r  elut[0][13]_i_16/O
+                         net (fo=1, unplaced)         0.000     8.461    elut[0][13]_i_16_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.547     9.008 f  elut_reg[0][13]_i_4/CO[3]
+                         net (fo=238, unplaced)       0.869     9.877    elut_reg[0][13]_i_4_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124    10.001 r  elut[0][8]_i_28/O
+                         net (fo=106, unplaced)       1.042    11.043    elut[0][8]_i_28_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.124    11.167 r  elut[0][0]_i_128/O
+                         net (fo=1, unplaced)         0.000    11.167    elut[0][0]_i_128_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247    11.414 r  elut_reg[0][0]_i_51/O
+                         net (fo=1, unplaced)         0.735    12.149    elut_reg[0][0]_i_51_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298    12.447 r  elut[0][0]_i_18/O
+                         net (fo=1, unplaced)         0.000    12.447    elut[0][0]_i_18_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247    12.694 r  elut_reg[0][0]_i_6/O
+                         net (fo=1, unplaced)         0.735    13.429    elut_reg[0][0]_i_6_n_0
+                         LUT6 (Prop_lut6_I1_O)        0.298    13.727 r  elut[0][0]_i_2/O
+                         net (fo=1, unplaced)         0.732    14.459    elut[0][0]_i_2_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124    14.583 r  elut[0][0]_i_1/O
+                         net (fo=24, unplaced)        0.000    14.583    elut[0][0]_i_1_n_0
+                         FDRE                                         r  elut_reg[14][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43206, unset)        0.924    10.924    clk
+                         FDRE                                         r  elut_reg[14][0]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDRE (Setup_fdre_C_D)        0.044    10.933    elut_reg[14][0]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -14.583    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -3.650    <hidden>
+
+Slack (VIOLATED) :        -3.650ns  (required time - arrival time)
+  Source:                 dots_reg[23][1]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            elut_reg[15][0]/D
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        13.610ns  (logic 6.211ns (45.636%)  route 7.399ns (54.364%))
+  Logic Levels:           22  (CARRY4=9 LUT1=1 LUT2=2 LUT3=1 LUT5=2 LUT6=4 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43206, unset)        0.973     0.973    clk
+                         FDRE                                         r  dots_reg[23][1]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  dots_reg[23][1]/Q
+                         net (fo=1, unplaced)         0.965     2.416    dots_reg[23]__0[1]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  dmax[1]_i_6/O
+                         net (fo=1, unplaced)         0.000     2.711    dmax[1]_i_6_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  dmax_reg[1]_i_2/O
+                         net (fo=1, unplaced)         0.735     3.693    dmax_reg[1]_i_2_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  dmax[1]_i_1/O
+                         net (fo=6, unplaced)         0.481     4.472    dots[1]
+                         LUT2 (Prop_lut2_I0_O)        0.124     4.596 r  elut[0][13]_i_64/O
+                         net (fo=1, unplaced)         0.000     4.596    elut[0][13]_i_64_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     5.129 r  elut_reg[0][13]_i_44/CO[3]
+                         net (fo=1, unplaced)         0.000     5.129    elut_reg[0][13]_i_44_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.246 r  elut_reg[0][13]_i_31/CO[3]
+                         net (fo=1, unplaced)         0.000     5.246    elut_reg[0][13]_i_31_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.363 r  elut_reg[0][13]_i_30/CO[3]
+                         net (fo=1, unplaced)         0.000     5.363    elut_reg[0][13]_i_30_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.480 r  elut_reg[0][14]_i_80/CO[3]
+                         net (fo=1, unplaced)         0.000     5.480    elut_reg[0][14]_i_80_n_0
+                         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.117     5.597 r  elut_reg[0][14]_i_102/CO[3]
+                         net (fo=1, unplaced)         0.000     5.597    elut_reg[0][14]_i_102_n_0
+                         CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.256     5.853 f  elut_reg[0][14]_i_75/O[2]
+                         net (fo=3, unplaced)         0.470     6.323    p_0_in__2[22]
+                         LUT1 (Prop_lut1_I0_O)        0.301     6.624 r  elut[0][14]_i_100/O
+                         net (fo=1, unplaced)         0.000     6.624    elut[0][14]_i_100_n_0
+                         CARRY4 (Prop_carry4_S[1]_CO[3])
+                                                      0.533     7.157 r  elut_reg[0][14]_i_65/CO[3]
+                         net (fo=1, unplaced)         0.000     7.157    elut_reg[0][14]_i_65_n_0
+                         CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.337     7.494 r  elut_reg[0][14]_i_64/O[1]
+                         net (fo=4, unplaced)         0.635     8.129    elut_reg[0][14]_i_64_n_6
+                         LUT2 (Prop_lut2_I0_O)        0.332     8.461 r  elut[0][13]_i_16/O
+                         net (fo=1, unplaced)         0.000     8.461    elut[0][13]_i_16_n_0
+                         CARRY4 (Prop_carry4_DI[1]_CO[3])
+                                                      0.547     9.008 f  elut_reg[0][13]_i_4/CO[3]
+                         net (fo=238, unplaced)       0.869     9.877    elut_reg[0][13]_i_4_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124    10.001 r  elut[0][8]_i_28/O
+                         net (fo=106, unplaced)       1.042    11.043    elut[0][8]_i_28_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.124    11.167 r  elut[0][0]_i_128/O
+                         net (fo=1, unplaced)         0.000    11.167    elut[0][0]_i_128_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247    11.414 r  elut_reg[0][0]_i_51/O
+                         net (fo=1, unplaced)         0.735    12.149    elut_reg[0][0]_i_51_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298    12.447 r  elut[0][0]_i_18/O
+                         net (fo=1, unplaced)         0.000    12.447    elut[0][0]_i_18_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247    12.694 r  elut_reg[0][0]_i_6/O
+                         net (fo=1, unplaced)         0.735    13.429    elut_reg[0][0]_i_6_n_0
+                         LUT6 (Prop_lut6_I1_O)        0.298    13.727 r  elut[0][0]_i_2/O
+                         net (fo=1, unplaced)         0.732    14.459    elut[0][0]_i_2_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.124    14.583 r  elut[0][0]_i_1/O
+                         net (fo=24, unplaced)        0.000    14.583    elut[0][0]_i_1_n_0
+                         FDRE                                         r  elut_reg[15][0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43206, unset)        0.924    10.924    clk
+                         FDRE                                         r  elut_reg[15][0]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDRE (Setup_fdre_C_D)        0.044    10.933    elut_reg[15][0]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -14.583    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -3.650    <hidden>
+
+
+
+

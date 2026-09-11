@@ -4,9 +4,9 @@
 // + C4 wrap (alias 20-bit → mat V2 → gate → D32 V2 / S_SAFE).
 // Does not instantiate grounded_gen. Does not auto +3.
 // Production alias table OPEN (reset empty → miss → hardware n,o,EOS).
-// Candidate SRC={12'b0,subj} DST=ans_o is NOT a frozen vocalization map.
-// wrap.direction_i = C3 qse_dir (live extract is 2'd0). bank_r_i is TB-only;
-// C6 must not drive it from sw[]. Parser reverse encoding besides 2'd0 is OPEN.
+// Candidate SRC/DST are C3 selected-path endpoints (src_ent_o/dst_ent_o).
+// wrap.direction_i = C3 latched r_dir. bank_r_i pin unused for opcode.
+// C6 must not drive bank_r from sw[]. PROGRAM=NO.
 // Does not edit live prod_top / C6. Do not Copy-Item siblings.
 `timescale 1ns / 1ps
 `include "a7ng_astra_c5_ddr_arb.svh"
@@ -138,7 +138,7 @@ module a7ng_astra_c5_prod_top_final_v1 #(
   logic c3_rew_v;
   logic [7:0] c3_rew_txn, c3_rew_gen;
   logic [1:0] c3_sel;
-  logic [19:0] c3_ans, c3_p0, c3_p1;
+  logic [19:0] c3_ans, c3_p0, c3_p1, c3_src, c3_dst;
   logic [4:0] c3_npath;
   logic [3:0] c3_st;
   logic [15:0] c3_nhw, c3_nha, c3_nupd, c3_ndup, c3_nbad;
@@ -375,6 +375,7 @@ module a7ng_astra_c5_prod_top_final_v1 #(
     .pend_acc_o(c3_pacc), .pend_cmt_o(c3_pcmt),
     .txn_id_o(c3_txn), .gen_o(c3_gen), .sel_idx_o(c3_sel),
     .ans_o(c3_ans), .proof0_o(c3_p0), .proof1_o(c3_p1),
+    .src_ent_o(c3_src), .dst_ent_o(c3_dst),
     .n_path_o(c3_npath), .status_o(c3_st), .proof_ok_o(c3_pok),
     .direction_o(c3_dir),
     .obj_o(c3_obj), .ctx_o(c3_ctx),
@@ -430,8 +431,8 @@ module a7ng_astra_c5_prod_top_final_v1 #(
     .go_i(g_go), .retire_i(g_ret), .zero_w_i(1'b0),
     .c3_status_i(c3_st), .c3_npath_i(c3_npath), .c3_proof_ok_i(c3_pok),
     .direction_i(c3_dir), .bank_r_i(bank_r_i),
-    .entity_src_i({12'd0, c3_subj}),
-    .entity_dst_i(c3_ans),
+    .entity_src_i(c3_src),
+    .entity_dst_i(c3_dst),
     .alias_key_i(akey), .alias_sym_i(asym),
     .alias_valid_i(aval), .alias_ovf_i(aovf),
     .busy_o(g_busy), .done_o(g_done),

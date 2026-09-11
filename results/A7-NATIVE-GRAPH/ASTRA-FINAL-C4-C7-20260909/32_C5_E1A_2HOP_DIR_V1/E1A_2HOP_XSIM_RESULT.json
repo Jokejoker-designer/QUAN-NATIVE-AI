@@ -1,0 +1,25 @@
+{
+  "schema": "A7NG_E1A_2HOP_XSIM_RESULT_V1",
+  "bag": "32_C5_E1A_2HOP_DIR_V1",
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "C5_MASTER": "OPEN",
+  "C6_MASTER": "OPEN",
+  "ASTRA_NATIVE_AI_BOARD_PASS": "OPEN",
+  "recorded_at": "2026-09-11T06:12:42+07:00",
+  "marker": "ASTRA_C5_FINAL_V1_E1A_2HOP_XSIM_PASS",
+  "clk_baud": "8000/800",
+  "bank_r_i": 0,
+  "sha256": {
+    "a7ng_astra_c3_held_out_pendld.sv": "e395e8668278785828805f0f8c6bce7a3a747521073f76764de5bb3aee3e15a7",
+    "a7ng_astra_c5_prod_top_final_v1.sv": "8c9aa81a61c2aff23140958c481e377792a5eec5a29e82d10f389f74ff8449fe",
+    "tb_astra_c5_final_v1_e1a_2hop.sv": "15a95e35aece6133db62ab0835b735af4963891b124b6f8a56250c652cccfca9",
+    "xsim.log": "7c76b68910e6e48e592108b2629b9355cd04d68fb26cb7b711a3edba2a6c45c9"
+  },
+  "F_1hop": {"q": "pump requires valve", "ans": 11, "p0": 20, "p1": 0, "uart": [116, 105, 102, 104, 0]},
+  "R_1hop": {"q": "what requires valve", "ans": 10, "p0": 20, "p1": 0, "uart": [118, 109, 103, 104, 0]},
+  "F_2hop": {"q": "pump requires indirect", "ans": 64, "p0": 16, "p1": 17, "uart": [97, 98, 99, 100, 0], "note": "KEEP F S_EJ dst=fo[p1]"},
+  "R_2hop": {"q": "what requires valve indirectly", "ans": 10, "p0": 16, "p1": 21, "uart": [118, 109, 103, 104, 0], "note": "inverse S_EJ ans=fs[p0] src=pump dst=valve"},
+  "UNK": {"q": "what requires chiller", "st": 1, "uart": [110, 111, 0]},
+  "limit": "XSim not C5_MASTER; synthetic CAM; SIM 8000/800; not frozen C6; not silicon §22"
+}

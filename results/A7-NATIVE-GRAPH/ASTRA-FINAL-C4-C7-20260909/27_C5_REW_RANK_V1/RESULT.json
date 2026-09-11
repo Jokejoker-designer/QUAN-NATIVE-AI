@@ -1,0 +1,23 @@
+{
+  "schema": "C5_15_11_REW_RANK_V1",
+  "PROGRAM": "NO",
+  "C5_MASTER": "OPEN",
+  "BOARD_PASS": "OPEN",
+  "recorded_at": "2026-09-11T05:25:16+07:00",
+  "sim_clk_hz": 8000,
+  "sim_baud": 800,
+  "dut": "a7ng_astra_c5_prod_top_final_v1",
+  "d32_sha256": "a39c39c08b682dc8f1134105268e93e7528a3d17e8abce30485cd168bfad1879",
+  "c5_sha256": "5d959a6d719fcc1f12062c721e983f9516864da6b3c41f5f15b6bcf2198ec329",
+  "tb_sha256": "10bc65d1c43b615198f8f6c0ee5ca09f1783d2a060e652a7b2b70204e4ac4897",
+  "log_sha256": "4497601e834a7925bd7c76823533aeef37b909edb205dbd35c603008b1b894b4",
+  "marker": "ASTRA_C5_FINAL_V1_REW_RANK_XSIM_PASS",
+  "classes": {
+    "CLASS_base_two_hop": "HIT ans=64 p0=16 p1=17",
+    "CLASS_rew_minus3": "HIT nupd=1 pvalid=1",
+    "CLASS_rew_w_changed": "HIT w0=-5 w12=-6 w13=0",
+    "CLASS_rew_rank_flip": "HIT ans=80 p0=18 p1=19",
+    "CLASS_rew_after_reload": "HIT ans=80 p0=18"
+  },
+  "limit": "Modeled AXI not MIG. Empty alias UART n,o,EOS. Not frozen C6. Not C5_MASTER."
+}

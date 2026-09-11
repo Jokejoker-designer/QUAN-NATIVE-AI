@@ -6,6 +6,7 @@
 `timescale 1ns / 1ps
 `include "a7ng_gate14_crc.svh"
 `include "qse_role_lexicon.svh"
+`include "a7ng_op_dir_pkg.svh"
 
 module a7ng_query_role_extract (
   input  logic        clk,
@@ -74,7 +75,7 @@ module a7ng_query_role_extract (
   logic [7:0]  sid, oid, rid, xid;
   cue_t        scue, ocue, rcue, xcue;
   logic        sh, oh, rh, xh, neg, amb, hyp_alt;
-  logic [1:0]  pst;
+  logic [1:0]  pst, dir;
 
   assign n_host_entity_o  = 16'd0;
   assign n_host_intent_o  = 16'd0;
@@ -95,7 +96,6 @@ module a7ng_query_role_extract (
   assign k2_o         = subj_cue_o[15:0];
   assign k3_o         = obj_cue_o[15:0];
   assign valid_mask_o = {k3_valid_o, k2_valid_o, k1_valid_o, k0_valid_o};
-  assign direction_o  = 2'd0;
 
   function automatic logic [7:0] lc(input logic [7:0] t);
     if ((t >= 8'h41) && (t <= 8'h5A))
@@ -114,7 +114,7 @@ module a7ng_query_role_extract (
   logic [7:0]  sid_n, oid_n, rid_n, xid_n;
   cue_t        scue_n, ocue_n, rcue_n, xcue_n;
   logic        sh_n, oh_n, rh_n, xh_n, neg_n, amb_n, hyp_alt_n;
-  logic [1:0]  pst_n;
+  logic [1:0]  pst_n, dir_n;
   integer      li, bi;
 
   assign do_space = tok_valid_i && tok_ready_o && (tok_i == 8'h20) && (wlen != 8'd0);
@@ -144,6 +144,7 @@ module a7ng_query_role_extract (
     scue_n = scue; ocue_n = ocue; rcue_n = rcue; xcue_n = xcue;
     sh_n = sh; oh_n = oh; rh_n = rh; xh_n = xh;
     neg_n = neg; amb_n = amb; hyp_alt_n = hyp_alt; pst_n = pst;
+    dir_n = dir;
     cls = hcls;
 
     if (do_flush) begin
@@ -164,11 +165,18 @@ module a7ng_query_role_extract (
         xcue_n = xcue ^ bcue;
         xh_n = 1'b1;
       end else if (cls == CLS_ENTITY) begin
-        if (!sh) begin
+        if (rh && !sh && !oh) begin
+          oid_n  = hid;
+          ocue_n = bcue;
+          oh_n   = 1'b1;
+          pst_n  = ST_OBJ;
+          dir_n  = A7NG_OP_R_INVERSE;
+        end else if (!sh) begin
           sid_n  = hid;
           scue_n = bcue;
           sh_n   = 1'b1;
           pst_n  = rh ? ST_REL : ST_SUBJ;
+          dir_n  = A7NG_OP_F_SVO_AS_WRITTEN;
         end else if (rh && !oh) begin
           oid_n  = hid;
           ocue_n = bcue;
@@ -204,9 +212,11 @@ module a7ng_query_role_extract (
       scue <= 64'd0; ocue <= 64'd0; rcue <= 64'd0; xcue <= 64'd0;
       sh <= 1'b0; oh <= 1'b0; rh <= 1'b0; xh <= 1'b0;
       neg <= 1'b0; amb <= 1'b0; hyp_alt <= 1'b0; pst <= ST_IDLE;
+      dir <= A7NG_OP_F_SVO_AS_WRITTEN;
       accepted_o <= 1'b0;
       valid_o <= 1'b0;
       subj_id_o <= 8'd0; obj_id_o <= 8'd0; rel_id_o <= 8'd0; ctx_id_o <= 8'd0;
+      direction_o <= A7NG_OP_F_SVO_AS_WRITTEN;
       negation_o <= 1'b0; ambiguity_o <= 1'b0; triple_valid_o <= 1'b0;
       n_hyp_o <= 2'd1;
       subj_cue_o <= 64'd0; obj_cue_o <= 64'd0; rel_cue_o <= 64'd0; ctx_cue_o <= 64'd0;
@@ -223,6 +233,8 @@ module a7ng_query_role_extract (
           scue <= 64'd0; ocue <= 64'd0; rcue <= 64'd0; xcue <= 64'd0;
           sh <= 1'b0; oh <= 1'b0; rh <= 1'b0; xh <= 1'b0;
           neg <= 1'b0; amb <= 1'b0; hyp_alt <= 1'b0; pst <= ST_IDLE;
+          dir <= A7NG_OP_F_SVO_AS_WRITTEN;
+          direction_o <= A7NG_OP_F_SVO_AS_WRITTEN;
           k0_valid_o <= 1'b0; k1_valid_o <= 1'b0; k2_valid_o <= 1'b0; k3_valid_o <= 1'b0;
         end
       end else if (tok_valid_i && tok_ready_o) begin
@@ -234,6 +246,7 @@ module a7ng_query_role_extract (
             scue <= scue_n; ocue <= ocue_n; rcue <= rcue_n; xcue <= xcue_n;
             sh <= sh_n; oh <= oh_n; rh <= rh_n; xh <= xh_n;
             neg <= neg_n; amb <= amb_n; hyp_alt <= hyp_alt_n; pst <= pst_n;
+            dir <= dir_n;
             n_words <= n_words + 8'd1;
             wlen <= 8'd0;
             wbuf <= 96'd0;
@@ -250,6 +263,7 @@ module a7ng_query_role_extract (
         negation_o     <= neg_n;
         ambiguity_o    <= amb_n;
         triple_valid_o <= sh_n & rh_n & oh_n;
+        direction_o   <= dir_n;
         n_hyp_o        <= hyp_alt_n ? 2'd2 : 2'd1;
         subj_cue_o     <= scue_n;
         obj_cue_o      <= ocue_n;
@@ -260,6 +274,7 @@ module a7ng_query_role_extract (
         scue <= scue_n; ocue <= ocue_n; rcue <= rcue_n; xcue <= xcue_n;
         sh <= sh_n; oh <= oh_n; rh <= rh_n; xh <= xh_n;
         neg <= neg_n; amb <= amb_n; hyp_alt <= hyp_alt_n; pst <= pst_n;
+        dir <= dir_n;
         k0_valid_o <= sh_n & rh_n;
         k1_valid_o <= oh_n & rh_n;
         k2_valid_o <= sh_n;

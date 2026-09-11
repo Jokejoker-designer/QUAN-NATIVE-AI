@@ -3,7 +3,7 @@
   "wo": "§20–22",
   "PROGRAM": "NO",
   "runnable": false,
-  "reason": "frozen C6 bit missing; C4/C5 acceptance OPEN; freeze_allowed=false",
+  "reason": "frozen C6 bit missing; C4/C5 acceptance OPEN; freeze_allowed=false; last OOC E3y WNS -1.332 ns",
   "on_fail": "archive raw UART first; do not patch live bit; return earliest gate; new freeze; new bit; new blind C7",
   "on_pass": "FINAL_RECONCILIATION artifacts only if §22 all hold on SAME bit+manifest; never PARTIAL PASS",
   "never": ["PARTIAL PASS", "combine two bits", "host semantic authority", "program unfrozen bit"],

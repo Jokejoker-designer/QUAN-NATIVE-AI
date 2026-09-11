@@ -1,0 +1,41 @@
+{
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "ASTRA_NATIVE_AI_BOARD_PASS": "OPEN",
+  "scope": "PROD_OP_PIPE",
+  "six": {
+    "wns_ns": -2.753,
+    "tns_ns": -307.046,
+    "failing_endpoints": 183,
+    "top20_family_counts": {
+      "rq_q": 15,
+      "smres_div": 5
+    },
+    "prod_r_in_top20": 0,
+    "prod_r_left_top20": true,
+    "prod_r_still_20_of_20": false,
+    "worst_logic_levels": 38,
+    "worst_carry4": 33,
+    "worst_dsp48e1": 0,
+    "worst_source": "u_rq/shr_r_reg[4]/C",
+    "worst_destination": "u_rq/q_r_reg[63]/D",
+    "worst_dest_family": "rq_q",
+    "source_is_di": false
+  },
+  "classification": {
+    "case": "B",
+    "label": "path_cut_new_family",
+    "note": "prod_r left top-20; WNS slight/flat. Path-cut PASS. Target the new named family only.",
+    "wns_delta_vs_e3t_ns": 0.0129999999999999,
+    "wns_strong": false,
+    "next_gate": "E3v_rq_q"
+  },
+  "report_sha256": "f32603c64771b5a372ff4c75fc12766926a23203209efd92aa86c9af71bfc90b",
+  "util": {
+    "slice_luts": 27620,
+    "lut_as_memory": 200,
+    "slice_registers": 43100,
+    "block_ram_tile": 0,
+    "dsps": 12
+  }
+}

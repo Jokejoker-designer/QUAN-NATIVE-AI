@@ -1,0 +1,34 @@
+{
+  "schema": "A7NG_E1A_F_REPLAY_BASELINE_V1",
+  "bag": "25_C5_FPGA_DIRECTION_ENDPOINT_DICT",
+  "PROGRAM": "NO",
+  "rtl_modified": false,
+  "recorded_at": "2026-09-11T05:44:00+07:00",
+  "extract_sha256": "cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27",
+  "extract_direction_o": "tied 2'd0 a7ng_query_role_extract.sv:98",
+  "c6_sha256": "525880f4e1c610b24af73d603ba7ecaead8e6f3d62e5057d93d9e532061eabd8",
+  "c6_bank_r": "tied 0",
+  "forbidden": [
+    "wire direction_o to bank_r",
+    "invent reverse as reinterpretation of 2'd0",
+    "silent F change"
+  ],
+  "keep_f_replay": {
+    "gate": "ASTRA-03-ROLE-AWARE-QUERY",
+    "law": "qse-v2-role-00",
+    "replayed_at": "2026-09-11T05:46:55+07:00",
+    "marker": "ASTRA03_ROLE_AWARE_XSIM_PASS",
+    "log_sha256": "0089976c01f9acdc890feee6191b3a0c5ac750dd56ff32ad79a73ebd51e330dc",
+    "extract_sha256": "cd7baf49bb433220d7ed3cd1b2fe942f7a1a9ee54f1171cdbb650cecd83a9f27",
+    "note":     "GOLDEN reverse queries still have direction=0; word-order swap is KEEP SVO-as-written, not E1a OP_R_INVERSE"
+  },
+  "keep_f_replay_after_rtl": {
+    "gate": "ASTRA-03-ROLE-AWARE-QUERY",
+    "replayed_at": "2026-09-11T06:01:45+07:00",
+    "marker": "ASTRA03_ROLE_AWARE_XSIM_PASS",
+    "log_sha256": "7ac917b01ccab2627dc8e738a83936c8dacfa26078dd08483f8366ff861c90f7",
+    "extract_sha256": "e26b127f3f3f283a0112ab7f235ab8821fe2d68ad507ae180ed913985368422e"
+  },
+  "c5_15_17_closed_as_xsim": true,
+  "c5_15_18_host_tok_input": "MISS"
+}

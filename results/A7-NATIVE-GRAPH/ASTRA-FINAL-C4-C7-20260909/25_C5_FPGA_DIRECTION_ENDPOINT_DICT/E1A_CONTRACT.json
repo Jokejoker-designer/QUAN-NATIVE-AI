@@ -4,7 +4,8 @@
   "PROGRAM": "NO",
   "C4_MASTER": "OPEN",
   "C5_MASTER": "OPEN",
-  "rtl_modified": false,
+  "rtl_modified": true,
+  "rtl_modified_at": "2026-09-11T06:02:25+07:00",
   "gate": "NEW_GATE",
   "keep": "C1/C2/C3 EXISTING SEMANTICS",
   "forbidden": [
@@ -16,21 +17,23 @@
     "silent change to existing F SVO-as-written"
   ],
   "existing_fact": {
-    "extract_direction_o": "2'd0 tied a7ng_query_role_extract.sv:98",
-    "parse_direction_o": "2'd0; comment reverse voice later grammar",
-    "registered_encoding": {
-      "A7NG_C4_DIR_SVO_AS_WRITTEN": "2'd0",
-      "file": "a7ng_astra_c4_entity_alias_v1.svh"
-    },
-    "dir_known": "telemetry today; not in answer_allowed_o",
-    "c6_bank_r": "tied 0"
+    "extract_direction_o": "latched OP_F=2'd0 KEEP SVO; REL-before-entity → OP_R=2'd1",
+    "extract_sha256": "e26b127f3f3f283a0112ab7f235ab8821fe2d68ad507ae180ed913985368422e",
+    "c3_direction_o": "latched r_dir at qse_valid, not live qse_dir after retire",
+    "c5_endpoints": "wrap entity_src/dst = C3 src_ent_o/dst_ent_o",
+    "dir_known": "in answer_allowed_o (F or OP_R)",
+    "mat_bank": "direction_i==OP_R only; bank_r_i pin unused for opcode",
+    "c6_bank_r": "tied 0; C6 must not drive from sw[]",
+    "xsim_bag31": "ASTRA_C5_FINAL_V1_E1A_DIR_XSIM_PASS log sha256=55103bd1ae3dfc6dfa042a837e878830ea0d3e696e4d4085c931ecb7c15470f5"
   },
-  "package_proposal_not_implemented": {
+  "package_implemented": {
     "name": "a7ng_op_dir_pkg",
+    "file": "rtl/native_graph/query/a7ng_op_dir_pkg.svh",
+    "sha256": "8cc364d67c97db96c60c950f92878a97410f3954eb678c36da327b2a1f8071c1",
     "width": 2,
     "OP_F_SVO_AS_WRITTEN": "2'd0 KEEP existing F",
-    "OP_R_INVERSE": "2'd1 NEW — must not be claimed until parser+proof law exist",
-    "OP_INVALID": "2'd2 NEW — ambiguous/unknown voice → safe",
+    "OP_R_INVERSE": "2'd1 NEW — parser REL-first + C3 inverse 1-hop + wrap bank from opcode",
+    "OP_INVALID": "2'd2 reserved; parser does not emit yet",
     "OP_RESERVED": "2'd3",
     "note": "2'd0 remains F. Reverse is a new code, not a reinterpretation of 2'd0."
   },
@@ -61,5 +64,13 @@
     "reset between queries",
     "no bank_r override in end-to-end TB"
   ],
-  "sibling_not_this_gate": "25_C5_EDGE_DIR_V1 TB exists, XSim not run, not this contract"
+  "replay_status": {
+    "ASTRA-03 F gold": "XSIM_PASS after extract change log sha256=7ac917b01ccab2627dc8e738a83936c8dacfa26078dd08483f8366ff861c90f7",
+    "paired F/R 1-hop": "XSIM_PASS bag 31 bank_r_i=0",
+    "back-to-back F after R": "XSIM_PASS F_AGAIN tifh",
+    "no bank_r override": "XSIM_PASS R_BANK_PIN0",
+    "inverse 2-hop": "XSIM_PASS bag 32 F ans=64 p0=16 p1=17; R ans=10 p0=16 p1=21 bank_r_i=0",
+    "invalid opcode emit": "parser does not emit OP_INVALID yet"
+  },
+  "sibling_not_this_gate": "25_C5_EDGE_DIR_V1 is C3 non-ANSWER on word-order F miss, not this opcode gate"
 }
