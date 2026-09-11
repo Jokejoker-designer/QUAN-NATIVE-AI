@@ -1,0 +1,45 @@
+{
+  "schema": "ENTITY_ALIAS_V1",
+  "version": 1,
+  "PROGRAM": "NO",
+  "production_dictionary": "IMAGE_IN_TREE_BOOT_WIRED",
+  "exam_locked": false,
+  "n": 8,
+  "key_width_bits": 20,
+  "symbol": "v2_4char_le",
+  "rows": [
+    {
+      "idx": 0,
+      "valid": true,
+      "ovf": false,
+      "key_u20": 10,
+      "key_hex": "0000a",
+      "c3_role": "pump_src_ans",
+      "sym_ascii": "vmgh",
+      "sym_u32": "0x68676d76",
+      "uart_bytes": [118, 109, 103, 104]
+    },
+    {
+      "idx": 1,
+      "valid": true,
+      "ovf": false,
+      "key_u20": 11,
+      "key_hex": "0000b",
+      "c3_role": "valve_dst_ans",
+      "sym_ascii": "tifh",
+      "sym_u32": "0x68666974",
+      "uart_bytes": [116, 105, 102, 104]
+    }
+  ],
+  "truncation_trap": {
+    "installed": false,
+    "same_low8_as_valve": "0xA000B",
+    "law": "must miss versus key 11"
+  },
+  "forbidden": [
+    "QSE 8-bit lexicon as alias key",
+    "id[7:0] ROM",
+    "Confirm-V3 packing as production keys",
+    "English valve/chiller truncate"
+  ]
+}

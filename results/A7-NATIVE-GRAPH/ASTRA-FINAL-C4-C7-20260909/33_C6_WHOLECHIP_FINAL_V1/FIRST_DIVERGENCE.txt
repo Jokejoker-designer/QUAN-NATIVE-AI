@@ -1,0 +1,3 @@
+FIRST_DIVERGENCE ROUTE_PROCESS_DEATH
+vivado exit=-1 during route_design Phase 5.1 rip-up; no ERROR/FATAL in log; journal never returned; no letters this attempt
+PROGRAM=NO

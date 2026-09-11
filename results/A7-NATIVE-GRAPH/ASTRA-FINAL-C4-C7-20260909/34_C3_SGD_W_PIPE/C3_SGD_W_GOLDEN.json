@@ -1,0 +1,20 @@
+{
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "C5_MASTER": "OPEN",
+  "C6_MASTER": "OPEN",
+  "ASTRA_NATIVE_AI_BOARD_PASS": "NOT_EVIDENCED",
+  "E3AB": "DO_NOT_START",
+  "family": "c3_sgd_w",
+  "marker": "ASTRA_C3_SGD_W_PIPE_XSIM_PASS",
+  "twin": "ASTRA_C3_SGD_W_TWIN_PASS",
+  "v_frozen": 0,
+  "v_enabled": 688,
+  "v_shuffle": 48,
+  "v_mixed": 78,
+  "dut_sha256": "8fe57adcdb9cc329bcc598631fe8f3820f9fdfc687842cd6ae2049be505549d3",
+  "xsim_log_sha256": "e15cb9cb1df9bec1438d32a341945e918444577316628aaa8a700e896cba7456",
+  "spec_sha256": "7d70781222d8123c13357df97c42cfe372ed0df36543f430ad8af469ccb272cc",
+  "note": "XSim integer KEEP only. Not WO 19. Not MASTER. Not a freeze.",
+  "updated": "2026-09-11T21:30:37+07:00"
+}

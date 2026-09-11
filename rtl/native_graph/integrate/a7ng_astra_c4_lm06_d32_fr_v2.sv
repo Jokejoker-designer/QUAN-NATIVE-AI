@@ -25,7 +25,7 @@ module a7ng_astra_c4_lm06_d32_fr_v2 (
   output logic [3:0]  vocab_ver_o
 );
   typedef enum logic [5:0] {
-    S_IDLE, S_SAFE, S_EMB, S_EMB_RQ1, S_EMB_CAP, S_EMB_RQ2, S_EMB_FIN, S_Q, S_Q_RQ, S_Q_FIN, S_K, S_K_RQ, S_K_FIN, S_V, S_V_RQ, S_V_FIN, S_DOT, S_DOT_PROD, S_DOT_RQ, S_DOT_FIN, S_SMMAX, S_SMLUT, S_SMLUT_LUT,
+    S_IDLE, S_SAFE, S_EMB, S_EMB_RQ1, S_EMB_CAP, S_EMB_RQ2, S_EMB_FIN, S_Q, S_Q_RQ, S_Q_FIN, S_K, S_K_RQ, S_K_FIN, S_V, S_V_RQ, S_V_FIN, S_DOT, S_DOT_PROD, S_DOT_RQ, S_DOT_FIN, S_SMMAX, S_SMLUT, S_SMLUT_LUT, S_SMLUT_APPLY,
     S_SMDIV, S_SMRES, S_SMFIX, S_H, S_H_PROD, S_H_MAC, S_H_SNAP, S_PROD, S_ACC_MAC, S_ACC_SNAP, S_H_RQ, S_H_FIN, S_Y, S_Y_RQ1, S_Y_CAP, S_Y_RQ2, S_Y_FIN, S_F1, S_F1_RQ, S_F1_FIN,
     S_F2, S_F2_PROD, S_F2_MAC, S_F2_RQ1, S_F2_CAP, S_F2_RQ2, S_F2_FIN, S_LOG, S_LOG_RQ1, S_LOG_CAP,
     S_LOG_RQ2, S_LOG_FIN, S_ARG, S_EMIT, S_DONE
@@ -90,6 +90,8 @@ module a7ng_astra_c4_lm06_d32_fr_v2 (
   integer ti, di, dj, fi, vi, posi;
   (* keep = "true" *) logic signed [31:0] dmax;
   (* keep = "true" *) logic signed [31:0] delta_r;
+  (* keep = "true" *) logic signed [31:0] lut_neg_r;
+  (* keep = "true" *) logic               lut_zero_r;
   logic [5:0] amax_i;
   logic signed [31:0] elut [0:TMAX-1];
   logic signed [31:0] eden, psum;
@@ -204,6 +206,8 @@ module a7ng_astra_c4_lm06_d32_fr_v2 (
       attn_r <= 32'sd0;
       qv_r <= 16'sd0;
       delta_r <= 32'sd0;
+      lut_neg_r <= 32'sd0;
+      lut_zero_r <= 1'b0;
       ti <= 0; di <= 0; dj <= 0; fi <= 0; vi <= 0; posi <= 0;
       smres_div_go <= 1'b0;
       smres_div_hold <= 1'b0;
@@ -457,9 +461,13 @@ module a7ng_astra_c4_lm06_d32_fr_v2 (
           st <= S_SMLUT_LUT;
         end
         S_SMLUT_LUT: begin
-          if (delta_r < -32'sd4096) elut[ti] <= 32'sd0;
-          else if ((-delta_r) > 32'sd4096) elut[ti] <= 32'sd0;
-          else elut[ti] <= Lut[(-delta_r) > 0 ? (-delta_r) : 0];
+          lut_zero_r <= (delta_r < -32'sd4096) || ((-delta_r) > 32'sd4096);
+          lut_neg_r <= ((-delta_r) > 0) ? (-delta_r) : 32'sd0;
+          st <= S_SMLUT_APPLY;
+        end
+        S_SMLUT_APPLY: begin
+          if (lut_zero_r) elut[ti] <= 32'sd0;
+          else elut[ti] <= Lut[lut_neg_r];
           if (ti == tlen - 1) begin ti <= 0; eden <= 32'sd0; st <= S_SMDIV; end
           else begin
             ti <= ti + 1;

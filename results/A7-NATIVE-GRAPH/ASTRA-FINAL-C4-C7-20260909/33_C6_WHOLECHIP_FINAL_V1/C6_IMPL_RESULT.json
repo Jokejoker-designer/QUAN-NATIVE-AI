@@ -1,0 +1,22 @@
+{
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "C5_MASTER": "OPEN",
+  "C6_MASTER": "OPEN",
+  "ASTRA_NATIVE_AI_BOARD_PASS": "NOT_EVIDENCED",
+  "freeze_allowed": false,
+  "top": "a7ng_astra_c6_wholechip_final_v1",
+  "letters": {},
+  "fit_ok": false,
+  "stale_letters_ignored": true,
+  "n20": {
+    "n_dest": 0,
+    "auto_start_next_pipe": false,
+    "stale": true
+  },
+  "route_pass_marker": false,
+  "bit_exists": false,
+  "bit_sha256": null,
+  "note": "Routed letters are not a freeze. TIMING_OR_FIT miss is not a bit. Do not program. Do not auto-start next pipe.",
+  "updated": "2026-09-11T22:40:30+07:00"
+}

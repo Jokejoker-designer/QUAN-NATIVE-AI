@@ -4,8 +4,8 @@
 // Forwards MIG RRESP/RLAST/RID/BRESP/BID. Derives ARID from address so C3
 // fact beats keep A7NG_C3_FACT_RID (live C6 tied ARID=0; that would fail RID law).
 // Does not edit live a7ng_astra_c6_wholechip.sv / KEEP / MIG prj.
-// alias_wr tied 0: production 20-bit vocalization map OPEN → silicon F/R is S_SAFE.
-// bank_r_i tied 0: WO forbids host/switch F/R. Parser qse_dir is 2'd0 until reverse grammar exists.
+// alias_wr: FPGA boot from ENTITY_ALIAS_PROD_V1 (not host, not per-query).
+// bank_r_i tied 0: WO forbids host/switch F/R.
 // Not C6_MASTER. Not BOARD_PASS.
 
 `include "a7ng_astra_c5_prod_top_final_v1.svh"
@@ -180,17 +180,35 @@ module a7ng_astra_c6_wholechip_final_v1 (
   end
   assign c5_rst_n = c5_rst_sync[1];
 
+  logic        alias_wr_v;
+  logic [2:0]  alias_wr_idx;
+  logic [19:0] alias_wr_key;
+  logic [31:0] alias_wr_sym;
+  logic        alias_wr_ovf;
+  logic        dict_lock /* synthesis keep = 1 */;
+
+  a7ng_astra_c6_alias_boot_v1 u_alias_boot (
+    .clk(ui_clk),
+    .rst_n(c5_rst_n),
+    .wr_v_o(alias_wr_v),
+    .wr_idx_o(alias_wr_idx),
+    .wr_key_o(alias_wr_key),
+    .wr_sym_o(alias_wr_sym),
+    .wr_ovf_o(alias_wr_ovf),
+    .dict_lock_o(dict_lock)
+  );
+
   a7ng_astra_c5_prod_top_final_v1 u_c5 (
     .clk(ui_clk),
     .rst_n(c5_rst_n),
     .live_epoch_i({12'h000, sw}),
     .uart_rx_i(uart_txd_in),
     .uart_tx_o(uart_rxd_out),
-    .alias_wr_v_i(1'b0),
-    .alias_wr_idx_i(3'd0),
-    .alias_wr_key_i(20'd0),
-    .alias_wr_sym_i(32'd0),
-    .alias_wr_ovf_i(1'b0),
+    .alias_wr_v_i(alias_wr_v),
+    .alias_wr_idx_i(alias_wr_idx),
+    .alias_wr_key_i(alias_wr_key),
+    .alias_wr_sym_i(alias_wr_sym),
+    .alias_wr_ovf_i(alias_wr_ovf),
     .bank_r_i(1'b0),
     .m_arvalid_o(c5_arvalid),
     .m_araddr_o(c5_araddr),

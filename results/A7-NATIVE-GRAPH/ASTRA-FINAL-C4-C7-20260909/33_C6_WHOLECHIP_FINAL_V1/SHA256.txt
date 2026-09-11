@@ -1,0 +1,7 @@
+# SHA freeze BEFORE vivado 2026-09-11T21:32:13.4391923+07:00
+# PROGRAM=NO BOARD_PASS=OPEN C6_MASTER=OPEN C6_POST_ROUTE_FINAL_V1
+0a4e0e051f7f400f3853cf91098eb03617efa8eb888c7ca1c65a3287bcca5fb5  rtl/native_graph/integrate/a7ng_astra_c4_lm06_d32_fr_v2.sv
+8c9aa81a61c2aff23140958c481e377792a5eec5a29e82d10f389f74ff8449fe  rtl/native_graph/integrate/a7ng_astra_c5_prod_top_final_v1.sv
+7c7bf78e44595bb24d5a9908106f5a4f3e5a77419bc53ac913dbab5e54d81689  rtl/native_graph/integrate/a7ng_astra_c6_wholechip_final_v1.sv
+c039e357db08277aba1a58c3e6d0fa77ecb00e76bfff8e1c83e64ec0df0f9b16  run_impl.tcl
+a9027f8b1fe1807f158a46111eacf6e09e165fc5af15ac2eda8ed91607ad7bc5  c6_wholechip.xdc

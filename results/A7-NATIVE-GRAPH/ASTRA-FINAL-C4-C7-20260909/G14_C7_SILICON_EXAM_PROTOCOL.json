@@ -1,12 +1,17 @@
 {
   "schema": "G14_C7_SILICON_EXAM_PROTOCOL_V1",
-  "wo": "§20–22",
+  "wo": "\u00a720\u201322",
   "PROGRAM": "NO",
   "runnable": false,
-  "reason": "frozen C6 bit missing; C4/C5 acceptance OPEN; freeze_allowed=false; last OOC E3y WNS -1.332 ns",
+  "reason": "frozen C6 bit missing; C4/C5 acceptance OPEN; freeze_allowed=false; c3_sgd_w GOLDEN PASS; C6 wholechip_final_v1 retry IN_FLIGHT after WNS -9.462; last closed OOC E3aa +1.052 ns is not WO 19",
   "on_fail": "archive raw UART first; do not patch live bit; return earliest gate; new freeze; new bit; new blind C7",
-  "on_pass": "FINAL_RECONCILIATION artifacts only if §22 all hold on SAME bit+manifest; never PARTIAL PASS",
-  "never": ["PARTIAL PASS", "combine two bits", "host semantic authority", "program unfrozen bit"],
+  "on_pass": "FINAL_RECONCILIATION artifacts only if \u00a722 all hold on SAME bit+manifest; never PARTIAL PASS",
+  "never": [
+    "PARTIAL PASS",
+    "combine two bits",
+    "host semantic authority",
+    "program unfrozen bit"
+  ],
   "pre_program": {
     "part": "xc7a100tcsg324-1",
     "board": "Arty A7-100T",
@@ -18,82 +23,110 @@
     "arm_uart_before_program": true
   },
   "preregistration": {
-    "required_files": ["C7_BOARD_EXAM_V1.json", "C7_BOARD_EXAM_V1.md"],
-    "status": "NOT_CREATED",
+    "required_files": [
+      "C7_BOARD_EXAM_V1.json",
+      "C7_BOARD_EXAM_V1.md"
+    ],
+    "status": "SHELL_CREATED_QUERIES_NOT_FILLED",
+    "files_exist": [
+      "C7_BOARD_EXAM_V1.json",
+      "C7_BOARD_EXAM_V1.md"
+    ],
+    "locked": false,
+    "queries_filled": false,
+    "runner": "c7_board_exam_run.py aborts unless freeze_allowed and C7_PROGRAM_AUTH.txt",
+    "sha256": {
+      "C7_BOARD_EXAM_V1.json": "ada64f373f594f1f778df8df75993fdc7c9dcaf9cc034a2068c466242b5f76c6",
+      "C7_BOARD_EXAM_V1.md": "fd5958d5ccc59e98dfb3a91c040027c52088ae562560e10cdd5fa76c75e3425a",
+      "c7_board_exam_run.py": "60a7c77693773dda922cbe904041f6afa10b1fbf9aa19c42bec2958600213fe3"
+    },
     "law": "C7 queries must not be used to tune RTL/model after preregistration. Do not fill live blind queries until C6 freeze exists."
   },
   "phases": [
     {
       "id": "P1",
       "name": "Build/board identity + UART link",
-      "wo": "§21",
+      "wo": "\u00a721",
       "verdict": "BLOCKED",
-      "capture": ["program log", "JTAG identity", "UART open parameters", "build fingerprint", "bit SHA", "manifest SHA"]
+      "capture": [
+        "program log",
+        "JTAG identity",
+        "UART open parameters",
+        "build fingerprint",
+        "bit SHA",
+        "manifest SHA"
+      ]
     },
     {
       "id": "P2",
       "name": "Raw parser role/direction F vs R",
-      "wo": "§20 P2 / §22 ROLE-AWARE PARSING",
+      "wo": "\u00a720 P2 / \u00a722 ROLE-AWARE PARSING",
       "verdict": "BLOCKED",
       "depends": "E1a NEW GATE implemented and C1/C3 F replayed; reverse is not bank_r"
     },
     {
       "id": "P3",
       "name": "Sparse retrieval on frozen corpus / high-ID evidence",
-      "wo": "§20 P3 / §22 SAME-LAW SPARSE RETRIEVAL",
+      "wo": "\u00a720 P3 / \u00a722 SAME-LAW SPARSE RETRIEVAL",
       "verdict": "BLOCKED",
       "depends": "DICT_LOCK exam-wide; learned path reachable"
     },
     {
       "id": "P4",
       "name": "Novel 2-hop proof-backed supported query",
-      "wo": "§20 P4 / §22 BOUNDED PROOF REASONING",
+      "wo": "\u00a720 P4 / \u00a722 BOUNDED PROOF REASONING",
       "verdict": "BLOCKED",
       "depends": "E1b src_20/dst_20/proof_ok; not proof-record IDs as entity IDs"
     },
     {
       "id": "P5",
       "name": "C4 Forward learned generation",
-      "wo": "§20 P5 / §22 C4 GROUNDED LEARNED OUTPUT",
+      "wo": "\u00a720 P5 / \u00a722 C4 GROUNDED LEARNED OUTPUT",
       "verdict": "BLOCKED",
       "depends": "C6 alias_wr reachable; not alias_wr=0 wrap"
     },
     {
       "id": "P6",
       "name": "C4 Reverse learned generation",
-      "wo": "§20 P6 / §22 REVERSE GENERATION",
+      "wo": "\u00a720 P6 / \u00a722 REVERSE GENERATION",
       "verdict": "BLOCKED",
       "depends": "E1a reverse NEW GATE; not direction_o wired to bank_r"
     },
     {
       "id": "P7",
       "name": "UNKNOWN/CONFLICT/AMB/INCOMP deterministic refusal",
-      "wo": "§20 P7 / §22 UNCERTAINTY / SAFE REFUSAL",
+      "wo": "\u00a720 P7 / \u00a722 UNCERTAINTY / SAFE REFUSAL",
       "verdict": "BLOCKED",
       "depends": "UNSUPPORTED bucket is S_SAFE; not a D32 float demand"
     },
     {
       "id": "P8",
-      "name": "Scalar reward → causal ranking/decision update",
-      "wo": "§20 P8 / §22 SCALAR-REWARD UPDATE + AUTOREGRESSIVE TOKEN FEEDBACK",
+      "name": "Scalar reward \u2192 causal ranking/decision update",
+      "wo": "\u00a720 P8 / \u00a722 SCALAR-REWARD UPDATE + AUTOREGRESSIVE TOKEN FEEDBACK",
       "verdict": "BLOCKED",
       "note": "prefix top-1 FAIL 0/16 retained; do not retrain to force top-1"
     },
     {
       "id": "P9",
       "name": "Full SGD32 persistence + reload + replay/duplicate rejection",
-      "wo": "§20 P9 / §22 FULL ACTIVE STATE PERSISTENCE + DUPLICATE/STALE + AXI ERROR SAFETY",
+      "wo": "\u00a720 P9 / \u00a722 FULL ACTIVE STATE PERSISTENCE + DUPLICATE/STALE + AXI ERROR SAFETY",
       "verdict": "BLOCKED",
       "depends": "bag-22 provenance vs current C5 SHA; real MIG"
     },
     {
       "id": "P10",
       "name": "Repeated end-to-end: full UART stream, host semantic=0, counters clean",
-      "wo": "§20 P10 / §22 UART 115200 FULL STREAM + HOST SEMANTIC AUTHORITY ZERO",
+      "wo": "\u00a720 P10 / \u00a722 UART 115200 FULL STREAM + HOST SEMANTIC AUTHORITY ZERO",
       "verdict": "BLOCKED",
-      "capture": ["raw RX/TX bytes", "decoded tokens", "host semantic counters", "script hash", "exit codes"],
+      "capture": [
+        "raw RX/TX bytes",
+        "decoded tokens",
+        "host semantic counters",
+        "script hash",
+        "exit codes"
+      ],
       "host_semantic": "must measure 0; hardwired n_host_tok=0 is not a measurement"
     }
   ],
-  "section_22_stamp_law": "ASTRA_NATIVE_AI_BOARD_PASS only if every §22 row PASS on the same frozen C6 bit+manifest, including FINAL PHYSICAL CLOSURE and SAME BIT/SAME MANIFEST"
+  "section_22_stamp_law": "ASTRA_NATIVE_AI_BOARD_PASS only if every \u00a722 row PASS on the same frozen C6 bit+manifest, including FINAL PHYSICAL CLOSURE and SAME BIT/SAME MANIFEST"
 }

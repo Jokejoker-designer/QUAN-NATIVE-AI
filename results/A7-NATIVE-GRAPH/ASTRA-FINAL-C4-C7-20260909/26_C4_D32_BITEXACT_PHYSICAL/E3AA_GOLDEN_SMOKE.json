@@ -1,0 +1,13 @@
+{
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "e3aa_scope": "SMLUT_IDX_PIPE",
+  "marker": "ASTRA_C4_D32_FR_V2_XSIM_SMOKE_PASS n=4",
+  "CLASS_ref_match": "HIT",
+  "CLASS_host_tok0": "HIT",
+  "C4_MASTER_CLAIM": "NO",
+  "d32_sha256": "0a4e0e051f7f400f3853cf91098eb03617efa8eb888c7ca1c65a3287bcca5fb5",
+  "xsim_smoke_log_sha256": "aa9518cdd7224be20ad9501a64ef2eb4b17df32f62cd5a8d829a8c98373a0a9f",
+  "n": 4,
+  "note": "Smoke only. Full n=242 still required before OOC. Not BOARD_PASS."
+}

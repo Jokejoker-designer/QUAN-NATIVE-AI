@@ -1,6 +1,6 @@
 {
   "schema": "G14_STAGE14_BOARD_GATE_V1",
-  "recorded_at": "2026-09-11T06:03:00+07:00",
+  "recorded_at": "2026-09-11T16:28:01+07:00",
   "PROGRAM": "NO",
   "C4_MASTER": "OPEN",
   "C5_MASTER": "OPEN",
@@ -9,12 +9,12 @@
   "self_accept": false,
   "verdict": "BLOCKED_PRE_BOARD",
   "never": "PARTIAL PASS",
-  "wo": "WO_FINAL §21–25",
+  "wo": "WO_FINAL \u00a721\u201325",
   "first_divergence": "No frozen C6 bitstream exists. C4/C5 acceptance OPEN. freeze_allowed=false. Programming is forbidden.",
-  "violated_invariant": "§21 program only the frozen C6 bit — artifact missing; §22 SAME BIT/SAME MANIFEST cannot hold",
+  "violated_invariant": "\u00a721 program only the frozen C6 bit \u2014 artifact missing; \u00a722 SAME BIT/SAME MANIFEST cannot hold",
   "affected_module": "C6 freeze / C4 physical closure / C5 unified regression / E1 NEW GATE",
-  "why_continuation_is_unsafe": "Programming any unfrozen or sibling (Gemini) bit, or stamping BOARD_PASS from XSim/UART smoke, would mix artifacts and violate WO §22.",
-  "smallest_remaining_experiment": "E3z GOLDEN n=242 PASS. OOC in flight (BASIC acquired after license-race retry). Do not program. Not MASTER. Not WO §19.",
+  "why_continuation_is_unsafe": "Programming any unfrozen or sibling (Gemini) bit, or stamping BOARD_PASS from XSim/UART smoke, would mix artifacts and violate WO \u00a722.",
+  "smallest_remaining_experiment": "Wait a7ng_astra_c6_wholechip_final_v1 post-route letters. C7 exam shell created, queries NOT_FILLED. E3ab NOT started. PROGRAM=NO.",
   "pre_program_checklist_wo21": {
     "target_part": "xc7a100tcsg324-1",
     "expected_board": "Arty A7-100T",
@@ -74,7 +74,7 @@
       "id": "SCALAR-REWARD UPDATE",
       "verdict": "OPEN",
       "evidence_class": "FACT",
-      "note": "C5-15-11 XSim rank flip 64→80 after -3 and once after reload; SIM 8000/800 modeled AXI; not frozen C6"
+      "note": "C5-15-11 XSim rank flip 64\u219280 after -3 and once after reload; SIM 8000/800 modeled AXI; not frozen C6"
     },
     {
       "id": "HELD-OUT/TRANSFER CLAIM",
@@ -116,13 +116,13 @@
       "id": "FINAL PHYSICAL CLOSURE",
       "verdict": "OPEN",
       "evidence_class": "FACT",
-      "note": "E3y OOC WNS -1.332 ns MIXED fi→prod_r; not routed C6; local E3 stopped"
+      "note": "C6 wholechip_final_v1 synth IN_FLIGHT; last closed OOC E3aa Case B WNS +1.052 ns TNS 0; not routed C6; E3ab not started"
     },
     {
       "id": "SAME BIT / SAME MANIFEST",
       "verdict": "OPEN",
       "evidence_class": "FACT",
-      "note": "no .bit; no FINAL_SOURCE_MANIFEST freeze"
+      "note": "no .bit; FINAL_SOURCE_MANIFEST.json is DRAFT_NOT_FROZEN; C7 queries NOT_FILLED"
     }
   ],
   "e3y": {
@@ -131,15 +131,36 @@
     "tns_ns": -88.438,
     "failing_endpoints": 88,
     "case": "MIXED",
-    "cone": "kv S_DOT left; fi S_F2 → prod_r 20/20",
+    "cone": "kv S_DOT left; fi S_F2 \u2192 prod_r 20/20",
     "n20_sha256": "7c59f524db4c3f4ccf905433e6b35597620008b35a55728924a4615361f075da",
     "golden_n242": "PASS",
-    "next": "E3_REVIEW no E3z"
+    "next": "E3z OOC DONE Case B; see e3z"
+  },
+  "e3z": {
+    "status": "OOC_DONE_CASE_B_NAMED_FAMILY_SMRES",
+    "scope": "S_F2 operand snap then S_F2_PROD",
+    "d32_sha256": "e37e1917578a6fe594e1dbb257966e37be9c2847ba9606911dce2413e5b01796",
+    "golden_n242": "PASS",
+    "golden_log_sha256": "20e75bcc1706c8f324764b894269ded20b8cba0eb61d216ebae153b567a95a4c",
+    "ooc": "DONE",
+    "case": "B",
+    "wns_ns": -0.349,
+    "tns_ns": -24.793,
+    "failing_endpoints": 192,
+    "top20": "smres 20/20",
+    "n20_sha256": "ce6fa367ae73c1e52c6f647c9a8bdcfce22d5bbe23fcc34648bef3716a9cc0f5",
+    "next_gate": "E3aa_smres",
+    "e3aa_started": true,
+    "github_pr": "https://github.com/Jokejoker-designer/QUAN-NATIVE-AI/pull/5"
   },
   "c5_edge_dir": {
     "status": "XSIM_PASS_NOT_C5_MASTER",
     "log_sha256": "8c6a2e6f5f0da6ebdb2a6937d3b9478bcc65e41d46c2e32e551e8e743ceb87ec",
-    "classes": ["CLASS_role_reversal", "CLASS_edge_replace", "CLASS_edge_delete"],
+    "classes": [
+      "CLASS_role_reversal",
+      "CLASS_edge_replace",
+      "CLASS_edge_delete"
+    ],
     "uart": "n,o,EOS S_SAFE empty alias",
     "clk_baud": "8000/800"
   },
@@ -147,7 +168,10 @@
     "status": "XSIM_PASS_NOT_C5_MASTER",
     "log_sha256": "4497601e834a7925bd7c76823533aeef37b909edb205dbd35c603008b1b894b4",
     "tb_sha256": "10bc65d1c43b615198f8f6c0ee5ca09f1783d2a060e652a7b2b70204e4ac4897",
-    "classes": ["CLASS_rew_rank_flip", "CLASS_rew_after_reload"],
+    "classes": [
+      "CLASS_rew_rank_flip",
+      "CLASS_rew_after_reload"
+    ],
     "observed": "Q1 ans=64 p0=16; -3; Q2/Q3 ans=80 p0=18",
     "uart": "n,o,EOS S_SAFE empty alias",
     "clk_baud": "8000/800"
@@ -180,5 +204,23 @@
     "inverse_2hop": "XSIM_PASS bag32 F ans=64 p0=16 p1=17; R ans=10 p0=16 p1=21",
     "bag32_log_sha256": "7c76b68910e6e48e592108b2629b9355cd04d68fb26cb7b711a3edba2a6c45c9",
     "clk_baud": "8000/800"
+  },
+  "e3aa": {
+    "status": "OOC_DONE_CASE_B_NAMED_FAMILY_RQ_SNAP",
+    "scope": "S_SMLUT_LUT index snap then S_SMLUT_APPLY",
+    "d32_sha256": "0a4e0e051f7f400f3853cf91098eb03617efa8eb888c7ca1c65a3287bcca5fb5",
+    "golden_n242": "PASS",
+    "golden_log_sha256": "e9168b7439c8dbb0b92880e7df9829ba27fd1c3ab7206c0afb72e37c304971c4",
+    "ooc": "DONE",
+    "case": "B",
+    "wns_ns": 1.052,
+    "tns_ns": 0.0,
+    "whs_ns": 0.172,
+    "ths_ns": 0.0,
+    "failing_endpoints": 0,
+    "top20": "rq_snap 20/20",
+    "n20_sha256": "c0f4ca866e871b40aeaef097b2239916e3540e27ecdaab091580825233bb8417",
+    "next_gate": "E3ab_rq_snap",
+    "e3ab_started": false
   }
 }

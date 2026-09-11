@@ -1,18 +1,18 @@
 {
   "schema": "C6_FREEZE_PRECHECK_V1",
-  "wo": "§18–19 then §21",
+  "wo": "\u00a718\u201319 then \u00a721",
   "PROGRAM": "NO",
   "C6_MASTER": "OPEN",
   "freeze_allowed": false,
-  "reason": "C4/C5 acceptance OPEN; no unique bit SHA; last closed OOC WNS -1.332 ns (E3y MIXED, S_DOT kv left, S_F2 fi→prod_r 20/20); local E3 stopped at E3_REVIEW (no E3z); freeze_allowed false until post-route WNS>=0 TNS=0 WHS>=0 THS=0; alias_wr=0; E1a reverse XSim HIT not MASTER; PROGRAM not authorized",
+  "reason": "C4/C5 acceptance OPEN; git not clean; no unique frozen bit; post-route C6 letters missing or not a freeze; alias_wr=0; E1c dict OPEN; PROGRAM=NO",
   "required_pins": {
     "git_clean": false,
-    "source_commit": "5aa8285533b0f4a571dac5328b28a1f8a5ef5fc1 dirty 488",
+    "source_commit": "5aa8285533b0 dirty 497",
     "c4_checkpoint": "fcfe37be0ca006de9a0973331cb0b1b82703a96c0f10097e21d7e0bff85987dc",
     "c5_source": "5d959a6d719fcc1f12062c721e983f9516864da6b3c41f5f15b6bcf2198ec329",
-    "c6_source": "525880f4e1c610b24af73d603ba7ecaead8e6f3d62e5057d93d9e532061eabd8",
+    "c6_source": "7c7bf78e44595bb24d5a9908106f5a4f3e5a77419bc53ac913dbab5e54d81689",
     "dictionary_image_sha": null,
-    "mig_prj_untouched": "do not hand-edit",
+    "mig_prj_untouched": "hashed; do not hand-edit",
     "xdc": "OPEN",
     "wns_ge_0": false,
     "learned_and_safe_reachable": false
@@ -20,5 +20,7 @@
   "bitstream": {
     "exists": false,
     "sha256": null
-  }
+  },
+  "draft_manifest": "results/A7-NATIVE-GRAPH/ASTRA-FINAL-C4-C7-20260909/33_C6_WHOLECHIP_FINAL_V1/FINAL_SOURCE_MANIFEST.json",
+  "updated": "2026-09-11T22:40:30+07:00"
 }
