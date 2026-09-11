@@ -37,8 +37,12 @@ def dest_family(name: str) -> str:
     n = name.lower()
     if "u_sgd/w_reg" in n:
         return "c3_sgd_w"
-    if "pend_phi_reg" in n:
+    if "u_sgd/err_reg" in n:
+        return "c3_sgd_err"
+    if "pend_phi_reg" in n or "u_c3/idx_r_reg" in n or "u_c3/k_r_reg" in n or "u_c3/v_best_reg" in n:
         return "c3_pend_phi"
+    if "pp1_reg" in n or "pp0_reg" in n:
+        return "c3_pp1"
     if "elut_reg" in n or "/elut[" in n:
         return "smres"
     if "rq_" in n:

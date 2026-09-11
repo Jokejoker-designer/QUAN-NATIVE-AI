@@ -75,18 +75,23 @@ set rtl [list \
 
 proc c6_require_dcp_not_older_than_c3 {dcp} {
   global root
-  set rtl [file join $root rtl/native_graph/integrate/a7ng_astra_c3_held_out_pendld.sv]
-  if {![file exists $rtl]} {
-    c6_abort C3_RTL_MISSING $rtl
-    puts ASTRA_C6_WHOLECHIP_FINAL_V1_ABORTED
-    exit 1
-  }
-  set tr [file mtime $rtl]
-  set td [file mtime $dcp]
-  if {$td < $tr} {
-    c6_abort STALE_DCP_C3_NEWER "dcp=$dcp dcp_mtime=$td c3_mtime=$tr PROGRAM=NO"
-    puts ASTRA_C6_WHOLECHIP_FINAL_V1_ABORTED
-    exit 1
+  foreach rel {
+    {rtl/native_graph/integrate/a7ng_astra_c3_held_out_pendld.sv}
+    {rtl/native_graph/learn/a7ng_shared_rank_sgd_q8_sym_f2r2.sv}
+  } {
+    set rtl [file join $root $rel]
+    if {![file exists $rtl]} {
+      c6_abort RTL_MISSING $rtl
+      puts ASTRA_C6_WHOLECHIP_FINAL_V1_ABORTED
+      exit 1
+    }
+    set tr [file mtime $rtl]
+    set td [file mtime $dcp]
+    if {$td < $tr} {
+      c6_abort STALE_DCP_RTL_NEWER "dcp=$dcp dcp_mtime=$td rtl=$rel rtl_mtime=$tr PROGRAM=NO"
+      puts ASTRA_C6_WHOLECHIP_FINAL_V1_ABORTED
+      exit 1
+    }
   }
 }
 

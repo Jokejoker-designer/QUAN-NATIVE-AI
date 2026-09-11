@@ -1,6 +1,7 @@
 // a7ng_shared_rank_sgd_q8_sym_f2r2.sv — ASTRA-F2R-R2-PENDING-HANDSHAKE-LAW
 // Sequential MAC, Master native-rank-sgd-q8-v1 symmetric RSH. PROGRAM=NO.
 // c3_sgd_w: snap x_r then pipe UPD mul/rsh/write. Integer KEEP. Extra cycles OK.
+// c3_sgd_err: LATCH v_sat then LATCH_ERR from registered v_sat. Integer KEEP.
 // Does not patch a7ng_shared_rank_sgd_q8.sv / _v1 / _v1_f2r / dsp_tfix.
 `timescale 1ns / 1ps
 
@@ -24,7 +25,7 @@ module a7ng_shared_rank_sgd_q8_sym_f2r2 #(
   output logic signed [15:0] v_q8_o
 );
   typedef enum logic [3:0] {
-    IDLE, SNAP, SCORE, LATCH, UPD_MUL, UPD_SHF, UPD_WR, DONE
+    IDLE, SNAP, SCORE, LATCH, LATCH_ERR, UPD_MUL, UPD_SHF, UPD_WR, DONE
   } st_t;
   st_t st;
   localparam int IW = $clog2(N);
@@ -76,7 +77,7 @@ module a7ng_shared_rank_sgd_q8_sym_f2r2 #(
   assign acc_add = {{16{prod_sc[23]}}, prod_sc};
   assign v_comb = clamp768(rsh40(acc, 7));
   assign rew_se = {{28{rew[3]}}, rew};
-  assign v_se   = {{16{v_comb[15]}}, v_comb};
+  assign v_se   = {{16{v_sat[15]}}, v_sat};
   assign w_se   = {{16{w_snap[15]}}, w_snap};
   assign dw_se  = {{16{dw40_r[15]}}, dw40_r[15:0]};
   genvar gi;
@@ -118,6 +119,9 @@ module a7ng_shared_rank_sgd_q8_sym_f2r2 #(
         end
         LATCH: begin
           v_sat <= v_comb;
+          st <= LATCH_ERR;
+        end
+        LATCH_ERR: begin
           err <= clamp_err(rew_se * 32'sd256 - v_se);
           i <= '0;
           st <= do_upd ? UPD_MUL : DONE;

@@ -11,6 +11,12 @@ $pendOk = (Select-String -Path $pendLog -Pattern "ASTRA_C3_PEND_PHI_PIPE_XSIM_PA
           (-not (Select-String -Path $pendLog -Pattern "FIRST_DIVERGENCE" -Quiet))
 if (-not $pendOk) { throw "C6F_PEND_PHI_GOLDEN_NOT_PASS" }
 
+$errLog = Join-Path (Split-Path $bag) "36_C3_SGD_ERR_PIPE\xsim.log"
+if (-not (Test-Path -LiteralPath $errLog)) { throw "C6F_SGD_ERR_GOLDEN_MISSING" }
+$errOk = (Select-String -Path $errLog -Pattern "ASTRA_C3_SGD_ERR_PIPE_XSIM_PASS" -Quiet) -and
+         (-not (Select-String -Path $errLog -Pattern "FIRST_DIVERGENCE" -Quiet))
+if (-not $errOk) { throw "C6F_SGD_ERR_GOLDEN_NOT_PASS" }
+
 function Sha256([string]$p) {
   if (-not (Test-Path -LiteralPath $p)) { throw "C6F_FILE_MISSING $p" }
   return (Get-FileHash -Algorithm SHA256 -LiteralPath $p).Hash.ToLowerInvariant()
@@ -49,6 +55,7 @@ $pre += "$(Sha256 $dut)  rtl/native_graph/integrate/a7ng_astra_c4_lm06_d32_fr_v2
 $pre += "$(Sha256 $c5)  rtl/native_graph/integrate/a7ng_astra_c5_prod_top_final_v1.sv"
 $pre += "$(Sha256 $c6)  rtl/native_graph/integrate/a7ng_astra_c6_wholechip_final_v1.sv"
 $pre += "$(Sha256 (Join-Path $root 'rtl\native_graph\integrate\a7ng_astra_c3_held_out_pendld.sv'))  rtl/native_graph/integrate/a7ng_astra_c3_held_out_pendld.sv"
+$pre += "$(Sha256 (Join-Path $root 'rtl\native_graph\learn\a7ng_shared_rank_sgd_q8_sym_f2r2.sv'))  rtl/native_graph/learn/a7ng_shared_rank_sgd_q8_sym_f2r2.sv"
 $pre += "$(Sha256 (Join-Path $bag 'run_impl.tcl'))  run_impl.tcl"
 $pre += "$(Sha256 (Join-Path $bag 'c6_wholechip.xdc'))  c6_wholechip.xdc"
 [System.IO.File]::WriteAllLines((Join-Path $bag "SHA256.txt"), $pre)
