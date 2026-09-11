@@ -1,6 +1,7 @@
 // a7ng_astra_c3_held_out_pendld.sv — ASTRA-C3-PEND-LOAD-01. PROGRAM=NO.
 // Named C3 wrap copy with pending/phi load ports for ckpt_pend restore.
-// Does not edit KEEP a7ng_astra_c3_held_out.sv / C0 / C1 / C2.
+// c3_pend_phi: serial 1-slot tournament then S_COMMIT mux phis[idx_r].
+// Integer KEEP. Extra cycle before S_HOLD OK. Does not edit KEEP a7ng_astra_c3_held_out.sv.
 `timescale 1ns / 1ps
 `include "a7ng_astra_c3_held_out.svh"
 `include "a7ng_op_dir_pkg.svh"
@@ -88,7 +89,7 @@ module a7ng_astra_c3_held_out_pendld #(
   output logic        m_axi_rready
 );
   typedef enum logic [3:0] {
-    S_IDLE, S_WALK, S_AR, S_R, S_EI, S_EJ, S_ED, S_SC, S_SW, S_PICK, S_HOLD, S_UW
+    S_IDLE, S_WALK, S_AR, S_R, S_EI, S_EJ, S_ED, S_SC, S_SW, S_PICK, S_HOLD, S_UW, S_COMMIT, S_CMP
   } st_t;
   st_t st;
 
@@ -130,9 +131,9 @@ module a7ng_astra_c3_held_out_pendld #(
   logic signed [3:0] rew_lat;
   logic [7:0] txn, pend_id, gen, pend_gen;
   logic pend_acc, pend_cmt, retire_hold;
-  logic [1:0] sel_idx, c_best_idx;
-  logic [19:0] best_a, best_p0, best_p1, best_src, best_dst, c_best_a, c_best_p0, c_best_p1;
-  logic signed [15:0] c_best_v, c_second_v;
+  logic [1:0] sel_idx, idx_r, k_r;
+  logic [19:0] best_a, best_p0, best_p1, best_src, best_dst;
+  logic better_k;
   integer k, kf;
 
   assign load_from_tb_o = 1'b0;
@@ -235,25 +236,11 @@ module a7ng_astra_c3_held_out_pendld #(
     end else begin
       for (k = 0; k < 32; k = k + 1) phi[k] = pend_phi[k];
     end
-    c_best_v = 16'sh8000; c_second_v = 16'sh8000;
-    c_best_a = '0; c_best_p0 = 20'hFFFFF; c_best_p1 = 20'hFFFFF; c_best_idx = 2'd0;
-    for (k = 0; k < 4; k = k + 1) begin
-      if (k < np) begin
-        if ((pv[k] > c_best_v)
-            || ((pv[k]==c_best_v) && (pp0[k] < c_best_p0))
-            || ((pv[k]==c_best_v) && (pp0[k]==c_best_p0) && (pp1[k] < c_best_p1))) begin
-          c_second_v = c_best_v;
-          c_best_v = pv[k];
-          c_best_a = pans[k];
-          c_best_p0 = pp0[k];
-          c_best_p1 = pp1[k];
-          c_best_idx = k[1:0];
-        end else if (pv[k] >= c_second_v) begin
-          c_second_v = pv[k];
-        end
-      end
-    end
   end
+  assign better_k =
+      (pv[k_r] > v_best)
+      || ((pv[k_r] == v_best) && (pp0[k_r] < best_p0))
+      || ((pv[k_r] == v_best) && (pp0[k_r] == best_p0) && (pp1[k_r] < best_p1));
 
   logic w_incomp;
   a7ng_query_axi_sparse_intersect_synonym #(
@@ -312,7 +299,7 @@ module a7ng_astra_c3_held_out_pendld #(
       txn <= 8'd0; pend_id <= 8'd0; gen <= 8'd0; pend_gen <= 8'd0;
       pend_acc <= 1'b0; pend_cmt <= 1'b0; retire_hold <= 1'b0; rew_lat <= '0;
       sel_idx <= '0; best_a <= '0; best_p0 <= '0; best_p1 <= '0; best_src <= '0; best_dst <= '0;
-      v_best <= '0; v_second <= '0;
+      v_best <= '0; v_second <= '0; idx_r <= '0; k_r <= '0;
       for (kf = 0; kf < 32; kf = kf + 1) pend_phi[kf] <= '0;
     end else begin
       qse_retire <= 1'b0; sgd_go <= 1'b0; sgd_upd <= 1'b0;
@@ -548,16 +535,45 @@ module a7ng_astra_c3_held_out_pendld #(
           else begin pi <= pi + 1'b1; st <= S_SC; end
         end
         S_PICK: begin
-          v_best <= c_best_v; v_second <= c_second_v;
-          best_a <= c_best_a; best_p0 <= c_best_p0; best_p1 <= c_best_p1;
-          best_src <= psrc[c_best_idx]; best_dst <= pdst[c_best_idx];
-          sel_idx <= c_best_idx;
+          idx_r <= 2'd0;
+          v_second <= 16'sh8000;
+          k_r <= 2'd1;
+          if (np == 5'd0) begin
+            v_best <= 16'sh8000;
+            best_a <= '0; best_p0 <= 20'hFFFFF; best_p1 <= 20'hFFFFF;
+            st <= S_COMMIT;
+          end else begin
+            v_best <= pv[0];
+            best_a <= pans[0]; best_p0 <= pp0[0]; best_p1 <= pp1[0];
+            if (np <= 5'd1) st <= S_COMMIT;
+            else st <= S_CMP;
+          end
+        end
+        S_CMP: begin
+          if ({3'b000, k_r} < np) begin
+            if (better_k) begin
+              v_second <= v_best;
+              v_best <= pv[k_r];
+              idx_r <= k_r;
+              best_a <= pans[k_r];
+              best_p0 <= pp0[k_r];
+              best_p1 <= pp1[k_r];
+            end else if (pv[k_r] >= v_second) begin
+              v_second <= pv[k_r];
+            end
+            if (({3'b000, k_r} + 5'd1) >= np) st <= S_COMMIT;
+            else k_r <= k_r + 2'd1;
+          end else st <= S_COMMIT;
+        end
+        S_COMMIT: begin
+          best_src <= psrc[idx_r]; best_dst <= pdst[idx_r];
+          sel_idx <= idx_r;
           r_st <= A7NG_C3_ST_ANSWER;
           proof_ok <= 1'b1;
           pend_id <= txn + 8'd1; txn <= txn + 8'd1;
           pend_gen <= gen + 8'd1; gen <= gen + 8'd1;
           pend_acc <= 1'b1; pend_cmt <= 1'b0;
-          for (kf = 0; kf < 32; kf = kf + 1) pend_phi[kf] <= phis[c_best_idx][kf];
+          for (kf = 0; kf < 32; kf = kf + 1) pend_phi[kf] <= phis[idx_r][kf];
           st <= S_HOLD;
         end
         S_HOLD: begin

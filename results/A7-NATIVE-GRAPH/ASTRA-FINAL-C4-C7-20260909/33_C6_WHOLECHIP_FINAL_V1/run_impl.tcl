@@ -73,6 +73,23 @@ set rtl [list \
   [file join $root rtl/native_graph/integrate/a7ng_astra_c6_wholechip_final_v1.sv] \
 ]
 
+proc c6_require_dcp_not_older_than_c3 {dcp} {
+  global root
+  set rtl [file join $root rtl/native_graph/integrate/a7ng_astra_c3_held_out_pendld.sv]
+  if {![file exists $rtl]} {
+    c6_abort C3_RTL_MISSING $rtl
+    puts ASTRA_C6_WHOLECHIP_FINAL_V1_ABORTED
+    exit 1
+  }
+  set tr [file mtime $rtl]
+  set td [file mtime $dcp]
+  if {$td < $tr} {
+    c6_abort STALE_DCP_C3_NEWER "dcp=$dcp dcp_mtime=$td c3_mtime=$tr PROGRAM=NO"
+    puts ASTRA_C6_WHOLECHIP_FINAL_V1_ABORTED
+    exit 1
+  }
+}
+
 proc c6_abort {cut msg} {
   global bag first_div
   if {$first_div eq ""} { set first_div $cut }
@@ -216,6 +233,7 @@ if {$resume_place} {
     puts ASTRA_C6_WHOLECHIP_FINAL_V1_ABORTED
     exit 1
   }
+  c6_require_dcp_not_older_than_c3 $src
   c6_phase OPEN_PLACE_DCP
   if {[catch {open_checkpoint $src} err]} {
     c6_abort OPEN_PLACE_DCP $err
@@ -235,6 +253,7 @@ if {$resume_place} {
     puts ASTRA_C6_WHOLECHIP_FINAL_V1_ABORTED
     exit 1
   }
+  c6_require_dcp_not_older_than_c3 $synth_dcp
   c6_phase OPEN_SYNTH_DCP
   if {[catch {open_checkpoint $synth_dcp} err]} {
     c6_abort OPEN_SYNTH_DCP $err

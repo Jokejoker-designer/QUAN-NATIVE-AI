@@ -37,6 +37,8 @@ def dest_family(name: str) -> str:
     n = name.lower()
     if "u_sgd/w_reg" in n:
         return "c3_sgd_w"
+    if "pend_phi_reg" in n:
+        return "c3_pend_phi"
     if "elut_reg" in n or "/elut[" in n:
         return "smres"
     if "rq_" in n:
@@ -136,7 +138,11 @@ def finish() -> int:
                 "C6_MASTER": "OPEN",
                 "ASTRA_NATIVE_AI_BOARD_PASS": "NOT_EVIDENCED",
                 "G14": "BLOCKED_PRE_BOARD",
-                "c6_final_v1_impl": "DONE" if letters and not stale else "INCOMPLETE",
+                "c6_final_v1_impl": (
+                    "POSTROUTE_SETUP_MISS"
+                    if letters and letters.get("FIT_OK") == "0"
+                    else ("DONE" if letters and not stale else "INCOMPLETE")
+                ),
                 "c6_final_v1_wns": letters.get("WNS"),
                 "c6_final_v1_tns": letters.get("TNS"),
                 "c6_final_v1_whs": letters.get("WHS"),

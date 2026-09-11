@@ -1,0 +1,12 @@
+{
+  "gate": "c3_pend_phi",
+  "marker": "ASTRA_C3_PEND_PHI_PIPE_XSIM_PASS",
+  "program": false,
+  "closes_master": false,
+  "board_pass": false,
+  "law": "SERIAL_TOURNAMENT_THEN_COMMIT",
+  "dut_sha256": "1330A66B235194E8027535531E23E45C423B90DD9BD3BB85EA5151142C735D09",
+  "xsim_log_sha256": "8CEB100C49C7E88411836FF7501DC4BD3BCD90129094A88202BBE8ECEE8B9524",
+  "vectors": ["np1_idx0", "higher_pv", "pv_tie_pp0", "pv_pp0_tie_pp1", "np4_idx2"],
+  "e3ab": "DO_NOT_START"
+}
