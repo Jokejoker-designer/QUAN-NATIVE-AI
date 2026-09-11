@@ -103,7 +103,12 @@ def fold_word(word: str, st):
             neg, amb, hyp_alt, st,
         )
     if cls == CLS_ENTITY:
-        if not sh:
+        if rh and (not sh) and (not oh):
+            oid = hid
+            ocue = bcue
+            oh = 1
+            st = ST_OBJ
+        elif not sh:
             sid = hid
             scue = bcue
             sh = 1
@@ -214,7 +219,7 @@ def extract_bytes(raw: list[int]) -> dict:
         "obj_id": oid,
         "rel_id": rid,
         "ctx_id": xid,
-        "direction": 0,
+        "direction": 1 if (rh and oh and not sh) else 0,
         "negation": neg,
         "ambiguity": amb,
         "triple_valid": triple,

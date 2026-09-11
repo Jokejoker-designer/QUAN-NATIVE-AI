@@ -1,0 +1,75 @@
+{
+  "schema": "A7NG_E1A_RTL_XSIM_RESULT_V1",
+  "bag": "31_C5_E1A_DIR_OPCODE_V1",
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "C5_MASTER": "OPEN",
+  "C6_MASTER": "OPEN",
+  "ASTRA_NATIVE_AI_BOARD_PASS": "OPEN",
+  "recorded_at": "2026-09-11T06:02:25+07:00",
+  "gate": "NEW_GATE_XSIM_NOT_MASTER",
+  "law": "REL-first: ENTITY after REL with no prior ENTITY → object + OP_R_INVERSE=2'd1. F SVO-as-written remains 2'd0.",
+  "forbidden_held": [
+    "direction_o was not wired to bank_r",
+    "TB bank_r_i stayed 0 on F and R",
+    "requires stayed directed",
+    "C3 inverse answer is SRC not DST-with-bank-flip",
+    "2'd0 remains F; reverse is 2'd1"
+  ],
+  "sha256": {
+    "a7ng_op_dir_pkg.svh": "8cc364d67c97db96c60c950f92878a97410f3954eb678c36da327b2a1f8071c1",
+    "a7ng_query_role_extract.sv": "e26b127f3f3f283a0112ab7f235ab8821fe2d68ad507ae180ed913985368422e",
+    "twin_role.py": "a815f8a0fd87d182de5c0480f01e3f2c98cec8957cb5538dc7603c6539c08a7b",
+    "a7ng_astra_c4_entity_alias_v1.svh": "80effb2e3df25094abe218c3a3a987eb7a6e9fe303130c4e21c24a3cd9646543",
+    "a7ng_astra_c3_held_out_pendld.sv": "f0754df2a3fc7f7fc4ddf3a161e4715e277585964263f870a02bb266e577e653",
+    "a7ng_astra_c4_prod_wrap_v2.sv": "4249f361d56fc049ed0e324108f34b929e8d1afc844f95647d8471c3e63a573f",
+    "a7ng_astra_c5_prod_top_final_v1.sv": "8c9aa81a61c2aff23140958c481e377792a5eec5a29e82d10f389f74ff8449fe",
+    "tb_astra_c5_final_v1_e1a_dir.sv": "b5485d407488195ded8577eb0f4c65b1345e387d73f50ed200d1f5afe81adfc1",
+    "xsim.log": "55103bd1ae3dfc6dfa042a837e878830ea0d3e696e4d4085c931ecb7c15470f5",
+    "astra03_xsim.log": "7ac917b01ccab2627dc8e738a83936c8dacfa26078dd08483f8366ff861c90f7"
+  },
+  "keep_f": {
+    "gate": "ASTRA-03-ROLE-AWARE-QUERY",
+    "marker": "ASTRA03_ROLE_AWARE_XSIM_PASS",
+    "log_sha256": "7ac917b01ccab2627dc8e738a83936c8dacfa26078dd08483f8366ff861c90f7",
+    "gold_twin_miss_n": 0,
+    "note": "GOLDEN reverse word-order pairs still direction=0"
+  },
+  "xsim_bag31": {
+    "marker": "ASTRA_C5_FINAL_V1_E1A_DIR_XSIM_PASS",
+    "clk_baud": "8000/800",
+    "bank_r_i": 0,
+    "F": {
+      "q": "pump requires valve",
+      "st": 0,
+      "ans": 11,
+      "p0": 20,
+      "uart": [116, 105, 102, 104, 0],
+      "class": "F_LEARNED HIT"
+    },
+    "R": {
+      "q": "what requires valve",
+      "st": 0,
+      "ans": 10,
+      "p0": 20,
+      "uart": [118, 109, 103, 104, 0],
+      "class": "R_LEARNED HIT opcode not TB bank"
+    },
+    "F_AGAIN": "HIT tifh after R",
+    "UNK": {
+      "q": "what requires chiller",
+      "st": 1,
+      "uart": [110, 111, 0],
+      "class": "UNK_SAFE HIT"
+    }
+  },
+  "not_done": [
+    "inverse 2-hop (r_two && OP_R still uses F S_EJ; honest UNKNOWN)",
+    "C5-15-05 C3 context gate",
+    "exam-locked dictionary",
+    "real 115200 UART",
+    "post-route C6 WNS>=0",
+    "frozen unique C6 bit",
+    "silicon §22"
+  ]
+}

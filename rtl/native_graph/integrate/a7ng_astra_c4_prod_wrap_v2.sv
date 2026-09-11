@@ -3,7 +3,8 @@
 // → answer_allowed → D32 FR V2 or S_SAFE.
 // Alias keys are 20-bit. Materializer IDs are local slots 0/1, not C3 IDs.
 // Do not wire C3 proof0_o/proof1_o (fact record IDs) into this alias.
-// bank_r_i is explicit. qse_dir encoding besides 2'd0 is OPEN.
+// bank_r_i pin remains for TB/C5 compatibility and is ignored for opcode.
+// Materializer bank follows latched direction_i only (E1a NEW GATE).
 // PROGRAM=NO. Not C4_MASTER. Not BOARD_PASS.
 `timescale 1ns / 1ps
 `include "a7ng_astra_c3_held_out.svh"
@@ -53,9 +54,14 @@ module a7ng_astra_c4_prod_wrap_v2 #(
   logic [31:0] dict_sym [0:1];
   logic dict_hit [0:1];
   logic dict_ovf [0:1];
+  logic mat_bank;
+  logic bank_r_pin_unused;
   integer ci;
 
-  assign dir_known_o = (direction_i == A7NG_C4_DIR_SVO_AS_WRITTEN);
+  assign dir_known_o = (direction_i == A7NG_C4_DIR_SVO_AS_WRITTEN)
+                    || (direction_i == A7NG_C4_DIR_INVERSE);
+  assign mat_bank    = (direction_i == A7NG_C4_DIR_INVERSE);
+  assign bank_r_pin_unused = bank_r_i;
   assign alias_ok_o  = src_hit && dst_hit && !src_ovf && !dst_ovf;
 
   a7ng_astra_c4_answer_gate_v1 u_gate (
@@ -108,7 +114,7 @@ module a7ng_astra_c4_prod_wrap_v2 #(
     .ID_W(8),
     .DICT_N(2)
   ) u_mat (
-    .bank_r_i(bank_r_i),
+    .bank_r_i(mat_bank),
     .proof_src_id_i(8'd0),
     .proof_dst_id_i(8'd1),
     .dict_sym_i(dict_sym),
@@ -119,7 +125,7 @@ module a7ng_astra_c4_prod_wrap_v2 #(
     .valid_o(mat_valid_o)
   );
 
-  assign answer_allowed_o = gate_ok && alias_ok_o && mat_valid_o;
+  assign answer_allowed_o = gate_ok && alias_ok_o && mat_valid_o && dir_known_o;
   always_comb begin
     for (ci = 0; ci < 16; ci = ci + 1) ctx_o[ci] = ctx_w[ci];
   end

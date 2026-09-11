@@ -1,0 +1,16 @@
+{
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "e3z_scope": "F2_OP_PIPE",
+  "marker": "ASTRA_C4_D32_FR_V2_XSIM_PASS n=242",
+  "CLASS_ref_match": "HIT",
+  "CLASS_host_tok0": "HIT",
+  "nfail_log": 0,
+  "sim_elapsed_s": 12405,
+  "wall_ended": "2026-09-11T12:30:32+07:00",
+  "d32_sha256": "e37e1917578a6fe594e1dbb257966e37be9c2847ba9606911dce2413e5b01796",
+  "rq_sha256": "0180185e1391184bd30b36d7ea1f8c7464ccf333e1a16d8f214dad3c61a233e3",
+  "xsim_log_sha256": "20e75bcc1706c8f324764b894269ded20b8cba0eb61d216ebae153b567a95a4c",
+  "C4_MASTER_CLAIM": "NO",
+  "note": "Token parity after S_F2 w8_r/val_r snap then S_F2_PROD. KEEP S_F2_MAC. Not BOARD_PASS. Not WO §19."
+}

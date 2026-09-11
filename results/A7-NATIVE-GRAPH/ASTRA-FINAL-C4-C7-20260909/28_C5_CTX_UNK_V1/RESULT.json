@@ -1,0 +1,21 @@
+{
+  "schema": "C5_15_05_06_CTX_UNK_V1",
+  "PROGRAM": "NO",
+  "C5_MASTER": "OPEN",
+  "BOARD_PASS": "OPEN",
+  "recorded_at": "2026-09-11T05:29:38+07:00",
+  "sim_clk_hz": 8000,
+  "sim_baud": 800,
+  "d32_sha256": "a39c39c08b682dc8f1134105268e93e7528a3d17e8abce30485cd168bfad1879",
+  "c5_sha256": "5d959a6d719fcc1f12062c721e983f9516864da6b3c41f5f15b6bcf2198ec329",
+  "tb_sha256": "ded9288a3003ac476a7ba8720a6221c75908bf74ca9b36aa77a4feff155b6b93",
+  "log_sha256": "3ab6668f5c5a7a3ecb94ad5297a7022fea05ab35c6027d016fcf77554a5a88c8",
+  "marker": "ASTRA_C5_FINAL_V1_CTX_UNK_XSIM_PASS",
+  "classes": {
+    "CLASS_base_two_hop": "HIT ans=64",
+    "CLASS_wrong_context": "MISS st=0 ans=64 pok=1 — C3 S_EJ does not gate fcx vs r_ctx",
+    "CLASS_unrelated": "HIT st=1 UNKNOWN allow=0"
+  },
+  "rtl_patched": false,
+  "limit": "Modeled AXI. Empty alias UART n,o,EOS. Not frozen C6. Not C5_MASTER."
+}

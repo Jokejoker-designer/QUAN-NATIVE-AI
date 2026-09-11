@@ -1,0 +1,43 @@
+{
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "ASTRA_NATIVE_AI_BOARD_PASS": "OPEN",
+  "scope": "DOT_OP_PIPE",
+  "six": {
+    "wns_ns": -1.332,
+    "tns_ns": -88.438,
+    "failing_endpoints": 88,
+    "top20_family_counts": {
+      "prod_r": 20
+    },
+    "prod_r_in_top20": 20,
+    "prod_r_left_top20": false,
+    "prod_r_still_20_of_20": true,
+    "worst_logic_levels": 8,
+    "worst_carry4": 1,
+    "worst_dsp48e1": 1,
+    "worst_source": "fi_reg[5]/C",
+    "worst_destination": "prod_r_reg[31]/D",
+    "worst_dest_family": "prod_r",
+    "source_is_kv": false,
+    "source_is_fi": true
+  },
+  "classification": {
+    "case": "MIXED",
+    "label": "read_topn",
+    "note": "prod_r dest still 20/20; source cone changed kv\u2192fi (S_F2 W2*tv). S_DOT kv left. No E3z. Next = E3_REVIEW (no E3z).",
+    "wns_delta_vs_e3x_ns": 0.2,
+    "wns_strong": false,
+    "stop_local_e3": false,
+    "same_kv_cone": false,
+    "next_gate": "E3_REVIEW"
+  },
+  "report_sha256": "7c59f524db4c3f4ccf905433e6b35597620008b35a55728924a4615361f075da",
+  "util": {
+    "slice_luts": 26799,
+    "lut_as_memory": 200,
+    "slice_registers": 43326,
+    "block_ram_tile": 0,
+    "dsps": 12
+  }
+}

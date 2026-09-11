@@ -1,0 +1,19 @@
+{
+  "schema": "C5_15_14_PEND_REPLAY_V1",
+  "PROGRAM": "NO",
+  "C5_MASTER": "OPEN",
+  "BOARD_PASS": "OPEN",
+  "recorded_at": "2026-09-11T05:33:59+07:00",
+  "sim_clk_hz": 8000,
+  "sim_baud": 800,
+  "d32_sha256": "a39c39c08b682dc8f1134105268e93e7528a3d17e8abce30485cd168bfad1879",
+  "c5_sha256": "5d959a6d719fcc1f12062c721e983f9516864da6b3c41f5f15b6bcf2198ec329",
+  "tb_sha256": "ca0949b862d1c2398c06e8a02791c7cd1668021d5385c21e83b15bb0b17318b5",
+  "log_sha256": "726e68137c15605b79ef0fddeddb68b26906dcaea2c3d5000301c6b2c2c1957e",
+  "marker": "ASTRA_C5_FINAL_V1_PEND_REPLAY_XSIM_PASS",
+  "classes": {
+    "CLASS_pend_replay": "HIT ndup=1 nupd=1 w exact after FLUSH+RELOAD",
+    "CLASS_pend_dup_after_reload": "HIT"
+  },
+  "limit": "Pending identity after reload. Not the full WO interrupt-at-header/payload/CRC/commit/BRESP matrix. Modeled AXI. Not frozen C6. Not C5_MASTER."
+}

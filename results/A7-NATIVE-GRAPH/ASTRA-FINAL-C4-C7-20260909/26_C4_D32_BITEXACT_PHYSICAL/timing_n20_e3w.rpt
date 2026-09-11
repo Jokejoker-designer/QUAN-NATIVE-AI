@@ -1,0 +1,1357 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Fri Sep 11 02:53:59 2026
+| Host         : laptop-Quan running 64-bit major release  (build 9200)
+| Command      : report_timing -delay_type max -max_paths 20 -nworst 1 -sort_by slack -file D:/FPGA/FPGG_ART_Y_ASTRA_NATIVE_V1_RESEARCH/results/A7-NATIVE-GRAPH/ASTRA-FINAL-C4-C7-20260909/26_C4_D32_BITEXACT_PHYSICAL/timing_n20_e3w.rpt
+| Design       : a7ng_astra_c4_lm06_d32_fr_v2
+| Device       : 7a100t-csg324
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Synthesized
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (VIOLATED) :        -2.457ns  (required time - arrival time)
+  Source:                 vv_reg[23][30][15]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            prod_r_reg[32]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.417ns  (logic 7.927ns (63.841%)  route 4.490ns (36.159%))
+  Logic Levels:           10  (DSP48E1=2 LUT3=1 LUT4=1 LUT5=1 LUT6=2 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43449, unset)        0.973     0.973    clk
+                         FDRE                                         r  vv_reg[23][30][15]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  vv_reg[23][30][15]/Q
+                         net (fo=1, unplaced)         0.965     2.416    vv_reg_n_0_[23][30][15]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  prod_r0__0_i_3958/O
+                         net (fo=1, unplaced)         0.000     2.711    prod_r0__0_i_3958_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  prod_r0__0_i_1776/O
+                         net (fo=1, unplaced)         0.735     3.693    prod_r0__0_i_1776_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  prod_r0__0_i_738/O
+                         net (fo=1, unplaced)         0.449     4.440    prod_r0__0_i_738_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124     4.564 r  prod_r0__0_i_360/O
+                         net (fo=1, unplaced)         0.000     4.564    prod_r0__0_i_360_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     4.811 r  prod_r0__0_i_121/O
+                         net (fo=1, unplaced)         0.735     5.546    prod_r0__0_i_121_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298     5.844 r  prod_r0__0_i_35/O
+                         net (fo=1, unplaced)         0.000     5.844    prod_r0__0_i_35_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     6.091 r  prod_r0__0_i_1/O
+                         net (fo=18, unplaced)        0.803     6.894    vv[15]
+                         DSP48E1 (Prop_dsp48e1_B[17]_PCOUT[47])
+                                                      4.025    10.919 r  prod_r0__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.000    10.919    prod_r0__0_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[15])
+                                                      1.518    12.437 r  prod_r0__1/P[15]
+                         net (fo=1, unplaced)         0.803    13.240    prod_r0__1_n_90
+                         LUT4 (Prop_lut4_I3_O)        0.150    13.390 r  prod_r[32]_i_1/O
+                         net (fo=1, unplaced)         0.000    13.390    prod_r__0[32]
+                         FDCE                                         r  prod_r_reg[32]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43449, unset)        0.924    10.924    clk
+                         FDCE                                         r  prod_r_reg[32]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    prod_r_reg[32]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -13.390    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -2.457    <hidden>
+
+Slack (VIOLATED) :        -2.457ns  (required time - arrival time)
+  Source:                 vv_reg[23][30][15]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            prod_r_reg[34]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.417ns  (logic 7.927ns (63.841%)  route 4.490ns (36.159%))
+  Logic Levels:           10  (DSP48E1=2 LUT3=1 LUT4=1 LUT5=1 LUT6=2 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43449, unset)        0.973     0.973    clk
+                         FDRE                                         r  vv_reg[23][30][15]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  vv_reg[23][30][15]/Q
+                         net (fo=1, unplaced)         0.965     2.416    vv_reg_n_0_[23][30][15]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  prod_r0__0_i_3958/O
+                         net (fo=1, unplaced)         0.000     2.711    prod_r0__0_i_3958_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  prod_r0__0_i_1776/O
+                         net (fo=1, unplaced)         0.735     3.693    prod_r0__0_i_1776_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  prod_r0__0_i_738/O
+                         net (fo=1, unplaced)         0.449     4.440    prod_r0__0_i_738_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124     4.564 r  prod_r0__0_i_360/O
+                         net (fo=1, unplaced)         0.000     4.564    prod_r0__0_i_360_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     4.811 r  prod_r0__0_i_121/O
+                         net (fo=1, unplaced)         0.735     5.546    prod_r0__0_i_121_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298     5.844 r  prod_r0__0_i_35/O
+                         net (fo=1, unplaced)         0.000     5.844    prod_r0__0_i_35_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     6.091 r  prod_r0__0_i_1/O
+                         net (fo=18, unplaced)        0.803     6.894    vv[15]
+                         DSP48E1 (Prop_dsp48e1_B[17]_PCOUT[47])
+                                                      4.025    10.919 r  prod_r0__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.000    10.919    prod_r0__0_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[17])
+                                                      1.518    12.437 r  prod_r0__1/P[17]
+                         net (fo=1, unplaced)         0.803    13.240    prod_r0__1_n_88
+                         LUT4 (Prop_lut4_I3_O)        0.150    13.390 r  prod_r[34]_i_1/O
+                         net (fo=1, unplaced)         0.000    13.390    prod_r__0[34]
+                         FDCE                                         r  prod_r_reg[34]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43449, unset)        0.924    10.924    clk
+                         FDCE                                         r  prod_r_reg[34]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    prod_r_reg[34]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -13.390    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -2.457    <hidden>
+
+Slack (VIOLATED) :        -2.457ns  (required time - arrival time)
+  Source:                 vv_reg[23][30][15]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            prod_r_reg[36]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.417ns  (logic 7.927ns (63.841%)  route 4.490ns (36.159%))
+  Logic Levels:           10  (DSP48E1=2 LUT3=1 LUT4=1 LUT5=1 LUT6=2 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43449, unset)        0.973     0.973    clk
+                         FDRE                                         r  vv_reg[23][30][15]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  vv_reg[23][30][15]/Q
+                         net (fo=1, unplaced)         0.965     2.416    vv_reg_n_0_[23][30][15]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  prod_r0__0_i_3958/O
+                         net (fo=1, unplaced)         0.000     2.711    prod_r0__0_i_3958_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  prod_r0__0_i_1776/O
+                         net (fo=1, unplaced)         0.735     3.693    prod_r0__0_i_1776_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  prod_r0__0_i_738/O
+                         net (fo=1, unplaced)         0.449     4.440    prod_r0__0_i_738_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124     4.564 r  prod_r0__0_i_360/O
+                         net (fo=1, unplaced)         0.000     4.564    prod_r0__0_i_360_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     4.811 r  prod_r0__0_i_121/O
+                         net (fo=1, unplaced)         0.735     5.546    prod_r0__0_i_121_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298     5.844 r  prod_r0__0_i_35/O
+                         net (fo=1, unplaced)         0.000     5.844    prod_r0__0_i_35_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     6.091 r  prod_r0__0_i_1/O
+                         net (fo=18, unplaced)        0.803     6.894    vv[15]
+                         DSP48E1 (Prop_dsp48e1_B[17]_PCOUT[47])
+                                                      4.025    10.919 r  prod_r0__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.000    10.919    prod_r0__0_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[19])
+                                                      1.518    12.437 r  prod_r0__1/P[19]
+                         net (fo=1, unplaced)         0.803    13.240    prod_r0__1_n_86
+                         LUT4 (Prop_lut4_I3_O)        0.150    13.390 r  prod_r[36]_i_1/O
+                         net (fo=1, unplaced)         0.000    13.390    prod_r__0[36]
+                         FDCE                                         r  prod_r_reg[36]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43449, unset)        0.924    10.924    clk
+                         FDCE                                         r  prod_r_reg[36]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    prod_r_reg[36]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -13.390    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -2.457    <hidden>
+
+Slack (VIOLATED) :        -2.457ns  (required time - arrival time)
+  Source:                 vv_reg[23][30][15]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            prod_r_reg[38]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.417ns  (logic 7.927ns (63.841%)  route 4.490ns (36.159%))
+  Logic Levels:           10  (DSP48E1=2 LUT3=1 LUT4=1 LUT5=1 LUT6=2 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43449, unset)        0.973     0.973    clk
+                         FDRE                                         r  vv_reg[23][30][15]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  vv_reg[23][30][15]/Q
+                         net (fo=1, unplaced)         0.965     2.416    vv_reg_n_0_[23][30][15]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  prod_r0__0_i_3958/O
+                         net (fo=1, unplaced)         0.000     2.711    prod_r0__0_i_3958_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  prod_r0__0_i_1776/O
+                         net (fo=1, unplaced)         0.735     3.693    prod_r0__0_i_1776_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  prod_r0__0_i_738/O
+                         net (fo=1, unplaced)         0.449     4.440    prod_r0__0_i_738_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124     4.564 r  prod_r0__0_i_360/O
+                         net (fo=1, unplaced)         0.000     4.564    prod_r0__0_i_360_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     4.811 r  prod_r0__0_i_121/O
+                         net (fo=1, unplaced)         0.735     5.546    prod_r0__0_i_121_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298     5.844 r  prod_r0__0_i_35/O
+                         net (fo=1, unplaced)         0.000     5.844    prod_r0__0_i_35_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     6.091 r  prod_r0__0_i_1/O
+                         net (fo=18, unplaced)        0.803     6.894    vv[15]
+                         DSP48E1 (Prop_dsp48e1_B[17]_PCOUT[47])
+                                                      4.025    10.919 r  prod_r0__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.000    10.919    prod_r0__0_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[21])
+                                                      1.518    12.437 r  prod_r0__1/P[21]
+                         net (fo=1, unplaced)         0.803    13.240    prod_r0__1_n_84
+                         LUT4 (Prop_lut4_I3_O)        0.150    13.390 r  prod_r[38]_i_1/O
+                         net (fo=1, unplaced)         0.000    13.390    prod_r__0[38]
+                         FDCE                                         r  prod_r_reg[38]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43449, unset)        0.924    10.924    clk
+                         FDCE                                         r  prod_r_reg[38]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    prod_r_reg[38]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -13.390    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -2.457    <hidden>
+
+Slack (VIOLATED) :        -2.457ns  (required time - arrival time)
+  Source:                 vv_reg[23][30][15]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            prod_r_reg[40]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.417ns  (logic 7.927ns (63.841%)  route 4.490ns (36.159%))
+  Logic Levels:           10  (DSP48E1=2 LUT3=1 LUT4=1 LUT5=1 LUT6=2 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43449, unset)        0.973     0.973    clk
+                         FDRE                                         r  vv_reg[23][30][15]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  vv_reg[23][30][15]/Q
+                         net (fo=1, unplaced)         0.965     2.416    vv_reg_n_0_[23][30][15]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  prod_r0__0_i_3958/O
+                         net (fo=1, unplaced)         0.000     2.711    prod_r0__0_i_3958_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  prod_r0__0_i_1776/O
+                         net (fo=1, unplaced)         0.735     3.693    prod_r0__0_i_1776_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  prod_r0__0_i_738/O
+                         net (fo=1, unplaced)         0.449     4.440    prod_r0__0_i_738_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124     4.564 r  prod_r0__0_i_360/O
+                         net (fo=1, unplaced)         0.000     4.564    prod_r0__0_i_360_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     4.811 r  prod_r0__0_i_121/O
+                         net (fo=1, unplaced)         0.735     5.546    prod_r0__0_i_121_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298     5.844 r  prod_r0__0_i_35/O
+                         net (fo=1, unplaced)         0.000     5.844    prod_r0__0_i_35_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     6.091 r  prod_r0__0_i_1/O
+                         net (fo=18, unplaced)        0.803     6.894    vv[15]
+                         DSP48E1 (Prop_dsp48e1_B[17]_PCOUT[47])
+                                                      4.025    10.919 r  prod_r0__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.000    10.919    prod_r0__0_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[23])
+                                                      1.518    12.437 r  prod_r0__1/P[23]
+                         net (fo=1, unplaced)         0.803    13.240    prod_r0__1_n_82
+                         LUT4 (Prop_lut4_I3_O)        0.150    13.390 r  prod_r[40]_i_1/O
+                         net (fo=1, unplaced)         0.000    13.390    prod_r__0[40]
+                         FDCE                                         r  prod_r_reg[40]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43449, unset)        0.924    10.924    clk
+                         FDCE                                         r  prod_r_reg[40]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    prod_r_reg[40]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -13.390    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -2.457    <hidden>
+
+Slack (VIOLATED) :        -2.457ns  (required time - arrival time)
+  Source:                 vv_reg[23][30][15]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            prod_r_reg[42]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.417ns  (logic 7.927ns (63.841%)  route 4.490ns (36.159%))
+  Logic Levels:           10  (DSP48E1=2 LUT3=1 LUT4=1 LUT5=1 LUT6=2 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43449, unset)        0.973     0.973    clk
+                         FDRE                                         r  vv_reg[23][30][15]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  vv_reg[23][30][15]/Q
+                         net (fo=1, unplaced)         0.965     2.416    vv_reg_n_0_[23][30][15]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  prod_r0__0_i_3958/O
+                         net (fo=1, unplaced)         0.000     2.711    prod_r0__0_i_3958_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  prod_r0__0_i_1776/O
+                         net (fo=1, unplaced)         0.735     3.693    prod_r0__0_i_1776_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  prod_r0__0_i_738/O
+                         net (fo=1, unplaced)         0.449     4.440    prod_r0__0_i_738_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124     4.564 r  prod_r0__0_i_360/O
+                         net (fo=1, unplaced)         0.000     4.564    prod_r0__0_i_360_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     4.811 r  prod_r0__0_i_121/O
+                         net (fo=1, unplaced)         0.735     5.546    prod_r0__0_i_121_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298     5.844 r  prod_r0__0_i_35/O
+                         net (fo=1, unplaced)         0.000     5.844    prod_r0__0_i_35_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     6.091 r  prod_r0__0_i_1/O
+                         net (fo=18, unplaced)        0.803     6.894    vv[15]
+                         DSP48E1 (Prop_dsp48e1_B[17]_PCOUT[47])
+                                                      4.025    10.919 r  prod_r0__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.000    10.919    prod_r0__0_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[25])
+                                                      1.518    12.437 r  prod_r0__1/P[25]
+                         net (fo=1, unplaced)         0.803    13.240    prod_r0__1_n_80
+                         LUT4 (Prop_lut4_I3_O)        0.150    13.390 r  prod_r[42]_i_1/O
+                         net (fo=1, unplaced)         0.000    13.390    prod_r__0[42]
+                         FDCE                                         r  prod_r_reg[42]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43449, unset)        0.924    10.924    clk
+                         FDCE                                         r  prod_r_reg[42]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    prod_r_reg[42]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -13.390    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -2.457    <hidden>
+
+Slack (VIOLATED) :        -2.457ns  (required time - arrival time)
+  Source:                 vv_reg[23][30][15]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            prod_r_reg[44]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.417ns  (logic 7.927ns (63.841%)  route 4.490ns (36.159%))
+  Logic Levels:           10  (DSP48E1=2 LUT3=1 LUT4=1 LUT5=1 LUT6=2 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43449, unset)        0.973     0.973    clk
+                         FDRE                                         r  vv_reg[23][30][15]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  vv_reg[23][30][15]/Q
+                         net (fo=1, unplaced)         0.965     2.416    vv_reg_n_0_[23][30][15]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  prod_r0__0_i_3958/O
+                         net (fo=1, unplaced)         0.000     2.711    prod_r0__0_i_3958_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  prod_r0__0_i_1776/O
+                         net (fo=1, unplaced)         0.735     3.693    prod_r0__0_i_1776_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  prod_r0__0_i_738/O
+                         net (fo=1, unplaced)         0.449     4.440    prod_r0__0_i_738_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124     4.564 r  prod_r0__0_i_360/O
+                         net (fo=1, unplaced)         0.000     4.564    prod_r0__0_i_360_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     4.811 r  prod_r0__0_i_121/O
+                         net (fo=1, unplaced)         0.735     5.546    prod_r0__0_i_121_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298     5.844 r  prod_r0__0_i_35/O
+                         net (fo=1, unplaced)         0.000     5.844    prod_r0__0_i_35_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     6.091 r  prod_r0__0_i_1/O
+                         net (fo=18, unplaced)        0.803     6.894    vv[15]
+                         DSP48E1 (Prop_dsp48e1_B[17]_PCOUT[47])
+                                                      4.025    10.919 r  prod_r0__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.000    10.919    prod_r0__0_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[27])
+                                                      1.518    12.437 r  prod_r0__1/P[27]
+                         net (fo=1, unplaced)         0.803    13.240    prod_r0__1_n_78
+                         LUT4 (Prop_lut4_I3_O)        0.150    13.390 r  prod_r[44]_i_1/O
+                         net (fo=1, unplaced)         0.000    13.390    prod_r__0[44]
+                         FDCE                                         r  prod_r_reg[44]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43449, unset)        0.924    10.924    clk
+                         FDCE                                         r  prod_r_reg[44]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    prod_r_reg[44]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -13.390    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -2.457    <hidden>
+
+Slack (VIOLATED) :        -2.457ns  (required time - arrival time)
+  Source:                 vv_reg[23][30][15]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            prod_r_reg[46]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.417ns  (logic 7.927ns (63.841%)  route 4.490ns (36.159%))
+  Logic Levels:           10  (DSP48E1=2 LUT3=1 LUT4=1 LUT5=1 LUT6=2 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43449, unset)        0.973     0.973    clk
+                         FDRE                                         r  vv_reg[23][30][15]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  vv_reg[23][30][15]/Q
+                         net (fo=1, unplaced)         0.965     2.416    vv_reg_n_0_[23][30][15]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  prod_r0__0_i_3958/O
+                         net (fo=1, unplaced)         0.000     2.711    prod_r0__0_i_3958_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  prod_r0__0_i_1776/O
+                         net (fo=1, unplaced)         0.735     3.693    prod_r0__0_i_1776_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  prod_r0__0_i_738/O
+                         net (fo=1, unplaced)         0.449     4.440    prod_r0__0_i_738_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124     4.564 r  prod_r0__0_i_360/O
+                         net (fo=1, unplaced)         0.000     4.564    prod_r0__0_i_360_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     4.811 r  prod_r0__0_i_121/O
+                         net (fo=1, unplaced)         0.735     5.546    prod_r0__0_i_121_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298     5.844 r  prod_r0__0_i_35/O
+                         net (fo=1, unplaced)         0.000     5.844    prod_r0__0_i_35_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     6.091 r  prod_r0__0_i_1/O
+                         net (fo=18, unplaced)        0.803     6.894    vv[15]
+                         DSP48E1 (Prop_dsp48e1_B[17]_PCOUT[47])
+                                                      4.025    10.919 r  prod_r0__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.000    10.919    prod_r0__0_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[29])
+                                                      1.518    12.437 r  prod_r0__1/P[29]
+                         net (fo=1, unplaced)         0.803    13.240    prod_r0__1_n_76
+                         LUT4 (Prop_lut4_I3_O)        0.150    13.390 r  prod_r[46]_i_1/O
+                         net (fo=1, unplaced)         0.000    13.390    prod_r__0[46]
+                         FDCE                                         r  prod_r_reg[46]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43449, unset)        0.924    10.924    clk
+                         FDCE                                         r  prod_r_reg[46]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    prod_r_reg[46]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -13.390    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -2.457    <hidden>
+
+Slack (VIOLATED) :        -2.431ns  (required time - arrival time)
+  Source:                 vv_reg[23][30][15]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            prod_r_reg[17]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.391ns  (logic 7.901ns (63.765%)  route 4.490ns (36.235%))
+  Logic Levels:           10  (DSP48E1=2 LUT3=1 LUT5=2 LUT6=2 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43449, unset)        0.973     0.973    clk
+                         FDRE                                         r  vv_reg[23][30][15]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  vv_reg[23][30][15]/Q
+                         net (fo=1, unplaced)         0.965     2.416    vv_reg_n_0_[23][30][15]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  prod_r0__0_i_3958/O
+                         net (fo=1, unplaced)         0.000     2.711    prod_r0__0_i_3958_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  prod_r0__0_i_1776/O
+                         net (fo=1, unplaced)         0.735     3.693    prod_r0__0_i_1776_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  prod_r0__0_i_738/O
+                         net (fo=1, unplaced)         0.449     4.440    prod_r0__0_i_738_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124     4.564 r  prod_r0__0_i_360/O
+                         net (fo=1, unplaced)         0.000     4.564    prod_r0__0_i_360_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     4.811 r  prod_r0__0_i_121/O
+                         net (fo=1, unplaced)         0.735     5.546    prod_r0__0_i_121_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298     5.844 r  prod_r0__0_i_35/O
+                         net (fo=1, unplaced)         0.000     5.844    prod_r0__0_i_35_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     6.091 r  prod_r0__0_i_1/O
+                         net (fo=18, unplaced)        0.803     6.894    vv[15]
+                         DSP48E1 (Prop_dsp48e1_B[17]_PCOUT[47])
+                                                      4.025    10.919 r  prod_r0__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.000    10.919    prod_r0__0_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[0])
+                                                      1.518    12.437 r  prod_r0__1/P[0]
+                         net (fo=1, unplaced)         0.803    13.240    prod_r0__1_n_105
+                         LUT5 (Prop_lut5_I2_O)        0.124    13.364 r  prod_r[17]_i_1/O
+                         net (fo=1, unplaced)         0.000    13.364    prod_r__0[17]
+                         FDCE                                         r  prod_r_reg[17]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43449, unset)        0.924    10.924    clk
+                         FDCE                                         r  prod_r_reg[17]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    prod_r_reg[17]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -13.364    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -2.431    <hidden>
+
+Slack (VIOLATED) :        -2.431ns  (required time - arrival time)
+  Source:                 vv_reg[23][30][15]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            prod_r_reg[18]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.391ns  (logic 7.901ns (63.765%)  route 4.490ns (36.235%))
+  Logic Levels:           10  (DSP48E1=2 LUT3=1 LUT5=2 LUT6=2 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43449, unset)        0.973     0.973    clk
+                         FDRE                                         r  vv_reg[23][30][15]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  vv_reg[23][30][15]/Q
+                         net (fo=1, unplaced)         0.965     2.416    vv_reg_n_0_[23][30][15]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  prod_r0__0_i_3958/O
+                         net (fo=1, unplaced)         0.000     2.711    prod_r0__0_i_3958_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  prod_r0__0_i_1776/O
+                         net (fo=1, unplaced)         0.735     3.693    prod_r0__0_i_1776_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  prod_r0__0_i_738/O
+                         net (fo=1, unplaced)         0.449     4.440    prod_r0__0_i_738_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124     4.564 r  prod_r0__0_i_360/O
+                         net (fo=1, unplaced)         0.000     4.564    prod_r0__0_i_360_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     4.811 r  prod_r0__0_i_121/O
+                         net (fo=1, unplaced)         0.735     5.546    prod_r0__0_i_121_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298     5.844 r  prod_r0__0_i_35/O
+                         net (fo=1, unplaced)         0.000     5.844    prod_r0__0_i_35_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     6.091 r  prod_r0__0_i_1/O
+                         net (fo=18, unplaced)        0.803     6.894    vv[15]
+                         DSP48E1 (Prop_dsp48e1_B[17]_PCOUT[47])
+                                                      4.025    10.919 r  prod_r0__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.000    10.919    prod_r0__0_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[1])
+                                                      1.518    12.437 r  prod_r0__1/P[1]
+                         net (fo=1, unplaced)         0.803    13.240    prod_r0__1_n_104
+                         LUT5 (Prop_lut5_I2_O)        0.124    13.364 r  prod_r[18]_i_1/O
+                         net (fo=1, unplaced)         0.000    13.364    prod_r__0[18]
+                         FDCE                                         r  prod_r_reg[18]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43449, unset)        0.924    10.924    clk
+                         FDCE                                         r  prod_r_reg[18]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    prod_r_reg[18]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -13.364    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -2.431    <hidden>
+
+Slack (VIOLATED) :        -2.431ns  (required time - arrival time)
+  Source:                 vv_reg[23][30][15]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            prod_r_reg[19]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.391ns  (logic 7.901ns (63.765%)  route 4.490ns (36.235%))
+  Logic Levels:           10  (DSP48E1=2 LUT3=1 LUT5=2 LUT6=2 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43449, unset)        0.973     0.973    clk
+                         FDRE                                         r  vv_reg[23][30][15]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  vv_reg[23][30][15]/Q
+                         net (fo=1, unplaced)         0.965     2.416    vv_reg_n_0_[23][30][15]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  prod_r0__0_i_3958/O
+                         net (fo=1, unplaced)         0.000     2.711    prod_r0__0_i_3958_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  prod_r0__0_i_1776/O
+                         net (fo=1, unplaced)         0.735     3.693    prod_r0__0_i_1776_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  prod_r0__0_i_738/O
+                         net (fo=1, unplaced)         0.449     4.440    prod_r0__0_i_738_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124     4.564 r  prod_r0__0_i_360/O
+                         net (fo=1, unplaced)         0.000     4.564    prod_r0__0_i_360_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     4.811 r  prod_r0__0_i_121/O
+                         net (fo=1, unplaced)         0.735     5.546    prod_r0__0_i_121_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298     5.844 r  prod_r0__0_i_35/O
+                         net (fo=1, unplaced)         0.000     5.844    prod_r0__0_i_35_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     6.091 r  prod_r0__0_i_1/O
+                         net (fo=18, unplaced)        0.803     6.894    vv[15]
+                         DSP48E1 (Prop_dsp48e1_B[17]_PCOUT[47])
+                                                      4.025    10.919 r  prod_r0__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.000    10.919    prod_r0__0_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[2])
+                                                      1.518    12.437 r  prod_r0__1/P[2]
+                         net (fo=1, unplaced)         0.803    13.240    prod_r0__1_n_103
+                         LUT5 (Prop_lut5_I2_O)        0.124    13.364 r  prod_r[19]_i_1/O
+                         net (fo=1, unplaced)         0.000    13.364    prod_r__0[19]
+                         FDCE                                         r  prod_r_reg[19]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43449, unset)        0.924    10.924    clk
+                         FDCE                                         r  prod_r_reg[19]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    prod_r_reg[19]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -13.364    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -2.431    <hidden>
+
+Slack (VIOLATED) :        -2.431ns  (required time - arrival time)
+  Source:                 vv_reg[23][30][15]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            prod_r_reg[20]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.391ns  (logic 7.901ns (63.765%)  route 4.490ns (36.235%))
+  Logic Levels:           10  (DSP48E1=2 LUT3=1 LUT5=2 LUT6=2 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43449, unset)        0.973     0.973    clk
+                         FDRE                                         r  vv_reg[23][30][15]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  vv_reg[23][30][15]/Q
+                         net (fo=1, unplaced)         0.965     2.416    vv_reg_n_0_[23][30][15]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  prod_r0__0_i_3958/O
+                         net (fo=1, unplaced)         0.000     2.711    prod_r0__0_i_3958_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  prod_r0__0_i_1776/O
+                         net (fo=1, unplaced)         0.735     3.693    prod_r0__0_i_1776_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  prod_r0__0_i_738/O
+                         net (fo=1, unplaced)         0.449     4.440    prod_r0__0_i_738_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124     4.564 r  prod_r0__0_i_360/O
+                         net (fo=1, unplaced)         0.000     4.564    prod_r0__0_i_360_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     4.811 r  prod_r0__0_i_121/O
+                         net (fo=1, unplaced)         0.735     5.546    prod_r0__0_i_121_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298     5.844 r  prod_r0__0_i_35/O
+                         net (fo=1, unplaced)         0.000     5.844    prod_r0__0_i_35_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     6.091 r  prod_r0__0_i_1/O
+                         net (fo=18, unplaced)        0.803     6.894    vv[15]
+                         DSP48E1 (Prop_dsp48e1_B[17]_PCOUT[47])
+                                                      4.025    10.919 r  prod_r0__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.000    10.919    prod_r0__0_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[3])
+                                                      1.518    12.437 r  prod_r0__1/P[3]
+                         net (fo=1, unplaced)         0.803    13.240    prod_r0__1_n_102
+                         LUT5 (Prop_lut5_I2_O)        0.124    13.364 r  prod_r[20]_i_1/O
+                         net (fo=1, unplaced)         0.000    13.364    prod_r__0[20]
+                         FDCE                                         r  prod_r_reg[20]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43449, unset)        0.924    10.924    clk
+                         FDCE                                         r  prod_r_reg[20]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    prod_r_reg[20]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -13.364    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -2.431    <hidden>
+
+Slack (VIOLATED) :        -2.431ns  (required time - arrival time)
+  Source:                 vv_reg[23][30][15]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            prod_r_reg[21]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.391ns  (logic 7.901ns (63.765%)  route 4.490ns (36.235%))
+  Logic Levels:           10  (DSP48E1=2 LUT3=1 LUT5=2 LUT6=2 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43449, unset)        0.973     0.973    clk
+                         FDRE                                         r  vv_reg[23][30][15]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  vv_reg[23][30][15]/Q
+                         net (fo=1, unplaced)         0.965     2.416    vv_reg_n_0_[23][30][15]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  prod_r0__0_i_3958/O
+                         net (fo=1, unplaced)         0.000     2.711    prod_r0__0_i_3958_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  prod_r0__0_i_1776/O
+                         net (fo=1, unplaced)         0.735     3.693    prod_r0__0_i_1776_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  prod_r0__0_i_738/O
+                         net (fo=1, unplaced)         0.449     4.440    prod_r0__0_i_738_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124     4.564 r  prod_r0__0_i_360/O
+                         net (fo=1, unplaced)         0.000     4.564    prod_r0__0_i_360_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     4.811 r  prod_r0__0_i_121/O
+                         net (fo=1, unplaced)         0.735     5.546    prod_r0__0_i_121_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298     5.844 r  prod_r0__0_i_35/O
+                         net (fo=1, unplaced)         0.000     5.844    prod_r0__0_i_35_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     6.091 r  prod_r0__0_i_1/O
+                         net (fo=18, unplaced)        0.803     6.894    vv[15]
+                         DSP48E1 (Prop_dsp48e1_B[17]_PCOUT[47])
+                                                      4.025    10.919 r  prod_r0__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.000    10.919    prod_r0__0_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[4])
+                                                      1.518    12.437 r  prod_r0__1/P[4]
+                         net (fo=1, unplaced)         0.803    13.240    prod_r0__1_n_101
+                         LUT5 (Prop_lut5_I2_O)        0.124    13.364 r  prod_r[21]_i_1/O
+                         net (fo=1, unplaced)         0.000    13.364    prod_r__0[21]
+                         FDCE                                         r  prod_r_reg[21]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43449, unset)        0.924    10.924    clk
+                         FDCE                                         r  prod_r_reg[21]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    prod_r_reg[21]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -13.364    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -2.431    <hidden>
+
+Slack (VIOLATED) :        -2.431ns  (required time - arrival time)
+  Source:                 vv_reg[23][30][15]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            prod_r_reg[22]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.391ns  (logic 7.901ns (63.765%)  route 4.490ns (36.235%))
+  Logic Levels:           10  (DSP48E1=2 LUT3=1 LUT5=2 LUT6=2 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43449, unset)        0.973     0.973    clk
+                         FDRE                                         r  vv_reg[23][30][15]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  vv_reg[23][30][15]/Q
+                         net (fo=1, unplaced)         0.965     2.416    vv_reg_n_0_[23][30][15]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  prod_r0__0_i_3958/O
+                         net (fo=1, unplaced)         0.000     2.711    prod_r0__0_i_3958_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  prod_r0__0_i_1776/O
+                         net (fo=1, unplaced)         0.735     3.693    prod_r0__0_i_1776_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  prod_r0__0_i_738/O
+                         net (fo=1, unplaced)         0.449     4.440    prod_r0__0_i_738_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124     4.564 r  prod_r0__0_i_360/O
+                         net (fo=1, unplaced)         0.000     4.564    prod_r0__0_i_360_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     4.811 r  prod_r0__0_i_121/O
+                         net (fo=1, unplaced)         0.735     5.546    prod_r0__0_i_121_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298     5.844 r  prod_r0__0_i_35/O
+                         net (fo=1, unplaced)         0.000     5.844    prod_r0__0_i_35_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     6.091 r  prod_r0__0_i_1/O
+                         net (fo=18, unplaced)        0.803     6.894    vv[15]
+                         DSP48E1 (Prop_dsp48e1_B[17]_PCOUT[47])
+                                                      4.025    10.919 r  prod_r0__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.000    10.919    prod_r0__0_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[5])
+                                                      1.518    12.437 r  prod_r0__1/P[5]
+                         net (fo=1, unplaced)         0.803    13.240    prod_r0__1_n_100
+                         LUT5 (Prop_lut5_I2_O)        0.124    13.364 r  prod_r[22]_i_1/O
+                         net (fo=1, unplaced)         0.000    13.364    prod_r__0[22]
+                         FDCE                                         r  prod_r_reg[22]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43449, unset)        0.924    10.924    clk
+                         FDCE                                         r  prod_r_reg[22]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    prod_r_reg[22]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -13.364    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -2.431    <hidden>
+
+Slack (VIOLATED) :        -2.431ns  (required time - arrival time)
+  Source:                 vv_reg[23][30][15]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            prod_r_reg[23]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.391ns  (logic 7.901ns (63.765%)  route 4.490ns (36.235%))
+  Logic Levels:           10  (DSP48E1=2 LUT3=1 LUT5=1 LUT6=3 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43449, unset)        0.973     0.973    clk
+                         FDRE                                         r  vv_reg[23][30][15]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  vv_reg[23][30][15]/Q
+                         net (fo=1, unplaced)         0.965     2.416    vv_reg_n_0_[23][30][15]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  prod_r0__0_i_3958/O
+                         net (fo=1, unplaced)         0.000     2.711    prod_r0__0_i_3958_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  prod_r0__0_i_1776/O
+                         net (fo=1, unplaced)         0.735     3.693    prod_r0__0_i_1776_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  prod_r0__0_i_738/O
+                         net (fo=1, unplaced)         0.449     4.440    prod_r0__0_i_738_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124     4.564 r  prod_r0__0_i_360/O
+                         net (fo=1, unplaced)         0.000     4.564    prod_r0__0_i_360_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     4.811 r  prod_r0__0_i_121/O
+                         net (fo=1, unplaced)         0.735     5.546    prod_r0__0_i_121_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298     5.844 r  prod_r0__0_i_35/O
+                         net (fo=1, unplaced)         0.000     5.844    prod_r0__0_i_35_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     6.091 r  prod_r0__0_i_1/O
+                         net (fo=18, unplaced)        0.803     6.894    vv[15]
+                         DSP48E1 (Prop_dsp48e1_B[17]_PCOUT[47])
+                                                      4.025    10.919 r  prod_r0__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.000    10.919    prod_r0__0_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[6])
+                                                      1.518    12.437 r  prod_r0__1/P[6]
+                         net (fo=1, unplaced)         0.803    13.240    prod_r0__1_n_99
+                         LUT6 (Prop_lut6_I4_O)        0.124    13.364 r  prod_r[23]_i_1/O
+                         net (fo=1, unplaced)         0.000    13.364    prod_r__0[23]
+                         FDCE                                         r  prod_r_reg[23]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43449, unset)        0.924    10.924    clk
+                         FDCE                                         r  prod_r_reg[23]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    prod_r_reg[23]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -13.364    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -2.431    <hidden>
+
+Slack (VIOLATED) :        -2.431ns  (required time - arrival time)
+  Source:                 vv_reg[23][30][15]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            prod_r_reg[24]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.391ns  (logic 7.901ns (63.765%)  route 4.490ns (36.235%))
+  Logic Levels:           10  (DSP48E1=2 LUT3=1 LUT5=1 LUT6=3 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43449, unset)        0.973     0.973    clk
+                         FDRE                                         r  vv_reg[23][30][15]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  vv_reg[23][30][15]/Q
+                         net (fo=1, unplaced)         0.965     2.416    vv_reg_n_0_[23][30][15]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  prod_r0__0_i_3958/O
+                         net (fo=1, unplaced)         0.000     2.711    prod_r0__0_i_3958_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  prod_r0__0_i_1776/O
+                         net (fo=1, unplaced)         0.735     3.693    prod_r0__0_i_1776_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  prod_r0__0_i_738/O
+                         net (fo=1, unplaced)         0.449     4.440    prod_r0__0_i_738_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124     4.564 r  prod_r0__0_i_360/O
+                         net (fo=1, unplaced)         0.000     4.564    prod_r0__0_i_360_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     4.811 r  prod_r0__0_i_121/O
+                         net (fo=1, unplaced)         0.735     5.546    prod_r0__0_i_121_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298     5.844 r  prod_r0__0_i_35/O
+                         net (fo=1, unplaced)         0.000     5.844    prod_r0__0_i_35_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     6.091 r  prod_r0__0_i_1/O
+                         net (fo=18, unplaced)        0.803     6.894    vv[15]
+                         DSP48E1 (Prop_dsp48e1_B[17]_PCOUT[47])
+                                                      4.025    10.919 r  prod_r0__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.000    10.919    prod_r0__0_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[7])
+                                                      1.518    12.437 r  prod_r0__1/P[7]
+                         net (fo=1, unplaced)         0.803    13.240    prod_r0__1_n_98
+                         LUT6 (Prop_lut6_I4_O)        0.124    13.364 r  prod_r[24]_i_1/O
+                         net (fo=1, unplaced)         0.000    13.364    prod_r__0[24]
+                         FDCE                                         r  prod_r_reg[24]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43449, unset)        0.924    10.924    clk
+                         FDCE                                         r  prod_r_reg[24]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    prod_r_reg[24]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -13.364    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -2.431    <hidden>
+
+Slack (VIOLATED) :        -2.431ns  (required time - arrival time)
+  Source:                 vv_reg[23][30][15]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            prod_r_reg[25]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.391ns  (logic 7.901ns (63.765%)  route 4.490ns (36.235%))
+  Logic Levels:           10  (DSP48E1=2 LUT3=1 LUT5=1 LUT6=3 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43449, unset)        0.973     0.973    clk
+                         FDRE                                         r  vv_reg[23][30][15]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  vv_reg[23][30][15]/Q
+                         net (fo=1, unplaced)         0.965     2.416    vv_reg_n_0_[23][30][15]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  prod_r0__0_i_3958/O
+                         net (fo=1, unplaced)         0.000     2.711    prod_r0__0_i_3958_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  prod_r0__0_i_1776/O
+                         net (fo=1, unplaced)         0.735     3.693    prod_r0__0_i_1776_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  prod_r0__0_i_738/O
+                         net (fo=1, unplaced)         0.449     4.440    prod_r0__0_i_738_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124     4.564 r  prod_r0__0_i_360/O
+                         net (fo=1, unplaced)         0.000     4.564    prod_r0__0_i_360_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     4.811 r  prod_r0__0_i_121/O
+                         net (fo=1, unplaced)         0.735     5.546    prod_r0__0_i_121_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298     5.844 r  prod_r0__0_i_35/O
+                         net (fo=1, unplaced)         0.000     5.844    prod_r0__0_i_35_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     6.091 r  prod_r0__0_i_1/O
+                         net (fo=18, unplaced)        0.803     6.894    vv[15]
+                         DSP48E1 (Prop_dsp48e1_B[17]_PCOUT[47])
+                                                      4.025    10.919 r  prod_r0__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.000    10.919    prod_r0__0_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[8])
+                                                      1.518    12.437 r  prod_r0__1/P[8]
+                         net (fo=1, unplaced)         0.803    13.240    prod_r0__1_n_97
+                         LUT6 (Prop_lut6_I4_O)        0.124    13.364 r  prod_r[25]_i_1/O
+                         net (fo=1, unplaced)         0.000    13.364    prod_r__0[25]
+                         FDCE                                         r  prod_r_reg[25]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43449, unset)        0.924    10.924    clk
+                         FDCE                                         r  prod_r_reg[25]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    prod_r_reg[25]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -13.364    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -2.431    <hidden>
+
+Slack (VIOLATED) :        -2.431ns  (required time - arrival time)
+  Source:                 vv_reg[23][30][15]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            prod_r_reg[26]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.391ns  (logic 7.901ns (63.765%)  route 4.490ns (36.235%))
+  Logic Levels:           10  (DSP48E1=2 LUT3=1 LUT5=1 LUT6=3 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43449, unset)        0.973     0.973    clk
+                         FDRE                                         r  vv_reg[23][30][15]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  vv_reg[23][30][15]/Q
+                         net (fo=1, unplaced)         0.965     2.416    vv_reg_n_0_[23][30][15]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  prod_r0__0_i_3958/O
+                         net (fo=1, unplaced)         0.000     2.711    prod_r0__0_i_3958_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  prod_r0__0_i_1776/O
+                         net (fo=1, unplaced)         0.735     3.693    prod_r0__0_i_1776_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  prod_r0__0_i_738/O
+                         net (fo=1, unplaced)         0.449     4.440    prod_r0__0_i_738_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124     4.564 r  prod_r0__0_i_360/O
+                         net (fo=1, unplaced)         0.000     4.564    prod_r0__0_i_360_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     4.811 r  prod_r0__0_i_121/O
+                         net (fo=1, unplaced)         0.735     5.546    prod_r0__0_i_121_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298     5.844 r  prod_r0__0_i_35/O
+                         net (fo=1, unplaced)         0.000     5.844    prod_r0__0_i_35_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     6.091 r  prod_r0__0_i_1/O
+                         net (fo=18, unplaced)        0.803     6.894    vv[15]
+                         DSP48E1 (Prop_dsp48e1_B[17]_PCOUT[47])
+                                                      4.025    10.919 r  prod_r0__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.000    10.919    prod_r0__0_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[9])
+                                                      1.518    12.437 r  prod_r0__1/P[9]
+                         net (fo=1, unplaced)         0.803    13.240    prod_r0__1_n_96
+                         LUT6 (Prop_lut6_I4_O)        0.124    13.364 r  prod_r[26]_i_1/O
+                         net (fo=1, unplaced)         0.000    13.364    prod_r__0[26]
+                         FDCE                                         r  prod_r_reg[26]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43449, unset)        0.924    10.924    clk
+                         FDCE                                         r  prod_r_reg[26]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    prod_r_reg[26]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -13.364    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -2.431    <hidden>
+
+Slack (VIOLATED) :        -2.431ns  (required time - arrival time)
+  Source:                 vv_reg[23][30][15]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            prod_r_reg[27]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.391ns  (logic 7.901ns (63.765%)  route 4.490ns (36.235%))
+  Logic Levels:           10  (DSP48E1=2 LUT3=1 LUT5=1 LUT6=3 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43449, unset)        0.973     0.973    clk
+                         FDRE                                         r  vv_reg[23][30][15]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  vv_reg[23][30][15]/Q
+                         net (fo=1, unplaced)         0.965     2.416    vv_reg_n_0_[23][30][15]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  prod_r0__0_i_3958/O
+                         net (fo=1, unplaced)         0.000     2.711    prod_r0__0_i_3958_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  prod_r0__0_i_1776/O
+                         net (fo=1, unplaced)         0.735     3.693    prod_r0__0_i_1776_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  prod_r0__0_i_738/O
+                         net (fo=1, unplaced)         0.449     4.440    prod_r0__0_i_738_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124     4.564 r  prod_r0__0_i_360/O
+                         net (fo=1, unplaced)         0.000     4.564    prod_r0__0_i_360_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     4.811 r  prod_r0__0_i_121/O
+                         net (fo=1, unplaced)         0.735     5.546    prod_r0__0_i_121_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298     5.844 r  prod_r0__0_i_35/O
+                         net (fo=1, unplaced)         0.000     5.844    prod_r0__0_i_35_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     6.091 r  prod_r0__0_i_1/O
+                         net (fo=18, unplaced)        0.803     6.894    vv[15]
+                         DSP48E1 (Prop_dsp48e1_B[17]_PCOUT[47])
+                                                      4.025    10.919 r  prod_r0__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.000    10.919    prod_r0__0_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[10])
+                                                      1.518    12.437 r  prod_r0__1/P[10]
+                         net (fo=1, unplaced)         0.803    13.240    prod_r0__1_n_95
+                         LUT6 (Prop_lut6_I4_O)        0.124    13.364 r  prod_r[27]_i_1/O
+                         net (fo=1, unplaced)         0.000    13.364    prod_r__0[27]
+                         FDCE                                         r  prod_r_reg[27]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43449, unset)        0.924    10.924    clk
+                         FDCE                                         r  prod_r_reg[27]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    prod_r_reg[27]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -13.364    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -2.431    <hidden>
+
+Slack (VIOLATED) :        -2.431ns  (required time - arrival time)
+  Source:                 vv_reg[23][30][15]/C
+                            (rising edge-triggered cell FDRE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            prod_r_reg[28]/D
+                            (rising edge-triggered cell FDCE clocked by clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk rise@10.000ns - clk rise@0.000ns)
+  Data Path Delay:        12.391ns  (logic 7.901ns (63.765%)  route 4.490ns (36.235%))
+  Logic Levels:           10  (DSP48E1=2 LUT3=1 LUT5=1 LUT6=3 MUXF7=3)
+  Clock Path Skew:        -0.049ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    0.924ns = ( 10.924 - 10.000 ) 
+    Source Clock Delay      (SCD):    0.973ns
+    Clock Pessimism Removal (CPR):    0.000ns
+  Clock Uncertainty:      0.035ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk rise edge)        0.000     0.000 r  <hidden>
+                                                      0.000     0.000 r  clk
+                         net (fo=43449, unset)        0.973     0.973    clk
+                         FDRE                                         r  vv_reg[23][30][15]/C
+  -------------------------------------------------------------------    -------------------
+                         FDRE (Prop_fdre_C_Q)         0.478     1.451 r  vv_reg[23][30][15]/Q
+                         net (fo=1, unplaced)         0.965     2.416    vv_reg_n_0_[23][30][15]
+                         LUT6 (Prop_lut6_I0_O)        0.295     2.711 r  prod_r0__0_i_3958/O
+                         net (fo=1, unplaced)         0.000     2.711    prod_r0__0_i_3958_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     2.958 r  prod_r0__0_i_1776/O
+                         net (fo=1, unplaced)         0.735     3.693    prod_r0__0_i_1776_n_0
+                         LUT5 (Prop_lut5_I0_O)        0.298     3.991 r  prod_r0__0_i_738/O
+                         net (fo=1, unplaced)         0.449     4.440    prod_r0__0_i_738_n_0
+                         LUT3 (Prop_lut3_I2_O)        0.124     4.564 r  prod_r0__0_i_360/O
+                         net (fo=1, unplaced)         0.000     4.564    prod_r0__0_i_360_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     4.811 r  prod_r0__0_i_121/O
+                         net (fo=1, unplaced)         0.735     5.546    prod_r0__0_i_121_n_0
+                         LUT6 (Prop_lut6_I0_O)        0.298     5.844 r  prod_r0__0_i_35/O
+                         net (fo=1, unplaced)         0.000     5.844    prod_r0__0_i_35_n_0
+                         MUXF7 (Prop_muxf7_I1_O)      0.247     6.091 r  prod_r0__0_i_1/O
+                         net (fo=18, unplaced)        0.803     6.894    vv[15]
+                         DSP48E1 (Prop_dsp48e1_B[17]_PCOUT[47])
+                                                      4.025    10.919 r  prod_r0__0/PCOUT[47]
+                         net (fo=1, unplaced)         0.000    10.919    prod_r0__0_n_106
+                         DSP48E1 (Prop_dsp48e1_PCIN[47]_P[11])
+                                                      1.518    12.437 r  prod_r0__1/P[11]
+                         net (fo=1, unplaced)         0.803    13.240    prod_r0__1_n_94
+                         LUT6 (Prop_lut6_I4_O)        0.124    13.364 r  prod_r[28]_i_1/O
+                         net (fo=1, unplaced)         0.000    13.364    prod_r__0[28]
+                         FDCE                                         r  prod_r_reg[28]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk rise edge)       10.000    10.000 r  <hidden>
+                                                      0.000    10.000 r  clk
+                         net (fo=43449, unset)        0.924    10.924    clk
+                         FDCE                                         r  prod_r_reg[28]/C
+                         clock pessimism              0.000    10.924    <hidden>
+                         clock uncertainty           -0.035    10.889    <hidden>
+                         FDCE (Setup_fdce_C_D)        0.044    10.933    prod_r_reg[28]
+  -------------------------------------------------------------------
+                         required time                         10.933    <hidden>
+                         arrival time                         -13.364    <hidden>
+  -------------------------------------------------------------------
+                         slack                                 -2.431    <hidden>
+
+
+
+
