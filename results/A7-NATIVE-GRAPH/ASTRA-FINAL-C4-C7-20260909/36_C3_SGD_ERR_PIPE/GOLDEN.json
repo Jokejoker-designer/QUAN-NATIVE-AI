@@ -1,0 +1,12 @@
+{
+  "gate": "c3_sgd_err",
+  "marker": "ASTRA_C3_SGD_ERR_PIPE_XSIM_PASS",
+  "program": false,
+  "closes_master": false,
+  "board_pass": false,
+  "law": "LATCH_THEN_LATCH_ERR_FROM_V_SAT",
+  "dut_sha256": "9123C10745D5F987AEE8C59E7B0161C0973A8391A362ACB23F92C906CA7D0BC4",
+  "xsim_log_sha256": "293CABCCDC1FE1EA8A7CA1B2676A578E6C9DCF08840D4BB240EDBB6AB145C9DF",
+  "vectors": ["zero_weight", "enabled_16x", "shuffle", "mixed_w", "freeze_keep"],
+  "e3ab": "DO_NOT_START"
+}

@@ -2,19 +2,22 @@
   "schema": "A7NG_E1C_DICT_EXAM_LOCK_V1",
   "bag": "25_C5_FPGA_DIRECTION_ENDPOINT_DICT",
   "PROGRAM": "NO",
-  "rtl_modified": false,
-  "production_dictionary": "OPEN",
+  "rtl_modified": true,
+  "production_dictionary": "IMAGE_IN_TREE_BOOT_WIRED",
+  "exam_locked": false,
   "current_fact": {
-    "c6_alias_wr": "tied 0 a7ng_astra_c6_wholechip_final_v1.sv:189-194",
-    "c5_alias_reset": "aval=0 until alias_wr",
+    "c6_alias_wr": "a7ng_astra_c6_alias_boot_v1 after c5_rst_n; then dict_lock=1",
+    "c5_alias_reset": "aval=0 until boot write",
     "cam_n": 8,
-    "tb_fixture": "not production corpus"
+    "tb_fixture": "not production corpus; C3 ans 10/11 + V2 4-char tifh/vmgh"
   },
   "image": {
     "name": "ENTITY_ALIAS_V1",
     "fields": ["schema", "version", "length", "crc", "sha256"],
     "keys": "exact 20-bit entity IDs",
-    "values": "registered symbols; 4-char V2 product symbols on current freeze; no truncate chiller/valve"
+    "values": "V2 4-char tifh/vmgh; no truncate chiller/valve",
+    "image_sha256": "4b4516d81722dd6e99f36a07367de151fdd04d4ce84e137b558a80b5d7323e9e",
+    "crc32": "32cb9f27"
   },
   "boot_law": {
     "order": ["BOOT", "load image", "verify schema/version/length/CRC/hash", "DICT_LOCK=1", "acceptance run READ-ONLY"],

@@ -1,0 +1,45 @@
+{
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "ASTRA_NATIVE_AI_BOARD_PASS": "OPEN",
+  "scope": "SMLUT_IDX_PIPE",
+  "six": {
+    "wns_ns": 1.052,
+    "tns_ns": 0.0,
+    "failing_endpoints": 0,
+    "top20_family_counts": {
+      "rq_snap": 20
+    },
+    "smres_in_top20": 0,
+    "smres_left_top20": true,
+    "smres_still_20_of_20": false,
+    "worst_logic_levels": 11,
+    "worst_carry4": 1,
+    "worst_dsp48e1": 0,
+    "worst_source": "toks_reg[23][0]/C",
+    "worst_destination": "rq_val_r_reg[10]/D",
+    "worst_dest_family": "rq_snap",
+    "source_is_delta": false,
+    "source_is_lut_neg": false,
+    "source_is_lut_zero": false
+  },
+  "classification": {
+    "case": "B",
+    "label": "path_cut_new_family",
+    "note": "smres/elut left top-20; WNS slight/flat. Path-cut PASS. Do not auto-start the next pipe. PROGRAM=NO. Not WO \u00a719 post-route C6.",
+    "wns_delta_vs_e3z_ns": 1.401,
+    "wns_strong": false,
+    "stop_local_e3": false,
+    "same_delta_cone": false,
+    "index_snap_survived": false,
+    "next_gate": "E3ab_rq_snap"
+  },
+  "report_sha256": "c0f4ca866e871b40aeaef097b2239916e3540e27ecdaab091580825233bb8417",
+  "util": {
+    "slice_luts": 26762,
+    "lut_as_memory": 200,
+    "slice_registers": 43365,
+    "block_ram_tile": 0,
+    "dsps": 11
+  }
+}

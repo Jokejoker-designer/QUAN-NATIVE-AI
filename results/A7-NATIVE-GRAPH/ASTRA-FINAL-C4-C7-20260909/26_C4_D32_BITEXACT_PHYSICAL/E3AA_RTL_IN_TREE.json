@@ -1,0 +1,16 @@
+{
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "ASTRA_NATIVE_AI_BOARD_PASS": "NOT_EVIDENCED",
+  "scope": "SMLUT_IDX_PIPE",
+  "e3aa_rtl": "IN_TREE",
+  "d32_sha256": "0a4e0e051f7f400f3853cf91098eb03617efa8eb888c7ca1c65a3287bcca5fb5",
+  "e3z_d32_sha256": "e37e1917578a6fe594e1dbb257966e37be9c2847ba9606911dce2413e5b01796",
+  "e3z_golden_invalid_for_this_rtl": true,
+  "law": "S_SMLUT KEEP; S_SMLUT_LUT snap lut_zero_r/lut_neg_r; S_SMLUT_APPLY Lut[lut_neg_r]",
+  "enum_has_S_SMLUT_APPLY": true,
+  "finish_selftest": "E3AA_FINISH_SELFTEST_PASS",
+  "golden": "PENDING",
+  "ooc": "NOT_STARTED",
+  "note": "E3z GOLDEN n=242 is invalid for this SHA. Smoke then n=242 required before one OOC. PROGRAM=NO."
+}

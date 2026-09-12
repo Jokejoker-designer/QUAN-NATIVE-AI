@@ -1,0 +1,15 @@
+{
+  "PROGRAM": "NO",
+  "C4_MASTER": "OPEN",
+  "e3aa_scope": "SMLUT_IDX_PIPE",
+  "marker": "ASTRA_C4_D32_FR_V2_XSIM_PASS n=242",
+  "CLASS_ref_match": "HIT",
+  "CLASS_host_tok0": "HIT",
+  "nfail_log": 0,
+  "sim_elapsed_s": 874,
+  "wall_ended": "2026-09-11T15:11:58+07:00",
+  "d32_sha256": "0a4e0e051f7f400f3853cf91098eb03617efa8eb888c7ca1c65a3287bcca5fb5",
+  "xsim_log_sha256": "e9168b7439c8dbb0b92880e7df9829ba27fd1c3ab7206c0afb72e37c304971c4",
+  "C4_MASTER_CLAIM": "NO",
+  "note": "Token parity after S_SMLUT_LUT index snap then S_SMLUT_APPLY. Not BOARD_PASS. Not WO section 19."
+}
